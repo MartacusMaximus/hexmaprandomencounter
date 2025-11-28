@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: MYTH_Pack
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  mythName: PACK
+  omens:
+  - 'Wailing shepherd. His sheepdogs have slaughtered their flock and fled. Crows
+
+    feast
+    on the gore. His family are hungry.'
+  - "A band of poets and scribes fight among themselves, unable to speak except snarling
+    growls. The Pack watch from a nearby hill, scattering if disturbed. When\nthey
+    leave, the wanderers\u2019 voices return."
+  - 'A rival fighting the leader. 6 wolves guard against interruption. They favour
+    the challenger. The leader is toying with him
+
+    and tears his throat when
+    he gets bored.'
+  - 'The wind suddenly stops, then the sound of jaws lapping at air. Then the howl,
+    rough and screeching. Countless howls join the call, air completely still. Soon
+    the
+
+    howl stops and the wind returns.'
+  - 'An important trade road has been blockaded by savagely torn trees and
+
+    heaps
+    of soil wet with blood.'
+  - 'The 13 wolf pack howls in their den, setting their sights on a nearby Dwelling
+    or Holding, attacking the humans and
+
+    their broken beasts in dark or mist.'
+  visibleByDefault: 1
+  visibleMarkerPrefab: {fileID: 2102705094562250744, guid: e222543699b21461986073b9d430c2ec, type: 3}

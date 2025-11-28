@@ -1,29 +1,38 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-[CreateAssetMenu(fileName = "BiomePrefabSO", menuName = "ScriptableObjects/Biome Prefab SO")]
+[CreateAssetMenu(fileName = "BiomePrefabTable", menuName = "ScriptableObjects/BiomePrefabTable")]
 public class BiomePrefabSO : ScriptableObject
 {
     [System.Serializable]
-    public class BiomePrefabEntry
+    public class Entry
     {
         public BiomeType biome;
-        public GameObject prefab;
+        public GameObject visualPrefab;                 // the tile/prefab spawned on the hex
+        [TextArea] public List<string> locationTexts; // 10 flavor texts
+        [TextArea] public List<string> eventTexts;    // 10 flavor texts
     }
 
-    public List<BiomePrefabEntry> entries = new List<BiomePrefabEntry>();
+    public List<Entry> entries = new List<Entry>();
 
-    private Dictionary<BiomeType, GameObject> lookup;
+    Dictionary<BiomeType, Entry> lookup;
 
-    public GameObject GetPrefab(BiomeType biome)
+    void EnsureLookup()
     {
-        if (lookup == null)
-        {
-            lookup = new Dictionary<BiomeType, GameObject>();
-            foreach (var e in entries)
-                lookup[e.biome] = e.prefab;
-        }
+        if (lookup != null) return;
+        lookup = new Dictionary<BiomeType, Entry>();
+        foreach (var e in entries) lookup[e.biome] = e;
+    }
 
-        return lookup.ContainsKey(biome) ? lookup[biome] : null;
+    public Entry GetEntry(BiomeType b)
+    {
+        EnsureLookup();
+        return lookup.ContainsKey(b) ? lookup[b] : null;
+    }
+
+    public GameObject GetPrefab(BiomeType b)
+    {
+        var e = GetEntry(b);
+        return e != null ? e.visualPrefab : null;
     }
 }

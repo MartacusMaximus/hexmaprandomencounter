@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: MYTH_Goblin
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  mythName: GOBLIN
+  omens:
+  - Weeping huntsman, cursing everyone. Looking for his lost bloodhound who tended
+    to him during injury.
+  - A lost lad, full of stories. Claims a little old man called him into the woods.
+  - Oppressive branches, tripping roots. A cloaked old man calls out, lost. If alerted
+    he cries out just before he is dragged into the ground, taken to the lost realm.
+  - The lost pets are running wild. If spotted they immediately run back toward the
+    secret door to the lost realm. One drops a strange metallic bone, repellent to
+    birds.
+  - A dark clearing. Any deals made here are bound by fate. The Goblin offers a trade.
+    A valuable lost thing in return for a favour he can call in later.
+  - Suddenly dragged to the realm of lost things. Tunnels under piles of bric-a-brac.
+    The Goblin gloats from atop his pile. Freedom is only granted for a binding favour,
+    which the Goblin will enforce.
+  visibleByDefault: 1
+  visibleMarkerPrefab: {fileID: 2102705094562250744, guid: e222543699b21461986073b9d430c2ec, type: 3}

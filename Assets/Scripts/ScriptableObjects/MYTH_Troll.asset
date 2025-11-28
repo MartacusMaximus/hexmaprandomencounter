@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: MYTH_Troll
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  mythName: TROLL
+  omens:
+  - In an itchy marsh, a severed, rubbery arm pulls itself along. Claws at anybody
+    that interferes. Has no sense of direction, eventually withering to dense, dead
+    flesh.
+  - 'A tiny chameleon watches from a crooked branch. Hisses a warning if anybody
+    passes near, stirring the Troll in the
+
+    nearby trees, fleeing back to its
+    home.'
+  - 'A burglar is fleeing from an abandoned cave, a home carved into the earth. Clumsy
+    furniture cobbled from rock and mud. Blood on the ground, smashed bones, another
+    dead troll limb. The
+
+    burglar found nothing of value in there.'
+  - The Troll drags a dying warhorse back toward its new cave. A Knight lays dead.
+  - 'Bronze, shimmering pond amongst a bog of fly-infested reeds. Disturbing the
+    water grants a vision of the Troll being attacked
+
+    by soldiers with axes,
+    hacking the
+
+    creature to bits.'
+  - 'Split from head to pelvis, the Troll holds itself together as it rampages, craving
+
+    meat
+    to aid the regeneration.'
+  visibleByDefault: 1
+  visibleMarkerPrefab: {fileID: 2102705094562250744, guid: e222543699b21461986073b9d430c2ec, type: 3}

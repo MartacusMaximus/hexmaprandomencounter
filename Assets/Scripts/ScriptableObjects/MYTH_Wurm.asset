@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: MYTH_Wurm
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  mythName: WURM
+  omens:
+  - 'A leech-collector weeps. In a nearby swamp the colossal thing snatched her sister
+    away with a bite. That bone-
+
+    grinding noise haunts her.'
+  - "An argumentative sage complains. The balance of nature has been tipped. The
+    birds aren\u2019t behaving correctly and\nthere\u2019s not enough prey in the
+    woods."
+  - "A logging camp, crushed. Barrels of limeweed, a pungent appetite suppressor,
+    left untouched. A Wurmshield surveys their master\u2019s work with unearned pride."
+  - 'A stinking grey salt-bog. Grinding laughter can be heard on the wind as the
+    Wurm sleeps below, dreaming of the next feast. Two Wurmshields keep watch,
+
+    arguing
+    over who is more loyal.'
+  - 'The Wurm lounges on smashed burial mounds of Seers. It speaks with four
+
+    Wurmshields,
+    loyal but poor company.'
+  - 'The Wurm bursts from the ground, giving
+
+    one opportunity for stimulating
+    conversation before its great feast begins.
+
+    It will not stop until bloated
+    or dead.'
+  visibleByDefault: 1
+  visibleMarkerPrefab: {fileID: 2102705094562250744, guid: e222543699b21461986073b9d430c2ec, type: 3}

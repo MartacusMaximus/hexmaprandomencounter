@@ -42,16 +42,52 @@ public class HexMapGenerator : MonoBehaviour
                 cell.transform.SetParent(root.transform);
                 cell.transform.position = pos;
 
+                HexCell cellComponent = cell.AddComponent<HexCell>();
+                cellComponent.q = q;
+                cellComponent.r = r;
+                cellComponent.biome = row.biomes[q];
+
+
                 GameObject prefab = GetPrefab(row.biomes[q]);
                 if (prefab != null)
-                    Instantiate(prefab, cell.transform).transform.localPosition = Vector3.zero;
+                {
+                    var tileObj = Instantiate(prefab, cell.transform);
+                    tileObj.transform.localPosition = Vector3.zero;
+
+                    var highlight = tileObj.transform.Find("Highlight");
+                    if (highlight != null)
+                    {
+                    cellComponent.highlightRenderer = highlight.GetComponent<Renderer>();
+                    }
+                }
+
             }
+            FindObjectOfType<HexPopulator>()?.PopulateLandmarks();
+            RandomEncounterManager.Instance?.AssignRandomMyths();
         }
+
+    HexCell center = FindCenterHex();
+    PartyCursorController.Instance.cursor.SetStartCell(center);
+    CameraController.Instance.CenterOn(center.transform.position);
     }
-GameObject GetPrefab(BiomeType biome)
-{
-    return prefabTable.GetPrefab(biome);
-}
+    GameObject GetPrefab(BiomeType biome)
+    {
+        return prefabTable.GetPrefab(biome);
+    }
+
+
+
+
+    HexCell FindCenterHex()
+    {
+        int midR = biomeData.biomeMap.Length / 2;
+        int midQ = biomeData.biomeMap[midR].biomes.Length / 2;
+
+        string name = $"{midQ},{midR}";
+        return GameObject.Find(name).GetComponent<HexCell>();
+    }
+
+
 
 
     Vector3 HexToWorld(int q, int r, float offset)

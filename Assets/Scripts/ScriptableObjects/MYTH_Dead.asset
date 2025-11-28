@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: MYTH_Dead
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  mythName: DEAD
+  omens:
+  - "Children playing \u201Cthe skeleton game\u201D, wearing wooden skull-masks and\nthrowing
+    bones at passers-by."
+  - "Terrified scout sisters, reporting wandering corpses on their patrol. Won\u2019t\nrest
+    until taken seriously."
+  - "Under Seer\u2019s orders, a graveyard is being burned as a precaution against
+    the restless dead. Acolytes scatter dried\nherbs. Five great red vultures circle."
+  - 'A rotting corpse, mimicking its life as a forager. It is tethered to a nearby
+    tree by
+
+    a steel rope of impossible construction.'
+  - 'Five skeletons, mocking bones, powered by hatred for the living, tormenting
+    defenceless travellers. The travellers are artisans, known for their ability
+    to make
+
+    fine weapons out of certain woods.'
+  - 3 Warbands of rotting corpses and mocking bones, rising under a black banner,
+    marching on the nearest Holding.
+  visibleByDefault: 1
+  visibleMarkerPrefab: {fileID: 2102705094562250744, guid: e222543699b21461986073b9d430c2ec, type: 3}

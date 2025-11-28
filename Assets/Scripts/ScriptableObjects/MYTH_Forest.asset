@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: MYTH_Forest
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  mythName: FOREST
+  omens:
+  - 'A Seer, beloved by her village, now trapped, inert in ironwood. Only the
+
+    Fearmonger
+    can break their binds.'
+  - 'A winding path beneath blue songbirds. They sing so fiercely that some lie breathless
+    on the ground. The winding
+
+    path leads to a distant forest Hex.'
+  - 'The mother tree. Six woodland guardians attack anybody who looks upon it. Foxes,
+
+    wolves,
+    and wildcats fight as one.'
+  - 'The Fearmonger in horrific form, parts of owl, boar, and mouse. Lurking in the
+
+    mist,
+    they hurl a thorn spear (d10 hefty, cannot be taken from the Forest) before retreating
+    to the branches.'
+  - 'A circle of blackened tree stumps. Inside, metal weapons roar with burning heat
+    unless dropped. Then come the three great guardians: stag, boar, and bear. The
+
+    Fearmonger
+    preys from within the mist.'
+  - 'The Fearmonger shows their true, terrible form as live, writhing wood. If they
+    cannot be subdued the Forest bursts forth into
+
+    the rest of the Realm.'
+  visibleByDefault: 1
+  visibleMarkerPrefab: {fileID: 2102705094562250744, guid: e222543699b21461986073b9d430c2ec, type: 3}

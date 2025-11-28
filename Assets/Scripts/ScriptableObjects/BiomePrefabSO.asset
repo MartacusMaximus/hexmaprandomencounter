@@ -14,36 +14,76 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BiomePrefabSO
   entries:
   - biome: 0
-    prefab: {fileID: 6967347023646858695, guid: d39b77f0babb74704b3bf222e0803eb2, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: d39b77f0babb74704b3bf222e0803eb2, type: 3}
+    locationTexts:
+    - '1. Trap Lands: A series of pit and snare traps set to repel infidels'
+    - '2. Narrow Rim: A tiny path ascends the anvil, crumbling, precarious'
+    - '3. Fallen Giant: You find the immense skeleton of a giant in the snow'
+    eventTexts:
+    - "1. Bone Giant: An angry Hasgarian bursts from the snow. \u201CBe gone!\u201D"
+    - '2. An Eerie Song: Ghosts sing on the wind, ensorceling travelers'
+    - '3. Echoes: The shades of ancient battles are here... and angry ghosts'
   - biome: 1
-    prefab: {fileID: 6967347023646858695, guid: f67d58d69bf1a41099bd7f005465ef6d, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: f67d58d69bf1a41099bd7f005465ef6d, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 2
-    prefab: {fileID: 6967347023646858695, guid: 8574321a7304d4579bbe6b7fa5bf653b, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: 8574321a7304d4579bbe6b7fa5bf653b, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 3
-    prefab: {fileID: 6967347023646858695, guid: 2c825919b8ce64d11a0525c604589a26, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: 2c825919b8ce64d11a0525c604589a26, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 4
-    prefab: {fileID: 6967347023646858695, guid: 1a7434346dd344d27a3fdf13c4d6ac60, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: 1a7434346dd344d27a3fdf13c4d6ac60, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 5
-    prefab: {fileID: 6967347023646858695, guid: 127cdd2429bab414aad2123c6ece6799, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: 127cdd2429bab414aad2123c6ece6799, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 6
-    prefab: {fileID: 6967347023646858695, guid: 93f3bd5b6d4974dc48e19cd6baf50b63, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: 93f3bd5b6d4974dc48e19cd6baf50b63, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 7
-    prefab: {fileID: 6967347023646858695, guid: 29375c95ad534431e9dc77aaaf633f7c, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: 29375c95ad534431e9dc77aaaf633f7c, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 8
-    prefab: {fileID: 6967347023646858695, guid: 96a76d99f35204a3aa052e9e59892168, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: 96a76d99f35204a3aa052e9e59892168, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 9
-    prefab: {fileID: 6967347023646858695, guid: acf8ce91285274b0ca4081b386962c32, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: acf8ce91285274b0ca4081b386962c32, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 10
-    prefab: {fileID: 6967347023646858695, guid: 29317d71309a441bda3fafbb3c01c3dd, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: 29317d71309a441bda3fafbb3c01c3dd, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 11
-    prefab: {fileID: 6967347023646858695, guid: 32c446201015140988c87faeaf743ade, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: 32c446201015140988c87faeaf743ade, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 12
-    prefab: {fileID: 6967347023646858695, guid: 7a626404f4ba24fe5b3c88a93f03c289, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: 7a626404f4ba24fe5b3c88a93f03c289, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 13
-    prefab: {fileID: 6967347023646858695, guid: f584a174647eb4b3eb9cfc596c7140ae, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: f584a174647eb4b3eb9cfc596c7140ae, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 14
-    prefab: {fileID: 6967347023646858695, guid: b09ca8ce14c00451d864e782f13e7841, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: b09ca8ce14c00451d864e782f13e7841, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 15
-    prefab: {fileID: 6967347023646858695, guid: c58882d28cec045da929d2e222213d87, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: c58882d28cec045da929d2e222213d87, type: 3}
+    locationTexts: []
+    eventTexts: []
   - biome: 16
-    prefab: {fileID: 6967347023646858695, guid: d4825752c51f2442db7595a26563ab92, type: 3}
+    visualPrefab: {fileID: 6967347023646858695, guid: d4825752c51f2442db7595a26563ab92, type: 3}
+    locationTexts: []
+    eventTexts: []
