@@ -41,12 +41,12 @@ public class PartyCursorMovement : MonoBehaviour
         RandomEncounterManager.Instance.OnEnterHex(currentCell);
     }
 
-bool AreNeighbors(HexCell a, HexCell b)
-{
-    int ax = a.q, az = a.r, ay = -ax - az;
-    int bx = b.q, bz = b.r, by = -bx - bz;
+    bool AreNeighbors(HexCell a, HexCell b)
+    {
+        int ax = a.q, az = a.r, ay = -ax - az;
+        int bx = b.q, bz = b.r, by = -bx - bz;
 
-    return Mathf.Abs(bx - ax) + Mathf.Abs(by - ay) + Mathf.Abs(bz - az) == 2;
-}
+        return Mathf.Abs(bx - ax) + Mathf.Abs(by - ay) + Mathf.Abs(bz - az) == 2;
+    }
 
-        }
+            }

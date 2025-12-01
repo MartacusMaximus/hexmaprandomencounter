@@ -16,74 +16,401 @@ MonoBehaviour:
   - biome: 0
     visualPrefab: {fileID: 6967347023646858695, guid: d39b77f0babb74704b3bf222e0803eb2, type: 3}
     locationTexts:
-    - '1. Trap Lands: A series of pit and snare traps set to repel infidels'
-    - '2. Narrow Rim: A tiny path ascends the anvil, crumbling, precarious'
-    - '3. Fallen Giant: You find the immense skeleton of a giant in the snow'
+    - 'Grinder: Soil gives way to immense cogs and wheels, turning'
+    - 'Ore Field: A jumble of immense boulders and slag'
+    - 'Canyonlands: The land here has been worn to winding gorges'
+    - 'Rust River: A deep, winding river is dark red with decades of rust'
+    - 'Waterfall: You find a massive waterfall, vertical, crescent shaped'
+    - 'Elder Tree: Some pines have survived to immense age'
+    - 'Cliffside Way: A precarious stone path on a winding cliff side'
+    - 'Canisters: Huge tanks of pressurized gas lying around'
+    - 'Haven: A bunker-like building, proof against the machines'
+    - 'Control Platform: You find a round disc, levers and controls nearby'
     eventTexts:
-    - "1. Bone Giant: An angry Hasgarian bursts from the snow. \u201CBe gone!\u201D"
-    - '2. An Eerie Song: Ghosts sing on the wind, ensorceling travelers'
-    - '3. Echoes: The shades of ancient battles are here... and angry ghosts'
+    - 'Meshing of Teeth: 2D4 Clockworks emerge from the dirt, enraged'
+    - '2. Madman: A cannibal madman who abides no visitors'
+    - "3. Hasgar\u2019s Salvage: Cruel giants labor to move an immense wheel"
+    - '4. Crumble: Reddish rocks slide down the mountain!'
+    - '5. Cliffspear: One cunning cliff giant hunts the heroes'
+    - '6. Lightning Jump: A device using lightning to travel, unstable, weird'
+    - '7. Hybrid: A dire wolf, enmeshed with metal and gears, prowls'
+    - '8. Lost: Escaped prisoners of Hasgar giants wander aimlessly'
+    - '9. Lying Around: A broken cart with equipment and treasure'
+    - '10. Researcher: A white-bearded dwarf is studying the clockworks'
   - biome: 1
     visualPrefab: {fileID: 6967347023646858695, guid: f67d58d69bf1a41099bd7f005465ef6d, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - 'Fae Glade: Odd magic makes for circles and confusion... no way out?'
+    - 'Deep Tangle: The woods here are so thick, they are barely passable'
+    - 'Rootrock: A mixture of massive roots and square stones'
+    - 'Towering Pines: Flat ground with sparse trees... an unnerving scene'
+    - 'Crumbled Ruins: The curved pillars and cobble stairs of elven temples'
+    - 'Elven Road: A smooth-stone causeway, vulnerable from all sides'
+    - 'Boulder Glen: A colossal granite boulder dominates a clearing'
+    - 'Hillock: A small, pleasant rise of grassy soil and good views'
+    - 'Aspen Grove: Magic whispers in golden leaves... forest song'
+    - 'Mossrock Spring: Pristine water bubbles up from a frosty stone fissure'
+    eventTexts:
+    - 'Ogre Incursion: A group of 2D4 Ogre warriors is wreaking havoc'
+    - 'Dragonkin Roost: You stumble on a large group of 4d12 dragonlings'
+    - 'A Mad Chopper: The fae have driven a woodsman mad for blood'
+    - 'Duel: Two elven knights square off, set to settle some dire feud'
+    - 'Patrol: Elf spearmen walk, securing the road, dour faces'
+    - 'Bleeding Tree: An elder oak is corrupted with black ichor from below'
+    - 'Trebuchet: A pitched battle with armored ogres and elf artillery'
+    - 'Sunlight Lance: You find an heirloom lance, perched on a ritual stone'
+    - 'King''s Day Column: a host of jousters are heading to King''s Field'
+    - 'Faerie Flow: You encounter a cloud of faerie folk, drifting along'
   - biome: 2
     visualPrefab: {fileID: 6967347023646858695, guid: 8574321a7304d4579bbe6b7fa5bf653b, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - '1. Wicker Traps: Huge woven stick-traps ambush our heroes'
+    - "2. Sinking Muck: What\u2019s worse? Sinking muck or attacking frogs?"
+    - '3. Marrowwood: Trees of fish bone, brambles of antler... hell'
+    - '4. Trash Field: A landscape of detritus discarded by the frog empire'
+    - '5. Hanging Garden: A weird scene of horticulture... mostly edible moss'
+    - '6. Cobbles: The roads of frog folk are soft, but workable'
+    - '7. Frog Village: You find a collection of thatch huts and long houses'
+    - '8. Stilt Huts: These fishing huts stand 10 feet above the swamp'
+    - '9. Temple: A stepped pyramid of mushy stone... chanting within'
+    - '10. Ziggurat: Masterful, complex, immense pyramids of stone and alloy'
+    eventTexts:
+    - '1. Hunted: Our heroes are relentlessly pursued by frog killers'
+    - 'Border Guard: A threesome of frogs in heavy armor stop the travelers'
+    - '3. Priests of Exodur: Robed frogs worship the stars, seeking sacrifices'
+    - '4. Swarm: You stumble into a massive cloud of biting insects'
+    - '5. For the Emperor: Champions parade toward Gulglac'
+    - '6. Heads and Hearts: A day of sacrifice... heads and hearts are taken'
+    - '7. The Games: Massive crowds gather to watch amphibians play ball'
+    - 'Tadpoling: The greatest day in frogdom is unfolding... eggs everywhere'
+    - 'An Invitation: A strange frog, a scholar, invites heroes to the palace'
+    - '10. A Day for Glug: Frogs set down their arms, celebrating with drink'
   - biome: 3
     visualPrefab: {fileID: 6967347023646858695, guid: 2c825919b8ce64d11a0525c604589a26, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - '1. Bleeding Spur: The huge root of a bleeding tree, breaking the bedrock'
+    - '2. Sop Gulch: This area is thick with black mud and rotten trees'
+    - '3. Endless Deadfall: Many trees have fallen here, forming a maze'
+    - '4. Trap Network: The trees are rigged with snares and trip wires'
+    - '5. Hollows: Deep ravines hide shadowy glades that never see sun'
+    - '6. Maze of Pools: Ponds and deep lakes dot the area'
+    - '7. Grove Circle: A clearing, ringed by identical pines, an odd scene'
+    - '8. Mud Meadow: This wide, clear area has soft peat as its floor'
+    - '9. Tower Tree: One titanic oak shades all below, trunk as wide as a house'
+    - '10. Goodly Hut: You find a small, welcoming hut in the gloom'
+    eventTexts:
+    - '1. Stalac Stone Summoned: A cruel Stalac Stone rises from the mud'
+    - 'Hungry Goblins: A huge pack of rat-goblins swarm the woods'
+    - '3. Mushrooms on Fire: A fire has broken out, fungus folk are everywhere'
+    - '4. Blighted: The black water is congealing, taking on a higher form'
+    - '5. Chained Feeders: Wretched blood-drinkers chained up, left to rot'
+    - '6. Shaman Seance: A goblin wizard communes with ancient ghosts'
+    - '7. Bats! Bats!: More bats than one would care to imagine... feeding'
+    - "8. The Sink: Suddenly, the ground sags and drops ten feet! What\u2019s below?"
+    - 'A Lost Lantern: A Nightstalker, confused and almost dead, wanders'
+    - '10. Pilgrim Ghost: A specter wanders, heading for a long-ruined abbey'
   - biome: 4
     visualPrefab: {fileID: 6967347023646858695, guid: 1a7434346dd344d27a3fdf13c4d6ac60, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    eventTexts:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
   - biome: 5
     visualPrefab: {fileID: 6967347023646858695, guid: 127cdd2429bab414aad2123c6ece6799, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    eventTexts:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
   - biome: 6
     visualPrefab: {fileID: 6967347023646858695, guid: 93f3bd5b6d4974dc48e19cd6baf50b63, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - '1. Raider Camp: Hardened orcs take a brief respite here... fire and ale'
+    - '2. Sliding Dunes: A sea of soft, difficult sand hills and no clear way out'
+    - '3. Cracklebeds: This hardpan is expansive, but pocked with deep cracks'
+    - "4. Wall Ruin: You find a huge, crumbling remnant of the City\u2019s Outer
+      Wall"
+    - '5. Maze Canyon: Rare flash floods have carved a deep, narrow labyrinth'
+    - "6. Ovenrock: The heat here is unbearable, cooking one\u2019s brain with scent"
+    - '7. Dusty Plain: You find a vast, peaceful land of low hills and perfumed flowers'
+    - '8. Wicker Village: A small settlement is perched on a red cliffside'
+    - '9. Yellow Cliffs: Immense vertical drops accent this area, navigation slow'
+    - '10. Elder Ruin: You find a ruin of the orc forebears... circular shapes'
+    eventTexts:
+    - '1. Hot Pursuit: A large team of orcs detects and hunts you... they are fast'
+    - '2. Sandstriders: Lizard riders, loyal to no one, appear from nowhere'
+    - '3. Trap Door Attack: A huge desert spider erupts from a trap door hatch'
+    - '4. Sandstorm: A great sourscented red cloud of doom sweeps over everything'
+    - '5. Long March: Two huge columns of orc soldiers head north, chanting'
+    - '6. Eerie Silence: You find a quiet in this wasteland... almost artificial'
+    - '7. An Orcish Funeral: Mighty warriors gather to honor a fallen captain'
+    - '8. Stars Align: The desert night reveals a strange conjunction'
+    - '9. Hooded Prophet: A barely-alive priest appears, telling of orc magic'
+    - '10. Orc Mother: You meet an orc matron, peaceful, sad, with council'
   - biome: 7
     visualPrefab: {fileID: 6967347023646858695, guid: 29375c95ad534431e9dc77aaaf633f7c, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - '1. Rocky Marsh: Mucky waters broken by odd boulders here and there'
+    - '2. Narrows: A pinch point of steep or sandy shores'
+    - '3. Tangled Reeds: Tall grasses and cattails rise from weed-cluttered water'
+    - '4. Thrashing Waves: Wind or currents create chaotic, crashing water'
+    - '5. Waterfall: A rocky ledge hosts a cascade of rushing water'
+    - '6. Heavy Current: By slope or drainage, the water is moving fast'
+    - '7. Mud: This area is packed with impassable mud just below the surface'
+    - '8. Calm Stretch: You happen on a serene stretch of water'
+    - '9. Calm Stretch: You happen on a serene stretch of water'
+    - '10. Pleasant Shallows: This area demands slower travel, but easy to swim'
+    eventTexts:
+    - '1. Water Beast: Some huge aquatic monster is in this area, lurking'
+    - 'Frog-Kin Cadre: Frog folk attack from below the surface'
+    - '3. Snag: Your craft is hung up on the bottom... tangled in sticks'
+    - '4. Off Course: You suddenly realize you are miles from the route'
+    - '5. Flotsam: Debris from a broken boat or flood clutters the water here'
+    - '6. Fog Bank: Impenetrable fog descends, making travel almost impossible'
+    - '7. Smooth Sailing: An easy bit of progress'
+    - '8. Smooth Sailing: An easy bit of progress'
+    - 'Great Fishing: The waters are teeming with all kinds of edible fishes.'
+    - '10. A Glimmer Below: A glittering treasure is spotted in the water'
   - biome: 8
     visualPrefab: {fileID: 6967347023646858695, guid: 96a76d99f35204a3aa052e9e59892168, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - '1. Open Water: A vast, featureless horizon of blue'
+    - '2. Open Water: A vast, featureless horizon of blue'
+    - '3. Open Water: A vast, featureless horizon of blue'
+    - '4. Tiny Island: Too small to be mapped, a rocky or sandy outcrop'
+    - "5. Precarious Shallows: Larger ships can\u2019t traverse these areas"
+    - "6. Precarious Shallows: Larger ships can\u2019t traverse these areas"
+    - '7. Deep Water: This is a place so deep an eerie blackness meets the eye'
+    - '8. Iron Buoy: A huge rusted sphere is chained to some distant reef below'
+    - '9. Docking Pylon: A heavy timber is anchored, with an iron cleat at top'
+    - '10. Sheltered Cove: A windless shelter perfect for mooring a ship'
+    eventTexts:
+    - '1. A Mountainous Swell: One colossal wave approaches... a rogue'
+    - '2. Head Winds: Your progress is all but halted by cold gusts'
+    - '3. Tempest: A wild, rampaging storm throws your journey into chaos'
+    - '4. Rocks Ahoy: Your vessel is headed for a group of uncharted daggers'
+    - '5. Merfolk Attack: Fish men leap from the waves! Death to air breathers!'
+    - '6. Song of the Sea: A haunting song draws you and crew to a mystery'
+    - '7. Smooth Sailing: Goodly waves, decent wind, a fine day'
+    - '8. Smooth Sailing: Goodly waves, decent wind, a fine day'
+    - '9. Smooth Sailing: Goodly waves, decent wind, a fine day'
+    - '10. Tail Winds: Your journey is hastened to its end immediately'
   - biome: 9
     visualPrefab: {fileID: 6967347023646858695, guid: acf8ce91285274b0ca4081b386962c32, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - '1. Shorewalk: A pathway of cedar slats, following the scenic waterfront'
+    - '2. Circle Way: One main belt-street circles the island, lined with houses'
+    - '3. Underoots: Barely usable tunnels tangled with heavy, wet roots'
+    - "4. Well Shafts: Slick, watery shafts that reach the island\u2019s surface
+      above"
+    - '5. Vineyards: White berries here are specially grown for imperial hotch'
+    - '6. Sand Gardens: A flawless, manicured park for contemplation'
+    - '7. Temple of Haglacura: A mighty 5-tiered tower to the many frog gods'
+    - '8. Palace Rise: A sloped square earthwork serves to defend the palace'
+    - '9. Lion Courts: Surrounding the palace are walled topiary gardens'
+    - '10. The Red Pagoda: The many-tiered castle of Emperor Croakokame'
+    eventTexts:
+    - '1. War Band: A group of frog slayers has gathered, rallying for a raid'
+    - '2. Wandering Sword: A hovering odak sword hunts for blood, haunted'
+    - '3. Monstrosity: Some huge, horrible thing roams the tunnels, hungry'
+    - '4. Mutation: A huge mutated toad is being moved in a heavy iron cage'
+    - '5. The Barges Return: A flotilla of froggish boats returns from fishing'
+    - '6. Ever Deeper: A floor gives way, tumbling into a lower, deeper place'
+    - '7. Treachery in Shadow: A meeting of dissidents is brewing... whispers'
+    - 'The Games: The island revels for a week of bloody combat sport'
+    - '9. Rebels: You are surrounded by frog-kin rebels, poised to strike'
+    - '10. Guba Festival: Frog folk set aside violent ambition to honor the moon'
   - biome: 10
     visualPrefab: {fileID: 6967347023646858695, guid: 29317d71309a441bda3fafbb3c01c3dd, type: 3}
     locationTexts: []
-    eventTexts: []
+    eventTexts:
+    - 
+    - 
+    - '5. Stranded Ship: You find a three-mast ship ice-locked, scant crew'
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
   - biome: 11
     visualPrefab: {fileID: 6967347023646858695, guid: 32c446201015140988c87faeaf743ade, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - '1. Perilous Snowfield: A steep, unstable expanse of crusted snow'
+    - '2. Jagged Boulders: These dark rocks pierce the snow at wild angles'
+    - '3. Boxed In: Suddenly confined in a box canyon with sheer walls'
+    - '4. Stonewatch: Immense carved heads bar the way, one toppled'
+    - '5. Mining Ledge: A precarious cliff, cut to house supplies and equipment'
+    - '6. Rail Camp: Carts filled with ore and a junction of iron rails'
+    - '7. Giant Ruins: Huge curved shapes of stone reveal oversized halls'
+    - '8. Stout Hall: A stone doorway accesses a dwarven ruin, town, or fort'
+    - '9. Crossroads: A wide meadow of snow with crow cages and road signs'
+    - '10. Causeway: The work of ancient dwarves: a wide, flat road for miles'
+    eventTexts:
+    - '1. Varinax Hunts: The white dragon of legend swoops in the clouds'
+    - '2. Snow Orcs: A team of facepainted 1d4 frost giants drag stout prisoners'
+    - '3. Avalanche: A mass of snow and rock crashes down, unstoppable!'
+    - '4. Strato Fall: A mass of super-cold air descends... solid ice and death'
+    - '5. The Great Hunt: A caravan of ghosts prowls the starry night'
+    - "6. Ruin Revealed: Moonlight shows the secret entrance of a giant\u2019s tomb"
+    - '7. Yeti Folk Encounter: Giant ice-apes pierced by iron bolts... enraged'
+    - '8. Road Team: Dwarven sledders working to clear a path for Harnmoor'
+    - '9. Waiting for Lars: A stout folk welcomes you, asking about Lars'
+    - '10. One Great Haul: An iron wagon carries riches, escort is requested'
   - biome: 12
     visualPrefab: {fileID: 6967347023646858695, guid: 7a626404f4ba24fe5b3c88a93f03c289, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - '1. Scree Field: A mess of broken rock sliding downhill, no way around'
+    - '2. Boulder Field: Round erratics and broken bedrock, each house-sized'
+    - '3. Tanglewood: A dense, dark forest of brambles and deadfall'
+    - '4. Massive Outcrop: A single, immense edifice of solid rock'
+    - '5. Quarry: Sheer edges, leaning slabs, and a bottomless pond'
+    - '6. Mining Camp: Dwarves work steadily to extract ore and guard spoils'
+    - '7. Ledge Road: A precarious stone path on a winding cliff side'
+    - '8. Overlook: A mighty precipice for eagles and cloud-mist'
+    - '9. Yak Farm: High grassy plains with longhorns and friendly farmers'
+    - '10. Golden Meadow: A sunlit haven overlooking the next rolled location'
+    eventTexts:
+    - '1. Rock Giant Attack: Angry over dwarven plunder, huge, ambushing'
+    - '2. Marrow Bear Disturbed: A lair stumbled upon'
+    - "3. Mad Hermit\u2019s Hut: A cannibal madman who abides no visitors"
+    - '4. Thunderstorms: Lose your way, find no rest, make no progress'
+    - '5. Harnmoor Zealots: A lowland village is being massacred'
+    - '6. Battle Joined: Lowlanders and Harnmoors are in a pitched fight'
+    - '7. Paranoid Miners: This group thinks you are trying to steal their claim'
+    - '8. Refugees: A few families are trying to flee toward Gardenburrow'
+    - '9. A Lost Cache: A broken cart with equipment and treasure'
+    - '10. Diamond Days: A festival of bounty, brimming with glad faces'
   - biome: 13
     visualPrefab: {fileID: 6967347023646858695, guid: f584a174647eb4b3eb9cfc596c7140ae, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - '1. Calving Ice: A cliff of cracking ice is releasing massive slabs'
+    - '2. The Dens: A series of caverns leads to the wolf maze below'
+    - '3. Foggy Shore: You hear a freezing sea, but the fog is too thick to see'
+    - '4. Snowfield: A vast, featureless plain of deep powder'
+    - '5. Ice Bridge: Here, a precarious strand of ice crosses a chasm'
+    - '6. Fallen Peaks: Decades of snow cover the broken mountains'
+    - '7. Ruined Village: A northman town, abandoned and snow-covered'
+    - '8. Shipping Lane: A water route through the ice, big enough for a ship'
+    - '9. Frozen Pines: A rare and peaceful forest of snow-heavy pine trees'
+    - '10. Skandahar Henge: A mysterious ring of standing stones, oddly warm'
+    eventTexts:
+    - '1. Pack Hunters: A group of 2D12 ice wolves are seeking prey'
+    - 'Howling Elder: An elder wolf, adorned by jewels, casts a ritual'
+    - '3. Wind Blast: A sudden, terrible gale scatters allies and equipment'
+    - '4. Butcher: A snow troll is hacking up a huge wolf carcass, grunting'
+    - '5. Trouble: Caravaners are carousing and fighting, making a mess'
+    - '6. Snow-Fog: A frigid fog bank covers the area, with ghostly figures'
+    - '7. Spearmen: A group of fur-clad hunters are working the area, desperate'
+    - "8. Shouldn\u2019t Be Here: An odd area... roll a HEX from any other region"
+    - 'Hermit: You find a tiny cabin and a half-mad loner. She is cooking'
+    - '10. A Monolith Appears: A featureless black stone materializes suddenly'
   - biome: 14
     visualPrefab: {fileID: 6967347023646858695, guid: b09ca8ce14c00451d864e782f13e7841, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - '1. Foundation District: Pillars of white granite support the city'
+    - '2. The Engines: Silver clockworks keep city lights lit'
+    - '3. The Maze: A confusing array of tunnels offers water access'
+    - "4. Culinary Quarter: The world\u2019s greatest array of foods and chefs"
+    - "5. Alderman\u2019s Square: A huge gathering space for all the city\u2019s
+      people"
+    - '6. Academy of Ordo: This silver-domed hall teaches magic to many'
+    - '7. Sea Rampart: The waves are held back by a series of nested walls'
+    - '8. Silver Tower: The royal court rules from this impossible height'
+    - '9. Sky Bridge: A narrow arching walkway far above the city'
+    - '10. Observatory: This wonder of the elves measures stars and souls'
+    eventTexts:
+    - '1. Fire on the Docks: Arson has hit the seaside area of town'
+    - '2. Assassin: A single smoke-cloaked killer is on a rampage'
+    - '3. Dragon Festival: Chaotic firecrackers, puppets, and revelry abound'
+    - '4. Oracle of Sparrows: The sightless seer of Thryn wanders the city'
+    - '5. Crew Call: Ships at port here seek new crew, offering high pay'
+    - "6. Agu Harvest: The intoxicating \u2018prophet\u2019s root\u2019 is abundant"
+    - '7. Marketplaces: By royal decree, all merchants report to sell'
+    - '8. Wild Elves: A detachment of wood elves has arrived to negotiate'
+    - '9. Royal Tribute: Lords form far and wide arrive to hail Thryn'
+    - '10. A Summons: Our heroes are summoned to The Silver Tower'
   - biome: 15
     visualPrefab: {fileID: 6967347023646858695, guid: c58882d28cec045da929d2e222213d87, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - '1. Magma Pools: A land of heat and flowing lava in random shapes'
+    - '2. Glass Lands: Razor sharp crags break the land here... fast-cooled'
+    - '3. Smoke Stacks: Pinnacles choked with black clouds and glowing coal'
+    - '4. Gravel Slope: A huge field of fine gravel, all sliding downhill'
+    - '5. Spires: These towers of basalt create a maze, offer shelter'
+    - '6. Burnt Forest: Pyroclasms have scorched an entire pine forest to char'
+    - '7. Dead Village: A small town has been burned, but stands... ghostly'
+    - '8. Steam River: A still-flowing creek is boiling in places'
+    - '9. Frontier Camp: A timber fort at the edge of the blast zone'
+    - '10. Gem Tunnel: Cooled lava reveals a deep passage and glittering jewels'
+    eventTexts:
+    - '1. Tombwalkers: Coal-skinned elementals drag iron coffins on chains'
+    - "2. Lord Royce\u2019s Scouts: A group of fledgling vampires, scouting the area"
+    - '3. Hound Ambush: Undead wolves leap from the smoke... ravagers'
+    - '4. Fiery Chase: Flame kin have erupted, pursuing a clumsy survey team'
+    - '5. The Changing: You come upon a lycanthrope or vampire mid-change'
+    - '6. Wolves in the Smoke: A team of elder werewolves, hunting vampires'
+    - "7. Doorway: The fire swirls into a portal... accessing Volcan\u2019s depths"
+    - '8. Eruption: A massive gout of lava showers from above... earthquake!'
+    - "9. Haylie\u2019s Convoy: Elven crystal-hunters make their way along"
+    - '10. The Living Forge: You find a magma elemental, lamenting its work'
   - biome: 16
     visualPrefab: {fileID: 6967347023646858695, guid: d4825752c51f2442db7595a26563ab92, type: 3}
-    locationTexts: []
-    eventTexts: []
+    locationTexts:
+    - '1. Blood Swamp: Red ichor has seeped up from below, forming a bog'
+    - '2. Mass Grave: A long, narrow trench filled with skeletons... grim'
+    - '3. The Old Ones: Thousand-year-old trees and a bare forest floor'
+    - '4. Single Stone: One immense boulder is littered with deadfall here'
+    - '5. Elven Wall Ruin: The huge wall is broken in one narrow area'
+    - '6. Hunting Grounds: Hills and gullies make travel slow. Life is abundant'
+    - "7. Outpost: Ithamel\u2019s guards stand watch for monsters and saboteurs"
+    - '8. Overgrown Road: This road makes travel easy, but is very exposed'
+    - '9. Fern Grove: Rays of sun dance in the curling damp, chest-high growth'
+    - '10. Moose-Rider Camp: A simple bivouac for those who live in nature'
+    eventTexts:
+    - "1. Deadeye Archers: Ithamel\u2019s deadly hunters pursue all outsiders"
+    - 'Rogue Sentinel: A massive animus of wooden armor goes beserk'
+    - '3. An Angry Echo: Ghosts of wronged elves play out revenge and rage'
+    - '4. Treason Cages: Sadistic guards lock elves into crow cages, laughing'
+    - '5. Fire!: A fast-moving wildfire is ripping through the woods'
+    - '6. A Lone Drinker: A solitary vampire wanders, blood-soaked'
+    - '7. Ashtown Refugees: 3 families trying to reach safety, fleeing Volcan'
+    - '8. Shifting Soils: The ground here is sliding into a large cavity below'
+    - 'No Middle Ground: Loyalists and wild elves are in a stand off'
+    - "10. Elayna\u2019s Kin: You meet a cadre of wild elves, curious and friendly"
