@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6991d3198c5ee4272a3d7fcf9248a365, type: 3}
+  m_Name: GeorgosSO
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  characterName: Georgos
+  vigor: 6
+  clarity: 6
+  spirit: 6
+  movedThisTurn: 0
+  flawCount: 0
+  hasCoreAbility: 0
+  deedCount: 0
+  skills: []
+  inventory:
+  - equipment: {fileID: 0}
+  - equipment: {fileID: 11400000, guid: 9e64d0edf2768450785b2ca30ef2e156, type: 2}
+  - equipment: {fileID: 11400000, guid: 90d1b87a16d3b4a009acbe6e9ad75765, type: 2}
+  - equipment: {fileID: 0}
+  - equipment: {fileID: 0}
+  - equipment: {fileID: 0}
+  - equipment: {fileID: 0}
+  - equipment: {fileID: 0}
+  - equipment: {fileID: 0}
