@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6991d3198c5ee4272a3d7fcf9248a365, type: 3}
+  m_Name: DungBeetleKnight
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  cachedPointsLeft: 17
+  characterName: Dung Beetle Knight
+  knightRole: Bulwark
+  isAlive: 1
+  currentStatus: On Expedition
+  vigor: 9
+  clarity: 6
+  spirit: 8
+  movedThisTurn: 0
+  flawCount: 0
+  hasCoreAbility: 0
+  deedCount: 0
+  skills:
+  - skillName: Bladeguard
+    value: 4
+  - skillName: Burial Rites
+    value: 4
+  - skillName: Fort Command
+    value: 3
+  inventory:
+  - equipment: {fileID: 11400000, guid: 9c022ee8cc5e8007d264c3962bc6360e, type: 2}
+  - equipment: {fileID: 11400000, guid: 65b2a023e0f6f23a18d8548a4cf6b9ab, type: 2}
+  - equipment: {fileID: 11400000, guid: 45fa64048c17e478ea153f76259ee924, type: 2}
+  - equipment: {fileID: 11400000, guid: f4c52bb606131b3f4c969ffe811a135f, type: 2}
+  - equipment: {fileID: 11400000, guid: 531e07e0c08fc53a577e1d05feaf9691, type: 2}
+  - equipment: {fileID: 11400000, guid: fae19c5eb707305c94e6a59fa0693836, type: 2}
+  - equipment: {fileID: 11400000, guid: ac61886ef09a43761b6ef07ad6a2178e, type: 2}
+  - equipment: {fileID: 0}
+  - equipment: {fileID: 0}

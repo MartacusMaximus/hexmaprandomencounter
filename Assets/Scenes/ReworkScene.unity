@@ -1166,6 +1166,7 @@ GameObject:
   - component: {fileID: 1110497444}
   - component: {fileID: 1110497446}
   - component: {fileID: 1110497445}
+  - component: {fileID: 1110497447}
   m_Layer: 0
   m_Name: CharacterCreationManager
   m_TagString: Untagged
@@ -1200,7 +1201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ad6f9bcd7cd44770921624a41dd1b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterCreationManager
-  workingCharacter: {fileID: 11400000, guid: eaf388de72e0b4418b3da19e7028d0a5, type: 2}
+  workingCharacter: {fileID: 11400000, guid: 702426e99e78d4eefb15645231d6167f, type: 2}
   pointsLeftText: {fileID: 324308830}
   vigorText: {fileID: 1333281392}
   clarityText: {fileID: 532487114}
@@ -1234,7 +1235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d557f7a004e342868e7093a2036e97d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryGrid
-  character: {fileID: 11400000, guid: eaf388de72e0b4418b3da19e7028d0a5, type: 2}
+  character: {fileID: 11400000, guid: 702426e99e78d4eefb15645231d6167f, type: 2}
   slotButtons:
   - {fileID: 1112595503}
   - {fileID: 496749256}
@@ -1264,11 +1265,32 @@ MonoBehaviour:
   sheetPanel: {fileID: 618538272}
   openButton: {fileID: 284825987}
   closeButton: {fileID: 1307536802}
-  character: {fileID: 11400000, guid: eaf388de72e0b4418b3da19e7028d0a5, type: 2}
+  character: {fileID: 11400000, guid: 702426e99e78d4eefb15645231d6167f, type: 2}
   damageRollButton: {fileID: 1916600352}
   reactionRollButton: {fileID: 129636990}
   reactionVirtueDropdown: {fileID: 999498261}
   skillsListParent: {fileID: 1762385625}
+--- !u!114 &1110497447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110497442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e49c0110fd0cf4a0aa42e8d28a4b514e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReworkPartyWorkbenchController
+  campaignData: {fileID: 11400000, guid: b0a59e5116a5147ddb880ef718b09d86, type: 2}
+  equipmentLibrary: {fileID: 11400000, guid: ddd6424e728d7456db4931e762e797f1, type: 2}
+  creationManager: {fileID: 1110497444}
+  inventoryGrid: {fileID: 1110497445}
+  characterSheetUI: {fileID: 1110497446}
+  skillsPanelManager: {fileID: 1278479006354099118}
+  rootCanvas: {fileID: 347126845}
+  partyButton: {fileID: 1278479006354099119}
+  partyPanelRoot: {fileID: 1278479006354099120}
 --- !u!114 &1112595503 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5348774186631343740, guid: 379ded9281c2f4622b85f677a2de8d46, type: 3}
@@ -1677,6 +1699,10 @@ PrefabInstance:
       value: CharacterSheet
       objectReference: {fileID: 0}
     - target: {fileID: 6169393197833746577, guid: 379ded9281c2f4622b85f677a2de8d46, type: 3}
+      propertyPath: characterData
+      value: 
+      objectReference: {fileID: 11400000, guid: 702426e99e78d4eefb15645231d6167f, type: 2}
+    - target: {fileID: 6169393197833746577, guid: 379ded9281c2f4622b85f677a2de8d46, type: 3}
       propertyPath: creationManager
       value: 
       objectReference: {fileID: 1110497444}
@@ -1685,6 +1711,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 379ded9281c2f4622b85f677a2de8d46, type: 3}
+--- !u!114 &1278479006354099118 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6169393197833746577, guid: 379ded9281c2f4622b85f677a2de8d46, type: 3}
+  m_PrefabInstance: {fileID: 1278479006354099117}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618538272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291c71730756847d893637079e87d8e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+--- !u!114 &1278479006354099119 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8020273214945238977, guid: 379ded9281c2f4622b85f677a2de8d46, type: 3}
+  m_PrefabInstance: {fileID: 1278479006354099117}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!224 &1278479006354099120 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7961798175681969076, guid: 379ded9281c2f4622b85f677a2de8d46, type: 3}
+  m_PrefabInstance: {fileID: 1278479006354099117}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6881246367612750192
 PrefabInstance:
   m_ObjectHideFlags: 0

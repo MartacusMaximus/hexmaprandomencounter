@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 using TMPro;
 
 public class InventorySlotUI : MonoBehaviour,
-    IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
+    IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
 {
     [Header("UI parts")]
     public TextMeshProUGUI tmpNameText;
@@ -89,6 +89,12 @@ public class InventorySlotUI : MonoBehaviour,
         var inst = parentGrid.character.inventory[slotIndex];
         if (inst == null || inst.equipment == null) return; // nothing to drag
 
+        if (PartyWorkbenchDragController.Instance != null &&
+            PartyWorkbenchDragController.Instance.BeginCharacterInventoryDrag(parentGrid, slotIndex, inst, eventData, (transform as RectTransform).rect.size))
+        {
+            return;
+        }
+
         // create simple drag icon (Image + TMP name)
         dragIcon = new GameObject("DragIcon");
         dragIcon.transform.SetParent(rootCanvas.transform, false);
@@ -131,12 +137,24 @@ public class InventorySlotUI : MonoBehaviour,
 
     public void OnDrag(PointerEventData eventData)
     {
+        if (PartyWorkbenchDragController.Instance != null && PartyWorkbenchDragController.Instance.HasActiveDrag)
+        {
+            PartyWorkbenchDragController.Instance.UpdateDrag(eventData);
+            return;
+        }
+
         if (dragIcon == null) return;
         SetDragIconPosition(eventData);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (PartyWorkbenchDragController.Instance != null && PartyWorkbenchDragController.Instance.HasActiveDrag)
+        {
+            PartyWorkbenchDragController.Instance.EndDrag(eventData);
+            return;
+        }
+
         if (dragIcon != null)
         {
             Destroy(dragIcon);
@@ -160,5 +178,15 @@ public class InventorySlotUI : MonoBehaviour,
         RectTransformUtility.ScreenPointToLocalPointInRectangle(
             rootCanvas.transform as RectTransform, eventData.position, eventData.pressEventCamera, out pos);
         dragIconRect.anchoredPosition = pos - pointerOffset;
+    }
+
+    public void OnDrop(PointerEventData eventData)
+    {
+        if (PartyWorkbenchDragController.Instance == null)
+        {
+            return;
+        }
+
+        PartyWorkbenchDragController.Instance.DropOnCharacterSlot(parentGrid, slotIndex);
     }
 }

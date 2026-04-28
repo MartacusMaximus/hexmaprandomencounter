@@ -19,6 +19,8 @@ public class CharacterSheetUI : MonoBehaviour
     public TMP_Dropdown reactionVirtueDropdown;
     public Transform skillsListParent; // if you want clickable skill rows
 
+    public bool IsOpen => sheetPanel != null && sheetPanel.activeSelf;
+
     private void Start()
     {
         openButton.onClick.AddListener(OpenSheet);

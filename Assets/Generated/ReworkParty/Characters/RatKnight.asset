@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6991d3198c5ee4272a3d7fcf9248a365, type: 3}
+  m_Name: RatKnight
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  cachedPointsLeft: 24
+  characterName: Rat Knight
+  knightRole: Scavenger
+  isAlive: 1
+  currentStatus: Available
+  vigor: 7
+  clarity: 9
+  spirit: 7
+  movedThisTurn: 0
+  flawCount: 0
+  hasCoreAbility: 0
+  deedCount: 0
+  skills:
+  - skillName: Court
+    value: 4
+  - skillName: Bloodlines
+    value: 4
+  - skillName: Codex Language
+    value: 3
+  inventory:
+  - equipment: {fileID: 11400000, guid: ac65527e835e6def2858cbf34e60c267, type: 2}
+  - equipment: {fileID: 11400000, guid: f8dbd65325876376bba1b66cc02aee29, type: 2}
+  - equipment: {fileID: 11400000, guid: ba253c19174556b3ad8fb52516aa1333, type: 2}
+  - equipment: {fileID: 11400000, guid: 05b6375f3c6f3b36f4c2f42e8a378121, type: 2}
+  - equipment: {fileID: 11400000, guid: 81d5bb31d54f867187f71d933c335b32, type: 2}
+  - equipment: {fileID: 11400000, guid: c56c7d7a6cd2e5ab9cb5e3e518893006, type: 2}
+  - equipment: {fileID: 0}
+  - equipment: {fileID: 0}
+  - equipment: {fileID: 0}

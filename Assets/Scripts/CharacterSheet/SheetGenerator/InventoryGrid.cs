@@ -35,6 +35,7 @@ public class InventoryGrid : MonoBehaviour
     public Canvas rootCanvas;        // assign your root canvas here (required for drag icon)
     public GraphicRaycaster graphicRaycaster; // assign root canvas GraphicRaycaster
     public EventSystem eventSystem; // assign EventSystem in scene
+    private bool isInitialized;
 
     private void Start()
     {
@@ -64,13 +65,31 @@ public class InventoryGrid : MonoBehaviour
             RefreshSlot(idx);
         }
         // initial chunk detect
+        isInitialized = true;
         CheckAllChunks();
+    }
+
+    public void SetCharacter(CharacterData newCharacter)
+    {
+        character = newCharacter;
+        if (character != null)
+        {
+            character.EnsureInventorySlots();
+        }
+
+        if (!isInitialized)
+        {
+            return;
+        }
+
+        RefreshAllSlots();
     }
 
     public void RefreshAllSlots()
     {
         for (int i = 0; i < slotButtons.Count; i++) RefreshSlot(i);
         CheckAllChunks();
+        Canvas.ForceUpdateCanvases();
     }
 
     public void RefreshSlot(int index)
@@ -89,6 +108,11 @@ public class InventoryGrid : MonoBehaviour
             var text = slotButton.GetComponentInChildren<Text>();
             if (text != null)
                 text.text = inst == null || inst.equipment == null ? "Empty" : inst.equipment.itemName;
+        }
+
+        if (slotButton.transform is RectTransform rectTransform)
+        {
+            LayoutRebuilder.ForceRebuildLayoutImmediate(rectTransform);
         }
     }
 

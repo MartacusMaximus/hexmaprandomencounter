@@ -3,6 +3,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class SkillsPanelManager : MonoBehaviour
 {
@@ -49,6 +52,11 @@ public class SkillsPanelManager : MonoBehaviour
 
     public void RefreshAllSlots()
     {
+        if (characterData == null)
+        {
+            return;
+        }
+
         for (int i = 0; i < slotControllers.Count; i++)
         {
             SkillEntry s = (i < characterData.skills.Count) ? characterData.skills[i] : null;
@@ -59,6 +67,14 @@ public class SkillsPanelManager : MonoBehaviour
             if (parentRect != null)
                 LayoutRebuilder.ForceRebuildLayoutImmediate(parentRect);
         }
+
+        Canvas.ForceUpdateCanvases();
+    }
+
+    public void SetCharacterData(CharacterData character)
+    {
+        characterData = character;
+        RefreshAllSlots();
     }
 
     public void OnAddSkillClicked()
@@ -82,6 +98,8 @@ public class SkillsPanelManager : MonoBehaviour
             LayoutRebuilder.ForceRebuildLayoutImmediate(parent as RectTransform);
 
         newSkillNameInput.text = "";
+        PersistSkillState();
+        UIRefreshBus.RequestRefresh();
         Debug.Log($"Skills: added '{name}'.");
     }
     // change skill value at a slot index (slot index maps to list index)
@@ -131,6 +149,8 @@ public class SkillsPanelManager : MonoBehaviour
 
         creationManager.RecalculatePointsFromCharacterData();
         RefreshAllSlots();
+        PersistSkillState();
+        UIRefreshBus.RequestRefresh();
     }
 
     public void RollSkill(int slotIndex)
@@ -140,5 +160,22 @@ public class SkillsPanelManager : MonoBehaviour
         Debug.Log($"SkillsPanelManager: Rolling skill '{skill.skillName}' (value {skill.value})");
         // Use CharacterCreationManager's dice roller helper
         creationManager.RollSkillByValue(skill.skillName, skill.value);
+    }
+
+    private void PersistSkillState()
+    {
+#if UNITY_EDITOR
+        if (characterData != null)
+        {
+            EditorUtility.SetDirty(characterData);
+        }
+
+        if (creationManager != null)
+        {
+            EditorUtility.SetDirty(creationManager);
+        }
+
+        AssetDatabase.SaveAssets();
+#endif
     }
 }

@@ -5,6 +5,7 @@ using System;
 [Serializable]
 public class PartyData : IInventoryContainer
 {
+    public string partyName = "Active Expedition";
     public List<CharacterData> members = new();
     public List<EquipmentInstance> partyInventory = new();
 
@@ -23,4 +24,3 @@ public class PartyData : IInventoryContainer
         return partyInventory.Remove(item);
     }
 }
-

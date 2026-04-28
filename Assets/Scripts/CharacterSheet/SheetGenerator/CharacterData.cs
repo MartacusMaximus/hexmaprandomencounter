@@ -9,6 +9,9 @@ public class CharacterData : ScriptableObject
     public int cachedPointsLeft;
 
     public string characterName = "New Character";
+    public string knightRole = "Knight";
+    public bool isAlive = true;
+    public string currentStatus = "Available";
     public int vigor = 6;
     public int clarity = 6;
     public int spirit = 6;

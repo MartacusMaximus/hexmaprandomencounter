@@ -137,6 +137,36 @@ public class EquipmentCatalogEditModeTests
         Assert.That(assets.All(asset => ((IEnumerable<string>)GetField(asset, "sourceTags")).Contains("Crown")), Is.True);
     }
 
+    [Test]
+    public void ReworkPartyWorkbenchAssetsExistWithSampleCampaignData()
+    {
+        const string libraryPath = "Assets/Generated/ReworkParty/ReworkEquipmentLibrary.asset";
+        const string campaignPath = "Assets/Generated/ReworkParty/ReworkCampaign.asset";
+
+        var library = AssetDatabase.LoadMainAssetAtPath(libraryPath) as ScriptableObject;
+        var campaign = AssetDatabase.LoadMainAssetAtPath(campaignPath) as ScriptableObject;
+
+        Assert.That(library, Is.Not.Null, $"Expected generated equipment library at {libraryPath}");
+        Assert.That(campaign, Is.Not.Null, $"Expected generated campaign at {campaignPath}");
+
+        var libraryItems = (IEnumerable)GetField(library, "items");
+        Assert.That(libraryItems.Cast<object>().Count(), Is.EqualTo(62));
+
+        var allCharacters = ((IEnumerable)GetField(campaign, "allCharacters")).Cast<object>().ToList();
+        Assert.That(allCharacters.Count, Is.EqualTo(4));
+        Assert.That(allCharacters.Select(character => (string)GetField(character, "characterName")), Is.EquivalentTo(new[]
+        {
+            "Dung Beetle Knight",
+            "Pigeon Knight",
+            "Mountain Knight",
+            "Rat Knight"
+        }));
+
+        var activeParty = GetField(campaign, "activeParty");
+        var partyMembers = ((IEnumerable)GetField(activeParty, "members")).Cast<object>().ToList();
+        Assert.That(partyMembers.Count, Is.EqualTo(2));
+    }
+
     private static ScriptableObject CreateScriptableObject(string typeName)
     {
         return ScriptableObject.CreateInstance(RuntimeType(typeName));
