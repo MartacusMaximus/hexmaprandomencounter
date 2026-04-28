@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
+  m_Name: Kings_Plate
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
+  itemName: "King's Plate"
+  pointCost: 3
+  rarity: "rare"
+  displayCategory: "armor"
+  rulesText: "Lesser undead cannot touch this plate armor."
+  damageDiceNotation: ""
+  armorValue: 5
+  costsCreationPoints: 1
+  leftHalf: 3
+  rightHalf: 0
+  topHalf: 0
+  bottomHalf: 0
+  centerChunk: 3
+  traits:
+  - {fileID: 11400000, guid: 8c2ce63e78f0e4e1cb361ffd9ef7585e, type: 2}
+  sourceTags:
+  - CrownAndSkull
+  - Crown
+  - TempleCatalog
+  ability: {fileID: 11400000, guid: 526838214d11deb8e19d2299fd44605c, type: 2}

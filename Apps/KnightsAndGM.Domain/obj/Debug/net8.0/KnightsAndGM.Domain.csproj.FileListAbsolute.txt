@@ -1,0 +1,12 @@
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Domain/bin/Debug/net8.0/KnightsAndGM.Domain.deps.json
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Domain/bin/Debug/net8.0/KnightsAndGM.Domain.dll
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Domain/bin/Debug/net8.0/KnightsAndGM.Domain.pdb
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Domain/obj/Debug/net8.0/KnightsAndGM.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Domain/obj/Debug/net8.0/KnightsAndGM.Domain.AssemblyInfoInputs.cache
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Domain/obj/Debug/net8.0/KnightsAndGM.Domain.AssemblyInfo.cs
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Domain/obj/Debug/net8.0/KnightsAndGM.Domain.csproj.CoreCompileInputs.cache
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Domain/obj/Debug/net8.0/KnightsAndGM.Domain.sourcelink.json
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Domain/obj/Debug/net8.0/KnightsAndGM.Domain.dll
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Domain/obj/Debug/net8.0/refint/KnightsAndGM.Domain.dll
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Domain/obj/Debug/net8.0/KnightsAndGM.Domain.pdb
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Domain/obj/Debug/net8.0/ref/KnightsAndGM.Domain.dll

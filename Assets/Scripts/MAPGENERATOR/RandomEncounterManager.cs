@@ -20,7 +20,7 @@ public class RandomEncounterManager : MonoBehaviour
     {
         mythHexes.Clear();
 
-        var allCells = new List<HexCell>(FindObjectsOfType<HexCell>());
+        var allCells = new List<HexCell>(FindObjectsByType<HexCell>(FindObjectsSortMode.None));
         if (allCells.Count == 0) return;
         if (mythPool == null || mythPool.Count == 0) return;
 
@@ -73,9 +73,7 @@ public class RandomEncounterManager : MonoBehaviour
 
     int CubeDistance(HexCell a, HexCell b)
     {
-        int ax = a.q, az = a.r, ay = -ax - az;
-        int bx = b.q, bz = b.r, by = -bx - bz;
-        return (Mathf.Abs(ax - bx) + Mathf.Abs(ay - by) + Mathf.Abs(az - bz)) / 2;
+        return a.Coordinate.DistanceTo(b.Coordinate);
     }
 
     HexCell GetNearestMyth(HexCell from)
@@ -121,7 +119,7 @@ public class RandomEncounterManager : MonoBehaviour
             case 6:
                 if (cell.landmarkPrefab != null)
                 {
-                    Debug.Log($"Landmark encounter at ({cell.q},{cell.r})");
+                    Debug.Log($"Landmark encounter at {cell.Coordinate}");
                 }
                 else Debug.Log("No landmark here.");
                 break;
@@ -164,7 +162,7 @@ public class RandomEncounterManager : MonoBehaviour
             evt = entry.eventTexts[Random.Range(0, entry.eventTexts.Count)];
 
         Debug.Log(
-            $"Biome Encounter ({cell.biome}) @ {cell.q},{cell.r}: \n" +
+            $"Biome Encounter ({cell.biome}) @ {cell.Coordinate}: \n" +
             $"Location: {loc}\nEvent: {evt}"
         );
     }

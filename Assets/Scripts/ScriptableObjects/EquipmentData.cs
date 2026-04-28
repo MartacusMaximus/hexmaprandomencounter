@@ -6,6 +6,9 @@ public class EquipmentData : ScriptableObject
 {
     public string itemName;
     public int pointCost;
+    public string rarity;
+    public string displayCategory;
+    [TextArea] public string rulesText;
 
     public string damageDiceNotation; // "1d6"
     public int armorValue;
@@ -19,6 +22,8 @@ public class EquipmentData : ScriptableObject
     public ChunkColor centerChunk;
 
     public List<TraitSO> traits = new List<TraitSO>();
+    public List<string> sourceTags = new List<string>();
+    public AbilitySO ability;
 
     public bool IsWeapon => traits.Exists(t => t.IsWeapon());
     public bool IsArmor => traits.Exists(t => t.IsArmor());

@@ -1,0 +1,8 @@
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Api.Tests/bin/Debug/net10.0/.msCoverageSourceRootsMapping_KnightsAndGM.Api.Tests
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Api.Tests/obj/Debug/net10.0/KnightsAndGM.Api.Tests.csproj.AssemblyReference.cache
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Api.Tests/obj/Debug/net10.0/MvcTestingAppManifest.json
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Api.Tests/obj/Debug/net10.0/KnightsAndGM.Api.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Api.Tests/obj/Debug/net10.0/KnightsAndGM.Api.Tests.AssemblyInfoInputs.cache
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Api.Tests/obj/Debug/net10.0/KnightsAndGM.Api.Tests.AssemblyInfo.cs
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Api.Tests/obj/Debug/net10.0/KnightsAndGM.Api.Tests.csproj.CoreCompileInputs.cache
+/Users/mart/projects/Unity/hexmaprandomencounter/Apps/KnightsAndGM.Api.Tests/obj/Debug/net10.0/KnightsAndGM.Api.Tests.sourcelink.json

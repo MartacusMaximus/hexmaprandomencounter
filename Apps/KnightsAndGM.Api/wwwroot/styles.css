@@ -1,0 +1,424 @@
+:root {
+  --bg: #e7dfd4;
+  --bg-grid: rgba(120, 109, 89, 0.08);
+  --panel: rgba(255, 251, 244, 0.94);
+  --panel-strong: rgba(250, 244, 235, 0.98);
+  --ink: #26221b;
+  --muted: #6d6558;
+  --accent: #235854;
+  --accent-soft: #d4e7e3;
+  --line: #c7baa0;
+  --highlight: #f3bf4a;
+  --danger: #9d3f2a;
+  --shadow: 0 20px 60px rgba(27, 19, 8, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Alegreya Sans", "Trebuchet MS", sans-serif;
+  color: var(--ink);
+  background:
+    linear-gradient(var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(180deg, #f2ede5 0%, #ded2bf 50%, #d3c19e 100%);
+  background-size: 56px 56px, 56px 56px, 100% 100%;
+  min-height: 100vh;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: minmax(280px, 320px) minmax(0, 1fr) minmax(360px, 420px);
+  gap: 1rem;
+  padding: 1rem;
+  align-items: start;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  backdrop-filter: blur(8px);
+}
+
+.left-rail,
+.right-rail {
+  display: grid;
+  gap: 1rem;
+}
+
+.auth-form,
+.note-form,
+.skill-create {
+  display: grid;
+  gap: 0.75rem;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  padding: 0.72rem 0.9rem;
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  border: 0;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.status-text {
+  min-height: 1.5rem;
+  color: var(--danger);
+}
+
+.campaign-header,
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.section-header.compact {
+  align-items: center;
+}
+
+.map-panel,
+.sheet-panel,
+.gm-panel,
+.party-panel,
+.legend-panel {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.map-stage {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.map-viewport {
+  overflow: auto;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(180deg, #f8f4ed 0%, #f0e5d4 100%);
+  background-size: 72px 72px, 72px 72px, 100% 100%;
+  max-height: 72vh;
+  min-height: 58vh;
+  padding: 1rem;
+}
+
+.map-svg {
+  display: block;
+  min-width: 1180px;
+  min-height: 980px;
+  width: 100%;
+  height: auto;
+}
+
+.hex-cell {
+  cursor: pointer;
+}
+
+.hex-outline {
+  stroke-width: 3;
+  transition: transform 160ms ease, opacity 160ms ease, filter 160ms ease, stroke 160ms ease;
+}
+
+.hex-cell:hover .hex-outline {
+  filter: brightness(1.04);
+}
+
+.hex-cell.is-selected .hex-outline {
+  stroke: #1c1a17;
+  stroke-width: 4;
+}
+
+.hex-cell.is-reachable .hex-outline {
+  stroke: var(--highlight);
+  stroke-width: 5;
+}
+
+.hex-cell.is-hidden .hex-outline {
+  opacity: 0.72;
+}
+
+.hex-fog {
+  fill: rgba(38, 34, 27, 0.26);
+  pointer-events: none;
+}
+
+.hex-label,
+.hex-coord,
+.landmark-code {
+  font-family: "Alegreya Sans", "Trebuchet MS", sans-serif;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.hex-label {
+  fill: rgba(23, 21, 17, 0.84);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.hex-coord {
+  fill: rgba(23, 21, 17, 0.58);
+  font-size: 10px;
+}
+
+.landmark-code {
+  fill: #171511;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.party-marker-core {
+  fill: #fff8eb;
+  stroke: #1c1a17;
+  stroke-width: 3;
+}
+
+.party-marker-banner {
+  fill: #1c1a17;
+  stroke: #fff8eb;
+  stroke-width: 1.5;
+}
+
+.party-marker-text {
+  fill: #fff8eb;
+  font-size: 11px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.party-summary,
+.legend-list,
+.hex-details,
+.notes-list,
+.encounter-list,
+.characters-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.summary-card,
+.legend-entry,
+.hex-card,
+.note-card,
+.encounter-card,
+.character-tab {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.85rem;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.character-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  color: var(--ink);
+  text-align: left;
+}
+
+.character-tab.active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.legend-entry {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.legend-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  border: 2px solid rgba(28, 26, 23, 0.18);
+  flex: 0 0 auto;
+}
+
+.sheet-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.sheet-row {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.virtue-grid,
+.derived-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.virtue-card,
+.derived-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 0.85rem;
+  background: var(--panel-strong);
+}
+
+.virtue-card header,
+.derived-card header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.virtue-controls,
+.counter-controls {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.virtue-controls button,
+.counter-controls button,
+.skill-row button,
+.skill-create button,
+.sheet-actions button {
+  padding: 0.45rem 0.7rem;
+}
+
+.sheet-checks {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.sheet-checks label,
+.counter-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.skills-list,
+.inventory-grid,
+.chunk-grid {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto auto auto;
+  gap: 0.45rem;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.65rem;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.inventory-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.inventory-slot {
+  min-height: 92px;
+  border: 2px solid var(--line);
+  border-radius: 18px;
+  padding: 0.6rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(242, 232, 213, 0.82));
+}
+
+.inventory-slot strong {
+  font-size: 0.86rem;
+}
+
+.chunk-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.chunk-chip {
+  border-radius: 999px;
+  padding: 0.45rem 0.6rem;
+  text-align: center;
+  font-size: 0.84rem;
+  font-weight: 700;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.sheet-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+
+@media (max-width: 1440px) {
+  .app-shell {
+    grid-template-columns: minmax(260px, 300px) minmax(0, 1fr);
+  }
+
+  .right-rail {
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 1080px) {
+  .app-shell,
+  .right-rail {
+    grid-template-columns: 1fr;
+  }
+
+  .map-viewport {
+    min-height: 44vh;
+  }
+
+  .virtue-grid,
+  .derived-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-row {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+  }
+}

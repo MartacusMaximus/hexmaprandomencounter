@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class HexInput : MonoBehaviour
 {
     private HexCell hoveredCell;
+    private PartyCursorMovement hoveredCursor;
 
     void Update()
     {
@@ -13,38 +14,62 @@ public class HexInput : MonoBehaviour
 
     void HandleHover()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        var mainCamera = Camera.main;
+        if (mainCamera == null)
+        {
+            return;
+        }
+
+        Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
 
         if (Physics.Raycast(ray, out RaycastHit hit, 500f))
         {
-            HexCell cell = hit.collider.GetComponentInParent<HexCell>();
-
-            if (cell != hoveredCell)
-            {
-                if (hoveredCell != null)
-                    hoveredCell.SetHighlight(false);
-
-                hoveredCell = cell;
-
-                if (hoveredCell != null)
-                    hoveredCell.SetHighlight(true);
-            }
+            hoveredCursor = hit.collider.GetComponentInParent<PartyCursorMovement>();
+            UpdateHoveredCell(hit.collider.GetComponentInParent<HexCell>());
+            return;
         }
-        else
-        {
-            if (hoveredCell != null)
-                hoveredCell.SetHighlight(false);
 
-            hoveredCell = null;
-        }
+        hoveredCursor = null;
+        UpdateHoveredCell(null);
     }
 
     void HandleClick()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (!Mouse.current.leftButton.wasPressedThisFrame || PartyCursorController.Instance == null)
         {
-            if (hoveredCell != null)
-                PartyCursorController.Instance.TryClickCell(hoveredCell);
+            return;
+        }
+
+        if (hoveredCursor != null)
+        {
+            PartyCursorController.Instance.TryClickCursor();
+            return;
+        }
+
+        if (hoveredCell != null)
+        {
+            PartyCursorController.Instance.TryClickCell(hoveredCell);
+        }
+    }
+
+    private void UpdateHoveredCell(HexCell nextCell)
+    {
+        var controller = PartyCursorController.Instance;
+        if (nextCell == hoveredCell)
+        {
+            return;
+        }
+
+        if (hoveredCell != null && (controller == null || !controller.ShouldKeepHighlighted(hoveredCell)))
+        {
+            hoveredCell.SetHighlight(false);
+        }
+
+        hoveredCell = nextCell;
+
+        if (hoveredCell != null)
+        {
+            hoveredCell.SetHighlight(true);
         }
     }
 }

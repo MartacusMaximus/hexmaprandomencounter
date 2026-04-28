@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Knights + GM</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="panel left-rail">
+      <section class="auth-panel">
+        <h1>Knights + GM</h1>
+        <p class="muted">Frontier map, expedition movement, session notes, and character tracking.</p>
+        <form id="login-form" class="auth-form">
+          <h2>Enter Table</h2>
+          <input id="login-username" placeholder="Username" />
+          <select id="login-role">
+            <option value="Player">Player</option>
+            <option value="GameMaster">Game Master</option>
+          </select>
+          <button type="submit">Enter</button>
+        </form>
+        <p id="status-text" class="status-text"></p>
+      </section>
+
+      <section class="party-panel">
+        <div class="section-header">
+          <h2>Expedition</h2>
+          <button id="refresh-button" type="button" class="secondary">Refresh</button>
+        </div>
+        <div id="party-summary" class="party-summary">
+          <p class="muted">Log in to load the active party.</p>
+        </div>
+      </section>
+
+      <section class="legend-panel">
+        <div class="section-header">
+          <h2>Legend</h2>
+          <p class="muted">Terrain color is public. Landmark signs appear for players only after discovery.</p>
+        </div>
+        <div id="legend-list" class="legend-list"></div>
+      </section>
+    </aside>
+
+    <section class="panel map-panel">
+      <header class="campaign-header">
+        <div>
+          <h2 id="campaign-title">City of Light</h2>
+          <p id="campaign-subtitle" class="muted">Enter the table to load the standard frontier map.</p>
+        </div>
+      </header>
+
+      <section class="map-stage">
+        <div class="map-toolbar">
+          <div class="section-header compact">
+            <h3>Frontier Map</h3>
+            <p class="muted">Click the player marker to arm movement, then choose an adjacent hex.</p>
+          </div>
+        </div>
+        <div id="map-viewport" class="map-viewport">
+          <svg id="map-svg" class="map-svg" viewBox="0 0 1200 900" role="img" aria-label="Campaign hex map"></svg>
+        </div>
+      </section>
+
+      <section class="notes-panel">
+        <div class="section-header">
+          <div>
+            <h3 id="selected-hex-title">Hex Details</h3>
+            <p id="selected-hex-label" class="muted">Select a hex to inspect terrain, discovered landmarks, and notes.</p>
+          </div>
+        </div>
+        <div id="selected-hex-details" class="hex-details"></div>
+        <div id="notes-list" class="notes-list"></div>
+        <form id="note-form" class="note-form">
+          <textarea id="note-body" rows="4" placeholder="Write a field report for future adventurers"></textarea>
+          <button type="submit">Publish Note</button>
+        </form>
+      </section>
+    </section>
+
+    <aside class="panel right-rail">
+      <section class="sheet-panel">
+        <div class="section-header">
+          <h2>Character Sheet</h2>
+          <button id="new-character-button" type="button" class="secondary">New Character</button>
+        </div>
+        <div id="characters-list" class="characters-list"></div>
+        <div id="character-sheet" class="character-sheet">
+          <p class="muted">Load the campaign to edit a knight sheet on the site.</p>
+        </div>
+      </section>
+
+      <section class="gm-panel">
+        <div class="section-header">
+          <h2>GM Ledger</h2>
+          <p class="muted">Hidden encounter prompts and consequences.</p>
+        </div>
+        <div id="gm-encounters" class="encounter-list"></div>
+      </section>
+    </aside>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js" integrity="sha512-pQ8JdY7PtnE+bBZ5fM0VJER7lABnW3+0A2gI8CjXl6sXPGKe7DkD+rtaW6v8N0izgr4m3QxX1N8MPWXc2MvmGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/app.js" defer></script>
+</body>
+</html>

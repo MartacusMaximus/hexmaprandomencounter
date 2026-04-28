@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
+  m_Name: Steel_Shield
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
+  itemName: "Steel Shield"
+  pointCost: 5
+  rarity: "rare"
+  displayCategory: "shield"
+  rulesText: "Absorb 3 hits before attrition."
+  damageDiceNotation: ""
+  armorValue: 2
+  costsCreationPoints: 1
+  leftHalf: 0
+  rightHalf: 0
+  topHalf: 0
+  bottomHalf: 0
+  centerChunk: 1
+  traits:
+  - {fileID: 11400000, guid: b2c017f8e37f7409d51eb336d143d5e6, type: 2}
+  sourceTags:
+  - CrownAndSkull
+  - TempleCatalog
+  ability: {fileID: 11400000, guid: 1972c60d1947438435e7eb4fc446f101, type: 2}

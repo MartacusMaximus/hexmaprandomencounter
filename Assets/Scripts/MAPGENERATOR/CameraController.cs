@@ -37,12 +37,12 @@ public class CameraController : MonoBehaviour
         {
             float moveX = -Input.GetAxis("Mouse X") * panSpeed * Time.deltaTime;
             float moveY = -Input.GetAxis("Mouse Y") * panSpeed * Time.deltaTime;
-            transform.position += new Vector3(moveX,10, moveY);
+            transform.position += new Vector3(moveX, 0f, moveY);
         }
     }
 
     public void CenterOn(Vector3 worldPos)
     {
-        transform.position = new Vector3(worldPos.x, 10, transform.position.z);
+        transform.position = new Vector3(worldPos.x, transform.position.y, worldPos.z);
     }
 }

@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
 using System.Linq;
+using KnightsAndGM.Shared;
 
 public enum ChunkColor
 {
@@ -20,7 +22,8 @@ public enum EquipLocation
     Torso,
     Legs,
     Hands,
-    Waist
+    Waist,
+    Shield
 }
 
 public class InventoryGrid : MonoBehaviour
@@ -202,18 +205,7 @@ public class InventoryGrid : MonoBehaviour
 
         foreach (var w in weapons)
         {
-            int diceCount = ParseDiceCount(w.damageDiceNotation);
-            int flatBonus = 0;
-
-            foreach (var trait in w.traits)
-                trait.ModifyDamageRoll(ref diceCount, ref flatBonus);
-
-            int weaponDamage = 0;
-            for (int i = 0; i < diceCount; i++)
-                weaponDamage += Random.Range(1, 7); // example d6
-
-            total += weaponDamage + flatBonus;
-            Debug.Log($"{w.itemName} rolled {diceCount} dice + {flatBonus}");
+            total += RollWeaponDamage(w, roller);
         }
 
         total += CountChunks().GetValueOrDefault(ChunkColor.Red, 0);
@@ -225,85 +217,36 @@ public class InventoryGrid : MonoBehaviour
 
     public Dictionary<ChunkColor, int> CountChunks()
     {
+        var portableCounts = InventoryStatCalculator.CountChunks(CharacterRulesAdapter.ToModel(character));
         var counts = new Dictionary<ChunkColor, int>();
-        foreach (ChunkColor c in System.Enum.GetValues(typeof(ChunkColor)))
-            counts[c] = 0;
-
-        for (int i = 0; i < 9; i++)
+        foreach (var portableCount in portableCounts)
         {
-            int r = i / 3, cidx = i % 3;
-            var eq = character.inventory[i]?.equipment;
-            if (eq == null) continue;
-
-            // center chunk
-            if (eq.centerChunk != ChunkColor.None) counts[eq.centerChunk]++;
-
-            // horizontal check (right of this == left of neighbor)
-            if (eq.rightHalf != ChunkColor.None && cidx < 2)
-            {
-                var nEq = character.inventory[RCtoIndex(r, cidx + 1)]?.equipment;
-                if (nEq != null && nEq.leftHalf == eq.rightHalf && nEq.leftHalf != ChunkColor.None)
-                    counts[eq.rightHalf]++;
-            }
-
-            // vertical check (bottom of this == top of neighbor)
-            if (eq.bottomHalf != ChunkColor.None && r < 2)
-            {
-                var nEq = character.inventory[RCtoIndex(r + 1, cidx)]?.equipment;
-                if (nEq != null && nEq.topHalf == eq.bottomHalf && nEq.topHalf != ChunkColor.None)
-                    counts[eq.bottomHalf]++;
-            }
+            counts[MapPortableChunk(portableCount.Key)] = portableCount.Value;
+            Debug.Log($"Chunk count: {portableCount.Key} => {portableCount.Value}");
         }
-
-        // Remove None
-        counts.Remove(ChunkColor.None);
-        // log
-        foreach (var kv in counts)
-            Debug.Log($"Chunk count: {kv.Key} => {kv.Value}");
-
         return counts;
     }
 
     // virtue-based bonuses
     public int GetVigorDamageBonus()
     {
-        // +1 to damage rolls per 6 Vigor
         if (character == null) return 0;
-        return character.vigor / 6;
+        return InventoryStatCalculator.GetVigorDamageBonus(CharacterRulesAdapter.ToModel(character));
     }
     public int GetSpiritGuardBonus()
     {
-        // +1 to guard per 3 Spirit
         if (character == null) return 0;
-        return character.spirit / 3;
+        return InventoryStatCalculator.GetSpiritGuardBonus(CharacterRulesAdapter.ToModel(character));
     }
     public int GetClaritySaveModifier()
     {
         if (character == null) return 0;
-        return character.clarity / 8;
+        return InventoryStatCalculator.GetClaritySaveModifier(CharacterRulesAdapter.ToModel(character));
     }
 
     public int GetEffectiveArmorTotal()
     {
-        var bestPerLocation = new Dictionary<EquipLocation, int>();
-
-        foreach (var slot in character.inventory)
-        {
-            if (slot == null || slot.equipment == null) continue;
-
-            var eq = slot.equipment;
-            var armorTrait = eq.traits.OfType<ArmorTrait>().FirstOrDefault();
-            if (armorTrait == null) continue;
-
-            var loc = armorTrait.location;
-
-            if (!bestPerLocation.ContainsKey(loc))
-                bestPerLocation[loc] = eq.armorValue;
-            else
-                bestPerLocation[loc] = Mathf.Max(bestPerLocation[loc], eq.armorValue);
-        }
-
-        int total = bestPerLocation.Values.Sum();
+        int total = InventoryStatCalculator.GetEffectiveArmorTotal(CharacterRulesAdapter.ToModel(character));
         Debug.Log($"Effective armor total = {total}");
         return total;
     }
@@ -342,15 +285,66 @@ public class InventoryGrid : MonoBehaviour
         }
     }
 
+    public static int RollWeaponDamage(EquipmentData weapon, IDiceRoller roller)
+    {
+        return RollWeaponDamage(weapon, (count, sides) =>
+        {
+            roller.Roll(count, sides, out var rolledTotal);
+            return rolledTotal;
+        });
+    }
+
+    public static int RollWeaponDamage(EquipmentData weapon, Func<int, int, int> rollDice)
+    {
+        if (weapon == null || string.IsNullOrWhiteSpace(weapon.damageDiceNotation))
+        {
+            return 0;
+        }
+
+        if (!DiceNotationParser.TryParse(weapon.damageDiceNotation, out var parsed))
+        {
+            Debug.LogWarning($"InventoryGrid: invalid damage notation '{weapon.damageDiceNotation}' on {weapon.itemName}.");
+            return 0;
+        }
+
+        var diceCount = parsed.Count;
+        var flatBonus = parsed.Modifier;
+
+        foreach (var trait in weapon.traits)
+        {
+            trait.ModifyDamageRoll(ref diceCount, ref flatBonus);
+        }
+
+        var rolledTotal = rollDice(diceCount, parsed.Sides);
+        var total = rolledTotal + flatBonus;
+        Debug.Log($"{weapon.itemName} rolled {diceCount}d{parsed.Sides} + {flatBonus} = {total}");
+        return total;
+    }
+
     public int ParseDiceCount(string notation)
     {
-        // expects formats like "1d6", "2d8", etc.
-        if (string.IsNullOrEmpty(notation)) return 0;
+        if (!DiceNotationParser.TryParse(notation, out var parsed))
+        {
+            return 0;
+        }
 
-        var parts = notation.ToLower().Split('d');
-        if (parts.Length != 2) return 0;
+        return parsed.Count;
+    }
 
-        int count;
-        return int.TryParse(parts[0], out count) ? count : 0;
+    private ChunkColor MapPortableChunk(PortableChunkColor color)
+    {
+        switch (color)
+        {
+            case PortableChunkColor.Red:
+                return ChunkColor.Red;
+            case PortableChunkColor.Green:
+                return ChunkColor.Green;
+            case PortableChunkColor.Blue:
+                return ChunkColor.Blue;
+            case PortableChunkColor.Rainbow:
+                return ChunkColor.Rainbow;
+            default:
+                return ChunkColor.None;
+        }
     }
 }

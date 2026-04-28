@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
+  m_Name: Extravagant_Harp
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
+  itemName: "Extravagant Harp"
+  pointCost: 3
+  rarity: "rare"
+  displayCategory: "tool"
+  rulesText: "A treasured performance instrument."
+  damageDiceNotation: ""
+  armorValue: 0
+  costsCreationPoints: 1
+  leftHalf: 3
+  rightHalf: 0
+  topHalf: 3
+  bottomHalf: 0
+  centerChunk: 0
+  traits:
+  sourceTags:
+  - CrownAndSkull
+  - TempleCatalog
+  ability: {fileID: 0}

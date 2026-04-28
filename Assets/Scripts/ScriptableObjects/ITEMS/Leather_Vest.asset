@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
+  m_Name: Leather_Vest
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
+  itemName: "Leather Vest"
+  pointCost: 2
+  rarity: "uncommon"
+  displayCategory: "armor"
+  rulesText: "Offers no protection against blunt force."
+  damageDiceNotation: ""
+  armorValue: 2
+  costsCreationPoints: 1
+  leftHalf: 2
+  rightHalf: 0
+  topHalf: 0
+  bottomHalf: 0
+  centerChunk: 0
+  traits:
+  - {fileID: 11400000, guid: 8c2ce63e78f0e4e1cb361ffd9ef7585e, type: 2}
+  sourceTags:
+  - CrownAndSkull
+  - TempleCatalog
+  ability: {fileID: 11400000, guid: db52e7f7425ce3d22a2b9da147a22531, type: 2}

@@ -1,10 +1,14 @@
+using KnightsAndGM.Shared;
 using UnityEngine;
 
 public class HexCell : MonoBehaviour
 {
     public int q;
     public int r;
+    public int offsetColumn;
+    public int offsetRow;
     public BiomeType biome;
+    public bool isExploredPublic;
 
     [Header("Landmark")]
     public GameObject landmarkPrefab;   // assigned by HexPopulator
@@ -18,10 +22,28 @@ public class HexCell : MonoBehaviour
 
     [Header("Highlight")]
     public Renderer highlightRenderer;
+
+    public HexCoordinate Coordinate { get; private set; }
+    public TerrainType Terrain => BiomeTypeMapper.ToTerrainType(biome);
+
+    public void ConfigureCoordinates(int localColumn, int rowIndex, int globalOffsetColumn)
+    {
+        q = localColumn;
+        r = rowIndex;
+        offsetColumn = globalOffsetColumn;
+        offsetRow = rowIndex;
+        Coordinate = HexCoordinate.FromOddRowOffset(offsetColumn, offsetRow);
+    }
+
     public void SetHighlight(bool on)
     {
         if (highlightRenderer != null)
             highlightRenderer.enabled = on;
+    }
+
+    public void SetExplored(bool explored)
+    {
+        isExploredPublic = explored;
     }
 
     public bool HasMyth() => myth != null;
