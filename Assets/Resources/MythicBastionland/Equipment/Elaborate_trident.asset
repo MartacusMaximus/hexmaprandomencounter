@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: AN ELABORATE TRIDENT
+    columns:
+    - header: Appearance
+      values:
+      - Silver rings
+      - Blackened iron
+      - Two-headed
+      - Faint golden glow
+      - Five prongs
+      - Telescopic shaft
+    - header: Ability
+      values:
+      - Can be thrown (d6)
+      - Can be recalled to your
+      - hand when in sight +d8 vs aquatic beings
+      - +d8 vs flying beings
+      - Points to fresh water
+      - Utterly unbreakable
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: THE HEXSHIELD
+    columns:
+    - header: Ineffective vs
+      values:
+      - Axes
+      - Arrows
+      - Birds
+      - Spears and polearms
+      - Swords
+      - Blunt arms
+    - header: Special Ability
+      values:
+      - Can be thrown (d6)
+      - Allows you to fall
+      - safely from any height Pattern pains Seers
+      - Always floats
+      - Blocks all sound
+      - Bladed (d6 in melee)
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

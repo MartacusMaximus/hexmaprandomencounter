@@ -27,7 +27,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 22bd5507ff30d486caf1df9932c3fe12, type: 2}
   - {fileID: 11400000, guid: 1361007559fd24cb18cf6042c905f895, type: 2}
   - {fileID: 11400000, guid: 5bbe8d90e302744fe8f8a6a791c6052c, type: 2}
-  - {fileID: 11400000, guid: 2b62271f7824d40cbbd5915ccca5c28f, type: 2}
+  - {fileID: 11400000, guid: 2338d60c5ae334e71ae1e05ce4ca4b43, type: 2}
   randomFlavorTable:
     title: MYSTIC SIGHT
     columns:

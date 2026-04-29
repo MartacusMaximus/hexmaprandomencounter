@@ -26,7 +26,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0784a41c33f964a7d947530e2b1e625a, type: 2}
   - {fileID: 11400000, guid: 90dec314012d2418d971f86f0c2e477f, type: 2}
   - {fileID: 11400000, guid: f1fb397d3890a4207a22c6207e7b1a4f, type: 2}
-  - {fileID: 11400000, guid: b1d8d25fa84a54ebfab2a06b3b27745d, type: 2}
+  - {fileID: 11400000, guid: bb4a9b86851b74bc0a39dd0c5a56a61e, type: 2}
   randomFlavorTable:
     title: SCAR STORY
     columns:

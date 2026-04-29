@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: DRINKING HORN
+    columns:
+    - header: Appearance
+      values:
+      - Tiny
+      - Runic carvings
+      - Ruby encrusted
+      - Volcanic rock
+      - Painted battle scene
+      - Huge
+    - header: Imparted Flavour
+      values:
+      - Floral honey
+      - Smoky salt
+      - Toasty almond
+      - Ice water
+      - Warm berries
+      - Meat dripping
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

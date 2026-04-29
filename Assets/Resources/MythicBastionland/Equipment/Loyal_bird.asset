@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: LOYAL BIRD
+    columns:
+    - header: Breed Fisherhawk
+      values:
+      - (can dive into water)
+      - Cave owl (nocturnal)
+      - Grey raven (highly intelligent)
+      - Red eagle (d6 talons)
+      - Rock falcon (preys on reptiles)
+      - Bog vulture (5 GD )
+    - header: Special Training
+      values:
+      - Singing
+      - Fighting humans (+d6 vs humans)
+      - Silent flight
+      - Delivery
+      - Stealing
+      - Fighting birds (+d6 vs birds)
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

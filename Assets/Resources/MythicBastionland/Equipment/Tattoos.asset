@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: FULL BODY TATTOOS
+    columns:
+    - header: Design
+      values:
+      - Faded spirals
+      - Blue thorns
+      - Silver stars
+      - Colourful snakes
+      - Red bones
+      - Burnt rings
+    - header: Effect
+      values:
+      - Points to water
+      - Burns before an
+      - ambush A1 in saltwater
+      - A1 under moonlight
+      - A1 in rivers or streams
+      - Conceals a third eye
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

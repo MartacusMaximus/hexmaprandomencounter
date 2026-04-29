@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: TAPESTRY STORY
+    columns:
+    - header: Event
+      values:
+      - Birth of...
+      - Great deeds of...
+      - Ambitions of...
+      - Shameful death of...
+      - Glorious death of...
+      - Peaceful death of...
+    - header: Subject
+      values:
+      - A random Seer
+      - A random Knight
+      - Yourself
+      - One of the Company
+      - The Realm ruler
+      - An unknown figure
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

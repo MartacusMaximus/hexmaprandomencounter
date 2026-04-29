@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: UNNATURAL BODY
+    columns:
+    - header: Bones of...
+      values:
+      - Ivory
+      - Bronze
+      - Sapling branches
+      - String
+      - Wooden rods
+      - Iron chain
+    - header: Skin of...
+      values:
+      - Leather
+      - Felt
+      - Silk
+      - Wool
+      - Parchment
+      - Clay
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

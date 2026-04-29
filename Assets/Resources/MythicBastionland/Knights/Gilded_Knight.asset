@@ -30,7 +30,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
   - {fileID: 11400000, guid: fdccb1b9137ec4853a3ee833864e9078, type: 2}
   - {fileID: 11400000, guid: ad32d924077d64f44bde97cf9848bbae, type: 2}
-  - {fileID: 11400000, guid: b252b0163dc3844a88ca3963c5ebcea1, type: 2}
+  - {fileID: 11400000, guid: a6f207ab12dfe440282eae97fddb5937, type: 2}
   randomFlavorTable:
     title: THE COST
     columns:

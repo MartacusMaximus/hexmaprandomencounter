@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: SOUND OF THE FLUTE
+    columns:
+    - header: Loved by
+      values:
+      - Children
+      - Cats
+      - Nobles
+      - Knights
+      - Birds of prey
+      - Sea creatures
+    - header: Hated by
+      values:
+      - Everybody else
+      - Proper musicians
+      - Rodents
+      - Your Company
+      - Seers
+      - Songbirds
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

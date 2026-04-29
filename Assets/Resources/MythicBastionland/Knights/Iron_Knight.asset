@@ -26,7 +26,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
   - {fileID: 11400000, guid: 9fc61a7fbefe24e42b9c4114f0486e2c, type: 2}
   - {fileID: 11400000, guid: 87c8d7c8099364036b40e057dc790722, type: 2}
-  - {fileID: 11400000, guid: 32e9174f3e5c44ffe84a2d22358d8f03, type: 2}
+  - {fileID: 11400000, guid: f13b6b660c2da49d0b4b0faf50be1402, type: 2}
   randomFlavorTable:
     title: ORIGIN OF THE CLEAVINGBLADE
     columns:

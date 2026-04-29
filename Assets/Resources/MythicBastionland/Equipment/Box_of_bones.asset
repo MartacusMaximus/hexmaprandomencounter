@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: BOX OF BONES
+    columns:
+    - header: The Box
+      values:
+      - Silver coffer
+      - Ivory cage
+      - Bronze cylinder
+      - Velvet pouch
+      - Painted wooden case
+      - Gilded clam shell
+    - header: The Bones
+      values:
+      - Sorted by age
+      - Sorted by size
+      - Sorted by habitat
+      - Sorted by beauty
+      - Sorted by virtue
+      - Unsorted chaos
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

@@ -31,6 +31,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: STRANGE HERBS
+    columns:
+    - header: Positive Effect
+      values:
+      - Heightened hearing
+      - Breathe fire once (d8 blast)
+      - Speak remotely with
+      - any one person No pain (A1)
+      - Restore one Virtue
+      - Restore all Virtues
+    - header: Side Effect
+      values:
+      - Mild nausea
+      - Unable to speak
+      - Hazy vision
+      - Lose d6 VIG
+      - Lose d6 CLA
+      - Lose d6 SPI
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

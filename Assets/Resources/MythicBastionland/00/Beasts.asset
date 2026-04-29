@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bd6fd35332e425d9d8344e2f46407c, type: 3}
+  m_Name: Beasts
+  m_EditorClassIdentifier: Assembly-CSharp::BeastSO
+  entries:
+  - Armoured pigeon
+  - Blind boar
+  - Bony zebra
+  - Bright mole
+  - Burrowing otter
+  - Carrion stork
+  - Clawed bees
+  - Clever tortoise
+  - Crowned stag
+  - Dark swan
+  - Dead greyhound
+  - Draft horse
+  - Dust mongoose
+  - Emerald panther
+  - Eternal scorpion
+  - Fanged dove
+  - Fat beetle
+  - Flame weasel
+  - Flat owl
+  - Frosted hare
+  - Ghost carp
+  - Giant magpie
+  - Glutton crow
+  - Granddad louse
+  - Graveyard horse
+  - Grey deer
+  - Grim donkey
+  - Hammer crane
+  - Herbalist dog
+  - Horned quail
+  - Imitation sparrow
+  - Ivory goat
+  - Knightly salamander
+  - Laughing shrew
+  - Leafy goose
+  - Leeches
+  - Lesser mule
+  - Listening asp
+  - Longly viper
+  - Massive badger
+  - Mighty newt
+  - Milk finch
+  - Moon toad
+  - Moss ostrich
+  - Oily buzzard
+  - Overgrown hawk
+  - Paradise cockerel
+  - Red vultures
+  - Redmaw wolf
+  - Riding peacock
+  - Roaring coot
+  - Shouting pike
+  - Singing bull
+  - Slow butterfly
+  - Smiling fox
+  - Sniffer bear
+  - Spotted wasp
+  - Stinging crocodile
+  - Swiftly blackbird
+  - Sword rhinoceros
+  - Talking hyena
+  - Taloned heron
+  - Tender bloodhound
+  - Thorn frog
+  - Tiger spider
+  - Tiny chameleon
+  - Two-tailed eel
+  - Watcher python
+  - White ravens
+  - Witchy goat
+  - Wolfy hedgehog
+  - Wood centipede

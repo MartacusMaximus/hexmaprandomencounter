@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: buckler
   pointCost: 0
   rarity: bonded
-  displayCategory: shield
+  displayCategory: tool
   rulesText: (d4, A1)
   damageDiceNotation: 1d4
   armorValue: 1
@@ -30,6 +30,9 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: 
+    columns: []
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

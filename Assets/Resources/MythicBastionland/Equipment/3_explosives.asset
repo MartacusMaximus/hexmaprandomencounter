@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: EXPLOSIVES
+    columns:
+    - header: Form
+      values:
+      - Ashen pinecone
+      - Vial of red dust
+      - Bottle of white oil
+      - Hellfire chestnut
+      - Preserved drake
+      - gizzard Firebird egg
+    - header: Explosion Trigger
+      values:
+      - Water
+      - Fire
+      - A command word
+      - Touch of skin
+      - Light
+      - Touching ground
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

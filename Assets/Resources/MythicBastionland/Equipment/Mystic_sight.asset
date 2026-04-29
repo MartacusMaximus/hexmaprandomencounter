@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: MYSTIC SIGHT
+    columns:
+    - header: What can you see?
+      values:
+      - Fears
+      - Desires
+      - Hidden things
+      - Regrets
+      - Loyalties
+      - Injuries and disease
+    - header: But you cannot see
+      values:
+      - Colour
+      - Writing
+      - Birds
+      - Water
+      - Stars and sun
+      - Silver and gold
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

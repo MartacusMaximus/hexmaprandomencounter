@@ -166,6 +166,39 @@ public class MythicBastionlandEditModeTests
     }
 
     [Test]
+    public void ImportLinksSeeBelowEquipmentToItsKnightPageTable()
+    {
+        InvokeStatic("MythicBastionlandImporter", "ImportPdfContent");
+
+        var trident = AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/Equipment/Elaborate_trident.asset");
+        Assert.That(trident, Is.Not.Null);
+        Assert.That(GetField(trident, "rulesText"), Is.EqualTo("(d10 long, see below)"));
+        var table = GetField(trident, "seeBelowTable");
+        Assert.That((bool)GetProperty(trident, "HasSeeBelowTable"), Is.True);
+        Assert.That(GetField(table, "title"), Is.EqualTo("AN ELABORATE TRIDENT"));
+        var columns = ((IEnumerable)GetField(table, "columns")).Cast<object>().ToList();
+        Assert.That(columns.Select(column => (string)GetField(column, "header")), Is.EqualTo(new[]
+        {
+            "Appearance",
+            "Ability"
+        }));
+        Assert.That(((IEnumerable)GetField(columns[0], "values")).Cast<string>(), Is.EqualTo(new[]
+        {
+            "Silver rings",
+            "Blackened iron",
+            "Two-headed",
+            "Faint golden glow",
+            "Five prongs",
+            "Telescopic shaft"
+        }));
+        var abilities = ((IEnumerable)GetField(columns[1], "values")).Cast<string>().ToList();
+        Assert.That(abilities.Count, Is.EqualTo(6));
+        Assert.That(abilities[0], Is.EqualTo("Can be thrown (d6)"));
+        Assert.That(abilities[3], Is.EqualTo("+d8 vs flying beings"));
+        Assert.That(abilities[5], Is.EqualTo("Utterly unbreakable"));
+    }
+
+    [Test]
     public void KnightingUnlockAndAssignmentPersistGrantedAbilityAndSteed()
     {
         var character = CreateScriptableObject("CharacterData");
@@ -198,6 +231,40 @@ public class MythicBastionlandEditModeTests
         var steedInstance = GetField(character, "steed");
         Assert.That(GetField(steedInstance, "definition"), Is.EqualTo(steed));
         Assert.That(GetField(character, "knightingStatus").ToString(), Is.EqualTo("Knighted"));
+    }
+
+    [Test]
+    public void KnightingResolvesSeeBelowPropertyTextPerInstance()
+    {
+        var character = CreateScriptableObject("CharacterData");
+        SetField(character, "deedCount", 5);
+        Invoke(character, "EnsureInventorySlots");
+
+        var knight = CreateScriptableObject("KnightDefinitionSO");
+        SetField(knight, "knightName", "Table Knight");
+
+        var property = CreateScriptableObject("EquipmentData");
+        SetField(property, "itemName", "Test Trident");
+        SetField(property, "rulesText", "(d10 long, see below)");
+        SetField(property, "damageDiceNotation", "1d10");
+        SetField(property, "seeBelowTable", CreateRollTable(
+            ("Appearance", "Blackened iron"),
+            ("Ability", "+d8 vs flying beings")));
+        ((IList)GetField(knight, "bondedProperty")).Add(property);
+
+        var assigned = (bool)InvokeStatic("KnightingService", "AssignKnight", character, knight, null);
+
+        Assert.That(assigned, Is.True);
+        var item = ((IEnumerable)GetField(character, "inventory")).Cast<object>().FirstOrDefault(entry => entry != null);
+        Assert.That(item, Is.Not.Null);
+        Assert.That(GetField(item, "equipment"), Is.EqualTo(property));
+        Assert.That(GetField(item, "resolvedRulesText"), Is.EqualTo("(d10 long, Appearance: Blackened iron, Ability: +d8 vs flying beings)"));
+        Assert.That(GetField(item, "resolvedSeeBelowRowIndex"), Is.EqualTo(0));
+        Assert.That(GetProperty(item, "RulesText"), Is.EqualTo(GetField(item, "resolvedRulesText")));
+        Assert.That(GetField(property, "rulesText"), Is.EqualTo("(d10 long, see below)"));
+
+        var model = ToCharacterSheetModel(character);
+        Assert.That(model.Inventory[0].Equipment.RulesText, Is.EqualTo(GetField(item, "resolvedRulesText")));
     }
 
     [Test]
@@ -349,6 +416,11 @@ public class MythicBastionlandEditModeTests
         return target.GetType().GetField(fieldName).GetValue(target);
     }
 
+    private static object GetProperty(object target, string propertyName)
+    {
+        return target.GetType().GetProperty(propertyName).GetValue(target);
+    }
+
     private static void SetField(object target, string fieldName, object value)
     {
         target.GetType().GetField(fieldName).SetValue(target, value);
@@ -369,6 +441,29 @@ public class MythicBastionlandEditModeTests
         var instance = Activator.CreateInstance(RuntimeType("EquipmentInstance"));
         SetField(instance, "equipment", equipment);
         return instance;
+    }
+
+    private static CharacterSheetModel ToCharacterSheetModel(object character)
+    {
+        var adapter = RuntimeType("CharacterRulesAdapter");
+        return (CharacterSheetModel)adapter.GetMethod("ToModel").Invoke(null, new[] { character });
+    }
+
+    private static object CreateRollTable(params (string header, string value)[] columns)
+    {
+        var table = Activator.CreateInstance(RuntimeType("MythicRollTable"));
+        SetField(table, "title", "TEST TABLE");
+        var tableColumns = (IList)GetField(table, "columns");
+
+        foreach (var columnData in columns)
+        {
+            var column = Activator.CreateInstance(RuntimeType("MythicTableColumn"));
+            SetField(column, "header", columnData.header);
+            SetField(column, "values", new List<string> { columnData.value });
+            tableColumns.Add(column);
+        }
+
+        return table;
     }
 
     private static int CountWords(string text)

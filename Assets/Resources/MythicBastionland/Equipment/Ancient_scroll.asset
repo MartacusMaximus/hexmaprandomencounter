@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: REFERENCES IN YOUR SCROLL
+    columns:
+    - header: Place
+      values:
+      - A tower
+      - A body of water
+      - A peak
+      - A village
+      - A river
+      - A cave
+    - header: Ancestor to
+      values:
+      - The ruler
+      - A Knight
+      - A Seer
+      - All people
+      - You
+      - A Company member
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

@@ -31,6 +31,9 @@ MonoBehaviour:
   - MythicBastionland
   - Backpack
   ability: {fileID: 0}
+  seeBelowTable:
+    title: 
+    columns: []
   isBondedProperty: 0
   contributesToEquippedBonuses: 0
   containerKind: 1

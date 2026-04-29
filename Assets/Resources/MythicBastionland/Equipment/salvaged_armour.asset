@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: SALVAGED ARMOUR
+    columns:
+    - header: Type
+      values:
+      - Copper mail (A1)
+      - Cracked chestplate
+      - and bracers (A1) Red brigandine (A1)
+      - Padded cloth (A1)
+      - Hardened leather (A1)
+      - Dented plate (A1)
+    - header: Detail
+      values:
+      - Embedded arrowheads
+      - Two sets hastily
+      - patched together Partially burnt
+      - Claw marks
+      - Faded heraldry
+      - Dried blood
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

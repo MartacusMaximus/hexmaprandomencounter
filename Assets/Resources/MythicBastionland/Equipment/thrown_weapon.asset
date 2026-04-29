@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: UNUSUAL THROWN WEAPON
+    columns:
+    - header: Design
+      values:
+      - Club
+      - Disc
+      - Spike
+      - Bola
+      - Fork
+      - Ball
+    - header: Ability
+      values:
+      - +d6 in a duel
+      - +d6 vs steeds
+      - +d6 vs fleeing targets
+      - +d6 vs mounted
+      - targets +d6 vs flying targets
+      - +d6 vs targets without a shield
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

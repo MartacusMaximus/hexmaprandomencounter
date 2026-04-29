@@ -31,6 +31,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: KNIGHT & COMPANION
+    columns:
+    - header: History
+      values:
+      - Exiled
+      - Feral
+      - Vengeful
+      - Shamed
+      - Jovial
+      - Artistic
+    - header: Type
+      values:
+      - Otter
+      - Hare
+      - Rat
+      - Weasel
+      - Ferret
+      - Squirrel
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

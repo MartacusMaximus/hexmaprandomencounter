@@ -27,7 +27,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 73efb40491f5f400f9dd44f433812cc0, type: 2}
   - {fileID: 11400000, guid: 38c60f9d8d0b945dc8e218b4d46b604f, type: 2}
   - {fileID: 11400000, guid: ee67e1c259fd740579c11da216534a0f, type: 2}
-  - {fileID: 11400000, guid: cd8e841143a8e4b459cc887238a88d0d, type: 2}
+  - {fileID: 11400000, guid: 8eaf05b63910b4f18b53a6ab9b145196, type: 2}
   randomFlavorTable:
     title: A BLADE TAKEN FROM THE SEA
     columns:

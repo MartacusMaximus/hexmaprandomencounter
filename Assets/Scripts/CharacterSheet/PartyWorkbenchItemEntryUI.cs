@@ -28,12 +28,14 @@ public class PartyWorkbenchItemEntryUI : MonoBehaviour, IBeginDragHandler, IDrag
 
         if (titleText != null)
         {
-            titleText.text = sourceEquipment.itemName;
+            titleText.text = storedInstance != null ? storedInstance.DisplayName : sourceEquipment.itemName;
         }
 
         if (detailText != null)
         {
-            detailText.text = $"{sourceEquipment.displayCategory}  {sourceEquipment.rarity}  {sourceEquipment.pointCost}pt";
+            detailText.text = storedInstance != null
+                ? storedInstance.RulesText
+                : $"{sourceEquipment.displayCategory}  {sourceEquipment.rarity}  {sourceEquipment.pointCost}pt";
         }
     }
 

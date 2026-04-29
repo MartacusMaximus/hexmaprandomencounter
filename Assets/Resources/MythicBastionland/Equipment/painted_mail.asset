@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: PAINTED ARMOUR
+    columns:
+    - header: Main Hue
+      values:
+      - Indigo
+      - Crimson
+      - Forest green
+      - Teal
+      - Gold
+      - Rose
+    - header: Decoration
+      values:
+      - Faces
+      - Vines
+      - Stars
+      - Wolves
+      - Fire
+      - The City
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

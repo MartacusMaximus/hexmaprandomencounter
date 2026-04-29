@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: CALLING AND HELM
+    columns:
+    - header: Call to Battle
+      values:
+      - Greed
+      - Bloodlust
+      - Glory
+      - Duty
+      - Pride
+      - Ambition
+    - header: Fancy Helm
+      values:
+      - Lion
+      - Shark
+      - Great crest
+      - Hawk
+      - Bull
+      - Demon
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

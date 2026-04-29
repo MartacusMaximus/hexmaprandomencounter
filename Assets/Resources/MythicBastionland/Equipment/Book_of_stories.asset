@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: TOME OF TALES
+    columns:
+    - header: Style
+      values:
+      - Quest
+      - Romance
+      - Revenge
+      - Farce
+      - Nonsense
+      - Tragedy
+    - header: Twist
+      values:
+      - Ghosts!
+      - Long-lost twins!
+      - Memory loss!
+      - Reincarnation!
+      - Talking animals!
+      - Everybody dies!
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

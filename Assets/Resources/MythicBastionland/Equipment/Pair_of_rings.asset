@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: PROPERTIES OF THE RINGS
+    columns:
+    - header: Design
+      values:
+      - Snakes
+      - Skulls
+      - Thorns
+      - Rubies
+      - Gold
+      - Birds
+    - header: Effect
+      values:
+      - Wearers share vision
+      - Wearers share hearing
+      - Wearers share GD (use total)
+      - Wearers share VIG (use higher)
+      - Wearers share CLA (use higher)
+      - Wearers share SPI (use higher)
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

@@ -101,13 +101,13 @@ public class InventoryGrid : MonoBehaviour
         InventorySlotUI slotUI = slotButton.GetComponentInChildren<InventorySlotUI>();
         if (slotUI != null)
         {
-            slotUI.UpdateFromEquipment(inst != null ? inst.equipment : null);
+            slotUI.UpdateFromEquipment(inst);
         }
         else
         {
             var text = slotButton.GetComponentInChildren<Text>();
             if (text != null)
-                text.text = inst == null || inst.equipment == null ? "Empty" : inst.equipment.itemName;
+                text.text = inst == null || inst.equipment == null ? "Empty" : inst.DisplayName;
         }
 
         if (slotButton.transform is RectTransform rectTransform)
@@ -124,7 +124,7 @@ public class InventoryGrid : MonoBehaviour
             Debug.Log($"Inventory slot {index} is empty.");
             return;
         }
-        Debug.Log($"Inventory slot {index} clicked: {inst.equipment.itemName}");
+        Debug.Log($"Inventory slot {index} clicked: {inst.DisplayName}");
     }
 
     public int GetSlotIndexAtPointer(PointerEventData eventData)
@@ -285,7 +285,7 @@ public class InventoryGrid : MonoBehaviour
 
         if (validIndices.Count == 0) return -1;
         int pick = validIndices[UnityEngine.Random.Range(0, validIndices.Count)];
-        Debug.Log($"Attrition: selected slot {pick} ({character.inventory[pick].equipment.itemName})");
+        Debug.Log($"Attrition: selected slot {pick} ({character.inventory[pick].DisplayName})");
         return pick;
     }
 
@@ -299,13 +299,13 @@ public class InventoryGrid : MonoBehaviour
         float destroyChance = 0.25f; // 25% destroy, adjust
         if (UnityEngine.Random.value <= destroyChance)
         {
-            Debug.Log($"Attrition: destroying item {inst.equipment.itemName} in slot {slotIndex}");
+            Debug.Log($"Attrition: destroying item {inst.DisplayName} in slot {slotIndex}");
             character.inventory[slotIndex] = null;
             RefreshSlot(slotIndex);
         }
         else
         {
-            Debug.Log($"Attrition: item {inst.equipment.itemName} in slot {slotIndex} survived attrition.");
+            Debug.Log($"Attrition: item {inst.DisplayName} in slot {slotIndex} survived attrition.");
         }
     }
 

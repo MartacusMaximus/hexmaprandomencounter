@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: A BLADE TAKEN FROM THE SEA
+    columns:
+    - header: How do you know?
+      values:
+      - Aquatic nightmares
+      - A fish told you
+      - It's cold to the touch
+      - Sudden fear of water
+      - Storms call to you
+      - The waves rebuke you
+    - header: Punishment Sea creatures get +d6
+      values:
+      - against you
+      - You cannot swim in saltwater
+      - River water tastes
+      - salty to you Sailors distrust you
+      - Salt tastes foul to you
+      - Fish is poison to you
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

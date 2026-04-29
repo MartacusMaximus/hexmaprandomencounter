@@ -966,10 +966,13 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
     private void CreateItemCard(RectTransform parent, EquipmentData equipment, EquipmentInstance instance, bool fromCatalog)
     {
         var card = CreateCard(parent, ColorForCategory(equipment.displayCategory), 62f);
-        var title = CreateText(card, equipment.itemName, 17f, FontStyles.Bold);
+        var title = CreateText(card, instance != null ? instance.DisplayName : equipment.itemName, 17f, FontStyles.Bold);
         title.color = Color.white;
 
-        var detail = CreateText(card, string.Empty, 12f, FontStyles.Normal);
+        var detailText = instance != null
+            ? instance.RulesText
+            : $"{equipment.displayCategory}  {equipment.rarity}  {equipment.pointCost}pt";
+        var detail = CreateText(card, detailText, 12f, FontStyles.Normal);
         detail.color = new Color(0.85f, 0.88f, 0.92f, 1f);
 
         var entry = card.gameObject.AddComponent<PartyWorkbenchItemEntryUI>();
@@ -991,9 +994,9 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
         {
             var slot = CreateCard(parent, new Color(0.19f, 0.21f, 0.25f, 1f), 54f);
             var item = backpack != null ? backpack.containedItems[index] : steed.storage[index];
-            var title = CreateText(slot, item?.equipment?.itemName ?? $"Slot {index + 1}", 14f, FontStyles.Bold);
+            var title = CreateText(slot, item != null ? item.DisplayName : $"Slot {index + 1}", 14f, FontStyles.Bold);
             title.color = Color.white;
-            var detail = CreateText(slot, item?.equipment?.rulesText ?? "Drop an item here", 11f, FontStyles.Normal);
+            var detail = CreateText(slot, item != null ? item.RulesText : "Drop an item here", 11f, FontStyles.Normal);
             detail.color = new Color(0.85f, 0.88f, 0.92f, 1f);
             slot.gameObject.AddComponent<PartyWorkbenchContainerSlotUI>().Configure(this, backpack, steed, index);
         }

@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: A HIDDEN BLADE
+    columns:
+    - header: Design
+      values:
+      - Twisted ebony handle
+      - Feather motif
+      - Tapered slicer
+      - Fang-like dagger
+      - Long wavy blade
+      - Etched bone
+    - header: Ability Hidden within your
+      values:
+      - shadow
+      - Can be thrown any distance
+      - +2d10 vs somebody
+      - who trusts you Appears as a twig
+      - Splits into two blades
+      - Harmless to you
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

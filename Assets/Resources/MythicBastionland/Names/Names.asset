@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc3364301fa64d7ea7fed63137c26b4, type: 3}
+  m_Name: Names
+  m_EditorClassIdentifier: Assembly-CSharp::NameSO
+  entries:
+  - Abbotte
+  - Abran
+  - Aluna
+  - Andona
+  - Arture
+  - Beryan
+  - Borwenna
+  - Branc
+  - Bray
+  - Brayne
+  - Burgoyne
+  - Caldan
+  - Chider
+  - Clemens
+  - Crabbe
+  - Cradokke
+  - Croyle
+  - Davith
+  - Demelza
+  - Dewyn
+  - Dorka
+  - Dorza
+  - Ellery
+  - Endry
+  - Ezter
+  - Floria
+  - Foxter
+  - Gil
+  - Gowere
+  - Goyon
+  - Harbeger
+  - Howell
+  - Hygo
+  - Jago
+  - Kapo
+  - Kelwun
+  - Kerensa
+  - Kernick
+  - Kirus
+  - Knotte
+  - Litwitte
+  - Ludmer
+  - Lumpe
+  - Maldita
+  - Medryn
+  - Myghal
+  - Nieolas
+  - Ogan
+  - Peryn
+  - Plodder
+  - Prentise
+  - Pryer
+  - Ragge
+  - Reyka
+  - Reynere
+  - Roose
+  - Ruan
+  - Ruskyn
+  - Samzun
+  - Senara
+  - Sparenot
+  - Tahnet
+  - Tompot
+  - Tresera
+  - Turnbucke
+  - Tyack
+  - Ursell
+  - Valamonte
+  - Verner
+  - Viralag
+  - Wattle
+  - Wodwale

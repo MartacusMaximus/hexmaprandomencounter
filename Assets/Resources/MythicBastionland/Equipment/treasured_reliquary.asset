@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: TREASURED RELIC
+    columns:
+    - header: Bodypart
+      values:
+      - Hand
+      - Skull
+      - Heart
+      - Ribs
+      - Eye
+      - Unknown organ
+    - header: Being
+      values:
+      - Forgotten Seer
+      - Glorious Knight
+      - Deposed monarch
+      - Pitied monster
+      - Hateful bird
+      - Ancient reptile
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

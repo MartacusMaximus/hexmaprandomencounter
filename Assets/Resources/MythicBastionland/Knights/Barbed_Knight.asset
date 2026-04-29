@@ -25,7 +25,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 114f6c88c45bc4f158289bae25c7afd1, type: 2}
   - {fileID: 11400000, guid: 7958e0a2d01b24c1290c3a1f60ec2fdb, type: 2}
   - {fileID: 11400000, guid: 5ac16397b00124100a24ba1d483a32a7, type: 2}
-  - {fileID: 11400000, guid: 9b5a468bf0c144960a473d18c5d79fae, type: 2}
+  - {fileID: 11400000, guid: 285aba10bb661451c8608dd5cd9bfb7a, type: 2}
   randomFlavorTable:
     title: BAD REPUTATION
     columns:

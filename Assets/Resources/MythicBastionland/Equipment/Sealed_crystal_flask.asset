@@ -31,6 +31,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: THE CRYSTAL FLASK
+    columns:
+    - header: If Shaken
+      values:
+      - Warmth of a hearth
+      - Veil of darkness
+      - Gentle light
+      - Repels birds
+      - Soothes canines
+      - Eases pain
+    - header: If Smashed
+      values:
+      - Sudden thunderstorm
+      - Next season arrives
+      - Night arrives
+      - Deafening scream
+      - Plague of locusts
+      - Freezes nearby water
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

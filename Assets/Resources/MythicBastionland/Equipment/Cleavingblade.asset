@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: ORIGIN OF THE CLEAVINGBLADE
+    columns:
+    - header: Out of a...
+      values:
+      - Vibrant forest
+      - High waterfall
+      - Roaring sea
+      - Broken boulder
+      - Narrow cave
+      - Dead tree
+    - header: At a time of...
+      values:
+      - Contentment
+      - Desperation
+      - Victory
+      - Anger
+      - Sorrow
+      - Transition
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

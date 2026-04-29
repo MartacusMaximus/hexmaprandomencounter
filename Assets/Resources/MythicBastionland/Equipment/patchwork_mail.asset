@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: PATCHWORK ARMOUR
+    columns:
+    - header: Some taken from...
+      values:
+      - Fallen soldiers
+      - Ancient tomb
+      - Shipwreck
+      - A fighting pit
+      - A defeated Knight
+      - Thankful militia
+    - header: Mixed with...
+      values:
+      - Flexible leather
+      - Sleek bronze
+      - Polished steel
+      - Brass studs
+      - Padded coat
+      - Thick furs
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

@@ -31,6 +31,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: ILL GOTTEN GAINS
+    columns:
+    - header: Valuables
+      values:
+      - Polished gems
+      - Silver coins
+      - Box of salt
+      - Tiny, perfect diamond
+      - Golden hairpin
+      - String of pearls
+    - header: Keepsakes
+      values:
+      - A scrap of a poem
+      - A lock of hair
+      - A wooden ring
+      - Some baby teeth
+      - A vial of blood
+      - Wooden figurine
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

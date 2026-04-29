@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: PRESERVED FISH
+    columns:
+    - header: Flavour
+      values:
+      - Salty
+      - Picante
+      - Sour
+      - Challenging
+      - Soapy
+      - Smoky
+    - header: Side Effect
+      values:
+      - Numbs taste and smell
+      - Very filling
+      - Addictive
+      - VIG Save or vomit
+      - CLA Save or go blind for a moment
+      - SPI Save or weep with intense sorrow
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

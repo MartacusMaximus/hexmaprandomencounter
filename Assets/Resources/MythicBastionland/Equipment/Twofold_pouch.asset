@@ -31,6 +31,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: A TREASURED MEMENTO
+    columns:
+    - header: Item
+      values:
+      - A dried flower
+      - A sword hilt
+      - A pearl
+      - A scrap of a banner
+      - An old coin
+      - A dog's collar
+    - header: Reminds you of...
+      values:
+      - A great victory
+      - A shameful defeat
+      - A happy place
+      - A sorrowful place
+      - Somebody you loved
+      - Somebody you hated
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

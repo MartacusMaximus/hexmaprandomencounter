@@ -30,6 +30,23 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: WHY IS THIS STICK USEFUL?
+    columns:
+    - header: Use Instantly cools any
+      values:
+      - liquid it touches Insects hate the smell
+      - It transforms into 20ft of rope when shaken
+      - Terrifies snakes, eels, and worms
+      - One end is extremely sticky
+      - Seers believe it is a blessing upon you
+    - header: But... It's long and
+      values:
+      - inconvenient to carry Dogs always want it
+      - It looks just like every other stick
+      - It's very delicate
+      - It's extremely flammable
+      - It only works in bright sunlight
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

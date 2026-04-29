@@ -17,7 +17,7 @@ public class DragManager : MonoBehaviour
     {
         draggedItem = item;
         sourceContainer = source;
-        Debug.Log($"Begin drag {item.equipment.itemName}");
+        Debug.Log($"Begin drag {item.DisplayName}");
     }
 
     public void EndDrag()
@@ -34,11 +34,10 @@ public class DragManager : MonoBehaviour
         sourceContainer.TryRemove(draggedItem);
         target.TryAdd(draggedItem);
 
-        Debug.Log($"Moved {draggedItem.equipment.itemName}");
+        Debug.Log($"Moved {draggedItem.DisplayName}");
         EndDrag();
         UIRefreshBus.RequestRefresh();
     }
 }
-
 
 

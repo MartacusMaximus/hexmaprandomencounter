@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: A WILD HORN
+    columns:
+    - header: Shape
+      values:
+      - Sharp
+      - Helix
+      - Sickle
+      - Intertwined
+      - Coiling
+      - Swollen
+    - header: Sound
+      values:
+      - Dissonant
+      - Solemn
+      - Ghostly
+      - Beastly
+      - Droning
+      - Gravelly
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

@@ -31,6 +31,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: MOON FORM
+    columns:
+    - header: Body
+      values:
+      - Muscular (d8 grasp)
+      - Shrunken (d6 bite)
+      - Stretched (d6 strike)
+      - Skeletal (d6 slash)
+      - Canine (d8 jaws)
+      - Feline (d6 claws)
+    - header: Visage
+      values:
+      - Elderly
+      - Youthful
+      - Hideous
+      - Amorphous
+      - Horned
+      - Regal
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

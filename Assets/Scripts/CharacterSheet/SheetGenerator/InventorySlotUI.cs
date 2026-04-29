@@ -34,11 +34,13 @@ public class InventorySlotUI : MonoBehaviour,
     }
 
     // update UI from EquipmentData (null => empty)
-    public void UpdateFromEquipment(EquipmentData eq)
+    public void UpdateFromEquipment(EquipmentInstance inst)
     {
+        var eq = inst != null ? inst.equipment : null;
+
         // ALWAYS update the name text
         if (tmpNameText != null)
-            tmpNameText.text = eq != null ? eq.itemName : "Empty";
+            tmpNameText.text = inst != null ? inst.DisplayName : "Empty";
 
         // ALWAYS update chunk images (do not early-return)
         SetChunkImage(leftChunkImg, eq != null ? eq.leftHalf : ChunkColor.None);
@@ -129,7 +131,7 @@ public class InventorySlotUI : MonoBehaviour,
         var tmp = textGO.AddComponent<TextMeshProUGUI>();
         tmp.raycastTarget = false;
         tmp.alignment = TextAlignmentOptions.Center;
-        tmp.text = inst.equipment.itemName;
+        tmp.text = inst.DisplayName;
 
         // immediately position
         SetDragIconPosition(eventData);

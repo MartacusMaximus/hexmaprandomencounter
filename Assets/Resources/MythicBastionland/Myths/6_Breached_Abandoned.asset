@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: 6_Breached_Abandoned
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 31
+  mythName: 6 Breached Abandoned
+  omens:
+  - '1. Crumbling outpost. A band of labourers
+
+    sharing a meal on their way to
+    begin work
+
+    repairing the Wall. They think Knights
+
+    are being sent to
+    stop them.'
+  - '2. Two giant magpies, stealing shiny things.
+
+    They nest in the trees that
+    root among the
+
+    Wall''s oldest stones.'
+  - '3. Lonesome Wall Knight sat among colossal
+
+    tree roots. She''s strayed from
+    the Wall,
+
+    bored, in search of a little company.'
+  - '4. Pair of wardens, stuck at the bottom of a
+
+    muddy slope. They search for
+    a bandit
+
+    who climbed the Wall. One is paranoid,
+
+    eating from a pot of
+    moonlit honey known
+
+    to protect against illusions.'
+  - '5. A pair of furious refugees, heading to
+
+    break the wall after being driven
+    out of
+
+    their home. They drank oil from the
+
+    hidden giant''s well, granting
+    a terrible
+
+    strength. They don''t trust Knights.'
+  - '6. A distant army lies beyond the wall.
+
+    A mercenary Warband heads to break
+    an
+
+    opening for them.'
+  verse: 
+  castEntries:
+  - name: Wall Wardens, Brin, Catrona & Elish
+    statBlock: 'VIG 11, CLA 8, SPI 7, 4 GD
+
+      A1 (visored helm)'
+    notes: Wallerhook (d8 long, +d10 vs targets below)
+  - name: Wall Knight, Annick
+    statBlock: 'VIG 13, CLA 10, SPI 8, 5 GD
+
+      A2 (old mail, helm)'
+    notes: Longaxe (d10 long), excessive curiosity
+  - name: Giant Magpie, Silverseeker
+    statBlock: 'VIG 6, CLA 14, SPI 5, 3 GD
+
+      Beak and talons (2d6, wounded targets
+      are'
+    notes: blinded until they rest)
+  - name: Empowered Refugees, Mohan & Orla
+    statBlock: 'VIG 18, CLA 8, SPI 9, 2 GD
+
+      Giant punches (2d10)'
+    notes: 'Cutting through the land, a wonder two storms tall
+
+      Guarding from
+      invasion, or built to cage us all
+
+      Wall
+
+      STRETCHES OF WALL
+
+      Condition
+      Watch Post
+
+      1 Crumbling Isolated
+
+      2 Reinforced Overstaffed
+
+      3
+      Under repair In the clouds
+
+      4 Overgrown Leaning
+
+      5 Mid-inspection
+      Hostile'
+  flavorTable:
+    title: 
+    columns: []
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
-  m_Name: An_infant
+  m_Name: Perfect_recall
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  itemName: An infant
+  itemName: Perfect recall
   pointCost: 0
   rarity: bonded
   displayCategory: tool
-  rulesText: 
+  rulesText: (you remember everything you have ever experienced perfectly, with a
+    few limitations, see below)
   damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 0
@@ -30,6 +31,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: LIMITS OF MEMORY
+    columns:
+    - header: Blind spot for...
+      values:
+      - People's names
+      - Place names
+      - Faces
+      - Geography
+      - Relationships
+      - Time
+    - header: And...
+      values:
+      - In large gatherings
+      - In combat
+      - At morning
+      - At night
+      - When alone
+      - After a drink
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

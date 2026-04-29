@@ -45,7 +45,7 @@ public class PartyWorkbenchDragController : MonoBehaviour
         }
 
         activePayload = DragPayload.FromCharacterSlot(grid, slotIndex, item);
-        CreateVisual(item.equipment.itemName, size, eventData);
+        CreateVisual(item.DisplayName, size, eventData);
         return true;
     }
 
@@ -69,7 +69,7 @@ public class PartyWorkbenchDragController : MonoBehaviour
         }
 
         activePayload = DragPayload.FromStorage(item);
-        CreateVisual(item.equipment.itemName, size, eventData);
+        CreateVisual(item.DisplayName, size, eventData);
         return true;
     }
 
@@ -81,7 +81,7 @@ public class PartyWorkbenchDragController : MonoBehaviour
         }
 
         activePayload = DragPayload.FromContainer(container, slotIndex, item);
-        CreateVisual(item.equipment.itemName, size, eventData);
+        CreateVisual(item.DisplayName, size, eventData);
         return true;
     }
 
@@ -93,7 +93,7 @@ public class PartyWorkbenchDragController : MonoBehaviour
         }
 
         activePayload = DragPayload.FromSteed(steed, slotIndex, item);
-        CreateVisual(item.equipment.itemName, size, eventData);
+        CreateVisual(item.DisplayName, size, eventData);
         return true;
     }
 

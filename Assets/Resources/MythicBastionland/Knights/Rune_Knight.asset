@@ -29,7 +29,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
   - {fileID: 11400000, guid: 2651cfe2bf1764892b0a548b70c38fd4, type: 2}
   - {fileID: 11400000, guid: f399fcce59a054c0d9b037ebab776117, type: 2}
-  - {fileID: 11400000, guid: 99c6b4917dced464bbb97d2390fb1a96, type: 2}
+  - {fileID: 11400000, guid: 77583f6321fd7416aa181f23abf28c83, type: 2}
   randomFlavorTable:
     title: THE CRYSTAL FLASK
     columns:

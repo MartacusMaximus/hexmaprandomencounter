@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a8831b15d6d4f58ae21e750184d422, type: 3}
+  m_Name: Sanctums
+  m_EditorClassIdentifier: Assembly-CSharp::SanctumSO
+  entries:
+  - Amber brook
+  - Aromatic pines
+  - Blossom pond
+  - Bracing winds
+  - Canyon vista
+  - Caves of creation
+  - Chiming bells
+  - Colourful flora
+  - Cool meadow
+  - Duck pond
+  - Echo cave
+  - Ember cavern
+  - Enchanting pool
+  - Flickering aurora
+  - Flower patch
+  - Fountain clearing
+  - Fruits of clarity
+  - Glittering pond
+  - Glittering spring
+  - Golden grove
+  - Guiding stones
+  - Hallowed grove
+  - Haven of roots
+  - Hilltop hermitage
+  - Humble academy
+  - Lapping waves
+  - Lily field
+  - Lullaby falls
+  - Lullaby stream
+  - Luminous hollow
+  - Luminous pond
+  - Lush island
+  - Majestic ledge
+  - Mirrored grotto
+  - Misted grove
+  - Moaning rocks
+  - Oracle font
+  - Prismatic falls
+  - Quiet path
+  - Raven roost
+  - Reclusive scribes
+  - Salt grotto
+  - Sapphire woods
+  - Secret bay
+  - Serene glade
+  - Shady grotto
+  - Sheltered trench
+  - Silent grove
+  - Silent sands
+  - Silent stairs
+  - Singing trees
+  - Smouldering geyser
+  - Solitude peak
+  - Soothing thunder
+  - Sparkling crags
+  - Starfilled valley
+  - Stargazer hut
+  - Steam spring
+  - Sun shrine
+  - Thorn library
+  - Timeless cavern
+  - Timeless pool
+  - Tiny island
+  - Tranquil cove
+  - Tranquil vista
+  - Tranquil waterfall
+  - Vast plain
+  - Vibrant glade
+  - Viewing treehouse
+  - Whispering brook
+  - Whispering statuary
+  - Youthful forest

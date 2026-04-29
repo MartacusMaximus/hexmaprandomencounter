@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4be90f279396a47518cdb14cc24125af, type: 3}
+  m_Name: Objects
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
+  entries:
+  - Artful cup
+  - Bear wand
+  - Beast idol
+  - Beggar shroud
+  - Bird cauldron
+  - Black cloth
+  - City coin
+  - City rune
+  - Cold carving
+  - Copper acorn
+  - Creation chest
+  - Crystal mead
+  - Death woodcut
+  - Destiny nut
+  - Dream cup
+  - Fake tooth
+  - Fang rattle
+  - Fear egg
+  - Firebreath flask
+  - Flesh wax
+  - Foul brooch
+  - Fox pipe
+  - Ghost axe
+  - Grey lantern
+  - Grief flute
+  - Hermit's rope
+  - History pack
+  - Immovable herb
+  - Ivory mask
+  - Leaf sword
+  - Leathered bone
+  - Lightning wine
+  - Limeweed
+  - Memory cloak
+  - Mist club
+  - Moonlit honey
+  - Mossy drum
+  - Nature bow
+  - Oceanic whetstone
+  - Pain blade
+  - Paired chalk
+  - Peace stick
+  - Petty candle
+  - Plague scabbard
+  - Rainbow beads
+  - River helm
+  - Scaled daisy
+  - Secret key
+  - Seer arrow
+  - Shadow lens
+  - Shame gem
+  - Silver armour
+  - Silver furs
+  - Singing shell
+  - Soldier's horseshoe
+  - Spinning goblet
+  - Steel rope
+  - Storm ring
+  - Thorn spear
+  - Traveller's hat
+  - Tree chart
+  - Unbreakable compass
+  - Vanity bone
+  - Vassal rod
+  - Venomous rose
+  - Vow sunflower
+  - War ink
+  - Web net
+  - Weird bone
+  - Whistling pin
+  - Wolf knife
+  - Wood mace

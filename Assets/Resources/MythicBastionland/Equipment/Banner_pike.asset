@@ -31,6 +31,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: INSPIRING BANNER
+    columns:
+    - header: Design
+      values:
+      - Red/white diamonds
+      - Blue/yellow rings
+      - Green/silver spiral
+      - Purple/gold chevrons
+      - Black/blue bars
+      - Orange/black waves
+    - header: Topper
+      values:
+      - Antlers
+      - Jaws
+      - Tree
+      - Fishtail
+      - Wings
+      - Seashell
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

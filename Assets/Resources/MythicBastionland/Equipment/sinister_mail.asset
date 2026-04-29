@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: SINISTER ARMOUR
+    columns:
+    - header: Material
+      values:
+      - Burned mail
+      - Blackened bronze
+      - Bloody gambeson
+      - Jagged iron strips
+      - Spiked leather
+      - Barbed scales
+    - header: Detail
+      values:
+      - Bat wing motif
+      - Blood red embroidery
+      - Shadow is darker
+      - Tattered cloak
+      - Embedded bones
+      - Tiny skulls everywhere
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

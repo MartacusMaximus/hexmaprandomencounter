@@ -31,6 +31,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: THE SNAKE SPEAKS
+    columns:
+    - header: Voice
+      values:
+      - Pitiful
+      - Mocking
+      - Sinister
+      - Benevolent
+      - Ancient
+      - Loving
+    - header: Agenda
+      values:
+      - Your death
+      - Order
+      - Bloodshed
+      - Peace
+      - Chaos
+      - Your ambitions
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

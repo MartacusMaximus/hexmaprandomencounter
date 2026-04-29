@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: MODIFIED ARMOUR
+    columns:
+    - header: Type
+      values:
+      - Leather
+      - Velvet
+      - Fur
+      - Scales
+      - Hair
+      - Straw
+    - header: Modified for...
+      values:
+      - Fast donning/removal
+      - Fire immunity
+      - Ease of swimming
+      - Total fall protection
+      - Concealing robes
+      - Repellent to rats
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

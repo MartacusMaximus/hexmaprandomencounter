@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: RUNIC SCROLLS
+    columns:
+    - header: Subject
+      values:
+      - The Seer reading
+      - The Seal Knight
+      - Another Knight
+      - Another Seer
+      - A Myth
+      - The whole Realm
+    - header: Prophecy
+      values:
+      - Death
+      - Torment
+      - Rebirth
+      - Treachery
+      - Growth
+      - Glory
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

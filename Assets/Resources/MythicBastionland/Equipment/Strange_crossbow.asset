@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: STRANGE CROSSBOW
+    columns:
+    - header: Form
+      values:
+      - Handheld (d6)
+      - Lightwood (d8 hefty)
+      - Repeating (d8 long)
+      - Double (2d6 long)
+      - Bronze (2d8 slow)
+      - Ironwood (d10 slow)
+    - header: Twist
+      values:
+      - Cannot shoot in dark
+      - Only you can shoot it
+      - Extremely loud clunk
+      - No bolts required
+      - Very painful wounds
+      - Can also be used in melee combat
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: SOOTHING SALVE
+    columns:
+    - header: Aroma
+      values:
+      - Rosemary
+      - Mould
+      - Pepper
+      - Copper
+      - Garlic
+      - Meat
+    - header: Side Effect
+      values:
+      - Hallucination
+      - Lethargy
+      - Stimulation
+      - Sorrow
+      - Giddiness
+      - Absent-mindedness
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

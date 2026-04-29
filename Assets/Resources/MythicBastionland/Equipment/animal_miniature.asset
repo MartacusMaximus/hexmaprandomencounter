@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: WOODEN ANIMAL
+    columns:
+    - header: Animal Type
+      values:
+      - Turtle
+      - Elephant
+      - Lion cub
+      - Seahorse
+      - Unicorn
+      - Pigeon
+    - header: Origin
+      values:
+      - Gift from a friend
+      - You stole it
+      - Made yourself
+      - From a parent
+      - Found in a ruin
+      - Found in a river
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

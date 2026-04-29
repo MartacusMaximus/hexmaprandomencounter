@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: ANCIENT SWORD
+    columns:
+    - header: Appearance
+      values:
+      - Massive (d10 long)
+      - Curved (d8)
+      - Jagged (2d6 hefty)
+      - Hooked (2d8 long)
+      - Shining (2d6)
+      - Cruel (2d8 hefty)
+    - header: Who gave it to you?
+      values:
+      - The tide
+      - A tomb
+      - A tree
+      - An eagle
+      - A hermit
+      - A mountain
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: CAGED BUG
+    columns:
+    - header: Ability
+      values:
+      - Jolting bite (d6)
+      - Can slowly eat
+      - through metal Melodious chirp
+      - Can fetch items up to the weight of a coin
+      - Always goes toward food
+      - Agonising but harmless bite
+    - header: Manner
+      values:
+      - Completely wild
+      - Well-trained
+      - Particularly stupid
+      - Eager to please
+      - Hates you
+      - A bright and noble creature
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

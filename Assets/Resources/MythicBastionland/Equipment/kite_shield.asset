@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: REPAIRING THE MISTVIAL
+    columns:
+    - header: Material Requirement
+      values:
+      - Blood
+      - Sand
+      - Smoke
+      - Milk
+      - Salt
+      - Silk
+    - header: Other Requirement
+      values:
+      - Midnight ritual
+      - A Seer's blessing
+      - You must be Wounded
+      - Coin sacrifice
+      - Light of sunrise
+      - Bird nest
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

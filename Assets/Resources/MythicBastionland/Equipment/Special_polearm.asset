@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: MILITARY GEAR
+    columns:
+    - header: Special Polearm +d10 vs mounted
+      values:
+      - targets
+      - +d10 vs targets with a shield
+      - +d10 vs targets in armour
+      - +d10 vs targets without a shield
+      - +d10 vs beasts and monsters
+      - +d10 vs anybody attacking you
+    - header: Helm
+      values:
+      - Veiled leather cowl
+      - Long mail hood
+      - Full heavy bucket
+      - Crow-beaked
+      - Caged visor
+      - Kettle cap
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

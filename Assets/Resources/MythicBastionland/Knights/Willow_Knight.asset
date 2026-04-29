@@ -28,7 +28,7 @@ MonoBehaviour:
   bondedProperty:
   - {fileID: 11400000, guid: 709e51156e7d4443a8819859917a1a07, type: 2}
   - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
-  - {fileID: 11400000, guid: 906ea319e425b4951bfb2e12f9b4fffd, type: 2}
+  - {fileID: 11400000, guid: 5669ce025b90b4866b5e25e1be9fdf32, type: 2}
   randomFlavorTable:
     title: MEMORIES OF HOME
     columns:

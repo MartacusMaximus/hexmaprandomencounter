@@ -31,6 +31,9 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: 
+    columns: []
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

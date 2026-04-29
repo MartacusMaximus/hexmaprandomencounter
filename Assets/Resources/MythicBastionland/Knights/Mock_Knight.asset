@@ -28,7 +28,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 262e5d35d804243e78cab3763bfbe644, type: 2}
   - {fileID: 11400000, guid: 6a3989d1fd2724a3e8e2c3de176d7a9f, type: 2}
   - {fileID: 11400000, guid: fe22e71ea657348338ed7dbee3de33f6, type: 2}
-  - {fileID: 11400000, guid: 15e44dbc3423141dab7d9c97e281d66c, type: 2}
+  - {fileID: 11400000, guid: a0eed73c6eb7e420db7ad9d2a158b5c9, type: 2}
   randomFlavorTable:
     title: UNNATURAL BODY
     columns:

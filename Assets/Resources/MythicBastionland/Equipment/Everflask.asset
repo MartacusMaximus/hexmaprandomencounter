@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: THE EVERFLASK
+    columns:
+    - header: Design
+      values:
+      - Leather pouch
+      - Brass horn
+      - Twisted silver
+      - Mottled stone
+      - White wood
+      - Frosted glass
+    - header: Thirst
+      values:
+      - A story
+      - A blade
+      - A small creature
+      - Delicious fruit
+      - Honey
+      - Music
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

@@ -30,6 +30,25 @@ MonoBehaviour:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: FANCY ARMOUR
+    columns:
+    - header: Design
+      values:
+      - Bronze plates
+      - Flanged iron
+      - Sharp scales
+      - Bright brigandine
+      - Heavy rings
+      - Sleek brass
+    - header: Quirk
+      values:
+      - Floats in water
+      - Quick to don or remove
+      - Silent when moving
+      - Intimidating helm (A1)
+      - Spiked gauntlets (d6)
+      - Ignore fall Damage
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

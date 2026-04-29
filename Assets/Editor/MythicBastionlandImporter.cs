@@ -17,19 +17,7 @@ public static class MythicBastionlandImporter
     private const string SteedFolder = RootFolder + "/Steeds";
     private const string KnightFolder = RootFolder + "/Knights";
     private const string MythFolder = RootFolder + "/Myths";
-    private const string PersonFolder = RootFolder + "/People";
-    private const string NameFolder = RootFolder + "/Names";
-    private const string CharacteristicFolder = RootFolder + "/Characteristics";
-    private const string ObjectFolder = RootFolder + "/Objects";
-    private const string BeastFolder = RootFolder + "/Beasts";
-    private const string StateFolder = RootFolder + "/States";
-    private const string ThemeFolder = RootFolder + "/Themes";
-    private const string DwellingFolder = RootFolder + "/Dwellings";
-    private const string SanctumFolder = RootFolder + "/Sanctums";
-    private const string MonumentFolder = RootFolder + "/Monuments";
-    private const string HazardFolder = RootFolder + "/Hazards";
-    private const string CurseFolder = RootFolder + "/Curses";
-    private const string RuinFolder = RootFolder + "/Ruins";
+    private const string ListsFolder = RootFolder + "/Lists";
     private const string ReportPath = RootFolder + "/ImportValidationReport.txt";
     private const string ContentLibraryPath = RootFolder + "/MythicBastionlandContentLibrary.asset";
     private const string BackpackPath = EquipmentFolder + "/TravellerBackpack.asset";
@@ -58,19 +46,7 @@ public static class MythicBastionlandImporter
         EnsureFolder(RootFolder, "Steeds");
         EnsureFolder(RootFolder, "Knights");
         EnsureFolder(RootFolder, "Myths");
-        EnsureFolder(RootFolder, "People");
-        EnsureFolder(RootFolder, "Names");
-        EnsureFolder(RootFolder, "Characteristics");
-        EnsureFolder(RootFolder, "Objects");
-        EnsureFolder(RootFolder, "Beasts");
-        EnsureFolder(RootFolder, "States");
-        EnsureFolder(RootFolder, "Themes");
-        EnsureFolder(RootFolder, "Dwellings");
-        EnsureFolder(RootFolder, "Sanctums");
-        EnsureFolder(RootFolder, "Monuments");
-        EnsureFolder(RootFolder, "Hazards");
-        EnsureFolder(RootFolder, "Curses");
-        EnsureFolder(RootFolder, "Ruins");
+        EnsureFolder(RootFolder, "Lists");
 
         var jsonPath = Path.Combine(Path.GetTempPath(), "mythic-bastionland-import.json");
         RunParser(PdfPath, jsonPath);
@@ -152,19 +128,19 @@ public static class MythicBastionlandImporter
             .Where(asset => asset != null)
             .OrderBy(asset => asset.pageNumber)
             .ToList();
-        contentLibrary.people = GetOrCreateTextList<PersonSO>(PersonFolder, PeopleListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.personHook));
-        contentLibrary.names = GetOrCreateTextList<NameSO>(NameFolder, NamesListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.nameHook));
-        contentLibrary.characteristics = GetOrCreateTextList<CharacteristicSO>(CharacteristicFolder, CharacteristicsListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.characteristicHook));
-        contentLibrary.objects = GetOrCreateTextList<ObjectSO>(ObjectFolder, ObjectsListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.objectHook));
-        contentLibrary.beasts = GetOrCreateTextList<BeastSO>(BeastFolder, BeastsListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.beastHook));
-        contentLibrary.states = GetOrCreateTextList<StateSO>(StateFolder, StatesListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.stateHook));
-        contentLibrary.themes = GetOrCreateTextList<ThemeSO>(ThemeFolder, ThemesListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.themeHook));
-        contentLibrary.dwellings = GetOrCreateTextList<DwellingSO>(DwellingFolder, DwellingsListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.dwelling));
-        contentLibrary.sanctums = GetOrCreateTextList<SanctumSO>(SanctumFolder, SanctumsListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.sanctum));
-        contentLibrary.monuments = GetOrCreateTextList<MonumentSO>(MonumentFolder, MonumentsListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.monument));
-        contentLibrary.hazards = GetOrCreateTextList<HazardSO>(HazardFolder, HazardsListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.hazard));
-        contentLibrary.curses = GetOrCreateTextList<CurseSO>(CurseFolder, CursesListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.curse));
-        contentLibrary.ruins = GetOrCreateTextList<RuinSO>(RuinFolder, RuinsListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.ruin));
+        contentLibrary.people = GetOrCreateTextList<PersonSO>(ListsFolder, PeopleListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.personHook));
+        contentLibrary.names = GetOrCreateTextList<NameSO>(ListsFolder, NamesListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.nameHook));
+        contentLibrary.characteristics = GetOrCreateTextList<CharacteristicSO>(ListsFolder, CharacteristicsListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.characteristicHook));
+        contentLibrary.objects = GetOrCreateTextList<ObjectSO>(ListsFolder, ObjectsListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.objectHook));
+        contentLibrary.beasts = GetOrCreateTextList<BeastSO>(ListsFolder, BeastsListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.beastHook));
+        contentLibrary.states = GetOrCreateTextList<StateSO>(ListsFolder, StatesListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.stateHook));
+        contentLibrary.themes = GetOrCreateTextList<ThemeSO>(ListsFolder, ThemesListAssetName, (payload.knights ?? Array.Empty<KnightRecord>()).Select(knight => knight.themeHook));
+        contentLibrary.dwellings = GetOrCreateTextList<DwellingSO>(ListsFolder, DwellingsListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.dwelling));
+        contentLibrary.sanctums = GetOrCreateTextList<SanctumSO>(ListsFolder, SanctumsListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.sanctum));
+        contentLibrary.monuments = GetOrCreateTextList<MonumentSO>(ListsFolder, MonumentsListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.monument));
+        contentLibrary.hazards = GetOrCreateTextList<HazardSO>(ListsFolder, HazardsListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.hazard));
+        contentLibrary.curses = GetOrCreateTextList<CurseSO>(ListsFolder, CursesListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.curse));
+        contentLibrary.ruins = GetOrCreateTextList<RuinSO>(ListsFolder, RuinsListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.ruin));
         EditorUtility.SetDirty(contentLibrary);
 
         PruneDeprecatedEquipmentAssets();
