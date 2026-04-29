@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: buckler
   pointCost: 0
   rarity: bonded
-  displayCategory: tool
+  displayCategory: shield
   rulesText: (d4, A1)
   damageDiceNotation: 1d4
   armorValue: 1

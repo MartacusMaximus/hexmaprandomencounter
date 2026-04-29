@@ -27,7 +27,7 @@ public static class CharacterRulesAdapter
             model.Inventory.Add(new EquipmentSlotModel
             {
                 SlotIndex = index,
-                Equipment = ToModel(character.inventory[index]?.equipment)
+                Equipment = ToModel(character.inventory[index])
             });
         }
 
@@ -43,8 +43,9 @@ public static class CharacterRulesAdapter
         };
     }
 
-    private static PortableEquipmentModel ToModel(EquipmentData equipment)
+    private static PortableEquipmentModel ToModel(EquipmentInstance instance)
     {
+        var equipment = instance?.equipment;
         if (equipment == null)
         {
             return null;
@@ -60,11 +61,11 @@ public static class CharacterRulesAdapter
         return new PortableEquipmentModel
         {
             Id = Guid.Empty,
-            Name = equipment.itemName,
+            Name = instance.DisplayName,
             PointCost = equipment.pointCost,
             Rarity = equipment.rarity,
             DisplayCategory = equipment.displayCategory,
-            RulesText = equipment.rulesText,
+            RulesText = instance.RulesText,
             DamageDiceNotation = equipment.damageDiceNotation,
             ArmorValue = equipment.armorValue,
             CostsCreationPoints = equipment.costsCreationPoints,

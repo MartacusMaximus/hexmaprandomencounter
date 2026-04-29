@@ -193,8 +193,15 @@ public class EquipmentInstance
     public string ownerCharacterId = string.Empty;
     public bool bondedToOwner;
     public EquipmentData equipment;
+    [TextArea] public string resolvedRulesText = string.Empty;
+    public int resolvedSeeBelowRowIndex = -1;
     [NonSerialized]
     public List<EquipmentInstance> containedItems = new List<EquipmentInstance>();
+
+    public string DisplayName => equipment != null ? equipment.itemName : string.Empty;
+    public string RulesText => string.IsNullOrWhiteSpace(resolvedRulesText)
+        ? (equipment != null ? equipment.rulesText : string.Empty)
+        : resolvedRulesText;
 
     public void EnsureInstance()
     {
@@ -216,4 +223,25 @@ public class EquipmentInstance
     }
 
     public int ContainerSlotCount => equipment != null && equipment.IsContainer ? equipment.ContainerSlotCount : 0;
+
+    public void ResolveSeeBelow(System.Random random = null)
+    {
+        if (equipment == null || !equipment.HasSeeBelowTable)
+        {
+            return;
+        }
+
+        var rowCount = MythicEquipmentTableResolver.GetRowCount(equipment.seeBelowTable);
+        if (rowCount <= 0)
+        {
+            return;
+        }
+
+        random ??= new System.Random(Guid.NewGuid().GetHashCode());
+        resolvedSeeBelowRowIndex = random.Next(0, rowCount);
+        resolvedRulesText = MythicEquipmentTableResolver.ResolveSeeBelowText(
+            equipment.rulesText,
+            equipment.seeBelowTable,
+            resolvedSeeBelowRowIndex);
+    }
 }

@@ -78,7 +78,9 @@ public static class InventoryOwnershipRules
                     equipment = item.equipment,
                     ownerCharacterId = item.ownerCharacterId,
                     bondedToOwner = item.bondedToOwner,
-                    instanceId = item.instanceId
+                    instanceId = item.instanceId,
+                    resolvedRulesText = item.resolvedRulesText,
+                    resolvedSeeBelowRowIndex = item.resolvedSeeBelowRowIndex
                 };
             }
 
@@ -125,7 +127,9 @@ public static class InventoryOwnershipRules
                     equipment = item.equipment,
                     ownerCharacterId = item.ownerCharacterId,
                     bondedToOwner = item.bondedToOwner,
-                    instanceId = item.instanceId
+                    instanceId = item.instanceId,
+                    resolvedRulesText = item.resolvedRulesText,
+                    resolvedSeeBelowRowIndex = item.resolvedSeeBelowRowIndex
                 };
             }
 

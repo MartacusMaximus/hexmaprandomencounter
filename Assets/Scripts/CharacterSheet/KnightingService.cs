@@ -39,6 +39,7 @@ public static class KnightingService
 
         character.AssignKnight(knight);
         character.knightRole = knight.knightName;
+        var random = new System.Random(Guid.NewGuid().GetHashCode());
 
         foreach (var property in knight.bondedProperty.Where(item => item != null))
         {
@@ -49,6 +50,7 @@ public static class KnightingService
                 bondedToOwner = true
             };
             instance.EnsureInstance();
+            instance.ResolveSeeBelow(random);
 
             if (!TryAddToInventory(character.inventory, instance))
             {

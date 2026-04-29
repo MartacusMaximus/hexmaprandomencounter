@@ -38,6 +38,7 @@ public class EquipmentData : ScriptableObject
     public List<TraitSO> traits = new List<TraitSO>();
     public List<string> sourceTags = new List<string>();
     public AbilitySO ability;
+    public MythicRollTable seeBelowTable = new MythicRollTable();
     public bool isBondedProperty;
     public bool contributesToEquippedBonuses = true;
     public EquipmentContainerKind containerKind = EquipmentContainerKind.None;
@@ -50,6 +51,7 @@ public class EquipmentData : ScriptableObject
     public bool IsContainer => containerKind != EquipmentContainerKind.None;
     public bool RequiresContainerStorage => storageRule == EquipmentStorageRule.ContainerOnly;
     public int ContainerSlotCount => IsContainer ? 4 : 0;
+    public bool HasSeeBelowTable => MythicEquipmentTableResolver.HasTable(seeBelowTable);
 
     public int RequiredHands()
     {

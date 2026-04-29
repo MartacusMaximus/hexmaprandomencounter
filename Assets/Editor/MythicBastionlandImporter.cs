@@ -94,6 +94,7 @@ public static class MythicBastionlandImporter
 
         foreach (var knight in payload.knights ?? Array.Empty<KnightRecord>())
         {
+            var knightFlavorTable = ToRollTable(knight.randomFlavorTable);
             var seer = GetOrCreateSeer(knight.linkedSeer, seersByName);
             var ability = GetOrCreateAbility(knight.abilityName, knight.abilityDescription, abilitiesByName);
             var steed = GetOrCreateSteed(knight.steed);
@@ -101,6 +102,7 @@ public static class MythicBastionlandImporter
                 .Select(item => GetOrCreateEquipment(item, equipmentByName))
                 .Where(item => item != null)
                 .ToList() ?? new List<EquipmentData>();
+            AssignSeeBelowTable(propertyItems, knightFlavorTable);
 
             var asset = LoadOrCreateAsset<KnightDefinitionSO>(KnightFolder, knight.knightName);
             asset.pageNumber = knight.pageNumber;
@@ -113,7 +115,7 @@ public static class MythicBastionlandImporter
             asset.linkedSeer = seer;
             asset.steed = steed;
             asset.bondedProperty = propertyItems;
-            asset.randomFlavorTable = ToRollTable(knight.randomFlavorTable);
+            asset.randomFlavorTable = knightFlavorTable;
             EditorUtility.SetDirty(asset);
         }
 
@@ -267,6 +269,7 @@ public static class MythicBastionlandImporter
         asset.costsCreationPoints = false;
         asset.isBondedProperty = record.isBondedProperty;
         asset.usableByNonOwner = !record.isBondedProperty;
+        asset.seeBelowTable = new MythicRollTable();
         asset.sourceTags = record.sourceTags?.ToList() ?? new List<string> { "MythicBastionland" };
         if (asset.displayCategory == "remedy")
         {
@@ -278,6 +281,30 @@ public static class MythicBastionlandImporter
         EditorUtility.SetDirty(asset);
         cache[record.name] = asset;
         return asset;
+    }
+
+    private static void AssignSeeBelowTable(IEnumerable<EquipmentData> propertyItems, MythicRollTable table)
+    {
+        if (!MythicEquipmentTableResolver.HasTable(table))
+        {
+            return;
+        }
+
+        foreach (var item in propertyItems ?? Enumerable.Empty<EquipmentData>())
+        {
+            if (item == null || string.IsNullOrWhiteSpace(item.rulesText))
+            {
+                continue;
+            }
+
+            if (!item.rulesText.Contains("see below", StringComparison.OrdinalIgnoreCase))
+            {
+                continue;
+            }
+
+            item.seeBelowTable = ToRollTableRecordCopy(table);
+            EditorUtility.SetDirty(item);
+        }
     }
 
     private static SteedDefinitionSO GetOrCreateSteed(SteedRecord record)
@@ -387,6 +414,26 @@ public static class MythicBastionlandImporter
             {
                 header = column.header,
                 values = column.values?.ToList() ?? new List<string>()
+            });
+        }
+
+        return table;
+    }
+
+    private static MythicRollTable ToRollTableRecordCopy(MythicRollTable source)
+    {
+        var table = new MythicRollTable
+        {
+            title = source?.title ?? string.Empty,
+            columns = new List<MythicTableColumn>()
+        };
+
+        foreach (var column in source?.columns ?? new List<MythicTableColumn>())
+        {
+            table.columns.Add(new MythicTableColumn
+            {
+                header = column?.header,
+                values = column?.values?.ToList() ?? new List<string>()
             });
         }
 
