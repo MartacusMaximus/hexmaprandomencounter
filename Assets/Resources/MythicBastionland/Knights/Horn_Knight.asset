@@ -18,42 +18,32 @@ MonoBehaviour:
 
     In its wail our
     fates all sealed a feast beneath death'' s view'
-  passionText: 
+  passionText: 'Bluntness: Restore SPI when you move the conversation
+
+    in a way
+    that somebody is avoiding.'
   grantedAbility: {fileID: 11400000, guid: c28933e551a3a411194a502f595a8ea5, type: 2}
-  linkedSeer: {fileID: 11400000, guid: d3e40a2e3364449749ff96512b8df64d, type: 2}
+  linkedSeer: {fileID: 11400000, guid: c3aa5ae0c8af6497c94ed19dce914ae1, type: 2}
   steed: {fileID: 11400000, guid: acc5f7a9b3cf94967960678dcb13efc3, type: 2}
   bondedProperty:
-  - {fileID: 11400000, guid: 9e90eae82a56a4571b7d02f11d18a9eb, type: 2}
+  - {fileID: 11400000, guid: 4215994c0ba0f44569c556aae520b996, type: 2}
   - {fileID: 11400000, guid: cb788559014294e9a97694d6d32401e6, type: 2}
-  - {fileID: 11400000, guid: 7900bd42389884f1b894b16d74ab289c, type: 2}
-  - {fileID: 11400000, guid: b022c5015023f461fb4731cdf614b6e8, type: 2}
-  - {fileID: 11400000, guid: abb2067791b2e411c93ab8faab0235c0, type: 2}
-  - {fileID: 11400000, guid: c076b2173584c409a8ee0d9570f605d2, type: 2}
-  - {fileID: 11400000, guid: a53b0080805194400876ac648a3eadb6, type: 2}
-  - {fileID: 11400000, guid: e0e3cd2024fad427c98968498b5548ec, type: 2}
-  - {fileID: 11400000, guid: 281e7a1e3d2a94d90a0f44aa5754d1c0, type: 2}
-  - {fileID: 11400000, guid: ca36f77eff380402b8cd2a2c4020cae8, type: 2}
-  - {fileID: 11400000, guid: 06e368753df49478a958cb8a42440da5, type: 2}
-  randomFlavorTableTitle: A WILD HORN
-  randomFlavorTableRows:
-  - 1 Sharp Dissonant
-  - 2 Helix Solemn
-  - 3 Sickle Ghostly
-  - 4 Intertwined Beastly
-  - 5 Coiling Droning
-  - "6 Swollen Gravelly\nKNIGHTED BY...\nThe Feasting Seer\nVIG 10, CLA 3, SPI 3,
-    1 GD\nA3 (huge soft body)\n\u2022 Vast, soft, immobile creature, constantly\nfussed
-    over by white-cloaked acolytes.\n\u2022 Silent, does nothing but gorge on food,\nbut
-    her acolytes interpret meaning from\nwhether she accepts or rejects offerings.\n\u2022
-    Her guidance is generally helpful,\nespecially to those who are kind to her."
-  personHook: Repugnant pedlar
-  objectHook: Destiny nut
-  beastHook: Swiftly blackbird
-  stateHook: Helping
-  themeHook: 'Blood
-
-    2
-
-    11
-
-    The'
+  randomFlavorTable:
+    title: A WILD HORN
+    columns:
+    - header: Shape
+      values:
+      - Sharp
+      - Helix
+      - Sickle
+      - Intertwined
+      - Coiling
+      - Swollen
+    - header: Sound
+      values:
+      - Dissonant
+      - Solemn
+      - Ghostly
+      - Beastly
+      - Droning
+      - Gravelly

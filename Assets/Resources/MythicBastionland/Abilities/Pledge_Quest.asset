@@ -13,20 +13,17 @@ MonoBehaviour:
   m_Name: Pledge_Quest
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Pledge Quest
-  description: "Swear a quest to somebody who cares.\nUntil you complete the quest
-    you cannot\nregain lost GD, but get +d12 on all attacks\nagainst those who stand
-    in your way. Lose\nd12 SPI if you abandon the quest.\nPASSION - Impetuosity\nRestore
-    SPI when you are first to fight.\nDream of vassal, fear of knight\nTo die at
-    rest, in moonly light\nQuesting Knight\nANCIENT SWORD\nAppearance Who gave it
-    to you?\n1 Massive (d10 long) The tide\n2 Curved (d8) A tomb\n3 Jagged (2d6 hefty)
-    A tree\n4 Hooked (2d8 long) An eagle\n5 Shining (2d6) A hermit\n6 Cruel (2d8
-    hefty) A mountain\nKNIGHTED BY...\nThe Buried Seer\nVIG 4, CLA 3, SPI 14, 1 GD\n\u2022
-    Trapped far beneath our feet, but speaks\nto those who stand at her gravestone,\nadorned
-    with black flowers.\n\u2022 Sees all below the ground, and hears all\non the
-    surface. Blind to water and sky.\n\u2022 Wants to hurry along the inevitable
-    death\nof everyone and everything.\nPerson: Skilled bandit ~ Name: Borwenna ~
-    Characteristic: Silver hair\nObject: Fake tooth ~ Beast: Knightly salamander
-    ~ State: Killing ~ Theme: Colours\n3\n10\nThe"
+  description: 'Swear a quest to somebody who cares.
+
+    Until you complete the
+    quest you cannot
+
+    regain lost GD, but get +d12 on all attacks
+
+    against
+    those who stand in your way. Lose
+
+    d12 SPI if you abandon the quest.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

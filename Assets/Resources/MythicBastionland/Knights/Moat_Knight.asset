@@ -18,53 +18,29 @@ MonoBehaviour:
 
     A grottling dance,
     the dusky sky agloam'
-  passionText: 
+  passionText: 'Filth: Restore SPI when you become utterly filthy.'
   grantedAbility: {fileID: 11400000, guid: c9d5cd238308e4c68bea27bcc951bdaf, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 67d2f6fb9b85c47bf975c60fe133df93, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 6b647dbfd617c4ec4a8aa51010e1fdd0, type: 2}
   steed: {fileID: 11400000, guid: eefa8af4a1c95404fbe6acd2c44f3004, type: 2}
   bondedProperty:
-  - {fileID: 11400000, guid: 53408b02039714c28b29f266ac71f776, type: 2}
-  - {fileID: 11400000, guid: 89bfb35e165284592b74764096bda5c5, type: 2}
-  - {fileID: 11400000, guid: 29c13e6256c4947259b4a4b9b8b279da, type: 2}
-  - {fileID: 11400000, guid: bbe570dcdbbec4b29b76f54f0e80e328, type: 2}
-  - {fileID: 11400000, guid: d6539b7d5234f4fac88fcea7085eeec0, type: 2}
-  - {fileID: 11400000, guid: e8fd83127f32645f390cbd58aef51c7a, type: 2}
-  - {fileID: 11400000, guid: 19b1b11f473af464b96b38bc9bad2621, type: 2}
-  - {fileID: 11400000, guid: cc0d7f9a7eddb403892dbff0ea4bb6ec, type: 2}
-  - {fileID: 11400000, guid: 3d29e7dae41364a348dfa0c539e10ab4, type: 2}
-  randomFlavorTableTitle: AN ESPECIALLY DIFFICULT STEED
-  randomFlavorTableRows:
-  - 1 Jump Eats anything
-  - 2 Stop suddenly Is beautiful
-  - '3 Carry anybody but
-
-    their Knight
-
-    Always hears an
-
-    ambush coming'
-  - '4 Follow instructions
-
-    unless being ridden
-
-    Always knows which
-
-    way
-    is north'
-  - 5 Pull a cart Hums tunefully
-  - "6 Travel in darkness Is very tough (A1)\nKNIGHTED BY...\nThe Brazen Seer\nVIG
-    10, CLA 3, SPI 10, 1 GD\nA2 (bronze plates)\n\u2022 A burning soul, welded into
-    a hollow\nbronze statue of himself, mounted above\na blazing fire pit.\n\u2022
-    Sees any moments of great pain, in the\npast or the probable future.\n\u2022
-    Wants others to suffer pain, as he has."
-  personHook: Hot-tempered baker
-  objectHook: Shadow lens
-  beastHook: Two-tailed eel
-  stateHook: Lost
-  themeHook: 'Battle
-
-    3
-
-    4
-
-    The'
+  - {fileID: 11400000, guid: 855d786c0df0c4a88a5556611d8d6b77, type: 2}
+  - {fileID: 11400000, guid: 29f594791497d42a5a1b9bff3e034dff, type: 2}
+  randomFlavorTable:
+    title: AN ESPECIALLY DIFFICULT STEED
+    columns:
+    - header: Will Not
+      values:
+      - Jump
+      - Stop suddenly
+      - Carry anybody but their Knight
+      - Follow instructions
+      - unless being ridden Pull a cart
+      - Travel in darkness
+    - header: But
+      values:
+      - Eats anything
+      - Is beautiful
+      - Always hears an ambush coming
+      - Always knows which
+      - way is north Hums tunefully
+      - Is very tough (A1)

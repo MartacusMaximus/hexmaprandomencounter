@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Chariot
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 77
+  mythName: Chariot
+  omens:
+  - '1. The stars are visible, even in day, forming
+
+    a wheel pattern, visibly
+    turning.'
+  - '2. A huge crater, barely the rubble of a stone
+
+    outpost left. Heavy footprints
+    within.'
+  - '3. A distraught family claim a pair of great
+
+    tigers attacked their small
+    farm, eating
+
+    their chickens, sheep, and dog. They
+
+    claim the beasts
+    fell from the sky and
+
+    vanished back into the darkness.'
+  - '4. A swathe has been cut through a forest or
+
+    mountain. It leads toward
+    the Myth Hex.'
+  - '5. The Charioteer rides over the horizon,
+
+    pulled by two great tigers. He
+    is quick to
+
+    share his past triumphs, gathering
+
+    followers to feed his
+    ego. He seeks revenge
+
+    against the ruler of the nearest Holding,
+
+    who
+    has slighted him in a minor way.'
+  - '6. Following up on a boast that somebody
+
+    doubted, the Charioteer is preparing
+    to
+
+    charge either upstream, or into the tide,
+
+    proving that no mere water
+    is a match for
+
+    the Chariot. They will succeed at this,
+
+    driving the
+    water away for good, before
+
+    taking flight and returning to the stars.'
+  verse: 'Bursten forth out shroud o''night
+
+    Graven wheel and tiger'' s bite'
+  castEntries:
+  - name: The Charioteer, Arayda
+    statBlock: 'VIG 16, CLA 7, SPI 18, 9 GD
+
+      A3 (Emerald skin and armour)'
+    notes: 'Meteor rod (2d8 hefty, wounded targets are
+
+      thrown d6 Hexes, taking
+      d6 further Damage)
+
+      Driven to avenge any slights against himself
+
+      or
+      anybody he takes liking to.
+
+      The Chariot
+
+      5GD A2 (structure)
+
+      2d12
+      trample, nothing can stop it'
+  - name: Tigers, Frecko & Parafusa
+    statBlock: 'VIG 15, CLA 15, SPI 5, 6 GD
+
+      Rip and tear (2d8), faster than
+      any horse'
+    notes: Hatred of horses, fear of mirrors.
+  flavorTable:
+    title: BOASTS AND SLIGHTS
+    columns:
+    - header: Boast
+      values:
+      - I shaped the moon
+      - I set stars in motion
+      - I awoke the first
+      - Spring I dug out the sea
+      - I rendered the trees
+      - motionless I made the mountains
+    - header: Slight
+      values:
+      - It was in a past life
+      - They disgust me
+      - They don't appreciate
+      - their standing They mistreated a cat
+      - They squander their
+      - lands They sleep too much
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

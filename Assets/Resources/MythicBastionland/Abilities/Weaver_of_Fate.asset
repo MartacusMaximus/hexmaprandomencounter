@@ -13,20 +13,17 @@ MonoBehaviour:
   m_Name: Weaver_of_Fate
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Weaver of Fate
-  description: "Just before night falls, tell a story related to a\nnearby place,
-    noting two details past, present,\nor future. The Referee secretly chooses one
-    of\nthem to become truth. This can only be\nperformed once per location.\nPASSION
-    - Showmanship\nRestore SPI when you deliberately draw\nunwanted attention.\nAt
-    last, I'm here!\nThe one you were waiting for, the one behind the words\nStory
-    Knight\nTOME OF TALES\nStyle Twist\n1 Quest Ghosts!\n2 Romance Long-lost twins!\n3
-    Revenge Memory loss!\n4 Farce Reincarnation!\n5 Nonsense Talking animals!\n6
-    Tragedy Everybody dies!\nKNIGHTED BY...\nThe Silvered Seer\nVIG 9, CLA 19, SPI
-    13, 2 GD\n\u2022 Shuffles slowly with help from adoring\nacolytes, body weighed
-    down by blue\ncandles and silver filigree.\n\u2022 Claims not to be a Seer at
-    all, a lie. They\nknow more than any other, but gives only\nthe barest hints
-    of advice.\n\u2022 Wants to escape and live a normal life.\nPerson: Intolerant
-    herder ~ Name: Abbotte ~ Characteristic: Sharp features\nObject: Bear wand ~
-    Beast: Emerald panther ~ State: Proud ~ Theme: Commands\n3\n1\nThe"
+  description: 'Just before night falls, tell a story related to a
+
+    nearby place,
+    noting two details past, present,
+
+    or future. The Referee secretly chooses
+    one of
+
+    them to become truth. This can only be
+
+    performed once per location.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

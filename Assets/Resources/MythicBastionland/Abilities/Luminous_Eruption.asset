@@ -13,18 +13,14 @@ MonoBehaviour:
   m_Name: Luminous_Eruption
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Luminous Eruption
-  description: "Use once per Phase. A light source you are\nholding briefly illuminates
-    the entire Hex and\ncauses d12 Damage to nearby beings who live\nin darkness.\nPASSION
-    - Valour\nRestore SPI when you engage in combat\nagainst the odds.\nA trail of
-    hope across the land\nIn sorrow' s face, bright reprimand\nHalo Knight\nREPAIRING
-    THE MISTVIAL\nMaterial\nRequirement Other Requirement\n1 Blood Midnight ritual\n2
-    Sand A Seer's blessing\n3 Smoke You must be Wounded\n4 Milk Coin sacrifice\n5
-    Salt Light of sunrise\n6 Silk Bird nest\nKNIGHTED BY...\nThe Painted Seer\nVIG
-    4, CLA 17, SPI 14, 1 GD\n\u2022 Skin like canvas, stretched too tight, dyed\nevery
-    colour. Very limited movement.\n\u2022 Conjures painted visions onto the walls.\n\u2022
-    Wants to find and train an apprentice.\nPerson: Inquisitive lumberjack ~ Name:
-    Ruskyn ~ Characteristic: Theatrical gestures\nObject: Paired chalk ~ Beast: Frosted
-    hare ~ State: Plotting ~ Theme: Numbers\n4\n7\nThe"
+  description: 'Use once per Phase. A light source you are
+
+    holding briefly illuminates
+    the entire Hex and
+
+    causes d12 Damage to nearby beings who live
+
+    in darkness.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

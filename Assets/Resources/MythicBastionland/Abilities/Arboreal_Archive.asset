@@ -13,18 +13,12 @@ MonoBehaviour:
   m_Name: Arboreal_Archive
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Arboreal Archive
-  description: "Spend a Phase running hands over a tree to\naccess its memory, seeing
-    anything that\nhappened under its shade or over its roots.\nPASSION - Alertness\nRestore
-    SPI when you spot an ambush, trap, or\nsurprise attack.\nA noble one, a lord
-    indeed, who feasts on fruits of fact\nFrom nog to nosh the nut of knowing fills
-    with pleasing fat\nOwl Knight\nMISCELLANEOUS TOMES\nTitle Title\n1 The Light
-    of... ...the Sea Beasts\n2 Those who long for... ...Bread\n3 Death &... ...the
-    City\n4 Merits of... ...other Meditations\n5 Of Domain and... ...Coin\n6 In the
-    Garden of... ...Doom\nKNIGHTED BY...\nThe Screaming Seer\nVIG 13, CLA 4, SPI
-    3, 1 GD\n\u2022 RAAAAAARGH!\n\u2022 YAAAAAAAAAARRRGH!!!\n\u2022 Utterly useless
-    most of the time, but\noccasionally scribbles prophetic notes\nwhen left alone
-    for a while.\nPerson: Adored potter ~ Name: Dewyn ~ Characteristic: Few teeth\nObject:
-    Vanity bone ~ Beast: Shouting pike ~ State: Dutiful ~ Theme: Starlight\n3\n7\nThe"
+  description: 'Spend a Phase running hands over a tree to
+
+    access its memory,
+    seeing anything that
+
+    happened under its shade or over its roots.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

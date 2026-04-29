@@ -18,40 +18,34 @@ MonoBehaviour:
 
     Amidst my kin, a kinder
     world'
-  passionText: 
+  passionText: 'Trust: Restore SPI when giving the benefit of the
+
+    doubt in a
+    way that leaves you vulnerable.'
   grantedAbility: {fileID: 11400000, guid: 5a4517f387bc543a9937bfd1f90e4230, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 37703ae565f5a46d9bd6c07c909f931a, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 7fb22acfcc12a4b6897945b07b49fac0, type: 2}
   steed: {fileID: 11400000, guid: ab801ddae6bb142878a4ab5199438979, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 47a2efef72a434f48957df4e8ea8b467, type: 2}
   - {fileID: 11400000, guid: 1d2fb6e4791574ea4a09d2300cb732bd, type: 2}
   - {fileID: 11400000, guid: 1516f180a8d0e426eafb395538b3279b, type: 2}
-  - {fileID: 11400000, guid: 218f52da55287481695ec2ea5f0af89f, type: 2}
-  - {fileID: 11400000, guid: b1a0f30a6033d484aa031ae63dce37a1, type: 2}
-  - {fileID: 11400000, guid: 9510f7378185c47deb11a9df06e9a847, type: 2}
-  - {fileID: 11400000, guid: a69af9f1dcc21423eaac07992b6f95f6, type: 2}
-  - {fileID: 11400000, guid: 4c63bfbd30ff94f91a647b24f5dbcd21, type: 2}
-  - {fileID: 11400000, guid: cc6c9c440c3b74ca59582b71a90585f0, type: 2}
-  randomFlavorTableTitle: MODIFIED ARMOUR
-  randomFlavorTableRows:
-  - 1 Leather Fast donning/removal
-  - 2 Velvet Fire immunity
-  - 3 Fur Ease of swimming
-  - 4 Scales Total fall protection
-  - 5 Hair Concealing robes
-  - "6 Straw Repellent to rats\nKNIGHTED BY...\nThe Rising Seer\nVIG 14, CLA 17,
-    SPI 17, 4 GD\n\u2022 Embers of starlight in the form of a man,\nstreaks of light
-    soaring upward.\n\u2022 Touch grants glimpses of foresight for the\nrest of the
-    day.\n\u2022 Wants to find somebody virtuous enough\nto take their place, after
-    which they can\nascend fully to the stars."
-  personHook: Antisocial haberdasher
-  objectHook: Fear egg
-  beastHook: Lesser mule
-  stateHook: Basking
-  themeHook: 'Carving
-
-    6
-
-    12
-
-    The'
+  - {fileID: 11400000, guid: 2d7e347c274324366b5ec355775027fc, type: 2}
+  randomFlavorTable:
+    title: MODIFIED ARMOUR
+    columns:
+    - header: Type
+      values:
+      - Leather
+      - Velvet
+      - Fur
+      - Scales
+      - Hair
+      - Straw
+    - header: Modified for...
+      values:
+      - Fast donning/removal
+      - Fire immunity
+      - Ease of swimming
+      - Total fall protection
+      - Concealing robes
+      - Repellent to rats

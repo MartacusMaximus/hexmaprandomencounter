@@ -18,45 +18,31 @@ MonoBehaviour:
 
     Illuminates the fabric''
     s seam'
-  passionText: 
+  passionText: 'Positivity: Restore SPI when you raise somebody''s mood.'
   grantedAbility: {fileID: 11400000, guid: 751315a363a4744c69ba49894bc5cfb6, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 31e1bf1a6af254db9b9a3cbbf5a7e760, type: 2}
+  linkedSeer: {fileID: 11400000, guid: dc1bbb6fdc8c14f1a8cc877617f3911a, type: 2}
   steed: {fileID: 11400000, guid: 0269012a0d0c749748928871bbc4c428, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: c458fc831062a4c7689921fc197ed753, type: 2}
   - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
   - {fileID: 11400000, guid: c707662bb83d1474b8985723ce994a61, type: 2}
-  - {fileID: 11400000, guid: d2a7183b52dae422c92db5b9d40b0a7d, type: 2}
-  - {fileID: 11400000, guid: 139174edb81f2409eba77dbee9d0b06c, type: 2}
-  - {fileID: 11400000, guid: 2e2ebb95cc0d54df7a90c609b1a69a5d, type: 2}
-  - {fileID: 11400000, guid: c347a4d01e13943caa8f334a08253394, type: 2}
-  - {fileID: 11400000, guid: 71623c630e2734dd4afbb66adb994b71, type: 2}
-  - {fileID: 11400000, guid: 96e668a03680543118cb3804731eab4b, type: 2}
-  - {fileID: 11400000, guid: 9fc58bd516b314e2cb02f71f370040ce, type: 2}
-  - {fileID: 11400000, guid: 5835ef4c4c5004aa1ba2d3c526e64d16, type: 2}
-  randomFlavorTableTitle: A STEED WITHOUT A NAME
-  randomFlavorTableRows:
-  - 1 Seer's orders Cannot utter a sound
-  - '2 It frightens you Cannot ride through
-
-    water'
-  - '3 The word is forgotten Seems more
-
-    comfortable at night'
-  - 4 You can't speak it Arrows cannot harm it
-  - 5 It dies when named Can ride on sea water
-  - "6 Its name has power Other steeds show\nfealty to it\nKNIGHTED BY...\nThe Gut
-    Seer\nVIG 10, CLA 2, SPI 2, 1 GD\n\u2022 A pulsing, fleshy mass, entrails sprawled\nout
-    across the stained floor.\n\u2022 When spoken to the stains and intestines\nspiral
-    and sprawl to form guiding shapes.\n\u2022 Just wants to do their duty."
-  personHook: Kind brewer
-  objectHook: Flesh wax
-  beastHook: Wolfy hedgehog
-  stateHook: Marching
-  themeHook: 'Walls
-
-    5
-
-    4
-
-    The'
+  - {fileID: 11400000, guid: 8d466ad6e351744d69ad2d5faa06ed24, type: 2}
+  randomFlavorTable:
+    title: A STEED WITHOUT A NAME
+    columns:
+    - header: Why?
+      values:
+      - Seer's orders
+      - It frightens you
+      - The word is forgotten
+      - You can't speak it
+      - It dies when named
+      - Its name has power
+    - header: A Strange Steed
+      values:
+      - Cannot utter a sound
+      - Cannot ride through water
+      - Seems more
+      - comfortable at night Arrows cannot harm it
+      - Can ride on sea water
+      - Other steeds show fealty to it

@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
   m_Name: fancy_helm
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  itemName: 'fancy
-
-    helm'
+  itemName: fancy helm
   pointCost: 0
   rarity: bonded
   displayCategory: armor

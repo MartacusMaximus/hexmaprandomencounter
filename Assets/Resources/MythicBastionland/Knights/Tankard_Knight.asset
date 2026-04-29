@@ -18,49 +18,31 @@ MonoBehaviour:
 
     Their presence cheered in
     feast or feud'
-  passionText: 
+  passionText: 'Revelry: Restore SPI when socially overindulging.'
   grantedAbility: {fileID: 11400000, guid: c17d8b9ad69ef41ca87f039e1f90569b, type: 2}
-  linkedSeer: {fileID: 11400000, guid: e6035f81605a8460aa614e1ec85c8f1d, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 8fcb8c3d1e67d4b44a0401077a91c1b2, type: 2}
   steed: {fileID: 11400000, guid: def83c2195c0a479c9fdaad284e06509, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 0784a41c33f964a7d947530e2b1e625a, type: 2}
   - {fileID: 11400000, guid: 90dec314012d2418d971f86f0c2e477f, type: 2}
   - {fileID: 11400000, guid: f1fb397d3890a4207a22c6207e7b1a4f, type: 2}
-  - {fileID: 11400000, guid: d3a419678e4834cb3bfee4858eec7e36, type: 2}
   - {fileID: 11400000, guid: b1d8d25fa84a54ebfab2a06b3b27745d, type: 2}
-  - {fileID: 11400000, guid: d4c2c730bdd924572927c6d47d59e736, type: 2}
-  - {fileID: 11400000, guid: c044388040fd2455e8c060a8ac1781d7, type: 2}
-  - {fileID: 11400000, guid: 09cbd16221e834cebaafd14863a9a973, type: 2}
-  - {fileID: 11400000, guid: 8f5d5a1a3aff24587b2c80097a4cb4fd, type: 2}
-  - {fileID: 11400000, guid: 1c0bfe63cf31b496c94053939589efbe, type: 2}
-  - {fileID: 11400000, guid: b9ed1f5773f334130b978d47618d355f, type: 2}
-  - {fileID: 11400000, guid: 7aed89dab436c4bffad3b14c80b13ce9, type: 2}
-  - {fileID: 11400000, guid: 1a804ee03d90f4175899e5426dc325f9, type: 2}
-  randomFlavorTableTitle: SCAR STORY
-  randomFlavorTableRows:
-  - '1 Ruler of a nearby
-
-    Holding Disloyalty'
-  - '2 Ruler of the Seat of
-
-    Power Petty theft'
-  - 3 Wandering Knight A violent argument
-  - 4 A whole village A broken promise
-  - 5 A ship's captain Slander
-  - "6 A member of your\nCompany\nNeglect in a time of\ngreat need\nKNIGHTED BY...\nThe
-    Red Seer\nVIG 8, CLA 15, SPI 15, 10 GD\n\u2022 Their shape lost within billowing
-    crimson\nrobes, flashing wet fabric forms fleeting\nshapes and faces, a voice
-    on the breeze.\n\u2022 Favours those who are open in their\ndesires and fears.
-    Hates dishonesty.\n\u2022 Feels only one fleeting emotion at a time,\nbut feels
-    it with great intensity."
-  personHook: Influential collector
-  objectHook: Beast idol
-  beastHook: Burrowing otter
-  stateHook: Rejoicing
-  themeHook: 'Memory
-
-    3
-
-    6
-
-    The'
+  randomFlavorTable:
+    title: SCAR STORY
+    columns:
+    - header: Who Scarred You? Ruler of a nearby
+      values:
+      - Holding
+      - Ruler of the Seat of
+      - Power Wandering Knight
+      - A whole village
+      - A ship's captain
+      - A member of your Company
+    - header: Your Betrayal
+      values:
+      - Disloyalty
+      - Petty theft
+      - A violent argument
+      - A broken promise
+      - Slander
+      - Neglect in a time of great need

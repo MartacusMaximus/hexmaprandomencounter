@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e6ecb1b38df41c4881fd0309ec9bc2, type: 3}
+  m_Name: The_Endless_Seer
+  m_EditorClassIdentifier: Assembly-CSharp::SeerDefinitionSO
+  seerName: The Endless Seer
+  vigor: 13
+  clarity: 16
+  spirit: 13
+  guard: 3
+  traits:
+  - 'With each blink they appear as an
+
+    entirely different person, sometimes
+
+    several,
+    their voice a congregation.'
+  - 'They see through everybody''s eyes all at
+
+    once, hearing all their thoughts.'
+  - 'Wants to offer guidance but is
+
+    overwhelmed by so much vision.'

@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Changeling
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 153
+  mythName: Changeling
+  omens:
+  - '1. A warm gust. A dove looks at one Knight
+
+    questioningly before fluttering
+    away.
+
+    Secretly roll or choose a victim (see
+
+    opposite) whom the Changeling
+    has
+
+    captured, stealing their form, memories,
+
+    and place within the Realm.'
+  - '2. An elderly rider sits on a wall, his steed
+
+    chased away by horned wolves.
+    He passes
+
+    on a Seer''s warning, the Changeling
+
+    walks the Realm. Trust
+    no one.'
+  - '3. A mature Knight (rolled as normal)
+
+    arriving in the Realm, seeking the
+    Seat of
+
+    Power to offer her service. If she is not the
+
+    Changeling she
+    has good intentions.'
+  - '4. A fleshy door in a tree trunk. It snaps shut
+
+    as quickly as it is noticed,
+    no trace left.'
+  - '5. A pair of horned wolves leap from hiding,
+
+    attacking a random member
+    of the
+
+    Company, trying to drag them away.'
+  - '6. Whoever is the Changeling stands in a
+
+    clearing, facing away from the
+    Company.
+
+    If disturbed they unfold into their true
+
+    form before fleeing,
+    looking for a passage
+
+    back to their own world.'
+  verse: 'When eyes can lie and words beguile
+
+    So falsehoods gain a truthness
+    vile'
+  castEntries:
+  - name: The Changeling, in its True Form
+    statBlock: 'VIG 10, CLA 16, SPI 17, 8 GD
+
+      A2 (twisting, shapeless form)'
+    notes: 'Warping touch (d8, Mortal Wound leaves the
+
+      victim as a soft, quivering
+      heap)'
+  - name: Elderly Rider, Beltor
+    statBlock: 'VIG 6, CLA 6, SPI 9, 9 GD
+
+      A2 (mail, leather helm)'
+    notes: 'Longsword (2d8 hefty), throwing axes (d6)
+
+      Rasping voice. Rejected
+      a knighthood.'
+  - name: Horned Wolves, Malicorn
+    statBlock: 'VIG 12, CLA 8, SPI 3, 3 GD
+
+      Gore and tear (2d8), tries to weaken
+      the'
+    notes: target and return later to finish the job.
+  flavorTable:
+    title: CHOSEN VICTIM
+    columns:
+    - header: Victim
+      values:
+      - Ruler of the Realm
+      - Known Knight
+      - Known Seer
+      - Known Vassal
+      - The last person the Company spoke to
+      - The next person the Company meets
+    - header: Clue
+      values:
+      - They cannot eat
+      - They cannot drink
+      - Animals hate them
+      - Children are scared
+      - They do not have any of their memories
+      - Sunlight causes great discomfort
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

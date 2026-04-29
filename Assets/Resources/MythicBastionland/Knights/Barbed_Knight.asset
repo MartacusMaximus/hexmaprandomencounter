@@ -17,39 +17,31 @@ MonoBehaviour:
   titleVerse: 'Stone and spikes split into flowers
 
     Cruelty is delicious power'
-  passionText: 
+  passionText: 'Apathy: Restore SPI when you reject a call for comfort.'
   grantedAbility: {fileID: 11400000, guid: 935b3ac0d13af4de8b127de53c38bd34, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 7534af3eefdde4b9893d25bfdd17e1c6, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 833cf0ef812894f81bc67185b3ef0730, type: 2}
   steed: {fileID: 11400000, guid: def83c2195c0a479c9fdaad284e06509, type: 2}
   bondedProperty:
-  - {fileID: 11400000, guid: b58c3d36dbdc84973bd1052336250a4d, type: 2}
+  - {fileID: 11400000, guid: 114f6c88c45bc4f158289bae25c7afd1, type: 2}
   - {fileID: 11400000, guid: 7958e0a2d01b24c1290c3a1f60ec2fdb, type: 2}
   - {fileID: 11400000, guid: 5ac16397b00124100a24ba1d483a32a7, type: 2}
   - {fileID: 11400000, guid: 9b5a468bf0c144960a473d18c5d79fae, type: 2}
-  - {fileID: 11400000, guid: d3ffee3d752b1477ba56a256dd922426, type: 2}
-  - {fileID: 11400000, guid: 0ace784c3428a4730b7a003fdf382878, type: 2}
-  - {fileID: 11400000, guid: 2a77431baa9c64fa6889f6a8597a8e66, type: 2}
-  - {fileID: 11400000, guid: 1d580640924db4ae19d094bff44af4d1, type: 2}
-  - {fileID: 11400000, guid: de978e6c5079c4eebb8be4f5642b9cf1, type: 2}
-  randomFlavorTableTitle: BAD REPUTATION
-  randomFlavorTableRows:
-  - 1 Eccentric alchemist Rich merchant
-  - 2 Humble chronicler Master blacksmith
-  - 3 Surly brewer Admired Knight
-  - 4 Horse breeder Bandit leader
-  - 5 Elderly innkeeper Retired general
-  - "6 Petty burglar Mercenary captain\nKNIGHTED BY...\nThe Serpent Seer\nVIG 16,
-    CLA 14, SPI 14, 3 GD\n\u2022 A writhing pile of serpents, speaking as\none through
-    a choir of hisses.\n\u2022 Grants visions of dangerous beasts in the\nwilderness
-    nearby.\n\u2022 Wants more unusual serpents for their\npile, or even just a snack."
-  personHook: Argumentative sage
-  objectHook: Limeweed
-  beastHook: Leeches
-  stateHook: Listening
-  themeHook: 'Smell
-
-    1
-
-    12
-
-    The'
+  randomFlavorTable:
+    title: BAD REPUTATION
+    columns:
+    - header: Begrudging Ally
+      values:
+      - Eccentric alchemist
+      - Humble chronicler
+      - Surly brewer
+      - Horse breeder
+      - Elderly innkeeper
+      - Petty burglar
+    - header: Hated Enemy
+      values:
+      - Rich merchant
+      - Master blacksmith
+      - Admired Knight
+      - Bandit leader
+      - Retired general
+      - Mercenary captain

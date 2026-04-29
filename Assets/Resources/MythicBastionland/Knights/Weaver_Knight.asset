@@ -18,45 +18,34 @@ MonoBehaviour:
 
     As now is morrow,
     perfectly amiss'
-  passionText: 
+  passionText: 'Detachment: Restore SPI when you discard something that
+
+    you
+    want.'
   grantedAbility: {fileID: 11400000, guid: c469f5dbc41554813b7a9aa016faafb1, type: 2}
-  linkedSeer: {fileID: 11400000, guid: d772a7927c7684afa978f3fd8fc77c82, type: 2}
+  linkedSeer: {fileID: 11400000, guid: a5cee157187294e18b547615505e1d73, type: 2}
   steed: {fileID: 11400000, guid: cd151169db9b14935ab065261cc6d289, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: fd8ae03b6ce78437685d79a6351957bc, type: 2}
   - {fileID: 11400000, guid: edf765fcf2ff440dea4318995f98e33e, type: 2}
   - {fileID: 11400000, guid: 95947d6111b9a4bf0bac4d486431a307, type: 2}
-  - {fileID: 11400000, guid: 3cea4be0f8e0d4a96872afa3fbb85174, type: 2}
-  - {fileID: 11400000, guid: 5a222d744311b4fd2acdee1839600621, type: 2}
-  - {fileID: 11400000, guid: 7798e9fcbe508458ead621fcbeadb0ba, type: 2}
-  - {fileID: 11400000, guid: b1291843068a548989f3fb3332176e3c, type: 2}
-  - {fileID: 11400000, guid: f1bd06aea2b3f4af8acaa9e84e398719, type: 2}
-  - {fileID: 11400000, guid: 3e846b6dd76e5497d8e0325a345da8c9, type: 2}
-  - {fileID: 11400000, guid: 3a7d0ccd635d84c2ab555630560ed501, type: 2}
-  - {fileID: 11400000, guid: 1d2a5386d011a4cc2af56588d4dfbf8b, type: 2}
-  randomFlavorTableTitle: UNUSUAL THROWN WEAPON
-  randomFlavorTableRows:
-  - 1 Club +d6 in a duel
-  - 2 Disc +d6 vs steeds
-  - 3 Spike +d6 vs fleeing targets
-  - '4 Bola +d6 vs mounted
-
-    targets'
-  - 5 Fork +d6 vs flying targets
-  - "6 Ball +d6 vs targets without\na shield\nKNIGHTED BY...\nThe Armoured Seer\nVIG
-    15, CLA 7, SPI 9, 5 GD, A3 (metal body)\n\u2022 A great blocky mass of chains
-    and iron\nplates, just about humanoid in shape.\n\u2022 They were interred in
-    their armour after\na mortal wound, now seeing through the\neyes of every piece
-    of armour and every\nweapon in the Realm.\n\u2022 Wants to restore their body
-    to its\nprevious health."
-  personHook: Thrifty herald
-  objectHook: Seer arrow
-  beastHook: Watcher python
-  stateHook: Coveting
-  themeHook: 'Hearing
-
-    6
-
-    7
-
-    The'
+  - {fileID: 11400000, guid: 7ec6a55119f6a4fc4bb931ca9ca31a1b, type: 2}
+  randomFlavorTable:
+    title: UNUSUAL THROWN WEAPON
+    columns:
+    - header: Design
+      values:
+      - Club
+      - Disc
+      - Spike
+      - Bola
+      - Fork
+      - Ball
+    - header: Ability
+      values:
+      - +d6 in a duel
+      - +d6 vs steeds
+      - +d6 vs fleeing targets
+      - +d6 vs mounted
+      - targets +d6 vs flying targets
+      - +d6 vs targets without a shield

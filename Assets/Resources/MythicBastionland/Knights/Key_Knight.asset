@@ -17,40 +17,30 @@ MonoBehaviour:
   titleVerse: 'Sure as sky and sea
 
     For every lock a key'
-  passionText: 
+  passionText: 'Distraction: Restore SPI when you abandon a set plan.'
   grantedAbility: {fileID: 11400000, guid: 90cbcf19fb62e4ebebcd799ec34e7588, type: 2}
-  linkedSeer: {fileID: 11400000, guid: ef8deb2847b4448f7a6a867d2201868a, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 9f3e09b6c3cfb43438da33a2c3e3729d, type: 2}
   steed: {fileID: 11400000, guid: 3d66e1761ec1b4645acc09b371758553, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: bf8a84601c38a42c4836516acfd5457a, type: 2}
   - {fileID: 11400000, guid: 1361007559fd24cb18cf6042c905f895, type: 2}
-  - {fileID: 11400000, guid: 5a11b7a4701534f16802c60bd09365c7, type: 2}
-  - {fileID: 11400000, guid: 22cdd9b35e06846968bdcb992bd5584e, type: 2}
-  - {fileID: 11400000, guid: bb2e63e202ea641dd969ff56e674ea2a, type: 2}
-  - {fileID: 11400000, guid: 4d47f501c6212424786ca225c82014b3, type: 2}
-  - {fileID: 11400000, guid: 069eae024cfac464da21af95443d2f17, type: 2}
-  - {fileID: 11400000, guid: 38134a298ccb74c698644eb1cffa83dd, type: 2}
-  - {fileID: 11400000, guid: 5f01d2911baf446a2a184bbdaaaca6f5, type: 2}
-  randomFlavorTableTitle: ILL GOTTEN GAINS
-  randomFlavorTableRows:
-  - 1 Polished gems A scrap of a poem
-  - 2 Silver coins A lock of hair
-  - 3 Box of salt A wooden ring
-  - 4 Tiny, perfect diamond Some baby teeth
-  - 5 Golden hairpin A vial of blood
-  - "6 String of pearls Wooden figurine\nKNIGHTED BY...\nThe Unspoken Seer\nVIG 5,
-    CLA 18, SPI 18, 6 GD\n\u2022 Locals claim there's no Seer here and\ndodge further
-    questions.\n\u2022 Worthy Knights find guidance left as\ncryptic symbols in the
-    wilderness near to\ntheir Sanctum and near to any Myth.\n\u2022 Wants to remain
-    unspoken, unobserved,\nand eventually cease to exist at all."
-  personHook: Bitter archer
-  objectHook: Rainbow beads
-  beastHook: Riding peacock
-  stateHook: Guarding
-  themeHook: 'Towers
-
-    3
-
-    3
-
-    The'
+  - {fileID: 11400000, guid: 7b5d1ec17fb88497bb44bdac48d8e883, type: 2}
+  randomFlavorTable:
+    title: ILL GOTTEN GAINS
+    columns:
+    - header: Valuables
+      values:
+      - Polished gems
+      - Silver coins
+      - Box of salt
+      - Tiny, perfect diamond
+      - Golden hairpin
+      - String of pearls
+    - header: Keepsakes
+      values:
+      - A scrap of a poem
+      - A lock of hair
+      - A wooden ring
+      - Some baby teeth
+      - A vial of blood
+      - Wooden figurine

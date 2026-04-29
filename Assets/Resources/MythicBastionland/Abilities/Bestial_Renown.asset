@@ -13,20 +13,12 @@ MonoBehaviour:
   m_Name: Bestial_Renown
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Bestial Renown
-  description: "Each time you defeat an animal in a contest\nbefitting its strengths,
-    all animals of that type\nwill react favourably to you.\nPASSION - Closure\nRestore
-    SPI when you get an answer that\nyou've been seeking for some time.\nYou see
-    in beasts an anarchy unfold\nIn truth, a structure strict as crowns of old\nTiger
-    Knight\nA TATTOOED STEED\nDesign Why?\n1 Abstract shapes For service in battle\n2
-    Ancient runes It happened before you\nbought them\n3 Letters you do not\nunderstand\nThey
-    were born\nthat way\n4 Skulls and bones It happened overnight\n5 Thunderbolts
-    They appeared slowly\n6 Thorns and flowers A Seer demanded it\nKNIGHTED BY...\nThe
-    Dying Seer\nVIG 3, CLA 12, SPI 3, 1 GD\n\u2022 A ghostly projection bound to
-    a rotting\ncorpse, trapped in the moment of death.\n\u2022 Knows the precise
-    details of every death\nstill to come, but is forbidden from\nsharing them. Can
-    still gently advise.\n\u2022 Wants every other being to die so that he\ncan finally
-    rest.\nPerson: Animal worshipper ~ Name: Hygo ~ Characteristic: Attempts mystique\nObject:
-    Web net ~ Beast: Listening asp ~ State: Eating ~ Theme: Grass\n6\n2\nThe"
+  description: 'Each time you defeat an animal in a contest
+
+    befitting its strengths,
+    all animals of that type
+
+    will react favourably to you.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

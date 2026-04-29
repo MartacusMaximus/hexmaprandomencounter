@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using KnightsAndGM.Shared;
 using NUnit.Framework;
 using UnityEditor;
@@ -23,6 +24,145 @@ public class MythicBastionlandEditModeTests
         Assert.That(myths.Count, Is.EqualTo(72));
         Assert.That(knights.All(knight => GetField(knight, "grantedAbility") != null && GetField(knight, "steed") != null), Is.True);
         Assert.That(myths.All(myth => ((IList)GetField(myth, "omens")).Count == 6), Is.True);
+    }
+
+    [Test]
+    public void ImportSeparatesSilkKnightTableHooksAndLinkedSeer()
+    {
+        InvokeStatic("MythicBastionlandImporter", "ImportPdfContent");
+
+        var knight = AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/Knights/Silk_Knight.asset");
+        Assert.That(knight, Is.Not.Null);
+        var linkedSeer = GetField(knight, "linkedSeer");
+        Assert.That(linkedSeer, Is.Not.Null);
+        Assert.That(GetField(linkedSeer, "seerName"), Is.EqualTo("The Crimson Seer"));
+        var bondedProperty = ((IEnumerable)GetField(knight, "bondedProperty")).Cast<object>().ToList();
+        Assert.That(bondedProperty.Select(item => (string)GetField(item, "itemName")), Is.EqualTo(new[]
+        {
+            "Delicate halberd",
+            "woven coat armour",
+            "Intricate brass puzzle"
+        }));
+        Assert.That(bondedProperty.Any(item =>
+        {
+            var name = (string)GetField(item, "itemName");
+            return name.Contains("Crimson Seer", StringComparison.OrdinalIgnoreCase)
+                || name.Contains("Scabby merchant", StringComparison.OrdinalIgnoreCase);
+        }), Is.False);
+        var randomFlavorTable = GetField(knight, "randomFlavorTable");
+        Assert.That(GetField(randomFlavorTable, "title"), Is.EqualTo("A YOUNG STEED"));
+        var columns = ((IEnumerable)GetField(randomFlavorTable, "columns")).Cast<object>().ToList();
+        Assert.That(columns.Select(column => (string)GetField(column, "header")), Is.EqualTo(new[]
+        {
+            "Distracted by...",
+            "Scared by..."
+        }));
+        Assert.That(((IEnumerable)GetField(columns[0], "values")).Cast<string>(), Is.EqualTo(new[]
+        {
+            "Smaller animals",
+            "Moss",
+            "Water",
+            "Salt",
+            "Fruit",
+            "Shiny things"
+        }));
+        Assert.That(((IEnumerable)GetField(columns[1], "values")).Cast<string>(), Is.EqualTo(new[]
+        {
+            "Other steeds",
+            "Fire",
+            "Darkness",
+            "Children",
+            "Music",
+            "Being alone"
+        }));
+        Assert.That(RuntimeType("KnightDefinitionSO").GetField("personHook"), Is.Null);
+        Assert.That(RuntimeType("KnightDefinitionSO").GetField("nameHook"), Is.Null);
+        Assert.That(RuntimeType("KnightDefinitionSO").GetField("characteristicHook"), Is.Null);
+        Assert.That(RuntimeType("KnightDefinitionSO").GetField("objectHook"), Is.Null);
+        Assert.That(RuntimeType("KnightDefinitionSO").GetField("beastHook"), Is.Null);
+        Assert.That(RuntimeType("KnightDefinitionSO").GetField("stateHook"), Is.Null);
+        Assert.That(RuntimeType("KnightDefinitionSO").GetField("themeHook"), Is.Null);
+
+        var library = AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/MythicBastionlandContentLibrary.asset");
+        Assert.That(GetEntries(GetField(library, "people")), Contains.Item("Scabby merchant"));
+        Assert.That(GetEntries(GetField(library, "names")), Contains.Item("Floria"));
+        Assert.That(GetEntries(GetField(library, "characteristics")), Contains.Item("Destructive klutz"));
+        Assert.That(GetEntries(GetField(library, "objects")), Contains.Item("Petty candle"));
+        Assert.That(GetEntries(GetField(library, "beasts")), Contains.Item("Ghost carp"));
+        Assert.That(GetEntries(GetField(library, "states")), Contains.Item("Enfeebled"));
+        Assert.That(GetEntries(GetField(library, "themes")), Contains.Item("Armour"));
+        Assert.That(GetEntries(GetField(library, "characteristics")), Contains.Item("Head in the clouds"));
+    }
+
+    [Test]
+    public void ImportSeparatesChangelingVictimTableAndRealmEntries()
+    {
+        InvokeStatic("MythicBastionlandImporter", "ImportPdfContent");
+
+        var myth = AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/Myths/Changeling.asset");
+        Assert.That(myth, Is.Not.Null);
+        Assert.That(GetField(myth, "verse"), Is.EqualTo("When eyes can lie and words beguile\nSo falsehoods gain a truthness vile"));
+        var castEntries = ((IEnumerable)GetField(myth, "castEntries")).Cast<object>().ToList();
+        Assert.That(castEntries.Select(entry => (string)GetField(entry, "name")), Is.EqualTo(new[]
+        {
+            "The Changeling, in its True Form",
+            "Elderly Rider, Beltor",
+            "Horned Wolves, Malicorn"
+        }));
+        var flavorTable = GetField(myth, "flavorTable");
+        Assert.That(GetField(flavorTable, "title"), Is.EqualTo("CHOSEN VICTIM"));
+        var columns = ((IEnumerable)GetField(flavorTable, "columns")).Cast<object>().ToList();
+        Assert.That(columns.Select(column => (string)GetField(column, "header")), Is.EqualTo(new[]
+        {
+            "Victim",
+            "Clue"
+        }));
+        Assert.That(((IEnumerable)GetField(columns[0], "values")).Cast<string>(), Is.EqualTo(new[]
+        {
+            "Ruler of the Realm",
+            "Known Knight",
+            "Known Seer",
+            "Known Vassal",
+            "The last person the Company spoke to",
+            "The next person the Company meets"
+        }));
+        Assert.That(((IEnumerable)GetField(columns[1], "values")).Cast<string>(), Is.EqualTo(new[]
+        {
+            "They cannot eat",
+            "They cannot drink",
+            "Animals hate them",
+            "Children are scared",
+            "They do not have any of their memories",
+            "Sunlight causes great discomfort"
+        }));
+        Assert.That(RuntimeType("MythSO").GetField("dwelling"), Is.Null);
+        Assert.That(RuntimeType("MythSO").GetField("sanctum"), Is.Null);
+        Assert.That(RuntimeType("MythSO").GetField("monument"), Is.Null);
+        Assert.That(RuntimeType("MythSO").GetField("hazard"), Is.Null);
+        Assert.That(RuntimeType("MythSO").GetField("curse"), Is.Null);
+        Assert.That(RuntimeType("MythSO").GetField("ruin"), Is.Null);
+
+        var library = AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/MythicBastionlandContentLibrary.asset");
+        Assert.That(GetEntries(GetField(library, "dwellings")), Contains.Item("Bright windmill"));
+        Assert.That(GetEntries(GetField(library, "sanctums")), Contains.Item("Silent sands"));
+        Assert.That(GetEntries(GetField(library, "monuments")), Contains.Item("Crowned oak"));
+        Assert.That(GetEntries(GetField(library, "hazards")), Contains.Item("Scalding heat"));
+        Assert.That(GetEntries(GetField(library, "curses")), Contains.Item("Mocking clouds"));
+        Assert.That(GetEntries(GetField(library, "ruins")), Contains.Item("Ghostly village"));
+        Assert.That(GetEntries(GetField(library, "monuments")), Contains.Item("Roots of the world"));
+    }
+
+    [Test]
+    public void ImportPrunesDeprecatedLongFormEquipmentAssets()
+    {
+        InvokeStatic("MythicBastionlandImporter", "ImportPdfContent");
+
+        foreach (var guid in AssetDatabase.FindAssets("t:EquipmentData", new[] { "Assets/Resources/MythicBastionland/Equipment" }))
+        {
+            var path = AssetDatabase.GUIDToAssetPath(guid);
+            var asset = AssetDatabase.LoadMainAssetAtPath(path);
+            Assert.That(CountWords((string)GetField(asset, "itemName")), Is.LessThanOrEqualTo(3), path);
+        }
     }
 
     [Test]
@@ -229,5 +369,15 @@ public class MythicBastionlandEditModeTests
         var instance = Activator.CreateInstance(RuntimeType("EquipmentInstance"));
         SetField(instance, "equipment", equipment);
         return instance;
+    }
+
+    private static int CountWords(string text)
+    {
+        return Regex.Matches(text ?? string.Empty, @"[A-Za-z0-9]+(?:'[A-Za-z0-9]+)?").Count;
+    }
+
+    private static List<string> GetEntries(object target)
+    {
+        return ((IEnumerable)GetField(target, "entries")).Cast<string>().ToList();
     }
 }

@@ -18,42 +18,34 @@ MonoBehaviour:
 
     More slip from time'' s
     forgetful grip'
-  passionText: 
+  passionText: 'Anonymity: Restore SPI when somebody believes in a false
+
+    identity
+    you are portraying.'
   grantedAbility: {fileID: 11400000, guid: 66baee3d1b3364e76a1bbccca720b0e1, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 5f75adec19a8242c4947c0d86d26f189, type: 2}
+  linkedSeer: {fileID: 11400000, guid: d1833ce51856d4caaa5d482401e6e020, type: 2}
   steed: {fileID: 11400000, guid: 2dbabadd2931c41ceb2c829d257062b1, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: db9e8953c43a74a1db031fe2a0423e3e, type: 2}
   - {fileID: 11400000, guid: f900cbf6e86f54ca995c2ab39ac2dbe0, type: 2}
   - {fileID: 11400000, guid: 9cb6672ad661544de9675b068d5b454a, type: 2}
-  - {fileID: 11400000, guid: e8fb5754794914565ad22e32b1785994, type: 2}
-  - {fileID: 11400000, guid: cf3162c73cf55411a91879263ae44ab9, type: 2}
-  - {fileID: 11400000, guid: 1fbab1abeda12412d905da45efcf7ab3, type: 2}
-  - {fileID: 11400000, guid: 54f193de003c6494fa90559066eff8bd, type: 2}
-  - {fileID: 11400000, guid: 3560d6d76aa234f1eba46d9f652e4f02, type: 2}
-  - {fileID: 11400000, guid: 49304225169dc4120b7fc6cc7277cc72, type: 2}
-  - {fileID: 11400000, guid: cbb06251b346147079ad1f76813539bb, type: 2}
-  - {fileID: 11400000, guid: 62c0a01f854ee42b4ba39bfe577ea88b, type: 2}
-  randomFlavorTableTitle: HOOD AND CLOAK
-  randomFlavorTableRows:
-  - 1 Veiled Velvet
-  - 2 Shadowy Torn
-  - 3 Silken Weathered
-  - 4 Tattered Layered
-  - 5 Fur-trimmed Embroidered
-  - "6 Threadbare Faded pattern\nKNIGHTED BY...\nThe Endless Seer\nVIG 13, CLA 16,
-    SPI 13, 3 GD\n\u2022 With each blink they appear as an\nentirely different person,
-    sometimes\nseveral, their voice a congregation.\n\u2022 They see through everybody's
-    eyes all at\nonce, hearing all their thoughts.\n\u2022 Wants to offer guidance
-    but is\noverwhelmed by so much vision."
-  personHook: Sneaky cobbler
-  objectHook: Fox pipe
-  beastHook: Milk finch
-  stateHook: Empowered
-  themeHook: 'Breaking
-
-    3
-
-    8
-
-    The'
+  - {fileID: 11400000, guid: fe22e71ea657348338ed7dbee3de33f6, type: 2}
+  randomFlavorTable:
+    title: HOOD AND CLOAK
+    columns:
+    - header: Hood
+      values:
+      - Veiled
+      - Shadowy
+      - Silken
+      - Tattered
+      - Fur-trimmed
+      - Threadbare
+    - header: Cloak
+      values:
+      - Velvet
+      - Torn
+      - Weathered
+      - Layered
+      - Embroidered
+      - Faded pattern

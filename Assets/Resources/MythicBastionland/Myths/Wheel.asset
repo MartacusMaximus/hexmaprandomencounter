@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Wheel
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 91
+  mythName: Wheel
+  omens:
+  - '1. With a gust of groaning wind, the next
+
+    Season begins suddenly.'
+  - '2. The wind groans again. At the start of the
+
+    next morning a new Season
+    begins,
+
+    skipping next Season in line and moving
+
+    immediately to the
+    following Season.
+
+    Birds screech and cry.'
+  - '3. The next Season begins suddenly. Milk
+
+    finches are singing out of season,
+    pushing
+
+    their milk-filled eggs from their nests,
+
+    breaking on the ground.'
+  - '4. The next Season is skipped, the following
+
+    Season beginning suddenly.
+    A grey adder,
+
+    hisses from a nearby branch, beckoning
+
+    the Knights over.
+    It will whisper "the
+
+    Wheel is broken" before biting anybody
+
+    who lingers.'
+  - '5. An especially intense Winter arrives
+
+    suddenly and will not end until
+    the Wheel
+
+    is repaired. Swirling clouds form above
+
+    the Wheel''s Hex,
+    spinning at an irregular,
+
+    stuttering pace.'
+  - '6. The Wheel vanishes. Now it can only be
+
+    found in a distant Realm (see
+    opposite).'
+  verse: 'Dawn, day, then dusk. Blossom, burn, then bite.
+
+    Green, grown, then
+    grey. Aborn, alive, abyss.'
+  castEntries:
+  - name: Guardian of the Wheel, Hewgol
+    statBlock: 'VIG 18, CLA 8, SPI 8, 10 GD
+
+      A3 (mail, gold plate, helm)'
+    notes: 'Greataxe (2d10 long). Can only be lifted by a
+
+      sworn Guardian of
+      the Wheel. Can Deny.
+
+      Cannot fathom that the Wheel isn''t working.'
+  - name: Grey Adder
+    statBlock: 'VIG 6, CLA 18, SPI 5, 4 GD
+
+      Bite (d6, poisons on a Wound, the
+      victim is'
+    notes: unable to speak until forgiven by a snake)
+  flavorTable:
+    title: A DISTANT REALM
+    columns:
+    - header: How far away?
+      values:
+      - Neighbour Realm
+      - Two Realms over
+      - Three Realms over
+      - Deep underground
+      - Months over sea
+      - Impossibly far
+    - header: Environment
+      values:
+      - Desert
+      - Jungle
+      - Swamp
+      - Mountains
+      - Archipelago
+      - Tundra
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

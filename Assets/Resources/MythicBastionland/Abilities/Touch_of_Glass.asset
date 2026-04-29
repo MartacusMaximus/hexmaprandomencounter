@@ -13,18 +13,9 @@ MonoBehaviour:
   m_Name: Touch_of_Glass
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Touch of Glass
-  description: "You can see through any surface that you\nplace your hand upon.\nPASSION
-    - Curiosity\nRestore SPI when looking somewhere you\nreally shouldn't.\nRevealer
-    of all secrets, in stark, judgemental light\nIn cold and sharpened heart lies
-    no deceitful spite\nGlass Knight\nPAINTED ARMOUR\nMain Hue Decoration\n1 Indigo
-    Faces\n2 Crimson Vines\n3 Forest green Stars\n4 Teal Wolves\n5 Gold Fire\n6 Rose
-    The City\nKNIGHTED BY...\nThe Blossom Seer\nVIG 9, CLA 18, SPI 16, 2 GD\n\u2022
-    Woman with an uncertain number of\nlimbs draped in white silk. Petals of pale\nskin
-    occasionally fall to the ground.\n\u2022 Sees the present in intense detail.\n\u2022
-    Knows she is only here for a matter of\ndays, and wants to do as much good as\npossible
-    in that time. Returns next year.\nPerson: Smart inquisitor ~ Name: Kirus ~ Characteristic:
-    Beautifully statuesque\nObject: City rune ~ Beast: Clever tortoise ~ State: Travelling
-    ~ Theme: Hair\n6\n4\nThe"
+  description: 'You can see through any surface that you
+
+    place your hand upon.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

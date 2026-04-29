@@ -13,20 +13,15 @@ MonoBehaviour:
   m_Name: Unstoppable_Dash
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Unstoppable Dash
-  description: "When you are in motion you cannot be\nstopped, but sustain d12 Damage
-    if breaking\nthrough a solid wall or object. You cannot\nsustain this motion
-    for long distances.\nPASSION - Strength\nRestore SPI when you complete a physical
-    task\nthat somebody else was struggling with.\nA fated charge in mail and stalward
-    plate\nAbaited foes await that thundring gait\nBoulder Knight\nFANCY ARMOUR\nDesign
-    Quirk\n1 Bronze plates Floats in water\n2 Flanged iron Quick to don or remove\n3
-    Sharp scales Silent when moving\n4 Bright brigandine Intimidating helm (A1)\n5
-    Heavy rings Spiked gauntlets (d6)\n6 Sleek brass Ignore fall Damage\nKNIGHTED
-    BY...\nThe Weeping Seer\nVIG 7, CLA 7, SPI 6, 2 GD\n\u2022 A humble young man
-    sobbing in a\ndarkened corner.\n\u2022 Constantly haunted with images of ways\nin
-    which things could go wrong, always\nleading to his own horrible death.\n\u2022
-    Wants to take every precaution, but it's\nnever enough.\nPerson: Pristine raider
-    ~ Name: Ogan ~ Characteristic: Smooth charmer\nObject: Dream cup ~ Beast: Bright
-    mole ~ State: Burying ~ Theme: Sunset\n3\n5\nThe"
+  description: 'When you are in motion you cannot be
+
+    stopped, but sustain d12
+    Damage if breaking
+
+    through a solid wall or object. You cannot
+
+    sustain
+    this motion for long distances.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

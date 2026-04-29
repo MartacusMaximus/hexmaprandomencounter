@@ -13,19 +13,10 @@ MonoBehaviour:
   m_Name: Punitive_Stroke
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Punitive Stroke
-  description: "Make a melee Attack against a known liar.\nGet +d10 to the Attack,
-    ignoring armour .\nPASSION - Honesty\nRestore SPI when you tell the truth where
-    a\nlie might be more beneficial.\nKNIGHTED BY...\nThe Rotted Seer\nVIG 7, CLA
-    5, SPI 11, 2 GD\n\u2022 Their withered touch is only contagious if\nthey will
-    it.\n\u2022 Sees the way to live on through any\namount of physical decay.\n\u2022
-    Wants to become even more rotten, filthy,\nand diseased.\nA pact to uphold truth
-    and fact\nOn lies the false lay brake and cracked\nTrue Knight\nSYMBOL OF THE
-    TRUTH\nTrigger Effect\n1 Lying to you about\ntheir identity Golden glow\n2 Giving
-    false witness\nto you Turns cold\n3 Giving you malicious\nadvice Gentle hum\n4
-    Lying while bearing\nthe shield Fragrant aroma\n5 Omitting key\ninformation to
-    you Distant birdcall\n6 Lying to you about\ntheir intent Loud clang\nPerson:
-    Wandering old coot ~ Name: Senara ~ Characteristic: Thunderous voice\nObject:
-    Grey lantern ~ Beast: Smiling fox ~ State: Feasting ~ Theme: Sleep\n1\n1\nThe"
+  description: 'Make a melee Attack against a known liar.
+
+    Get +d10 to the Attack,
+    ignoring armour .'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

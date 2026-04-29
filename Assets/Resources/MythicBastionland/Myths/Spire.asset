@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Spire
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 143
+  mythName: Spire
+  omens:
+  - '1. A finely-dressed mushroom gatherer is
+
+    complaining of a lean harvest.
+    He says a
+
+    great fungal spire is overdue, which will
+
+    spread new fungus
+    around the Realm.'
+  - '2. A haze of yellow spores on the wind. Those
+
+    inhaling it see the world
+    around them
+
+    start to bend and breathe, mouths
+
+    opening in the ground.
+    It soon passes.'
+  - '3. Six fungal serfs are out gathering food to
+
+    take back to the Spire. They
+    take without
+
+    asking but have no will to fight.'
+  - '4. A round cabin on a wooded hill, shouting
+
+    within. Two stargazers, sisters,
+    each
+
+    yelling that the other one is a shape-
+
+    shifter from the stars.
+    They have both
+
+    been tricked by hallucinogenic spores.'
+  - '5. The Fungal Knight shambles forward,
+
+    ensuring nobody plans to interfere
+    with
+
+    the Spire. He has little appetite to fight
+
+    and just wants to rot
+    away to sludge.'
+  - '6. A squelch heard across the Realm. The
+
+    Spire and all fungal beings collapse
+    into
+
+    sludge, seeping into the ground. Next
+
+    season the fungus will be
+    bountiful.'
+  verse: 'The pinnacle of stool and shroom
+
+    Grown to fall in putrid bloom'
+  castEntries:
+  - name: Fungal Serf, Born of the Spire
+    statBlock: 'VIG 10, CLA 5, SPI 5, 1 GD
+
+      Heavy fist (d6), bright colouration'
+    notes: 'Wants to collect food for the Spire.
+
+      Doesn''t understand ownership.'
+  - name: Fungal Knight, Rotting
+    statBlock: 'VIG 13, CLA 7, SPI 8, 3 GD
+
+      A2 (mould-covered mail, shield)'
+    notes: 'Fungal mace (d8 hefty), shield (d4)
+
+      Impatient to rot away fully.'
+  flavorTable:
+    title: FUNGAL SERFS
+    columns:
+    - header: Appearance
+      values:
+      - Huge head, teetering
+      - Spindly limbs
+      - Bloated body
+      - Broad cap
+      - Covered in gills
+      - Tall and clumsy
+    - header: Manner
+      values:
+      - Wheezing spores
+      - Curious of the world
+      - Aggressively diligent
+      - Warm and jovial
+      - Proud and aloof
+      - Eating own body
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

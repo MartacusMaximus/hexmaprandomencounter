@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Bull
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 139
+  mythName: Bull
+  omens:
+  - '1. Leaf-covered acolytes parade a newly
+
+    born green bull, declaring a blessing
+    on
+
+    the Realm. They are taking him to a
+
+    secret location for safekeeping.'
+  - '2. People rejoice in the Blessing of the Bull,
+
+    now clearly taking effect
+    (see opposite).'
+  - '3. On a dusty trail, the Bull lies dead. A
+
+    scream is heard in the distance,
+    two
+
+    children running to say that they saw the
+
+    Knights standing over
+    the corpse.
+
+    The Blessings of the Bull are lost.'
+  - '4. Five leaf-clad guards immediately charge
+
+    the Knights, declaring them
+    enemies of
+
+    the Realm for killing the Bull.'
+  - '5. A pair of winged fiends are seen in the
+
+    distance, harassing a lost horse,
+
+    tormenting
+    it with their blades. They flee
+
+    if confronted.'
+  - '6. A lone leaf-clad guard is fending off an
+
+    attack from five winged fiends,
+
+    emboldened
+    by their numbers. If the
+
+    guard survives he vouches for the
+
+    Knights''
+    innocence.'
+  verse: 'The bless''d are bound for tragic end
+
+    While jealous eyes make wrath
+    their friend'
+  castEntries:
+  - name: The Bull, Green of Horn and Hide
+    statBlock: 'VIG 10, CLA 5, SPI 3, 2 GD
+
+      Horns (d6), docile temperament'
+    notes: 
+  - name: Leaf-clad Guard, led by Solas
+    statBlock: 'VIG 11, CLA 8, SPI 8, 4 GD
+
+      A2 (leaf-clad mail, helm)'
+    notes: 'Broad-bladed guisarme (d10)
+
+      Intense love for the Bull.
+
+      Solas
+      wields a great guisarme (2d10 slow).'
+  - name: Winged Fiends, Bringers of Sorrow
+    statBlock: 'VIG 8, CLA 17, SPI 4, 5 GD
+
+      A1 on ground only (leathery wings)'
+    notes: 'Bladed arms (2d6), clumsy flight
+
+      Want to sow misery and watch
+      from afar.'
+  flavorTable:
+    title: BLESSINGS OF THE BULL
+    columns:
+    - header: First
+      values:
+      - Drinks tastes better
+      - Bread stays warm
+      - Heavenly dreams
+      - The sick are healed
+      - Wounds are mended
+      - The wind smells great
+    - header: Also
+      values:
+      - Perfect weather
+      - Lost items return
+      - New fruit flourishes
+      - Fish leap into nets
+      - Music sounds sweeter
+      - Breathtaking aurora
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

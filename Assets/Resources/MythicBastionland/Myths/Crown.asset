@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Crown
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 115
+  mythName: Crown
+  omens:
+  - '1. An old herald from the Seat of Power
+
+    rides, blasting his horn. He spreads
+    word
+
+    that the Seat of Power condemns the false
+
+    Crown, and promises
+    a vague reward for
+
+    the one who turns it in for destruction.'
+  - '2. The same herald blasts their horn,
+
+    announcing the hunt for the Crown.
+    He
+
+    has no memory of his previous message.'
+  - '3. Five brutal mercenaries approach,
+
+    roughly interrogating any Knights
+    to see
+
+    what they know about the Crown,
+
+    reporting back to the Seat of
+    Power.'
+  - '4. The herald is beset by tiger spiders,
+
+    d6 attacking openly, a further
+    d6 lurking
+
+    nearby waiting to pounce.'
+  - '5. Twelve brutal mercenaries are enforcing a
+
+    curfew on all Knights, ordering
+    them to
+
+    return to the nearest Holding until the
+
+    mercenaries have found
+    and destroyed
+
+    the Crown.'
+  - '6. In a well-lit clearing the Crown sits on a
+
+    mahogany plinth.'
+  verse: 'No crown brings peace
+
+    This one least'
+  castEntries:
+  - name: Old Herald, Alnect
+    statBlock: 'VIG 6, CLA 7, SPI 13, 2 GD
+
+      Mace (d8 hefty), fine garb, loud
+      horn'
+    notes: 
+  - name: Brutal Mercenaries, Veyril's Vanguard
+    statBlock: 'VIG 12, CLA 10, SPI 10, 4 GD
+
+      A1 (redmail), Veyril is A2 (redmail,
+      plate)'
+    notes: 'Poleaxe (d10 long), no empathy
+
+      Veyril has long red hair and lots
+      of grudges.'
+  - name: Tiger Spider, Horrortrix
+    statBlock: 'VIG 12, CLA 14, SPI 5, 3 GD
+
+      Fangs (2d6), acidic spit (d8),
+      harasses prey'
+    notes: 
+  flavorTable:
+    title: THE CROWN WHISPERS
+    columns:
+    - header: Warning
+      values:
+      - Death is coming
+      - Invaders are looming
+      - Rebellion stirs
+      - You are not worthy
+      - You are immortal
+      - The City is a lie
+    - header: Suggestion
+      values:
+      - Raise an army
+      - Punish the Vassals
+      - Listen to the Seers
+      - Execute Knights
+      - Build fortifications
+      - Attack another Realm
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: The
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 30
+  knightName: The
+  titleVerse: 'A sheriff rides from nature'' s keep
+
+    Snare Knight'
+  passionText: 'Empathy: Restore SPI when you spare the life of a
+
+    hostile animal.
+
+    Immersed
+    within the woods adeep'
+  grantedAbility: {fileID: 11400000, guid: 55f4a3b87128e4bd89f608d1a6102c49, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 689c122e3ed3f47dbba2e78e5bdee1ff, type: 2}
+  steed: {fileID: 11400000, guid: 63526a68f42c148b7a5582a13f34df9b, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 6e33a9e36783e4a2da11615c6350672d, type: 2}
+  - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
+  - {fileID: 11400000, guid: 3b9404312637c4a2d9d5f8d492a25ad9, type: 2}
+  randomFlavorTable:
+    title: KNIGHT & COMPANION
+    columns:
+    - header: History
+      values:
+      - Exiled
+      - Feral
+      - Vengeful
+      - Shamed
+      - Jovial
+      - Artistic
+    - header: Type
+      values:
+      - Otter
+      - Hare
+      - Rat
+      - Weasel
+      - Ferret
+      - Squirrel

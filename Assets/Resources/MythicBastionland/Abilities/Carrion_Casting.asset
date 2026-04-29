@@ -13,20 +13,12 @@ MonoBehaviour:
   m_Name: Carrion_Casting
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Carrion Casting
-  description: "Spread the innards of the recently dead\nacross the ground. Ask a
-    single question, they\npoint you in a direction that would help.\nPASSION - Thrift\nRestore
-    SPI when you make good use of\nsomething you found discarded.\nGutly ribbons,
-    blood' s sweet dance\nThe future calls in gory trance\nVulture Knight\nSINISTER
-    ARMOUR\nMaterial Detail\n1 Burned mail Bat wing motif\n2 Blackened bronze Blood
-    red embroidery\n3 Bloody gambeson Shadow is darker\n4 Jagged iron strips Tattered
-    cloak\n5 Spiked leather Embedded bones\n6 Barbed scales Tiny skulls everywhere\nKNIGHTED
-    BY...\nThe Hymn Seer\nVIG 7, CLA 10, SPI 13, 5 GD\n\u2022 Little more than a
-    skeleton draped in\nwhite robes, moving suddenly and\nstopping completely still.\n\u2022
-    Guides visitors in dreary, discordant\nsong, loose guidance hidden in the words.\n\u2022
-    Wants to bring Myths to a rapid end so\nthat the whole world can be drawn to
-    a\nsorrowful close.\nPerson: Confident assassin ~ Name: Kelwun ~ Characteristic:
-    Brawn over brains\nObject: Leaf sword ~ Beast: Grim donkey ~ State: Breaking
-    ~ Theme: Warmth\n5\n11\nThe"
+  description: 'Spread the innards of the recently dead
+
+    across the ground. Ask
+    a single question, they
+
+    point you in a direction that would help.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

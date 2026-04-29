@@ -28,9 +28,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 266ea1635cbd94ea6b2b80e057d63f98, type: 2}
   - {fileID: 11400000, guid: 5c7b40482924f4d2e9723ca704c428f8, type: 2}
   - {fileID: 11400000, guid: 13d1007ae418446a48281d8dedccb1ec, type: 2}
-  - {fileID: 11400000, guid: 68fd44668a9e849d09a16b1df8cd969c, type: 2}
-  - {fileID: 11400000, guid: 5966c7a85f6764168b2e99279f69c50c, type: 2}
-  - {fileID: 11400000, guid: 754f991dd8ec94273a63276e548156e4, type: 2}
   randomFlavorTableTitle: WINGED ARMOUR
   randomFlavorTableRows:
   - 1 Always land safely Sink like a stone

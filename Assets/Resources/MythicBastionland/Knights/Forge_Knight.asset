@@ -18,42 +18,30 @@ MonoBehaviour:
 
     Each
     mallenstroke leaves scars aworn, apparent and unseen'
-  passionText: 
+  passionText: 'Burning: Restore SPI when you are wounded by fire.'
   grantedAbility: {fileID: 11400000, guid: 5d77fe26fe4204d5c8e210ab2d9a819b, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 7695279fcdb1a43858508a32a743f179, type: 2}
+  linkedSeer: {fileID: 11400000, guid: c97394b1940994888a93081321d6e2de, type: 2}
   steed: {fileID: 11400000, guid: c6392329388214014adecfd2344b80c9, type: 2}
   bondedProperty:
-  - {fileID: 11400000, guid: a38e0235d91ca44dd9476beaea5952e6, type: 2}
+  - {fileID: 11400000, guid: 6d4ac94599b874f768d827bb2c71e8b1, type: 2}
   - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
   - {fileID: 11400000, guid: c53590fadd4d548c790090c1e7c9f483, type: 2}
-  - {fileID: 11400000, guid: 12ca62b45863f4f3cbb7b724c3c42fd3, type: 2}
-  - {fileID: 11400000, guid: bfbad74209475464384fbfafa17f395f, type: 2}
-  - {fileID: 11400000, guid: 301952192314744eda95c19bc0a701a1, type: 2}
-  - {fileID: 11400000, guid: 8618909c7c44e44ff9d2004867619cdd, type: 2}
-  - {fileID: 11400000, guid: c8945eadc036d4ea8b0c5f828096e713, type: 2}
-  - {fileID: 11400000, guid: a69ccb308c76449efb82e9fba91d4455, type: 2}
-  - {fileID: 11400000, guid: 93ba2d6bc1b0d4f4193b06054acab193, type: 2}
-  - {fileID: 11400000, guid: 59c5e10412b494348a0009cf5f4aaca0, type: 2}
-  randomFlavorTableTitle: SCARS FROM THE FORGE
-  randomFlavorTableRows:
-  - 1 Burnt hands Fiery nightmares
-  - 2 Scorched hair Noise sensitivity
-  - 3 Faded eyes Distrust of sky
-  - 4 Missing teeth High pain threshold
-  - 5 Blistered face Light sensitivity
-  - "6 Branded arm Fear of water\nKNIGHTED BY...\nThe Worst Seer\nVIG 10, CLA 14,
-    SPI 3, 5 GD\n\u2022 Long face, hanging jaw, fat body draped\nin finery, tended
-    on a high throne.\n\u2022 Sees the worst in everybody, and awful\nthings that
-    could happen. Always knows\nwhat to say to make somebody feel bad.\n\u2022 Secretly
-    has noble intentions to protect\nthe common people of the Realm."
-  personHook: Clumsy messenger
-  objectHook: Singing shell
-  beastHook: Carrion stork
-  stateHook: Aiding
-  themeHook: 'Regret
-
-    3
-
-    12
-
-    The'
+  randomFlavorTable:
+    title: SCARS FROM THE FORGE
+    columns:
+    - header: Visible
+      values:
+      - Burnt hands
+      - Scorched hair
+      - Faded eyes
+      - Missing teeth
+      - Blistered face
+      - Branded arm
+    - header: Non-Visible
+      values:
+      - Fiery nightmares
+      - Noise sensitivity
+      - Distrust of sky
+      - High pain threshold
+      - Light sensitivity
+      - Fear of water

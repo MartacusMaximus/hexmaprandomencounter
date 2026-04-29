@@ -13,19 +13,17 @@ MonoBehaviour:
   m_Name: Pain_Strike
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Pain Strike
-  description: "Make a melee Attack on your own.\nDamage is applied to GD as normal,
-    but to SPI\nin place of VIG. If the target loses half or more\nof their SPI from
-    this Attack they lie broken\nbefore you.\nPASSION - Reverence\nRestore SPI when
-    offering respectful homage\nto the dead.\nSome draw screams from flesh and bone\nOthers
-    seek to make soul moan\nWhip Knight\nSTRANGE HERBS\nPositive Effect Side Effect\n1
-    Heightened hearing Mild nausea\n2 Breathe fire once\n(d8 blast) Unable to speak\n3
-    Speak remotely with\nany one person Hazy vision\n4 No pain (A1) Lose d6 VIG\n5
-    Restore one Virtue Lose d6 CLA\n6 Restore all Virtues Lose d6 SPI\nKNIGHTED BY...\nThe
-    Prey Seer\nVIG 5, CLA 12, SPI 12, 4 GD\n\u2022 A hunched, flea-infested little
-    wretch.\n\u2022 Sees every hunger of every other being in\nthe Realm.\n\u2022
-    Longs to be eaten by something huge.\nPerson: Sickly ironsmith ~ Name: Cradokke
-    ~ Characteristic: Bright clothes\nObject: Artful cup ~ Beast: Longly viper ~
-    State: Tormenting ~ Theme: Shrinking\n2\n9\nThe"
+  description: 'Make a melee Attack on your own.
+
+    Damage is applied to GD as
+    normal, but to SPI
+
+    in place of VIG. If the target loses half or more
+
+    of
+    their SPI from this Attack they lie broken
+
+    before you.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

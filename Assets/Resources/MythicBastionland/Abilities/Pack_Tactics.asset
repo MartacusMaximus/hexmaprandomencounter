@@ -13,20 +13,20 @@ MonoBehaviour:
   m_Name: Pack_Tactics
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Pack Tactics
-  description: "Use before attacking with at least one ally.\nYou may combine any
-    number of dice into\nlarger dice with a value equal to the total of\nthe combined
-    dice, to a maximum of d12\nDamage. For example, combining a d4 and a\nd8 into
-    a d12.\nPASSION - Prestige\nRestore SPI when you take credit for the deeds\nof
-    another.\nIn fury' s reign afore the rav'ning throng\nIn chaos born as knight
-    where beast belong\nHorde Knight\nA TASTE OF HOME\nFlavour Substance\n1 Sour
-    Skin\n2 Salty Beans\n3 Fiery Insects\n4 Smoked Roots\n5 Burnt Cheese\n6 Chewy
-    Honey\nKNIGHTED BY...\nThe Hanged Seer\nVIG 10, CLA 12, SPI 15, 1 GD\n\u2022
-    Dizzy, confused, and distressed unless\nhanging upside-down from their feet.\n\u2022
-    Sees things from unusual perspectives,\nseeking insight or hidden things.\n\u2022
-    Wants for nothing as long as they are\nsuspended, which can make them difficult\nto
-    bargain with.\nPerson: Steady cook ~ Name: Valamonte ~ Characteristic: Sneering
-    smile\nObject: Ghost axe ~ Beast: Granddad louse ~ State: Wandering ~ Theme:
-    Music\n2\n3\nThe"
+  description: 'Use before attacking with at least one ally.
+
+    You may combine
+    any number of dice into
+
+    larger dice with a value equal to the total of
+
+    the
+    combined dice, to a maximum of d12
+
+    Damage. For example, combining a d4 and
+    a
+
+    d8 into a d12.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

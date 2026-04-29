@@ -18,39 +18,33 @@ MonoBehaviour:
 
     Questing
     for the fame that comes with prowess unsurpassed'
-  passionText: 
+  passionText: 'Hatred: Restore SPI when you refuse a plea for
+
+    forgiveness.'
   grantedAbility: {fileID: 11400000, guid: d485d37024df94cab85418f5f00433df, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 194f1e4aafe76418188c2da07ef54264, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 6299e703841bc42b5b67bd8c85c67c74, type: 2}
   steed: {fileID: 11400000, guid: 5c15072177b764698ab6c7d57065f4d8, type: 2}
   bondedProperty:
-  - {fileID: 11400000, guid: 978ba71df4f334253b2898fabf4b9566, type: 2}
+  - {fileID: 11400000, guid: d8e4de3228b2b40dbbd586c5b93efc2e, type: 2}
   - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
   - {fileID: 11400000, guid: 15e2764afc48948e89caa7879df52408, type: 2}
   - {fileID: 11400000, guid: b0bf99a21daa545af97c8f5e22e2fddd, type: 2}
-  - {fileID: 11400000, guid: c3ac8b4f372c54e3599c96c8a2c9a202, type: 2}
-  - {fileID: 11400000, guid: dcdaebe30f850480298edb8c09c8b066, type: 2}
-  - {fileID: 11400000, guid: f723769baa1e148ae825e7ba42160ccb, type: 2}
-  - {fileID: 11400000, guid: b22f9896aa4da4a6aa7e6af61e823e94, type: 2}
-  - {fileID: 11400000, guid: e06bb937408aa47e8937b52bbf72c618, type: 2}
-  randomFlavorTableTitle: CALLING AND HELM
-  randomFlavorTableRows:
-  - 1 Greed Lion
-  - 2 Bloodlust Shark
-  - 3 Glory Great crest
-  - 4 Duty Hawk
-  - 5 Pride Bull
-  - "6 Ambition Demon\nKNIGHTED BY...\nThe Entombed Seer\nVIG 7, CLA 5, SPI 11, 2
-    GD\n\u2022 Now entombed in white stone, their voice\nanswers visitors only rarely.\n\u2022
-    Always guarded by a Knight, mourned by\nan apprentice.\n\u2022 Sees beyond the
-    veil of death."
-  personHook: Young alchemist
-  objectHook: Grief flute
-  beastHook: Grey deer
-  stateHook: Serving
-  themeHook: 'Names
-
-    1
-
-    3
-
-    The'
+  randomFlavorTable:
+    title: CALLING AND HELM
+    columns:
+    - header: Call to Battle
+      values:
+      - Greed
+      - Bloodlust
+      - Glory
+      - Duty
+      - Pride
+      - Ambition
+    - header: Fancy Helm
+      values:
+      - Lion
+      - Shark
+      - Great crest
+      - Hawk
+      - Bull
+      - Demon

@@ -18,40 +18,33 @@ MonoBehaviour:
 
     This
     one birthed from blood of war, stained with corpses'' ash'
-  passionText: 
+  passionText: 'Justice: Restore SPI when you restore the balance
+
+    of justice.'
   grantedAbility: {fileID: 11400000, guid: 28d4830d95e9344f6803da32323f41b9, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 1e75b34d992cf47ba8c345d4faf84d11, type: 2}
+  linkedSeer: {fileID: 11400000, guid: dbad1bfa774b24738ac519d6ce246e76, type: 2}
   steed: {fileID: 11400000, guid: 2020d576447ef4c84b686face4e75672, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 4cf520fc8a87a4fc6ad38b5f7be65123, type: 2}
   - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
   - {fileID: 11400000, guid: a15e787b740144cad91668293abe6cac, type: 2}
   - {fileID: 11400000, guid: fcefea9cdb0bf4c2eb3f40258d521174, type: 2}
-  - {fileID: 11400000, guid: 34600003e22c640139f6b16ad9fadba9, type: 2}
-  - {fileID: 11400000, guid: 9ea209960d57147d08182739551909e0, type: 2}
-  - {fileID: 11400000, guid: 189294ca106c6460eab97afe0a4b9153, type: 2}
-  - {fileID: 11400000, guid: 920279f9285a44255bb32d0e0d9b92b8, type: 2}
-  - {fileID: 11400000, guid: 2fc25c0d9aff542f9a7d8cd2a3d400cd, type: 2}
-  - {fileID: 11400000, guid: 52380f9b28d9f47f0b4c0e05010ec383, type: 2}
-  randomFlavorTableTitle: RAGE FUEL
-  randomFlavorTableRows:
-  - 1 Burning wine The rich
-  - 2 Strong mead Knights
-  - 3 Spiced ale The poor
-  - 4 Sour milk Seers
-  - 5 Fermented vegetable The sea
-  - "6 Blood brew The sun\nKNIGHTED BY...\nThe Reed Seer\nVIG 8, CLA 15, SPI 10,
-    4 GD\n\u2022 Knows they will lose their sight if they\npass over a river.\n\u2022
-    Sees the near future in the patterns of\nreeds chopped in a very specific way.\n\u2022
-    Wants to live in the protection of a\nworthy master, serving a righteous cause."
-  personHook: Bread monk
-  objectHook: City coin
-  beastHook: Mighty newt
-  stateHook: Drinking
-  themeHook: 'Truth
-
-    1
-
-    4
-
-    The'
+  randomFlavorTable:
+    title: RAGE FUEL
+    columns:
+    - header: Alcohol
+      values:
+      - Burning wine
+      - Strong mead
+      - Spiced ale
+      - Sour milk
+      - Fermented vegetable
+      - Blood brew
+    - header: Hatred
+      values:
+      - The rich
+      - Knights
+      - The poor
+      - Seers
+      - The sea
+      - The sun

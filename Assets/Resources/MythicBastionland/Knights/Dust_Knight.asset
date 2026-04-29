@@ -18,41 +18,34 @@ MonoBehaviour:
 
     In truth as one, a frosted
     fire'
-  passionText: 
+  passionText: 'Entitlement: Restore SPI when you get something that you
+
+    were
+    denied.'
   grantedAbility: {fileID: 11400000, guid: 941f897aa86e242cabfc731cd36d5ea7, type: 2}
-  linkedSeer: {fileID: 11400000, guid: d30bc9305b91140bd9cd7494627f14bb, type: 2}
+  linkedSeer: {fileID: 11400000, guid: d326e89a89c34410e92106742063e0b4, type: 2}
   steed: {fileID: 11400000, guid: 4c8cf0fab71eb45cfa9b8859e703a64e, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 9b01e04a372e7445b8256eeaf5b5ad04, type: 2}
   - {fileID: 11400000, guid: fd2acb000080e4420ae35b9032130979, type: 2}
-  - {fileID: 11400000, guid: 0bf4fc65c5ccb4f658977a5dfb7c663d, type: 2}
-  - {fileID: 11400000, guid: fba921513cd8d4f76a94120a5e3aced3, type: 2}
-  - {fileID: 11400000, guid: 30a702467865540369bff6847c0ee986, type: 2}
-  - {fileID: 11400000, guid: 6cd95fd47858f48ed8834248525f3701, type: 2}
-  - {fileID: 11400000, guid: d937143da7d7e45b2a0ea7cb1aec4039, type: 2}
-  - {fileID: 11400000, guid: 4ed211b875c5f4790a69781b4bc82baa, type: 2}
-  - {fileID: 11400000, guid: 03a67141a1b8545608e82e035bcb5c2e, type: 2}
-  randomFlavorTableTitle: PRESERVED FISH
-  randomFlavorTableRows:
-  - 1 Salty Numbs taste and smell
-  - 2 Picante Very filling
-  - 3 Sour Addictive
-  - 4 Challenging VIG Save or vomit
-  - '5 Soapy CLA Save or go blind for
-
-    a moment'
-  - "6 Smoky SPI Save or weep with\nintense sorrow\nKNIGHTED BY...\nThe Purged Seer\nDoes
-    not exist.\n\u2022 A dark, cold void where once a Seer was.\n\u2022 Stepping
-    into the void shows futures that\ncannot exist based on the present state of\nthe
-    Realm.\n\u2022 The void has no agenda, but mostly shows\nvisions helpful to Knights."
-  personHook: Armoured miner
-  objectHook: Ivory mask
-  beastHook: Moss ostrich
-  stateHook: Rescuing
-  themeHook: 'Craft
-
-    6
-
-    9
-
-    The'
+  - {fileID: 11400000, guid: 2325fd23aa35049c8aa05b6d32da6604, type: 2}
+  - {fileID: 11400000, guid: 27b729f8ea15247e2a2edffd6f9565b6, type: 2}
+  randomFlavorTable:
+    title: PRESERVED FISH
+    columns:
+    - header: Flavour
+      values:
+      - Salty
+      - Picante
+      - Sour
+      - Challenging
+      - Soapy
+      - Smoky
+    - header: Side Effect
+      values:
+      - Numbs taste and smell
+      - Very filling
+      - Addictive
+      - VIG Save or vomit
+      - CLA Save or go blind for a moment
+      - SPI Save or weep with intense sorrow

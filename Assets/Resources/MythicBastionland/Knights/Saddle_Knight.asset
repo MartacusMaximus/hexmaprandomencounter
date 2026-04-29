@@ -18,40 +18,29 @@ MonoBehaviour:
 
     As one, a streak aguele
     through green untamed'
-  passionText: 
+  passionText: 'Certainty: Restore SPI when you prove somebody wrong.'
   grantedAbility: {fileID: 11400000, guid: da031dc4c6ead42a58a3e7ab6bf0a764, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 8c72724a06f8f4dcab4813018bce6c99, type: 2}
-  steed: {fileID: 11400000, guid: 903251d7a15634ec39c7091383bb8a8d, type: 2}
+  linkedSeer: {fileID: 11400000, guid: a0be1d037147a48568af5c8e57822cb4, type: 2}
+  steed: {fileID: 11400000, guid: a048c409eb56840c1b0a8883e0c29d63, type: 2}
   bondedProperty:
-  - {fileID: 11400000, guid: d023322606f6d4f22b7f9f1eebf41521, type: 2}
-  - {fileID: 11400000, guid: c186a03c0f20445cdb38fbb1a2fe933b, type: 2}
-  - {fileID: 11400000, guid: 4ff0f67b98c83449db6c4c6680932fcf, type: 2}
-  - {fileID: 11400000, guid: d3bcd2c1877bb42829844ca05ef697eb, type: 2}
-  - {fileID: 11400000, guid: 88c9d467636804b0897bced79cbece94, type: 2}
-  - {fileID: 11400000, guid: 8275347bc545846198c4674561eba6f6, type: 2}
-  - {fileID: 11400000, guid: 9bfd3eb01d24040fe8833cb91b62e87f, type: 2}
-  - {fileID: 11400000, guid: e07710980b8e04a178c15062b4213cc8, type: 2}
-  - {fileID: 11400000, guid: b5293a8f86de545ab8f4c37eb63a230b, type: 2}
-  randomFlavorTableTitle: LOYAL STEED
-  randomFlavorTableRows:
-  - 1 Pristine Completely silent
-  - 2 Plaited Highly alert
-  - 3 Tall Eternally valiant
-  - 4 Golden Fierce (d8 trample)
-  - 5 Dark Loved by other beasts
-  - "6 Stocky Perfect sense of\ndirection\nKNIGHTED BY...\nThe Jewelled Seer\nVIG
-    6, CLA 6, SPI 16, 1 GD\n\u2022 No body is visible, just layers and layers\nof
-    jewelled silk and glittering lace.\n\u2022 Can see the history of jewelled items,
-    and\nthe locations of their own jewels.\n\u2022 Wants to send their jewels out
-    to remote\nplaces, watching from afar."
-  personHook: Stocky hunter
-  objectHook: Silver armour
-  beastHook: Draft horse
-  stateHook: Dying
-  themeHook: 'Food
-
-    1
-
-    9
-
-    The'
+  - {fileID: 11400000, guid: 80b6208fe4e6d4e4ba8a9fd916e07ab0, type: 2}
+  - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
+  randomFlavorTable:
+    title: LOYAL STEED
+    columns:
+    - header: Appearance
+      values:
+      - Pristine
+      - Plaited
+      - Tall
+      - Golden
+      - Dark
+      - Stocky
+    - header: Temperament
+      values:
+      - Completely silent
+      - Highly alert
+      - Eternally valiant
+      - Fierce (d8 trample)
+      - Loved by other beasts
+      - Perfect sense of direction

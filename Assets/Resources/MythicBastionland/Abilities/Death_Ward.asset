@@ -13,18 +13,12 @@ MonoBehaviour:
   m_Name: Death_Ward
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Death Ward
-  description: "Use when a nearby ally would take a Mortal\nWound or be killed outright.
-    You take a\nMortal Wound instead.\nPASSION - Mortality\nRestore SPI when you
-    see an ally suffer a\nMortal Wound.\nIn wood, hide, or iron, as armour meek or
-    grand\nNo greater shield for the weak than the oath-sworn Knight' s own hand\nShield
-    Knight\nSOOTHING SALVE\nAroma Side Effect\n1 Rosemary Hallucination\n2 Mould
-    Lethargy\n3 Pepper Stimulation\n4 Copper Sorrow\n5 Garlic Giddiness\n6 Meat Absent-mindedness\nKNIGHTED
-    BY...\nThe Watched Seer\nVIG 10, CLA 10, SPI 5, 4 GD\n\u2022 Impossibly tall
-    and long-limbed,\nblindfolded with golden silk, adorned in\nrunic scripture.\n\u2022
-    Can gift others with a glimpse of their\nsight, revealing raw and painful truths.\n\u2022
-    Believes all the other Seers are watching.\nWants them all blinded or dead.\nPerson:
-    Novice shepherd ~ Name: Ragge ~ Characteristic: Haunted look\nObject: Storm ring
-    ~ Beast: Roaring coot ~ State: Parched ~ Theme: Water\n2\n8\nThe"
+  description: 'Use when a nearby ally would take a Mortal
+
+    Wound or be killed
+    outright. You take a
+
+    Mortal Wound instead.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

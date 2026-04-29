@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e6ecb1b38df41c4881fd0309ec9bc2, type: 3}
+  m_Name: The_Cured_Seer
+  m_EditorClassIdentifier: Assembly-CSharp::SeerDefinitionSO
+  seerName: The Cured Seer
+  vigor: 9
+  clarity: 4
+  spirit: 8
+  guard: 2
+  traits:
+  - 'Preserved in salt, completely desiccated
+
+    and unable to move.'
+  - 'Barely speaks, but offers manic visions to
+
+    those who taste their salt.'
+  - 'Wants to live forever and witness the end
+
+    of all things.'

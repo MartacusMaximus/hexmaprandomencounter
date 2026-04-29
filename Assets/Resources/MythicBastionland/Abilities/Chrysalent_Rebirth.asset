@@ -13,21 +13,20 @@ MonoBehaviour:
   m_Name: Chrysalent_Rebirth
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Chrysalent Rebirth
-  description: "At night you may immerse yourself in a\ncocoon through means you
-    do not fully\nunderstand (see below). After a full day you\nemerge, your VIG
-    restored, and any physical\nharm cured. This cannot cure death unless\nthe process
-    requires it.\nPASSION - Community\nRestore SPI when you leave a community\nbetter
-    off than when you arrived.\nA bed of gluous, parchly cloth, a coat of stickly
-    sleen\nEmerged in morning good as new, chirurgery unseen\nHive Knight\nFORMING
-    THE COCOON\nYou must be You require\n1 Fed beyond full Complete darkness\n2 Thoroughly
-    cleaned Submersion in water\n3 Sung to sleep Milk and honey\n4 Set alight Choking
-    smoke\n5 Buried in soil A blanket of leaves\n6 Beheaded Burning embers\nKNIGHTED
-    BY...\nThe Skin Seer\nVIG 14, CLA 7, SPI 7, 4 GD\n\u2022 Patchwork creation of
-    various Seers who\nwere murdered or executed. Tall,\npowerful shape, but twisted
-    visage.\n\u2022 Sees every thought of betrayal, even the\ntiniest consideration.\n\u2022
-    Wants to punish those who do not respect\nthe Seers.\nPerson: Deceitful healer
-    ~ Name: Kapo ~ Characteristic: Loves gossip\nObject: History pack ~ Beast: Wood
-    centipede ~ State: Bellowing ~ Theme: Stories\n6\n5\nThe"
+  description: 'At night you may immerse yourself in a
+
+    cocoon through means
+    you do not fully
+
+    understand (see below). After a full day you
+
+    emerge,
+    your VIG restored, and any physical
+
+    harm cured. This cannot cure death unless
+
+    the
+    process requires it.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

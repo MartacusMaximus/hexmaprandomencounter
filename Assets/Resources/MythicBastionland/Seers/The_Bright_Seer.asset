@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e6ecb1b38df41c4881fd0309ec9bc2, type: 3}
+  m_Name: The_Bright_Seer
+  m_EditorClassIdentifier: Assembly-CSharp::SeerDefinitionSO
+  seerName: The Bright Seer
+  vigor: 12
+  clarity: 14
+  spirit: 14
+  guard: 3
+  traits:
+  - 'A booming, intrusively optimistic man
+
+    cloaked in orange and gold.'
+  - 'Has complete control over fire, able to
+
+    twist it into visions brought to
+    life.'
+  - 'Wants to see the world burn, but in a
+
+    planned and controlled manner.'

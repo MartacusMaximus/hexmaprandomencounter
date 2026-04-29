@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e6ecb1b38df41c4881fd0309ec9bc2, type: 3}
+  m_Name: The_Gut_Seer
+  m_EditorClassIdentifier: Assembly-CSharp::SeerDefinitionSO
+  seerName: The Gut Seer
+  vigor: 10
+  clarity: 2
+  spirit: 2
+  guard: 1
+  traits:
+  - 'A pulsing, fleshy mass, entrails sprawled
+
+    out across the stained floor.'
+  - 'When spoken to the stains and intestines
+
+    spiral and sprawl to form guiding
+    shapes.'
+  - Just wants to do their duty.

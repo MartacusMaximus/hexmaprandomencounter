@@ -18,43 +18,32 @@ MonoBehaviour:
 
     Sharp afrail, sight ablind,
     then no more'
-  passionText: 
+  passionText: 'Adventure: Restore SPI when you enter a Myth Hex.'
   grantedAbility: {fileID: 11400000, guid: eab994e78c7804e10a001396044e9681, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 73d42e579649a421d82e0d74478f427f, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 8ab98e00349fd45a79cfeea3bd7ca9df, type: 2}
   steed: {fileID: 11400000, guid: def83c2195c0a479c9fdaad284e06509, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 0b667dec9a45c4c71ae492f99db29b24, type: 2}
   - {fileID: 11400000, guid: 22bd5507ff30d486caf1df9932c3fe12, type: 2}
   - {fileID: 11400000, guid: 1361007559fd24cb18cf6042c905f895, type: 2}
-  - {fileID: 11400000, guid: 0d1d45721514c40718ee04261385aab3, type: 2}
+  - {fileID: 11400000, guid: 5bbe8d90e302744fe8f8a6a791c6052c, type: 2}
   - {fileID: 11400000, guid: 2b62271f7824d40cbbd5915ccca5c28f, type: 2}
-  - {fileID: 11400000, guid: b5352ae3b6140448185f746525a3813b, type: 2}
-  - {fileID: 11400000, guid: 8f17196913cf04b128ffc30ff0777f55, type: 2}
-  - {fileID: 11400000, guid: f33c5ae1e098c49a9afcc4908adc43f1, type: 2}
-  - {fileID: 11400000, guid: 3ac4bdbc0b7074e3f907a19b25a80e42, type: 2}
-  - {fileID: 11400000, guid: bdf964ac8117c4ba4be62dc5194e65c7, type: 2}
-  - {fileID: 11400000, guid: 064c79bee654a4bc6b7987bf2aafca8a, type: 2}
-  - {fileID: 11400000, guid: 5479ddedb07494ea7aeecfa4fd7e1c8e, type: 2}
-  randomFlavorTableTitle: MYSTIC SIGHT
-  randomFlavorTableRows:
-  - 1 Fears Colour
-  - 2 Desires Writing
-  - 3 Hidden things Birds
-  - 4 Regrets Water
-  - 5 Loyalties Stars and sun
-  - "6 Injuries and disease Silver and gold\nKNIGHTED BY...\nThe Shackled Seer\nVIG
-    10, CLA 16, SPI 13, 3 GD\n\u2022 Has a strange number of limbs (d12),\nseemingly
-    changing with each glimpse,\nall shackled to the wall.\n\u2022 Has especially
-    clear visions of things that\nwish to be elsewhere.\n\u2022 Pleads for freedom,
-    but just wants to be\nshackled somewhere new."
-  personHook: Puny guard
-  objectHook: Plague scabbard
-  beastHook: Clawed bees
-  stateHook: Awestruck
-  themeHook: 'Touch
-
-    3
-
-    9
-
-    The'
+  randomFlavorTable:
+    title: MYSTIC SIGHT
+    columns:
+    - header: What can you see?
+      values:
+      - Fears
+      - Desires
+      - Hidden things
+      - Regrets
+      - Loyalties
+      - Injuries and disease
+    - header: But you cannot see
+      values:
+      - Colour
+      - Writing
+      - Birds
+      - Water
+      - Stars and sun
+      - Silver and gold

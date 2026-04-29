@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Pool
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 161
+  mythName: Pool
+  omens:
+  - '1. A joyous farmer skips and sings, leading
+
+    an ox made entirely of gold.
+    She claims
+
+    she wished for the ox after drinking from
+
+    the Pool. Hasn''t
+    got much of a plan for
+
+    what to do with the ox.'
+  - '2. An elderly man, crying out for help.
+
+    Claims that a curse has left him
+    old,
+
+    previously a healthy young hunter.'
+  - '3. Beneath a shady canopy, light peeks
+
+    through, directing attention to
+    the Pool,
+
+    surrounded by round stones.'
+  - '4. Two bodies lie on a large bloodstain,
+
+    seemingly having stabbed each
+    other.
+
+    A dried-up pool sits between them.'
+  - '5. The Pool presents itself again, this time
+
+    atop a hill, among jagged
+    rocks.'
+  - '6. A babbling sound echoes on the air. The
+
+    mossy earth yawns and a great
+    stone
+
+    cauldron rises up. Here the Pool provides
+
+    enough water for the
+    Company to drink as
+
+    much as they like, though each receive
+
+    just one
+    effect. This remains here until
+
+    the end of the Season.'
+  verse: 
+  castEntries:
+  - name: Joyous Farmer, Dolm, with Golden Ox
+    statBlock: 'VIG 10, CLA 6, SPI 13, 3 GD
+
+      Rash and impulsive. Seeking another
+      pool.'
+    notes: 
+  - name: Elderly Wretch, Alastig
+    statBlock: 'VIG 8, CLA 8, SPI 7, 2 GD
+
+      Bow (d6), leaf-lined clothes'
+    notes: 'Appears elderly, claims to be young.
+
+      Idle fiends steep murksome
+      brew
+
+      A heart'' s desire turned false or true
+
+      POOL EFFECTS
+
+      Blessing
+      Curse
+
+      1 Invisible in moonlight Blind in moonlight
+
+      2 Never age
+      past Mature Become Old
+
+      3 Immunity to fire Memory wiped
+
+      4 Fire
+      breath (d8 blast) A limb withers away
+
+      5 Wish for one object All possessions
+      lost
+
+      6
+
+      An icesword (3d6
+
+      hefty) rises from the
+
+      water
+      for you
+
+      Attack nearest ally,
+
+      stopping only when
+
+      Mortally
+      Wounded'
+  flavorTable:
+    title: 
+    columns: []
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

@@ -18,42 +18,31 @@ MonoBehaviour:
 
     Yet Seers say
     in time even words must fall'
-  passionText: 
+  passionText: 'Modesty: Restore SPI when refusing a reward.'
   grantedAbility: {fileID: 11400000, guid: 1ab6500baada3443f94eedc2a3a4578d, type: 2}
-  linkedSeer: {fileID: 11400000, guid: c890793f5e6e247a89d35e55bd4a1518, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 3d4798c0ceb8c435fb21def3681c9731, type: 2}
   steed: {fileID: 11400000, guid: d1702363dd9574968a8039d979ab8a3e, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 09d2af5c3e7c546a1ae546fe8b8d2c7a, type: 2}
   - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
-  - {fileID: 11400000, guid: 008159bcba6af447dafd4816808bded5, type: 2}
-  - {fileID: 11400000, guid: 3f1bd12b5d96740a6b247d6de0200d87, type: 2}
-  - {fileID: 11400000, guid: 3eec7785ccff1438da342449be53ab33, type: 2}
-  - {fileID: 11400000, guid: 5ed818f50eb2c4415a0ded3d57db2ade, type: 2}
-  - {fileID: 11400000, guid: 4fcaa3037ec744514b89bdd53c8af536, type: 2}
-  - {fileID: 11400000, guid: 6095d25f26784497eb2dadc1b190f4dd, type: 2}
-  - {fileID: 11400000, guid: 77bd2a0ee3b684f11b195c4885e84f78, type: 2}
-  - {fileID: 11400000, guid: ef060fd8aa8a74cfca3c1e5d2c48a912, type: 2}
-  randomFlavorTableTitle: RUNIC SCROLLS
-  randomFlavorTableRows:
-  - 1 The Seer reading Death
-  - 2 The Seal Knight Torment
-  - 3 Another Knight Rebirth
-  - 4 Another Seer Treachery
-  - 5 A Myth Growth
-  - "6 The whole Realm Glory\nKNIGHTED BY...\nThe Drunken Seer\nVIG 14, CLA 6, SPI
-    10, 1 GD\n\u2022 Eyes can't focus on her enough to get a\nsense of what she looks
-    like.\n\u2022 Just being in her presence creates an\nintensely intoxicated feeling.
-    Sleeping in\nthis state gives vision-laden dreams.\n\u2022 Wants peace and quiet
-    in the morning,\ngood company in the afternoon, nobody\ncan decipher what she
-    wants at night."
-  personHook: Relaxed courier
-  objectHook: Unbreakable compass
-  beastHook: Flame weasel
-  stateHook: Relaxing
-  themeHook: 'Charm
-
-    2
-
-    10
-
-    The'
+  - {fileID: 11400000, guid: ea5b7e650522e405caefe21386045dac, type: 2}
+  - {fileID: 11400000, guid: a2cfc8c3694af4230874e0d274ea7854, type: 2}
+  randomFlavorTable:
+    title: RUNIC SCROLLS
+    columns:
+    - header: Subject
+      values:
+      - The Seer reading
+      - The Seal Knight
+      - Another Knight
+      - Another Seer
+      - A Myth
+      - The whole Realm
+    - header: Prophecy
+      values:
+      - Death
+      - Torment
+      - Rebirth
+      - Treachery
+      - Growth
+      - Glory

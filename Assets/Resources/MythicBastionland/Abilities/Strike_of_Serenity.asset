@@ -13,22 +13,12 @@ MonoBehaviour:
   m_Name: Strike_of_Serenity
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Strike of Serenity
-  description: "Make a melee Attack against a wounded\ntarget. Get +d8 to the Attack.
-    If this defeats\nthe target then all allies restore SPI.\nPASSION - Vengeance\nRestore
-    SPI when achieving a worthy revenge.\nIn serenous moon the best of us can rest
-    in docile light\nThe quietest bird in impure times must soar in grisly flight\nDove
-    Knight\nWINGED ARMOUR\nAbility Limitation\n1 Always land safely Sink like a stone\n2
-    Jump twice as high Red glow when angry\n3 Sprint silently Slow running speed\n4
-    Animals won't attack\nyou unprovoked\nHorses other than your\nown are afraid
-    of you\n5\nKnights who strike the\nfirst blow against you\nlose d6 SPI\nLose
-    d6 SPI if you ever\nstrike the first blow to\na Knight\n6 Appear as real wings
-    Only protects under\ndaylight\nKNIGHTED BY...\nThe Sunlit Seer\nVIG 3, CLA 13,
-    SPI 15, 2 GD\n\u2022 Fragile, burnt body shuddering in a bed,\ntended by a lone
-    herbalist.\n\u2022 When she is the nearest Seer she can\nappear as a white face
-    in the sun.\n\u2022 Wants to see her beloved Knights\ntriumph in battle above
-    all else.\nPerson: Scarred bounty hunter ~ Name: Arture ~ Characteristic: Always
-    eating\nObject: Soldier's horseshoe ~ Beast: Leafy goose ~ State: Returning ~
-    Theme: Revenge\n2\n12\nThe"
+  description: 'Make a melee Attack against a wounded
+
+    target. Get +d8 to the
+    Attack. If this defeats
+
+    the target then all allies restore SPI.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

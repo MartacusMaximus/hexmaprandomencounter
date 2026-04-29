@@ -13,20 +13,17 @@ MonoBehaviour:
   m_Name: Verminform
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Verminform
-  description: "Take the form of a rat to squeeze into any\nspace that a rat could
-    fit into. You return to\nyour normal form as soon as you are in a\nspace that
-    allows it. You can also speak with\nrats, who are generally helpful.\nPASSION
-    - Trust\nRestore SPI when giving the benefit of the\ndoubt in a way that leaves
-    you vulnerable.\nIn squeakling hole I squashed and curled\nAmidst my kin, a kinder
-    world\nRat Knight\nMODIFIED ARMOUR\nType Modified for...\n1 Leather Fast donning/removal\n2
-    Velvet Fire immunity\n3 Fur Ease of swimming\n4 Scales Total fall protection\n5
-    Hair Concealing robes\n6 Straw Repellent to rats\nKNIGHTED BY...\nThe Rising
-    Seer\nVIG 14, CLA 17, SPI 17, 4 GD\n\u2022 Embers of starlight in the form of
-    a man,\nstreaks of light soaring upward.\n\u2022 Touch grants glimpses of foresight
-    for the\nrest of the day.\n\u2022 Wants to find somebody virtuous enough\nto
-    take their place, after which they can\nascend fully to the stars.\nPerson: Antisocial
-    haberdasher ~ Name: Abran ~ Characteristic: Prosthetic legs\nObject: Fear egg
-    ~ Beast: Lesser mule ~ State: Basking ~ Theme: Carving\n6\n12\nThe"
+  description: 'Take the form of a rat to squeeze into any
+
+    space that a rat
+    could fit into. You return to
+
+    your normal form as soon as you are in a
+
+    space
+    that allows it. You can also speak with
+
+    rats, who are generally helpful.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

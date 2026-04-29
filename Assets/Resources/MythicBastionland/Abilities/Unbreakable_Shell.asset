@@ -13,19 +13,14 @@ MonoBehaviour:
   m_Name: Unbreakable_Shell
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Unbreakable Shell
-  description: "Use at the start of your turn.\nYou cannot move, but double the Armour\nscore
-    of your shield and gain +d6 when\nattacking with a shield.\nPASSION - Wellrestedness\nRestore
-    SPI when you sleep for two\nconsecutive Phases.\nI stand inclad in shelldy stead\nNawone
-    of you will see me dead!\nThe\nTurtle Knight\nDRINKING HORN\nAppearance Imparted
-    Flavour\n1 Tiny Floral honey\n2 Runic carvings Smoky salt\n3 Ruby encrusted Toasty
-    almond\n4 Volcanic rock Ice water\n5 Painted battle scene Warm berries\n6 Huge
-    Meat dripping\nKNIGHTED BY...\nThe Broken Seer\nVIG 2, CLA 7, SPI 13, 1 GD\n\u2022
-    A pile of loose limbs around a husk of a\ntorso. Just able to pull themselves
-    into a\nstanding form with some difficulty.\n\u2022 Doesn't share much guidance
-    now, but\nsends a body part on the quest to help.\n\u2022 Wants more broken body
-    parts to add to\ntheir heap.\nPerson: Wise farmer ~ Name: Crabbe ~ Characteristic:
-    Fine embroidery\nObject: Bird cauldron ~ Beast: Oily buzzard ~ State: Starving
-    ~ Theme: Flowers\n3\n2"
+  description: 'Use at the start of your turn.
+
+    You cannot move, but double the
+    Armour
+
+    score of your shield and gain +d6 when
+
+    attacking with a shield.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

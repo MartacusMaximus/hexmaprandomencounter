@@ -11,8 +11,15 @@ public sealed class MythCastEntry
 }
 
 [Serializable]
-public sealed class MythFlavorTable
+public sealed class MythicTableColumn
+{
+    public string header;
+    [TextArea] public List<string> values = new List<string>();
+}
+
+[Serializable]
+public sealed class MythicRollTable
 {
     public string title;
-    [TextArea] public List<string> rows = new List<string>();
+    public List<MythicTableColumn> columns = new List<MythicTableColumn>();
 }

@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Blade
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 57
+  mythName: Blade
+  omens:
+  - '1. A booming voice singing in the distance. A
+
+    travelling cook belts out
+    songs about the
+
+    Blade''s previous owners, each reaching a
+
+    tragic end
+    (see opposite).'
+  - '2. A cliff-side village, ruined long enough to
+
+    be overgrown with moss and
+    thorns. In a
+
+    ruined chapel an altar is inscribed with:
+
+    Forsake in earth,
+    unbroke by time
+
+    Afore first draw, that greedsome war'
+  - '3. Band of 5 cutthroats think the Knights
+
+    have the Blade or know its whereabouts.'
+  - '4. Down a spiral of natural steps, a bloodied
+
+    sharpening wheel screams
+    on the wind.
+
+    Can sharpen blades to a keen edge (+d8)
+
+    but they break
+    after their first Wound.'
+  - '5. A cave concealed by a steaming waterfall
+
+    is the resting place of the
+    Scabbard, which
+
+    destroys any blade placed inside. The
+
+    waterfall scalds
+    (d10) anybody wielding a
+
+    weapon, harmless to the unarmed.'
+  - '6. A louse-infested dead forest. The Blade
+
+    lies within, but travellers
+    are lured by
+
+    visions of something they truly desire.'
+  verse: 'There it gleam''d as glore in meadow'' s sight
+
+    That star-forged blade
+    amark of warborne plight'
+  castEntries:
+  - name: Cutthroats, Colan, Fia, Elga, Ness, Ruac
+    statBlock: 'VIG 10, CLA 10, SPI 7, 2 GD
+
+      Longknife (d6), 2 javelins (d6)'
+    notes: 'Colan has a halfshield (d4, A1), angelic
+
+      features, never sleeps,
+      can Focus.
+
+      He is truly bloodthirsty; the others less so.'
+  - name: Granddad Louse, Rollyromple, Rockbug
+    statBlock: 'VIG 12, CLA 5, SPI 2, 5 GD
+
+      A2, or A4 when rolled up (plated
+      shell)'
+    notes: 'Scuttering bite (2d6)
+
+      Hungers for wooden items to hide in its
+      lair
+
+      and eat later. Fancy items appeal most.'
+  flavorTable:
+    title: PAST WIELDERS
+    columns:
+    - header: Name
+      values:
+      - Erdyg, Shamed Knight
+      - Belwin, River Bandit
+      - Gwelhelm, Butcher
+      - Ordrig, Tower Guard
+      - Regan, Cup Knight
+      - Lervlin, Squire
+    - header: Tragic End
+      values:
+      - Throat cut
+      - Hanged from tree
+      - Poisoned feast
+      - Crushed by boulder
+      - Lost underground
+      - Drowned in river
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

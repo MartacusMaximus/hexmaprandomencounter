@@ -18,42 +18,33 @@ MonoBehaviour:
 
     No greater shield
     for the weak than the oath-sworn Knight'' s own hand'
-  passionText: 
+  passionText: 'Mortality: Restore SPI when you see an ally suffer a
+
+    Mortal
+    Wound.'
   grantedAbility: {fileID: 11400000, guid: 22f7e5c4f00914e9fa9dd06a2f242309, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 1fba98214383146bb98ec4223fae5fc5, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 955487554cc6d432f944bb87c2afc9dd, type: 2}
   steed: {fileID: 11400000, guid: fec287b0ab01e422c913b6dea21092cf, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: cb22aee659e56402091eb526b76514dc, type: 2}
   - {fileID: 11400000, guid: eaa0804fa9e6b4b0b80f3b1d603a856d, type: 2}
-  - {fileID: 11400000, guid: 30bac7909027f4d6fb80191b39957d20, type: 2}
-  - {fileID: 11400000, guid: 3fe7bbdac49ae4377a89890caef55290, type: 2}
-  - {fileID: 11400000, guid: 8f0f2b9cb1c6b40f1ade567b3136fffd, type: 2}
-  - {fileID: 11400000, guid: cc7f8561f99784654aa1e15d60a6ba4d, type: 2}
-  - {fileID: 11400000, guid: 486cb84dd7a4547008e1a04214f1bd33, type: 2}
-  - {fileID: 11400000, guid: c2b5b4677455e4f1d9c889ae4d2ded04, type: 2}
-  - {fileID: 11400000, guid: 5a9d5b679ce9845059afc37ed1595811, type: 2}
-  - {fileID: 11400000, guid: 239ff4f43fac241258b4b309d3a6fecb, type: 2}
-  - {fileID: 11400000, guid: 3b464c93aca394dabb0d1ca98e7e3488, type: 2}
-  randomFlavorTableTitle: SOOTHING SALVE
-  randomFlavorTableRows:
-  - 1 Rosemary Hallucination
-  - 2 Mould Lethargy
-  - 3 Pepper Stimulation
-  - 4 Copper Sorrow
-  - 5 Garlic Giddiness
-  - "6 Meat Absent-mindedness\nKNIGHTED BY...\nThe Watched Seer\nVIG 10, CLA 10,
-    SPI 5, 4 GD\n\u2022 Impossibly tall and long-limbed,\nblindfolded with golden
-    silk, adorned in\nrunic scripture.\n\u2022 Can gift others with a glimpse of
-    their\nsight, revealing raw and painful truths.\n\u2022 Believes all the other
-    Seers are watching.\nWants them all blinded or dead."
-  personHook: Novice shepherd
-  objectHook: Storm ring
-  beastHook: Roaring coot
-  stateHook: Parched
-  themeHook: 'Water
-
-    2
-
-    8
-
-    The'
+  - {fileID: 11400000, guid: bc3a5eb5dddd4462ca6b27c1a28fc0a7, type: 2}
+  randomFlavorTable:
+    title: SOOTHING SALVE
+    columns:
+    - header: Aroma
+      values:
+      - Rosemary
+      - Mould
+      - Pepper
+      - Copper
+      - Garlic
+      - Meat
+    - header: Side Effect
+      values:
+      - Hallucination
+      - Lethargy
+      - Stimulation
+      - Sorrow
+      - Giddiness
+      - Absent-mindedness

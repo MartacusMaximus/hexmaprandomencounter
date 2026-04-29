@@ -13,18 +13,15 @@ MonoBehaviour:
   m_Name: Lowly_Shroud
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Lowly Shroud
-  description: "At any time you may choose to have\nsomebody observing you be utterly
-    convinced\nthat you are just a humble, unarmed peasant,\nand your steed a mule.\nPASSION
-    - Kindness\nRestore SPI when you stop an act of cruelty.\nA humble beast, no
-    roar or flight\nBeneath the grey a show of might\nMule Knight\nEXPLOSIVES\nForm
-    Explosion Trigger\n1 Ashen pinecone Water\n2 Vial of red dust Fire\n3 Bottle
-    of white oil A command word\n4 Hellfire chestnut Touch of skin\n5 Preserved drake\ngizzard
-    Light\n6 Firebird egg Touching ground\nKNIGHTED BY...\nThe Green Seer\nVIG 10,
-    CLA 14, SPI 13, 6 GD\n\u2022 A pulsing emerald heart in a cloud of\nbright spores
-    and grasping tendrils.\n\u2022 Hears every envious thought in the\nRealm.\n\u2022
-    Wants everybody to get the thing that\nthey are envious for.\nPerson: Aristocratic
-    farrier ~ Name: Davith ~ Characteristic: Amputated arm\nObject: Secret key ~
-    Beast: Witchy goat ~ State: Envious ~ Theme: Sharpness\n4\n6\nThe"
+  description: 'At any time you may choose to have
+
+    somebody observing you be
+    utterly convinced
+
+    that you are just a humble, unarmed peasant,
+
+    and
+    your steed a mule.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

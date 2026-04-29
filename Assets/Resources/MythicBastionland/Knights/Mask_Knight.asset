@@ -18,40 +18,31 @@ MonoBehaviour:
 
     I''ll offer not which cannot
     be'
-  passionText: 
+  passionText: 'Vigilance: Restore SPI when you prevent a betrayal.'
   grantedAbility: {fileID: 11400000, guid: e38bc8c4f058546e697956b2b88b70a2, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 4cd156e7accf041dbb00e7e68d74309b, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 6e97c714218f748bdb0bf9e50a0b5189, type: 2}
   steed: {fileID: 11400000, guid: a5adb48a673fa4025b8b6fedd9d8aeeb, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 5c20341f554a0406da00ae41d1d6209a, type: 2}
-  - {fileID: 11400000, guid: 094143f68a636410fb9bd11ebd7d885b, type: 2}
-  - {fileID: 11400000, guid: 8baf49f046f144eedb0560298450d665, type: 2}
+  - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
+  - {fileID: 11400000, guid: 15dbbe03ce5dd487fb81df803df4bb43, type: 2}
   - {fileID: 11400000, guid: 0512c284dec86433382303ec1c344d3b, type: 2}
-  - {fileID: 11400000, guid: 5851087d1db49497ab0703a8192cc78a, type: 2}
-  - {fileID: 11400000, guid: a591fcaf8caaf4fdcb7f20ed53a50e93, type: 2}
-  - {fileID: 11400000, guid: a3cb6f6cd6059483182e3ead41047b23, type: 2}
-  - {fileID: 11400000, guid: 084691b9355d245588d8716a2e57a0cc, type: 2}
-  - {fileID: 11400000, guid: d5af4a15ffcf543fda5b24f16e47f51b, type: 2}
-  randomFlavorTableTitle: MASKED ARMOUR
-  randomFlavorTableRows:
-  - 1 Youthful Horned
-  - 2 Beautiful Two-faced
-  - 3 Misshapen Blindfolded
-  - 4 Abstract Scarred
-  - 5 Skull Roaring
-  - "6 Elder Crowned\nKNIGHTED BY...\nThe Abacus Seer\nVIG 9, CLA 19, SPI 3, 3 GD\n\u2022
-    Hunched on the floor, counting on fingers\nand toes in numbers you don't recognise.\n\u2022
-    Takes a long time to make a prediction,\nbut when they do it is sure to come
-    true.\nEven fate must bend to their calculation.\n\u2022 Wants to live long enough
-    to complete all\nof their calculations."
-  personHook: Patronising hermit
-  objectHook: Spinning goblet
-  beastHook: Dead greyhound
-  stateHook: Mourning
-  themeHook: 'Darkness
-
-    5
-
-    1
-
-    The'
+  randomFlavorTable:
+    title: MASKED ARMOUR
+    columns:
+    - header: Appearance
+      values:
+      - Youthful
+      - Beautiful
+      - Misshapen
+      - Abstract
+      - Skull
+      - Elder
+    - header: Design
+      values:
+      - Horned
+      - Two-faced
+      - Blindfolded
+      - Scarred
+      - Roaring
+      - Crowned

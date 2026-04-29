@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Lion
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 89
+  mythName: Lion
+  omens:
+  - '1. On the brink of a disused clay pit, a potter
+
+    shapes a bowl, telling
+    a story to the dozen
+
+    children gathered to watch. She tells of
+
+    the Lion,
+    the king of beasts. No Knight
+
+    could slay him, but a potter was his great
+
+    enemy.
+    She avoids giving any details.'
+  - '2. Horse breeders leading a dozen chargers
+
+    toward the Seat of Power. They''re
+
+    struggling
+    to get the horses moving, as
+
+    they''re all bowing toward the Lion''s Hex.'
+  - '3. An isolated, babbling pond. A pike pokes
+
+    its head from the water to
+    cackle at
+
+    passers-by. It can''t really speak, but
+
+    mimics words it has
+    heard. It shouts "He''s
+
+    here for his crown" among the gibberish.'
+  - '4. All steeds throw riders to the ground
+
+    before charging off toward the
+    Seat of
+
+    Power to await the Lion''s arrival.'
+  - '5. The Lion, heading toward the Seat of
+
+    Power to peacefully take the Domain.'
+  - '6. Tired herald spreads word that the Lion
+
+    has taken the Seat of Power.
+    Some
+
+    humans remain in court, but mostly
+
+    they''re replaced with unsuitable
+    beasts.'
+  verse: 'With creak and grind of time-worn wheel
+
+    A king of all is brought to
+    kneel'
+  castEntries:
+  - name: The Lion, Belliore, King of All Beasts
+    statBlock: 'VIG 18, CLA 12, SPI 15, 10 GD
+
+      A2 (thick hide, shaggy mane)'
+    notes: 'Claws and jaws (2d8 +d10 against humans)
+
+      Roar (all who refuse
+      to bow lose d6 SPI)
+
+      All beasts bow to him, but he loathes them.
+
+      Hates
+      the sound of wheels, terrified by fire,
+
+      cockerels, and any beast that
+      stings. Even a
+
+      drop of weak venom is lethal to the Lion.
+
+      Can
+      speak, but resents needing to do so.'
+  - name: Storytelling Potter, Niefib
+    statBlock: 'VIG 10, CLA 14, SPI 18, 2 GD
+
+      A1 (layers and layers of coats
+      and cloaks)'
+    notes: 'Always followed by a throng of
+
+      infuriating children.'
+  flavorTable:
+    title: INFURIATING CHILDREN
+    columns:
+    - header: Wants
+      values:
+      - Entertaining
+      - A very specific food
+      - What you have
+      - To go home
+      - Something another
+      - child has They don't even know
+    - header: Will Not
+      values:
+      - Stay still
+      - Use words
+      - Stop crying
+      - Compromise even a bit
+      - Explain themselves
+      - properly Stop grabbing you
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

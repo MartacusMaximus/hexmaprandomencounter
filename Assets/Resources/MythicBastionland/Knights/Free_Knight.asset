@@ -18,45 +18,33 @@ MonoBehaviour:
 
     Yet freedom won
     is never quietly gained'
-  passionText: 
+  passionText: 'Liberty: Restore SPI when you release somebody from
+
+    an unwanted
+    bond.'
   grantedAbility: {fileID: 11400000, guid: 0b42f90b2731b43d4987b886328ad6f6, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 4040650fc9d7d4036812f8cd2b16020f, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 3033ced1c619540eb8ede14ff6895beb, type: 2}
   steed: {fileID: 11400000, guid: f77fecb1818d64df1a13a5630a2b199c, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 7d595b3f046764532978e7c366092a0d, type: 2}
-  - {fileID: 11400000, guid: 77c8cd45af3c4461c90b7294ac73d174, type: 2}
-  - {fileID: 11400000, guid: 8fb2c9708d449415097f0abf7c6e7888, type: 2}
-  - {fileID: 11400000, guid: b16babc50494f41d781b0dc2c229781e, type: 2}
-  - {fileID: 11400000, guid: f1cbf90d6b627473390ce492fe117220, type: 2}
-  - {fileID: 11400000, guid: 361d97f42e76049189a5ecfd29583be7, type: 2}
-  - {fileID: 11400000, guid: 6b04bc38594fb4c93aaf2cfe43cc0fc4, type: 2}
-  - {fileID: 11400000, guid: 7433d4dd85091497793aae27402131b0, type: 2}
-  - {fileID: 11400000, guid: ab1b868bc96c6417fa225a9611f84634, type: 2}
-  - {fileID: 11400000, guid: abbae7d4b80ce4d9b9577af7fc744c68, type: 2}
-  - {fileID: 11400000, guid: 90a751c3a42024286bbe2752ac1208aa, type: 2}
-  randomFlavorTableTitle: THE HEXSHIELD
-  randomFlavorTableRows:
-  - 1 Axes Can be thrown (d6)
-  - '2 Arrows Allows you to fall
-
-    safely from any height'
-  - 3 Birds Pattern pains Seers
-  - 4 Spears and polearms Always floats
-  - 5 Swords Blocks all sound
-  - "6 Blunt arms Bladed (d6 in melee)\nKNIGHTED BY...\nThe Roaming Seer\nVIG 10,
-    CLA 14, SPI 6, 4 GD\n\u2022 A tall cloaked figure, leaving a trail of\nsand in
-    his footsteps.\n\u2022 Will not offer any guidance to visitors, but\noffers to
-    accompany any Knights he\ndeems worthy. He is demanding, slow,\nand cryptic,
-    but offers clear guidance\nwhen it matters most.\n\u2022 Wants to see everything
-    for himself."
-  personHook: Muddy astrologer
-  objectHook: Beggar shroud
-  beastHook: Singing bull
-  stateHook: Dashing
-  themeHook: 'Frost
-
-    5
-
-    12
-
-    The'
+  - {fileID: 11400000, guid: f1893cd829cce4b56a38c8cb541e1f6c, type: 2}
+  - {fileID: 11400000, guid: b440774adb67d42d4bb6e01790b3820e, type: 2}
+  randomFlavorTable:
+    title: THE HEXSHIELD
+    columns:
+    - header: Ineffective vs
+      values:
+      - Axes
+      - Arrows
+      - Birds
+      - Spears and polearms
+      - Swords
+      - Blunt arms
+    - header: Special Ability
+      values:
+      - Can be thrown (d6)
+      - Allows you to fall
+      - safely from any height Pattern pains Seers
+      - Always floats
+      - Blocks all sound
+      - Bladed (d6 in melee)

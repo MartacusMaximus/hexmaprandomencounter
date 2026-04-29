@@ -13,20 +13,15 @@ MonoBehaviour:
   m_Name: Bone_Magnate
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Bone Magnate
-  description: "When you make a genuine trade, a bone for a\nbone, learn something
-    about the individual\nthat the acquired bone came from, or\nsomething that they
-    knew in life.\nPASSION - Acumen\nRestore SPI when you come out better from\na
-    bargain.\nRibble rabble, ronky donk, they bounce a duckle dine\nClatter clink,
-    clanky tank, a rib, a skull, a spine\nBone Knight\nBOX OF BONES\nThe Box The
-    Bones\n1 Silver coffer Sorted by age\n2 Ivory cage Sorted by size\n3 Bronze cylinder
-    Sorted by habitat\n4 Velvet pouch Sorted by beauty\n5 Painted wooden case Sorted
-    by virtue\n6 Gilded clam shell Unsorted chaos\nKNIGHTED BY...\nThe Twilight Seer\nVIG
-    10, CLA 10, SPI 14, 2 GD\n\u2022 Elderly, shadowy, and incoherent by day,\nyouthful,
-    radiant, and cogent at night.\n\u2022 Only sees the moments between\nsignificant
-    events, the times of travel\nand rest.\n\u2022 Wants stability in the Realm,
-    ensuring\nthe peaceful transition of night and day.\nPerson: Adventurous fugitive
-    ~ Name: Ezter ~ Characteristic: Shameful eyepatch\nObject: Vassal rod ~ Beast:
-    Sniffer bear ~ State: Swimming ~ Theme: Drink\n5\n2\nThe"
+  description: 'When you make a genuine trade, a bone for a
+
+    bone, learn something
+    about the individual
+
+    that the acquired bone came from, or
+
+    something
+    that they knew in life.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e6ecb1b38df41c4881fd0309ec9bc2, type: 3}
+  m_Name: The_Celebrated_Seer
+  m_EditorClassIdentifier: Assembly-CSharp::SeerDefinitionSO
+  seerName: The Celebrated Seer
+  vigor: 12
+  clarity: 6
+  spirit: 15
+  guard: 2
+  traits:
+  - 'Clad in a coat of shining metal masks,
+
+    each an expression of joy.'
+  - 'Only sees moments of intense positive
+
+    emotion, more intensity granting
+    clearer
+
+    visions and pleasure.'
+  - 'Wants praise and elaborate celebrations,
+
+    not really caring what for.'

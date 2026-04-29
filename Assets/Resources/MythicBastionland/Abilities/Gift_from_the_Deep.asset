@@ -13,22 +13,15 @@ MonoBehaviour:
   m_Name: Gift_from_the_Deep
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Gift from the Deep
-  description: "Produce one pearl each morning, unless you\nhaven't given or traded
-    your previous pearl.\nYou can see through the eyes of anybody that\nis carrying
-    one of your pearls.\nPASSION - Gossip\nRestore SPI when you share or receive
-    gossip.\nWhy lurk shellbound in the depths, awashed in solitude?\nAll best secrets
-    walk above, all dark and low and lewd\nPearl Knight\nA BLADE TAKEN FROM THE SEA\nHow
-    do you know? Punishment\n1 Aquatic nightmares Sea creatures get +d6\nagainst
-    you\n2 A fish told you You cannot swim in\nsaltwater\n3 It's cold to the touch
-    River water tastes\nsalty to you\n4 Sudden fear of water Sailors distrust you\n5
-    Storms call to you Salt tastes foul to you\n6 The waves rebuke you Fish is poison
-    to you\nKNIGHTED BY...\nThe Pain Seer\nVIG 7, CLA 13, SPI 5, 1 GD\n\u2022 Awkwardly
-    hunched woman, her very\nimage appearing shattered like glass.\n\u2022 Absorbs
-    sorrow and aches, like nectar to\na bird. Exchanges them for guidance\ndoomed
-    to cause only more sorrow.\n\u2022 Wants to feed enough to finally be\nsatisfied,
-    then she can begin offering\ntruly useful guidance.\nPerson: Loyal sculptor ~
-    Name: Tahnet ~ Characteristic: Graceful hands\nObject: Oceanic whetstone ~ Beast:
-    Herbalist dog ~ State: Cooking ~ Theme: Harvest\n6\n11\nThe"
+  description: 'Produce one pearl each morning, unless you
+
+    haven''t given or
+    traded your previous pearl.
+
+    You can see through the eyes of anybody that
+
+    is
+    carrying one of your pearls.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

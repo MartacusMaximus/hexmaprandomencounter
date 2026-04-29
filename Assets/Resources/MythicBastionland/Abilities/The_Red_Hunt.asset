@@ -13,19 +13,15 @@ MonoBehaviour:
   m_Name: The_Red_Hunt
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: The Red Hunt
-  description: "Infuse a target's blood into an arrow to give it\n+d12 against the
-    target. You can also taste a\nsmall amount of the blood to get a glimpse of\ntheir
-    location.\nPASSION - Apathy\nRestore SPI when you reject a call for comfort.\nStone
-    and spikes split into flowers\nCruelty is delicious power\nBarbed Knight\nBAD
-    REPUTATION\nBegrudging Ally Hated Enemy\n1 Eccentric alchemist Rich merchant\n2
-    Humble chronicler Master blacksmith\n3 Surly brewer Admired Knight\n4 Horse breeder
-    Bandit leader\n5 Elderly innkeeper Retired general\n6 Petty burglar Mercenary
-    captain\nKNIGHTED BY...\nThe Serpent Seer\nVIG 16, CLA 14, SPI 14, 3 GD\n\u2022
-    A writhing pile of serpents, speaking as\none through a choir of hisses.\n\u2022
-    Grants visions of dangerous beasts in the\nwilderness nearby.\n\u2022 Wants more
-    unusual serpents for their\npile, or even just a snack.\nPerson: Argumentative
-    sage ~ Name: Chider ~ Characteristic: Mangled ear\nObject: Limeweed ~ Beast:
-    Leeches ~ State: Listening ~ Theme: Smell\n1\n12\nThe"
+  description: 'Infuse a target''s blood into an arrow to give it
+
+    +d12 against
+    the target. You can also taste a
+
+    small amount of the blood to get a glimpse
+    of
+
+    their location.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

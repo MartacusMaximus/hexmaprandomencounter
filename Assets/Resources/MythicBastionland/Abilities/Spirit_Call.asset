@@ -13,19 +13,17 @@ MonoBehaviour:
   m_Name: Spirit_Call
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Spirit Call
-  description: "Once per day, release the invisible spirit from\nyour reliquary.
-    It will follow a single, specific\ncommand. It acts with the general capacities\nof
-    a normal human but can be invisible and\nimmaterial as needed.\nPASSION - Tradition\nRestore
-    SPI when you ensure a tradition is\nthoroughly honoured.\nNoble rest, earned
-    in life, final breath\nEchos ring, they live on, spurning death\nReliquary Knight\nTREASURED
-    RELIC\nBodypart Being\n1 Hand Forgotten Seer\n2 Skull Glorious Knight\n3 Heart
-    Deposed monarch\n4 Ribs Pitied monster\n5 Eye Hateful bird\n6 Unknown organ Ancient
-    reptile\nKNIGHTED BY...\nThe Predator Seer\nVIG 16, CLA 17, SPI 12, 9 GD\n\u2022
-    An animalistic woman with a powerful\nbody and sleek mane.\n\u2022 There is no
-    better guide to hunting, no\nmatter the quarry.\n\u2022 Wants to sharpen Knights
-    into the\nperfect predators of the world, even if\nthey must suffer along the
-    way.\nPerson: Cruel charlatan ~ Name: Brayne ~ Characteristic: Always yelling\nObject:
-    Immovable herb ~ Beast: Flat owl ~ State: Gluttonous ~ Theme: Salt\n5\n10\nThe"
+  description: 'Once per day, release the invisible spirit from
+
+    your reliquary.
+    It will follow a single, specific
+
+    command. It acts with the general capacities
+
+    of
+    a normal human but can be invisible and
+
+    immaterial as needed.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

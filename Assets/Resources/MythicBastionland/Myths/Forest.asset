@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Forest
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 41
+  mythName: Forest
+  omens:
+  - '1. A Seer, beloved by her village, now
+
+    trapped, inert in ironwood. Only
+    the
+
+    Fearmonger can break their binds.'
+  - '2. A winding path beneath blue songbirds.
+
+    They sing so fiercely that some
+    lie
+
+    breathless on the ground. The winding
+
+    path leads to a distant forest
+    Hex.'
+  - '3. The mother tree. Six woodland guardians
+
+    attack anybody who looks upon
+    it. Foxes,
+
+    wolves, and wildcats fight as one.'
+  - '4. The Fearmonger in horrific form, parts of
+
+    owl, boar, and mouse. Lurking
+    in the
+
+    mist, they hurl a thorn spear
+
+    (d10 hefty, cannot be taken from
+    the
+
+    Forest) before retreating to the branches.'
+  - '5. A circle of blackened tree stumps. Inside,
+
+    metal weapons roar with burning
+    heat
+
+    unless dropped. Then come the three
+
+    great guardians: stag, boar,
+    and bear. The
+
+    Fearmonger preys from within the mist.'
+  - '6. The Fearmonger shows their true, terrible
+
+    form as live, writhing wood.
+    If they cannot
+
+    be subdued the Forest bursts forth into
+
+    the rest of
+    the Realm.'
+  verse: 'Roots deeper than soil, farther than sea
+
+    No passage is swift, no figments
+    believed'
+  castEntries:
+  - name: The Fearmonger in Wood, Glaiburn
+    statBlock: 'VIG 17, CLA 16, SPI 12, 8 GD
+
+      A2, A4 vs forged arms (rune-carved
+      wood)'
+    notes: 'Slash (d10 vs two targets) or grasp (2d10
+
+      slow) or spores (everyone
+      in Blast loses their
+
+      speech until they leave the Forest)
+
+      Can
+      Smite humans.'
+  - name: Woodland Guardians, Fox, Wolf & Cat
+    statBlock: 'VIG 10, CLA 13, SPI 5, 3 GD
+
+      Tooth and claw (2d6)'
+    notes: 
+  flavorTable:
+    title: THE VERDY MAZE
+    columns:
+    - header: Place Entwined wall of
+      values:
+      - trunks and roots
+      - Descent into damp
+      - earth Mossy stone pile
+      - Leafy clearing
+      - Tree bridge
+      - Trailway
+    - header: Threat
+      values:
+      - Riders approaching
+      - Frantic movement in
+      - the branches Twisting in the roots
+      - Fading light
+      - Rising mist
+      - Watching eyes
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

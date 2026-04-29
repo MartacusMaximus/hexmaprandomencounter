@@ -13,19 +13,12 @@ MonoBehaviour:
   m_Name: Scourer_s_Sense
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Scourer's Sense
-  description: "If you are searching for something specific\nyou always know for
-    sure whether it is in\nyour immediate surroundings or not.\nPASSION - Heraldry\nRestore
-    SPI when you announce the owner of a\nbanner, crest, or coat of arms, which you
-    can\nalways recognise.\nKeen eyes see what cold heart seeks\nThis bird never
-    bare of beak\nMagpie Knight\nA TREASURED MEMENTO\nItem Reminds you of...\n1 A
-    dried flower A great victory\n2 A sword hilt A shameful defeat\n3 A pearl A happy
-    place\n4 A scrap of a banner A sorrowful place\n5 An old coin Somebody you loved\n6
-    A dog's collar Somebody you hated\nKNIGHTED BY...\nThe Lens Seer\nVIG 10, CLA
-    14, SPI 6, 2 GD\n\u2022 A squat body, her head a refractive orb of\nliquid glass.\n\u2022
-    Knows the true fate of anything that she\nexamines closely and thoroughly.\n\u2022
-    Wants interesting things brought to her\nfor examination.\nPerson: Wild thatcher
-    ~ Name: Nieolas ~ Characteristic: Restless limbs\nObject: Copper acorn ~ Beast:
-    Armoured pigeon ~ State: Smelling ~ Theme: Light\n5\n9\nThe"
+  description: 'If you are searching for something specific
+
+    you always know
+    for sure whether it is in
+
+    your immediate surroundings or not.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

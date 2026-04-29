@@ -18,40 +18,31 @@ MonoBehaviour:
 
     And yet what
     heights, what lofty sights, this skwarmew captures still'
-  passionText: 
+  passionText: 'Joy: Restore SPI when you deliver good news.'
   grantedAbility: {fileID: 11400000, guid: dfd2b325ee5d642548c6762eba24e27b, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 5452909567ca74ff39521a466f01969a, type: 2}
+  linkedSeer: {fileID: 11400000, guid: f6698d8464aa046d080f0e25115af19d, type: 2}
   steed: {fileID: 11400000, guid: c26d6fac500bf47f89953581732f2dc7, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: c8eacb4e6aaa14274b2dd49627522baa, type: 2}
   - {fileID: 11400000, guid: e9e8b905fbc9042058b437a3ae97089b, type: 2}
   - {fileID: 11400000, guid: ed08fa22dc24940f3a3befd9708294c1, type: 2}
-  - {fileID: 11400000, guid: ff84f70cd76304fbf820aab7df357472, type: 2}
-  - {fileID: 11400000, guid: 2bf5949dbf87644bc95ce77f8060c005, type: 2}
-  - {fileID: 11400000, guid: dec3a103196a649d080632fb7cdcf757, type: 2}
-  - {fileID: 11400000, guid: 5efac88f6d99a4f9db3d30e5aa850057, type: 2}
-  - {fileID: 11400000, guid: 9dbf1873c726e4e97a35758182abd03f, type: 2}
-  - {fileID: 11400000, guid: 3386ca7d9e5c94c8c931a9c4bbb7956d, type: 2}
-  randomFlavorTableTitle: PATCHWORK ARMOUR
-  randomFlavorTableRows:
-  - 1 Fallen soldiers Flexible leather
-  - 2 Ancient tomb Sleek bronze
-  - 3 Shipwreck Polished steel
-  - 4 A fighting pit Brass studs
-  - 5 A defeated Knight Padded coat
-  - "6 Thankful militia Thick furs\nKNIGHTED BY...\nThe Floating Seer\nVIG 12, CLA
-    12, SPI 14, 2 GD\n\u2022 A bloated bladder of a being, humming as\nshe bobs about
-    in the air buoyantly,\nyelping as she hits the ceiling.\n\u2022 Sees through
-    the eyes of all flying beings.\n\u2022 Wants to float free toward the stars.\nHates
-    being confined. Being grounded\ncauses agony."
-  personHook: Zealous student
-  objectHook: Crystal mead
-  beastHook: Paradise cockerel
-  stateHook: Searching
-  themeHook: 'Ice
-
-    5
-
-    8
-
-    The'
+  - {fileID: 11400000, guid: 65add3214ee8c4c83b72ba7facb4918a, type: 2}
+  randomFlavorTable:
+    title: PATCHWORK ARMOUR
+    columns:
+    - header: Some taken from...
+      values:
+      - Fallen soldiers
+      - Ancient tomb
+      - Shipwreck
+      - A fighting pit
+      - A defeated Knight
+      - Thankful militia
+    - header: Mixed with...
+      values:
+      - Flexible leather
+      - Sleek bronze
+      - Polished steel
+      - Brass studs
+      - Padded coat
+      - Thick furs

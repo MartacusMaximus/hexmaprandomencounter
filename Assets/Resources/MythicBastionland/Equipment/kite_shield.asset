@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
   m_Name: kite_shield
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  itemName: kite shield
+  itemName: Kite shield
   pointCost: 0
   rarity: bonded
   displayCategory: shield
-  rulesText: (A1 d4)
+  rulesText: (d4, A1) marked with a symbol of the truth (see below)
   damageDiceNotation: 1d4
   armorValue: 1
   costsCreationPoints: 0

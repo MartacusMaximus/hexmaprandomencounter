@@ -18,40 +18,29 @@ MonoBehaviour:
 
     Comings and goings
     laid plain as a thread'
-  passionText: 
+  passionText: 'Fear: Restore SPI when refusing to go into the dark.'
   grantedAbility: {fileID: 11400000, guid: 1c9adfdb82df2467e81acd44b3d6cdb3, type: 2}
-  linkedSeer: {fileID: 11400000, guid: aceb4289950c5496084dedebccc4adcd, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 1e0e1ae7b8e22417084810e74cb52baf, type: 2}
   steed: {fileID: 11400000, guid: 5beb0deafa7dd43edb13596b2b6c8a9f, type: 2}
   bondedProperty:
-  - {fileID: 11400000, guid: 6fccc398646944c4c9d5b0dce06a19a2, type: 2}
-  - {fileID: 11400000, guid: a0211bf5b15f546ceae6a7eba130e819, type: 2}
-  - {fileID: 11400000, guid: 317689343ade349f59ad949213b90b7c, type: 2}
-  - {fileID: 11400000, guid: 3c6fc9d5722a447d6902d4d46d9214e7, type: 2}
-  - {fileID: 11400000, guid: 14ed3a8c6cb094872912bdad539d631c, type: 2}
-  - {fileID: 11400000, guid: 2cefd0cd09fa04035a187e9eb5cb19ac, type: 2}
-  - {fileID: 11400000, guid: eaa3778c4ebf34ead9a520eca9d2b931, type: 2}
-  - {fileID: 11400000, guid: 1a35c9c09540f42a28bb6a3e80c3a5e9, type: 2}
-  - {fileID: 11400000, guid: b396ef05316d5469cac7e6ad8739cbd4, type: 2}
-  randomFlavorTableTitle: PERSONAL CODE
-  randomFlavorTableRows:
-  - 1 Honour Battling a monster
-  - 2 Duty A raided village
-  - 3 Loyalty Rescuing the helpless
-  - 4 Justice Killing a tyrant
-  - 5 Respect A long journey
-  - "6 Truth Facing temptation\nKNIGHTED BY...\nThe Welcomed Seer\nVIG 8, CLA 7,
-    SPI 16, 3 GD\n\u2022 Fair features, soft voice, fine silk dress,\nblack voids
-    in place of eyes.\n\u2022 Can only gain useful visions when\nextremely calm or
-    in a rage.\n\u2022 Desires treatment as a revered guest, and\nis prone to vicious
-    changes of mood if\nmade to feel even slightly unwelcome."
-  personHook: Boisterous poet
-  objectHook: Venomous rose
-  beastHook: Glutton crow
-  stateHook: Sulking
-  themeHook: 'Questions
-
-    2
-
-    1
-
-    The'
+  - {fileID: 11400000, guid: 0930e986529ff45d5b8366ea381fb579, type: 2}
+  - {fileID: 11400000, guid: aa85cd209c6b7438fbea1688bb8b34b8, type: 2}
+  randomFlavorTable:
+    title: PERSONAL CODE
+    columns:
+    - header: Value
+      values:
+      - Honour
+      - Duty
+      - Loyalty
+      - Justice
+      - Respect
+      - Truth
+    - header: Forged by
+      values:
+      - Battling a monster
+      - A raided village
+      - Rescuing the helpless
+      - Killing a tyrant
+      - A long journey
+      - Facing temptation

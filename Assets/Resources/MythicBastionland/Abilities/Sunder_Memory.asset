@@ -13,24 +13,15 @@ MonoBehaviour:
   m_Name: Sunder_Memory
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Sunder Memory
-  description: "When you Wound a target you can rob them\nof a single specific memory.
-    If it is a Mortal\nWound then you can remove all memory of a\nspecific place,
-    thing, person, or event.\nPASSION - Temperance\nRestore SPI when you refuse a
-    luxury.\nEach touch of iron takes a price, in breath or blood or bone\nA nasty
-    cut takes something worse, the warmth of distant home\nDusk Knight\nA TATTERED
-    POEM\nStart End\n1 Twin Knights are lost\nin the woods\nThey're eaten by a\npack
-    of wolves\n2 The Lion and the\nLizard are bitter rivals\nThey all die of a\ndisgusting
-    plague\n3 A mother hates her six\nugly sons\nIt turns into a call to\nfind the
-    City\n4 A hermit lambasts the\nstars for his sad life\nIt devolves into\npsychedelic
-    nonsense\n5 A clever chicken\noutwits a farmer\nIt ends on a literal\ncliffhanger\n6
-    A poet wastes her life\nfleeing from death\nThey all lived happily\never after\nKNIGHTED
-    BY...\nThe Fungal Seer\nVIG 11, CLA 3, SPI 15, 2 GD\n\u2022 Tortoise-like and
-    luminous, his body\nbristling with fungal colonies.\n\u2022 His mushrooms transport
-    the eaters on a\nshared vision quest lasting until sunrise\nand offering abstract
-    guidance. Dying in\nthe vision results in actual death.\n\u2022 Wants to bring
-    everybody into one shared\nheavenly vision.\nPerson: Pathetic veteran ~ Name:
-    Roose ~ Characteristic: Enthusiastic feeder\nObject: Whistling pin ~ Beast: Eternal
-    scorpion ~ State: Scared ~ Theme: Weapons\n4\n10\nThe"
+  description: 'When you Wound a target you can rob them
+
+    of a single specific
+    memory. If it is a Mortal
+
+    Wound then you can remove all memory of a
+
+    specific
+    place, thing, person, or event.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

@@ -17,40 +17,34 @@ MonoBehaviour:
   titleVerse: 'No blood or cry
 
     Not here, not today'
-  passionText: 
+  passionText: 'Quietude: Restore SPI when bringing peaceful order to a
+
+    chaotic
+    place.'
   grantedAbility: {fileID: 11400000, guid: 93217ba95c8c846d38ad260a1f46dd10, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 3f5e21c9de4f3416d90d3ae8fb84f58a, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 361a7f393a645465d86c088d8d67bd0d, type: 2}
   steed: {fileID: 11400000, guid: 7db4b5fd7f2fa453bb6ca72b103ec494, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 5a1a044da187c4a88b10da24288623fd, type: 2}
   - {fileID: 11400000, guid: 6d69d6cb9533343e4b38f0fb540b5518, type: 2}
   - {fileID: 11400000, guid: 74c052910f3a24e91825d8f416026e82, type: 2}
-  - {fileID: 11400000, guid: 2034762e5331a44458e855f8b9cd21b7, type: 2}
-  - {fileID: 11400000, guid: 9a818abac88644b7f9748463ce398f3f, type: 2}
-  - {fileID: 11400000, guid: fd738c90b67904e54938442a88923a6e, type: 2}
-  - {fileID: 11400000, guid: 79d1a9ef78c264382bd9855ff5726d52, type: 2}
-  - {fileID: 11400000, guid: e28964c98240e4f37babdd6477267361, type: 2}
-  - {fileID: 11400000, guid: 32e6b0d25903f4591a186913333fecfd, type: 2}
-  randomFlavorTableTitle: THE SNAKE SPEAKS
-  randomFlavorTableRows:
-  - 1 Pitiful Your death
-  - 2 Mocking Order
-  - 3 Sinister Bloodshed
-  - 4 Benevolent Peace
-  - 5 Ancient Chaos
-  - "6 Loving Your ambitions\nKNIGHTED BY...\nThe Tapestry Seer\nVIG 9, CLA 17, SPI
-    4, 1 GD\n\u2022 A silken silhouette locked in a moment of\ntotal insight, only
-    able to murmur.\n\u2022 Sees everything at once and all\nconnections between
-    them.\n\u2022 Wants to make everything as simple as\npossible without disturbing
-    fate."
-  personHook: Proud pilgrim
-  objectHook: Tree chart
-  beastHook: Hammer crane
-  stateHook: Climbing
-  themeHook: 'Growth
-
-    5
-
-    6
-
-    The'
+  - {fileID: 11400000, guid: c0be09016c92c4eb781e4f4ab329ec61, type: 2}
+  randomFlavorTable:
+    title: THE SNAKE SPEAKS
+    columns:
+    - header: Voice
+      values:
+      - Pitiful
+      - Mocking
+      - Sinister
+      - Benevolent
+      - Ancient
+      - Loving
+    - header: Agenda
+      values:
+      - Your death
+      - Order
+      - Bloodshed
+      - Peace
+      - Chaos
+      - Your ambitions

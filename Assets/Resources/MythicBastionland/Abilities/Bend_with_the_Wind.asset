@@ -13,17 +13,12 @@ MonoBehaviour:
   m_Name: Bend_with_the_Wind
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Bend with the Wind
-  description: "When you use a Gambit to Move you count as\nhaving Armour 4 until
-    your next turn. This\ndoes not stack with your actual armour.\nPASSION - Doubt\nRestore
-    SPI when you defer to somebody more\nsenior than you, even though you disagree.\nTitans
-    tall, now smithreened stones\nThe youth, cast down, intact, alone\nWillow Knight\nMEMORIES
-    OF HOME\nPlace Disaster\n1 Riverside Death\n2 Coastal War\n3 Mountain Famine\n4
-    Pine forest Plague\n5 Moor Fire\n6 Castle Flood\nKNIGHTED BY...\nThe Carved Seer\nVIG
-    7, CLA 5, SPI 11, 2 GD\n\u2022 Requires constant treatment, acolytes\ntending
-    to their runic flesh carvings.\n\u2022 Sees the outcome of battles in their own\nhealing
-    wounds.\n\u2022 Wants to drive the land toward a\nclimactic war that will bring
-    peace.\nPerson: Legendary sage ~ Name: Burgoyne ~ Characteristic: Battle scars\nObject:
-    Thorn spear ~ Beast: Laughing shrew ~ State: Surveying ~ Theme: String\n1\n7\nThe"
+  description: 'When you use a Gambit to Move you count as
+
+    having Armour 4 until
+    your next turn. This
+
+    does not stack with your actual armour.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

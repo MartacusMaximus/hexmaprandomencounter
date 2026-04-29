@@ -13,19 +13,12 @@ MonoBehaviour:
   m_Name: Martyr_in_Waiting
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Martyr-in-Waiting
-  description: "Use as a reaction to being Mortally Wounded.\nAllies fighting with
-    you regain d6 GD and get\n+d12 against your attacker for the combat.\nPASSION
-    - Pride\nRestore SPI when you take personal credit for\na great victory.\nA beacon
-    of the brave and bold\nAll cloaked and masked in sunnen gold\nGilded Knight\nTHE
-    COST\nWhere Did the\nArmour Find You?\nWhat Was Left\nBehind?\n1 Lake A farm\n2
-    Waterfall A name\n3 River Only graves\n4 Beach A student\n5 Cave A teacher\n6
-    Mountain A castle\nKNIGHTED BY...\nThe Enthroned Seer\nVIG 11, CLA 8, SPI 16,
-    2 GD\n\u2022 They are a twisted heap of flesh, bone,\nand spikes of precious
-    metal.\n\u2022 Sees glimpses of the ultimate fate of\nanybody taking up a Seat
-    of Power.\n\u2022 Demands a humiliating level of reverence\nfrom visitors. Wants
-    to manipulate loyal\ncontacts into positions of authority.\nPerson: Drunken worshipper
-    ~ Name: Lumpe ~ Characteristic: Watching eyes\nObject: Fang rattle ~ Beast: Redmaw
-    wolf ~ State: Scouring ~ Theme: Cold\n1\n8\nThe"
+  description: 'Use as a reaction to being Mortally Wounded.
+
+    Allies fighting
+    with you regain d6 GD and get
+
+    +d12 against your attacker for the combat.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

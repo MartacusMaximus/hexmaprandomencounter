@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e062a6c0522d4bc8a74681580ef0d8c, type: 3}
+  m_Name: Curses
+  m_EditorClassIdentifier: Assembly-CSharp::CurseSO
+  entries:
+  - Acrid swamp
+  - All light fades here
+  - Blinding blizzards
+  - Blinding lights
+  - Blinding spores
+  - Boozy air
+  - Choking gorge
+  - Colourless woods
+  - Confounding caverns
+  - Dark woods
+  - Dead lands
+  - Dead-end tunnels
+  - Deafening birds
+  - Desolate moor
+  - Discordant howl
+  - Dizzying reeds
+  - Drizzle veil
+  - Dying wetland
+  - Eerie drone
+  - Eternal night
+  - Eye burning fumes
+  - Fading light
+  - Filth heaps
+  - Foul shadow
+  - Ghostly shadows
+  - Golden haze
+  - Gorge of sorrow
+  - Green haze
+  - Groaning earth
+  - Growing shadows
+  - Hallucinogenic spores
+  - Haunting lights
+  - Haunting reflections
+  - Heralds of doom
+  - Hopeless mirage
+  - Icy mist
+  - Illusory paths
+  - Insect swarms
+  - Invisible eyes
+  - Labyrinth stream
+  - Labyrinth trail
+  - Merciless winds
+  - Misdirecting branches
+  - Misleading voices
+  - Mocking clouds
+  - Mossy air
+  - Nightmare fungus
+  - Obscuring reeds
+  - Ominous chimes
+  - Pond mirage
+  - Rippling darkness
+  - Rolling fog
+  - Salt sludge
+  - Shifting pit
+  - Signpost to nowhere
+  - Smoke clouds
+  - Smoking stumps
+  - Stinging shade
+  - Strange constellations
+  - Sudden nothingness
+  - Sulphur stink
+  - Tablet of falsehoods
+  - Tainted stream
+  - Tangling shadows
+  - Tattered light
+  - Taunting mirage
+  - The haze
+  - The Silence
+  - Untrustworthy shadows
+  - Vortex of smoke
+  - Yawning ravine

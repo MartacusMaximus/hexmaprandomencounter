@@ -17,42 +17,34 @@ MonoBehaviour:
   titleVerse: 'Arise! Arise!
 
     But, for what? For whom?'
-  passionText: 
+  passionText: 'Acceptance: Restore SPI when warmly welcomed into
+
+    somebody''s
+    home.'
   grantedAbility: {fileID: 11400000, guid: 22b0f70a4972e4726a0e15b4b4be690f, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 1b0cec5e8f9d64616844b7ab72da7dd0, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 82b5d0f6164264c8b9d1c88374e77a4c, type: 2}
   steed: {fileID: 11400000, guid: 680cb9eb77b4f4079a31d89c509b7dcf, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 35f2a2e821b6f4cc38994452eb4e1dbe, type: 2}
   - {fileID: 11400000, guid: 01daf18c5fcc1464993e5584b00fcbd2, type: 2}
-  - {fileID: 11400000, guid: 839f1a95d58044a92828be823ae67348, type: 2}
-  - {fileID: 11400000, guid: 7ae2c32a785334ab68091f822909e13b, type: 2}
+  - {fileID: 11400000, guid: d160e484861934fc2bbaa36012f4908c, type: 2}
   - {fileID: 11400000, guid: 0422ef3db5c8c4e62bf35a9e34c143a1, type: 2}
-  - {fileID: 11400000, guid: c6594f761db634735ae0fae60e9890e1, type: 2}
-  - {fileID: 11400000, guid: 9e786fd807ccf4a2bbdebf8f4b7bb3fa, type: 2}
-  - {fileID: 11400000, guid: 26e2c5f239fcf4a63910552f8b34b047, type: 2}
-  - {fileID: 11400000, guid: 65c73de0570bd48cdaf723bf56cb8cf8, type: 2}
-  - {fileID: 11400000, guid: cf237c8356dc543158871bea01c00309, type: 2}
-  - {fileID: 11400000, guid: f22c3aa789dee4ca7a765d759a491877, type: 2}
-  - {fileID: 11400000, guid: 01e240b2c226d43e191704195ae5e1a7, type: 2}
-  randomFlavorTableTitle: WOODEN ANIMAL
-  randomFlavorTableRows:
-  - 1 Turtle Gift from a friend
-  - 2 Elephant You stole it
-  - 3 Lion cub Made yourself
-  - 4 Seahorse From a parent
-  - 5 Unicorn Found in a ruin
-  - "6 Pigeon Found in a river\nKNIGHTED BY...\nThe Paired Seer\nVIG 9, CLA 9, SPI
-    9, 2 GD\n\u2022 An unremarkable peasant woman,\nbusying herself with chores and
-    errands.\n\u2022 Her twin exists in the future of the City,\nand they share a
-    mind and memory.\n\u2022 Wants to be reunited with her twin."
-  personHook: Hostile scholar
-  objectHook: Memory cloak
-  beastHook: Blind boar
-  stateHook: Protecting
-  themeHook: 'Repair
-
-    6
-
-    6
-
-    The'
+  randomFlavorTable:
+    title: WOODEN ANIMAL
+    columns:
+    - header: Animal Type
+      values:
+      - Turtle
+      - Elephant
+      - Lion cub
+      - Seahorse
+      - Unicorn
+      - Pigeon
+    - header: Origin
+      values:
+      - Gift from a friend
+      - You stole it
+      - Made yourself
+      - From a parent
+      - Found in a ruin
+      - Found in a river

@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Demon
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 65
+  mythName: Demon
+  omens:
+  - '1. The bloody remains of an ivory goat, its
+
+    innards laid out in a broad
+    spiral. White
+
+    goats are never eaten, thought to be
+
+    reincarnations of
+    Seers from the past.'
+  - '2. A singer, beating a drum. They sing cruel
+
+    lyrics about the Knights,
+    knowing more
+
+    than they possibly could. They utterly
+
+    ignore the Knights,
+    even if apprehended.'
+  - '3. In a meadow, a band of drunks are feeding
+
+    a bonfire, growing out of
+    control. They
+
+    openly praise the Writher Within,
+
+    gloating that he''s
+    coming to eat the Seers
+
+    and free us from their lies.'
+  - '4. The sun is black, gold light flooding from
+
+    its corona. Animals panic,
+    Seers are
+
+    blinded. This lasts until the next sunrise.'
+  - '5. A once-beloved Knight now rampages
+
+    through the Realm slaughtering serfs.
+
+    Her
+    head has sprouted a curved horn on
+
+    one side, all humanity now gone.'
+  - '6. A bloated serf is being dragged away
+
+    before bursting in a red mist.
+    The Demon
+
+    emerges from within in their true form,
+
+    not resting until
+    they have eaten 7 Seers.'
+  verse: 'Slumber stirred by rising blackened sun
+
+    A mocking voice conceals the
+    fiendsome one'
+  castEntries:
+  - name: The Demon, Ul-Huroc, Writher Within
+    statBlock: 'VIG 15, CLA 15, SPI 15, 8 GD
+
+      A4, bypassed by weapons drenched
+      in Seer-'
+    notes: 'blood (twisted hide)
+
+      Rip (d6) and lash (d8) and gore (d10)
+
+      Can
+      rip over any distance.'
+  - name: Drunks, Eonah, Nissi, Franga
+    statBlock: 'VIG 10, CLA 4, SPI 9, 2 GD
+
+      Aspects of the possessed (see below)'
+    notes: Awaiting the Demon, nothing else to live for.
+  - name: Once-beloved Knight, Ethne, Possessed
+    statBlock: 'VIG 15, CLA 8, SPI 3, 7 GD
+
+      A2 (bloody mail, helm)'
+    notes: 'Longsword (2d8 hefty)
+
+      Now knows nothing beyond slaughter.'
+  flavorTable:
+    title: ASPECTS OF THE POSSESSED
+    columns:
+    - header: Appearance
+      values:
+      - Swollen head
+      - Bloody teeth
+      - Writhing veins
+      - Hot breath
+      - Protruding bones
+      - Withered tongue
+    - header: Behaviour
+      values:
+      - Fiery temper
+      - Sinister whisper
+      - Total amnesia
+      - Morbid cruelty
+      - No boundaries
+      - Paranoid delusions
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

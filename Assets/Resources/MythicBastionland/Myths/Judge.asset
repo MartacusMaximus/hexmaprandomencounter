@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Judge
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 113
+  mythName: Judge
+  omens:
+  - '1. A wretch pleads for charity. She was a
+
+    Knight, sentenced harshly by
+    the Judge.'
+  - '2. A courtyard in black and white, carved
+
+    seats in a circle. Vague voices
+    echo,
+
+    arguing, then a loud clap followed by
+
+    silence. This place is
+    gone if returned to.'
+  - '3. Three Sergeants of Law deliver a scroll to
+
+    the Knight called for judgement.
+    The
+
+    Knight will be retrieved when the time is
+
+    right; a horn will be
+    the warning.'
+  - '4. One of the Knights vanishes into mist,
+
+    forced to give witness to the
+    trial of a
+
+    Knight that they know. After testifying
+
+    they are returned
+    in a swirl of mist.'
+  - 5. A clear horn is heard across the Realm.
+  - '6. The Retriever of Justice comes bounding
+
+    on the horizon, roughly dragging
+    the
+
+    summoned Knight to court, which has
+
+    materialised nearby. The Judge
+    awaits,
+
+    able to summon witnesses for or against,
+
+    judging whether the
+    Knight has truly
+
+    done their best to follow the Oath. At the
+
+    next sunset
+    or sunrise she gives her
+
+    verdict (see opposite).'
+  verse: 'In time she calls for all the knights
+
+    Upon the best her blade still
+    bites'
+  castEntries:
+  - name: The Judge, Ambrageft, of Diamond Eye
+    statBlock: 'VIG 13, CLA 19, SPI 17, 10 GD
+
+      A3 (gambeson, white fur plate,
+      tall helm)'
+    notes: 'Judgementsword (2d10 long, +d10 vs the
+
+      guilty, striking causes
+      a moment of silence)
+
+      Can Deny and sees all lies.'
+  - name: Sergeants of Law, Lyo, Tonnel, Muntin
+    statBlock: 'VIG 12, CLA 14, SPI 14, 6 GD
+
+      A1 (checkerboard longcoats)'
+    notes: 'Polehooks (d10 long, +d10 vs fleeing targets)
+
+      Bitter, bound to
+      service for their own crimes.'
+  - name: Retriever of Justice, Lawhound, Azdart
+    statBlock: 'VIG 15, CLA 18, SPI 7, 7 GD
+
+      A1 (hardened body), huge jaws
+      (2d8)'
+    notes: Only obeys the Judge.
+  flavorTable:
+    title: JUDGEMENT
+    columns:
+    - header: Verdict
+      values:
+      - Guilty
+      - Guilty, sentence to
+      - come next Season Follows her witnesses
+      - Follows the evidence
+      - Innocent for now
+      - Innocent
+    - header: Sentence (if guilty)
+      values:
+      - Immediate execution
+      - Stripped of all
+      - possessions Life imprisonment
+      - Stripped of knighthood
+      - Execution next Season
+      - Just a warning
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

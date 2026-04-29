@@ -13,20 +13,15 @@ MonoBehaviour:
   m_Name: Warp_Weft
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Warp & Weft
-  description: "Swap the positions of an object you are\nholding and another object
-    you can see. They\nmust be of a similar size and shape, such as\ntwo swords.\nPASSION
-    - Detachment\nRestore SPI when you discard something that\nyou want.\nThis and
-    that, might just be that and this\nAs now is morrow, perfectly amiss\nWeaver
-    Knight\nUNUSUAL THROWN WEAPON\nDesign Ability\n1 Club +d6 in a duel\n2 Disc +d6
-    vs steeds\n3 Spike +d6 vs fleeing targets\n4 Bola +d6 vs mounted\ntargets\n5
-    Fork +d6 vs flying targets\n6 Ball +d6 vs targets without\na shield\nKNIGHTED
-    BY...\nThe Armoured Seer\nVIG 15, CLA 7, SPI 9, 5 GD, A3 (metal body)\n\u2022
-    A great blocky mass of chains and iron\nplates, just about humanoid in shape.\n\u2022
-    They were interred in their armour after\na mortal wound, now seeing through
-    the\neyes of every piece of armour and every\nweapon in the Realm.\n\u2022 Wants
-    to restore their body to its\nprevious health.\nPerson: Thrifty herald ~ Name:
-    Pryer ~ Characteristic: Animal lover\nObject: Seer arrow ~ Beast: Watcher python
-    ~ State: Coveting ~ Theme: Hearing\n6\n7\nThe"
+  description: 'Swap the positions of an object you are
+
+    holding and another
+    object you can see. They
+
+    must be of a similar size and shape, such as
+
+    two
+    swords.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

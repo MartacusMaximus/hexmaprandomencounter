@@ -13,21 +13,12 @@ MonoBehaviour:
   m_Name: Nature_s_Vault
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Nature's Vault
-  description: "You can wield branches as javelins (d6) or\ngreatspears (d10 long)
-    and eat leaves as a\nsatisfying meal.\nPASSION - Gourmet\nRestore SPI when you
-    eat a new type of fruit\nor vegetable.\nNo greater gift than bough and bush\nAll
-    feast in verdy bountilush\nLeaf Knight\nWHY IS THIS STICK USEFUL?\nUse But...\n1
-    Instantly cools any\nliquid it touches\nIt's long and\ninconvenient to carry\n2
-    Insects hate the smell Dogs always want it\n3 It transforms into 20ft\nof rope
-    when shaken\nIt looks just like every\nother stick\n4 Terrifies snakes, eels,\nand
-    worms It's very delicate\n5 One end is extremely\nsticky\nIt's extremely\nflammable\n6
-    Seers believe it is a\nblessing upon you\nIt only works in bright\nsunlight\nKNIGHTED
-    BY...\nThe Born Seer\nVIG 6, CLA 6, SPI 8, 1 GD\n\u2022 An infant, large eyes,
-    boundless energy,\ndestined to be the most powerful Seer.\n\u2022 Sees the future
-    in childlike simplicity and\ngives clumsy guidance, refusing to\nelaborate or
-    explain themselves.\n\u2022 Wants to go somewhere new.\nPerson: Athletic warden
-    ~ Name: Andona ~ Characteristic: Huge backpack\nObject: Scaled daisy ~ Beast:
-    Massive badger ~ State: Thinking ~ Theme: Sunrise\n6\n3\nThe"
+  description: 'You can wield branches as javelins (d6) or
+
+    greatspears (d10
+    long) and eat leaves as a
+
+    satisfying meal.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e6ecb1b38df41c4881fd0309ec9bc2, type: 3}
+  m_Name: The_Hymn_Seer
+  m_EditorClassIdentifier: Assembly-CSharp::SeerDefinitionSO
+  seerName: The Hymn Seer
+  vigor: 7
+  clarity: 10
+  spirit: 13
+  guard: 5
+  traits:
+  - 'Little more than a skeleton draped in
+
+    white robes, moving suddenly and
+
+    stopping
+    completely still.'
+  - 'Guides visitors in dreary, discordant
+
+    song, loose guidance hidden in the
+    words.'
+  - 'Wants to bring Myths to a rapid end so
+
+    that the whole world can be drawn
+    to a
+
+    sorrowful close.'

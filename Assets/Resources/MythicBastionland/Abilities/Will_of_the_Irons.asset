@@ -13,20 +13,15 @@ MonoBehaviour:
   m_Name: Will_of_the_Irons
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Will of the Irons
-  description: "Move a single chain that you hold as if it was\na limb, using a single
-    hand. You can lash out\nwith both ends (d6 each), grasp opponents,\nand otherwise
-    move it to your will.\nPASSION - Abyss\nRestore SPI when sleeping underground
-    in\ncomplete darkness.\nBorn below the soil, below the stone, below all thought\nDown,
-    down, further down, of blood and iron wrought\nChain Knight\nHOW YOU REACHED
-    THE SURFACE\nFirst Then\n1 Through darkness Through ice\n2 Through smoke Through
-    dirt\n3 Out of a cell Out of a mountain\n4 Climbing chains Out of a tomb\n5 Up
-    the great stair Up from a well\n6 Through fire Out of a lake\nKNIGHTED BY...\nThe
-    Winged Seer\nVIG 4, CLA 4, SPI 6, 1 GD\n\u2022 Frail broken body, tattered useless
-    wings\nheld aloft by white-masked acolytes.\n\u2022 Sees the potential failures
-    of those who\nask for advice. Has no faith in anybody to\nsucceed at any task.\n\u2022
-    Wants to bask in vicarious glory.\nPerson: Oblivious cartographer ~ Name: Croyle
-    ~ Characteristic: Pet rat\nObject: Death woodcut ~ Beast: Bony zebra ~ State:
-    Crying ~ Theme: Dirt\n2\n5\nThe"
+  description: 'Move a single chain that you hold as if it was
+
+    a limb, using
+    a single hand. You can lash out
+
+    with both ends (d6 each), grasp opponents,
+
+    and
+    otherwise move it to your will.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

@@ -13,20 +13,14 @@ MonoBehaviour:
   m_Name: Unbreakable_Circle
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Unbreakable Circle
-  description: "Draw a circle in the ground, with yourself in\nthe centre.\nUntil
-    you leave the circle, no other living\nbeing can enter or leave it.\nPASSION
-    - Respectfulness\nRestore SPI when returning something to its\nrightful owner
-    after it was lost or taken.\nWith ring a'lone, head dreams of home\nWith rings
-    o'two, heart longs to roam\nRing Knight\nPROPERTIES OF THE RINGS\nDesign Effect\n1
-    Snakes Wearers share vision\n2 Skulls Wearers share hearing\n3 Thorns Wearers
-    share GD\n(use total)\n4 Rubies Wearers share VIG\n(use higher)\n5 Gold Wearers
-    share CLA\n(use higher)\n6 Birds Wearers share SPI\n(use higher)\nKNIGHTED BY...\nThe
-    Spectral Seer\nVIG 4, CLA 16, SPI 14, 5 GD\n\u2022 Immaterial shadow of a life
-    long\nextinguished, restricted to dwell near an\nurn containing their remains.\n\u2022
-    Sees all events that include death: past,\npresent, and future.\n\u2022 Wants
-    to return to a physical form.\nPerson: Lazy weaver ~ Name: Ursell ~ Characteristic:
-    Extremely burly\nObject: Nature bow ~ Beast: Stinging crocodile ~ State: Competing
-    ~ Theme: Happiness\n3\n11\nThe"
+  description: 'Draw a circle in the ground, with yourself in
+
+    the centre.
+
+    Until
+    you leave the circle, no other living
+
+    being can enter or leave it.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

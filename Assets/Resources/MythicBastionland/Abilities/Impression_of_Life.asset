@@ -13,18 +13,12 @@ MonoBehaviour:
   m_Name: Impression_of_Life
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Impression of Life
-  description: "You do not truly need air, food, water, sleep,\nwarmth, or love,
-    but you are compelled to\nplay along when you are deprived of them.\nPASSION
-    - Imitation\nRestore SPI when you pass for human while\nunder scrutiny.\nSycamore,
-    leather, felt and strings\nIn heartless chest a soul still sings\nMock Knight\nUNNATURAL
-    BODY\nBones of... Skin of...\n1 Ivory Leather\n2 Bronze Felt\n3 Sapling branches
-    Silk\n4 String Wool\n5 Wooden rods Parchment\n6 Iron chain Clay\nKNIGHTED BY...\nThe
-    Chance Seer\nVIG 10, CLA 10, SPI 6, 3 GD\n\u2022 Cloaked in constantly rotating
-    scales,\neach showing a new colour.\n\u2022 Only sees the uncertain futures,
-    blind to\nthat which is locked in certainty.\n\u2022 Has no agenda of their own,
-    having given\nthemselves fully to the forces of fate.\nPerson: Confused fool
-    ~ Name: Kernick ~ Characteristic: Tall and slender\nObject: Silver furs ~ Beast:
-    Spotted wasp ~ State: Patrolling ~ Theme: Leaves\n4\n12\nThe"
+  description: 'You do not truly need air, food, water, sleep,
+
+    warmth, or love,
+    but you are compelled to
+
+    play along when you are deprived of them.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

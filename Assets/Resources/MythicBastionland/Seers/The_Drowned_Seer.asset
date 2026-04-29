@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e6ecb1b38df41c4881fd0309ec9bc2, type: 3}
+  m_Name: The_Drowned_Seer
+  m_EditorClassIdentifier: Assembly-CSharp::SeerDefinitionSO
+  seerName: The Drowned Seer
+  vigor: 3
+  clarity: 3
+  spirit: 5
+  guard: 2
+  traits:
+  - 'Said to be at the bottom of a small but
+
+    impossibly deep pond. Soggy acolytes
+
+    gather
+    at the shore to speak her intent.'
+  - 'Sees from every river and body of fresh
+
+    water, but utterly blind to the
+    sea.'
+  - 'Wants to protect Knights. Occasionally
+
+    floats useful items to the surface.'

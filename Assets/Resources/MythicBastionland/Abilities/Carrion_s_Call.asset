@@ -13,20 +13,12 @@ MonoBehaviour:
   m_Name: Carrion_s_Call
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Carrion's Call
-  description: "Speak with scavenger creatures, and summon\nthem to you. They're
-    only helpful if you're\nproviding them with food.\nPASSION - Misery\nRestore
-    SPI when you meet somebody new and\ncomplain to them about something.\nIn dregs
-    of dawn the damnlings sway\nFor famine' s brood a gifted prey\nGallows Knight\nSALVAGED
-    ARMOUR\nType Detail\n1 Copper mail (A1) Embedded arrowheads\n2 Cracked chestplate\nand
-    bracers (A1)\nTwo sets hastily\npatched together\n3 Red brigandine (A1) Partially
-    burnt\n4 Padded cloth (A1) Claw marks\n5 Hardened leather (A1) Faded heraldry\n6
-    Dented plate (A1) Dried blood\nKNIGHTED BY...\nThe Torn Seer\nVIG 9, CLA 5, SPI
-    8, 3 GD and\nVIG 6, CLA 6, SPI 6, 2 GD\n\u2022 Appears as if a tall, broad man
-    was torn\nin half from head to groin, halves now\nclinging together, but acting
-    as two.\n\u2022 Always presents two possibilities, two\nopinions, two predictions.\n\u2022
-    Never argues with the other half, but\nalways contradicts at least slightly.\nPerson:
-    Wary crier ~ Name: Plodder ~ Characteristic: Wiry & lean\nObject: Mist club ~
-    Beast: Taloned heron ~ State: Building ~ Theme: Metal\n4\n2\nThe"
+  description: 'Speak with scavenger creatures, and summon
+
+    them to you. They''re
+    only helpful if you''re
+
+    providing them with food.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

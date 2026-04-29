@@ -13,19 +13,15 @@ MonoBehaviour:
   m_Name: Light_Beyond_Light
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Light Beyond Light
-  description: "You can cause any metal object you hold to\nemit a bright light that
-    only you can see.\nBees, butterflies, hummingbirds, and\nhedgehogs can also see
-    the light.\nPASSION - Positivity\nRestore SPI when you raise somebody's mood.\nA
-    lightless glow, from neath a dream\nIlluminates the fabric' s seam\nViolet Knight\nA
-    STEED WITHOUT A NAME\nWhy? A Strange Steed\n1 Seer's orders Cannot utter a sound\n2
-    It frightens you Cannot ride through\nwater\n3 The word is forgotten Seems more\ncomfortable
-    at night\n4 You can't speak it Arrows cannot harm it\n5 It dies when named Can
-    ride on sea water\n6 Its name has power Other steeds show\nfealty to it\nKNIGHTED
-    BY...\nThe Gut Seer\nVIG 10, CLA 2, SPI 2, 1 GD\n\u2022 A pulsing, fleshy mass,
-    entrails sprawled\nout across the stained floor.\n\u2022 When spoken to the stains
-    and intestines\nspiral and sprawl to form guiding shapes.\n\u2022 Just wants
-    to do their duty.\nPerson: Kind brewer ~ Name: Dorza ~ Characteristic: Dour killjoy\nObject:
-    Flesh wax ~ Beast: Wolfy hedgehog ~ State: Marching ~ Theme: Walls\n5\n4\nThe"
+  description: 'You can cause any metal object you hold to
+
+    emit a bright light
+    that only you can see.
+
+    Bees, butterflies, hummingbirds, and
+
+    hedgehogs
+    can also see the light.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Knight_74
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 74
+  knightName: Knight 74
+  titleVerse: 
+  passionText: 'Vengeance: Restore SPI when achieving a worthy revenge.
+
+    In serenous
+    moon the best of us can rest in docile light
+
+    The quietest bird in impure
+    times must soar in grisly flight
+
+    Dove Knight
+
+    WINGED ARMOUR
+
+    Ability
+    Limitation
+
+    1 Always land safely Sink like a stone
+
+    2 Jump twice as high
+    Red glow when angry
+
+    3 Sprint silently Slow running speed
+
+    4 Animals
+    won''t attack
+
+    you unprovoked
+
+    Horses other than your
+
+    own are afraid
+    of you
+
+    5
+
+    Knights who strike the
+
+    first blow against you
+
+    lose
+    d6 SPI
+
+    Lose d6 SPI if you ever
+
+    strike the first blow to
+
+    a Knight
+
+    6
+    Appear as real wings Only protects under
+
+    daylight'
+  grantedAbility: {fileID: 11400000, guid: 51406ebfc96cd4ed7970af994e01a4fc, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 5d14e2ef6b8e9427890c464f0677fd6d, type: 2}
+  steed: {fileID: 11400000, guid: 33916370fd29a4ec7a0745c8a66514c8, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 7bbe1be3596e042d0b5811699d52c8f2, type: 2}
+  - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
+  - {fileID: 11400000, guid: 9af37f604dc664475b9b42c8bb76aedf, type: 2}
+  - {fileID: 11400000, guid: 392f1132915c7445d8df08596e1f97f9, type: 2}
+  randomFlavorTable:
+    title: 
+    columns: []

@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4ea819fb1424f5cb73440f5435bfde, type: 3}
+  m_Name: Hazards
+  m_EditorClassIdentifier: Assembly-CSharp::HazardSO
+  entries:
+  - Acidic fog
+  - Barbed gorge
+  - Biting muck
+  - Biting serpents
+  - Biting thorns
+  - Bloodsucking insects
+  - Bone ridges
+  - Boulder rapids
+  - Briar field
+  - Brimstone springs
+  - Burning heat
+  - Carrion birds
+  - Chill air
+  - Chilling bushes
+  - Choking dust
+  - Choking woodland
+  - Crumbling cliffs
+  - Crumbling ground
+  - Crumbling ridge
+  - Draining climb
+  - Draining dunes
+  - Dust storm
+  - Earsplitting screams
+  - Exhausting spores
+  - Fallen woods
+  - Fierce winds
+  - Fire nettles
+  - Flooded glade
+  - Floodplain
+  - Forgotten traps
+  - Frostbite fog
+  - Glue bog
+  - Gulping marsh
+  - Hopeless climb
+  - Icy rapids
+  - Immaterial attackers
+  - Lack of air
+  - Lurking predators
+  - Magma field
+  - Mud slopes
+  - Needle grass
+  - Numb ache on the air
+  - Parasitic worms
+  - Perilous crossing
+  - Pouncing spiders
+  - Quaking ground
+  - Quickmud
+  - Raging rapids
+  - Rat territory
+  - Razor crags
+  - Razor rocks
+  - Red hail
+  - Salt bog
+  - Scalding heat
+  - Sinkholes
+  - Slippery climb
+  - Slippery rocks
+  - Spike rocks
+  - Spiked roots
+  - Spiked wall
+  - Steam holes
+  - Sticky weeds
+  - Stinging leaves
+  - Stinging swarms
+  - Strangling fog
+  - Tangling moss
+  - Thorn snares
+  - Thorned trench
+  - Tight squeeze
+  - Toxic air
+  - Venomous fens
+  - Vulture peaks

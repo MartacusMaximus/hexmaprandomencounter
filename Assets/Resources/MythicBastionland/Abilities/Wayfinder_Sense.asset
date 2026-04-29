@@ -13,19 +13,15 @@ MonoBehaviour:
   m_Name: Wayfinder_Sense
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Wayfinder Sense
-  description: "Sense the direction in which a named\ndestination lies, but not the
-    best route to\ntravel there. You cannot use this to find your\nlost home or the
-    City.\nPASSION - Inquisition\nRestore SPI when you wrangle the truth out of\nan
-    uncooperative person.\nThe humble know no home to call their own\nHorizon is
-    their hearth, each hill their throne\nPigeon Knight\nMEMORIES OF THE LOST HOME\nHue
-    Shape\n1 Emerald Towers\n2 Marble Walls\n3 Silver Flowers\n4 Golden Ships\n5
-    Ruby Water\n6 Violet Clouds\nKNIGHTED BY...\nThe Frozen Seer\nVIG 10, CLA 13,
-    SPI 16, 2 GD\n\u2022 Draped in a white feather cloak, face\nconcealed by a fractal
-    warping of space.\n\u2022 Can reveal possible futures through their\ncollection
-    of delicate mirrors, each of\nwhich must be destroyed afterwards.\n\u2022 Wants
-    the Knights to succeed, but only\nafter a painful struggle.\nPerson: Cruel singer
-    ~ Name: Wattle ~ Characteristic: Fidgeting hands\nObject: Cold carving ~ Beast:
-    Ivory goat ~ State: Intoxicated ~ Theme: Fire\n2\n7\nThe"
+  description: 'Sense the direction in which a named
+
+    destination lies, but not
+    the best route to
+
+    travel there. You cannot use this to find your
+
+    lost
+    home or the City.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

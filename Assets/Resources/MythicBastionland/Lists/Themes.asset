@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a476a90a2eb4c6bb4573b582fd9618, type: 3}
+  m_Name: Themes
+  m_EditorClassIdentifier: Assembly-CSharp::ThemeSO
+  entries:
+  - Anger
+  - Armour
+  - Battle
+  - Blood
+  - Breaking
+  - Carving
+  - Charm
+  - Coins
+  - Cold
+  - Colours
+  - Commands
+  - Craft
+  - Darkness
+  - Dirt
+  - Dreams
+  - Drink
+  - Fear
+  - Fire
+  - Flight
+  - 'Flowers
+
+    3
+
+    2'
+  - Food
+  - Frost
+  - Fungi
+  - Grass
+  - Growth
+  - Hair
+  - Happiness
+  - Harvest
+  - Healing
+  - Hearing
+  - Hearth
+  - Ice
+  - Insects
+  - Leaves
+  - Light
+  - Location
+  - Memory
+  - Metal
+  - Moonlight
+  - Music
+  - Names
+  - Numbers
+  - Questions
+  - Regret
+  - Repair
+  - Revenge
+  - 'Rope
+
+    1
+
+    2'
+  - Sadness
+  - Salt
+  - Sharpness
+  - Shelter
+  - Shrinking
+  - Size
+  - Skin
+  - Sleep
+  - Smell
+  - Starlight
+  - Stories
+  - String
+  - Sunlight
+  - Sunrise
+  - Sunset
+  - Thirst
+  - Touch
+  - Towers
+  - Transformation
+  - Truth
+  - Vision
+  - Walls
+  - Warmth
+  - Water
+  - Weapons

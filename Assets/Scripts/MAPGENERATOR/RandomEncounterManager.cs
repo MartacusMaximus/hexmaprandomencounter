@@ -82,7 +82,7 @@ public class RandomEncounterManager : MonoBehaviour
             mythHexes.Add(chosenCell);
         }
 
-        AssignRealmFlavor(allCells);
+        ClearRealmFlavor(allCells);
     }
 
     int CubeDistance(HexCell a, HexCell b)
@@ -186,39 +186,16 @@ public class RandomEncounterManager : MonoBehaviour
         );
     }
 
-    private void AssignRealmFlavor(IEnumerable<HexCell> cells)
+    private static void ClearRealmFlavor(IEnumerable<HexCell> cells)
     {
         foreach (var cell in cells)
         {
-            if (cell == null || cell.biome == BiomeType.City)
+            if (cell == null)
             {
                 continue;
             }
 
-            var nearest = GetNearestMyth(cell);
-            if (nearest == null || nearest.myth == null)
-            {
-                continue;
-            }
-
-            var myth = nearest.myth;
-            var picks = new[]
-            {
-                myth.dwelling,
-                myth.sanctum,
-                myth.monument,
-                myth.hazard,
-                myth.curse,
-                myth.ruin
-            }.Where(value => !string.IsNullOrWhiteSpace(value)).ToArray();
-
-            if (picks.Length == 0)
-            {
-                continue;
-            }
-
-            var hash = Mathf.Abs((cell.q * 73856093) ^ (cell.r * 19349663) ^ myth.pageNumber);
-            cell.realmFlavor = picks[hash % picks.Length];
+            cell.realmFlavor = string.Empty;
         }
     }
 }

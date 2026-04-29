@@ -13,19 +13,12 @@ MonoBehaviour:
   m_Name: Voice_of_the_Skies
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Voice of the Skies
-  description: "While outdoors, you can shout loud enough to\nbe heard clearly throughout
-    the whole Hex\nand all adjacent Hexes.\nPASSION - Discord\nRestore SPI when you
-    disrupt a place of order.\nThunder!\nShould be felt, not heard, else call it
-    a whimper!\nThunder Knight\nCAGED BUG\nAbility Manner\n1 Jolting bite (d6) Completely
-    wild\n2 Can slowly eat\nthrough metal Well-trained\n3 Melodious chirp Particularly
-    stupid\n4 Can fetch items up to\nthe weight of a coin Eager to please\n5 Always
-    goes\ntoward food Hates you\n6 Agonising but\nharmless bite\nA bright and\nnoble
-    creature\nKNIGHTED BY...\nThe Dice Seer\n3GD, A3. Treat as a Structure.\n\u2022
-    A great crystalline form, twitching and\nrotating of its own force, its voice
-    a\ngrinding chant.\n\u2022 Sees glimmers of every possible future all\nat once.\n\u2022
-    Encourages the action with the most risk\nand the greatest potential reward.\nPerson:
-    Friendly mercenary ~ Name: Aluna ~ Characteristic: Piglike face\nObject: Wolf
-    knife ~ Beast: Talking hyena ~ State: Tasting ~ Theme: Thirst\n6\n8\nThe"
+  description: 'While outdoors, you can shout loud enough to
+
+    be heard clearly
+    throughout the whole Hex
+
+    and all adjacent Hexes.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

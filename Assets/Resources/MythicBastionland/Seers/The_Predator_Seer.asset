@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e6ecb1b38df41c4881fd0309ec9bc2, type: 3}
+  m_Name: The_Predator_Seer
+  m_EditorClassIdentifier: Assembly-CSharp::SeerDefinitionSO
+  seerName: The Predator Seer
+  vigor: 16
+  clarity: 17
+  spirit: 12
+  guard: 9
+  traits:
+  - 'An animalistic woman with a powerful
+
+    body and sleek mane.'
+  - 'There is no better guide to hunting, no
+
+    matter the quarry.'
+  - 'Wants to sharpen Knights into the
+
+    perfect predators of the world, even
+    if
+
+    they must suffer along the way.'

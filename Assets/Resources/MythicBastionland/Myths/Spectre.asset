@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Spectre
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 107
+  mythName: Spectre
+  omens:
+  - '1. A funeral procession carries the Moth
+
+    Knight, soon to be buried in home
+    soil.
+
+    She was a great Knight, but a poor ruler.'
+  - '2. A black hawk perches, then howls like a
+
+    wolf before flying into the
+    distance.'
+  - '3. An abandoned cabin, a clattering within.
+
+    The Moth Knight cannot rest
+    in shame.
+
+    Her Spectre manifests, invisible and
+
+    immaterial, throwing
+    objects about inside
+
+    the hut. After a moment the cabin itself is
+
+    torn
+    to shreds. Then nothing.'
+  - '4. In an instant the world appears as it will
+
+    when all has turned to ruin.
+    Everything is
+
+    dead. As soon as a Knight touches
+
+    something the world
+    returns to normal.'
+  - '5. Three sages, close to death themselves,
+
+    chant in a circle, pleading
+    for the Spectre
+
+    to rest, begging for her to leave shame
+
+    behind. After
+    a moment the Spectre
+
+    lashes out at them, screaming wordlessly.'
+  - '6. The Spectre leads her ghostly horsemen.
+
+    Her form is more solid now,
+    and able to be
+
+    physically harmed. She will be at rest
+
+    only after a
+    victory or a second death.'
+  verse: 'Haunted souls find no sleep
+
+    In bed or cot or grave so deep'
+  castEntries:
+  - name: The Spectre, the Moth Knight, Delsonde
+    statBlock: 'VIG 15, CLA 6, SPI 12, 7 GD
+
+      A3 (mail, regal plate, shield)'
+    notes: 'Fang longsword (2d8 hefty), shield (d4)
+
+      Regains her form as the
+      Myth progresses.
+
+      Enraged by reminders of her failures.
+
+      Repelled
+      by reminders of her successes.'
+  - name: Ghostly Horsemen, Warband
+    statBlock: 'VIG 12, CLA 6, SPI 10, 5 GD
+
+      A2 (shimmering mail, helm)'
+    notes: 'Longaxe (d10 long)
+
+      Vanish into the void if the Spectre is slain.'
+  - name: Sages, Close to Death, Kolto, Enc, Agid
+    statBlock: 'VIG 2, CLA 8, SPI 12, 6 GD
+
+      Staffs (d8 long), blue robes with
+      faded runes,'
+    notes: mortal affliction (see below)
+  flavorTable:
+    title: MORTAL AFFLICTIONS
+    columns:
+    - header: Affliction of...
+      values:
+      - Mind
+      - Lungs
+      - Heart
+      - Back
+      - Senses
+      - Limbs
+    - header: Attitude
+      values:
+      - I deserve it
+      - Anger at the world
+      - Melancholy
+      - Fear of death
+      - In denial
+      - Oblivious
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

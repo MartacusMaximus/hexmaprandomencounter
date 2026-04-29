@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Hydra
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 141
+  mythName: Hydra
+  omens:
+  - '1. The Candle Knight lies broken in the
+
+    road, unable to walk. They tell
+    of the
+
+    Hydra rising from a pool of stagnant
+
+    water. It killed the rest
+    of her Company.
+
+    It cannot be killed. It must be endured.'
+  - '2. A wide hole leading down into damp
+
+    darkness. Any disturbance awakens
+    the
+
+    Hydra, bursting forth and attacking the
+
+    Company. It shrugs off
+    any attack.'
+  - '3. Atop a hill, the Hydra screeches
+
+    triumphantly in the ruins of a shattered
+
+    stone
+    outpost. It fights if disturbed,
+
+    mocking the Company if they do not
+
+    realise
+    it cannot be killed.'
+  - '4. A rapidly spreading fire among the trees.
+
+    The Hydra waits in ambush,
+    now able to
+
+    breathe fire (d8 blast).'
+  - '5. A roar from above, and the Hydra
+
+    descends, now winged and able to fly.'
+  - '6. The Hydra, visibly weakened, crawls
+
+    toward a bubbling spring. As it
+
+    submerges
+    itself the water boils, turning
+
+    black, and the Hydra is gone.'
+  verse: 'Our best fall before their time
+
+    The worst shall live forever'
+  castEntries:
+  - name: The Hydra, Punishment for Past Sins
+    statBlock: 'VIG 19, CLA 10, SPI 7, 12 GD
+
+      A5 (unbreakable scales)'
+    notes: 'Onslaught of heads (2d10 blast)
+
+      Cannot be harmed. Regenerates
+      any lost
+
+      body part and heals any wounds.
+
+      Sometimes feigns weaknesses
+      to trick
+
+      attackers into thinking they have a chance.
+
+      One head
+      is always holding onto some sort of
+
+      treasure (see below), baiting victims.'
+  - name: The Candle Knight, Aluane
+    statBlock: 'VIG 14, CLA 13, SPI 8, 8 GD
+
+      A3 (mail, plate, white helm)'
+    notes: 'Longsword (2d8 hefty), shortsword (2d6)
+
+      Can whisper into a candle
+      to deliver a
+
+      message anywhere within the Realm.
+
+      Wants to get
+      far from the Hydra.'
+  flavorTable:
+    title: TREASURES OF THE HYDRA
+    columns:
+    - header: Descriptor
+      values:
+      - Golden
+      - Bejewelled
+      - Engraved
+      - Luminous
+      - Ancient
+      - Runic
+    - header: Object
+      values:
+      - Crown
+      - Sceptre
+      - Longsword
+      - Chalice
+      - Spear
+      - Shield
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

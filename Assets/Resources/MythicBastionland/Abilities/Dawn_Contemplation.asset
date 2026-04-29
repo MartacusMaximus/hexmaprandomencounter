@@ -13,19 +13,15 @@ MonoBehaviour:
   m_Name: Dawn_Contemplation
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Dawn Contemplation
-  description: "At sunrise each day, choose any area of\nknowledge. You can ask the
-    Referee three\nquestions within this area, which they answer\nhonestly with yes,
-    no, or maybe if uncertain.\nPASSION - Introversion\nRestore SPI when you refuse
-    a formal social\ngathering, or leave early.\nA loom of wisdom spun at dawn\nLaid
-    to rest til coming morn\nTome Knight\nLIMITS OF MEMORY\nBlind spot for... And...\n1
-    People's names In large gatherings\n2 Place names In combat\n3 Faces At morning\n4
-    Geography At night\n5 Relationships When alone\n6 Time After a drink\nKNIGHTED
-    BY...\nThe Tangled Seer\nVIG 10, CLA 5, SPI 13, 4 GD\n\u2022 Not quite here,
-    but also too much of them\nis here. Appears as knotted appendages\nand faces,
-    twisting in and out of the air.\n\u2022 Sees all possibilities, is never sure
-    where\nthey are right now.\n\u2022 Wants stability and simplicity.\nPerson: Careless
-    clothier ~ Name: Tompot ~ Characteristic: Mud covered\nObject: Peace stick ~
-    Beast: Slow butterfly ~ State: Courting ~ Theme: Location\n4\n3\nThe"
+  description: 'At sunrise each day, choose any area of
+
+    knowledge. You can ask
+    the Referee three
+
+    questions within this area, which they answer
+
+    honestly
+    with yes, no, or maybe if uncertain.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Lizard
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 95
+  mythName: Lizard
+  omens:
+  - '1. Black smoke on the horizon. The Lizard is
+
+    birthed from the fire, blind
+    and confused.
+
+    It cannot bite yet and tries to flee.'
+  - '2. A forest reduced to ash. A silver-haired
+
+    bandit gathers it up. He knows
+    that ash
+
+    created by the Lizard is a deadly poison.'
+  - '3. A river, flowing as grey ash-saturated
+
+    sludge. Dead fish and newts line
+    the
+
+    riverbank. A pair of knightly
+
+    salamanders, normally immune to all
+
+    toxins,
+    flail around in agonised rage.'
+  - '4. A huge tail of the Lizard, detached by the
+
+    growing beast, lies twitching
+    amongst a
+
+    briar patch. Its blood sparks a fire that
+
+    can only be extinguished
+    by seawater.'
+  - '5. A burial mound, where the Lizard made a
+
+    temporary nest, erupts into
+    burning soil
+
+    and ash (d8 Damage each turn within the
+
+    area). It burns
+    until midnight.'
+  - '6. A heap of rocks, part melted, now the lair
+
+    of the Lizard. If left to
+    live it ignites into a
+
+    huge fire that consumes the entire Hex,
+
+    birthing
+    four more Lizards to spread into
+
+    neighbouring Realms.'
+  verse: 'O scale''d one afernal, portenter o''decay
+
+    O fang o''roaring ruin,
+    sunrise o''final day'
+  castEntries:
+  - name: The Lizard, the Land's Eternal Woe
+    statBlock: 'VIG 18, CLA 12, SPI 5, 8 GD
+
+      Scales of un-colour (ignores all
+      Damage, but'
+    notes: 'does not cover its belly)
+
+      Bite (2d10, a wound incinerates the
+      victim to
+
+      ash) or thrash (d8 blast)
+
+      Burning blood (a single drop
+      sparks a fire.
+
+      Only seawater can extinguish the flames)'
+  - name: Yfran, Veteran Bandit
+    statBlock: 'VIG 12, CLA 15, SPI 13, 6 GD
+
+      A1 (black brigandine)'
+    notes: '2 daggers (d6 each), bow (d6)
+
+      Wants to pull off one last big job
+      (see below).'
+  - name: Knightly Salamander, Helmeck
+    statBlock: 'VIG 10, CLA 4, SPI 5, 4 GD
+
+      Claws and bite (d8), immune to
+      most toxins'
+    notes: 
+  flavorTable:
+    title: YFRAN'S BIG SCORE
+    columns:
+    - header: Target
+      values:
+      - Retired Knight
+      - Wandering Seer
+      - The Seat of Power
+      - Neighbouring ruler
+      - Wealthy commoner
+      - Rival bandit
+    - header: Plot
+      values:
+      - Murder
+      - Identity theft
+      - Burglary
+      - Blackmail
+      - Confidence trick
+      - Long con
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

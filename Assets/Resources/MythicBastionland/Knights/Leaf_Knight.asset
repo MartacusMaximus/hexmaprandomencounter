@@ -17,64 +17,31 @@ MonoBehaviour:
   titleVerse: 'No greater gift than bough and bush
 
     All feast in verdy bountilush'
-  passionText: 
+  passionText: 'Gourmet: Restore SPI when you eat a new type of fruit
+
+    or vegetable.'
   grantedAbility: {fileID: 11400000, guid: ed0493432dcde498db82223ca8a4fe1a, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 7396de4c4754440bca1d154e68963bb6, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 592eaa1c68e134575b9b5e8d0e6b7958, type: 2}
   steed: {fileID: 11400000, guid: c10ed1112850942e49fd486958e74ff8, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 70303ac40d4d04b8685e949a54cd9fbd, type: 2}
   - {fileID: 11400000, guid: 7fee5fb5aad214842a7ade39531edc8e, type: 2}
-  - {fileID: 11400000, guid: ed204959f4af14c4a9b7ec5ccbf10fc2, type: 2}
-  - {fileID: 11400000, guid: e32d001ce3c4e401b89bb59e1c1222f4, type: 2}
-  - {fileID: 11400000, guid: fb052018074f1449ca51b3a7c6a260a1, type: 2}
-  - {fileID: 11400000, guid: 28b4a550d477d47f38d9ce4da366c8b3, type: 2}
-  - {fileID: 11400000, guid: 3b70a35168bd74c0899eb8774204916a, type: 2}
-  - {fileID: 11400000, guid: c73dc94df1f6e40a78a2d07ac84012db, type: 2}
-  - {fileID: 11400000, guid: da74e03fbd41848118815e45d1bbb591, type: 2}
-  - {fileID: 11400000, guid: 2fa0f64df34c0425a9a9da8a5ad4ad5d, type: 2}
-  - {fileID: 11400000, guid: 5bb263c8e4a0448bcafb13a48ecabc88, type: 2}
-  randomFlavorTableTitle: 
-  randomFlavorTableRows:
-  - '1 Instantly cools any
-
-    liquid it touches
-
-    It''s long and
-
-    inconvenient
-    to carry'
-  - 2 Insects hate the smell Dogs always want it
-  - '3 It transforms into 20ft
-
-    of rope when shaken
-
-    It looks just like every
-
-    other
-    stick'
-  - '4 Terrifies snakes, eels,
-
-    and worms It''s very delicate'
-  - '5 One end is extremely
-
-    sticky
-
-    It''s extremely
-
-    flammable'
-  - "6 Seers believe it is a\nblessing upon you\nIt only works in bright\nsunlight\nKNIGHTED
-    BY...\nThe Born Seer\nVIG 6, CLA 6, SPI 8, 1 GD\n\u2022 An infant, large eyes,
-    boundless energy,\ndestined to be the most powerful Seer.\n\u2022 Sees the future
-    in childlike simplicity and\ngives clumsy guidance, refusing to\nelaborate or
-    explain themselves.\n\u2022 Wants to go somewhere new."
-  personHook: Athletic warden
-  objectHook: Scaled daisy
-  beastHook: Massive badger
-  stateHook: Thinking
-  themeHook: 'Sunrise
-
-    6
-
-    3
-
-    The'
+  - {fileID: 11400000, guid: 28be126482f5d4300969106cc69b1fc3, type: 2}
+  - {fileID: 11400000, guid: 0588bfae6d50742728f6b33991d69308, type: 2}
+  randomFlavorTable:
+    title: WHY IS THIS STICK USEFUL?
+    columns:
+    - header: Use Instantly cools any
+      values:
+      - liquid it touches Insects hate the smell
+      - It transforms into 20ft of rope when shaken
+      - Terrifies snakes, eels, and worms
+      - One end is extremely sticky
+      - Seers believe it is a blessing upon you
+    - header: But... It's long and
+      values:
+      - inconvenient to carry Dogs always want it
+      - It looks just like every other stick
+      - It's very delicate
+      - It's extremely flammable
+      - It only works in bright sunlight

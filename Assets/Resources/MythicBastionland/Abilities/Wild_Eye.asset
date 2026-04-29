@@ -13,15 +13,10 @@ MonoBehaviour:
   m_Name: Wild_Eye
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Wild Eye
-  description: "Observe a beast in secret.\nLearn a useful truth about their habitat.\nPASSION
-    - Empathy\nRestore SPI when you spare the life of a\nhostile animal.\nImmersed
-    within the woods adeep\nA sheriff rides from nature' s keep\nSnare Knight\nThe\nKNIGHT
-    & COMPANION\nHistory Type\n1 Exiled Otter\n2 Feral Hare\n3 Vengeful Rat\n4 Shamed
-    Weasel\n5 Jovial Ferret\n6 Artistic Squirrel\nKNIGHTED BY...\nThe Swollen Seer\nVIG
-    15, CLA 5, SPI 4, 1 GD\n\u2022 Can only be moved by feats of\nengineering usually
-    reserved for siegery.\n\u2022 Sees within the minds of huge beings.\n\u2022 Wants
-    to grow ever bigger.\nPerson: Tired scout ~ Name: Caldan ~ Characteristic: Golden
-    hair\nObject: Moonlit honey ~ Beast: Giant magpie ~ State: Resting ~ Theme: Rope\n1\n2"
+  description: 'Observe a beast in secret.
+
+    Learn a useful truth about their
+    habitat.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

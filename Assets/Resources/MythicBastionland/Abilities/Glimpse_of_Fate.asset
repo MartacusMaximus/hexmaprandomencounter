@@ -13,19 +13,15 @@ MonoBehaviour:
   m_Name: Glimpse_of_Fate
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Glimpse of Fate
-  description: "Once per day you can undo a single action\nperformed by you or your
-    Company, declaring\nit was in fact a minor vision you received.\nPlay as if it
-    never happened.\nPASSION - Respect\nRestore SPI when you yield to a Seer.\nThe
-    blood sees through time aflow\nTo certain souls, a glimpse they show\nGazer Knight\nTAPESTRY
-    STORY\nEvent Subject\n1 Birth of... A random Seer\n2 Great deeds of... A random
-    Knight\n3 Ambitions of... Yourself\n4 Shameful death of... One of the Company\n5
-    Glorious death of... The Realm ruler\n6 Peaceful death of... An unknown figure\nKNIGHTED
-    BY...\nThe Stone Seer\n6GD, A3, treat as a Structure\n\u2022 A 10ft statue dragged
-    from the earth,\nmotionless and silent. Never moves or\nresponds, but those who
-    speak with him\nget a general feel of approval or objection.\n\u2022 Knows all
-    of the past but nothing of the\nfuture or present.\n\u2022 Wants to preserve
-    the Realm.\nPerson: Furious outcast ~ Name: Gil ~ Characteristic: Muscular slab\nObject:
-    Mossy drum ~ Beast: Dark swan ~ State: Arguing ~ Theme: Size\n4\n5\nThe"
+  description: 'Once per day you can undo a single action
+
+    performed by you or
+    your Company, declaring
+
+    it was in fact a minor vision you received.
+
+    Play
+    as if it never happened.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

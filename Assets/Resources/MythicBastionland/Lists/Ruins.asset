@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f902a9c15778c4fd6a9640107dbfb102, type: 3}
+  m_Name: Ruins
+  m_EditorClassIdentifier: Assembly-CSharp::RuinSO
+  entries:
+  - Abandoned home
+  - Ash pit
+  - Ash-drowned town
+  - Barricaded rubble
+  - Beheaded statue
+  - Bloodied altar
+  - Bloody battlefield
+  - Bloody well
+  - Bone mausoleum
+  - Broken fort
+  - Broken henge
+  - Broken mast
+  - Broken tools
+  - Burned village
+  - Collapsed bridge
+  - Collapsed wall
+  - Crumbled bridge
+  - Crumbled mosaic
+  - Crumbled obelisk
+  - Darkened fort
+  - Dead tree-shrine
+  - Defiled catacomb
+  - Defiled totem
+  - Desolate inn
+  - Dirge-horn altar
+  - Faded library
+  - Fallen treehouse
+  - Flooded village
+  - Forgotten palace
+  - Fouled garden
+  - Frayed bridge
+  - Ghostly village
+  - Ghosts of slaughter
+  - Gory painting
+  - Great fallen tree
+  - Hanging skeletons
+  - Haunted hamlet
+  - Horse tomb
+  - Hunter remains
+  - Impact crater
+  - Looted caravan
+  - Looted shrine
+  - Lost fort
+  - Massacre moor
+  - Missing tower
+  - Murder pit
+  - Only shadows left
+  - Raiding debris
+  - Rotten gallows
+  - Scorched farm
+  - Scorched workshop
+  - Scoured trail
+  - Screaming cave
+  - Shattered shield
+  - Shattered stained glass
+  - Shipwreck
+  - Sinister altar
+  - Skull heap
+  - Smashed glade
+  - Smashed jail
+  - Smashed pottery
+  - Sorrowful statues
+  - Statuary rubble
+  - Sunken abbey
+  - Tomb of the oathbreaker
+  - Toppled henge
+  - Torn tapestry
+  - Traps and corpses
+  - Tumbled tower
+  - Unmarked graves
+  - Vine-choked tower
+  - Wicked trophies

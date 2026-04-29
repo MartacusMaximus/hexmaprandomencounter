@@ -13,19 +13,12 @@ MonoBehaviour:
   m_Name: Retroactive_Forethought
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Retroactive Forethought
-  description: "Once per day, produce a common item from\nyour backpack that you
-    could have reasonably\nacquired at a recent point.\nPASSION - Distraction\nRestore
-    SPI when you abandon a set plan.\nSure as sky and sea\nFor every lock a key\nKey
-    Knight\nILL GOTTEN GAINS\nValuables Keepsakes\n1 Polished gems A scrap of a poem\n2
-    Silver coins A lock of hair\n3 Box of salt A wooden ring\n4 Tiny, perfect diamond
-    Some baby teeth\n5 Golden hairpin A vial of blood\n6 String of pearls Wooden
-    figurine\nKNIGHTED BY...\nThe Unspoken Seer\nVIG 5, CLA 18, SPI 18, 6 GD\n\u2022
-    Locals claim there's no Seer here and\ndodge further questions.\n\u2022 Worthy
-    Knights find guidance left as\ncryptic symbols in the wilderness near to\ntheir
-    Sanctum and near to any Myth.\n\u2022 Wants to remain unspoken, unobserved,\nand
-    eventually cease to exist at all.\nPerson: Bitter archer ~ Name: Beryan ~ Characteristic:
-    Intense speech\nObject: Rainbow beads ~ Beast: Riding peacock ~ State: Guarding
-    ~ Theme: Towers\n3\n3\nThe"
+  description: 'Once per day, produce a common item from
+
+    your backpack that
+    you could have reasonably
+
+    acquired at a recent point.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

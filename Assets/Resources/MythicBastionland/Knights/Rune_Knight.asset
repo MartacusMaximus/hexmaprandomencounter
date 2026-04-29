@@ -18,41 +18,34 @@ MonoBehaviour:
 
     Strands
     of faten path unveiled, a starry scrawl to match'
-  passionText: 
+  passionText: 'Foresight: Restore SPI when your prediction is proven to
+
+    be
+    correct.'
   grantedAbility: {fileID: 11400000, guid: a53cbabe602734ff0b436be9caf7ce7d, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 04ed75415cce54c808c8c301881b8df7, type: 2}
+  linkedSeer: {fileID: 11400000, guid: dc788c6bb3947475da81364d024c8dd7, type: 2}
   steed: {fileID: 11400000, guid: def83c2195c0a479c9fdaad284e06509, type: 2}
   bondedProperty:
-  - {fileID: 11400000, guid: c21db9c7adc3948ad8a903c4fb418d7d, type: 2}
   - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
   - {fileID: 11400000, guid: 2651cfe2bf1764892b0a548b70c38fd4, type: 2}
-  - {fileID: 11400000, guid: 666b00a0390d04e259a0e5966232e0f3, type: 2}
+  - {fileID: 11400000, guid: f399fcce59a054c0d9b037ebab776117, type: 2}
   - {fileID: 11400000, guid: 99c6b4917dced464bbb97d2390fb1a96, type: 2}
-  - {fileID: 11400000, guid: 2833366c8fefa4d3281f6ac9a582b1f9, type: 2}
-  - {fileID: 11400000, guid: efc582a6a41664afeb443fb00b953f8a, type: 2}
-  - {fileID: 11400000, guid: bfc10c7bbee1040ffb1f70c1a517c514, type: 2}
-  - {fileID: 11400000, guid: 5665026fcd15a48eda2eccb08911f95a, type: 2}
-  - {fileID: 11400000, guid: ab992949019704b438b0d911d30a39e1, type: 2}
-  randomFlavorTableTitle: THE CRYSTAL FLASK
-  randomFlavorTableRows:
-  - 1 Warmth of a hearth Sudden thunderstorm
-  - 2 Veil of darkness Next season arrives
-  - 3 Gentle light Night arrives
-  - 4 Repels birds Deafening scream
-  - 5 Soothes canines Plague of locusts
-  - "6 Eases pain Freezes nearby water\nKNIGHTED BY...\nThe Drowned Seer\nVIG 3,
-    CLA 3, SPI 5, 2 GD\n\u2022 Said to be at the bottom of a small but\nimpossibly
-    deep pond. Soggy acolytes\ngather at the shore to speak her intent.\n\u2022 Sees
-    from every river and body of fresh\nwater, but utterly blind to the sea.\n\u2022
-    Wants to protect Knights. Occasionally\nfloats useful items to the surface."
-  personHook: Legendary exile
-  objectHook: Hermit's rope
-  beastHook: Fanged dove
-  stateHook: Entangled
-  themeHook: 'Moonlight
-
-    4
-
-    1
-
-    The'
+  randomFlavorTable:
+    title: THE CRYSTAL FLASK
+    columns:
+    - header: If Shaken
+      values:
+      - Warmth of a hearth
+      - Veil of darkness
+      - Gentle light
+      - Repels birds
+      - Soothes canines
+      - Eases pain
+    - header: If Smashed
+      values:
+      - Sudden thunderstorm
+      - Next season arrives
+      - Night arrives
+      - Deafening scream
+      - Plague of locusts
+      - Freezes nearby water

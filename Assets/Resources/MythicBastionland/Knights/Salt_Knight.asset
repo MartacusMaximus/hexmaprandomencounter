@@ -18,43 +18,34 @@ MonoBehaviour:
 
     Matters not how still the
     mirrow'' s breadth'
-  passionText: 
+  passionText: 'Mettle: Restore SPI when accepting a non-combat
+
+    challenge with
+    the odds set against you.'
   grantedAbility: {fileID: 11400000, guid: 61e75d7897a0f4c5a93dce85254c45b3, type: 2}
-  linkedSeer: {fileID: 11400000, guid: e516c175683034dccb24a2cb2d553ed9, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 8bac0c100f5654f4ea02001daafa44b9, type: 2}
   steed: {fileID: 11400000, guid: 9bf5390ddcc7b4971b6b9fcf44e31246, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: d9faae321004d406aaf46525e5bd0cb9, type: 2}
   - {fileID: 11400000, guid: f8a28336ffce4494989cc1e1fb18d943, type: 2}
   - {fileID: 11400000, guid: a698db622ae22465e9afadef4f50881c, type: 2}
-  - {fileID: 11400000, guid: d15105629077c41e986a96dcdd8bbde3, type: 2}
-  - {fileID: 11400000, guid: 34d24327fda544b00ba7e5a4dcfec712, type: 2}
-  - {fileID: 11400000, guid: 2ce6be1e01862468d962147652d4c740, type: 2}
-  - {fileID: 11400000, guid: c615c7cd9da3840a1a004c4a08fd0bac, type: 2}
-  - {fileID: 11400000, guid: 5c98d243b15af4984a6a6a6a55630d66, type: 2}
-  - {fileID: 11400000, guid: b0fea1b6cfe3d4398a6332598ff40ff8, type: 2}
-  - {fileID: 11400000, guid: 9748bff603eb44a90891de13da8c5510, type: 2}
-  - {fileID: 11400000, guid: 0c517a3cf056c489c97a6b749627d123, type: 2}
-  - {fileID: 11400000, guid: dfb4fddab5bf340bca7ef454b63fb90a, type: 2}
-  randomFlavorTableTitle: THE EVERFLASK
-  randomFlavorTableRows:
-  - 1 Leather pouch A story
-  - 2 Brass horn A blade
-  - 3 Twisted silver A small creature
-  - 4 Mottled stone Delicious fruit
-  - 5 White wood Honey
-  - "6 Frosted glass Music\nKNIGHTED BY...\nThe Bright Seer\nVIG 12, CLA 14, SPI
-    14, 3 GD\n\u2022 A booming, intrusively optimistic man\ncloaked in orange and
-    gold.\n\u2022 Has complete control over fire, able to\ntwist it into visions
-    brought to life.\n\u2022 Wants to see the world burn, but in a\nplanned and controlled
-    manner."
-  personHook: Violent playwright
-  objectHook: Wood mace
-  beastHook: Thorn frog
-  stateHook: Stalking
-  themeHook: 'Shelter
-
-    5
-
-    3
-
-    The'
+  - {fileID: 11400000, guid: 4231e385437a84da18330daf0fa389c5, type: 2}
+  randomFlavorTable:
+    title: THE EVERFLASK
+    columns:
+    - header: Design
+      values:
+      - Leather pouch
+      - Brass horn
+      - Twisted silver
+      - Mottled stone
+      - White wood
+      - Frosted glass
+    - header: Thirst
+      values:
+      - A story
+      - A blade
+      - A small creature
+      - Delicious fruit
+      - Honey
+      - Music

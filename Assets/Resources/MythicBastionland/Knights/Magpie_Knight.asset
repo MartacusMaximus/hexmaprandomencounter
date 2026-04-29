@@ -17,38 +17,35 @@ MonoBehaviour:
   titleVerse: 'Keen eyes see what cold heart seeks
 
     This bird never bare of beak'
-  passionText: 
+  passionText: 'Heraldry: Restore SPI when you announce the owner of a
+
+    banner,
+    crest, or coat of arms, which you can
+
+    always recognise.'
   grantedAbility: {fileID: 11400000, guid: 04b92cad2cff94c48ba4153d3cb56c7f, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 6d8c55f1cee92443bbe5e1a6cbf657e0, type: 2}
+  linkedSeer: {fileID: 11400000, guid: a8d4c22f58b5142e9abae278524de3e9, type: 2}
   steed: {fileID: 11400000, guid: e083f7ae98c1d4825aa981a025b47ed9, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: c238e9755c64b4e8b8accbde3606553e, type: 2}
   - {fileID: 11400000, guid: e88f35742cba245c78c409b7d578cf5a, type: 2}
-  - {fileID: 11400000, guid: 8277be91349304036b03e8caad8a37a5, type: 2}
-  - {fileID: 11400000, guid: 06b4ca7acf00e494cafca0a0b1ead43d, type: 2}
-  - {fileID: 11400000, guid: eee5108762e554ff6babab2c2e3f1a26, type: 2}
-  - {fileID: 11400000, guid: 1763423555c3b4e1280c34fce456db77, type: 2}
-  - {fileID: 11400000, guid: 2a63b1f917b934b4ab356d552ac686d2, type: 2}
-  - {fileID: 11400000, guid: a4fb203cf5fa04cf4b008a69adb3bf09, type: 2}
-  randomFlavorTableTitle: A TREASURED MEMENTO
-  randomFlavorTableRows:
-  - 1 A dried flower A great victory
-  - 2 A sword hilt A shameful defeat
-  - 3 A pearl A happy place
-  - 4 A scrap of a banner A sorrowful place
-  - 5 An old coin Somebody you loved
-  - "6 A dog's collar Somebody you hated\nKNIGHTED BY...\nThe Lens Seer\nVIG 10,
-    CLA 14, SPI 6, 2 GD\n\u2022 A squat body, her head a refractive orb of\nliquid
-    glass.\n\u2022 Knows the true fate of anything that she\nexamines closely and
-    thoroughly.\n\u2022 Wants interesting things brought to her\nfor examination."
-  personHook: Wild thatcher
-  objectHook: Copper acorn
-  beastHook: Armoured pigeon
-  stateHook: Smelling
-  themeHook: 'Light
-
-    5
-
-    9
-
-    The'
+  - {fileID: 11400000, guid: d29e1d73ea1c1473f9ac474a13fb79d9, type: 2}
+  randomFlavorTable:
+    title: A TREASURED MEMENTO
+    columns:
+    - header: Item
+      values:
+      - A dried flower
+      - A sword hilt
+      - A pearl
+      - A scrap of a banner
+      - An old coin
+      - A dog's collar
+    - header: Reminds you of...
+      values:
+      - A great victory
+      - A shameful defeat
+      - A happy place
+      - A sorrowful place
+      - Somebody you loved
+      - Somebody you hated

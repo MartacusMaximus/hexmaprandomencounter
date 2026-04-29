@@ -18,37 +18,31 @@ MonoBehaviour:
 
     Down,
     down, further down, of blood and iron wrought'
-  passionText: 
+  passionText: 'Abyss: Restore SPI when sleeping underground in
+
+    complete darkness.'
   grantedAbility: {fileID: 11400000, guid: b9c06e5c460c24025876b2b02d7062a1, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 8aa3cb69cad1d4e069970af4e65e8002, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 861657f32ddbc4a21b3007a000d28725, type: 2}
   steed: {fileID: 11400000, guid: c9cdd41f689944ead8c0af6b304c718b, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 2f5368765e30245ae953c08dba5f2415, type: 2}
-  - {fileID: 11400000, guid: 6924d0d4f55cf4d7ba0310a299769051, type: 2}
-  - {fileID: 11400000, guid: b819224b6ef3c48ad889873640af1325, type: 2}
-  - {fileID: 11400000, guid: 8dc50c313a93847ffa45420e45af565d, type: 2}
-  - {fileID: 11400000, guid: e86148b09fc884d51910e19e7cb1aea1, type: 2}
-  - {fileID: 11400000, guid: 8c8bd9523f02c46a6a175983954a789b, type: 2}
-  randomFlavorTableTitle: HOW YOU REACHED THE SURFACE
-  randomFlavorTableRows:
-  - 1 Through darkness Through ice
-  - 2 Through smoke Through dirt
-  - 3 Out of a cell Out of a mountain
-  - 4 Climbing chains Out of a tomb
-  - 5 Up the great stair Up from a well
-  - "6 Through fire Out of a lake\nKNIGHTED BY...\nThe Winged Seer\nVIG 4, CLA 4,
-    SPI 6, 1 GD\n\u2022 Frail broken body, tattered useless wings\nheld aloft by
-    white-masked acolytes.\n\u2022 Sees the potential failures of those who\nask
-    for advice. Has no faith in anybody to\nsucceed at any task.\n\u2022 Wants to
-    bask in vicarious glory."
-  personHook: Oblivious cartographer
-  objectHook: Death woodcut
-  beastHook: Bony zebra
-  stateHook: Crying
-  themeHook: 'Dirt
-
-    2
-
-    5
-
-    The'
+  - {fileID: 11400000, guid: fec1f45017bd04f1f97164f6846b8e32, type: 2}
+  randomFlavorTable:
+    title: HOW YOU REACHED THE SURFACE
+    columns:
+    - header: First
+      values:
+      - Through darkness
+      - Through smoke
+      - Out of a cell
+      - Climbing chains
+      - Up the great stair
+      - Through fire
+    - header: Then
+      values:
+      - Through ice
+      - Through dirt
+      - Out of a mountain
+      - Out of a tomb
+      - Up from a well
+      - Out of a lake

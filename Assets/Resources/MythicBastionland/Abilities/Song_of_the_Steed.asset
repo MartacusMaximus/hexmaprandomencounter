@@ -13,18 +13,12 @@ MonoBehaviour:
   m_Name: Song_of_the_Steed
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Song of the Steed
-  description: "Speak in a voice comprehensible to horses.\nThey need reasoning with,
-    but are inclined to\ntrust you.\nPASSION - Certainty\nRestore SPI when you prove
-    somebody wrong.\nA perfect steed is neither wild nor tamed\nAs one, a streak
-    aguele through green untamed\nSaddle Knight\nLOYAL STEED\nAppearance Temperament\n1
-    Pristine Completely silent\n2 Plaited Highly alert\n3 Tall Eternally valiant\n4
-    Golden Fierce (d8 trample)\n5 Dark Loved by other beasts\n6 Stocky Perfect sense
-    of\ndirection\nKNIGHTED BY...\nThe Jewelled Seer\nVIG 6, CLA 6, SPI 16, 1 GD\n\u2022
-    No body is visible, just layers and layers\nof jewelled silk and glittering lace.\n\u2022
-    Can see the history of jewelled items, and\nthe locations of their own jewels.\n\u2022
-    Wants to send their jewels out to remote\nplaces, watching from afar.\nPerson:
-    Stocky hunter ~ Name: Knotte ~ Characteristic: Lice infested\nObject: Silver
-    armour ~ Beast: Draft horse ~ State: Dying ~ Theme: Food\n1\n9\nThe"
+  description: 'Speak in a voice comprehensible to horses.
+
+    They need reasoning
+    with, but are inclined to
+
+    trust you.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

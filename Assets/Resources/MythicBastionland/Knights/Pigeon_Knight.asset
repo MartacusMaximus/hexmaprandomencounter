@@ -18,39 +18,32 @@ MonoBehaviour:
 
     Horizon is their hearth,
     each hill their throne'
-  passionText: 
+  passionText: 'Inquisition: Restore SPI when you wrangle the truth out of
+
+    an
+    uncooperative person.'
   grantedAbility: {fileID: 11400000, guid: c011672e8572446968d2098912781e86, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 0c2d972f91ff9432dabe92b5230aaf9b, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 41c0fa5acd55941f1a3e7a20daa9ba9d, type: 2}
   steed: {fileID: 11400000, guid: 2c8f39cec11fc4a1b829125c03b65145, type: 2}
   bondedProperty:
-  - {fileID: 11400000, guid: cca16a61457b64738a891adf34cc76a6, type: 2}
-  - {fileID: 11400000, guid: 7e59dc9a154be4246b298a7c91e8906b, type: 2}
-  - {fileID: 11400000, guid: d17ad7b12ae1c421c947f33389667a73, type: 2}
-  - {fileID: 11400000, guid: 0c4d7eb9dbdae408eb823f1c903e91f8, type: 2}
-  - {fileID: 11400000, guid: f5b956cde5b6a4276be1356d9d8c8e3e, type: 2}
-  - {fileID: 11400000, guid: 671a435753e9a4670ae34584201bab31, type: 2}
-  - {fileID: 11400000, guid: af8de5149cae14104949005269aeb309, type: 2}
-  - {fileID: 11400000, guid: ae472bca8aed74699ad9f2816fa579df, type: 2}
-  randomFlavorTableTitle: MEMORIES OF THE LOST HOME
-  randomFlavorTableRows:
-  - 1 Emerald Towers
-  - 2 Marble Walls
-  - 3 Silver Flowers
-  - 4 Golden Ships
-  - 5 Ruby Water
-  - "6 Violet Clouds\nKNIGHTED BY...\nThe Frozen Seer\nVIG 10, CLA 13, SPI 16, 2
-    GD\n\u2022 Draped in a white feather cloak, face\nconcealed by a fractal warping
-    of space.\n\u2022 Can reveal possible futures through their\ncollection of delicate
-    mirrors, each of\nwhich must be destroyed afterwards.\n\u2022 Wants the Knights
-    to succeed, but only\nafter a painful struggle."
-  personHook: Cruel singer
-  objectHook: Cold carving
-  beastHook: Ivory goat
-  stateHook: Intoxicated
-  themeHook: 'Fire
-
-    2
-
-    7
-
-    The'
+  - {fileID: 11400000, guid: f79646387c15443edbaf840ee2c45d1a, type: 2}
+  - {fileID: 11400000, guid: 9ec24b2be74794c3290adec697e00058, type: 2}
+  randomFlavorTable:
+    title: MEMORIES OF THE LOST HOME
+    columns:
+    - header: Hue
+      values:
+      - Emerald
+      - Marble
+      - Silver
+      - Golden
+      - Ruby
+      - Violet
+    - header: Shape
+      values:
+      - Towers
+      - Walls
+      - Flowers
+      - Ships
+      - Water
+      - Clouds

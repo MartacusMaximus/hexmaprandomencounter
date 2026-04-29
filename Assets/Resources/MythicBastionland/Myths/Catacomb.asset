@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Catacomb
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 131
+  mythName: Catacomb
+  omens:
+  - '1. Beneath a wilting tree, a heap of
+
+    misshapen bones, seeming to sprout
+    from
+
+    the ground itself. They feel slightly warm.'
+  - '2. A narrow stone stairway leads down,
+
+    below a huge blackened tree. It
+    twists into
+
+    a branching tunnel, each of the three
+
+    branches concealing
+    a lurking Boneborn.
+
+    They attack anybody who enters.'
+  - '3. A grinding sound beyond the trees.
+
+    Investigating reveals a rushing river
+    of
+
+    bones, heading from the Myth Hex,
+
+    running toward the nearest body
+    of water.'
+  - '4. The ground opens, the Company trapped
+
+    in an arena of bones. They must
+    fight
+
+    three waves, each of d6 Boneborn. If they
+
+    survive, a stairway
+    to the surface opens.'
+  - '5. Three warbands of Bones at Arms march
+
+    forward. They roam the land, taking
+    out
+
+    their anger on the living.'
+  - '6. The Bone Slayer emerges, fighting on
+
+    behalf of all of the dead. He fights
+    any
+
+    challengers in a duel, banishing losers to
+
+    a bony underground prison.
+    Turns to ash
+
+    if defeated, releasing all prisoners.'
+  verse: 'Under skarny bough a world beneath
+
+    Bygone souls acraw in furied grief'
+  castEntries:
+  - name: Boneborn, Death's Creations
+    statBlock: 'VIG 10, CLA 10, SPI 5, 4 GD
+
+      A2 (bone form, see below)'
+    notes: Jealous of the living.
+  - name: Bones at Arms, the Soldiers of Death
+    statBlock: 'VIG 10, CLA 6, SPI 6, 4 GD
+
+      A2 (bonehelms and boneshields)'
+    notes: Bonehammer (d8 hefty), boneshield (d4)
+  - name: The Bone Slayer, Upholder of Bonelaw
+    statBlock: 'VIG 15, CLA 14, SPI 11, 8 GD
+
+      A3 (bonehelm, boneplate, hardened
+      bones)'
+    notes: 'Bonebreaker (2d10 long, cannot be wielded
+
+      by the living)'
+  flavorTable:
+    title: BONEBORN FORMS
+    columns:
+    - header: Body
+      values:
+      - Winged (can fly)
+      - Clawed (can burrow)
+      - Extra bones ( VIG 15)
+      - Bone shield (A1)
+      - Piecemeal (immune to ranged attacks)
+      - Sprawling (roll twice on the Attack column)
+    - header: Attack
+      values:
+      - Bone maul (d10)
+      - Shoulder blade (2d6)
+      - Deadtouch (2d12 slow)
+      - Fire burst (d8 blast)
+      - Spring slash (d8, free move after the Attack)
+      - Spine javelins (d6, throw 2 each turn)
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

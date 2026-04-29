@@ -13,19 +13,17 @@ MonoBehaviour:
   m_Name: Shattering_Charge
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Shattering Charge
-  description: "Once per day, make a solo mounted charging\nAttack with a lance.\nThe
-    Attack gains +d12, Blast , and Gambits\ncaused by the Attack count as strong.\nThe
-    lance is shattered.\nPASSION - Adventure\nRestore SPI when you enter a Myth Hex.\nSteed
-    agasp, spear agroan, strike agore\nSharp afrail, sight ablind, then no more\nLance
-    Knight\nMYSTIC SIGHT\nWhat can you see? But you cannot see\n1 Fears Colour\n2
-    Desires Writing\n3 Hidden things Birds\n4 Regrets Water\n5 Loyalties Stars and
-    sun\n6 Injuries and disease Silver and gold\nKNIGHTED BY...\nThe Shackled Seer\nVIG
-    10, CLA 16, SPI 13, 3 GD\n\u2022 Has a strange number of limbs (d12),\nseemingly
-    changing with each glimpse,\nall shackled to the wall.\n\u2022 Has especially
-    clear visions of things that\nwish to be elsewhere.\n\u2022 Pleads for freedom,
-    but just wants to be\nshackled somewhere new.\nPerson: Puny guard ~ Name: Howell
-    ~ Characteristic: Sulky and unwashed\nObject: Plague scabbard ~ Beast: Clawed
-    bees ~ State: Awestruck ~ Theme: Touch\n3\n9\nThe"
+  description: 'Once per day, make a solo mounted charging
+
+    Attack with a lance.
+
+    The
+    Attack gains +d12, Blast , and Gambits
+
+    caused by the Attack count as strong.
+
+    The
+    lance is shattered.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

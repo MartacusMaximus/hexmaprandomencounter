@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Goblin
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 39
+  mythName: Goblin
+  omens:
+  - '1. Weeping huntsman, cursing everyone.
+
+    Looking for his lost bloodhound
+    who
+
+    tended to him during injury.'
+  - '2. A lost lad, full of stories. Claims a little old
+
+    man called him into
+    the woods.'
+  - '3. Oppressive branches, tripping roots. A
+
+    cloaked old man calls out, lost.
+    If alerted
+
+    he cries out just before he is dragged into
+
+    the ground,
+    taken to the lost realm.'
+  - '4. The lost pets are running wild. If spotted
+
+    they immediately run back
+    toward the
+
+    secret door to the lost realm. One drops a
+
+    strange metallic
+    bone, repellent to birds.'
+  - '5. A dark clearing. Any deals made here are
+
+    bound by fate. The Goblin offers
+    a trade.
+
+    A valuable lost thing in return for a
+
+    favour he can call in
+    later.'
+  - '6. Suddenly dragged to the realm of lost
+
+    things. Tunnels under piles of
+    bric-a-brac.
+
+    The Goblin gloats from atop his pile.
+
+    Freedom is only
+    granted for a binding
+
+    favour, which the Goblin will enforce.'
+  verse: 'On toes it crept just out o'' sight
+
+    The petty hoarder full o'' spite'
+  castEntries:
+  - name: Lord of all Lost Things
+    statBlock: 'VIG 7, CLA 16, SPI 15, 9 GD
+
+      Bony needle (d6 +d10 to anybody
+      indebted to'
+    notes: 'the wielder), sack of favourite lost things
+
+      Can only be harmed
+      by objects that have
+
+      lain lost for at least ninety-nine years.
+
+      Can
+      Focus.'
+  - name: Lost Pets
+    statBlock: 'VIG 5, CLA 10, SPI 5, 2 GD
+
+      Yapping, biting, and scratching
+      (d6)'
+    notes: 
+  - name: Lost Lad, Roth
+    statBlock: 'VIG 7, CLA 9, SPI 9, 3 GD
+
+      Practice bow (d4, long)'
+    notes: 
+  flavorTable:
+    title: TRADING THE LOST
+    columns:
+    - header: Selling
+      values:
+      - Keys
+      - Letters
+      - Rings
+      - Memories
+      - Birds
+      - Scarves
+    - header: Seeking
+      values:
+      - Silver
+      - Dogs
+      - Needles
+      - Hats
+      - Knives
+      - Shoes
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

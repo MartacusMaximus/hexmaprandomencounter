@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Beast
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 111
+  mythName: Beast
+  omens:
+  - '1. A hulking furred shadow moves between
+
+    thick trees. Its form changes
+    as you catch
+
+    it at new angles (see opposite). It burrows
+
+    into the ground
+    if disturbed.'
+  - '2. A frightened rider points out two huge red
+
+    eyes, watching on the horizon.
+    Hot breath
+
+    on your skin. The eyes close. Vanished.'
+  - '3. First a breath of wind, then a rumble,
+
+    opening into a crackled roar.
+    All animals
+
+    in the Realm panic until the next sunrise.'
+  - '4. A clawed limb snatches at one of the
+
+    Knights, emerging from the undergrowth,
+
+    no
+    body in sight. Each turn a new limb
+
+    emerges to snatch at another Knight,
+    up
+
+    to six emerging in total. If the Knights flee
+
+    the limbs retreat
+    into earth.'
+  - '5. All Knights in the Realm that fail a
+
+    SPI Save fly into rage, attacking
+    all
+
+    nearby. This ends if they are Wounded.'
+  - '6. With a howling bark the Beast bounds
+
+    toward the nearest body of water.
+    When it
+
+    dives into the abyss a tidal wave covers all
+
+    within two Hexes
+    of the water, smashing
+
+    buildings and flooding the land.'
+  verse: 'In cutting coil and snatching horn and crushing limb abound
+
+    Tameless
+    creature sees no knight, no seer, no king a''found'
+  castEntries:
+  - name: The Beast, Nature Wild and Raw
+    statBlock: 'VIG 19, CLA 17, SPI 5, 14 GD
+
+      A3 (thick hide), maul and tear
+      (4d10)'
+    notes: 'Has no need for food or water, only fighting
+
+      to display dominance.'
+  - name: Clawed Limb of the Beast
+    statBlock: 'VIG 15, CLA 5, SPI 5, 6 GD
+
+      Claw (d10, wounded targets are
+      gripped and'
+    notes: must pass a VIG Save to move away)
+  - name: Frightened Rider, Fevych
+    statBlock: 'VIG 11, CLA 16, SPI 6, 6 GD
+
+      A2 (helm, shield)'
+    notes: 'Javelins (d6), axe (d6), shield (d4)
+
+      Abandoned her dream of becoming
+      a Knight
+
+      after seeing so many die. Now looking for a
+
+      mercenary
+      company to join.'
+  flavorTable:
+    title: FORMS OF THE BEAST
+    columns:
+    - header: Creatures
+      values:
+      - Stag and fish
+      - Wolf and beetle
+      - Panther and ox
+      - Lion and ram
+      - Crocodile and fox
+      - Goat and serpent
+    - header: Adornments
+      values:
+      - Countless tails
+      - Chitinous plates
+      - Multiple rows of teeth
+      - Six limbs
+      - Psychedelic colouring
+      - Antlers and tusks
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

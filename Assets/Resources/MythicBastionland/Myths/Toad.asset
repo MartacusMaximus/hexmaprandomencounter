@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Toad
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 123
+  mythName: Toad
+  omens:
+  - '1. A caravan of wagons, fat donkeys hauling
+
+    thick logs, escorted by twelve
+    warty
+
+    guards. They are respectful to Knights,
+
+    but urge the need for
+    haste, delivering
+
+    materials for the Toad''s castle.'
+  - '2. Two scouts, searching for news of the
+
+    Toad. They hear his castle has
+    been built.'
+  - '3. The Toad''s pet, a monstrous slug, is being
+
+    delivered to his castle
+    in chains. Six warty
+
+    guards struggle with the task, asking for
+
+    help.
+    The Toad is grateful for aid given.'
+  - '4. Nestled among thorns, a scroll with green
+
+    ribbon. It reads "the Toad
+    commends your
+
+    service". Anybody reading it feels sickly
+
+    sweet, as if
+    filled with honey. They choke
+
+    and sputter syrupy spittle, losing d8 VIG.'
+  - '5. A lone warty guard, delivering a gift to
+
+    one of the Knights (see opposite).
+    Its curse
+
+    manifests when the item is used, which
+
+    the guard encourages
+    the Knight to do
+
+    later. The curse lasts an entire Season.'
+  - '6. Twelve warty guards ride forward,
+
+    demanding the Knights visit the Toad.
+
+    They
+    must swear to him or die.'
+  verse: 'In honeyed words a fat and charmsome lord
+
+    In poisoned gifts a bloaty
+    malice stirred'
+  castEntries:
+  - name: The Toad, the Fat Lord, Born to Rule
+    statBlock: 'VIG 12, CLA 5, SPI 16, 5 GD
+
+      A4 (blubbersome body)'
+    notes: Grab and bite (d10), charming voice
+  - name: Warty Guards, led by Jabeck
+    statBlock: 'VIG 12, CLA 10, SPI 8, 5 GD
+
+      A3 (froghelm, mail, rotund plate)'
+    notes: 'Bow (d6 long), halberd (d10 long)
+
+      Fearful look, professional manner.'
+  - name: Blotch, Beloved Pet to the Toad
+    statBlock: 'VIG 17, CLA 5, SPI 2, 5 GD
+
+      A4 (monstrous sluglike body)'
+    notes: 'Slobbering maw (3d8)
+
+      Always sad, always hungry.
+
+      Wants to
+      be released.'
+  flavorTable:
+    title: BALEFUL GIFTS
+    columns:
+    - header: Gift
+      values:
+      - Apple pie
+      - Froghelm (A1)
+      - Wooden flute
+      - Silver mirror
+      - Woollen scarf
+      - Copper mug
+    - header: Curse
+      values:
+      - Deathly sleep
+      - Loss of speech
+      - Hideous face
+      - Loss of vision
+      - Total memory loss
+      - Loss of hearing
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

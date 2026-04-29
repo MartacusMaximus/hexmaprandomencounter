@@ -18,75 +18,30 @@ MonoBehaviour:
 
     A
     nasty cut takes something worse, the warmth of distant home'
-  passionText: 
+  passionText: 'Temperance: Restore SPI when you refuse a luxury.'
   grantedAbility: {fileID: 11400000, guid: 3773513afdfb342a9a0d9bf5d9ad3cd4, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 548d3e2acbafd4102a47473ea5a0c41c, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 331943aebe1e04f308f2a2917ad1a3b8, type: 2}
   steed: {fileID: 11400000, guid: 55a20841d2d28426d90d81f44fbdf6dd, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 4cb76dd71212f45b0b64c128b5716157, type: 2}
   - {fileID: 11400000, guid: e88f35742cba245c78c409b7d578cf5a, type: 2}
   - {fileID: 11400000, guid: 1c646d3382af3475d893f03425cf405f, type: 2}
-  - {fileID: 11400000, guid: 211d245b82d434525993c2500b3ed949, type: 2}
-  - {fileID: 11400000, guid: 295ac64a09667429c9e9cede2f4ba9ca, type: 2}
-  - {fileID: 11400000, guid: 083850c00c06f4b2fb5be0c731e824a1, type: 2}
-  - {fileID: 11400000, guid: 8f1b0d531e6ca46e98685a07b73e8a62, type: 2}
-  - {fileID: 11400000, guid: 1f04a171747d447abb34d25e89ef72c3, type: 2}
-  - {fileID: 11400000, guid: 431a71316aed0452697403f71738c160, type: 2}
-  randomFlavorTableTitle: A TATTERED POEM
-  randomFlavorTableRows:
-  - '1 Twin Knights are lost
-
-    in the woods
-
-    They''re eaten by a
-
-    pack
-    of wolves'
-  - '2 The Lion and the
-
-    Lizard are bitter rivals
-
-    They all die of a
-
-    disgusting
-    plague'
-  - '3 A mother hates her six
-
-    ugly sons
-
-    It turns into a call to
-
-    find
-    the City'
-  - '4 A hermit lambasts the
-
-    stars for his sad life
-
-    It devolves into
-
-    psychedelic
-    nonsense'
-  - '5 A clever chicken
-
-    outwits a farmer
-
-    It ends on a literal
-
-    cliffhanger'
-  - "6 A poet wastes her life\nfleeing from death\nThey all lived happily\never after\nKNIGHTED
-    BY...\nThe Fungal Seer\nVIG 11, CLA 3, SPI 15, 2 GD\n\u2022 Tortoise-like and
-    luminous, his body\nbristling with fungal colonies.\n\u2022 His mushrooms transport
-    the eaters on a\nshared vision quest lasting until sunrise\nand offering abstract
-    guidance. Dying in\nthe vision results in actual death.\n\u2022 Wants to bring
-    everybody into one shared\nheavenly vision."
-  personHook: Pathetic veteran
-  objectHook: Whistling pin
-  beastHook: Eternal scorpion
-  stateHook: Scared
-  themeHook: 'Weapons
-
-    4
-
-    10
-
-    The'
+  randomFlavorTable:
+    title: A TATTERED POEM
+    columns:
+    - header: Start Twin Knights are lost
+      values:
+      - in the woods
+      - The Lion and the Lizard are bitter rivals
+      - A mother hates her six ugly sons
+      - A hermit lambasts the stars for his sad life
+      - A clever chicken outwits a farmer
+      - A poet wastes her life fleeing from death
+    - header: End They're eaten by a
+      values:
+      - pack of wolves
+      - They all die of a disgusting plague
+      - It turns into a call to find the City
+      - It devolves into psychedelic nonsense
+      - It ends on a literal cliffhanger
+      - They all lived happily ever after

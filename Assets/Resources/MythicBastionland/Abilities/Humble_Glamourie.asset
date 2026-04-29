@@ -13,21 +13,20 @@ MonoBehaviour:
   m_Name: Humble_Glamourie
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Humble Glamourie
-  description: "After eating and drinking with somebody for\na few hours they consider
-    you trustworthy\nenough to speak openly about anything you\nask about.\nThe next
-    day they come to their senses and\nrealise if they revealed too much.\nPASSION
-    - Revelry\nRestore SPI when socially overindulging.\nAbrash and bold, renowned
-    and rued\nTheir presence cheered in feast or feud\nTankard Knight\nSCAR STORY\nWho
-    Scarred You? Your Betrayal\n1 Ruler of a nearby\nHolding Disloyalty\n2 Ruler
-    of the Seat of\nPower Petty theft\n3 Wandering Knight A violent argument\n4 A
-    whole village A broken promise\n5 A ship's captain Slander\n6 A member of your\nCompany\nNeglect
-    in a time of\ngreat need\nKNIGHTED BY...\nThe Red Seer\nVIG 8, CLA 15, SPI 15,
-    10 GD\n\u2022 Their shape lost within billowing crimson\nrobes, flashing wet
-    fabric forms fleeting\nshapes and faces, a voice on the breeze.\n\u2022 Favours
-    those who are open in their\ndesires and fears. Hates dishonesty.\n\u2022 Feels
-    only one fleeting emotion at a time,\nbut feels it with great intensity.\nPerson:
-    Influential collector ~ Name: Tresera ~ Characteristic: Wild hair\nObject: Beast
-    idol ~ Beast: Burrowing otter ~ State: Rejoicing ~ Theme: Memory\n3\n6\nThe"
+  description: 'After eating and drinking with somebody for
+
+    a few hours they
+    consider you trustworthy
+
+    enough to speak openly about anything you
+
+    ask
+    about.
+
+    The next day they come to their senses and
+
+    realise if they revealed
+    too much.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

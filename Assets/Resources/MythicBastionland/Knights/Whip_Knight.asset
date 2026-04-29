@@ -18,40 +18,32 @@ MonoBehaviour:
 
     Others seek to make soul
     moan'
-  passionText: 
+  passionText: 'Reverence: Restore SPI when offering respectful homage
+
+    to the
+    dead.'
   grantedAbility: {fileID: 11400000, guid: 929c835c5c9cf4b32b81ead1992f67d0, type: 2}
-  linkedSeer: {fileID: 11400000, guid: cb176b3f57ab54affbd454a4ab485e57, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 0af6027f765fe480fa218cf99f7fec9a, type: 2}
   steed: {fileID: 11400000, guid: 02dbaabb24a274363b615dc7a066e101, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: c2124c4b911134898b62c2210b740df4, type: 2}
-  - {fileID: 11400000, guid: c541788dc3f31477aad88db6c1dd5de0, type: 2}
-  - {fileID: 11400000, guid: 897135c2ed0c04e58960156584827489, type: 2}
-  - {fileID: 11400000, guid: 2d705143d332c4deb8567f305d20515a, type: 2}
-  - {fileID: 11400000, guid: cd1aad86f218649528cbc11ac1cb9ce4, type: 2}
-  - {fileID: 11400000, guid: 4c7467ac29ba8455190f3736729f1a5d, type: 2}
-  randomFlavorTableTitle: STRANGE HERBS
-  randomFlavorTableRows:
-  - 1 Heightened hearing Mild nausea
-  - '2 Breathe fire once
-
-    (d8 blast) Unable to speak'
-  - '3 Speak remotely with
-
-    any one person Hazy vision'
-  - 4 No pain (A1) Lose d6 VIG
-  - 5 Restore one Virtue Lose d6 CLA
-  - "6 Restore all Virtues Lose d6 SPI\nKNIGHTED BY...\nThe Prey Seer\nVIG 5, CLA
-    12, SPI 12, 4 GD\n\u2022 A hunched, flea-infested little wretch.\n\u2022 Sees
-    every hunger of every other being in\nthe Realm.\n\u2022 Longs to be eaten by
-    something huge."
-  personHook: Sickly ironsmith
-  objectHook: Artful cup
-  beastHook: Longly viper
-  stateHook: Tormenting
-  themeHook: 'Shrinking
-
-    2
-
-    9
-
-    The'
+  - {fileID: 11400000, guid: 2ae50b8a51c6e4307a78eec2cc0f5571, type: 2}
+  randomFlavorTable:
+    title: STRANGE HERBS
+    columns:
+    - header: Positive Effect
+      values:
+      - Heightened hearing
+      - Breathe fire once (d8 blast)
+      - Speak remotely with
+      - any one person No pain (A1)
+      - Restore one Virtue
+      - Restore all Virtues
+    - header: Side Effect
+      values:
+      - Mild nausea
+      - Unable to speak
+      - Hazy vision
+      - Lose d6 VIG
+      - Lose d6 CLA
+      - Lose d6 SPI

@@ -18,39 +18,29 @@ MonoBehaviour:
 
     Their blade is slow
     but glaneth stone'
-  passionText: 
+  passionText: 'Avarice: Restore SPI when you gain significant wealth.'
   grantedAbility: {fileID: 11400000, guid: 854d199c994a84b309edf975a042075a, type: 2}
-  linkedSeer: {fileID: 11400000, guid: e7b445a5a673f42588e95d16908ce0d8, type: 2}
+  linkedSeer: {fileID: 11400000, guid: cb26d49c91cfa46b1958f2a4b0593188, type: 2}
   steed: {fileID: 11400000, guid: 2db35e9ead6134475963ad71beff13c9, type: 2}
   bondedProperty:
-  - {fileID: 11400000, guid: af529b5902e4b430d90d9f19bda72eae, type: 2}
-  - {fileID: 11400000, guid: 88e3cf10485fc462db9532e6bfb203c8, type: 2}
-  - {fileID: 11400000, guid: db12a821576dd4ceba6e3303854b1cce, type: 2}
-  - {fileID: 11400000, guid: 26f3321b361cc473a8529d60e84346fd, type: 2}
-  - {fileID: 11400000, guid: 561cfe059bcbd4a0c99c8f5b0cf0f4c0, type: 2}
-  - {fileID: 11400000, guid: 04017a2173db64464aae91e38032825f, type: 2}
-  - {fileID: 11400000, guid: 822ab77e0ddae40c698e756fdb4129eb, type: 2}
-  - {fileID: 11400000, guid: 837a30953b62e4b9ba281b25140309d9, type: 2}
-  randomFlavorTableTitle: A STEADY HAND
-  randomFlavorTableRows:
-  - 1 Painting Knight-Mentor
-  - 2 Miniature sculpture Father
-  - 3 Embroidery Mother
-  - 4 Pottery Brother
-  - 5 Drawing Sister
-  - "6 Flower pressing Self\nKNIGHTED BY...\nThe Dreaming Seer\nVIG 5, CLA 5, SPI
-    7, 1 GD\n\u2022 Cannot be fully glimpsed, a silhouette of\nstarlight. Cannot
-    speak to those awake.\n\u2022 Appears only in dreams of those in the\nSeer's
-    home, tended by elderly servants.\n\u2022 Longs to find a way back to the waking\nworld,
-    or to drag companions into theirs."
-  personHook: Elderly tanner
-  objectHook: Traveller's hat
-  beastHook: Moon toad
-  stateHook: Confused
-  themeHook: 'Hearth
-
-    2
-
-    2
-
-    The'
+  - {fileID: 11400000, guid: 267a81710d55345eba94f60a9805f25d, type: 2}
+  - {fileID: 11400000, guid: b3ab18dc70db840619d611968d4ee2e0, type: 2}
+  randomFlavorTable:
+    title: A STEADY HAND
+    columns:
+    - header: Pastime
+      values:
+      - Painting
+      - Miniature sculpture
+      - Embroidery
+      - Pottery
+      - Drawing
+      - Flower pressing
+    - header: Taught By
+      values:
+      - Knight-Mentor
+      - Father
+      - Mother
+      - Brother
+      - Sister
+      - Self

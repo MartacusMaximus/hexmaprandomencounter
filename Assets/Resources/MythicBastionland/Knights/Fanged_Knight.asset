@@ -18,49 +18,31 @@ MonoBehaviour:
 
     Now bare your skin and
     share your heart awhile'
-  passionText: 
+  passionText: 'Melancholy: Restore SPI when you dampen the mood.'
   grantedAbility: {fileID: 11400000, guid: 3b967e603f904403c822860a18a36412, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 229e9490ca52141bab26b3be14da7769, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 7bf2926710fa946a8b3d3cdf89b0f7f9, type: 2}
   steed: {fileID: 11400000, guid: e0398c448b7134970a1882c20099ff12, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: bfa732754729746c49ca32c3b390c04d, type: 2}
   - {fileID: 11400000, guid: a28597bfda15a47b1891a63b047edbdd, type: 2}
   - {fileID: 11400000, guid: 81be8c4b599f0436d8aede643743048b, type: 2}
-  - {fileID: 11400000, guid: a1fed5d1bfac04bc8b4b83a5532a62ed, type: 2}
-  - {fileID: 11400000, guid: 7879a1d101037462ea1e35bc2771b194, type: 2}
-  - {fileID: 11400000, guid: 56ffd632e78764e5b9a68e869b19406a, type: 2}
-  - {fileID: 11400000, guid: eb1554fa05af747f68b45aa7472359dc, type: 2}
-  - {fileID: 11400000, guid: 6ac3e6e36a39e45008e40f7f9067043c, type: 2}
-  - {fileID: 11400000, guid: 2257464ea896d4e55849816227cbd342, type: 2}
-  - {fileID: 11400000, guid: 794868f801af34440996a5252aace83d, type: 2}
-  - {fileID: 11400000, guid: c19d7e042082141a88ea44426c17d10f, type: 2}
-  - {fileID: 11400000, guid: d38756bac64224d9983a066fe2405722, type: 2}
-  - {fileID: 11400000, guid: 0cae8b8acfe94449287b15c49cc10c19, type: 2}
-  - {fileID: 11400000, guid: 00e1a24a17995412e8ac890c5e0f4930, type: 2}
-  - {fileID: 11400000, guid: eeec98335e8ce4dd1b6815f6738edbc2, type: 2}
-  - {fileID: 11400000, guid: 23199ab29d1ac494690f4fced704a39a, type: 2}
-  - {fileID: 11400000, guid: cd62fc37cbd1143abad3a56299579f02, type: 2}
-  randomFlavorTableTitle: REFERENCES IN YOUR SCROLL
-  randomFlavorTableRows:
-  - 1 A tower The ruler
-  - 2 A body of water A Knight
-  - 3 A peak A Seer
-  - 4 A village All people
-  - 5 A river You
-  - "6 A cave A Company member\nKNIGHTED BY...\nThe Damned Seer\nVIG 7, CLA 15, SPI
-    4, 1 GD\n\u2022 A screaming, burning figure tied to a\npost. Forces seem to try
-    to drag him in\nevery direction, but he holds firm.\n\u2022 Knows everything,
-    but hesitant to give\nadvice unless he knows the recipient can\nbe trusted to
-    follow his instructions.\n\u2022 Wants to redeem himself by ensuring the\nfuture
-    occurs as the stars demand."
-  personHook: Frail herbalist
-  objectHook: Firebreath flask
-  beastHook: Sword rhinoceros
-  stateHook: Lounging
-  themeHook: 'Skin
-
-    6
-
-    10
-
-    The'
+  - {fileID: 11400000, guid: 25fe62bcd059b4473a1404a5c43fe024, type: 2}
+  randomFlavorTable:
+    title: REFERENCES IN YOUR SCROLL
+    columns:
+    - header: Place
+      values:
+      - A tower
+      - A body of water
+      - A peak
+      - A village
+      - A river
+      - A cave
+    - header: Ancestor to
+      values:
+      - The ruler
+      - A Knight
+      - A Seer
+      - All people
+      - You
+      - A Company member

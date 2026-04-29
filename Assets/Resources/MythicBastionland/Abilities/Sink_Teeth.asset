@@ -16,18 +16,7 @@ MonoBehaviour:
   description: "You can bite (d6) someone, choosing one of the\nfollowing effects
     before the bite, occurring\nonly if you Wound them:\n\u2022 Regain VIG equal
     to the VIG that they lose\n\u2022 Lower them into normal sleep\n\u2022 Show them
-    one of your memories\nPASSION - Melancholy\nRestore SPI when you dampen the mood.\nYou
-    see now why I cannot wear a smile\nNow bare your skin and share your heart awhile\nFanged
-    Knight\nREFERENCES IN YOUR SCROLL\nPlace Ancestor to\n1 A tower The ruler\n2
-    A body of water A Knight\n3 A peak A Seer\n4 A village All people\n5 A river
-    You\n6 A cave A Company member\nKNIGHTED BY...\nThe Damned Seer\nVIG 7, CLA 15,
-    SPI 4, 1 GD\n\u2022 A screaming, burning figure tied to a\npost. Forces seem
-    to try to drag him in\nevery direction, but he holds firm.\n\u2022 Knows everything,
-    but hesitant to give\nadvice unless he knows the recipient can\nbe trusted to
-    follow his instructions.\n\u2022 Wants to redeem himself by ensuring the\nfuture
-    occurs as the stars demand.\nPerson: Frail herbalist ~ Name: Samzun ~ Characteristic:
-    Fast talker\nObject: Firebreath flask ~ Beast: Sword rhinoceros ~ State: Lounging
-    ~ Theme: Skin\n6\n10\nThe"
+    one of your memories"
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

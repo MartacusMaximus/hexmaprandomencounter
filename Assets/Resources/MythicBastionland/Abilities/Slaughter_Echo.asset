@@ -13,18 +13,12 @@ MonoBehaviour:
   m_Name: Slaughter_Echo
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Slaughter Echo
-  description: "Use immediately after defeating an opponent.\nYour next melee Attack
-    in this combat\ngains Blast.\nPASSION - Justice\nRestore SPI when you restore
-    the balance\nof justice.\nSome were born to fight and fall, forged beneath blade'
-    s clash\nThis one birthed from blood of war, stained with corpses' ash\nBloody
-    Knight\nRAGE FUEL\nAlcohol Hatred\n1 Burning wine The rich\n2 Strong mead Knights\n3
-    Spiced ale The poor\n4 Sour milk Seers\n5 Fermented vegetable The sea\n6 Blood
-    brew The sun\nKNIGHTED BY...\nThe Reed Seer\nVIG 8, CLA 15, SPI 10, 4 GD\n\u2022
-    Knows they will lose their sight if they\npass over a river.\n\u2022 Sees the
-    near future in the patterns of\nreeds chopped in a very specific way.\n\u2022
-    Wants to live in the protection of a\nworthy master, serving a righteous cause.\nPerson:
-    Bread monk ~ Name: Jago ~ Characteristic: Disobedient dog\nObject: City coin
-    ~ Beast: Mighty newt ~ State: Drinking ~ Theme: Truth\n1\n4\nThe"
+  description: 'Use immediately after defeating an opponent.
+
+    Your next melee
+    Attack in this combat
+
+    gains Blast.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

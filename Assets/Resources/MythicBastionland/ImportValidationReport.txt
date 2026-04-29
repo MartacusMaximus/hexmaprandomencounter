@@ -1,128 +1,13 @@
-Knight page 28 could not be parsed cleanly.
-Knight page 30 could not be parsed cleanly.
-Knight page 32 could not be parsed cleanly.
-Knight page 34 could not be parsed cleanly.
-Knight page 36 could not be parsed cleanly.
-Knight page 38 could not be parsed cleanly.
-Knight page 40 could not be parsed cleanly.
-Knight page 42 could not be parsed cleanly.
+Knight page 28 could not locate verse, name, and table metadata cleanly.
 Knight page 42 used fallback steed parsing.
-Knight page 44 could not be parsed cleanly.
-Knight page 46 could not be parsed cleanly.
-Knight page 48 could not be parsed cleanly.
-Knight page 50 could not be parsed cleanly.
 Knight page 50 used fallback steed parsing.
-Knight page 52 could not be parsed cleanly.
-Knight page 54 could not be parsed cleanly.
-Knight page 56 could not be parsed cleanly.
-Knight page 58 could not be parsed cleanly.
-Knight page 60 could not be parsed cleanly.
-Knight page 62 could not be parsed cleanly.
-Knight page 64 could not be parsed cleanly.
-Knight page 66 could not be parsed cleanly.
-Knight page 68 could not be parsed cleanly.
-Knight page 70 could not be parsed cleanly.
-Knight page 72 could not be parsed cleanly.
-Knight page 74 could not be parsed cleanly.
-Knight page 76 could not be parsed cleanly.
-Knight page 78 could not be parsed cleanly.
-Knight page 80 could not be parsed cleanly.
-Knight page 82 could not be parsed cleanly.
-Knight page 84 could not be parsed cleanly.
-Knight page 86 could not be parsed cleanly.
+Knight page 74 could not locate verse, name, and table metadata cleanly.
 Knight page 86 used fallback steed parsing.
-Knight page 88 could not be parsed cleanly.
-Knight page 90 could not be parsed cleanly.
-Knight page 92 could not be parsed cleanly.
 Knight page 92 used fallback steed parsing.
-Knight page 94 could not be parsed cleanly.
 Knight page 94 used fallback steed parsing.
-Knight page 96 could not be parsed cleanly.
-Knight page 98 could not be parsed cleanly.
-Knight page 100 could not be parsed cleanly.
 Knight page 100 used fallback steed parsing.
-Knight page 102 could not be parsed cleanly.
-Knight page 104 could not be parsed cleanly.
-Knight page 106 could not be parsed cleanly.
-Knight page 108 could not be parsed cleanly.
-Knight page 110 could not be parsed cleanly.
-Knight page 112 could not be parsed cleanly.
-Knight page 114 could not be parsed cleanly.
-Knight page 116 could not be parsed cleanly.
-Knight page 118 could not be parsed cleanly.
-Knight page 120 could not be parsed cleanly.
-Knight page 122 could not be parsed cleanly.
-Knight page 124 could not be parsed cleanly.
-Knight page 126 could not be parsed cleanly.
-Knight page 128 could not be parsed cleanly.
-Knight page 130 could not be parsed cleanly.
-Knight page 132 could not be parsed cleanly.
-Knight page 134 could not be parsed cleanly.
-Knight page 136 could not be parsed cleanly.
-Knight page 138 could not be parsed cleanly.
-Knight page 140 could not be parsed cleanly.
-Knight page 142 could not be parsed cleanly.
-Knight page 144 could not be parsed cleanly.
-Knight page 146 could not be parsed cleanly.
-Knight page 148 could not be parsed cleanly.
-Knight page 150 could not be parsed cleanly.
-Knight page 152 could not be parsed cleanly.
-Knight page 154 could not be parsed cleanly.
-Knight page 156 could not be parsed cleanly.
-Knight page 158 could not be parsed cleanly.
-Knight page 160 could not be parsed cleanly.
-Knight page 162 could not be parsed cleanly.
-Knight page 164 could not be parsed cleanly.
-Knight page 166 could not be parsed cleanly.
-Knight page 168 could not be parsed cleanly.
-Knight page 170 could not be parsed cleanly.
-Myth page 35 could not locate verse or table title cleanly.
-Myth page 35 expected 6 flavor rows but parsed 0.
-Myth page 41 could not locate verse or table title cleanly.
-Myth page 41 expected 6 flavor rows but parsed 0.
-Myth page 43 could not locate verse or table title cleanly.
-Myth page 43 expected 6 flavor rows but parsed 0.
-Myth page 45 could not locate verse or table title cleanly.
-Myth page 45 expected 6 flavor rows but parsed 0.
-Myth page 47 could not locate verse or table title cleanly.
-Myth page 47 expected 6 flavor rows but parsed 0.
-Myth page 49 could not locate verse or table title cleanly.
-Myth page 49 expected 6 flavor rows but parsed 0.
-Myth page 51 could not locate verse or table title cleanly.
-Myth page 51 expected 6 flavor rows but parsed 0.
-Myth page 59 could not locate verse or table title cleanly.
-Myth page 59 expected 6 flavor rows but parsed 0.
-Myth page 63 could not locate verse or table title cleanly.
-Myth page 63 expected 6 flavor rows but parsed 0.
-Myth page 69 could not locate verse or table title cleanly.
-Myth page 69 expected 6 flavor rows but parsed 0.
-Myth page 73 could not locate verse or table title cleanly.
-Myth page 73 expected 6 flavor rows but parsed 0.
-Myth page 79 could not locate verse or table title cleanly.
-Myth page 79 expected 6 flavor rows but parsed 0.
-Myth page 91 could not locate verse or table title cleanly.
-Myth page 91 expected 6 flavor rows but parsed 0.
-Myth page 93 could not locate verse or table title cleanly.
-Myth page 93 expected 6 flavor rows but parsed 0.
-Myth page 95 could not locate verse or table title cleanly.
-Myth page 95 expected 6 flavor rows but parsed 0.
-Myth page 101 could not locate verse or table title cleanly.
-Myth page 101 expected 6 flavor rows but parsed 0.
-Myth page 103 could not locate verse or table title cleanly.
-Myth page 103 expected 6 flavor rows but parsed 0.
-Myth page 109 could not locate verse or table title cleanly.
-Myth page 109 expected 6 flavor rows but parsed 0.
-Myth page 111 could not locate verse or table title cleanly.
-Myth page 111 expected 6 flavor rows but parsed 0.
-Myth page 119 could not locate verse or table title cleanly.
-Myth page 119 expected 6 flavor rows but parsed 0.
-Myth page 133 could not locate verse or table title cleanly.
-Myth page 133 expected 6 flavor rows but parsed 0.
-Myth page 137 could not locate verse or table title cleanly.
-Myth page 137 expected 6 flavor rows but parsed 0.
-Myth page 145 could not locate verse or table title cleanly.
-Myth page 145 expected 6 flavor rows but parsed 0.
-Myth page 157 could not locate verse or table title cleanly.
-Myth page 157 expected 6 flavor rows but parsed 0.
-Myth page 169 could not locate verse or table title cleanly.
-Myth page 169 expected 6 flavor rows but parsed 0.
+Knight page 152 expected 6 rows in table 'WHY IS THIS STICK USEFUL?' but parsed [5, 5].
+Myth page 31 could not locate verse and table metadata cleanly.
+Myth page 33 could not locate verse and table metadata cleanly.
+Myth page 45 could not locate verse and table metadata cleanly.
+Myth page 161 could not locate verse and table metadata cleanly.

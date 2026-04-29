@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e6ecb1b38df41c4881fd0309ec9bc2, type: 3}
+  m_Name: The_Feasting_Seer
+  m_EditorClassIdentifier: Assembly-CSharp::SeerDefinitionSO
+  seerName: The Feasting Seer
+  vigor: 10
+  clarity: 3
+  spirit: 3
+  guard: 1
+  traits:
+  - 'Vast, soft, immobile creature, constantly
+
+    fussed over by white-cloaked
+    acolytes.'
+  - 'Silent, does nothing but gorge on food,
+
+    but her acolytes interpret meaning
+    from
+
+    whether she accepts or rejects offerings.'
+  - 'Her guidance is generally helpful,
+
+    especially to those who are kind to
+    her.'

@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Stout halberd
   pointCost: 0
   rarity: bonded
-  displayCategory: tool
+  displayCategory: weapon
   rulesText: (d10 long)
   damageDiceNotation: 1d10
   armorValue: 0

@@ -13,19 +13,12 @@ MonoBehaviour:
   m_Name: Cunning_Ploy
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Cunning Ploy
-  description: "Once per day, declare your current self to be\nan illusion, dispersing
-    into smoke. The real\nyou is watching from a safe place nearby.\nPASSION - Wits\nRestore
-    SPI when you avoid being tricked\nor outwitted.\nA whimsied whirl, a crafty guise\nThe
-    truth revealed as sour surprise\nFox Knight\nA HIDDEN BLADE\nDesign Ability\n1
-    Twisted ebony handle Hidden within your\nshadow\n2 Feather motif Can be thrown
-    any\ndistance\n3 Tapered slicer +2d10 vs somebody\nwho trusts you\n4 Fang-like
-    dagger Appears as a twig\n5 Long wavy blade Splits into two blades\n6 Etched
-    bone Harmless to you\nKNIGHTED BY...\nThe Needle Seer\nVIG 8, CLA 14, SPI 6,
-    4 GD\n\u2022 Tall and slender, festooned with blades.\n\u2022 Pulls open small
-    tears in reality, showing\nwhat could have been but is now\nimpossible.\n\u2022
-    Wants to make other people feel bad, but\ngrudgingly does their duty to the Realm.\nPerson:
-    Anxious bellringer ~ Name: Maldita ~ Characteristic: Abrasive voice\nObject:
-    Leathered bone ~ Beast: Fat beetle ~ State: Isolating ~ Theme: Dreams\n5\n7\nThe"
+  description: 'Once per day, declare your current self to be
+
+    an illusion, dispersing
+    into smoke. The real
+
+    you is watching from a safe place nearby.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

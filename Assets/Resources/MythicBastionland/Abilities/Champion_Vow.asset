@@ -13,17 +13,12 @@ MonoBehaviour:
   m_Name: Champion_Vow
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Champion Vow
-  description: "Use immediately before a combat where\nthere is a prize at stake.\n+d6
-    to melee attacks for the whole combat.\nPASSION - Hatred\nRestore SPI when you
-    refuse a plea for\nforgiveness.\nA calling brought a life of combat, victories
-    amassed\nQuesting for the fame that comes with prowess unsurpassed\nTourney Knight\nCALLING
-    AND HELM\nCall to Battle Fancy Helm\n1 Greed Lion\n2 Bloodlust Shark\n3 Glory
-    Great crest\n4 Duty Hawk\n5 Pride Bull\n6 Ambition Demon\nKNIGHTED BY...\nThe
-    Entombed Seer\nVIG 7, CLA 5, SPI 11, 2 GD\n\u2022 Now entombed in white stone,
-    their voice\nanswers visitors only rarely.\n\u2022 Always guarded by a Knight,
-    mourned by\nan apprentice.\n\u2022 Sees beyond the veil of death.\nPerson: Young
-    alchemist ~ Name: Goyon ~ Characteristic: Cold eyes\nObject: Grief flute ~ Beast:
-    Grey deer ~ State: Serving ~ Theme: Names\n1\n3\nThe"
+  description: 'Use immediately before a combat where
+
+    there is a prize at stake.
+
+    +d6
+    to melee attacks for the whole combat.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

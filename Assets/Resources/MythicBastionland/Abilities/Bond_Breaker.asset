@@ -13,20 +13,9 @@ MonoBehaviour:
   m_Name: Bond_Breaker
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Bond Breaker
-  description: "Strike a chain or lock with a metal weapon.\nBoth shatter loudly.\nPASSION
-    - Liberty\nRestore SPI when you release somebody from\nan unwanted bond.\nNo
-    soul, no mind, should live acaged or chained\nYet freedom won is never quietly
-    gained\nFree Knight\nTHE HEXSHIELD\nIneffective vs Special Ability\n1 Axes Can
-    be thrown (d6)\n2 Arrows Allows you to fall\nsafely from any height\n3 Birds
-    Pattern pains Seers\n4 Spears and polearms Always floats\n5 Swords Blocks all
-    sound\n6 Blunt arms Bladed (d6 in melee)\nKNIGHTED BY...\nThe Roaming Seer\nVIG
-    10, CLA 14, SPI 6, 4 GD\n\u2022 A tall cloaked figure, leaving a trail of\nsand
-    in his footsteps.\n\u2022 Will not offer any guidance to visitors, but\noffers
-    to accompany any Knights he\ndeems worthy. He is demanding, slow,\nand cryptic,
-    but offers clear guidance\nwhen it matters most.\n\u2022 Wants to see everything
-    for himself.\nPerson: Muddy astrologer ~ Name: Clemens ~ Characteristic: Red
-    tattoos\nObject: Beggar shroud ~ Beast: Singing bull ~ State: Dashing ~ Theme:
-    Frost\n5\n12\nThe"
+  description: 'Strike a chain or lock with a metal weapon.
+
+    Both shatter loudly.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

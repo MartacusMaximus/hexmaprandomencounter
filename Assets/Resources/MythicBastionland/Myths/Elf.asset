@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Elf
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 69
+  mythName: Elf
+  omens:
+  - '1. Along a sheltered stream, isolated signs of
+
+    the next Season arriving
+    early.'
+  - '2. Two season destroyers are about to kill a
+
+    defenceless, defeated ironsmith
+    outside
+
+    his tiny forge. They claim the tide of
+
+    seasons requires fresh
+    blood.'
+  - '3. A season scout carries the rod of the
+
+    upcoming Season, wishing to gift
+    it to a
+
+    Seer courtesy of the Elf. The rod holds the
+
+    power to usher
+    in its Season early.'
+  - '4. A season scout gifts the bow of the
+
+    upcoming Season (d8 long) to the
+    Knight
+
+    with the highest SPI score. It is imbued
+
+    with the power of the
+    upcoming Season,
+
+    when it is more potent (2d8).'
+  - '5. A season scout is travelling to the Seat of
+
+    Power to deliver a message
+    to the ruler of
+
+    the Realm. They carry the longly viper, a
+
+    leaping,
+    talking snake. Only the viper
+
+    knows the message, that the Elf is coming
+
+    to
+    claim this Realm as their own.'
+  - '6. The Elf emerges to claim the Seat of
+
+    Power, a Warband each of scouts
+    and
+
+    destroyers. They''d prefer a duel.'
+  verse: 'A steward of seasons, nature'' s power bestowed
+
+    Our land bends to
+    their whimsy, our lives no mercy showed'
+  castEntries:
+  - name: The Elf, Steward of Seasons, Coredis
+    statBlock: 'VIG 9, CLA 9, SPI 9, 13 GD
+
+      Acts first, faster than any opponent.'
+    notes: 'Wants to flaunt their power.
+
+      In Spring: SPI 19 and swiftbow (2d6
+      long)
+
+      In Harvest: VIG 19 and goldfalx (3d6 long)
+
+      In Winter: CLA
+      19 and claws and jaws (4d6)'
+  - name: Season Scouts, Tizra, Vioth, Santrosal
+    statBlock: 'VIG 8, CLA 16, SPI 12, 8 GD
+
+      Swiftbow (2d6), strawlike hair,
+      zero patience'
+    notes: Flee when wounded, faster than any mortal.
+  - name: Season Destroyers, Kilunar, Tasiviza
+    statBlock: 'VIG 10, CLA 12, SPI 12, 8 GD
+
+      A2 (smoothbark armour, helm)'
+    notes: Goldfalx (3d6 long), sense of superiority
+  flavorTable:
+    title: QUIRKS OF THE ELF AND THEIR KIN
+    columns:
+    - header: Cannot
+      values:
+      - Harm animals
+      - Harm plants
+      - Feel emotion
+      - Speak
+      - Step indoors
+      - Tolerate music
+    - header: Absolutely Must
+      values:
+      - Extinguish fires
+      - Kill the elderly
+      - Scare children
+      - Steal jewellery
+      - Consume food seen
+      - Punish the ugly
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

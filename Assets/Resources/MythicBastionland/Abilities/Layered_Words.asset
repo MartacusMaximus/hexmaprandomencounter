@@ -13,19 +13,15 @@ MonoBehaviour:
   m_Name: Layered_Words
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
   abilityName: Layered Words
-  description: "Speak, but choose two different meanings, as\ndifferent as you wish,
-    even total opposites.\nChoose which meaning each listener takes\nfrom the words.\nPASSION
-    - Integrity\nRestore SPI when you discredit somebody\nunworthy of their position.\nA
-    careful word can rise or fade\nWithin each ear a truth remade\nRiddle Knight\nMOON
-    FORM\nBody Visage\n1 Muscular (d8 grasp) Elderly\n2 Shrunken (d6 bite) Youthful\n3
-    Stretched (d6 strike) Hideous\n4 Skeletal (d6 slash) Amorphous\n5 Canine (d8
-    jaws) Horned\n6 Feline (d6 claws) Regal\nKNIGHTED BY...\nThe Jawbone Seer\nVIG
-    15, CLA 15, SPI 3, 2 GD\n\u2022 Hunched, pale, huge jawbone grafted onto\ntheir
-    own, speaks like a wolf.\n\u2022 Sees with the senses of a beast while\nclutching
-    an object made from the bone or\nhorn of their species.\n\u2022 Wants to return
-    the land to the beasts.\nPerson: Scout sisters ~ Name: Ruan ~ Characteristic:
-    Shaved head\nObject: Steel rope ~ Beast: Red vultures ~ State: Repairing ~ Theme:
-    Sunlight\n1\n10\nThe"
+  description: 'Speak, but choose two different meanings, as
+
+    different as you
+    wish, even total opposites.
+
+    Choose which meaning each listener takes
+
+    from
+    the words.'
   requiredChunkCount: 0
   requiredColor: 0
   requiresLinkedChunk: 0

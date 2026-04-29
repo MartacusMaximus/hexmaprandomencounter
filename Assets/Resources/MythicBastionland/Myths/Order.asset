@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Order
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 45
+  mythName: Order
+  omens:
+  - '1. A forge carved into the rock. Blacksmiths
+
+    complaining about the Order''s
+
+    mistreatment
+    of them. They want justice.'
+  - '2. A Company of the Order, seizing supplies
+
+    from local farmers. A frightened
+    draft
+
+    horse is bolting. The froth from its mouth
+
+    causes a great frenzy
+    if touched.
+
+    A fight is about to break out.'
+  - '3. A dry clearing among boggy willow wood.
+
+    The Order hold council, stood
+    in a circle.
+
+    Each must justify themselves to their
+
+    peers, who can challenge
+    any weakness.
+
+    No spectators allowed.'
+  - '4. They are transporting a thief. The thief
+
+    knows the burial place of a
+    suit of silver
+
+    plate (A1, immunity to weapons of
+
+    inferior metal) and
+    reveals this if freed.'
+  - '5. A Company rides on the trail of a
+
+    monstrous beast. You''re in their
+    way.'
+  - '6. A Company leads an attack toward the
+
+    nearest Holding. They have 3 Warbands
+
+    alongside
+    their retinue. They will lead the
+
+    Realm into misrule or be driven beyond
+
+    its
+    borders.'
+  verse: 
+  castEntries:
+  - name: Scholar-Knight of the Order
+    statBlock: 'VIG 16, CLA 16, SPI 8, 9 GD
+
+      A4 (mail, plate, towerhelm, shield)'
+    notes: 'Thicksword (2d6 hefty), shield (d4)
+
+      Crusher steed (4 GD, A1, d10
+      trample)'
+  - name: Frightened Draft Horse
+    statBlock: 'VIG 15, CLA 6, SPI 2, 2 GD
+
+      Kick (d6)'
+    notes: 'Cannot be calmed by any carrying a weapon.
+
+      They were six in the
+      circle, no first among them
+
+      Each a knight and scholar, master and student
+
+      COMPANY
+      OF THE ORDER
+
+      Scholar-Knights Retinue
+
+      1 A lone Scholar-Knight
+      None
+
+      2 2 Scholar-Knights 2 riders
+
+      3GD, axes (d8), steeds
+
+      3
+      A Scholar-Knight on
+
+      foot, their steed slain
+
+      8 conscripts
+
+      2GD,
+      billhooks (d10)
+
+      4 3 Scholar-Knights 6 archers
+
+      3GD, longbows (d8)
+
+      5
+
+      1
+      Scholar-Knight and
+
+      their apprentice
+
+      5GD, blade (d6)
+
+      4
+      mercenaries
+
+      5GD, longaxes (d10)
+
+      6 5 Scholar-Knights 3 scouts
+
+      2GD,
+      shortbows (d6)'
+  flavorTable:
+    title: 
+    columns: []
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Eagle
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 119
+  mythName: Eagle
+  omens:
+  - '1. A great shadow sweeps the landscape,
+
+    blotting the sun for a moment.'
+  - '2. A flame above, shrieking until it plunges
+
+    to the ground, sending roaring
+    fire in
+
+    every direction (d8 blast) and setting the
+
+    area alight. The
+    Eagle, Aflame, surveys
+
+    the destruction then makes flight for the
+
+    nearest
+    large body of water.'
+  - '3. The Eagle, Smouldering, bathing to
+
+    extinguish its feathers. It cannot
+    fly for
+
+    another Phase, but can hobble about. A
+
+    crowd, driven from their
+    burning homes,
+
+    watch, and protect the Eagle from harm.'
+  - '4. The Eagle, Rising, stretches its wings,
+
+    preparing to fly. As it ascends
+    it sends a
+
+    gust of wind through the Hex, felling
+
+    wooden structures
+    and flattening trees.'
+  - '5. The sun seems to swell, then a piercing
+
+    cry. The shape of the Eagle,
+    Aflame,
+
+    appears in the sky, just circling for now.'
+  - '6. The Eagle, Aflame, dives on the Seat of
+
+    Power, aiming to snatch the
+    ruler and
+
+    carry them up into the sun as an offering.
+
+    If this fails
+    the next harvest is dire.'
+  verse: 'A bird o''flame to claim sun'' s toll
+
+    Crown for crown, gold for gold'
+  castEntries:
+  - name: The Eagle, Aflame
+    statBlock: 'VIG 15, CLA 15, SPI 15, 8 GD
+
+      A2 (huge body), talons (2d8)
+      and beak (d12)'
+    notes: Wants lots of fire to fuel the sun.
+  - name: The Eagle, Smouldering
+    statBlock: 'VIG 13, CLA 12, SPI 10, 6 GD
+
+      A2 (huge body), clumsy thrashing
+      (d8 blast)'
+    notes: Wants to extinguish its burning wings.
+  - name: The Eagle, Rising
+    statBlock: 'VIG 15, CLA 18, SPI 18, 12 GD
+
+      A2 (huge body), gusts of wind
+      (d10 blast)'
+    notes: Must dry wings on the wind before flying.
+  - name: Protective Victims of the Eagle
+    statBlock: 'VIG 10, CLA 10, SPI 7, 2 GD
+
+      See below. They say the Eagle
+      means well.'
+    notes: 
+  flavorTable:
+    title: SALVAGED BELONGINGS
+    columns:
+    - header: In their hands
+      values:
+      - Broken crutch
+      - Crying infant
+      - Live chicken
+      - Flimsy hoe
+      - Rope tied to a goat
+      - Lucky beads
+    - header: In their backpack
+      values:
+      - Sack of grain
+      - Patchwork quilt
+      - Dried fish
+      - Bladder of wine
+      - Metal pots
+      - Herb bundles
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

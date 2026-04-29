@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e6ecb1b38df41c4881fd0309ec9bc2, type: 3}
+  m_Name: The_Pain_Seer
+  m_EditorClassIdentifier: Assembly-CSharp::SeerDefinitionSO
+  seerName: The Pain Seer
+  vigor: 7
+  clarity: 13
+  spirit: 5
+  guard: 1
+  traits:
+  - 'Awkwardly hunched woman, her very
+
+    image appearing shattered like glass.'
+  - 'Absorbs sorrow and aches, like nectar to
+
+    a bird. Exchanges them for guidance
+
+    doomed
+    to cause only more sorrow.'
+  - 'Wants to feed enough to finally be
+
+    satisfied, then she can begin offering
+
+    truly
+    useful guidance.'

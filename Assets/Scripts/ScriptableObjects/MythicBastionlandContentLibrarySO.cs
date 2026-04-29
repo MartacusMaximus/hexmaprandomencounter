@@ -9,6 +9,19 @@ public class MythicBastionlandContentLibrarySO : ScriptableObject
     public List<MythSO> myths = new List<MythSO>();
     public List<AbilitySO> abilities = new List<AbilitySO>();
     public List<EquipmentData> equipment = new List<EquipmentData>();
+    public PersonSO people;
+    public NameSO names;
+    public CharacteristicSO characteristics;
+    public ObjectSO objects;
+    public BeastSO beasts;
+    public StateSO states;
+    public ThemeSO themes;
+    public DwellingSO dwellings;
+    public SanctumSO sanctums;
+    public MonumentSO monuments;
+    public HazardSO hazards;
+    public CurseSO curses;
+    public RuinSO ruins;
 
     public static MythicBastionlandContentLibrarySO LoadDefault()
     {

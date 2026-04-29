@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Knight_28
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 28
+  knightName: Knight 28
+  titleVerse: 
+  passionText: 'Honesty: Restore SPI when you tell the truth where a
+
+    lie might
+    be more beneficial.'
+  grantedAbility: {fileID: 11400000, guid: 1340ba38e8fac4454a203676fbfc361e, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 53555bc8c41f54bcf96e6649e7b20cd2, type: 2}
+  steed: {fileID: 11400000, guid: 0042934805e784580a8ca379d18eaa05, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 85868c33b91fc491288a1b8e50a8b284, type: 2}
+  - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
+  - {fileID: 11400000, guid: a96860cdfc29b491991f399b9eb945f6, type: 2}
+  - {fileID: 11400000, guid: fcefea9cdb0bf4c2eb3f40258d521174, type: 2}
+  - {fileID: 11400000, guid: 1361007559fd24cb18cf6042c905f895, type: 2}
+  randomFlavorTable:
+    title: 
+    columns: []

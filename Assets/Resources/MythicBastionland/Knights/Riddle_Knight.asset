@@ -17,40 +17,33 @@ MonoBehaviour:
   titleVerse: 'A careful word can rise or fade
 
     Within each ear a truth remade'
-  passionText: 
+  passionText: 'Integrity: Restore SPI when you discredit somebody
+
+    unworthy
+    of their position.'
   grantedAbility: {fileID: 11400000, guid: 28ac47e3e556745dd911a75b87594b57, type: 2}
-  linkedSeer: {fileID: 11400000, guid: 0357cb3a430e34a54b5793dbd6465e40, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 6c543bb88b7f84b30809b8cd6aa43e5a, type: 2}
   steed: {fileID: 11400000, guid: b6135d44298c24a05b60fe7cd854c775, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: eac3d21189bfb454f8acc7359fb54833, type: 2}
-  - {fileID: 11400000, guid: 065ce6ad7450f4bef80e94e0bde90d59, type: 2}
-  - {fileID: 11400000, guid: abb11564b27c941e6b2a75c2b45efb65, type: 2}
-  - {fileID: 11400000, guid: bab1c7ffd437a4f079f5c44ea88ce4b5, type: 2}
-  - {fileID: 11400000, guid: ba963228f4c7a4b80a7fc1e96b965972, type: 2}
-  - {fileID: 11400000, guid: 6d28595eea6924e6a8e56f1aaf3138d4, type: 2}
-  - {fileID: 11400000, guid: 38d45a9e6a8c84225a9c51f50092b597, type: 2}
-  - {fileID: 11400000, guid: d61ad01b932ea4ac0b1ca0ffca80f0e7, type: 2}
-  - {fileID: 11400000, guid: 5fd826c1151a049358d729a27a9cfe77, type: 2}
-  randomFlavorTableTitle: MOON FORM
-  randomFlavorTableRows:
-  - 1 Muscular (d8 grasp) Elderly
-  - 2 Shrunken (d6 bite) Youthful
-  - 3 Stretched (d6 strike) Hideous
-  - 4 Skeletal (d6 slash) Amorphous
-  - 5 Canine (d8 jaws) Horned
-  - "6 Feline (d6 claws) Regal\nKNIGHTED BY...\nThe Jawbone Seer\nVIG 15, CLA 15,
-    SPI 3, 2 GD\n\u2022 Hunched, pale, huge jawbone grafted onto\ntheir own, speaks
-    like a wolf.\n\u2022 Sees with the senses of a beast while\nclutching an object
-    made from the bone or\nhorn of their species.\n\u2022 Wants to return the land
-    to the beasts."
-  personHook: Scout sisters
-  objectHook: Steel rope
-  beastHook: Red vultures
-  stateHook: Repairing
-  themeHook: 'Sunlight
-
-    1
-
-    10
-
-    The'
+  - {fileID: 11400000, guid: 10d501d17f1ee4ba191f63c3a852fe3f, type: 2}
+  - {fileID: 11400000, guid: 78ea6425372ca4233b57a01979fd03f2, type: 2}
+  randomFlavorTable:
+    title: MOON FORM
+    columns:
+    - header: Body
+      values:
+      - Muscular (d8 grasp)
+      - Shrunken (d6 bite)
+      - Stretched (d6 strike)
+      - Skeletal (d6 slash)
+      - Canine (d8 jaws)
+      - Feline (d6 claws)
+    - header: Visage
+      values:
+      - Elderly
+      - Youthful
+      - Hideous
+      - Amorphous
+      - Horned
+      - Regal

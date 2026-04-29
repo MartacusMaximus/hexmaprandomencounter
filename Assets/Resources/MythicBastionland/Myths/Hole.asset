@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Hole
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 147
+  mythName: Hole
+  omens:
+  - '1. A hole in the ground rips open, growing as
+
+    trees and rocks tumble in.
+    A small blue
+
+    Holfolk, Gruff, scurries out into a tree.
+
+    She is shy,
+    but explains that this only
+
+    happens when there''s work to be done on
+
+    the
+    surface. Those from above can''t enter
+
+    the Hole, held back by an invisible
+    force.'
+  - '2. Four Holfolk run past, screaming. An
+
+    angry man on a horse chases them
+    down,
+
+    claiming they are spies from a wicked
+
+    Realm. They are just curious,
+    really.'
+  - '3. A team of Ardwright builders hammer
+
+    away at a great project (see opposite).
+
+    They
+    explain what it is, but not why, and
+
+    will not indulge in conversation.'
+  - '4. Bear-a-boar staggers around the woods,
+
+    calling out a challenge to any
+    animal that
+
+    disputes his sovereignty. A pitiful sight.'
+  - '5. A band of Holfolk have Bear-a-boar in
+
+    chains, taking him back to the
+    Hole where
+
+    he was banished.'
+  - '6. A team of Ardwrights are sealing up a
+
+    hole in the ground, the final
+    entrance to
+
+    their world, their work completed.'
+  verse: 'In mud and root, from sunken land
+
+    Careful hands plan works agrand'
+  castEntries:
+  - name: Holfolk, Little Ones of the Hole
+    statBlock: 'VIG 7, CLA 7, SPI 15, 5 GD
+
+      Good at hiding. No means or desire
+      to fight.'
+    notes: Want to explore every part of every Realm.
+  - name: Ardwright, the Jade Architects
+    statBlock: 'VIG 10, CLA 15, SPI 3, 1 GD
+
+      A2 (green helm and plates)'
+    notes: 'Rockhammer (d8 hefty, can fuse natural
+
+      objects together as if
+      by strong adhesive)
+
+      Want everyone to do their job.'
+  - name: Bear-a-boar, Deposed King of Beasts
+    statBlock: 'VIG 15, CLA 12, SPI 4, 6 GD
+
+      A2 (bulky body, tattered mail)'
+    notes: 'Tired claws (2d8)
+
+      Want to be respected or feared.'
+  flavorTable:
+    title: ARDWRIGHT PROJECTS
+    columns:
+    - header: Creation
+      values:
+      - Watchtower
+      - Great hall
+      - Statue
+      - Ship
+      - Mausoleum
+      - Bridge
+    - header: Material
+      values:
+      - Branches
+      - Rocks
+      - Grass
+      - Mud
+      - Bones
+      - Petals
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}
