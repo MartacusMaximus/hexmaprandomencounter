@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_79
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 79
+  mythName: Myth 79
+  omens:
+  - '1. Winds bring a sudden dust storm.
+
+    Visibility is short and travel impossible.
+    It
+
+    blows over by nightfall.'
+  - '2. Farmer staring into the clear sky. Claims
+
+    the air feels too still. Until
+    this Myth is
+
+    resolved there is no rain, the land
+
+    gradually dries out,
+    rivers start to wither.'
+  - '3. Oily buzzards circle above, a band of
+
+    hunters below are playing dead
+    in an
+
+    attempt to catch and eat them. These
+
+    birds are usually only found
+    in barren
+
+    wastelands.'
+  - '4. A disembodied eye floats, watching the
+
+    Knights. If touched it turns
+    to dust. The
+
+    hag has taken note of them.'
+  - '5. A parched stream, grey dusty earth
+
+    flowing upstream toward the dust
+    hag''s
+
+    rocky lair.'
+  - '6. In her lair, the dust hag unleashes the
+
+    Desert in full. Every Hex within
+    3 Hexes
+
+    of the Myth Hex is now the Desert as long
+
+    as she lives.'
+  verse: 
+  castEntries:
+  - name: Crafty Hunters, Eadon, Frith, Burhow
+    statBlock: 'VIG 10, CLA 13, SPI 7, 3 GD
+
+      Shortbow (d6), pig blood, cooking
+      pot'
+    notes: 
+  - name: Oily Buzzard, Grimecrow
+    statBlock: 'VIG 7, CLA 14, SPI 2, 2 GD
+
+      Beak (d8), oily hide (any weapons
+      that'
+    notes: 'wound the creature reduce their die type by
+
+      one size. Can be removed
+      with alcohol)'
+  - name: The Dust Hag, Exiled from Tomorrow
+    statBlock: 'VIG 8, CLA 13, SPI 11, 13 GD
+
+      Claws (2d6), dust shroud (ranged
+      attacks are'
+    notes: 'Impaired), dust stake (d4, anybody wounded
+
+      is turned to dust until
+      the hag dies)
+
+      Driven by her whims (see below).
+
+      Is NOT a Seer.
+      Hates any mention of them.
+
+      Flesh and stone and grass are nought but
+      falsely forms
+
+      All are dust, nothing more
+
+      WHIMS OF THE DUST HAG
+
+      Wants
+      The Catch
+
+      1 Treasure Immediately
+
+      2 Entertainment Of a very specific
+      type
+
+      3 Praise At the cost of another
+
+      4 Peace and quiet No amount
+      is enough
+
+      5 Authority In another, distant lair
+
+      6 Security Also
+      the Seat of Power
+
+      Desert
+
+      Dwelling: Music camp ~ Sanctum: Silent
+      stairs ~ Monument: Flower-adorned graves
+
+      Hazard: Bone ridges ~ Curse:
+      Eerie drone ~ Ruin: Bloody battlefield
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Music camp
+  sanctum: Silent stairs
+  monument: Flower-adorned graves
+  hazard: Bone ridges
+  curse: Eerie drone
+  ruin: Bloody battlefield
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

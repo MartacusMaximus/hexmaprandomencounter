@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Heightened_Sharpness
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Heightened Sharpness
+  description: "When you perform a Strong Gambit with a\nbladed weapon you may choose
+    one of the\nfollowing as the effect, the target receiving a\nSave as normal:\n\u2022
+    Take a limb\n\u2022 Take a head if their GD is 0\nPASSION - Diligence\nRestore
+    SPI when refusing a shortcut.\nAs sword abend, as plate afold,\nAs shield asplint,
+    a tale atold.\nIron Knight\nORIGIN OF THE CLEAVINGBLADE\nOut of a... At a time
+    of...\n1 Vibrant forest Contentment\n2 High waterfall Desperation\n3 Roaring
+    sea Victory\n4 Broken boulder Anger\n5 Narrow cave Sorrow\n6 Dead tree Transition\nKNIGHTED
+    BY...\nThe Celebrated Seer\nVIG 12, CLA 6, SPI 15, 2 GD\n\u2022 Clad in a coat
+    of shining metal masks,\neach an expression of joy.\n\u2022 Only sees moments
+    of intense positive\nemotion, more intensity granting clearer\nvisions and pleasure.\n\u2022
+    Wants praise and elaborate celebrations,\nnot really caring what for.\nPerson:
+    Hardened scavenger ~ Name: Ellery ~ Characteristic: Head in the clouds\nObject:
+    Creation chest ~ Beast: Tiger spider ~ State: Celebrating ~ Theme: Fungi\n4\n8\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

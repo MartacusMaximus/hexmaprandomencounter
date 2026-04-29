@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Halo_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 112
+  knightName: Halo Knight
+  titleVerse: 'A trail of hope across the land
+
+    In sorrow'' s face, bright reprimand'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: e6b8080a67e1b49f68fe7679c93e1e7f, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 91522262515654dc4a837b884d7edd3a, type: 2}
+  steed: {fileID: 11400000, guid: b6fd35d23309745b7b7c9b2d881180b3, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 3b7e568cd5a664b42b6fa591b6e9827c, type: 2}
+  - {fileID: 11400000, guid: cd5cc0035391245948efd75f5d596a60, type: 2}
+  - {fileID: 11400000, guid: 1361007559fd24cb18cf6042c905f895, type: 2}
+  - {fileID: 11400000, guid: 5f91d501665d4479e84d839648caf8e3, type: 2}
+  - {fileID: 11400000, guid: c0d410fce555c4057b76f07a3361a91f, type: 2}
+  - {fileID: 11400000, guid: 5a9235764cd7548cb8cd1c0cdeeaebef, type: 2}
+  - {fileID: 11400000, guid: e48a4889d1d92422e92db8e212f404d2, type: 2}
+  - {fileID: 11400000, guid: dd6a66a4d26da4d6da7f05b588b2d321, type: 2}
+  - {fileID: 11400000, guid: 9801663d9ce14412ebcfd9b75321d35a, type: 2}
+  - {fileID: 11400000, guid: 9db42038525bc466aa54179769251c6b, type: 2}
+  randomFlavorTableTitle: REPAIRING THE MISTVIAL
+  randomFlavorTableRows:
+  - 1 Blood Midnight ritual
+  - 2 Sand A Seer's blessing
+  - 3 Smoke You must be Wounded
+  - 4 Milk Coin sacrifice
+  - 5 Salt Light of sunrise
+  - "6 Silk Bird nest\nKNIGHTED BY...\nThe Painted Seer\nVIG 4, CLA 17, SPI 14, 1
+    GD\n\u2022 Skin like canvas, stretched too tight, dyed\nevery colour. Very limited
+    movement.\n\u2022 Conjures painted visions onto the walls.\n\u2022 Wants to find
+    and train an apprentice."
+  personHook: Inquisitive lumberjack
+  objectHook: Paired chalk
+  beastHook: Frosted hare
+  stateHook: Plotting
+  themeHook: 'Numbers
+
+    4
+
+    7
+
+    The'

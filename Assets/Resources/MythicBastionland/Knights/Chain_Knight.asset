@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Chain_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 60
+  knightName: Chain Knight
+  titleVerse: 'Born below the soil, below the stone, below all thought
+
+    Down,
+    down, further down, of blood and iron wrought'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: b9c06e5c460c24025876b2b02d7062a1, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 8aa3cb69cad1d4e069970af4e65e8002, type: 2}
+  steed: {fileID: 11400000, guid: c9cdd41f689944ead8c0af6b304c718b, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 2f5368765e30245ae953c08dba5f2415, type: 2}
+  - {fileID: 11400000, guid: 6924d0d4f55cf4d7ba0310a299769051, type: 2}
+  - {fileID: 11400000, guid: b819224b6ef3c48ad889873640af1325, type: 2}
+  - {fileID: 11400000, guid: 8dc50c313a93847ffa45420e45af565d, type: 2}
+  - {fileID: 11400000, guid: e86148b09fc884d51910e19e7cb1aea1, type: 2}
+  - {fileID: 11400000, guid: 8c8bd9523f02c46a6a175983954a789b, type: 2}
+  randomFlavorTableTitle: HOW YOU REACHED THE SURFACE
+  randomFlavorTableRows:
+  - 1 Through darkness Through ice
+  - 2 Through smoke Through dirt
+  - 3 Out of a cell Out of a mountain
+  - 4 Climbing chains Out of a tomb
+  - 5 Up the great stair Up from a well
+  - "6 Through fire Out of a lake\nKNIGHTED BY...\nThe Winged Seer\nVIG 4, CLA 4,
+    SPI 6, 1 GD\n\u2022 Frail broken body, tattered useless wings\nheld aloft by
+    white-masked acolytes.\n\u2022 Sees the potential failures of those who\nask
+    for advice. Has no faith in anybody to\nsucceed at any task.\n\u2022 Wants to
+    bask in vicarious glory."
+  personHook: Oblivious cartographer
+  objectHook: Death woodcut
+  beastHook: Bony zebra
+  stateHook: Crying
+  themeHook: 'Dirt
+
+    2
+
+    5
+
+    The'

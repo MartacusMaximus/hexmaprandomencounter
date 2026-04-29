@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Bone_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 126
+  knightName: Bone Knight
+  titleVerse: 'Ribble rabble, ronky donk, they bounce a duckle dine
+
+    Clatter
+    clink, clanky tank, a rib, a skull, a spine'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: d00c722b394284acb9123bccab000032, type: 2}
+  linkedSeer: {fileID: 11400000, guid: d7adb526938c54bb2b6aea3ed882fd2e, type: 2}
+  steed: {fileID: 11400000, guid: d3563919335f643ed971b392aeeb6ac1, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 5269f2490586244708f22e21b1b18af2, type: 2}
+  - {fileID: 11400000, guid: 03dbabe68f899465a8cf0bd7c80387a4, type: 2}
+  - {fileID: 11400000, guid: 7004cf6acdceb43feac8c5da6506cb16, type: 2}
+  - {fileID: 11400000, guid: 1e8ee7016ca194f4bb6b27fccb376088, type: 2}
+  - {fileID: 11400000, guid: 03c685e1d42304dd99c3594da3dc93f9, type: 2}
+  - {fileID: 11400000, guid: 124eeff8a684e40c0bc90768435a30d1, type: 2}
+  - {fileID: 11400000, guid: 10fa42d395cb14e3e99bf42d6ce9ca3f, type: 2}
+  - {fileID: 11400000, guid: cc89eeec2e3f94d5f8596fd3864706f8, type: 2}
+  - {fileID: 11400000, guid: a39ef58032e1b47cc9b224cf734efd6e, type: 2}
+  - {fileID: 11400000, guid: 85359a2ccf9d9440db26a2cfcc6294e5, type: 2}
+  - {fileID: 11400000, guid: fcde745e3dad94d36b577f0dfc422f70, type: 2}
+  - {fileID: 11400000, guid: 2ce26d693dfff489e85acfd2608a71e0, type: 2}
+  - {fileID: 11400000, guid: b44852dde3a4e4413a70db48e33d95ea, type: 2}
+  randomFlavorTableTitle: BOX OF BONES
+  randomFlavorTableRows:
+  - 1 Silver coffer Sorted by age
+  - 2 Ivory cage Sorted by size
+  - 3 Bronze cylinder Sorted by habitat
+  - 4 Velvet pouch Sorted by beauty
+  - 5 Painted wooden case Sorted by virtue
+  - "6 Gilded clam shell Unsorted chaos\nKNIGHTED BY...\nThe Twilight Seer\nVIG 10,
+    CLA 10, SPI 14, 2 GD\n\u2022 Elderly, shadowy, and incoherent by day,\nyouthful,
+    radiant, and cogent at night.\n\u2022 Only sees the moments between\nsignificant
+    events, the times of travel\nand rest.\n\u2022 Wants stability in the Realm,
+    ensuring\nthe peaceful transition of night and day."
+  personHook: Adventurous fugitive
+  objectHook: Vassal rod
+  beastHook: Sniffer bear
+  stateHook: Swimming
+  themeHook: 'Drink
+
+    5
+
+    2
+
+    The'

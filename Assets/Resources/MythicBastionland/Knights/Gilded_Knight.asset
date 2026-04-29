@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Gilded_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 42
+  knightName: Gilded Knight
+  titleVerse: 'A beacon of the brave and bold
+
+    All cloaked and masked in sunnen
+    gold'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 1037c9e6638a24fc9a24e55942f17816, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 2aab7d442059e40b98ebf8f9b9622991, type: 2}
+  steed: {fileID: 11400000, guid: def83c2195c0a479c9fdaad284e06509, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 5c7f5a63b5afb4088a9bfd8045e691b0, type: 2}
+  - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
+  - {fileID: 11400000, guid: fdccb1b9137ec4853a3ee833864e9078, type: 2}
+  - {fileID: 11400000, guid: eb200c86865c649feb864e89d6a21f68, type: 2}
+  - {fileID: 11400000, guid: b252b0163dc3844a88ca3963c5ebcea1, type: 2}
+  - {fileID: 11400000, guid: 660f05289152247489cebd9323f8f7d1, type: 2}
+  - {fileID: 11400000, guid: 0fafee71495d54d72b150a2b2a275e82, type: 2}
+  - {fileID: 11400000, guid: 27c0733d1f1124573b121b3abc2ea198, type: 2}
+  - {fileID: 11400000, guid: 0c0a590699df948ee8ead3f1651e08d4, type: 2}
+  - {fileID: 11400000, guid: 36e7e95f01b34497284d03f923b8173a, type: 2}
+  randomFlavorTableTitle: THE COST
+  randomFlavorTableRows:
+  - 1 Lake A farm
+  - 2 Waterfall A name
+  - 3 River Only graves
+  - 4 Beach A student
+  - 5 Cave A teacher
+  - "6 Mountain A castle\nKNIGHTED BY...\nThe Enthroned Seer\nVIG 11, CLA 8, SPI
+    16, 2 GD\n\u2022 They are a twisted heap of flesh, bone,\nand spikes of precious
+    metal.\n\u2022 Sees glimpses of the ultimate fate of\nanybody taking up a Seat
+    of Power.\n\u2022 Demands a humiliating level of reverence\nfrom visitors. Wants
+    to manipulate loyal\ncontacts into positions of authority."
+  personHook: Drunken worshipper
+  objectHook: Fang rattle
+  beastHook: Redmaw wolf
+  stateHook: Scouring
+  themeHook: 'Cold
+
+    1
+
+    8
+
+    The'

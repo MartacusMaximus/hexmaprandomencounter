@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Coin_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 120
+  knightName: Coin Knight
+  titleVerse: 'In arg or aur, decisions spun
+
+    A prize, a life, lost or won'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: fd0b7817a700c4874ab99a123fbf807d, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 9a010fb01a04347e0bc2bcef423555b5, type: 2}
+  steed: {fileID: 11400000, guid: 96fde82f70d3b4383aaa11043e6ec348, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: ca0466086481d4cfb8f0c7fd00c4f9ba, type: 2}
+  - {fileID: 11400000, guid: 99623060607394433affcf8f3c856ec9, type: 2}
+  - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
+  - {fileID: 11400000, guid: 4737377ccdea847d296d87c3f870ac17, type: 2}
+  - {fileID: 11400000, guid: 04287c3a54ff14a92a04a46d030f5eb8, type: 2}
+  - {fileID: 11400000, guid: f9aed1d8ddad24c018d8812b13ec3aba, type: 2}
+  - {fileID: 11400000, guid: 2f428720fd96c4ea296f0bd4e64e0f6a, type: 2}
+  - {fileID: 11400000, guid: 90317876a7936413b83f1c1c7b52c456, type: 2}
+  - {fileID: 11400000, guid: e23d1de97fc274dca9e34f9ef7e7ac4c, type: 2}
+  - {fileID: 11400000, guid: 5ceffd0775f7e44a38104714f514f0f9, type: 2}
+  randomFlavorTableTitle: SOUND OF THE FLUTE
+  randomFlavorTableRows:
+  - 1 Children Everybody else
+  - 2 Cats Proper musicians
+  - 3 Nobles Rodents
+  - 4 Knights Your Company
+  - 5 Birds of prey Seers
+  - "6 Sea creatures Songbirds\nKNIGHTED BY...\nThe Map Seer\nVIG 14, CLA 10, SPI
+    6, 2 GD\n\u2022 A body like craggy mountains, flowing\nwith rivers of black blood.\n\u2022
+    His will can alter the geography of the\nRealm, but it takes great effort.\n\u2022
+    Wants to send Knights to their death."
+  personHook: Greedy disciple
+  objectHook: River helm
+  beastHook: Horned quail
+  stateHook: Trapped
+  themeHook: 'Vision
+
+    4
+
+    11
+
+    The'

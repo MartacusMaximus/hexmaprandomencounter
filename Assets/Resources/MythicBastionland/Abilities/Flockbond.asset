@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Flockbond
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Flockbond
+  description: "See through the eyes of your bird, and learn\nthe local knowledge
+    of any prey it eats.\nPASSION - Regret\nRestore SPI when you burn a part of the
+    past.\nThe claw is nothing without the eye\nThe eye is nothing without the wing\nTalon
+    Knight\nLOYAL BIRD\nBreed Special Training\n1 Fisherhawk\n(can dive into water)
+    Singing\n2 Cave owl\n(nocturnal)\nFighting humans\n(+d6 vs humans)\n3 Grey raven\n(highly
+    intelligent) Silent flight\n4 Red eagle\n(d6 talons) Delivery\n5 Rock falcon\n(preys
+    on reptiles) Stealing\n6 Bog vulture\n(5GD)\nFighting birds\n(+d6 vs birds)\nKNIGHTED
+    BY...\nThe Veiled Seer\nVIG 7, CLA 5, SPI 11, 2 GD\n\u2022 Hanging folds of flesh
+    and horse-like hair\nhide any semblance of a face.\n\u2022 Sees nothing, but
+    hears all within a Hex.\nSpeaks just once each day, giving a single\nword of
+    advice to the most worthy visitor.\n\u2022 Genuinely wants to uphold peace.\nPerson:
+    Lost Knight ~ Name: Demelza ~ Characteristic: Delicate clothes\nObject: Black
+    cloth ~ Beast: White ravens ~ State: Nurturing ~ Theme: Coins\n1\n11\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

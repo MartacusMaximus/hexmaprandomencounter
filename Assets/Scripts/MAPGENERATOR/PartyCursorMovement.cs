@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using KnightsAndGM.Shared;
 using UnityEngine;
 
@@ -8,6 +9,14 @@ public class PartyCursorMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public int totalEffort = 6;
     [SerializeField] private int remainingEffort = 6;
+    public TravelMethod SelectedTravelMethod = TravelMethod.Trek;
+    public bool TravelAtNight;
+    public bool CampOutdoors = true;
+    public bool SleptIndoors;
+    public bool IsWinter;
+    public bool TravelingBlind;
+    public bool HasSteed = true;
+    public bool SteedExhausted;
 
     private readonly TravelRuleSet travelRules = new TravelRuleSet(1);
     private HexCell currentCell;
@@ -58,7 +67,17 @@ public class PartyCursorMovement : MonoBehaviour
             return new List<HexCell>();
         }
 
-        return HexGridRegistry.Instance.GetNeighbors(currentCell);
+        var maxDistance = SelectedTravelMethod switch
+        {
+            TravelMethod.Trek => 1,
+            TravelMethod.Gallop => 2,
+            TravelMethod.Cruise => 3,
+            _ => 1
+        };
+
+        return HexGridRegistry.Instance.Cells
+            .Where(cell => cell != null && cell != currentCell && cell.Coordinate.DistanceTo(currentCell.Coordinate) <= maxDistance)
+            .ToList();
     }
 
     public bool TryMoveTo(HexCell target)
@@ -68,17 +87,64 @@ public class PartyCursorMovement : MonoBehaviour
             return false;
         }
 
-        var resolution = travelRules.ResolveMove(currentCell.Coordinate, target.Coordinate, remainingEffort);
-        if (!resolution.Success)
+        var path = HexGridRegistry.Instance != null
+            ? HexGridRegistry.Instance.FindPath(currentCell, target, SelectedTravelMethod == TravelMethod.Cruise ? 3 : SelectedTravelMethod == TravelMethod.Gallop ? 2 : 1)
+            : new List<HexCell>();
+        if (path.Count == 0)
         {
-            Debug.LogWarning($"PartyCursorMovement: {resolution.ErrorMessage}");
+            Debug.LogWarning("PartyCursorMovement: no valid path found.");
             return false;
         }
 
-        remainingEffort = resolution.RemainingEffort;
+        var blocked = PathBlocked(path);
+        var context = new TravelPhaseContext
+        {
+            From = currentCell.Coordinate,
+            To = target.Coordinate,
+            AvailableEffort = remainingEffort,
+            PathLength = path.Count - 1,
+            Method = SelectedTravelMethod,
+            HasSteed = HasSteed,
+            SteedExhausted = SteedExhausted,
+            OnProperRoad = path.All(cell => cell.hasProperRoad),
+            ByBoat = path.All(cell => cell.hasBoatRoute),
+            TravelingBlind = TravelingBlind,
+            IsNight = TravelAtNight,
+            CampingOutdoors = CampOutdoors,
+            SleptIndoors = SleptIndoors || target.hasIndoorShelter,
+            IsWinter = IsWinter,
+            DireWeatherRegion = target.direWeatherRegion,
+            EndsInMythHex = target.HasMyth(),
+            EndsAtLandmark = target.landmarkPrefab != null,
+            EndsAtHolding = target.isHolding,
+            BarrierBlocksRoute = blocked,
+            GallopLossRoll = Random.Range(1, 7),
+            WildernessRoll = Random.Range(1, 7),
+            BlindRoll = Random.Range(1, 7),
+            WeatherRoll = Random.Range(1, 7),
+            MoodRoll = Random.Range(1, 7),
+            NightSpiritLossRoll = Random.Range(1, 7),
+            WinterVigorLossRoll = Random.Range(1, 7),
+            SleepClarityLossRoll = Random.Range(1, 7)
+        };
+
+        var phase = PhaseTravelRules.Resolve(context);
+        TravelHud.Instance?.Append(phase);
+        if (!phase.Success && !string.IsNullOrWhiteSpace(phase.ErrorMessage))
+        {
+            Debug.LogWarning($"PartyCursorMovement: {phase.ErrorMessage}");
+            return false;
+        }
+
+        remainingEffort = phase.RemainingEffort;
+        if (SelectedTravelMethod == TravelMethod.Gallop)
+        {
+            SteedExhausted = true;
+        }
+
         isMoveSelectionActive = false;
         StopAllCoroutines();
-        StartCoroutine(MoveTo(target, resolution));
+        StartCoroutine(MoveTo(target, travelRules.ResolveMove(currentCell.Coordinate, target.Coordinate, remainingEffort + 1)));
         return true;
     }
 
@@ -113,6 +179,31 @@ public class PartyCursorMovement : MonoBehaviour
     public void ResetEffort()
     {
         remainingEffort = totalEffort;
+        SteedExhausted = false;
         Debug.Log($"PartyCursorMovement: effort reset to {remainingEffort}.");
+    }
+
+    public void SetTravelMethod(TravelMethod method)
+    {
+        SelectedTravelMethod = method;
+        PartyCursorController.Instance?.RefreshHighlights();
+    }
+
+    private static bool PathBlocked(IReadOnlyList<HexCell> path)
+    {
+        for (var index = 0; index < path.Count - 1; index++)
+        {
+            var current = path[index];
+            var next = path[index + 1];
+            for (var direction = 0; direction < 6; direction++)
+            {
+                if (current.Coordinate.Neighbor(direction) == next.Coordinate && current.BlocksDirection(direction))
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 }

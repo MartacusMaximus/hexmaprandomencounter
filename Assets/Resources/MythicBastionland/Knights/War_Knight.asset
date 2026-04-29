@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: War_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 38
+  knightName: War Knight
+  titleVerse: 'Forged and broke in goreful plight
+
+    Won some, lost some, still
+    upright'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 24afb517459ff40e4b36fc3827332346, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 2292c200fc5dd4fb48c1c11237b8de17, type: 2}
+  steed: {fileID: 11400000, guid: 2a6d5bdc99b55455aa30914a5f4bc21d, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 247a1c80fd62a49efb21bf82d51dbc8f, type: 2}
+  - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
+  - {fileID: 11400000, guid: b5658ff522ddd4c1b8fbdce7f75bd419, type: 2}
+  - {fileID: 11400000, guid: a0afa974b316246358acb345e423ab97, type: 2}
+  - {fileID: 11400000, guid: 3b7b36e8dbf504c7680e88202450c27c, type: 2}
+  - {fileID: 11400000, guid: 07d9150e5fe8c4a4d95c705a165cf696, type: 2}
+  - {fileID: 11400000, guid: 9747dfc731d3a471cba34d8aafd5c8f4, type: 2}
+  - {fileID: 11400000, guid: f40f11f7cfaeb4f19b5124a9772df3a3, type: 2}
+  - {fileID: 11400000, guid: a103093bb035c49e88a2492ed691f41b, type: 2}
+  randomFlavorTableTitle: MILITARY GEAR
+  randomFlavorTableRows:
+  - '1 +d10 vs mounted
+
+    targets Veiled leather cowl'
+  - '2 +d10 vs targets with a
+
+    shield Long mail hood'
+  - '3 +d10 vs targets in
+
+    armour Full heavy bucket'
+  - '4 +d10 vs targets
+
+    without a shield Crow-beaked'
+  - '5 +d10 vs beasts and
+
+    monsters Caged visor'
+  - "6 +d10 vs anybody\nattacking you Kettle cap\nKNIGHTED BY...\nThe Lost Seer\nVIG
+    10, CLA 9, SPI 7, 2 GD\n\u2022 Constantly being rubbed with\npsychotropic tinctures,
+    parts of their body\nseeming to dissipate from reality.\n\u2022 Sees things that
+    have been lost in a hazy\nvision of their current location.\n\u2022 Knows they
+    will lose their sight if they\nadvise directly how to find something."
+  personHook: Lost lad
+  objectHook: Weird bone
+  beastHook: Tender bloodhound
+  stateHook: Sprinting
+  themeHook: 'Healing
+
+    1
+
+    6
+
+    The'

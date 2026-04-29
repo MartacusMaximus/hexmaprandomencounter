@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Ring_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 96
+  knightName: Ring Knight
+  titleVerse: 'With ring a''lone, head dreams of home
+
+    With rings o''two, heart
+    longs to roam'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 689d6c2310afe4a2ca03912d8618c6ab, type: 2}
+  linkedSeer: {fileID: 11400000, guid: d37863a5ede02470a9092ec4f8c5bc37, type: 2}
+  steed: {fileID: 11400000, guid: 48eb2ed63df4444528dc88600c25c81a, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 31e964f88019e480f92d543affb07cf2, type: 2}
+  - {fileID: 11400000, guid: 774f1df33e535402b94971b497351a96, type: 2}
+  - {fileID: 11400000, guid: 2dc8c070cd091432bb613d783df8c7cb, type: 2}
+  - {fileID: 11400000, guid: 3ab08f64649424c2f948fa792daf7e4c, type: 2}
+  - {fileID: 11400000, guid: b38caff61497d412fbc278adc1f4511a, type: 2}
+  - {fileID: 11400000, guid: 9329e35df5f4043bf8bb8a3bc062d439, type: 2}
+  - {fileID: 11400000, guid: a4113dd2b447a43d98618f6a187b14ca, type: 2}
+  - {fileID: 11400000, guid: fdbb88847dc9b40cdbeface9f27a9204, type: 2}
+  - {fileID: 11400000, guid: 5f66451664f8d46898a0fc929d7f7e0c, type: 2}
+  randomFlavorTableTitle: PROPERTIES OF THE RINGS
+  randomFlavorTableRows:
+  - 1 Snakes Wearers share vision
+  - 2 Skulls Wearers share hearing
+  - '3 Thorns Wearers share GD
+
+    (use total)'
+  - '4 Rubies Wearers share VIG
+
+    (use higher)'
+  - '5 Gold Wearers share CLA
+
+    (use higher)'
+  - "6 Birds Wearers share SPI\n(use higher)\nKNIGHTED BY...\nThe Spectral Seer\nVIG
+    4, CLA 16, SPI 14, 5 GD\n\u2022 Immaterial shadow of a life long\nextinguished,
+    restricted to dwell near an\nurn containing their remains.\n\u2022 Sees all events
+    that include death: past,\npresent, and future.\n\u2022 Wants to return to a
+    physical form."
+  personHook: Lazy weaver
+  objectHook: Nature bow
+  beastHook: Stinging crocodile
+  stateHook: Competing
+  themeHook: 'Happiness
+
+    3
+
+    11
+
+    The'

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Thunder_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 162
+  knightName: Thunder Knight
+  titleVerse: 'Thunder!
+
+    Should be felt, not heard, else call it a whimper!'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 563998825743c49b4a4e779824f77177, type: 2}
+  linkedSeer: {fileID: 11400000, guid: ba7c56625716d4aa7ab1da98b1cf1017, type: 2}
+  steed: {fileID: 11400000, guid: b8f8e5c3832a54bd7bcbb6ae6ee33d6e, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: f681bd39b2b944e3f88dd80ef82539e5, type: 2}
+  - {fileID: 11400000, guid: 82de625fe089b46319757cbe32a02753, type: 2}
+  - {fileID: 11400000, guid: c0131748f6d5c48f988c4a4a9a0f7201, type: 2}
+  - {fileID: 11400000, guid: f42ad23b430d44b9d83043cc07616141, type: 2}
+  - {fileID: 11400000, guid: 88e75c81385a74c4f8fe8a8355cd5d78, type: 2}
+  - {fileID: 11400000, guid: 0d5cdf89362734178892cd9f01b1ec1b, type: 2}
+  - {fileID: 11400000, guid: a49f256fb6f764857b1411701f529fb1, type: 2}
+  - {fileID: 11400000, guid: c1a53623e31204362932681fb8804af6, type: 2}
+  randomFlavorTableTitle: CAGED BUG
+  randomFlavorTableRows:
+  - 1 Jolting bite (d6) Completely wild
+  - '2 Can slowly eat
+
+    through metal Well-trained'
+  - 3 Melodious chirp Particularly stupid
+  - '4 Can fetch items up to
+
+    the weight of a coin Eager to please'
+  - '5 Always goes
+
+    toward food Hates you'
+  - "6 Agonising but\nharmless bite\nA bright and\nnoble creature\nKNIGHTED BY...\nThe
+    Dice Seer\n3GD, A3. Treat as a Structure.\n\u2022 A great crystalline form, twitching
+    and\nrotating of its own force, its voice a\ngrinding chant.\n\u2022 Sees glimmers
+    of every possible future all\nat once.\n\u2022 Encourages the action with the
+    most risk\nand the greatest potential reward."
+  personHook: Friendly mercenary
+  objectHook: Wolf knife
+  beastHook: Talking hyena
+  stateHook: Tasting
+  themeHook: 'Thirst
+
+    6
+
+    8
+
+    The'

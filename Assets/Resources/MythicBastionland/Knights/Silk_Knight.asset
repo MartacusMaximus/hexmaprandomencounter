@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Silk_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 148
+  knightName: Silk Knight
+  titleVerse: 'Judge not a knight on might and favour
+
+    Where silk endures, a
+    heart can waver'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 16a152ef6fe5c48fabdefb553ce059b5, type: 2}
+  linkedSeer: {fileID: 11400000, guid: d315bdc09e8e04c4b82a42ee2a2b754c, type: 2}
+  steed: {fileID: 11400000, guid: dbce09ebc884a4603927afac80bf6058, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: cf501d2b6a77149c2913b60c1ebb3a7f, type: 2}
+  - {fileID: 11400000, guid: 78ba9e819e62c43a695fe00b72b7bd21, type: 2}
+  - {fileID: 11400000, guid: af0e4c03bce0c421092a025a9a7e3fa7, type: 2}
+  - {fileID: 11400000, guid: b7c01856e070a4d7f88c6dd1dc4ef115, type: 2}
+  - {fileID: 11400000, guid: f8dde1b6f352b4ff5b5c348fb81b68f8, type: 2}
+  - {fileID: 11400000, guid: 8822681ced6e2461bb59d9529a7e205c, type: 2}
+  - {fileID: 11400000, guid: a772e132440144e82b2762a7c5140594, type: 2}
+  - {fileID: 11400000, guid: f70a537ba98dd4a01bf1005cf76fa5b4, type: 2}
+  - {fileID: 11400000, guid: e676138600b3149dda9c42b43fac35a1, type: 2}
+  - {fileID: 11400000, guid: 67cc3173f0f704c159956f6d008a190f, type: 2}
+  randomFlavorTableTitle: A YOUNG STEED
+  randomFlavorTableRows:
+  - 1 Smaller animals Other steeds
+  - 2 Moss Fire
+  - 3 Water Darkness
+  - 4 Salt Children
+  - 5 Fruit Music
+  - "6 Shiny things Being alone\nKNIGHTED BY...\nThe Crimson Seer\nVIG 11, CLA 14,
+    SPI 16, 4 GD\n\u2022 Elegantly dressed woman, her heart\nvisible, pulsing through
+    her chest.\n\u2022 Gets glimpses of beings' desires and fates\nby tasting their
+    blood.\n\u2022 Wants to make the world interesting and\ndramatic, anything but
+    boring."
+  personHook: Scabby merchant
+  objectHook: Petty candle
+  beastHook: Ghost carp
+  stateHook: Enfeebled
+  themeHook: 'Armour
+
+    6
+
+    1
+
+    The'

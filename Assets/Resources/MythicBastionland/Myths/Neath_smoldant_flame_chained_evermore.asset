@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Neath_smoldant_flame_chained_evermore
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 61
+  mythName: Neath smoldant flame chained evermore
+  omens:
+  - '1. A trail, glittering dust on the surface. A
+
+    moment later, a flash ignites
+    five dancing
+
+    white flames that torment the travellers.
+
+    They vanish
+    once they have caused pain.'
+  - '2. Smouldering heat can be felt from the
+
+    shadows of looming trees. The
+    darkness
+
+    itself burns (d6 Damage) any within, but
+
+    does not set things
+    alight. The shadows
+
+    return to normal after this Phase.'
+  - '3. A fluttering swarm of bats descend on the
+
+    Knights. They are in the thrall
+    of the Imp,
+
+    flying to him after they have drawn blood.'
+  - '4. A feast is laid out on a grand table that
+
+    shouldn''t be here. If they
+    partake he
+
+    appears and plays some impish pranks. If
+
+    they refuse he
+    attacks with his black fire.'
+  - '5. The trail turns to a maze, smoke rolling
+
+    in, soon surrounded by walls
+    of flame. He
+
+    releases the victims when they are
+
+    adequately frustrated.'
+  - '6. He is holding court, arguing with eight
+
+    foxes in their language. If
+    their meeting is
+
+    allowed to conclude he stomps away,
+
+    banished by their
+    words.'
+  verse: 'Omens
+
+    1. A trail, glittering dust on the surface. A
+
+    moment later,
+    a flash ignites five dancing
+
+    white flames that torment the travellers.
+
+    They
+    vanish once they have caused pain.
+
+    2. Smouldering heat can be felt from
+    the
+
+    shadows of looming trees. The darkness
+
+    itself burns (d6 Damage)
+    any within, but
+
+    does not set things alight. The shadows
+
+    return to normal
+    after this Phase.
+
+    3. A fluttering swarm of bats descend on the
+
+    Knights.
+    They are in the thrall of the Imp,
+
+    flying to him after they have drawn blood.
+
+    4.
+    A feast is laid out on a grand table that
+
+    shouldn''t be here. If they partake
+    he
+
+    appears and plays some impish pranks. If
+
+    they refuse he attacks
+    with his black fire.
+
+    5. The trail turns to a maze, smoke rolling
+
+    in,
+    soon surrounded by walls of flame. He
+
+    releases the victims when they are
+
+    adequately
+    frustrated.
+
+    6. He is holding court, arguing with eight
+
+    foxes in their
+    language. If their meeting is
+
+    allowed to conclude he stomps away,
+
+    banished
+    by their words.
+
+    Cast
+
+    The Imp, Scaldris, Child of Black Flame
+
+    VIG
+    6, CLA 17, SPI 17, 10 GD
+
+    Claws (2d4) or black flame (d6 blast)
+
+    Feeds
+    on frustration and pain.
+
+    Foxes of the Imp''s Court
+
+    VIG 5, CLA 15, SPI
+    6, 4 GD
+
+    Bite (d4), smouldering tails
+
+    Enthralled Bat Swarm
+
+    VIG
+    5, CLA 10, SPI 3, 7 GD
+
+    Bites (3d6), individual attacks are Impaired
+
+    unless
+    they are Blast attacks.
+
+    Dancing White Flame
+
+    VIG 3, CLA 10, SPI 6, 2
+    GD
+
+    Burn (d6, ignoring armour)
+
+    Cannot be harmed by physical attacks.
+
+    In
+    scaldrine thrall we must endure'
+  castEntries:
+  - name: The Imp, Scaldris, Child of Black Flame
+    statBlock: 'VIG 6, CLA 17, SPI 17, 10 GD
+
+      Claws (2d4) or black flame (d6
+      blast)'
+    notes: Feeds on frustration and pain.
+  - name: Foxes of the Imp's Court
+    statBlock: 'VIG 5, CLA 15, SPI 6, 4 GD
+
+      Bite (d4), smouldering tails'
+    notes: 
+  - name: Enthralled Bat Swarm
+    statBlock: 'VIG 5, CLA 10, SPI 3, 7 GD
+
+      Bites (3d6), individual attacks
+      are Impaired'
+    notes: unless they are Blast attacks.
+  - name: Dancing White Flame
+    statBlock: 'VIG 3, CLA 10, SPI 6, 2 GD
+
+      Burn (d6, ignoring armour)'
+    notes: 'Cannot be harmed by physical attacks.
+
+      In scaldrine thrall we must
+      endure
+
+      Neath smoldant flame chained evermore
+
+      IMPISH PRANKS
+
+      Transform...
+      Into...
+
+      1 Item of clothing Wormy earth
+
+      2 Bed sheets Bog peat
+
+      3
+      Food Hot ash
+
+      4 Pet Choking smoke
+
+      5 Heirloom Fatty grease
+
+      6
+      Flowers Vinegar-soaked rags
+
+      Imp
+
+      Dwelling: Hidden cave ~ Sanctum:
+      Luminous hollow ~ Monument: Eternal tree
+
+      Hazard: Slippery rocks ~ Curse:
+      Haunting lights ~ Ruin: Smashed glade
+
+      Th'
+  flavorTable:
+    title: IMPISH PRANKS
+    rows:
+    - 1 Item of clothing Wormy earth
+    - 2 Bed sheets Bog peat
+    - 3 Food Hot ash
+    - 4 Pet Choking smoke
+    - 5 Heirloom Fatty grease
+    - '6 Flowers Vinegar-soaked rags
+
+      Imp'
+  dwelling: Hidden cave
+  sanctum: Luminous hollow
+  monument: Eternal tree
+  hazard: Slippery rocks
+  curse: Haunting lights
+  ruin: Smashed glade
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

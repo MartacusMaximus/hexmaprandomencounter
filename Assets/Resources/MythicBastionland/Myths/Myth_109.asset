@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_109
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 109
+  mythName: Myth 109
+  omens:
+  - '1. A reedy song in the distance. A dark swan
+
+    sings, advancing night or
+    morning faster
+
+    than normal. The swan flees if seen.'
+  - '2. Messengers carry word from all Seers.
+
+    The Fallen Seer is to be killed
+    on sight.'
+  - '3. In a dark patch of woods, a shadowy mass
+
+    looms over a broken body. The
+    shadow
+
+    flees if seen. The corpse is a local Seer.'
+  - '4. A messenger from the nearest Seer calls
+
+    for all Knights to report to
+    guard them.
+
+    The Wraith strikes on the next night.'
+  - '5. The Fallen Seer dances in the woods,
+
+    cursing their brothers and sisters
+    aloud.
+
+    They spout false prophecies to Knights
+
+    they meet (see opposite).
+    At nightfall the
+
+    Wraith attacks the Fallen Seer.'
+  - '6. The nearest Seer has come to seek the
+
+    Wraith alone, offering themselves
+    as
+
+    sacrifice. The Wraith materialises at
+
+    night and attacks. When this
+    is done
+
+    there is a scream heard across the Realm
+
+    and the Wraith returns
+    to wherever they
+
+    were summoned from.'
+  verse: 
+  castEntries:
+  - name: The Wraith, Night as Cold Flesh
+    statBlock: 'VIG 16, CLA 16, SPI 16, 11 GD
+
+      Touch of unlife (d12, ignore
+      armour, cannot'
+    notes: 'be Denied)
+
+      Hunting Seers. Can only exist in darkness.'
+  - name: The Fallen Seer, Ossoanamme
+    statBlock: 'VIG 12, CLA 4, SPI 16, 3 GD
+
+      A1 (wooden armour)'
+    notes: 'Blade (2d8 hefty), burned silks
+
+      No longer knows the past, present,
+      or future.
+
+      Awoke the Wraith but has no control of it.'
+  - name: Dark Swan, Netherplume, Nirrow
+    statBlock: 'VIG 10, CLA 10, SPI 6, 3 GD
+
+      Wing and beak (2d6)'
+    notes: 'His song can hurry day into night, or night
+
+      into day, but only
+      sings when feeling safe.
+
+      An unbirthed life, no first breath drawn
+
+      In
+      dark of night, unlife til morn
+
+      FALSE PROPHECIES
+
+      Subject Prediction
+
+      1
+      A Company member Must kill the Wraith
+
+      2 A nearby Knight Is the Fallen
+      Seer
+
+      3 A nearby commoner Is the Wraith
+
+      4 A nearby Seer Must serve
+      the Wraith
+
+      5 The Wraith Must kill a Seer
+
+      6 A nearby Myth Must
+      die at next night
+
+      Wraith
+
+      Dwelling: Sapling village ~ Sanctum:
+      Hallowed grove ~ Monument: Crystal rose
+
+      Hazard: Fierce winds ~ Curse:
+      Fading light ~ Ruin: Sunken abbey
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Sapling village
+  sanctum: Hallowed grove
+  monument: Crystal rose
+  hazard: Fierce winds
+  curse: Fading light
+  ruin: Sunken abbey
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

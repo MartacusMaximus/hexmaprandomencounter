@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Not_all_from_bove_an_answered_prayer
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 159
+  mythName: Not all from 'bove an answered prayer
+  omens:
+  - '1. On the horizon, twisting branches of a
+
+    great tree, black and blue.'
+  - '2. The branches on the horizon seem to grow
+
+    with each moment, fading to
+    grey, then
+
+    white, as they reach into the clouds and
+
+    spread above every
+    part of the Realm.'
+  - '3. Branches scrape the clouds in every part
+
+    of the Realm. With a scratching
+    scream
+
+    six cloud raiders fall from above, landing
+
+    unharmed, looking
+    to seize whatever they
+
+    can carry back to the clouds.'
+  - '4. A militia warband march toward the Tree,
+
+    aiming to chop it down. They
+    do not know
+
+    that earthly tools cannot harm the Tree.'
+  - '5. Great branches fall from the sky across
+
+    the Realm. One falls nearby,
+    a pair of
+
+    cloud creatures clinging on before
+
+    attacking in panic.'
+  - '6. With a thunderous creak the Tree begins
+
+    to lean. A moment later it falls,
+    followed
+
+    by a rain of branches. The Myth Hex and
+
+    all adjacent Hexes
+    are devastated,
+
+    causing 2d12 Damage to all within.'
+  verse: 'Omens
+
+    1. On the horizon, twisting branches of a
+
+    great tree, black
+    and blue.
+
+    2. The branches on the horizon seem to grow
+
+    with each moment,
+    fading to grey, then
+
+    white, as they reach into the clouds and
+
+    spread
+    above every part of the Realm.
+
+    3. Branches scrape the clouds in every part
+
+    of
+    the Realm. With a scratching scream
+
+    six cloud raiders fall from above, landing
+
+    unharmed,
+    looking to seize whatever they
+
+    can carry back to the clouds.
+
+    4. A militia
+    warband march toward the Tree,
+
+    aiming to chop it down. They do not know
+
+    that
+    earthly tools cannot harm the Tree.
+
+    5. Great branches fall from the sky
+    across
+
+    the Realm. One falls nearby, a pair of
+
+    cloud creatures clinging
+    on before
+
+    attacking in panic.
+
+    6. With a thunderous creak the Tree begins
+
+    to
+    lean. A moment later it falls, followed
+
+    by a rain of branches. The Myth
+    Hex and
+
+    all adjacent Hexes are devastated,
+
+    causing 2d12 Damage to all
+    within.
+
+    Cast
+
+    Raiders from the Clouds
+
+    VIG 14, CLA 8, SPI 8, 5 GD
+
+    A1
+    (hazy form), hooked trident (d10)
+
+    Want to take earthy goods back to the
+
+    clouds,
+    valuing anything that grows in soil.
+
+    Felling Militia, led by Melca
+
+    VIG
+    11, CLA 8, SPI 8, 3 GD
+
+    Felling axes (d8 long), poor motivation
+
+    Melca
+    has A2 (helm, mail), theatrical voice
+
+    Cloud Creature
+
+    VIG 12, CLA 8,
+    SPI 4, 3 GD
+
+    A1 (formed of cloud, see below)
+
+    Slam (d8), lightning (d12,
+    once per Phase)
+
+    Just wants to get back to the clouds.
+
+    Not all that
+    grows is good and fair'
+  castEntries:
+  - name: Raiders from the Clouds
+    statBlock: 'VIG 14, CLA 8, SPI 8, 5 GD
+
+      A1 (hazy form), hooked trident
+      (d10)'
+    notes: 'Want to take earthy goods back to the
+
+      clouds, valuing anything
+      that grows in soil.'
+  - name: Felling Militia, led by Melca
+    statBlock: 'VIG 11, CLA 8, SPI 8, 3 GD
+
+      Felling axes (d8 long), poor motivation'
+    notes: Melca has A2 (helm, mail), theatrical voice
+  - name: Cloud Creature
+    statBlock: 'VIG 12, CLA 8, SPI 4, 3 GD
+
+      A1 (formed of cloud, see below)'
+    notes: 'Slam (d8), lightning (d12, once per Phase)
+
+      Just wants to get back
+      to the clouds.
+
+      Not all that grows is good and fair
+
+      Not all from
+      ''bove an answered prayer
+
+      CLOUD FORM
+
+      Shape Descriptor
+
+      1
+      Snakelike Thin ( VIG 6)
+
+      2 Wolflike Swift (can fly)
+
+      3 Bearlike
+      Icy (A2)
+
+      4 Goatlike Dense ( VIG 16)
+
+      5 Squidlike Unstable (collapses
+
+      into
+      water if Wounded)
+
+      6 Apelike Crackling (can use
+
+      lightning twice)
+
+      Tree
+
+      Dwelling:
+      Tiny market ~ Sanctum: Golden grove ~ Monument: Constellation dome
+
+      Hazard:
+      Exhausting spores ~ Curse: Nightmare fungus ~ Ruin: Smashed jail
+
+      Th'
+  flavorTable:
+    title: CLOUD FORM
+    rows:
+    - 1 Snakelike Thin ( VIG 6)
+    - 2 Wolflike Swift (can fly)
+    - 3 Bearlike Icy (A2)
+    - 4 Goatlike Dense ( VIG 16)
+    - '5 Squidlike Unstable (collapses
+
+      into water if Wounded)'
+    - '6 Apelike Crackling (can use
+
+      lightning twice)
+
+      Tree'
+  dwelling: Tiny market
+  sanctum: Golden grove
+  monument: Constellation dome
+  hazard: Exhausting spores
+  curse: Nightmare fungus
+  ruin: Smashed jail
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

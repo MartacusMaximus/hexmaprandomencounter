@@ -73,6 +73,30 @@ public class PartyWorkbenchDragController : MonoBehaviour
         return true;
     }
 
+    public bool BeginContainerItemDrag(EquipmentInstance container, int slotIndex, EquipmentInstance item, PointerEventData eventData, Vector2 size)
+    {
+        if (container == null || item == null || item.equipment == null || owner == null)
+        {
+            return false;
+        }
+
+        activePayload = DragPayload.FromContainer(container, slotIndex, item);
+        CreateVisual(item.equipment.itemName, size, eventData);
+        return true;
+    }
+
+    public bool BeginSteedItemDrag(SteedInstance steed, int slotIndex, EquipmentInstance item, PointerEventData eventData, Vector2 size)
+    {
+        if (steed == null || item == null || item.equipment == null || owner == null)
+        {
+            return false;
+        }
+
+        activePayload = DragPayload.FromSteed(steed, slotIndex, item);
+        CreateVisual(item.equipment.itemName, size, eventData);
+        return true;
+    }
+
     public bool BeginGuildCharacterDrag(CharacterData character, bool fromParty, PointerEventData eventData, Vector2 size)
     {
         if (character == null || owner == null)
@@ -122,6 +146,34 @@ public class PartyWorkbenchDragController : MonoBehaviour
         }
 
         if (owner.TryDropItemOnCampaignStorage(activePayload))
+        {
+            dropHandled = true;
+            ClearDrag();
+        }
+    }
+
+    public void DropOnBackpackSlot(EquipmentInstance container, int slotIndex)
+    {
+        if (activePayload == null || owner == null)
+        {
+            return;
+        }
+
+        if (owner.TryDropItemOnBackpackSlot(activePayload, container, slotIndex))
+        {
+            dropHandled = true;
+            ClearDrag();
+        }
+    }
+
+    public void DropOnSteedSlot(int slotIndex)
+    {
+        if (activePayload == null || owner == null)
+        {
+            return;
+        }
+
+        if (owner.TryDropItemOnSteedSlot(activePayload, slotIndex))
         {
             dropHandled = true;
             ClearDrag();
@@ -218,12 +270,17 @@ public class PartyWorkbenchDragController : MonoBehaviour
         public EquipmentInstance itemInstance;
         public InventoryGrid sourceGrid;
         public int sourceSlotIndex = -1;
+        public EquipmentInstance sourceContainer;
+        public SteedInstance sourceSteed;
+        public int sourceContainerSlotIndex = -1;
         public CharacterData character;
         public bool fromParty;
 
         public bool IsCatalogItem => catalogEquipment != null && itemInstance == null && character == null;
-        public bool IsStoredItem => itemInstance != null && sourceGrid == null;
+        public bool IsStoredItem => itemInstance != null && sourceGrid == null && sourceContainer == null && sourceSteed == null && character == null;
         public bool IsCharacterSlotItem => itemInstance != null && sourceGrid != null;
+        public bool IsBackpackSlotItem => itemInstance != null && sourceContainer != null;
+        public bool IsSteedSlotItem => itemInstance != null && sourceSteed != null;
         public bool IsCharacterEntry => character != null;
 
         public static DragPayload FromCatalog(EquipmentData equipment)
@@ -242,6 +299,26 @@ public class PartyWorkbenchDragController : MonoBehaviour
             {
                 sourceGrid = grid,
                 sourceSlotIndex = slotIndex,
+                itemInstance = item
+            };
+        }
+
+        public static DragPayload FromContainer(EquipmentInstance container, int slotIndex, EquipmentInstance item)
+        {
+            return new DragPayload
+            {
+                sourceContainer = container,
+                sourceContainerSlotIndex = slotIndex,
+                itemInstance = item
+            };
+        }
+
+        public static DragPayload FromSteed(SteedInstance steed, int slotIndex, EquipmentInstance item)
+        {
+            return new DragPayload
+            {
+                sourceSteed = steed,
+                sourceContainerSlotIndex = slotIndex,
                 itemInstance = item
             };
         }

@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_35
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 35
+  mythName: Myth 35
+  omens:
+  - '1. Six monks, appeasing the River with
+
+    offerings of bread. Their apparent
+    leader
+
+    is annoyingly vivacious and optimistic
+
+    about their work tending
+    to the River.'
+  - '2. Lost fisherman washed up on the
+
+    riverbank. A mighty newt is sniffing
+
+    around
+    the shaken man.'
+  - '3. A rocky outcropping, a lone dead tree at
+
+    its peak. Three monks seek
+    a blood
+
+    offering for the River. They need an
+
+    innocent animal or a sinful
+    person.'
+  - '4. Pilgrims arguing with a Bridge Knight
+
+    chasing a toll. The Knight knows
+    one of
+
+    the pilgrims has a coin from the City and
+
+    will take it by force
+    if necessary.'
+  - '5. The River bursts into a new stream. If
+
+    travelling, the route is cut
+    off. For the first
+
+    few moments, water from the newborn
+
+    stream can heal
+    any ailment.'
+  - '6. A great flood as the River gives birth to a
+
+    new lake. It claims the
+    entire Hex and
+
+    spreads to neighbouring Hexes tomorrow.
+
+    A spawning of
+    mighty newts bursts forth
+
+    the next day.'
+  verse: 
+  castEntries:
+  - name: Mighty Newt, Slippery Starback
+    statBlock: 'VIG 16, CLA 14, SPI 5, 5 GD
+
+      Crushing toothless bite (d8, drag
+      into water)'
+    notes: 'Flees if Wounded, regenerating quickly
+
+      before seeking petty revenge.
+
+      Feared
+      by all venomous beasts.'
+  - name: River Monks, led by Refton
+    statBlock: 'VIG 10, CLA 10, SPI 12, 2 GD
+
+      Cudgels (d8 hefty), bread, mead
+      barrels'
+    notes: 
+  - name: Bridge Knight, Tog
+    statBlock: 'VIG 15, CLA 15, SPI 6, 6 GD
+
+      A2 (ringmail, redshield)'
+    notes: 'Hooksword (2d6 hefty), redshield (d4),
+
+      heavy coffer of toll money
+
+      Stream,
+      fall, brook, and creek, flow along as one
+
+      Famine, flood, friend and
+      foe, all things beneath the sun
+
+      RIVERBOATS
+
+      Travellers Intent
+
+      1
+      Family Raiding
+
+      2 Elder Trade
+
+      3 Youths Adventure
+
+      4 Soldiers
+      Safety
+
+      5 Acolytes Hunting
+
+      6 Knight Pilgrimage
+
+      River
+
+      Dwelling:
+      Fertile farm ~ Sanctum: Hilltop hermitage ~ Monument: Knight mausoleum
+
+      Hazard:
+      Razor rocks ~ Curse: Heralds of doom ~ Ruin: Hanging skeletons
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Fertile farm
+  sanctum: Hilltop hermitage
+  monument: Knight mausoleum
+  hazard: Razor rocks
+  curse: Heralds of doom
+  ruin: Hanging skeletons
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

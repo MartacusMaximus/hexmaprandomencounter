@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Seal_of_Binding
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Seal of Binding
+  description: "Mark a weapon, shield, or piece of armour\nbelonging to a non-Knight
+    with your seal.\nThey can use Smite or Deny as if they were a\nKnight, but then
+    the seal is removed.\nPASSION - Modesty\nRestore SPI when refusing a reward.\nA
+    Knight' s sworn oath outlasts the stone wall\nYet Seers say in time even words
+    must fall\nSeal Knight\nRUNIC SCROLLS\nSubject Prophecy\n1 The Seer reading Death\n2
+    The Seal Knight Torment\n3 Another Knight Rebirth\n4 Another Seer Treachery\n5
+    A Myth Growth\n6 The whole Realm Glory\nKNIGHTED BY...\nThe Drunken Seer\nVIG
+    14, CLA 6, SPI 10, 1 GD\n\u2022 Eyes can't focus on her enough to get a\nsense
+    of what she looks like.\n\u2022 Just being in her presence creates an\nintensely
+    intoxicated feeling. Sleeping in\nthis state gives vision-laden dreams.\n\u2022
+    Wants peace and quiet in the morning,\ngood company in the afternoon, nobody\ncan
+    decipher what she wants at night.\nPerson: Relaxed courier ~ Name: Sparenot ~
+    Characteristic: Formal clothes\nObject: Unbreakable compass ~ Beast: Flame weasel
+    ~ State: Relaxing ~ Theme: Charm\n2\n10\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

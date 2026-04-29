@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Boulder_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 84
+  knightName: Boulder Knight
+  titleVerse: 'A fated charge in mail and stalward plate
+
+    Abaited foes await
+    that thundring gait'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: b86c3bb4d86ab428388aa437d2ef92db, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 153d7d5b49bda4b60b0616bcd5abda1a, type: 2}
+  steed: {fileID: 11400000, guid: 8196dda3697ef451289c08493042c038, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 7b723bf719202438d878d31a93163e9d, type: 2}
+  - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
+  - {fileID: 11400000, guid: fc7dae0cec98245cd98386dcd3ae65f2, type: 2}
+  - {fileID: 11400000, guid: f317d06e5b8e94bcbb69d537f7c5049e, type: 2}
+  - {fileID: 11400000, guid: 5c2cc2525a88b4518a86276d3a67cff8, type: 2}
+  - {fileID: 11400000, guid: be525e554ba2c4776b8e8f526847ae3c, type: 2}
+  - {fileID: 11400000, guid: c9981478b9dac488d9425776a7ea2337, type: 2}
+  - {fileID: 11400000, guid: df8bd3c2e2b5643a59e7c7e6132df2ac, type: 2}
+  - {fileID: 11400000, guid: a9e134f20da704cfbb58c3846a218b87, type: 2}
+  - {fileID: 11400000, guid: b552e726eec384f14a3661a12b28643b, type: 2}
+  - {fileID: 11400000, guid: 8c15bf27d2e1f472c8ed7d2aa4fbd9b5, type: 2}
+  randomFlavorTableTitle: FANCY ARMOUR
+  randomFlavorTableRows:
+  - 1 Bronze plates Floats in water
+  - 2 Flanged iron Quick to don or remove
+  - 3 Sharp scales Silent when moving
+  - 4 Bright brigandine Intimidating helm (A1)
+  - 5 Heavy rings Spiked gauntlets (d6)
+  - "6 Sleek brass Ignore fall Damage\nKNIGHTED BY...\nThe Weeping Seer\nVIG 7, CLA
+    7, SPI 6, 2 GD\n\u2022 A humble young man sobbing in a\ndarkened corner.\n\u2022
+    Constantly haunted with images of ways\nin which things could go wrong, always\nleading
+    to his own horrible death.\n\u2022 Wants to take every precaution, but it's\nnever
+    enough."
+  personHook: Pristine raider
+  objectHook: Dream cup
+  beastHook: Bright mole
+  stateHook: Burying
+  themeHook: 'Sunset
+
+    3
+
+    5
+
+    The'

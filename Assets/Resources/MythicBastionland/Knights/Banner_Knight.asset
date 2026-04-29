@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Banner_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 62
+  knightName: Banner Knight
+  titleVerse: 'Beware of kindly riders festooning flags in show
+
+    Where they come
+    in friendship their soldiers rush to go'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: d5b90a79e0a2f4e93ad45dc627893c7a, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 51c770ebe04a44f9cad2d4891300020e, type: 2}
+  steed: {fileID: 11400000, guid: 2db77c6c5b5a143dd9ae146005c30761, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 4d251cf6769984a01878cb46856f1e64, type: 2}
+  - {fileID: 11400000, guid: a9aa94c819db741908d2ad41f1d2fbdb, type: 2}
+  - {fileID: 11400000, guid: a1cc2ee676e524e819fa658a4975a33d, type: 2}
+  - {fileID: 11400000, guid: 95d52317f303b451a888b617aecebd8c, type: 2}
+  - {fileID: 11400000, guid: 808893164ac424f04a437b9ec9ecd6a9, type: 2}
+  - {fileID: 11400000, guid: 2c08cebc1f9ac41cca13f2612fcb7973, type: 2}
+  - {fileID: 11400000, guid: 912f90bed04794e16b072734579db1a1, type: 2}
+  - {fileID: 11400000, guid: a21e0d18b53dc49ca94c17ef51a81550, type: 2}
+  randomFlavorTableTitle: INSPIRING BANNER
+  randomFlavorTableRows:
+  - 1 Red/white diamonds Antlers
+  - 2 Blue/yellow rings Jaws
+  - 3 Green/silver spiral Tree
+  - 4 Purple/gold chevrons Fishtail
+  - 5 Black/blue bars Wings
+  - "6 Orange/black waves Seashell\nKNIGHTED BY...\nThe Cured Seer\nVIG 9, CLA 4,
+    SPI 8, 2 GD\n\u2022 Preserved in salt, completely desiccated\nand unable to move.\n\u2022
+    Barely speaks, but offers manic visions to\nthose who taste their salt.\n\u2022
+    Wants to live forever and witness the end\nof all things."
+  personHook: Aggressive carver
+  objectHook: Vow sunflower
+  beastHook: Tiny chameleon
+  stateHook: Observing
+  themeHook: 'Anger
+
+    2
+
+    6
+
+    The'

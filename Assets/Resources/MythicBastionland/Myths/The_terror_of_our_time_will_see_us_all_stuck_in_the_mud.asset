@@ -1,0 +1,249 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: The_terror_of_our_time_will_see_us_all_stuck_in_the_mud
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 29
+  mythName: The terror of our time will see us all stuck in the mud
+  omens:
+  - '1. An old coot proclaims their dreams, where
+
+    foul air was choking people
+    in their sleep.
+
+    Pleads for help spreading the word.'
+  - '2. Moaning in the mist. An ivy-cloaked
+
+    shack, home to a dying old couple.
+    Their
+
+    daughter left to search for treatment.'
+  - '3. Jolly hunter and his son with mild
+
+    symptoms, chasing a smiling fox up
+    a
+
+    tree. They don''t believe in the Plague, but
+
+    claim the fox is a harbinger
+    of death.
+
+    The smiling fox wants to witness a death.'
+  - '4. A self-important Knight and two Squires,
+
+    returning to report the Plague
+    to the Seat
+
+    of Power. Demands escort from other
+
+    Knights. They carry
+    a grey lantern, its
+
+    light only visible to the carrier.'
+  - '5. A clearing, bonfire embers. An infected
+
+    crowd, close to death, full
+    of anger. They
+
+    swear a blood oath on the stump of a red
+
+    oak, seeing
+    visions of revenge. They
+
+    attack any caught watching.'
+  - '6. An infected village, the root of the Plague.
+
+    All are visibly infected.
+    Two Purging
+
+    Knights, charging to cleanse with flame.'
+  verse: 'Omens
+
+    1. An old coot proclaims their dreams, where
+
+    foul air was
+    choking people in their sleep.
+
+    Pleads for help spreading the word.
+
+    2.
+    Moaning in the mist. An ivy-cloaked
+
+    shack, home to a dying old couple. Their
+
+    daughter
+    left to search for treatment.
+
+    3. Jolly hunter and his son with mild
+
+    symptoms,
+    chasing a smiling fox up a
+
+    tree. They don''t believe in the Plague, but
+
+    claim
+    the fox is a harbinger of death.
+
+    The smiling fox wants to witness a death.
+
+    4.
+    A self-important Knight and two Squires,
+
+    returning to report the Plague
+    to the Seat
+
+    of Power. Demands escort from other
+
+    Knights. They carry
+    a grey lantern, its
+
+    light only visible to the carrier.
+
+    5. A clearing,
+    bonfire embers. An infected
+
+    crowd, close to death, full of anger. They
+
+    swear
+    a blood oath on the stump of a red
+
+    oak, seeing visions of revenge. They
+
+    attack
+    any caught watching.
+
+    6. An infected village, the root of the Plague.
+
+    All
+    are visibly infected. Two Purging
+
+    Knights, charging to cleanse with flame.
+
+    Cast
+
+    The
+    Angry Infected
+
+    VIG 8, CLA 6, SPI 5, 2 GD
+
+    Logging axe (d8 long)
+
+    Those
+    directly exposed must pass a VIG Save
+
+    to avoid infection. Causes d6 VIG
+    loss daily.
+
+    There are treatments but no cures.
+
+    Jolly Hunter, Maccan
+
+    VIG
+    14, CLA 12, SPI 15, 4 GD
+
+    Shortbow (d6 long), handaxe (d6)
+
+    Purging Knights,
+    Dirmad & Duncas
+
+    VIG 12, CLA 10, SPI 7, 5 GD
+
+    A3 (mail, helm, shield)
+
+    Flail
+    (d8 hefty), shield (d4)
+
+    3 firepots (d6 blast, sets area alight)
+
+    Twins,
+    hate each other.
+
+    Birthed in air, spread by stream, lurking in the blood'
+  castEntries:
+  - name: The Angry Infected
+    statBlock: 'VIG 8, CLA 6, SPI 5, 2 GD
+
+      Logging axe (d8 long)'
+    notes: 'Those directly exposed must pass a VIG Save
+
+      to avoid infection.
+      Causes d6 VIG loss daily.
+
+      There are treatments but no cures.'
+  - name: Jolly Hunter, Maccan
+    statBlock: 'VIG 14, CLA 12, SPI 15, 4 GD
+
+      Shortbow (d6 long), handaxe (d6)'
+    notes: 
+  - name: Purging Knights, Dirmad & Duncas
+    statBlock: 'VIG 12, CLA 10, SPI 7, 5 GD
+
+      A3 (mail, helm, shield)'
+    notes: 'Flail (d8 hefty), shield (d4)
+
+      3 firepots (d6 blast, sets area
+      alight)
+
+      Twins, hate each other.
+
+      Birthed in air, spread by stream,
+      lurking in the blood
+
+      The terror of our time will see us all stuck in
+      the mud
+
+      THE DEATHLY MALADY
+
+      Fatal Symptom Transmission
+
+      1
+      Bleeding Skin contact
+
+      2 Choking Breath
+
+      3 Swelling Bodily fluids
+
+      4
+      Wasting Ingestion
+
+      5 Lethargy Rats
+
+      6 Convulsion Flies
+
+      Plague
+
+      Dwelling:
+      Shepherd fields ~ Sanctum: Whispering brook ~ Monument: Royal statue
+
+      Hazard:
+      Choking woodland ~ Curse: Icy mist ~ Ruin: Burned village
+
+      Th'
+  flavorTable:
+    title: THE DEATHLY MALADY
+    rows:
+    - 1 Bleeding Skin contact
+    - 2 Choking Breath
+    - 3 Swelling Bodily fluids
+    - 4 Wasting Ingestion
+    - 5 Lethargy Rats
+    - '6 Convulsion Flies
+
+      Plague'
+  dwelling: Shepherd fields
+  sanctum: Whispering brook
+  monument: Royal statue
+  hazard: Choking woodland
+  curse: Icy mist
+  ruin: Burned village
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

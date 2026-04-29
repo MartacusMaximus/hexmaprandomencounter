@@ -3,6 +3,18 @@ using UnityEngine;
 
 public class HexCell : MonoBehaviour
 {
+    [System.Flags]
+    public enum TravelBarrierMask
+    {
+        None = 0,
+        East = 1 << 0,
+        NorthEast = 1 << 1,
+        NorthWest = 1 << 2,
+        West = 1 << 3,
+        SouthWest = 1 << 4,
+        SouthEast = 1 << 5
+    }
+
     public int q;
     public int r;
     public int offsetColumn;
@@ -19,6 +31,16 @@ public class HexCell : MonoBehaviour
     public int mythOmenIndex = 0;       
     public bool mythVisible = false;    
     [HideInInspector] public GameObject mythMarkerInstance;
+
+    [Header("Travel")]
+    public bool isHolding;
+    public bool hasIndoorShelter;
+    public bool hasProperRoad;
+    public bool hasBoatRoute;
+    public bool winterExposed;
+    public bool direWeatherRegion;
+    public TravelBarrierMask blockedExits;
+    [TextArea] public string realmFlavor;
 
     [Header("Highlight")]
     public Renderer highlightRenderer;
@@ -48,6 +70,7 @@ public class HexCell : MonoBehaviour
 
     public bool HasMyth() => myth != null;
     public bool MythExhausted() => myth == null || mythOmenIndex >= myth.omens.Count;
+    public bool BlocksDirection(int direction) => (blockedExits & (TravelBarrierMask)(1 << direction)) != 0;
 
     public string TriggerNextOmen()
     {

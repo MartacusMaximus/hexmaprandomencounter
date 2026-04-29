@@ -32,9 +32,13 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
     private RectTransform dockRoot;
     private RectTransform guildRosterContent;
     private RectTransform partyMembersContent;
+    private RectTransform seerContent;
     private RectTransform storageContent;
+    private RectTransform steedContent;
+    private RectTransform backpackContent;
     private RectTransform catalogContent;
     private TextMeshProUGUI selectedCharacterSummary;
+    private MythicBastionlandContentLibrarySO mythicContent;
 
     private readonly string[] catalogFilters = { "All", "Weapons", "Armor", "Utility", "Crown" };
 
@@ -43,6 +47,9 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
         yield return null;
 
         EnsureState();
+        mythicContent = campaignData != null && campaignData.mythicContentLibrary != null
+            ? campaignData.mythicContentLibrary
+            : MythicBastionlandContentLibrarySO.LoadDefault();
         ResolveSceneReferences();
         ResolveNameInput();
         BuildPartyDock();
@@ -130,11 +137,19 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
             return false;
         }
 
+        var item = ResolvePayloadItem(payload);
+        if (item == null || !InventoryOwnershipRules.CanCharacterEquip(activeCharacter, item))
+        {
+            return false;
+        }
+
         if (payload.IsCatalogItem)
         {
             return TryApplyCharacterInventoryChange(() =>
             {
-                activeCharacter.inventory[slotIndex] = new EquipmentInstance { equipment = payload.catalogEquipment };
+                item.ownerCharacterId = item.equipment.isBondedProperty ? activeCharacter.characterId : item.ownerCharacterId;
+                item.bondedToOwner = item.equipment.isBondedProperty;
+                activeCharacter.inventory[slotIndex] = item;
             });
         }
 
@@ -143,9 +158,19 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
             return TryApplyCharacterInventoryChange(() =>
             {
                 campaignData.campaignInventory.TryRemove(payload.itemInstance);
-                activeCharacter.inventory[slotIndex] = payload.itemInstance;
+                activeCharacter.inventory[slotIndex] = item;
             },
-            () => campaignData.campaignInventory.TryAdd(payload.itemInstance));
+            () => campaignData.campaignInventory.TryAdd(item));
+        }
+
+        if (payload.IsBackpackSlotItem || payload.IsSteedSlotItem)
+        {
+            return TryApplyCharacterInventoryChange(() =>
+            {
+                ClearPayloadSource(payload);
+                activeCharacter.inventory[slotIndex] = item;
+            },
+            () => RestorePayloadSource(payload, item));
         }
 
         return false;
@@ -160,7 +185,7 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
 
         if (payload.IsCatalogItem)
         {
-            campaignData.campaignInventory.TryAdd(new EquipmentInstance { equipment = payload.catalogEquipment });
+            campaignData.campaignInventory.TryAdd(ResolvePayloadItem(payload));
             PersistState(campaignData);
             RefreshWorkbench();
             return true;
@@ -190,7 +215,85 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
             return true;
         }
 
+        if (payload.IsBackpackSlotItem || payload.IsSteedSlotItem)
+        {
+            var item = payload.itemInstance;
+            ClearPayloadSource(payload);
+            campaignData.campaignInventory.TryAdd(item);
+            PersistState(activeCharacter, campaignData);
+            RefreshAllViews();
+            return true;
+        }
+
         return false;
+    }
+
+    public bool TryDropItemOnBackpackSlot(PartyWorkbenchDragController.DragPayload payload, EquipmentInstance backpack, int slotIndex)
+    {
+        if (payload == null || backpack == null || activeCharacter == null)
+        {
+            return false;
+        }
+
+        var item = ResolvePayloadItem(payload);
+        if (item == null || !InventoryOwnershipRules.CanStoreInContainer(backpack, item))
+        {
+            return false;
+        }
+
+        if (item.bondedToOwner && item.ownerCharacterId != activeCharacter.characterId)
+        {
+            return false;
+        }
+
+        if (!ClearPayloadSource(payload))
+        {
+            return false;
+        }
+
+        if (!InventoryOwnershipRules.TryAddToContainer(backpack, item))
+        {
+            RestorePayloadSource(payload, item);
+            return false;
+        }
+
+        PersistState(activeCharacter, campaignData);
+        RefreshAllViews();
+        return true;
+    }
+
+    public bool TryDropItemOnSteedSlot(PartyWorkbenchDragController.DragPayload payload, int slotIndex)
+    {
+        if (payload == null || activeCharacter == null || activeCharacter.steed == null || activeCharacter.steed.definition == null)
+        {
+            return false;
+        }
+
+        var item = ResolvePayloadItem(payload);
+        if (item == null)
+        {
+            return false;
+        }
+
+        if (item.bondedToOwner && item.ownerCharacterId != activeCharacter.characterId)
+        {
+            return false;
+        }
+
+        if (!ClearPayloadSource(payload))
+        {
+            return false;
+        }
+
+        if (!InventoryOwnershipRules.TryAddToSteed(activeCharacter.steed, item))
+        {
+            RestorePayloadSource(payload, item);
+            return false;
+        }
+
+        PersistState(activeCharacter, campaignData);
+        RefreshAllViews();
+        return true;
     }
 
     public bool TryMoveCharacter(PartyWorkbenchDragController.DragPayload payload, bool toParty)
@@ -446,7 +549,10 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
 
         CreateHeader(dockRoot);
         CreateMemberSections(dockRoot);
+        CreateSeerSection(dockRoot);
         CreateStorageSection(dockRoot);
+        CreateContainerSection(dockRoot, "Steed Storage", out steedContent);
+        CreateContainerSection(dockRoot, "Backpack Storage", out backpackContent);
         CreateCatalogSection(dockRoot);
     }
 
@@ -527,6 +633,40 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
         var viewport = CreateScrollViewport(section, out var content);
         viewport.gameObject.AddComponent<PartyWorkbenchStorageDropZone>();
         storageContent = content;
+    }
+
+    private void CreateSeerSection(Transform parent)
+    {
+        var section = CreatePanel(parent, "SeerSection", new Color(0.18f, 0.16f, 0.22f, 1f));
+        var vertical = section.gameObject.AddComponent<VerticalLayoutGroup>();
+        vertical.padding = new RectOffset(10, 10, 10, 10);
+        vertical.spacing = 8f;
+        vertical.childControlHeight = true;
+        vertical.childControlWidth = true;
+        vertical.childForceExpandHeight = false;
+        vertical.childForceExpandWidth = true;
+        section.gameObject.AddComponent<LayoutElement>().preferredHeight = 220f;
+
+        var heading = CreateText(section, "Seer", 20f, FontStyles.Bold);
+        heading.color = Color.white;
+        CreateScrollViewport(section, out seerContent);
+    }
+
+    private void CreateContainerSection(Transform parent, string title, out RectTransform content)
+    {
+        var section = CreatePanel(parent, title.Replace(" ", string.Empty), new Color(0.16f, 0.18f, 0.22f, 1f));
+        var vertical = section.gameObject.AddComponent<VerticalLayoutGroup>();
+        vertical.padding = new RectOffset(10, 10, 10, 10);
+        vertical.spacing = 8f;
+        vertical.childControlHeight = true;
+        vertical.childControlWidth = true;
+        vertical.childForceExpandHeight = false;
+        vertical.childForceExpandWidth = true;
+        section.gameObject.AddComponent<LayoutElement>().preferredHeight = 160f;
+
+        var heading = CreateText(section, title, 20f, FontStyles.Bold);
+        heading.color = Color.white;
+        CreateScrollViewport(section, out content);
     }
 
     private void CreateCatalogSection(Transform parent)
@@ -634,7 +774,10 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
 
         RebuildCharacterList(guildRosterContent, campaignData.allCharacters.Where(character => !campaignData.activeParty.members.Contains(character)));
         RebuildCharacterList(partyMembersContent, campaignData.activeParty.members);
+        RebuildSeerSection();
         RebuildStorageList();
+        RebuildSteedStorage();
+        RebuildBackpackStorage();
         RebuildCatalogList();
         Canvas.ForceUpdateCanvases();
     }
@@ -671,6 +814,104 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
         {
             CreateItemCard(storageContent, item.equipment, item, false);
         }
+    }
+
+    private void RebuildSeerSection()
+    {
+        if (seerContent == null)
+        {
+            return;
+        }
+
+        ClearChildren(seerContent);
+        if (activeCharacter == null)
+        {
+            return;
+        }
+
+        var info = CreateCard(seerContent, new Color(0.25f, 0.22f, 0.3f, 1f), 66f);
+        var infoTitle = CreateText(info, activeCharacter.assignedKnight != null ? activeCharacter.assignedKnight.knightName : "Awaiting Knighting", 17f, FontStyles.Bold);
+        infoTitle.color = Color.white;
+        var infoDetail = CreateText(info, BuildSeerSummary(), 12f, FontStyles.Normal);
+        infoDetail.color = new Color(0.85f, 0.88f, 0.92f, 1f);
+
+        if (!KnightingService.IsReadyForKnighting(activeCharacter) || mythicContent == null || mythicContent.knights.Count == 0)
+        {
+            return;
+        }
+
+        var actionRow = new GameObject("SeerActions", typeof(RectTransform), typeof(HorizontalLayoutGroup), typeof(LayoutElement));
+        actionRow.transform.SetParent(seerContent, false);
+        var layout = actionRow.GetComponent<HorizontalLayoutGroup>();
+        layout.spacing = 8f;
+        layout.childControlWidth = true;
+        layout.childControlHeight = true;
+        layout.childForceExpandWidth = true;
+        layout.childForceExpandHeight = false;
+        actionRow.GetComponent<LayoutElement>().preferredHeight = 34f;
+
+        CreateActionButton(actionRow.transform, "Roll Knight", () =>
+        {
+            var knight = KnightingService.RollKnight(activeCharacter, mythicContent.knights);
+            if (KnightingService.AssignKnight(activeCharacter, knight, campaignData.campaignInventory))
+            {
+                PersistState(activeCharacter, campaignData);
+                RefreshAllViews();
+            }
+        });
+
+        foreach (var knight in mythicContent.knights.OrderBy(knight => knight.knightName))
+        {
+            var card = CreateCard(seerContent, new Color(0.27f, 0.24f, 0.32f, 1f), 58f);
+            var title = CreateText(card, knight.knightName, 15f, FontStyles.Bold);
+            title.color = Color.white;
+            var detail = CreateText(card, knight.passionText, 11f, FontStyles.Normal);
+            detail.color = new Color(0.85f, 0.88f, 0.92f, 1f);
+            var button = card.gameObject.AddComponent<Button>();
+            button.onClick.AddListener(() =>
+            {
+                if (KnightingService.AssignKnight(activeCharacter, knight, campaignData.campaignInventory))
+                {
+                    PersistState(activeCharacter, campaignData);
+                    RefreshAllViews();
+                }
+            });
+        }
+    }
+
+    private void RebuildSteedStorage()
+    {
+        if (steedContent == null)
+        {
+            return;
+        }
+
+        ClearChildren(steedContent);
+        if (activeCharacter == null || activeCharacter.steed == null || activeCharacter.steed.definition == null)
+        {
+            return;
+        }
+
+        activeCharacter.steed.EnsureSlots();
+        CreateContainerSlots(steedContent, null, activeCharacter.steed);
+    }
+
+    private void RebuildBackpackStorage()
+    {
+        if (backpackContent == null)
+        {
+            return;
+        }
+
+        ClearChildren(backpackContent);
+        var backpack = FindActiveBackpack();
+        if (backpack == null)
+        {
+            return;
+        }
+
+        backpack.EnsureInstance();
+        CreateContainerSlots(backpackContent, backpack, null);
     }
 
     private void RebuildCatalogList()
@@ -733,6 +974,40 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
 
         var entry = card.gameObject.AddComponent<PartyWorkbenchItemEntryUI>();
         entry.Configure(this, equipment, instance, fromCatalog, title, detail);
+
+        if (instance != null)
+        {
+            var ownerName = InventoryOwnershipRules.DescribeOwner(instance, campaignData.allCharacters);
+            if (!string.IsNullOrWhiteSpace(ownerName))
+            {
+                detail.text = $"{detail.text}  owner {ownerName}";
+            }
+        }
+    }
+
+    private void CreateContainerSlots(RectTransform parent, EquipmentInstance backpack, SteedInstance steed)
+    {
+        for (var index = 0; index < 4; index++)
+        {
+            var slot = CreateCard(parent, new Color(0.19f, 0.21f, 0.25f, 1f), 54f);
+            var item = backpack != null ? backpack.containedItems[index] : steed.storage[index];
+            var title = CreateText(slot, item?.equipment?.itemName ?? $"Slot {index + 1}", 14f, FontStyles.Bold);
+            title.color = Color.white;
+            var detail = CreateText(slot, item?.equipment?.rulesText ?? "Drop an item here", 11f, FontStyles.Normal);
+            detail.color = new Color(0.85f, 0.88f, 0.92f, 1f);
+            slot.gameObject.AddComponent<PartyWorkbenchContainerSlotUI>().Configure(this, backpack, steed, index);
+        }
+    }
+
+    private void CreateActionButton(Transform parent, string label, UnityEngine.Events.UnityAction action)
+    {
+        var panel = CreatePanel(parent, label.Replace(" ", string.Empty), new Color(0.31f, 0.38f, 0.49f, 1f));
+        panel.gameObject.AddComponent<LayoutElement>().preferredHeight = 32f;
+        var button = panel.gameObject.AddComponent<Button>();
+        button.onClick.AddListener(action);
+        var text = CreateText(panel, label, 13f, FontStyles.Bold);
+        text.alignment = TextAlignmentOptions.Center;
+        text.color = Color.white;
     }
 
     private RectTransform CreateCard(Transform parent, Color color, float preferredHeight)
@@ -825,6 +1100,144 @@ public class ReworkPartyWorkbenchController : MonoBehaviour
     private void HidePartyAndSheet()
     {
         SetPartyPanelVisible(false);
+    }
+
+    private string BuildSeerSummary()
+    {
+        if (activeCharacter == null)
+        {
+            return string.Empty;
+        }
+
+        if (activeCharacter.assignedKnight != null)
+        {
+            var seerName = activeCharacter.linkedSeer != null ? activeCharacter.linkedSeer.seerName : "Unknown Seer";
+            return $"Knighted by {seerName}. Ability {activeCharacter.grantedKnightAbility?.abilityName ?? "None"}.";
+        }
+
+        if (KnightingService.IsReadyForKnighting(activeCharacter))
+        {
+            return "Five deeds reached. Roll a Seer result or choose a knight directly.";
+        }
+
+        return $"Needs {Mathf.Max(0, 5 - activeCharacter.deedCount)} more deed(s) before knighting.";
+    }
+
+    private EquipmentInstance FindActiveBackpack()
+    {
+        if (activeCharacter == null)
+        {
+            return null;
+        }
+
+        return activeCharacter.inventory.FirstOrDefault(item => item?.equipment != null && item.equipment.containerKind == EquipmentContainerKind.Backpack);
+    }
+
+    private EquipmentInstance ResolvePayloadItem(PartyWorkbenchDragController.DragPayload payload)
+    {
+        if (payload == null)
+        {
+            return null;
+        }
+
+        if (payload.IsCatalogItem)
+        {
+            var instance = new EquipmentInstance { equipment = payload.catalogEquipment };
+            instance.EnsureInstance();
+            return instance;
+        }
+
+        return payload.itemInstance;
+    }
+
+    private bool ClearPayloadSource(PartyWorkbenchDragController.DragPayload payload)
+    {
+        if (payload == null)
+        {
+            return false;
+        }
+
+        if (payload.IsCatalogItem)
+        {
+            return true;
+        }
+
+        if (payload.IsStoredItem)
+        {
+            return campaignData.campaignInventory.TryRemove(payload.itemInstance);
+        }
+
+        if (payload.IsCharacterSlotItem)
+        {
+            if (payload.sourceGrid.character.inventory[payload.sourceSlotIndex] != payload.itemInstance)
+            {
+                return false;
+            }
+
+            payload.sourceGrid.character.inventory[payload.sourceSlotIndex] = null;
+            return true;
+        }
+
+        if (payload.IsBackpackSlotItem)
+        {
+            ClearContainerOccupancy(payload.sourceContainer.containedItems, payload.itemInstance);
+            return true;
+        }
+
+        if (payload.IsSteedSlotItem)
+        {
+            ClearContainerOccupancy(payload.sourceSteed.storage, payload.itemInstance);
+            return true;
+        }
+
+        return false;
+    }
+
+    private void RestorePayloadSource(PartyWorkbenchDragController.DragPayload payload, EquipmentInstance item)
+    {
+        if (payload == null || item == null)
+        {
+            return;
+        }
+
+        if (payload.IsStoredItem)
+        {
+            campaignData.campaignInventory.TryAdd(item);
+            return;
+        }
+
+        if (payload.IsCharacterSlotItem)
+        {
+            payload.sourceGrid.character.inventory[payload.sourceSlotIndex] = item;
+            return;
+        }
+
+        if (payload.IsBackpackSlotItem)
+        {
+            InventoryOwnershipRules.TryAddToContainer(payload.sourceContainer, item);
+            return;
+        }
+
+        if (payload.IsSteedSlotItem)
+        {
+            InventoryOwnershipRules.TryAddToSteed(payload.sourceSteed, item);
+        }
+    }
+
+    private static void ClearContainerOccupancy(List<EquipmentInstance> slots, EquipmentInstance item)
+    {
+        if (slots == null || item == null)
+        {
+            return;
+        }
+
+        for (var index = 0; index < slots.Count; index++)
+        {
+            if (slots[index] != null && slots[index].instanceId == item.instanceId)
+            {
+                slots[index] = null;
+            }
+        }
     }
 
     private void PersistState(params Object[] objectsToPersist)

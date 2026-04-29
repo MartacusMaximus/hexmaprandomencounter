@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_73
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 73
+  mythName: Myth 73
+  omens:
+  - '1. An ancient fountain, smashed to pieces,
+
+    tended to by a lone Dwarf. He
+    uses his
+
+    hammer to gently piece the stone back
+
+    together. Claims to
+    be in the service of the
+
+    ruler of the Realm, happy to work again.'
+  - '2. Voices from within a shadowy grove.
+
+    Mercenaries, arms freshly forged
+    by the
+
+    Dwarf, discussing where to find work.'
+  - '3. A sudden, broad tunnel entrance. The
+
+    Dwarf leads reluctant labourers
+    in
+
+    digging out a passage to a distant Realm.
+
+    He doesn''t care where.
+    The earth itself
+
+    appears to bleed in the ground around the
+
+    tunnel.
+    The Dwarf seems undeterred.'
+  - '4. Suddenly rising from the ground, three
+
+    great giants of vengeful earth
+    lash out at
+
+    any people they can find.'
+  - '5. Band of traders, labourers, and thieves
+
+    from a distant Realm. Claim
+    they arrived
+
+    through the tunnel, looking for a home.'
+  - '6. The earth writhes and convulses. The
+
+    ground opens up to claim the nearest
+
+    Holding,
+    swallowing it into the distant
+
+    Realm at the end of the tunnel.'
+  verse: 
+  castEntries:
+  - name: The Dwarf, Drod of the First Forge
+    statBlock: 'VIG 15, CLA 15, SPI 12, 7 GD
+
+      A2 (mail, bronze plate)'
+    notes: 'Creator hammer (3d10 slow, cannot kill)
+
+      Driven by a creative urge,
+      feels nothing else.'
+  - name: Newly Armed Mercenaries, Warband
+    statBlock: 'VIG 12, CLA 10, SPI 10, 5 GD
+
+      A3 (mail, bronze plate, helm)'
+    notes: 'Forged arms (see below)
+
+      Both armour and weapons can be controlled
+
+      by
+      the wielder of the creator hammer.'
+  - name: Giants of Vengeful Earth
+    statBlock: 'VIG 17, CLA 4, SPI 3, 7 GD
+
+      A3 (rock and soil body)'
+    notes: 'Swipes (d10) or huge smash (2d10 slow)
+
+      Fights until they feel
+      humanity has suffered.
+
+      Fore first story, fore first seer, the time that
+      came fore time
+
+      One smith, one hammer, rock then hill, then world in
+      craft divine
+
+      FORGED ARMS
+
+      Material Type
+
+      1 Eternal bone
+      Blade (d6)
+
+      2 Golden willow Spear (d8 hefty)
+
+      3 Blood bronze Hammer
+      (d8 hefty)
+
+      4 Night flint Bardiche (d10 long)
+
+      5 Meteor iron Maul
+      (2d10 slow)
+
+      6 Deep amber Greatbow (d10 slow)
+
+      Dwarf
+
+      Dwelling:
+      Humble fort ~ Sanctum: Bracing winds ~ Monument: Seer''s skull
+
+      Hazard:
+      Mud slopes ~ Curse: Desolate moor ~ Ruin: Bloodied altar
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Humble fort
+  sanctum: Bracing winds
+  monument: Seer's skull
+  hazard: Mud slopes
+  curse: Desolate moor
+  ruin: Bloodied altar
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

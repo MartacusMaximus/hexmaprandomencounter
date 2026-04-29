@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Moat_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 82
+  knightName: Moat Knight
+  titleVerse: 'There they stood, awashed in soddled loam
+
+    A grottling dance,
+    the dusky sky agloam'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: c9d5cd238308e4c68bea27bcc951bdaf, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 67d2f6fb9b85c47bf975c60fe133df93, type: 2}
+  steed: {fileID: 11400000, guid: eefa8af4a1c95404fbe6acd2c44f3004, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 53408b02039714c28b29f266ac71f776, type: 2}
+  - {fileID: 11400000, guid: 89bfb35e165284592b74764096bda5c5, type: 2}
+  - {fileID: 11400000, guid: 29c13e6256c4947259b4a4b9b8b279da, type: 2}
+  - {fileID: 11400000, guid: bbe570dcdbbec4b29b76f54f0e80e328, type: 2}
+  - {fileID: 11400000, guid: d6539b7d5234f4fac88fcea7085eeec0, type: 2}
+  - {fileID: 11400000, guid: e8fd83127f32645f390cbd58aef51c7a, type: 2}
+  - {fileID: 11400000, guid: 19b1b11f473af464b96b38bc9bad2621, type: 2}
+  - {fileID: 11400000, guid: cc0d7f9a7eddb403892dbff0ea4bb6ec, type: 2}
+  - {fileID: 11400000, guid: 3d29e7dae41364a348dfa0c539e10ab4, type: 2}
+  randomFlavorTableTitle: AN ESPECIALLY DIFFICULT STEED
+  randomFlavorTableRows:
+  - 1 Jump Eats anything
+  - 2 Stop suddenly Is beautiful
+  - '3 Carry anybody but
+
+    their Knight
+
+    Always hears an
+
+    ambush coming'
+  - '4 Follow instructions
+
+    unless being ridden
+
+    Always knows which
+
+    way
+    is north'
+  - 5 Pull a cart Hums tunefully
+  - "6 Travel in darkness Is very tough (A1)\nKNIGHTED BY...\nThe Brazen Seer\nVIG
+    10, CLA 3, SPI 10, 1 GD\nA2 (bronze plates)\n\u2022 A burning soul, welded into
+    a hollow\nbronze statue of himself, mounted above\na blazing fire pit.\n\u2022
+    Sees any moments of great pain, in the\npast or the probable future.\n\u2022
+    Wants others to suffer pain, as he has."
+  personHook: Hot-tempered baker
+  objectHook: Shadow lens
+  beastHook: Two-tailed eel
+  stateHook: Lost
+  themeHook: 'Battle
+
+    3
+
+    4
+
+    The'

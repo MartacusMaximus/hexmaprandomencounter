@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_49
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 49
+  mythName: Myth 49
+  omens:
+  - '1. A huge stone archway, former temple.
+
+    Stars flicker in the shadows. White
+
+    ravens
+    caw from the trees. An opening
+
+    appears in the arch, dark but light at
+
+    once.
+    Then all is normal again.'
+  - '2. Lost Knight from a distant place. She
+
+    claims to have fallen through
+    a shadow. A
+
+    Shrouded Guide follows, seeking the toll.'
+  - '3. Narrow, twisted cave. Clanging within. A
+
+    shrouded smith is forging a
+    coldsword
+
+    (2d8 hefty, ignores metal armour). It
+
+    shatters if unsheathed
+    in daylight.'
+  - '4. Heavy black cloth woven with indigo. If
+
+    hung, opens to a place you want
+    to be.
+
+    Within, a dozen hands in the darkness
+
+    require a toll of silver
+    or blood. They will
+
+    take either by force if needed.'
+  - '5. Broad, lilac-leaved trees. No artificial
+
+    light can shine beneath. Five
+    Shrouded
+
+    Guides seeking to claim an owed toll.'
+  - '6. A creeping darkness, then suddenly
+
+    within the Underworld. A dark reflection
+
+    of
+    our world. Without a Shrouded Guide
+
+    the only exit is into a distant Realm.'
+  verse: 
+  castEntries:
+  - name: Shrouded Guides, Hooded Ones
+    statBlock: 'VIG 5, CLA 18, SPI 15, 4 GD
+
+      Coldsword (2d6 hefty, ignores
+      metal'
+    notes: 'armour), pale lantern (2d8 blast if thrown)
+
+      If slain, two more
+      emerge from the dark.'
+  - name: Grasping Hands from the Dark
+    statBlock: 'VIG 10, CLA 10, SPI 2, 1 GD
+
+      Cold grasp (d6, on a Wound lose
+      d8 SPI)'
+    notes: 
+  - name: Lost Knight, Valenta
+    statBlock: 'VIG 13, CLA 10, SPI 10, 5 GD
+
+      A3 (mail, helm, shield)'
+    notes: 'Jagged sword (2d8 hefty), shield (d4), locket
+
+      A place beneath
+      our living world, but neither grave nor tomb
+
+      A different path to places
+      far, for those who brave the gloom
+
+      A VOICE IN THE DARKNESS
+
+      Origin
+      Purpose
+
+      1 Whispering from
+
+      violet fungi
+
+      Scare them back
+      to the
+
+      surface
+
+      2 Singing from
+
+      drifting lights Lure them
+      deeper
+
+      3 Murmuring from
+
+      mirrored pools
+
+      Show them things
+
+      they
+      cannot take home
+
+      4 Taunting from
+
+      deep shadows Provide a little
+      comfort
+
+      5 Beckoning from
+
+      distant dark Wear them down
+
+      6
+      Chattering in the cold Sow discontent
+
+      Underworld
+
+      Dwelling: Artisan
+      brewery ~ Sanctum: Solitude peak ~ Monument: Sword carving
+
+      Hazard: Toxic
+      air ~ Curse: Ghostly shadows ~ Ruin: Broken fort
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Artisan brewery
+  sanctum: Solitude peak
+  monument: Sword carving
+  hazard: Toxic air
+  curse: Ghostly shadows
+  ruin: Broken fort
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

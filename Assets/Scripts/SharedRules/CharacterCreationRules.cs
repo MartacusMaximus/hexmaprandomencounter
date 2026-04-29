@@ -73,7 +73,7 @@ namespace KnightsAndGM.Shared
             for (var index = 0; index < character.Inventory.Count; index++)
             {
                 var equipment = character.Inventory[index].Equipment;
-                if (equipment == null)
+                if (equipment == null || !equipment.ContributesToEquippedBonuses)
                 {
                     continue;
                 }
@@ -129,7 +129,7 @@ namespace KnightsAndGM.Shared
             foreach (var slot in character.Inventory)
             {
                 var equipment = slot.Equipment;
-                if (equipment == null || !equipment.IsArmor)
+                if (equipment == null || !equipment.IsArmor || !equipment.ContributesToEquippedBonuses)
                 {
                     continue;
                 }
@@ -152,7 +152,7 @@ namespace KnightsAndGM.Shared
         public static IEnumerable<PortableEquipmentModel> GetActiveWeapons(CharacterSheetModel character)
         {
             return character.Inventory
-                .Where(slot => slot.Equipment != null && slot.Equipment.IsWeapon)
+                .Where(slot => slot.Equipment != null && slot.Equipment.IsWeapon && slot.Equipment.ContributesToEquippedBonuses)
                 .Select(slot => slot.Equipment);
         }
     }

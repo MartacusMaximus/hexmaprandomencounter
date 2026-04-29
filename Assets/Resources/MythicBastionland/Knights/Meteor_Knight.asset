@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Meteor_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 106
+  knightName: Meteor Knight
+  titleVerse: 'A star of truth, fell from ahigh
+
+    Such lumous ones should wear
+    no lie'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 7c7a7b245a5b44669bef3fef04331bdf, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 2060f0c9b38734ef2bab85da4135b56c, type: 2}
+  steed: {fileID: 11400000, guid: 81bb12bc398644c4488b2bd30ce2bffc, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 60c17cdc44dfc437484ce7a11742eabf, type: 2}
+  - {fileID: 11400000, guid: f88455cfcc6c54df885145ebe8fecc95, type: 2}
+  - {fileID: 11400000, guid: c2f160d5fd0c049d4b4991994219c11c, type: 2}
+  - {fileID: 11400000, guid: 17d4456f5c1914566b0cbe3e31bd52d9, type: 2}
+  - {fileID: 11400000, guid: b98d57be02ae543b4873e3c34706bb92, type: 2}
+  - {fileID: 11400000, guid: f030c76f8ea874581b7185fcb0922de5, type: 2}
+  - {fileID: 11400000, guid: 8a9229f11b9134affbdb46e5673f720d, type: 2}
+  - {fileID: 11400000, guid: 20e29ac5698574a8f9d99ad9cfefc9e2, type: 2}
+  - {fileID: 11400000, guid: 43de2ee6027ac4d72b715cee90977647, type: 2}
+  randomFlavorTableTitle: AN ELABORATE TRIDENT
+  randomFlavorTableRows:
+  - 1 Silver rings Can be thrown (d6)
+  - '2 Blackened iron Can be recalled to your
+
+    hand when in sight'
+  - 3 Two-headed +d8 vs aquatic beings
+  - 4 Faint golden glow +d8 vs flying beings
+  - 5 Five prongs Points to fresh water
+  - "6 Telescopic shaft Utterly unbreakable\nKNIGHTED BY...\nThe Moonlit Seer\nVIG
+    5, CLA 16, SPI 15, 5 GD\n\u2022 A glow of loosely human shape, knows\neverything
+    that moonlight has touched.\n\u2022 Only exists under moonlight, strongest\nand
+    most lucid under a full moon.\n\u2022 Wants everything to happen at precisely\nthe
+    correct time, and nothing significant\nto happen outside of the moon's sight."
+  personHook: Ambitious parent
+  objectHook: Shame gem
+  beastHook: Overgrown hawk
+  stateHook: Tearing
+  themeHook: 'Insects
+
+    4
+
+    4
+
+    The'

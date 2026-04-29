@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Aqueous_Repulsion
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Aqueous Repulsion
+  description: "You can forcefully repel liquids with an\noutstretched hand, enough
+    to hold a river at\nbay for a while.\nPASSION - Entitlement\nRestore SPI when
+    you get something that you\nwere denied.\nLust and loathing, ire and desire\nIn
+    truth as one, a frosted fire\nDust Knight\nPRESERVED FISH\nFlavour Side Effect\n1
+    Salty Numbs taste and smell\n2 Picante Very filling\n3 Sour Addictive\n4 Challenging
+    VIG Save or vomit\n5 Soapy CLA Save or go blind for\na moment\n6 Smoky SPI Save
+    or weep with\nintense sorrow\nKNIGHTED BY...\nThe Purged Seer\nDoes not exist.\n\u2022
+    A dark, cold void where once a Seer was.\n\u2022 Stepping into the void shows
+    futures that\ncannot exist based on the present state of\nthe Realm.\n\u2022
+    The void has no agenda, but mostly shows\nvisions helpful to Knights.\nPerson:
+    Armoured miner ~ Name: Branc ~ Characteristic: Hypochondriac\nObject: Ivory mask
+    ~ Beast: Moss ostrich ~ State: Rescuing ~ Theme: Craft\n6\n9\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

@@ -1,0 +1,234 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: A_life_that_should_not_be
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 125
+  mythName: A life that should not be
+  omens:
+  - '1. An elderly sculpter toils away, carving a
+
+    great statue into a cliff
+    face. He boasts
+
+    that the statue is based on him in his
+
+    youthful prime.
+    He knows he is dying and
+
+    longs for immortality.'
+  - '2. Across the Realm the earth shakes and
+
+    rumbles as the Colossus awakes.'
+  - '3. A crushed stone house, petty belongings
+
+    scattered across the nearby
+    field. Looks as
+
+    if it was bombarded with stones.'
+  - '4. The Hammer Knight rides, declaring they
+
+    are seeking the Colossus, who
+    has been
+
+    terrorising the area.'
+  - '5. Two warbands of a mercenary company
+
+    fight the Colossus, gradually realising
+
+    they''re
+    unable to harm its stone body.'
+  - '6. In the distance, the Colossus is leaning
+
+    against a mountainside. With
+    a groan
+
+    they collapse into a heap, their form
+
+    merging with that of
+    the mountain. After
+
+    a few moments the new rock is covered in
+
+    red and
+    green moss.'
+  verse: 'Omens
+
+    1. An elderly sculpter toils away, carving a
+
+    great statue
+    into a cliff face. He boasts
+
+    that the statue is based on him in his
+
+    youthful
+    prime. He knows he is dying and
+
+    longs for immortality.
+
+    2. Across the
+    Realm the earth shakes and
+
+    rumbles as the Colossus awakes.
+
+    3. A crushed
+    stone house, petty belongings
+
+    scattered across the nearby field. Looks as
+
+    if
+    it was bombarded with stones.
+
+    4. The Hammer Knight rides, declaring they
+
+    are
+    seeking the Colossus, who has been
+
+    terrorising the area.
+
+    5. Two warbands
+    of a mercenary company
+
+    fight the Colossus, gradually realising
+
+    they''re
+    unable to harm its stone body.
+
+    6. In the distance, the Colossus is leaning
+
+    against
+    a mountainside. With a groan
+
+    they collapse into a heap, their form
+
+    merging
+    with that of the mountain. After
+
+    a few moments the new rock is covered in
+
+    red
+    and green moss.
+
+    Cast
+
+    The Colossus, Woken from the Rock
+
+    VIG 19,
+    CLA 3, SPI 2, 6 GD
+
+    A4, count as a structure (colossal stone body)
+
+    Crush
+    (2d12) or sweep (d12 blast)
+
+    Driven by strange behaviour (see below).
+
+    The
+    Hammer Knight, Lansheigh
+
+    VIG 14, CLA 5, SPI 6, 7 GD
+
+    A3 (helm, gambeson,
+    spiked plate)
+
+    Maul (2d10 slow), siege bombs (d8 blast)
+
+    Sworn to never
+    ask or answer a question.
+
+    Besieger Mercenary Company Member
+
+    VIG 13,
+    CLA 7, SPI 7, 5 GD
+
+    A3 (siegehelm, blackened mail, towershield)
+
+    Blade
+    (2d6 hefty), towershield (d4)
+
+    A legacy hewn in living rock'
+  castEntries:
+  - name: The Colossus, Woken from the Rock
+    statBlock: 'VIG 19, CLA 3, SPI 2, 6 GD
+
+      A4, count as a structure (colossal
+      stone body)'
+    notes: 'Crush (2d12) or sweep (d12 blast)
+
+      Driven by strange behaviour
+      (see below).'
+  - name: The Hammer Knight, Lansheigh
+    statBlock: 'VIG 14, CLA 5, SPI 6, 7 GD
+
+      A3 (helm, gambeson, spiked plate)'
+    notes: 'Maul (2d10 slow), siege bombs (d8 blast)
+
+      Sworn to never ask or
+      answer a question.'
+  - name: Besieger Mercenary Company Member
+    statBlock: 'VIG 13, CLA 7, SPI 7, 5 GD
+
+      A3 (siegehelm, blackened mail,
+      towershield)'
+    notes: 'Blade (2d6 hefty), towershield (d4)
+
+      A legacy hewn in living rock
+
+      A
+      life that should not be
+
+      STRANGE BEHAVIOUR
+
+      Loves Hates
+
+      1
+      Fire Darkness
+
+      2 Water Rain
+
+      3 Beasts Birds
+
+      4 Flowers Trees
+
+      5
+      Weapons Armour
+
+      6 One of the Knights One of the Knights
+
+      Colossus
+
+      Dwelling:
+      Scribe''s shelter ~ Sanctum: Haven of roots ~ Monument: Carved monolith
+
+      Hazard:
+      Needle grass ~ Curse: Tablet of falsehoods ~ Ruin: Faded library
+
+      Th'
+  flavorTable:
+    title: STRANGE BEHAVIOUR
+    rows:
+    - 1 Fire Darkness
+    - 2 Water Rain
+    - 3 Beasts Birds
+    - 4 Flowers Trees
+    - 5 Weapons Armour
+    - '6 One of the Knights One of the Knights
+
+      Colossus'
+  dwelling: Scribe's shelter
+  sanctum: Haven of roots
+  monument: Carved monolith
+  hazard: Needle grass
+  curse: Tablet of falsehoods
+  ruin: Faded library
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Mule_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 110
+  knightName: Mule Knight
+  titleVerse: 'A humble beast, no roar or flight
+
+    Beneath the grey a show of
+    might'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 4cef58e7593904c16b78f1e45eafc675, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 53959662033634334a81526096b4d168, type: 2}
+  steed: {fileID: 11400000, guid: 2ab2ec10c95bb45129658a93c4b45920, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 965ebb92a5da74266b8f236ac54e3bad, type: 2}
+  - {fileID: 11400000, guid: 0acbf1dfc82dc41618059ade5158738c, type: 2}
+  - {fileID: 11400000, guid: 341aa9440865045b69c90c33947dc65d, type: 2}
+  - {fileID: 11400000, guid: 733d61c697c88472abd4d02a6c02dde5, type: 2}
+  - {fileID: 11400000, guid: 177e08bb3a9c846f29aa2db29b5ba26c, type: 2}
+  - {fileID: 11400000, guid: 18d86072d97c9400ca235234b5ca91b2, type: 2}
+  - {fileID: 11400000, guid: 3a794ea8824844cbba09e3434474af2a, type: 2}
+  randomFlavorTableTitle: EXPLOSIVES
+  randomFlavorTableRows:
+  - 1 Ashen pinecone Water
+  - 2 Vial of red dust Fire
+  - 3 Bottle of white oil A command word
+  - 4 Hellfire chestnut Touch of skin
+  - '5 Preserved drake
+
+    gizzard Light'
+  - "6 Firebird egg Touching ground\nKNIGHTED BY...\nThe Green Seer\nVIG 10, CLA
+    14, SPI 13, 6 GD\n\u2022 A pulsing emerald heart in a cloud of\nbright spores
+    and grasping tendrils.\n\u2022 Hears every envious thought in the\nRealm.\n\u2022
+    Wants everybody to get the thing that\nthey are envious for."
+  personHook: Aristocratic farrier
+  objectHook: Secret key
+  beastHook: Witchy goat
+  stateHook: Envious
+  themeHook: 'Sharpness
+
+    4
+
+    6
+
+    The'

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Mock_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 122
+  knightName: Mock Knight
+  titleVerse: 'Sycamore, leather, felt and strings
+
+    In heartless chest a soul
+    still sings'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 1500fd55d340a4d65bf8c23663be8a22, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 34d3eff5f2de8409e8016c9acd62c4ac, type: 2}
+  steed: {fileID: 11400000, guid: 54fa87a3f799e49d28d670376245d428, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 262e5d35d804243e78cab3763bfbe644, type: 2}
+  - {fileID: 11400000, guid: 6a3989d1fd2724a3e8e2c3de176d7a9f, type: 2}
+  - {fileID: 11400000, guid: 70e12d4eed31c424fa57d18eda3be970, type: 2}
+  - {fileID: 11400000, guid: fe22e71ea657348338ed7dbee3de33f6, type: 2}
+  - {fileID: 11400000, guid: 15e44dbc3423141dab7d9c97e281d66c, type: 2}
+  - {fileID: 11400000, guid: 37c6cce8ee1314dabb714a1f9bc48422, type: 2}
+  - {fileID: 11400000, guid: c9bc95ca54dac42638dcc1a1dd1d8124, type: 2}
+  - {fileID: 11400000, guid: 4a5593779b28b42a5baa9744449f7c6f, type: 2}
+  - {fileID: 11400000, guid: 0c79bfd073c114d5c965588fe6ea6b3a, type: 2}
+  - {fileID: 11400000, guid: 86aa2f49c9d4940ce9373b4cb6238abe, type: 2}
+  - {fileID: 11400000, guid: 9122b6be4d8224f61b4b7ebc86181423, type: 2}
+  - {fileID: 11400000, guid: b975e9a796e9041dba0ef1eba5ca2727, type: 2}
+  randomFlavorTableTitle: UNNATURAL BODY
+  randomFlavorTableRows:
+  - 1 Ivory Leather
+  - 2 Bronze Felt
+  - 3 Sapling branches Silk
+  - 4 String Wool
+  - 5 Wooden rods Parchment
+  - "6 Iron chain Clay\nKNIGHTED BY...\nThe Chance Seer\nVIG 10, CLA 10, SPI 6, 3
+    GD\n\u2022 Cloaked in constantly rotating scales,\neach showing a new colour.\n\u2022
+    Only sees the uncertain futures, blind to\nthat which is locked in certainty.\n\u2022
+    Has no agenda of their own, having given\nthemselves fully to the forces of fate."
+  personHook: Confused fool
+  objectHook: Silver furs
+  beastHook: Spotted wasp
+  stateHook: Patrolling
+  themeHook: 'Leaves
+
+    4
+
+    12
+
+    The'

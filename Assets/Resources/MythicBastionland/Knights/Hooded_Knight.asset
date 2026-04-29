@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Hooded_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 90
+  knightName: Hooded Knight
+  titleVerse: 'As deeds abound in history''s script
+
+    More slip from time'' s
+    forgetful grip'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 66baee3d1b3364e76a1bbccca720b0e1, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 5f75adec19a8242c4947c0d86d26f189, type: 2}
+  steed: {fileID: 11400000, guid: 2dbabadd2931c41ceb2c829d257062b1, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: db9e8953c43a74a1db031fe2a0423e3e, type: 2}
+  - {fileID: 11400000, guid: f900cbf6e86f54ca995c2ab39ac2dbe0, type: 2}
+  - {fileID: 11400000, guid: 9cb6672ad661544de9675b068d5b454a, type: 2}
+  - {fileID: 11400000, guid: e8fb5754794914565ad22e32b1785994, type: 2}
+  - {fileID: 11400000, guid: cf3162c73cf55411a91879263ae44ab9, type: 2}
+  - {fileID: 11400000, guid: 1fbab1abeda12412d905da45efcf7ab3, type: 2}
+  - {fileID: 11400000, guid: 54f193de003c6494fa90559066eff8bd, type: 2}
+  - {fileID: 11400000, guid: 3560d6d76aa234f1eba46d9f652e4f02, type: 2}
+  - {fileID: 11400000, guid: 49304225169dc4120b7fc6cc7277cc72, type: 2}
+  - {fileID: 11400000, guid: cbb06251b346147079ad1f76813539bb, type: 2}
+  - {fileID: 11400000, guid: 62c0a01f854ee42b4ba39bfe577ea88b, type: 2}
+  randomFlavorTableTitle: HOOD AND CLOAK
+  randomFlavorTableRows:
+  - 1 Veiled Velvet
+  - 2 Shadowy Torn
+  - 3 Silken Weathered
+  - 4 Tattered Layered
+  - 5 Fur-trimmed Embroidered
+  - "6 Threadbare Faded pattern\nKNIGHTED BY...\nThe Endless Seer\nVIG 13, CLA 16,
+    SPI 13, 3 GD\n\u2022 With each blink they appear as an\nentirely different person,
+    sometimes\nseveral, their voice a congregation.\n\u2022 They see through everybody's
+    eyes all at\nonce, hearing all their thoughts.\n\u2022 Wants to offer guidance
+    but is\noverwhelmed by so much vision."
+  personHook: Sneaky cobbler
+  objectHook: Fox pipe
+  beastHook: Milk finch
+  stateHook: Empowered
+  themeHook: 'Breaking
+
+    3
+
+    8
+
+    The'

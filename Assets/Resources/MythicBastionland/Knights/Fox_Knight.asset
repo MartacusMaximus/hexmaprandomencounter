@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Fox_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 136
+  knightName: Fox Knight
+  titleVerse: 'A whimsied whirl, a crafty guise
+
+    The truth revealed as sour surprise'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 685f56e0530b54b8daf2413a0b26011a, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 0a90f2a35935346b2bfc2dd8b308f8aa, type: 2}
+  steed: {fileID: 11400000, guid: fa201e06cdc864578b470afae8a4f3eb, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: a13402bf0bfd146f59aece2531002eab, type: 2}
+  - {fileID: 11400000, guid: dc6941a104d6e45e289a8426d09b2c9e, type: 2}
+  - {fileID: 11400000, guid: bdeb786aa924745ac961abee99f337a0, type: 2}
+  - {fileID: 11400000, guid: 1b45d89098b3b4de79c137291b992ae4, type: 2}
+  - {fileID: 11400000, guid: 80a9d0031cbf74298b750c6d9f894158, type: 2}
+  - {fileID: 11400000, guid: 642683d2e6f3148e3a098897815dc48b, type: 2}
+  - {fileID: 11400000, guid: 900378b74323e4114b6a4f0ce447e901, type: 2}
+  - {fileID: 11400000, guid: 97c559771bf794fc0afdaae1b2ef0f78, type: 2}
+  - {fileID: 11400000, guid: f790507c2727347e198a6e9f8d42bca8, type: 2}
+  - {fileID: 11400000, guid: 23a72cf13ff284588861b56ce864f57d, type: 2}
+  - {fileID: 11400000, guid: a86903b48d0674836ba9b4cad7e8e450, type: 2}
+  - {fileID: 11400000, guid: 58ee09d2dd5b446bc9eb9c4a9d599993, type: 2}
+  - {fileID: 11400000, guid: 9bd6fa27575b842c79e6bc224bce9519, type: 2}
+  randomFlavorTableTitle: A HIDDEN BLADE
+  randomFlavorTableRows:
+  - '1 Twisted ebony handle Hidden within your
+
+    shadow'
+  - '2 Feather motif Can be thrown any
+
+    distance'
+  - '3 Tapered slicer +2d10 vs somebody
+
+    who trusts you'
+  - 4 Fang-like dagger Appears as a twig
+  - 5 Long wavy blade Splits into two blades
+  - "6 Etched bone Harmless to you\nKNIGHTED BY...\nThe Needle Seer\nVIG 8, CLA 14,
+    SPI 6, 4 GD\n\u2022 Tall and slender, festooned with blades.\n\u2022 Pulls open
+    small tears in reality, showing\nwhat could have been but is now\nimpossible.\n\u2022
+    Wants to make other people feel bad, but\ngrudgingly does their duty to the Realm."
+  personHook: Anxious bellringer
+  objectHook: Leathered bone
+  beastHook: Fat beetle
+  stateHook: Isolating
+  themeHook: 'Dreams
+
+    5
+
+    7
+
+    The'

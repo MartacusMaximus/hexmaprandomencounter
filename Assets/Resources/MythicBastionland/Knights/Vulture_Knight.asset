@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Vulture_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 144
+  knightName: Vulture Knight
+  titleVerse: 'Gutly ribbons, blood'' s sweet dance
+
+    The future calls in gory
+    trance'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: acdca959d794e4c0687932a2d7f0a0bc, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 140ee3ff668fe48e78bcbc56b7185d23, type: 2}
+  steed: {fileID: 11400000, guid: 9993c29fa5108460b9cff294f6fdcd83, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 2af9254a9ba7044f7b5a0c5a451b5d26, type: 2}
+  - {fileID: 11400000, guid: 8c45f22ebb946436a9af77871c2258af, type: 2}
+  - {fileID: 11400000, guid: 8e3975361e4f842c9a45d9f1cc6998ce, type: 2}
+  - {fileID: 11400000, guid: 5d6d041ccff1e432ead699bef5b25ce6, type: 2}
+  - {fileID: 11400000, guid: 08fe9097663b8421692b9f0f45cad955, type: 2}
+  - {fileID: 11400000, guid: 0fd062ce88e5e4e458ef358b4d23a5bb, type: 2}
+  - {fileID: 11400000, guid: 8286873769b8442ed83535a98a8602fe, type: 2}
+  - {fileID: 11400000, guid: 8db68cac95d3a49ea8d327388790e730, type: 2}
+  - {fileID: 11400000, guid: 7a5306f84bb6b400083c06c117fc09cd, type: 2}
+  - {fileID: 11400000, guid: 27fa6c4518ea14f2baf65e0fed7f47e4, type: 2}
+  randomFlavorTableTitle: SINISTER ARMOUR
+  randomFlavorTableRows:
+  - 1 Burned mail Bat wing motif
+  - 2 Blackened bronze Blood red embroidery
+  - 3 Bloody gambeson Shadow is darker
+  - 4 Jagged iron strips Tattered cloak
+  - 5 Spiked leather Embedded bones
+  - "6 Barbed scales Tiny skulls everywhere\nKNIGHTED BY...\nThe Hymn Seer\nVIG 7,
+    CLA 10, SPI 13, 5 GD\n\u2022 Little more than a skeleton draped in\nwhite robes,
+    moving suddenly and\nstopping completely still.\n\u2022 Guides visitors in dreary,
+    discordant\nsong, loose guidance hidden in the words.\n\u2022 Wants to bring
+    Myths to a rapid end so\nthat the whole world can be drawn to a\nsorrowful close."
+  personHook: Confident assassin
+  objectHook: Leaf sword
+  beastHook: Grim donkey
+  stateHook: Breaking
+  themeHook: 'Warmth
+
+    5
+
+    11
+
+    The'

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Tempering_Strike
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Tempering Strike
+  description: "When you cause a Wound with a melee\nweapon, that weapon receives
+    +d8 until the\nend of combat. This effect can stack.\nPASSION - Burning\nRestore
+    SPI when you are wounded by fire.\nGravid beats on ferrous slab, thick air a
+    crimson sheen\nEach mallenstroke leaves scars aworn, apparent and unseen\nForge
+    Knight\nSCARS FROM THE FORGE\nVisible Non-Visible\n1 Burnt hands Fiery nightmares\n2
+    Scorched hair Noise sensitivity\n3 Faded eyes Distrust of sky\n4 Missing teeth
+    High pain threshold\n5 Blistered face Light sensitivity\n6 Branded arm Fear of
+    water\nKNIGHTED BY...\nThe Worst Seer\nVIG 10, CLA 14, SPI 3, 5 GD\n\u2022 Long
+    face, hanging jaw, fat body draped\nin finery, tended on a high throne.\n\u2022
+    Sees the worst in everybody, and awful\nthings that could happen. Always knows\nwhat
+    to say to make somebody feel bad.\n\u2022 Secretly has noble intentions to protect\nthe
+    common people of the Realm.\nPerson: Clumsy messenger ~ Name: Turnbucke ~ Characteristic:
+    Greasy hair\nObject: Singing shell ~ Beast: Carrion stork ~ State: Aiding ~ Theme:
+    Regret\n3\n12\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

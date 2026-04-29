@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Emerald_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 58
+  knightName: Emerald Knight
+  titleVerse: 'A verdant cloak on sable steed
+
+    Neath nature'' s veil, yond sight
+    and heed'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 87373fc393a8343af93c70e1454f47d9, type: 2}
+  linkedSeer: {fileID: 11400000, guid: b7adb965d326a4684bdfa16e84f3ac5b, type: 2}
+  steed: {fileID: 11400000, guid: cb9c29294e3f249b1a20829674deddc5, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 4b9010ff4f4ea4155a2647ed59c2891b, type: 2}
+  - {fileID: 11400000, guid: 7725a03857611437f89e485122e7b701, type: 2}
+  - {fileID: 11400000, guid: d84016d3ade0f43aab240ab3613d26ca, type: 2}
+  - {fileID: 11400000, guid: e11c73ade758e47bea71855c9d4656ee, type: 2}
+  - {fileID: 11400000, guid: 956c848f33c9a4f15a18bc5088db58d3, type: 2}
+  - {fileID: 11400000, guid: 908af8af7cfc04d6bbcf14ad7a4ad3e0, type: 2}
+  randomFlavorTableTitle: HIDDEN ACTION
+  randomFlavorTableRows:
+  - '1 Strike a wounded
+
+    enemy Vision (detail)'
+  - 2 Make animal calls Vision (distance)
+  - 3 Throw stones Hearing
+  - '4 Grab a non-alert
+
+    enemy Smell'
+  - 5 Move slowly Weather prediction
+  - "6 Whisper to allies Emotional insight\nKNIGHTED BY...\nThe Unnamed Seer\nVIG
+    10, CLA 10, SPI 5, 2 GD\n\u2022 Toad-like being covered in shifting tattoos\nthat
+    foretell the future course of Myths.\nOnly the Seer can read them.\n\u2022 Clear
+    glass eyes, but they see well.\n\u2022 Longs to know more about their identity\nbefore
+    they became the Unnamed Seer."
+  personHook: Cheery stablehand
+  objectHook: Lightning wine
+  beastHook: Graveyard horse
+  stateHook: Sick
+  themeHook: 'Fear
+
+    2
+
+    4
+
+    The'

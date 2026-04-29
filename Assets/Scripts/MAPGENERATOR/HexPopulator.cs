@@ -10,7 +10,22 @@ public class HexPopulator : MonoBehaviour
         public GameObject landmarkPrefab;
     }
 
+    [System.Serializable]
+    public struct TravelAssignment
+    {
+        public int q;
+        public int r;
+        public bool isHolding;
+        public bool hasIndoorShelter;
+        public bool hasProperRoad;
+        public bool hasBoatRoute;
+        public bool winterExposed;
+        public bool direWeatherRegion;
+        public HexCell.TravelBarrierMask blockedExits;
+    }
+
     public LandmarkAssignment[] assignments;
+    public TravelAssignment[] travelAssignments;
 
     public void PopulateLandmarks()
     {
@@ -30,6 +45,24 @@ public class HexPopulator : MonoBehaviour
                 cell.landmarkInstance = Instantiate(a.landmarkPrefab, go.transform);
                 cell.landmarkInstance.transform.localPosition = Vector3.zero;
             }
+        }
+
+        foreach (var assignment in travelAssignments)
+        {
+            string name = $"{assignment.q},{assignment.r}";
+            var go = GameObject.Find(name);
+            if (go == null) { continue; }
+
+            var cell = go.GetComponent<HexCell>();
+            if (cell == null) { continue; }
+
+            cell.isHolding = assignment.isHolding;
+            cell.hasIndoorShelter = assignment.hasIndoorShelter;
+            cell.hasProperRoad = assignment.hasProperRoad;
+            cell.hasBoatRoute = assignment.hasBoatRoute;
+            cell.winterExposed = assignment.winterExposed;
+            cell.direWeatherRegion = assignment.direWeatherRegion;
+            cell.blockedExits = assignment.blockedExits;
         }
     }
 }

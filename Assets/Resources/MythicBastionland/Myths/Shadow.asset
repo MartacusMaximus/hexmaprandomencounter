@@ -1,0 +1,252 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Shadow
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 33
+  mythName: Shadow
+  omens:
+  - '1. Huge flatstones marbled with moss.
+
+    Weeping winds. Tears from the skies,
+
+    trees,
+    some forming on your cheek.'
+  - '2. Ornate well, now stagnant. Sorrowful
+
+    Knight, inconsolable, lashing at
+    anyone
+
+    who doesn''t give him sympathy.'
+  - '3. Idealistic young alchemist collecting
+
+    wind-tears found in the weeping
+    winds.
+
+    Tries to invoke sadness in all he meets.'
+  - '4. A strange nasal-toned flute, left with
+
+    scraps of cloth. Playing stimulates
+    sudden
+
+    grief. Lose d6 SPI, dream of the Shadow.'
+  - '5. The Shadow, still, by a drowning-lake.
+
+    They torment trespassers with
+    visions of
+
+    past sorrows. The water whispers,
+
+    answering one question
+    on behalf of the
+
+    dead each day. At morning, a herd of grey
+
+    deer visit
+    the lake to show their respects.'
+  - '6. The Company find themselves in the
+
+    Shadow''s world. Islands in the mist
+    of
+
+    time. The mourned past can be seen as
+
+    clear as the now. None can
+    die here, but
+
+    all who leave lose d12 SPI. The Shadows
+
+    are only appeased
+    by displays of grief.'
+  verse: 'Omens
+
+    1. Huge flatstones marbled with moss.
+
+    Weeping winds. Tears
+    from the skies,
+
+    trees, some forming on your cheek.
+
+    2. Ornate well,
+    now stagnant. Sorrowful
+
+    Knight, inconsolable, lashing at anyone
+
+    who
+    doesn''t give him sympathy.
+
+    3. Idealistic young alchemist collecting
+
+    wind-tears
+    found in the weeping winds.
+
+    Tries to invoke sadness in all he meets.
+
+    4.
+    A strange nasal-toned flute, left with
+
+    scraps of cloth. Playing stimulates
+    sudden
+
+    grief. Lose d6 SPI, dream of the Shadow.
+
+    5. The Shadow, still,
+    by a drowning-lake.
+
+    They torment trespassers with visions of
+
+    past sorrows.
+    The water whispers,
+
+    answering one question on behalf of the
+
+    dead each
+    day. At morning, a herd of grey
+
+    deer visit the lake to show their respects.
+
+    6.
+    The Company find themselves in the
+
+    Shadow''s world. Islands in the mist
+    of
+
+    time. The mourned past can be seen as
+
+    clear as the now. None can
+    die here, but
+
+    all who leave lose d12 SPI. The Shadows
+
+    are only appeased
+    by displays of grief.
+
+    Cast
+
+    Mourning Shadow, Vestige of Sorrow
+
+    VIG
+    3, CLA 15, SPI 17, 2 GD
+
+    Despair-of-flesh (d8 blast, wounds cause SPI
+
+    loss
+    in place of VIG)
+
+    Can only be harmed by weapons forged by a
+
+    creator
+    mourned by the wielder.
+
+    Repelled by earth from a burial mound, or
+
+    funerary
+    imagery. Destroyed if entombed.
+
+    Sorrowful Knight, Orwan
+
+    VIG 12, CLA
+    8, SPI 6, 2 GD
+
+    A3 (mail, greencloaked plate, helm)
+
+    Hooked greatsword
+    (2d10 long), oak necklace
+
+    Roaming Alchemist, Coalin
+
+    VIG 7, CLA 10,
+    SPI 11, 1 GD
+
+    Dagger (d6), alchemical tools
+
+    They wandered over here
+    and there, groan and grief their guide
+
+    Knowing in the strongest one a timid
+    child does hide'
+  castEntries:
+  - name: Mourning Shadow, Vestige of Sorrow
+    statBlock: 'VIG 3, CLA 15, SPI 17, 2 GD
+
+      Despair-of-flesh (d8 blast, wounds
+      cause SPI'
+    notes: 'loss in place of VIG)
+
+      Can only be harmed by weapons forged by
+      a
+
+      creator mourned by the wielder.
+
+      Repelled by earth from a burial
+      mound, or
+
+      funerary imagery. Destroyed if entombed.'
+  - name: Sorrowful Knight, Orwan
+    statBlock: 'VIG 12, CLA 8, SPI 6, 2 GD
+
+      A3 (mail, greencloaked plate, helm)'
+    notes: Hooked greatsword (2d10 long), oak necklace
+  - name: Roaming Alchemist, Coalin
+    statBlock: 'VIG 7, CLA 10, SPI 11, 1 GD
+
+      Dagger (d6), alchemical tools'
+    notes: 'They wandered over here and there, groan and grief their guide
+
+      Knowing
+      in the strongest one a timid child does hide
+
+      Shadow
+
+      MOURNFUL
+      FORMS
+
+      Shape Matter
+
+      1 Robed Glow
+
+      2 Skeletal Frost
+
+      3
+      Rotund Fire
+
+      4 Knightly Mist
+
+      5 Childish Shadow
+
+      6 Amorphous
+      Water
+
+      Dwelling: Traveller''s inn ~ Sanctum: Mirrored grotto ~ Monument:
+      Runic cairn
+
+      Hazard: Forgotten traps ~ Curse: Illusory paths ~ Ruin:
+      Skull heap
+
+      Th'
+  flavorTable:
+    title: MOURNFUL FORMS
+    rows:
+    - 1 Robed Glow
+    - 2 Skeletal Frost
+    - 3 Rotund Fire
+    - 4 Knightly Mist
+    - 5 Childish Shadow
+    - 6 Amorphous Water
+  dwelling: Traveller's inn
+  sanctum: Mirrored grotto
+  monument: Runic cairn
+  hazard: Forgotten traps
+  curse: Illusory paths
+  ruin: Skull heap
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

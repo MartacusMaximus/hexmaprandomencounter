@@ -78,6 +78,10 @@ namespace KnightsAndGM.Shared
         public PortableChunkColor TopHalf { get; set; }
         public PortableChunkColor BottomHalf { get; set; }
         public PortableChunkColor CenterChunk { get; set; }
+        public bool IsBondedProperty { get; set; }
+        public bool ContributesToEquippedBonuses { get; set; } = true;
+        public bool RequiresContainerStorage { get; set; }
+        public bool OccupiesFullContainer { get; set; }
     }
 
     public sealed class EquipmentSlotModel

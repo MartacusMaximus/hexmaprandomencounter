@@ -79,7 +79,11 @@ public static class CharacterRulesAdapter
             RightHalf = MapChunk(equipment.rightHalf),
             TopHalf = MapChunk(equipment.topHalf),
             BottomHalf = MapChunk(equipment.bottomHalf),
-            CenterChunk = MapChunk(equipment.centerChunk)
+            CenterChunk = MapChunk(equipment.centerChunk),
+            IsBondedProperty = equipment.isBondedProperty,
+            ContributesToEquippedBonuses = equipment.contributesToEquippedBonuses,
+            RequiresContainerStorage = equipment.RequiresContainerStorage,
+            OccupiesFullContainer = equipment.occupiesFullContainer
         };
     }
 

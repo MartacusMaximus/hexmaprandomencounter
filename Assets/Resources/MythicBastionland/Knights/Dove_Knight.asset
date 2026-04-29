@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Dove_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 74
+  knightName: Dove Knight
+  titleVerse: 'In serenous moon the best of us can rest in docile light
+
+    The
+    quietest bird in impure times must soar in grisly flight'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 51406ebfc96cd4ed7970af994e01a4fc, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 721052214b87a4bea9595d601e88690a, type: 2}
+  steed: {fileID: 11400000, guid: 02f3f2c03b0384b65ae5eee842fd6016, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 7bbe1be3596e042d0b5811699d52c8f2, type: 2}
+  - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
+  - {fileID: 11400000, guid: 266ea1635cbd94ea6b2b80e057d63f98, type: 2}
+  - {fileID: 11400000, guid: 5c7b40482924f4d2e9723ca704c428f8, type: 2}
+  - {fileID: 11400000, guid: 13d1007ae418446a48281d8dedccb1ec, type: 2}
+  - {fileID: 11400000, guid: 68fd44668a9e849d09a16b1df8cd969c, type: 2}
+  - {fileID: 11400000, guid: 5966c7a85f6764168b2e99279f69c50c, type: 2}
+  - {fileID: 11400000, guid: 754f991dd8ec94273a63276e548156e4, type: 2}
+  randomFlavorTableTitle: WINGED ARMOUR
+  randomFlavorTableRows:
+  - 1 Always land safely Sink like a stone
+  - 2 Jump twice as high Red glow when angry
+  - 3 Sprint silently Slow running speed
+  - '4 Animals won''t attack
+
+    you unprovoked
+
+    Horses other than your
+
+    own
+    are afraid of you'
+  - '5
+
+    Knights who strike the
+
+    first blow against you
+
+    lose d6 SPI
+
+    Lose
+    d6 SPI if you ever
+
+    strike the first blow to
+
+    a Knight'
+  - "6 Appear as real wings Only protects under\ndaylight\nKNIGHTED BY...\nThe Sunlit
+    Seer\nVIG 3, CLA 13, SPI 15, 2 GD\n\u2022 Fragile, burnt body shuddering in a
+    bed,\ntended by a lone herbalist.\n\u2022 When she is the nearest Seer she can\nappear
+    as a white face in the sun.\n\u2022 Wants to see her beloved Knights\ntriumph
+    in battle above all else."
+  personHook: Scarred bounty hunter
+  objectHook: Soldier's horseshoe
+  beastHook: Leafy goose
+  stateHook: Returning
+  themeHook: 'Revenge
+
+    2
+
+    12
+
+    The'

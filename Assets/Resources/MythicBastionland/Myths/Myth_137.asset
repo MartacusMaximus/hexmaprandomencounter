@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_137
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 137
+  mythName: Myth 137
+  omens:
+  - '1. A tinkerer, accompanied by his Clockwork
+
+    Knights. He boasts that a tournament
+
+    will
+    see his Knights defeat any others.'
+  - '2. A messenger from the Seat of Power. The
+
+    Company is called to represent
+    the Realm
+
+    against the Clockwork Knights.'
+  - '3. Nimiod parades his Clockwork Knights
+
+    before the crowd. The Company are
+    also
+
+    presented for those watching.'
+  - '4. The Company compete all together,
+
+    paired against a Company of Clockwork
+
+    Knights.
+    It is a mounted battle, melee
+
+    weapons only, competitors eliminated if
+
+    they
+    take a Mortal Wound.'
+  - '5. Now the Company must fight on foot, no
+
+    shields permitted.'
+  - '6. Finally, one Knight must take on the
+
+    Clockwork Champion.'
+  verse: 
+  castEntries:
+  - name: Nimiod, Genius Tinkerer
+    statBlock: 'VIG 10, CLA 15, SPI 12, 2 GD
+
+      Fine sword (2d6), layered silks,
+      focused eyes'
+    notes: 
+  - name: Clockwork Knight
+    statBlock: 'VIG 13, CLA 5, SPI 5, 6 GD
+
+      A4 (metal body, copper plate, helm,
+      shield)'
+    notes: 'Fine sword (2d6), shield (d4)
+
+      Follows Nimiod''s verbal commands.
+
+      Grinding
+      voice, imitating knightliness.
+
+      Subject to one quirk (see below).
+
+      Clockwork
+      Champion
+
+      As above, but knows all Feats, has a fine
+
+      longsword
+      (2d8 hefty),will disobey Nimiod in
+
+      order to preserve its own life and
+      honour.
+
+      Tween cog and blade, a challenge thrown
+
+      Blood must beat
+      bronze, its mettle shown
+
+      CLOCKWORK QUIRKS
+
+      Body Behaviour
+
+      1
+      Ignore Mortal Wounds Boasts and taunts
+
+      2 Cannot be disarmed Strict etiquette
+
+      3
+      Human-like voice Cunning fighter
+
+      4 Mean arm (can Smite) Soulless intimidation
+
+      5
+      Real skull for head Showboats for crowd
+
+      6 Extra fast (can Deny) Stiff
+      and jerky
+
+      Tournament
+
+      Dwelling: Nomad camp ~ Sanctum: Tranquil
+      waterfall ~ Monument: Ancient throne
+
+      Hazard: Dust storm ~ Curse: Pond
+      mirage ~ Ruin: Looted caravan
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Nomad camp
+  sanctum: Tranquil waterfall
+  monument: Ancient throne
+  hazard: Dust storm
+  curse: Pond mirage
+  ruin: Looted caravan
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

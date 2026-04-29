@@ -1,0 +1,241 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: The_spiteful_spirit_of_the_land_shows_our_follies_worth
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 75
+  mythName: The spiteful spirit of the land shows our follies' worth
+  omens:
+  - '1. Marching across a barren moor, the Bolt
+
+    Knight escorts labourers in
+    carts. They
+
+    are being taken to the site of the Tower,
+
+    where more efforts
+    are needed.'
+  - '2. A dozen great birds of burden haul huge
+
+    blocks across the Realm. A wake
+    of torn
+
+    earth. Tower guards escort on horseback.'
+  - '3. A stairway in the wilds, dreamlike visions
+
+    to any who ascend (see opposite).
+    At the
+
+    top, a clear view of the Tower, complete on
+
+    the horizon.'
+  - '4. Black clouds and thunder, but no rain.
+
+    Crackling lightning turns to
+    bolts,
+
+    sparking fires across the Realm. This does
+
+    not end until the
+    Tower falls.'
+  - '5. A titanic thunderclap and dazzling bolt of
+
+    lightning. The Tower begins
+    to fall and
+
+    cannot be stopped. The thunder and
+
+    lightning continue.'
+  - '6. With a swell of thunder all tower-like
+
+    structures in the Realm are shaken,
+
+    grand
+    or humble. With a final clap they
+
+    all fall. The clouds clear.'
+  verse: 'Omens
+
+    1. Marching across a barren moor, the Bolt
+
+    Knight escorts
+    labourers in carts. They
+
+    are being taken to the site of the Tower,
+
+    where
+    more efforts are needed.
+
+    2. A dozen great birds of burden haul huge
+
+    blocks
+    across the Realm. A wake of torn
+
+    earth. Tower guards escort on horseback.
+
+    3.
+    A stairway in the wilds, dreamlike visions
+
+    to any who ascend (see opposite).
+    At the
+
+    top, a clear view of the Tower, complete on
+
+    the horizon.
+
+    4.
+    Black clouds and thunder, but no rain.
+
+    Crackling lightning turns to bolts,
+
+    sparking
+    fires across the Realm. This does
+
+    not end until the Tower falls.
+
+    5.
+    A titanic thunderclap and dazzling bolt of
+
+    lightning. The Tower begins to
+    fall and
+
+    cannot be stopped. The thunder and
+
+    lightning continue.
+
+    6.
+    With a swell of thunder all tower-like
+
+    structures in the Realm are shaken,
+
+    grand
+    or humble. With a final clap they
+
+    all fall. The clouds clear.
+
+    Cast
+
+    Bolt
+    Knight, Berech of the Tower
+
+    VIG 12, CLA 17, SPI 9, 7 GD
+
+    A3 (mail, shimmering
+    plate, helm)
+
+    Cruel partisan (d10 long +d10 vs mounted)
+
+    Hatred for anything
+    less than perfection.
+
+    Great Bird of Burden, Wazzletard
+
+    VIG 17, CLA
+    10, SPI 4, 4 GD
+
+    A2 (huge body)
+
+    Trample and tear (2d10)
+
+    Easily
+    startled, longs for human approval.
+
+    Tower Guards
+
+    VIG 12, CLA 10, SPI
+    7, 4 GD
+
+    A2 (mail, helm)
+
+    Polearms (d10 long)
+
+    Craving purpose, to
+    be part of something big.
+
+    In the tapestry of ages, stretching ever forth'
+  castEntries:
+  - name: Bolt Knight, Berech of the Tower
+    statBlock: 'VIG 12, CLA 17, SPI 9, 7 GD
+
+      A3 (mail, shimmering plate, helm)'
+    notes: 'Cruel partisan (d10 long +d10 vs mounted)
+
+      Hatred for anything
+      less than perfection.'
+  - name: Great Bird of Burden, Wazzletard
+    statBlock: 'VIG 17, CLA 10, SPI 4, 4 GD
+
+      A2 (huge body)'
+    notes: 'Trample and tear (2d10)
+
+      Easily startled, longs for human approval.'
+  - name: Tower Guards
+    statBlock: 'VIG 12, CLA 10, SPI 7, 4 GD
+
+      A2 (mail, helm)'
+    notes: 'Polearms (d10 long)
+
+      Craving purpose, to be part of something big.
+
+      In
+      the tapestry of ages, stretching ever forth
+
+      The spiteful spirit of the
+      land shows our follies'' worth
+
+      DREAMLIKE VISIONS
+
+      Form Content
+
+      1
+      Frozen Regrets (lose d6 SPI)
+
+      2 Abstract Hardship (lose d6 VIG)
+
+      3
+      Non-visual Fear (lose d6 CLA)
+
+      4 Ghostly Pride (restore SPI)
+
+      5
+      Melodramatic Comfort (restore VIG)
+
+      6 Watery Guidance (restore CLA)
+
+      Tower
+
+      Dwelling:
+      Open market ~ Sanctum: Smouldering geyser ~ Monument: Buried library
+
+      Hazard:
+      Spike rocks ~ Curse: Sulphur stink ~ Ruin: Ash pit
+
+      Th'
+  flavorTable:
+    title: DREAMLIKE VISIONS
+    rows:
+    - 1 Frozen Regrets (lose d6 SPI)
+    - 2 Abstract Hardship (lose d6 VIG)
+    - 3 Non-visual Fear (lose d6 CLA)
+    - 4 Ghostly Pride (restore SPI)
+    - 5 Melodramatic Comfort (restore VIG)
+    - '6 Watery Guidance (restore CLA)
+
+      Tower'
+  dwelling: Open market
+  sanctum: Smouldering geyser
+  monument: Buried library
+  hazard: Spike rocks
+  curse: Sulphur stink
+  ruin: Ash pit
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

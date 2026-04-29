@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Turtle_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 78
+  knightName: Turtle Knight
+  titleVerse: 'Nawone of you will see me dead!
+
+    The'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: c7e013581b88d4c0fa17a39f52596c30, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 1991ee4d8a5c648f8ab50be2f0ae5d17, type: 2}
+  steed: {fileID: 11400000, guid: e993b2a878e6a45738385c03a7f138ca, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: dcca07cb2804c47a0a71da68ac9ff5ae, type: 2}
+  - {fileID: 11400000, guid: 58dc3c876b1ff497884f7776d7d09879, type: 2}
+  - {fileID: 11400000, guid: de5642624194246d2af9c7eea0d880fa, type: 2}
+  - {fileID: 11400000, guid: 16debf9f302704741a6abc4f901317d5, type: 2}
+  - {fileID: 11400000, guid: ba77e8de6a3c74404ad8f2953a889a71, type: 2}
+  - {fileID: 11400000, guid: c81dadab7b03c4b4bacef299a6404a16, type: 2}
+  - {fileID: 11400000, guid: c562a2aeeca464b2c82e1edf15821db7, type: 2}
+  randomFlavorTableTitle: DRINKING HORN
+  randomFlavorTableRows:
+  - 1 Tiny Floral honey
+  - 2 Runic carvings Smoky salt
+  - 3 Ruby encrusted Toasty almond
+  - 4 Volcanic rock Ice water
+  - 5 Painted battle scene Warm berries
+  - "6 Huge Meat dripping\nKNIGHTED BY...\nThe Broken Seer\nVIG 2, CLA 7, SPI 13,
+    1 GD\n\u2022 A pile of loose limbs around a husk of a\ntorso. Just able to pull
+    themselves into a\nstanding form with some difficulty.\n\u2022 Doesn't share
+    much guidance now, but\nsends a body part on the quest to help.\n\u2022 Wants
+    more broken body parts to add to\ntheir heap."
+  personHook: Wise farmer
+  objectHook: Bird cauldron
+  beastHook: Oily buzzard
+  stateHook: Starving
+  themeHook: 'Flowers
+
+    3
+
+    2'

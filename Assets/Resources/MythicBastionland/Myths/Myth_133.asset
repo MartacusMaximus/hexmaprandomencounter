@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_133
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 133
+  mythName: Myth 133
+  omens:
+  - '1. A search party. They''re looking for an
+
+    elderly woman, a herb gatherer.
+    She''s
+
+    been missing for days.'
+  - '2. First a patch of blood, then pieces of flesh,
+
+    gradually becoming clear
+    as the remains
+
+    of the missing elderly woman.'
+  - '3. Another heap of torn remains, this time
+
+    some sort of deer. All present
+    must pass a
+
+    CLA Save or else feel compelled to sniff and
+
+    paw at the
+    remains. They now have the
+
+    Hound Within (see opposite), the effects
+
+    lasting
+    until this Myth is resolved.'
+  - '4. The shadows seem to grow. Any who
+
+    brave the darkness are attacked by
+    the
+
+    Hound in Shadow. It does not attack
+
+    those affected by the Hound
+    Within
+
+    unless they attack first.'
+  - '5. An icy wind, then the Hound on the Wind
+
+    attacks from nowhere, focusing
+    its
+
+    attacks on those affected by the Hound
+
+    Within. If slain, it returns
+    to the wind.'
+  - '6. A heap of flesh and bones. The Hound in
+
+    Flesh bursts out, fighting to
+    the death.'
+  verse: 
+  castEntries:
+  - name: The Hound in Shadow
+    statBlock: 'VIG 5, CLA 16, SPI 5, 5 GD
+
+      A2 (muscular hide, wiry fur)'
+    notes: Jaws (2d8), cannot be hurt in darkness
+  - name: The Hound on the Wind
+    statBlock: 'VIG 10, CLA 16, SPI 5, 7 GD
+
+      A2 (muscular hide, wiry fur)'
+    notes: 'Jaws (2d8), impossibly fast, moves and
+
+      attacks twice each turn'
+  - name: The Hound in Flesh
+    statBlock: 'VIG 15, CLA 16, SPI 5, 7 GD
+
+      A2 (muscular hide, wiry fur)'
+    notes: 'Attacks by those affected by the
+
+      Hound Within are Impaired.
+
+      The
+      eye of a slayer, the nose of a hound
+
+      In wind and flesh, a hunter unbound
+
+      THE
+      HOUND WITHIN
+
+      Day Effect Night Effect
+
+      1 Enhanced smell Cannot
+      use hands
+
+      2 Enhanced hearing Unable to speak
+
+      3 Enhanced vision
+      Fear of fire
+
+      4 Can eat raw and
+
+      rotten meat
+
+      Pass a CLA
+      Save or
+
+      wander the wilderness
+
+      5 Animals respect you Howl at the
+      moon
+
+      6 Powerful jaws (d8) Cannot sleep indoors
+
+      Hound
+
+      Dwelling:
+      Citadel of pipers ~ Sanctum: Sheltered trench ~ Monument: Memory opals
+
+      Hazard:
+      Earsplitting screams ~ Curse: Discordant howl ~ Ruin: Abandoned home
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Citadel of pipers
+  sanctum: Sheltered trench
+  monument: Memory opals
+  hazard: Earsplitting screams
+  curse: Discordant howl
+  ruin: Abandoned home
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

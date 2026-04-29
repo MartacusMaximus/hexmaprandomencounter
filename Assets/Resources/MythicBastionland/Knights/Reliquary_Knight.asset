@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Reliquary_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 142
+  knightName: Reliquary Knight
+  titleVerse: 'Noble rest, earned in life, final breath
+
+    Echos ring, they live
+    on, spurning death'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 432866e2c02df4a23a50f107e7f40a26, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 50fb9864c0b7c4ab19d11bb3c5c44387, type: 2}
+  steed: {fileID: 11400000, guid: 6b769dc4081ec4ccca545f21733848b6, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 1a2317aa1354f4bbca82302ef2e736d7, type: 2}
+  - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
+  - {fileID: 11400000, guid: 7b71531c8a1bd4e9fbbe7f0513529dd9, type: 2}
+  - {fileID: 11400000, guid: 3706e9ddbcc4449028289c9d8e08b3a4, type: 2}
+  - {fileID: 11400000, guid: 61a4dd847b6624047a8aa006739dfd7b, type: 2}
+  - {fileID: 11400000, guid: b0386bd091e504bde9262ee65efb2c70, type: 2}
+  - {fileID: 11400000, guid: 40afc867f86f944fba4cf989223d369c, type: 2}
+  - {fileID: 11400000, guid: 5649e0875f2b04ba1992c8e9c967d98b, type: 2}
+  - {fileID: 11400000, guid: 9d92436965cf84f55aa57937d6508329, type: 2}
+  - {fileID: 11400000, guid: 4d3ef5aaced77460191d5e37f2b5bf7e, type: 2}
+  - {fileID: 11400000, guid: f24a00c06c88f453c97fd37fdbffbd97, type: 2}
+  randomFlavorTableTitle: TREASURED RELIC
+  randomFlavorTableRows:
+  - 1 Hand Forgotten Seer
+  - 2 Skull Glorious Knight
+  - 3 Heart Deposed monarch
+  - 4 Ribs Pitied monster
+  - 5 Eye Hateful bird
+  - "6 Unknown organ Ancient reptile\nKNIGHTED BY...\nThe Predator Seer\nVIG 16,
+    CLA 17, SPI 12, 9 GD\n\u2022 An animalistic woman with a powerful\nbody and sleek
+    mane.\n\u2022 There is no better guide to hunting, no\nmatter the quarry.\n\u2022
+    Wants to sharpen Knights into the\nperfect predators of the world, even if\nthey
+    must suffer along the way."
+  personHook: Cruel charlatan
+  objectHook: Immovable herb
+  beastHook: Flat owl
+  stateHook: Gluttonous
+  themeHook: 'Salt
+
+    5
+
+    10
+
+    The'

@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Wolves_alone_chomp_at_the_chains
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 53
+  mythName: Wolves alone chomp at the chains
+  omens:
+  - '1. Wailing shepherd. His sheepdogs have
+
+    slaughtered their flock and fled.
+    Crows
+
+    feast on the gore. His family are hungry.'
+  - '2. A band of poets and scribes fight among
+
+    themselves, unable to speak
+    except
+
+    snarling growls. The Pack watch from a
+
+    nearby hill, scattering
+    if disturbed. When
+
+    they leave, the wanderers'' voices return.'
+  - '3. A rival fighting the leader. 6 wolves guard
+
+    against interruption. They
+    favour the
+
+    challenger. The leader is toying with him
+
+    and tears his
+    throat when he gets bored.'
+  - '4. The wind suddenly stops, then the sound
+
+    of jaws lapping at air. Then
+    the howl,
+
+    rough and screeching. Countless howls
+
+    join the call, air
+    completely still. Soon the
+
+    howl stops and the wind returns.'
+  - '5. An important trade road has been
+
+    blockaded by savagely torn trees and
+
+    heaps
+    of soil wet with blood.'
+  - '6. The 13 wolf pack howls in their den,
+
+    setting their sights on a nearby
+    Dwelling
+
+    or Holding, attacking the humans and
+
+    their broken beasts in
+    dark or mist.'
+  verse: 'Omens
+
+    1. Wailing shepherd. His sheepdogs have
+
+    slaughtered their
+    flock and fled. Crows
+
+    feast on the gore. His family are hungry.
+
+    2.
+    A band of poets and scribes fight among
+
+    themselves, unable to speak except
+
+    snarling
+    growls. The Pack watch from a
+
+    nearby hill, scattering if disturbed. When
+
+    they
+    leave, the wanderers'' voices return.
+
+    3. A rival fighting the leader. 6
+    wolves guard
+
+    against interruption. They favour the
+
+    challenger. The
+    leader is toying with him
+
+    and tears his throat when he gets bored.
+
+    4.
+    The wind suddenly stops, then the sound
+
+    of jaws lapping at air. Then the
+    howl,
+
+    rough and screeching. Countless howls
+
+    join the call, air completely
+    still. Soon the
+
+    howl stops and the wind returns.
+
+    5. An important trade
+    road has been
+
+    blockaded by savagely torn trees and
+
+    heaps of soil wet
+    with blood.
+
+    6. The 13 wolf pack howls in their den,
+
+    setting their sights
+    on a nearby Dwelling
+
+    or Holding, attacking the humans and
+
+    their broken
+    beasts in dark or mist.
+
+    Cast
+
+    The Pack Leader, One-ear
+
+    VIG 15,
+    CLA 15, SPI 7, 8 GD
+
+    A1 (scarred hide)
+
+    Great jaws (2d8), zero tolerance
+    for civility
+
+    Pack Wolves, Scruff, Scrag, Scab, Runt
+
+    VIG 10, CLA 12,
+    SPI 3, 4 GD
+
+    Jaws (d8), loving hatred for their leader
+
+    Wailing Shepherd,
+    Nayl
+
+    VIG 10, CLA 10, SPI 6, 2 GD
+
+    Crook (d6 hefty), broken heart
+
+    Glutton
+    Crow, Fatteth Rollybird
+
+    VIG 6, CLA 16, SPI 5, 2 GD
+
+    Beak (d6), insatiable
+    appetite, cannot eat
+
+    grain or fruit
+
+    Woods and moors or paddock and
+    rein'
+  castEntries:
+  - name: The Pack Leader, One-ear
+    statBlock: 'VIG 15, CLA 15, SPI 7, 8 GD
+
+      A1 (scarred hide)'
+    notes: Great jaws (2d8), zero tolerance for civility
+  - name: Pack Wolves, Scruff, Scrag, Scab, Runt
+    statBlock: 'VIG 10, CLA 12, SPI 3, 4 GD
+
+      Jaws (d8), loving hatred for their
+      leader'
+    notes: 
+  - name: Wailing Shepherd, Nayl
+    statBlock: 'VIG 10, CLA 10, SPI 6, 2 GD
+
+      Crook (d6 hefty), broken heart'
+    notes: 
+  - name: Glutton Crow, Fatteth Rollybird
+    statBlock: 'VIG 6, CLA 16, SPI 5, 2 GD
+
+      Beak (d6), insatiable appetite,
+      cannot eat'
+    notes: 'grain or fruit
+
+      Woods and moors or paddock and rein
+
+      Wolves
+      alone chomp at the chains
+
+      PACK FIGHTING TACTICS
+
+      First Then
+
+      1
+      Target the strong Slip into shadow
+
+      2 Bite their legs Drag one away
+
+      3
+      Terrorise them Never let them sleep
+
+      4 Start a fire with claw
+
+      and
+      stone
+
+      Attack their intended
+
+      destination instead
+
+      5 Disarm
+      them with jaw Stay just out of reach
+
+      6 Target the weak Go and dig a
+      pit trap
+
+      Pack
+
+      Dwelling: Stone quarry ~ Sanctum: Glittering pond
+      ~ Monument: Huge banner
+
+      Hazard: Crumbling cliffs ~ Curse: Smoking stumps
+      ~ Ruin: Shipwreck
+
+      Th'
+  flavorTable:
+    title: PACK FIGHTING TACTICS
+    rows:
+    - 1 Target the strong Slip into shadow
+    - 2 Bite their legs Drag one away
+    - 3 Terrorise them Never let them sleep
+    - '4 Start a fire with claw
+
+      and stone
+
+      Attack their intended
+
+      destination
+      instead'
+    - 5 Disarm them with jaw Stay just out of reach
+    - '6 Target the weak Go and dig a pit trap
+
+      Pack'
+  dwelling: Stone quarry
+  sanctum: Glittering pond
+  monument: Huge banner
+  hazard: Crumbling cliffs
+  curse: Smoking stumps
+  ruin: Shipwreck
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

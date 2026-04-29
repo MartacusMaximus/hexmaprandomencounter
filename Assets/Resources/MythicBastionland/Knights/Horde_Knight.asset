@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Horde_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 56
+  knightName: Horde Knight
+  titleVerse: 'In fury'' s reign afore the rav''ning throng
+
+    In chaos born as
+    knight where beast belong'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: b5a1df6400f46461b990bb1de3b3d077, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 32dc15021e03546dfb766fb82cd9c44a, type: 2}
+  steed: {fileID: 11400000, guid: 6521d09851acb4a37a70cf2c5257aa77, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 618efac124b4a4561997de8e888162e1, type: 2}
+  - {fileID: 11400000, guid: 296722964e1ed46eab0126690070728e, type: 2}
+  - {fileID: 11400000, guid: 85cea89f865304acaa7553945d9d5d06, type: 2}
+  - {fileID: 11400000, guid: 1e5db797e06104647aa2715a2ad7e798, type: 2}
+  - {fileID: 11400000, guid: e0f7c20cf66604646a428785d376db65, type: 2}
+  - {fileID: 11400000, guid: 0263cf0b2bef247e7bc948b4a94d8e74, type: 2}
+  - {fileID: 11400000, guid: 1df876a59a2a948d58fd9beca37a7672, type: 2}
+  - {fileID: 11400000, guid: c141e7ba35c2946b59622e38640f64c1, type: 2}
+  - {fileID: 11400000, guid: d9a891ac5ae4442ac8d8389fe61f82fc, type: 2}
+  - {fileID: 11400000, guid: 0836f03fa68874b8990167af1581e1aa, type: 2}
+  randomFlavorTableTitle: A TASTE OF HOME
+  randomFlavorTableRows:
+  - 1 Sour Skin
+  - 2 Salty Beans
+  - 3 Fiery Insects
+  - 4 Smoked Roots
+  - 5 Burnt Cheese
+  - "6 Chewy Honey\nKNIGHTED BY...\nThe Hanged Seer\nVIG 10, CLA 12, SPI 15, 1 GD\n\u2022
+    Dizzy, confused, and distressed unless\nhanging upside-down from their feet.\n\u2022
+    Sees things from unusual perspectives,\nseeking insight or hidden things.\n\u2022
+    Wants for nothing as long as they are\nsuspended, which can make them difficult\nto
+    bargain with."
+  personHook: Steady cook
+  objectHook: Ghost axe
+  beastHook: Granddad louse
+  stateHook: Wandering
+  themeHook: 'Music
+
+    2
+
+    3
+
+    The'

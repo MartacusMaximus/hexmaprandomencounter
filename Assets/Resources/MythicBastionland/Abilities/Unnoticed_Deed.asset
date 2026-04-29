@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Unnoticed_Deed
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Unnoticed Deed
+  description: "Once per day you can retroactively declare an\naction that you took
+    earlier that day, such as\ngiving instructions to an ally, or gathering a\nspecific
+    piece of information. This cannot be\nused to acquire new items.\nPASSION - Anonymity\nRestore
+    SPI when somebody believes in a false\nidentity you are portraying.\nAs deeds
+    abound in history's script\nMore slip from time' s forgetful grip\nHooded Knight\nHOOD
+    AND CLOAK\nHood Cloak\n1 Veiled Velvet\n2 Shadowy Torn\n3 Silken Weathered\n4
+    Tattered Layered\n5 Fur-trimmed Embroidered\n6 Threadbare Faded pattern\nKNIGHTED
+    BY...\nThe Endless Seer\nVIG 13, CLA 16, SPI 13, 3 GD\n\u2022 With each blink
+    they appear as an\nentirely different person, sometimes\nseveral, their voice
+    a congregation.\n\u2022 They see through everybody's eyes all at\nonce, hearing
+    all their thoughts.\n\u2022 Wants to offer guidance but is\noverwhelmed by so
+    much vision.\nPerson: Sneaky cobbler ~ Name: Kerensa ~ Characteristic: Always
+    drinking\nObject: Fox pipe ~ Beast: Milk finch ~ State: Empowered ~ Theme: Breaking\n3\n8\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

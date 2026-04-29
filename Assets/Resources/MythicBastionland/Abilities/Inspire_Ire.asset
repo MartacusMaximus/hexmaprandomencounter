@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Inspire_Ire
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Inspire Ire
+  description: "Activate at the end of your turn.\nUntil your next turn, any enemies
+    that Attack\ntargets other than you lose d10 SPI after the\nAttack is resolved.\nPASSION
+    - Mettle\nRestore SPI when accepting a non-combat\nchallenge with the odds set
+    against you.\nSaline stink adwells in every depth\nMatters not how still the
+    mirrow' s breadth\nSalt Knight\nTHE EVERFLASK\nDesign Thirst\n1 Leather pouch
+    A story\n2 Brass horn A blade\n3 Twisted silver A small creature\n4 Mottled stone
+    Delicious fruit\n5 White wood Honey\n6 Frosted glass Music\nKNIGHTED BY...\nThe
+    Bright Seer\nVIG 12, CLA 14, SPI 14, 3 GD\n\u2022 A booming, intrusively optimistic
+    man\ncloaked in orange and gold.\n\u2022 Has complete control over fire, able
+    to\ntwist it into visions brought to life.\n\u2022 Wants to see the world burn,
+    but in a\nplanned and controlled manner.\nPerson: Violent playwright ~ Name:
+    Reyka ~ Characteristic: Monster tattoos\nObject: Wood mace ~ Beast: Thorn frog
+    ~ State: Stalking ~ Theme: Shelter\n5\n3\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

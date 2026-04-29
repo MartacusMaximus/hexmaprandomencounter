@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using KnightsAndGM.Shared;
 using UnityEngine;
 
@@ -51,5 +52,64 @@ public class HexGridRegistry : MonoBehaviour
         var isNewExploration = explorationState.MarkExplored(cell.Coordinate);
         cell.SetExplored(true);
         return isNewExploration;
+    }
+
+    public List<HexCell> FindPath(HexCell start, HexCell target, int maxDistance)
+    {
+        if (start == null || target == null)
+        {
+            return new List<HexCell>();
+        }
+
+        if (start == target)
+        {
+            return new List<HexCell> { start };
+        }
+
+        var frontier = new Queue<HexCell>();
+        var cameFrom = new Dictionary<HexCell, HexCell>();
+        frontier.Enqueue(start);
+        cameFrom[start] = null;
+
+        while (frontier.Count > 0)
+        {
+            var current = frontier.Dequeue();
+            if (current.Coordinate.DistanceTo(start.Coordinate) >= maxDistance)
+            {
+                continue;
+            }
+
+            foreach (var neighbor in GetNeighbors(current))
+            {
+                if (cameFrom.ContainsKey(neighbor))
+                {
+                    continue;
+                }
+
+                cameFrom[neighbor] = current;
+                if (neighbor == target)
+                {
+                    return ReconstructPath(cameFrom, target);
+                }
+
+                frontier.Enqueue(neighbor);
+            }
+        }
+
+        return new List<HexCell>();
+    }
+
+    private static List<HexCell> ReconstructPath(IDictionary<HexCell, HexCell> cameFrom, HexCell target)
+    {
+        var path = new List<HexCell>();
+        var current = target;
+        while (current != null)
+        {
+            path.Add(current);
+            current = cameFrom[current];
+        }
+
+        path.Reverse();
+        return path;
     }
 }

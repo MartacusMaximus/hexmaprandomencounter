@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Iron_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 114
+  knightName: Iron Knight
+  titleVerse: 'As sword abend, as plate afold,
+
+    As shield asplint, a tale atold.'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 1be6252daa94c450baf13c38a3f1a241, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 24a96046e554b4f72a349f0a08787de5, type: 2}
+  steed: {fileID: 11400000, guid: 6208ed779c8a1488eaeb01d1f444f881, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 7782c6027666043bdb1024bf8a6002a7, type: 2}
+  - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
+  - {fileID: 11400000, guid: 9fc61a7fbefe24e42b9c4114f0486e2c, type: 2}
+  - {fileID: 11400000, guid: 878c9692f3f3b489980448a529fcb56b, type: 2}
+  - {fileID: 11400000, guid: 32e9174f3e5c44ffe84a2d22358d8f03, type: 2}
+  - {fileID: 11400000, guid: b76683a718b4244ef9a2ea4a1225d440, type: 2}
+  - {fileID: 11400000, guid: 1b28cdb88f38047a19abccf3974e1be8, type: 2}
+  - {fileID: 11400000, guid: 82c2c2b126c284b5e928da42105de79f, type: 2}
+  - {fileID: 11400000, guid: 2ffebad2a79a34e59921b9cec7daabbc, type: 2}
+  - {fileID: 11400000, guid: a9daf32ac1a7f41089f863380e6600ab, type: 2}
+  - {fileID: 11400000, guid: c5897abeb397349588864cf5921dd010, type: 2}
+  - {fileID: 11400000, guid: c06fd6e8845ba461a9315e9e2824beec, type: 2}
+  - {fileID: 11400000, guid: 6af8c138c44dc4c3b84d6461b4e816e9, type: 2}
+  - {fileID: 11400000, guid: 0c0f52c5e52dc4354ab692d0a6bd7ccc, type: 2}
+  - {fileID: 11400000, guid: ad485868c9097493092a0fc4c1efa994, type: 2}
+  - {fileID: 11400000, guid: 0c8a716c6abc04967a72722addd97bd1, type: 2}
+  - {fileID: 11400000, guid: 4a797c575a85649ce9754922f9390447, type: 2}
+  - {fileID: 11400000, guid: 62ae954eb327e47cc80d72163d4ebf99, type: 2}
+  - {fileID: 11400000, guid: b01d28c3fdf1947ff8dd5d72161d7ed7, type: 2}
+  - {fileID: 11400000, guid: 297cc5ef08f0a4a39ac33732388e53ad, type: 2}
+  randomFlavorTableTitle: ORIGIN OF THE CLEAVINGBLADE
+  randomFlavorTableRows:
+  - 1 Vibrant forest Contentment
+  - 2 High waterfall Desperation
+  - 3 Roaring sea Victory
+  - 4 Broken boulder Anger
+  - 5 Narrow cave Sorrow
+  - "6 Dead tree Transition\nKNIGHTED BY...\nThe Celebrated Seer\nVIG 12, CLA 6,
+    SPI 15, 2 GD\n\u2022 Clad in a coat of shining metal masks,\neach an expression
+    of joy.\n\u2022 Only sees moments of intense positive\nemotion, more intensity
+    granting clearer\nvisions and pleasure.\n\u2022 Wants praise and elaborate celebrations,\nnot
+    really caring what for."
+  personHook: Hardened scavenger
+  objectHook: Creation chest
+  beastHook: Tiger spider
+  stateHook: Celebrating
+  themeHook: 'Fungi
+
+    4
+
+    8
+
+    The'

@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Pearl_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 168
+  knightName: Pearl Knight
+  titleVerse: 'Why lurk shellbound in the depths, awashed in solitude?
+
+    All best
+    secrets walk above, all dark and low and lewd'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 03c9a008b6b534b98b2f8753d5eb5dfd, type: 2}
+  linkedSeer: {fileID: 11400000, guid: d8ed08c064cb9408daba8e62331eb532, type: 2}
+  steed: {fileID: 11400000, guid: ea7d5b2db00de485b97b1e89c5b37116, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 0049572b656e6431683c9af605eed573, type: 2}
+  - {fileID: 11400000, guid: 73efb40491f5f400f9dd44f433812cc0, type: 2}
+  - {fileID: 11400000, guid: 38c60f9d8d0b945dc8e218b4d46b604f, type: 2}
+  - {fileID: 11400000, guid: dc5a747cf95ce4df6a3c312b7499e2c4, type: 2}
+  - {fileID: 11400000, guid: cd8e841143a8e4b459cc887238a88d0d, type: 2}
+  - {fileID: 11400000, guid: 7cc5cca2dc28f40a699c56260a040eb9, type: 2}
+  - {fileID: 11400000, guid: 271371475f191445e8fdf1218217a14a, type: 2}
+  - {fileID: 11400000, guid: 86a4be1f2534a43509a315b3e9aaf6e6, type: 2}
+  - {fileID: 11400000, guid: 185e1f7a7190c4f76a11dafea4120269, type: 2}
+  - {fileID: 11400000, guid: 3a500452b223a488795530d86c41b9b6, type: 2}
+  - {fileID: 11400000, guid: ca8ab306f62d34b26a875672211c2ba3, type: 2}
+  - {fileID: 11400000, guid: 4b4e7319d1d934abd91c3e4e8338668e, type: 2}
+  randomFlavorTableTitle: A BLADE TAKEN FROM THE SEA
+  randomFlavorTableRows:
+  - '1 Aquatic nightmares Sea creatures get +d6
+
+    against you'
+  - '2 A fish told you You cannot swim in
+
+    saltwater'
+  - '3 It''s cold to the touch River water tastes
+
+    salty to you'
+  - 4 Sudden fear of water Sailors distrust you
+  - 5 Storms call to you Salt tastes foul to you
+  - "6 The waves rebuke you Fish is poison to you\nKNIGHTED BY...\nThe Pain Seer\nVIG
+    7, CLA 13, SPI 5, 1 GD\n\u2022 Awkwardly hunched woman, her very\nimage appearing
+    shattered like glass.\n\u2022 Absorbs sorrow and aches, like nectar to\na bird.
+    Exchanges them for guidance\ndoomed to cause only more sorrow.\n\u2022 Wants
+    to feed enough to finally be\nsatisfied, then she can begin offering\ntruly useful
+    guidance."
+  personHook: Loyal sculptor
+  objectHook: Oceanic whetstone
+  beastHook: Herbalist dog
+  stateHook: Cooking
+  themeHook: 'Harvest
+
+    6
+
+    11
+
+    The'

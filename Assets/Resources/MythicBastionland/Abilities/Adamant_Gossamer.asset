@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Adamant_Gossamer
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Adamant Gossamer
+  description: "You can draw thin strands of silky string of\nany length from your
+    mouth. They are utterly\nunbreakable, but burn to ash in an instant.\nPASSION
+    - Mercy\nRestore SPI when you accept a surrender or\nplea for forgiveness.\nJudge
+    not a knight on might and favour\nWhere silk endures, a heart can waver\nSilk
+    Knight\nA YOUNG STEED\nDistracted by... Scared by...\n1 Smaller animals Other
+    steeds\n2 Moss Fire\n3 Water Darkness\n4 Salt Children\n5 Fruit Music\n6 Shiny
+    things Being alone\nKNIGHTED BY...\nThe Crimson Seer\nVIG 11, CLA 14, SPI 16,
+    4 GD\n\u2022 Elegantly dressed woman, her heart\nvisible, pulsing through her
+    chest.\n\u2022 Gets glimpses of beings' desires and fates\nby tasting their blood.\n\u2022
+    Wants to make the world interesting and\ndramatic, anything but boring.\nPerson:
+    Scabby merchant ~ Name: Floria ~ Characteristic: Destructive klutz\nObject: Petty
+    candle ~ Beast: Ghost carp ~ State: Enfeebled ~ Theme: Armour\n6\n1\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: About_the_tusks_of_nature_s_woe
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 117
+  mythName: About the tusks of nature' s woe
+  omens:
+  - '1. The grass here feels like wiry bristles, the
+
+    ground warm to the touch.
+    Almost feels
+
+    like the Realm is breathing heavily.'
+  - '2. Three hooded hunters are stalking the
+
+    land, seeking the Boar who drove
+    them
+
+    out of their idyllic home nearby.'
+  - '3. A white-walled vineyard ahead. A sudden
+
+    crash as the Boar arrives, tearing
+    vines
+
+    and crushing walls. It wants wine.'
+  - '4. If the hooded hunters are with the
+
+    Company the Boar attacks, targeting
+    the
+
+    hunters specifically. Otherwise, their
+
+    corpses lie broken in the
+    Boar''s wake'
+  - '5. Three masked hunters seek the Boar.
+
+    They barely speak, miming as the
+    animal
+
+    on their mask. If their mask is ever
+
+    removed they vanish into
+    black smoke.'
+  - '6. The Boar in the distance, masked hunters
+
+    concealed, ready to strike.
+    If the Boar is
+
+    killed the hunters unmask, vanishing to
+
+    smoke. If the
+    Boar survives it heads to the
+
+    nearest holding for a final feast before
+
+    leaving
+    the Realm.'
+  verse: 'Omens
+
+    1. The grass here feels like wiry bristles, the
+
+    ground
+    warm to the touch. Almost feels
+
+    like the Realm is breathing heavily.
+
+    2.
+    Three hooded hunters are stalking the
+
+    land, seeking the Boar who drove them
+
+    out
+    of their idyllic home nearby.
+
+    3. A white-walled vineyard ahead. A sudden
+
+    crash
+    as the Boar arrives, tearing vines
+
+    and crushing walls. It wants wine.
+
+    4.
+    If the hooded hunters are with the
+
+    Company the Boar attacks, targeting the
+
+    hunters
+    specifically. Otherwise, their
+
+    corpses lie broken in the Boar''s wake
+
+    5.
+    Three masked hunters seek the Boar.
+
+    They barely speak, miming as the animal
+
+    on
+    their mask. If their mask is ever
+
+    removed they vanish into black smoke.
+
+    6.
+    The Boar in the distance, masked hunters
+
+    concealed, ready to strike. If
+    the Boar is
+
+    killed the hunters unmask, vanishing to
+
+    smoke. If the Boar
+    survives it heads to the
+
+    nearest holding for a final feast before
+
+    leaving
+    the Realm.
+
+    Cast
+
+    The Boar, Rustigore, Ferrigras
+
+    VIG 18, CLA 7,
+    SPI 7, 7 GD
+
+    A3 (brassy bristles)
+
+    Thrash and gore (d10 blast, +d10 when
+
+    charging)
+    or impale (3d10 slow)
+
+    Hungers for food made by human hands.
+
+    Tusks can
+    be worked into weapons that kill
+
+    beasts they Wound, but break on impact.
+
+    Hooded
+    Hunters, Dristoc, Friswold, Ulf
+
+    VIG 10, CLA 8, SPI 12, 3 GD
+
+    Spear (d8
+    hefty), javelins (d6)
+
+    Much anger but little hunting experience.
+
+    Masked
+    Hunters, names left behind
+
+    VIG 10, CLA 15, SPI 15, 5 GD
+
+    A2 (fur armour,
+    masked helm, see below)
+
+    Greatspear (d10 long)
+
+    Guts burst forth in bloody
+    flow'
+  castEntries:
+  - name: The Boar, Rustigore, Ferrigras
+    statBlock: 'VIG 18, CLA 7, SPI 7, 7 GD
+
+      A3 (brassy bristles)'
+    notes: 'Thrash and gore (d10 blast, +d10 when
+
+      charging) or impale (3d10
+      slow)
+
+      Hungers for food made by human hands.
+
+      Tusks can be worked
+      into weapons that kill
+
+      beasts they Wound, but break on impact.'
+  - name: Hooded Hunters, Dristoc, Friswold, Ulf
+    statBlock: 'VIG 10, CLA 8, SPI 12, 3 GD
+
+      Spear (d8 hefty), javelins (d6)'
+    notes: Much anger but little hunting experience.
+  - name: Masked Hunters, names left behind
+    statBlock: 'VIG 10, CLA 15, SPI 15, 5 GD
+
+      A2 (fur armour, masked helm,
+      see below)'
+    notes: 'Greatspear (d10 long)
+
+      Guts burst forth in bloody flow
+
+      About
+      the tusks of nature'' s woe
+
+      HUNTER MASKS
+
+      Appearance Blessing
+
+      1
+      Eagle A4 vs the Boar
+
+      2 Tiger Cheat death once
+
+      3 Python Can throw
+      greatspear
+
+      4 Crocodile Can Smite
+
+      5 Bear Can Focus
+
+      6 Coyote
+      Can Deny
+
+      Boar
+
+      Dwelling: Alchemist tower ~ Sanctum: Whispering
+      statuary ~ Monument: Quartz pillar
+
+      Hazard: Brimstone springs ~ Curse:
+      Choking gorge ~ Ruin: Scorched workshop
+
+      Th'
+  flavorTable:
+    title: HUNTER MASKS
+    rows:
+    - 1 Eagle A4 vs the Boar
+    - 2 Tiger Cheat death once
+    - 3 Python Can throw greatspear
+    - 4 Crocodile Can Smite
+    - 5 Bear Can Focus
+    - '6 Coyote Can Deny
+
+      Boar'
+  dwelling: Alchemist tower
+  sanctum: Whispering statuary
+  monument: Quartz pillar
+  hazard: Brimstone springs
+  curse: Choking gorge
+  ruin: Scorched workshop
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

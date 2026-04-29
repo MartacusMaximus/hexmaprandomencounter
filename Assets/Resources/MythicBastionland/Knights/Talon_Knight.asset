@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Talon_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 48
+  knightName: Talon Knight
+  titleVerse: 'The claw is nothing without the eye
+
+    The eye is nothing without
+    the wing'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 2d59f7c0a88814f07b7e5e8cda929386, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 8f4272f7a764f40cb9531f0a9d8c309d, type: 2}
+  steed: {fileID: 11400000, guid: b3e4b64521bff4077a47fc38fb67235e, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 918f29c19d2434a249ae4b59d92effab, type: 2}
+  - {fileID: 11400000, guid: 249d11fd0a79f4e939f2abde6f60806f, type: 2}
+  - {fileID: 11400000, guid: fcefea9cdb0bf4c2eb3f40258d521174, type: 2}
+  - {fileID: 11400000, guid: 30943eae2cb644ba484833951dc7e070, type: 2}
+  - {fileID: 11400000, guid: bd3e8c6d6ff9d47588d29824f3fe387a, type: 2}
+  - {fileID: 11400000, guid: 69d3b2740fdee4ae6aca1508cda6294f, type: 2}
+  - {fileID: 11400000, guid: 315a344bcd6f443dd8aa507bbc4d4bc0, type: 2}
+  - {fileID: 11400000, guid: ff54cf1f5c47e44f684fb4dbc6e43b60, type: 2}
+  randomFlavorTableTitle: LOYAL BIRD
+  randomFlavorTableRows:
+  - '1 Fisherhawk
+
+    (can dive into water) Singing'
+  - '2 Cave owl
+
+    (nocturnal)
+
+    Fighting humans
+
+    (+d6 vs humans)'
+  - '3 Grey raven
+
+    (highly intelligent) Silent flight'
+  - '4 Red eagle
+
+    (d6 talons) Delivery'
+  - '5 Rock falcon
+
+    (preys on reptiles) Stealing'
+  - "6 Bog vulture\n(5GD)\nFighting birds\n(+d6 vs birds)\nKNIGHTED BY...\nThe Veiled
+    Seer\nVIG 7, CLA 5, SPI 11, 2 GD\n\u2022 Hanging folds of flesh and horse-like
+    hair\nhide any semblance of a face.\n\u2022 Sees nothing, but hears all within
+    a Hex.\nSpeaks just once each day, giving a single\nword of advice to the most
+    worthy visitor.\n\u2022 Genuinely wants to uphold peace."
+  personHook: Lost Knight
+  objectHook: Black cloth
+  beastHook: White ravens
+  stateHook: Nurturing
+  themeHook: 'Coins
+
+    1
+
+    11
+
+    The'

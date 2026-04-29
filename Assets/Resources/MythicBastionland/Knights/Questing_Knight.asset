@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Questing_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 94
+  knightName: Questing Knight
+  titleVerse: 'Dream of vassal, fear of knight
+
+    To die at rest, in moonly light'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: d0f7369f6d230485e865b587d3518ca1, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 1809620f745a0453098483e6e70842e4, type: 2}
+  steed: {fileID: 11400000, guid: def83c2195c0a479c9fdaad284e06509, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 18b24837dd0b040a09b8f3720d3edc35, type: 2}
+  - {fileID: 11400000, guid: 391d31322c83b4019a11fa169b4d830f, type: 2}
+  - {fileID: 11400000, guid: e88f35742cba245c78c409b7d578cf5a, type: 2}
+  - {fileID: 11400000, guid: 56a912555aad448beb8af51a7cd32ed4, type: 2}
+  - {fileID: 11400000, guid: c4a2ba448ab6345c8ac5d15a80dce780, type: 2}
+  - {fileID: 11400000, guid: 20ef4d32e0c9f4d4ca147a65b290c85c, type: 2}
+  - {fileID: 11400000, guid: 7b95b482bde644e6b94a2c48307331c4, type: 2}
+  - {fileID: 11400000, guid: bfd3dda2d7c71457da703e80c7e97260, type: 2}
+  - {fileID: 11400000, guid: 23be49407e2d14209a2dc8a7bce8103d, type: 2}
+  - {fileID: 11400000, guid: be2139876c26b4bfeaea8f415d0c03a7, type: 2}
+  - {fileID: 11400000, guid: 2414d0efd21ff40c5955dbb3843aa89e, type: 2}
+  - {fileID: 11400000, guid: f3f30a26d9d61451c9cab87bfa581cfd, type: 2}
+  - {fileID: 11400000, guid: 7bb9f5e5c13604f1bbdbcc6ab926457a, type: 2}
+  randomFlavorTableTitle: ANCIENT SWORD
+  randomFlavorTableRows:
+  - 1 Massive (d10 long) The tide
+  - 2 Curved (d8) A tomb
+  - 3 Jagged (2d6 hefty) A tree
+  - 4 Hooked (2d8 long) An eagle
+  - 5 Shining (2d6) A hermit
+  - "6 Cruel (2d8 hefty) A mountain\nKNIGHTED BY...\nThe Buried Seer\nVIG 4, CLA
+    3, SPI 14, 1 GD\n\u2022 Trapped far beneath our feet, but speaks\nto those who
+    stand at her gravestone,\nadorned with black flowers.\n\u2022 Sees all below
+    the ground, and hears all\non the surface. Blind to water and sky.\n\u2022 Wants
+    to hurry along the inevitable death\nof everyone and everything."
+  personHook: Skilled bandit
+  objectHook: Fake tooth
+  beastHook: Knightly salamander
+  stateHook: Killing
+  themeHook: 'Colours
+
+    3
+
+    10
+
+    The'

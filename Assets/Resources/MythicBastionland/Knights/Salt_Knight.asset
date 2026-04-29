@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Salt_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 128
+  knightName: Salt Knight
+  titleVerse: 'Saline stink adwells in every depth
+
+    Matters not how still the
+    mirrow'' s breadth'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 61e75d7897a0f4c5a93dce85254c45b3, type: 2}
+  linkedSeer: {fileID: 11400000, guid: e516c175683034dccb24a2cb2d553ed9, type: 2}
+  steed: {fileID: 11400000, guid: 9bf5390ddcc7b4971b6b9fcf44e31246, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: d9faae321004d406aaf46525e5bd0cb9, type: 2}
+  - {fileID: 11400000, guid: f8a28336ffce4494989cc1e1fb18d943, type: 2}
+  - {fileID: 11400000, guid: a698db622ae22465e9afadef4f50881c, type: 2}
+  - {fileID: 11400000, guid: d15105629077c41e986a96dcdd8bbde3, type: 2}
+  - {fileID: 11400000, guid: 34d24327fda544b00ba7e5a4dcfec712, type: 2}
+  - {fileID: 11400000, guid: 2ce6be1e01862468d962147652d4c740, type: 2}
+  - {fileID: 11400000, guid: c615c7cd9da3840a1a004c4a08fd0bac, type: 2}
+  - {fileID: 11400000, guid: 5c98d243b15af4984a6a6a6a55630d66, type: 2}
+  - {fileID: 11400000, guid: b0fea1b6cfe3d4398a6332598ff40ff8, type: 2}
+  - {fileID: 11400000, guid: 9748bff603eb44a90891de13da8c5510, type: 2}
+  - {fileID: 11400000, guid: 0c517a3cf056c489c97a6b749627d123, type: 2}
+  - {fileID: 11400000, guid: dfb4fddab5bf340bca7ef454b63fb90a, type: 2}
+  randomFlavorTableTitle: THE EVERFLASK
+  randomFlavorTableRows:
+  - 1 Leather pouch A story
+  - 2 Brass horn A blade
+  - 3 Twisted silver A small creature
+  - 4 Mottled stone Delicious fruit
+  - 5 White wood Honey
+  - "6 Frosted glass Music\nKNIGHTED BY...\nThe Bright Seer\nVIG 12, CLA 14, SPI
+    14, 3 GD\n\u2022 A booming, intrusively optimistic man\ncloaked in orange and
+    gold.\n\u2022 Has complete control over fire, able to\ntwist it into visions
+    brought to life.\n\u2022 Wants to see the world burn, but in a\nplanned and controlled
+    manner."
+  personHook: Violent playwright
+  objectHook: Wood mace
+  beastHook: Thorn frog
+  stateHook: Stalking
+  themeHook: 'Shelter
+
+    5
+
+    3
+
+    The'

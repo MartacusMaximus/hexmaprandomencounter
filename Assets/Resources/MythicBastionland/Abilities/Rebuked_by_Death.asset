@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Rebuked_by_Death
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Rebuked by Death
+  description: "Use when you are dead.\nReturn to life.\nYour body is as you left
+    it, as are your Guard\nand Virtue scores.\nPASSION - Acceptance\nRestore SPI
+    when warmly welcomed into\nsomebody's home.\nArise! Arise!\nBut, for what? For
+    whom?\nGhoul Knight\nWOODEN ANIMAL\nAnimal Type Origin\n1 Turtle Gift from a
+    friend\n2 Elephant You stole it\n3 Lion cub Made yourself\n4 Seahorse From a
+    parent\n5 Unicorn Found in a ruin\n6 Pigeon Found in a river\nKNIGHTED BY...\nThe
+    Paired Seer\nVIG 9, CLA 9, SPI 9, 2 GD\n\u2022 An unremarkable peasant woman,\nbusying
+    herself with chores and errands.\n\u2022 Her twin exists in the future of the
+    City,\nand they share a mind and memory.\n\u2022 Wants to be reunited with her
+    twin.\nPerson: Hostile scholar ~ Name: Verner ~ Characteristic: Star obsessed\nObject:
+    Memory cloak ~ Beast: Blind boar ~ State: Protecting ~ Theme: Repair\n6\n6\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

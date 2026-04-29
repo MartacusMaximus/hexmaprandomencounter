@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_93
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 93
+  mythName: Myth 93
+  omens:
+  - '1. A modest tower, a lone guard protecting a
+
+    petty duchess. She is obsessed
+    with sleep
+
+    and dreams. The guard wants to seek the
+
+    Cudgel, but needs
+    somebody to watch the
+
+    tower in his absence. Knows that a
+
+    hawkleon lives
+    nearby, and will be drawn
+
+    to such a weapon.'
+  - '2. The corpse of a large white ox lies mauled
+
+    but uneaten, twitching. Moments
+    later a
+
+    swarm of clawed bees bursts forth.'
+  - '3. A hawkleon prowls the shadows and
+
+    circles the skies, hoping to make
+    sport
+
+    with the Knights if it can isolate one.'
+  - '4. A scheming hedgehog tracks the Knights,
+
+    hoping to steal the Cudgel for
+    itself.'
+  - '5. The cowardly guard believes they have
+
+    the Cudgel. It''s just a branch
+    (d6 hefty).'
+  - '6. Finally, the true Cudgel (d10 hefty, the
+
+    wielder knows the location
+    of every enemy
+
+    in their heart, but can never stop a fight
+
+    until their
+    enemy is dead), embedded in a
+
+    huge slab of unbreakable green marble.
+
+    Releases
+    itself only for somebody who
+
+    honestly intends to destroy it.'
+  verse: 
+  castEntries:
+  - name: Clawed Bee Swarm, Warband
+    statBlock: 'VIG 5, CLA 3, SPI 3, 3 GD
+
+      Claws and stings (d6, wounds fester,'
+    notes: releasing more bees tomorrow)
+  - name: Scheming Hedgehog, Verispa, Slysnout
+    statBlock: 'VIG 7, CLA 17, SPI 7, 2 GD
+
+      A2 (bristles, melee attackers without
+      a Long'
+    notes: 'weapon take d4 Damage), bite (d6)
+
+      Hog-sized. Always on a scheme
+      (see below).
+
+      Its spines can be made into a dozen arrows
+
+      (+d6)
+      which strike silently, then vanish.'
+  - name: Hawkleon, the Cat of the Skies
+    statBlock: 'VIG 15, CLA 15, SPI 7, 9 GD
+
+      A1 (muscular hide), pounce (2d8),
+      wings'
+    notes: 'Wants to toy with prey. Desires the Cudgel.
+
+      Ashes of its feathers
+      repel both cat and bird.
+
+      The stick and the city, both worths beyond
+      quill
+
+      Prized ever and all, their ends empty still
+
+      SCHEMES OF
+      THE HEDGEHOG
+
+      Goal Twist
+
+      1 Steal food Wants to get caught
+
+      2
+      Acquire better home In disguise
+
+      3 Murder rival Befriends enemies
+
+      4
+      Steal treasure Play the long game
+
+      5 Defeat predator Fake death
+
+      6
+      Expand dynasty Exploit superstitions
+
+      Cudgel
+
+      Dwelling: Welcoming
+      brewery ~ Sanctum: Guiding stones ~ Monument: Ancient bridge
+
+      Hazard:
+      Choking dust ~ Curse: Filth heaps ~ Ruin: Wicked trophies
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Welcoming brewery
+  sanctum: Guiding stones
+  monument: Ancient bridge
+  hazard: Choking dust
+  curse: Filth heaps
+  ruin: Wicked trophies
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

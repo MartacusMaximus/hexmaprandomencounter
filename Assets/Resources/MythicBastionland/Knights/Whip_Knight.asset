@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Whip_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 68
+  knightName: Whip Knight
+  titleVerse: 'Some draw screams from flesh and bone
+
+    Others seek to make soul
+    moan'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 929c835c5c9cf4b32b81ead1992f67d0, type: 2}
+  linkedSeer: {fileID: 11400000, guid: cb176b3f57ab54affbd454a4ab485e57, type: 2}
+  steed: {fileID: 11400000, guid: 02dbaabb24a274363b615dc7a066e101, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: c2124c4b911134898b62c2210b740df4, type: 2}
+  - {fileID: 11400000, guid: c541788dc3f31477aad88db6c1dd5de0, type: 2}
+  - {fileID: 11400000, guid: 897135c2ed0c04e58960156584827489, type: 2}
+  - {fileID: 11400000, guid: 2d705143d332c4deb8567f305d20515a, type: 2}
+  - {fileID: 11400000, guid: cd1aad86f218649528cbc11ac1cb9ce4, type: 2}
+  - {fileID: 11400000, guid: 4c7467ac29ba8455190f3736729f1a5d, type: 2}
+  randomFlavorTableTitle: STRANGE HERBS
+  randomFlavorTableRows:
+  - 1 Heightened hearing Mild nausea
+  - '2 Breathe fire once
+
+    (d8 blast) Unable to speak'
+  - '3 Speak remotely with
+
+    any one person Hazy vision'
+  - 4 No pain (A1) Lose d6 VIG
+  - 5 Restore one Virtue Lose d6 CLA
+  - "6 Restore all Virtues Lose d6 SPI\nKNIGHTED BY...\nThe Prey Seer\nVIG 5, CLA
+    12, SPI 12, 4 GD\n\u2022 A hunched, flea-infested little wretch.\n\u2022 Sees
+    every hunger of every other being in\nthe Realm.\n\u2022 Longs to be eaten by
+    something huge."
+  personHook: Sickly ironsmith
+  objectHook: Artful cup
+  beastHook: Longly viper
+  stateHook: Tormenting
+  themeHook: 'Shrinking
+
+    2
+
+    9
+
+    The'

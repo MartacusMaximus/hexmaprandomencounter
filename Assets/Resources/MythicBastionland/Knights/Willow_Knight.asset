@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Willow_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 40
+  knightName: Willow Knight
+  titleVerse: 'Titans tall, now smithreened stones
+
+    The youth, cast down, intact,
+    alone'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 5c2066228b6134aabbfa6d9c09693f26, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 2d092e35023fb4c8b93b4ce4fb5ae67a, type: 2}
+  steed: {fileID: 11400000, guid: f07fe4b821fb84792b5177fb072dda17, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 709e51156e7d4443a8819859917a1a07, type: 2}
+  - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
+  - {fileID: 11400000, guid: 987ba3cb69b2243d0b43667febb23e7f, type: 2}
+  - {fileID: 11400000, guid: f43144614c12946d0af055b27bddd198, type: 2}
+  - {fileID: 11400000, guid: 3c67d3b96d42041f79cadb6afe7e5aa9, type: 2}
+  - {fileID: 11400000, guid: e4f132ee0b98841e5a1a98f811019c2b, type: 2}
+  - {fileID: 11400000, guid: d87f1eaab02b54c3493732ab50022a51, type: 2}
+  randomFlavorTableTitle: MEMORIES OF HOME
+  randomFlavorTableRows:
+  - 1 Riverside Death
+  - 2 Coastal War
+  - 3 Mountain Famine
+  - 4 Pine forest Plague
+  - 5 Moor Fire
+  - "6 Castle Flood\nKNIGHTED BY...\nThe Carved Seer\nVIG 7, CLA 5, SPI 11, 2 GD\n\u2022
+    Requires constant treatment, acolytes\ntending to their runic flesh carvings.\n\u2022
+    Sees the outcome of battles in their own\nhealing wounds.\n\u2022 Wants to drive
+    the land toward a\nclimactic war that will bring peace."
+  personHook: Legendary sage
+  objectHook: Thorn spear
+  beastHook: Laughing shrew
+  stateHook: Surveying
+  themeHook: 'String
+
+    1
+
+    7
+
+    The'

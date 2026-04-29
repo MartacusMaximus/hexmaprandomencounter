@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Destinous_Sigil
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Destinous Sigil
+  description: "At sunset, etch a cosmic rune somewhere\nsecret on your person.\nChoose
+    a number. When a die rolls that\nnumber you may adjust it to any other value\non
+    that die. This can be performed a number\nof times equal to the chosen number.\nA
+    different number is chosen next sunset.\nPASSION - Foresight\nRestore SPI when
+    your prediction is proven to\nbe correct.\nUnder gleam of lumenlight, in skin
+    or stone ascratch\nStrands of faten path unveiled, a starry scrawl to match\nRune
+    Knight\nTHE CRYSTAL FLASK\nIf Shaken If Smashed\n1 Warmth of a hearth Sudden
+    thunderstorm\n2 Veil of darkness Next season arrives\n3 Gentle light Night arrives\n4
+    Repels birds Deafening scream\n5 Soothes canines Plague of locusts\n6 Eases pain
+    Freezes nearby water\nKNIGHTED BY...\nThe Drowned Seer\nVIG 3, CLA 3, SPI 5,
+    2 GD\n\u2022 Said to be at the bottom of a small but\nimpossibly deep pond. Soggy
+    acolytes\ngather at the shore to speak her intent.\n\u2022 Sees from every river
+    and body of fresh\nwater, but utterly blind to the sea.\n\u2022 Wants to protect
+    Knights. Occasionally\nfloats useful items to the surface.\nPerson: Legendary
+    exile ~ Name: Myghal ~ Characteristic: Wrapped up warm\nObject: Hermit's rope
+    ~ Beast: Fanged dove ~ State: Entangled ~ Theme: Moonlight\n4\n1\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

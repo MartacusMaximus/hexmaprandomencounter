@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Tiger_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 150
+  knightName: Tiger Knight
+  titleVerse: 'You see in beasts an anarchy unfold
+
+    In truth, a structure strict
+    as crowns of old'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: c58f473c3ce134217b8a2f070d50de9c, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 952f346c873f8479d8f2d9a380dcdbd1, type: 2}
+  steed: {fileID: 11400000, guid: a0e97b4cab7e9406cb6d93b54b046cf9, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: e9daab7ae1d424ebeae85224c7b1c5c4, type: 2}
+  - {fileID: 11400000, guid: 354c0ddce044e4b75b5ea8d40f884f5a, type: 2}
+  - {fileID: 11400000, guid: 1bc68e7a11a5f43eb855da304fffdda3, type: 2}
+  - {fileID: 11400000, guid: a89258b1755c643bfa221e32ca60cd0e, type: 2}
+  - {fileID: 11400000, guid: e0bbbca0c6be8435ca1e1fbfad5a726d, type: 2}
+  - {fileID: 11400000, guid: c962f7f5766a14710a5336085bad9a37, type: 2}
+  - {fileID: 11400000, guid: 6a54b75abbaea42d280b089c5172f927, type: 2}
+  - {fileID: 11400000, guid: 2d3af9ef995eb4e89a79a00fe86d6d13, type: 2}
+  randomFlavorTableTitle: A TATTOOED STEED
+  randomFlavorTableRows:
+  - 1 Abstract shapes For service in battle
+  - '2 Ancient runes It happened before you
+
+    bought them'
+  - '3 Letters you do not
+
+    understand
+
+    They were born
+
+    that way'
+  - 4 Skulls and bones It happened overnight
+  - 5 Thunderbolts They appeared slowly
+  - "6 Thorns and flowers A Seer demanded it\nKNIGHTED BY...\nThe Dying Seer\nVIG
+    3, CLA 12, SPI 3, 1 GD\n\u2022 A ghostly projection bound to a rotting\ncorpse,
+    trapped in the moment of death.\n\u2022 Knows the precise details of every death\nstill
+    to come, but is forbidden from\nsharing them. Can still gently advise.\n\u2022
+    Wants every other being to die so that he\ncan finally rest."
+  personHook: Animal worshipper
+  objectHook: Web net
+  beastHook: Listening asp
+  stateHook: Eating
+  themeHook: 'Grass
+
+    6
+
+    2
+
+    The'

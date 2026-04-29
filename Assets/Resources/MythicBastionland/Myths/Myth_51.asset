@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_51
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 51
+  mythName: Myth 51
+  omens:
+  - '1. A leech-collector weeps. In a nearby
+
+    swamp the colossal thing snatched
+    her
+
+    sister away with a bite. That bone-
+
+    grinding noise haunts her.'
+  - '2. An argumentative sage complains. The
+
+    balance of nature has been tipped.
+    The
+
+    birds aren''t behaving correctly and
+
+    there''s not enough prey in
+    the woods.'
+  - '3. A logging camp, crushed. Barrels of
+
+    limeweed, a pungent appetite suppressor,
+
+    left
+    untouched. A Wurmshield surveys
+
+    their master''s work with unearned pride.'
+  - '4. A stinking grey salt-bog. Grinding
+
+    laughter can be heard on the wind
+    as the
+
+    Wurm sleeps below, dreaming of the next
+
+    feast. Two Wurmshields
+    keep watch,
+
+    arguing over who is more loyal.'
+  - '5. The Wurm lounges on smashed burial
+
+    mounds of Seers. It speaks with four
+
+    Wurmshields,
+    loyal but poor company.'
+  - '6. The Wurm bursts from the ground, giving
+
+    one opportunity for stimulating
+
+    conversation
+    before its great feast begins.
+
+    It will not stop until bloated or dead.'
+  verse: 
+  castEntries:
+  - name: The Wurm, the Colossal Spite-Glutton
+    statBlock: 'VIG 18, CLA 8, SPI 5, 10 GD
+
+      A3 (craggy hide)'
+    notes: 'Writhe (d10 blast) or chew (3d10 slow) or
+
+      shower with debris (d8
+      blast)
+
+      Wurmshields, Kermac, Cado, Zune,'
+  - name: Shena, Marlo, Yazakel
+    statBlock: 'VIG 10, CLA 12, SPI 8, 2 GD
+
+      A2 (helm, red halfshield)'
+    notes: 'Spike mace (d8 hefty), red halfshield (d4)
+
+      Repugnant personalities,
+      always trying to
+
+      make themselves even worse by mimicking
+
+      the
+      Wurm.
+
+      Callous, cruel, awful, and long
+
+      Feasting far beyond its
+      hunger, only happy in bloated rest
+
+      WURM BEHAVIOUR
+
+      Conversation
+      Combat
+
+      1 Spout hatred Cut off escape
+
+      2 Spread fear Trap them
+      and leave
+
+      3 Aggrandise self Target the weak
+
+      4 Insult enemies
+      Break their arms
+
+      5 Seek submission Flee to better ground
+
+      6 Entice
+      fealty Blunt assault
+
+      Wurm
+
+      Dwelling: Guard''s outpost ~ Sanctum:
+      Stargazer hut ~ Monument: Star stone
+
+      Hazard: Spiked wall ~ Curse: Strange
+      constellations ~ Ruin: Impact crater
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Guard's outpost
+  sanctum: Stargazer hut
+  monument: Star stone
+  hazard: Spiked wall
+  curse: Strange constellations
+  ruin: Impact crater
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

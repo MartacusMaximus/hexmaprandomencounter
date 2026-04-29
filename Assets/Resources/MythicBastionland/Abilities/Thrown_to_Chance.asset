@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Thrown_to_Chance
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Thrown to Chance
+  description: "Use instead of attacking normally.\nFlip a coin. Heads the target
+    is killed, tails\nyou are killed.\nThis is final.\nPASSION - Generosity\nRestore
+    SPI when you give generously to\nsomebody in need.\nIn arg or aur, decisions
+    spun\nA prize, a life, lost or won\nCoin Knight\nSOUND OF THE FLUTE\nLoved by
+    Hated by\n1 Children Everybody else\n2 Cats Proper musicians\n3 Nobles Rodents\n4
+    Knights Your Company\n5 Birds of prey Seers\n6 Sea creatures Songbirds\nKNIGHTED
+    BY...\nThe Map Seer\nVIG 14, CLA 10, SPI 6, 2 GD\n\u2022 A body like craggy mountains,
+    flowing\nwith rivers of black blood.\n\u2022 His will can alter the geography
+    of the\nRealm, but it takes great effort.\n\u2022 Wants to send Knights to their
+    death.\nPerson: Greedy disciple ~ Name: Tyack ~ Characteristic: Na\xEFve questions\nObject:
+    River helm ~ Beast: Horned quail ~ State: Trapped ~ Theme: Vision\n4\n11\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

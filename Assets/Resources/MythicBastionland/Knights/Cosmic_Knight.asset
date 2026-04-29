@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Cosmic_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 132
+  knightName: Cosmic Knight
+  titleVerse: 'Countless lights dotted in night'' s veil
+
+    To them, each one a
+    glad or shameful tale'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: a0663dd476c8e470aa02c99929afe65c, type: 2}
+  linkedSeer: {fileID: 11400000, guid: d603e26b11b4f4ff7aae154812ffc649, type: 2}
+  steed: {fileID: 11400000, guid: bbd6a2a65d2804dd29c3c6809c0ee6f8, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 309a132d1673a4f3ba8ee00bf3ade3bf, type: 2}
+  - {fileID: 11400000, guid: 0fa3cb74a4dbe4dcb9274d3e4d030baa, type: 2}
+  - {fileID: 11400000, guid: 15efbc56cc83c458e8a6ba88afe2ad83, type: 2}
+  - {fileID: 11400000, guid: efa8fdd9d2d7e497ea2239332cdfc3fd, type: 2}
+  - {fileID: 11400000, guid: 89419492c679045528117ffa508c0426, type: 2}
+  - {fileID: 11400000, guid: 0108042cdaadc4bcbb994ccea705778c, type: 2}
+  - {fileID: 11400000, guid: e1d4c1c32e0644052b345b6d295270ad, type: 2}
+  - {fileID: 11400000, guid: f7271a91c9af144c6ab33ac881f41bec, type: 2}
+  - {fileID: 11400000, guid: 1982d9584459b45d1be67d6ee1f8a4bf, type: 2}
+  randomFlavorTableTitle: STRANGE CROSSBOW
+  randomFlavorTableRows:
+  - 1 Handheld (d6) Cannot shoot in dark
+  - 2 Lightwood (d8 hefty) Only you can shoot it
+  - 3 Repeating (d8 long) Extremely loud clunk
+  - 4 Double (2d6 long) No bolts required
+  - 5 Bronze (2d8 slow) Very painful wounds
+  - "6 Ironwood (d10 slow) Can also be used in\nmelee combat\nKNIGHTED BY...\nThe
+    Rose Seer\nVIG 5, CLA 8, SPI 6, 1 GD\n\u2022 Frail body, lilting head of pink\nflesh-petals.
+    Every need lovingly tended\nto by an elderly woman.\n\u2022 Whispers her guidance
+    as obscure, ugly\npoetry, applauded by her caretaker.\n\u2022 Wants everybody
+    to suffer just enough to\nenjoy the little pleasure they have."
+  personHook: Smug prophet
+  objectHook: War ink
+  beastHook: Dust mongoose
+  stateHook: Trailing
+  themeHook: 'Transformation
+
+    5
+
+    5
+
+    The'

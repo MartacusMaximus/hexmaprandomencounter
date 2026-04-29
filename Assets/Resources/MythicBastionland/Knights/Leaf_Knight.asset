@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Leaf_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 152
+  knightName: Leaf Knight
+  titleVerse: 'No greater gift than bough and bush
+
+    All feast in verdy bountilush'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: ed0493432dcde498db82223ca8a4fe1a, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 7396de4c4754440bca1d154e68963bb6, type: 2}
+  steed: {fileID: 11400000, guid: c10ed1112850942e49fd486958e74ff8, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 70303ac40d4d04b8685e949a54cd9fbd, type: 2}
+  - {fileID: 11400000, guid: 7fee5fb5aad214842a7ade39531edc8e, type: 2}
+  - {fileID: 11400000, guid: ed204959f4af14c4a9b7ec5ccbf10fc2, type: 2}
+  - {fileID: 11400000, guid: e32d001ce3c4e401b89bb59e1c1222f4, type: 2}
+  - {fileID: 11400000, guid: fb052018074f1449ca51b3a7c6a260a1, type: 2}
+  - {fileID: 11400000, guid: 28b4a550d477d47f38d9ce4da366c8b3, type: 2}
+  - {fileID: 11400000, guid: 3b70a35168bd74c0899eb8774204916a, type: 2}
+  - {fileID: 11400000, guid: c73dc94df1f6e40a78a2d07ac84012db, type: 2}
+  - {fileID: 11400000, guid: da74e03fbd41848118815e45d1bbb591, type: 2}
+  - {fileID: 11400000, guid: 2fa0f64df34c0425a9a9da8a5ad4ad5d, type: 2}
+  - {fileID: 11400000, guid: 5bb263c8e4a0448bcafb13a48ecabc88, type: 2}
+  randomFlavorTableTitle: 
+  randomFlavorTableRows:
+  - '1 Instantly cools any
+
+    liquid it touches
+
+    It''s long and
+
+    inconvenient
+    to carry'
+  - 2 Insects hate the smell Dogs always want it
+  - '3 It transforms into 20ft
+
+    of rope when shaken
+
+    It looks just like every
+
+    other
+    stick'
+  - '4 Terrifies snakes, eels,
+
+    and worms It''s very delicate'
+  - '5 One end is extremely
+
+    sticky
+
+    It''s extremely
+
+    flammable'
+  - "6 Seers believe it is a\nblessing upon you\nIt only works in bright\nsunlight\nKNIGHTED
+    BY...\nThe Born Seer\nVIG 6, CLA 6, SPI 8, 1 GD\n\u2022 An infant, large eyes,
+    boundless energy,\ndestined to be the most powerful Seer.\n\u2022 Sees the future
+    in childlike simplicity and\ngives clumsy guidance, refusing to\nelaborate or
+    explain themselves.\n\u2022 Wants to go somewhere new."
+  personHook: Athletic warden
+  objectHook: Scaled daisy
+  beastHook: Massive badger
+  stateHook: Thinking
+  themeHook: 'Sunrise
+
+    6
+
+    3
+
+    The'

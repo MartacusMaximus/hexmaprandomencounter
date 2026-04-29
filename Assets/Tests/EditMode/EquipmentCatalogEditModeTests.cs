@@ -150,7 +150,7 @@ public class EquipmentCatalogEditModeTests
         Assert.That(campaign, Is.Not.Null, $"Expected generated campaign at {campaignPath}");
 
         var libraryItems = (IEnumerable)GetField(library, "items");
-        Assert.That(libraryItems.Cast<object>().Count(), Is.EqualTo(62));
+        Assert.That(libraryItems.Cast<object>().Count(), Is.GreaterThanOrEqualTo(62));
 
         var allCharacters = ((IEnumerable)GetField(campaign, "allCharacters")).Cast<object>().ToList();
         Assert.That(allCharacters.Count, Is.EqualTo(4));

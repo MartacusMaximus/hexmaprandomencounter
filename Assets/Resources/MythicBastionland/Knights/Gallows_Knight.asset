@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Gallows_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 102
+  knightName: Gallows Knight
+  titleVerse: 'In dregs of dawn the damnlings sway
+
+    For famine'' s brood a gifted
+    prey'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: dfb6cb43dbf194f689bc8258a93772f0, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 56225c4503b8c438c85e7ed344a538fb, type: 2}
+  steed: {fileID: 11400000, guid: 8261ecf50da2c40d999b394bfdd241b6, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 2594bc4eecef844f0afbf6d4aa417712, type: 2}
+  - {fileID: 11400000, guid: de499c780a44a45bd833b1d4ef89bf17, type: 2}
+  - {fileID: 11400000, guid: 0cfb05a79849645eabafec9c696e951e, type: 2}
+  - {fileID: 11400000, guid: fc86b23dcf3c941a19987479c3a185dc, type: 2}
+  - {fileID: 11400000, guid: 4151ec1d149c448f28a5c2e571c2da29, type: 2}
+  - {fileID: 11400000, guid: 7da58b7f363ff44e1ad3326ec851e866, type: 2}
+  - {fileID: 11400000, guid: 96e0c042d71614edfa4098077f9a8813, type: 2}
+  - {fileID: 11400000, guid: b187163a777d943f097ac1b6ec34cb5e, type: 2}
+  - {fileID: 11400000, guid: 3ac685fd37974474897e410442ca53c4, type: 2}
+  - {fileID: 11400000, guid: 157cb5e063f6a4d1abb61ae9b5eae602, type: 2}
+  - {fileID: 11400000, guid: f396dc573e6d042bd83f51f80e4db3c6, type: 2}
+  - {fileID: 11400000, guid: 193635407c768472fb45d22ac73480ff, type: 2}
+  randomFlavorTableTitle: SALVAGED ARMOUR
+  randomFlavorTableRows:
+  - 1 Copper mail (A1) Embedded arrowheads
+  - '2 Cracked chestplate
+
+    and bracers (A1)
+
+    Two sets hastily
+
+    patched
+    together'
+  - 3 Red brigandine (A1) Partially burnt
+  - 4 Padded cloth (A1) Claw marks
+  - 5 Hardened leather (A1) Faded heraldry
+  - "6 Dented plate (A1) Dried blood\nKNIGHTED BY...\nThe Torn Seer\nVIG 9, CLA 5,
+    SPI 8, 3 GD and\nVIG 6, CLA 6, SPI 6, 2 GD\n\u2022 Appears as if a tall, broad
+    man was torn\nin half from head to groin, halves now\nclinging together, but
+    acting as two.\n\u2022 Always presents two possibilities, two\nopinions, two
+    predictions.\n\u2022 Never argues with the other half, but\nalways contradicts
+    at least slightly."
+  personHook: Wary crier
+  objectHook: Mist club
+  beastHook: Taloned heron
+  stateHook: Building
+  themeHook: 'Metal
+
+    4
+
+    2
+
+    The'

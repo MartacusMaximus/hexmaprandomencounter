@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: The_Red_Hunt
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: The Red Hunt
+  description: "Infuse a target's blood into an arrow to give it\n+d12 against the
+    target. You can also taste a\nsmall amount of the blood to get a glimpse of\ntheir
+    location.\nPASSION - Apathy\nRestore SPI when you reject a call for comfort.\nStone
+    and spikes split into flowers\nCruelty is delicious power\nBarbed Knight\nBAD
+    REPUTATION\nBegrudging Ally Hated Enemy\n1 Eccentric alchemist Rich merchant\n2
+    Humble chronicler Master blacksmith\n3 Surly brewer Admired Knight\n4 Horse breeder
+    Bandit leader\n5 Elderly innkeeper Retired general\n6 Petty burglar Mercenary
+    captain\nKNIGHTED BY...\nThe Serpent Seer\nVIG 16, CLA 14, SPI 14, 3 GD\n\u2022
+    A writhing pile of serpents, speaking as\none through a choir of hisses.\n\u2022
+    Grants visions of dangerous beasts in the\nwilderness nearby.\n\u2022 Wants more
+    unusual serpents for their\npile, or even just a snack.\nPerson: Argumentative
+    sage ~ Name: Chider ~ Characteristic: Mangled ear\nObject: Limeweed ~ Beast:
+    Leeches ~ State: Listening ~ Theme: Smell\n1\n12\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

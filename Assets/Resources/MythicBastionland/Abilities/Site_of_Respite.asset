@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Site_of_Respite
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Site of Respite
+  description: "You may declare a building that you occupy\nas peaceful ground. No
+    being within the\nbuilding can bring themselves to attack\nanother until you
+    leave.\nPASSION - Quietude\nRestore SPI when bringing peaceful order to a\nchaotic
+    place.\nNo blood or cry\nNot here, not today\nTemple Knight\nTHE SNAKE SPEAKS\nVoice
+    Agenda\n1 Pitiful Your death\n2 Mocking Order\n3 Sinister Bloodshed\n4 Benevolent
+    Peace\n5 Ancient Chaos\n6 Loving Your ambitions\nKNIGHTED BY...\nThe Tapestry
+    Seer\nVIG 9, CLA 17, SPI 4, 1 GD\n\u2022 A silken silhouette locked in a moment
+    of\ntotal insight, only able to murmur.\n\u2022 Sees everything at once and all\nconnections
+    between them.\n\u2022 Wants to make everything as simple as\npossible without
+    disturbing fate.\nPerson: Proud pilgrim ~ Name: Dorka ~ Characteristic: Painfully
+    slow\nObject: Tree chart ~ Beast: Hammer crane ~ State: Climbing ~ Theme: Growth\n5\n6\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 public class RandomEncounterManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class RandomEncounterManager : MonoBehaviour
     [Header("Data")]
     public BiomePrefabSO biomeTable;
     public List<MythSO> mythPool;
+    public MythicBastionlandContentLibrarySO contentLibrary;
 
     [Header("Settings")]
     public int mythCount = 6;
@@ -22,6 +24,16 @@ public class RandomEncounterManager : MonoBehaviour
 
         var allCells = new List<HexCell>(FindObjectsByType<HexCell>(FindObjectsSortMode.None));
         if (allCells.Count == 0) return;
+        if ((mythPool == null || mythPool.Count == 0) && contentLibrary == null)
+        {
+            contentLibrary = MythicBastionlandContentLibrarySO.LoadDefault();
+        }
+
+        if ((mythPool == null || mythPool.Count == 0) && contentLibrary != null)
+        {
+            mythPool = contentLibrary.myths.ToList();
+        }
+
         if (mythPool == null || mythPool.Count == 0) return;
 
         List<MythSO> mythChoices = new List<MythSO>(mythPool);
@@ -69,6 +81,8 @@ public class RandomEncounterManager : MonoBehaviour
 
             mythHexes.Add(chosenCell);
         }
+
+        AssignRealmFlavor(allCells);
     }
 
     int CubeDistance(HexCell a, HexCell b)
@@ -98,6 +112,11 @@ public class RandomEncounterManager : MonoBehaviour
 
     public void OnEnterHex(HexCell cell)
     {
+        if (!string.IsNullOrWhiteSpace(cell.realmFlavor))
+        {
+            Debug.Log($"Realm flavor at {cell.Coordinate}: {cell.realmFlavor}");
+        }
+
         int roll = Random.Range(1, 7);
 
         switch (roll)
@@ -165,5 +184,41 @@ public class RandomEncounterManager : MonoBehaviour
             $"Biome Encounter ({cell.biome}) @ {cell.Coordinate}: \n" +
             $"Location: {loc}\nEvent: {evt}"
         );
+    }
+
+    private void AssignRealmFlavor(IEnumerable<HexCell> cells)
+    {
+        foreach (var cell in cells)
+        {
+            if (cell == null || cell.biome == BiomeType.City)
+            {
+                continue;
+            }
+
+            var nearest = GetNearestMyth(cell);
+            if (nearest == null || nearest.myth == null)
+            {
+                continue;
+            }
+
+            var myth = nearest.myth;
+            var picks = new[]
+            {
+                myth.dwelling,
+                myth.sanctum,
+                myth.monument,
+                myth.hazard,
+                myth.curse,
+                myth.ruin
+            }.Where(value => !string.IsNullOrWhiteSpace(value)).ToArray();
+
+            if (picks.Length == 0)
+            {
+                continue;
+            }
+
+            var hash = Mathf.Abs((cell.q * 73856093) ^ (cell.r * 19349663) ^ myth.pageNumber);
+            cell.realmFlavor = picks[hash % picks.Length];
+        }
     }
 }

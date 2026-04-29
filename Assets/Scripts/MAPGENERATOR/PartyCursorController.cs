@@ -12,6 +12,10 @@ public class PartyCursorController : MonoBehaviour
     void Awake()
     {
         Instance = this;
+        if (TravelHud.Instance == null)
+        {
+            new GameObject("TravelHud").AddComponent<TravelHud>();
+        }
     }
 
     public void TryClickCursor()

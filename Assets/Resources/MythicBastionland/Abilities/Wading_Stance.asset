@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Wading_Stance
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Wading Stance
+  description: "Gain 1 Armour and +d6 to all attacks when\nfighting in at least waist-high
+    water.\nPASSION - Filth\nRestore SPI when you become utterly filthy.\nThere they
+    stood, awashed in soddled loam\nA grottling dance, the dusky sky agloam\nMoat
+    Knight\nAN ESPECIALLY DIFFICULT STEED\nWill Not But\n1 Jump Eats anything\n2
+    Stop suddenly Is beautiful\n3 Carry anybody but\ntheir Knight\nAlways hears an\nambush
+    coming\n4 Follow instructions\nunless being ridden\nAlways knows which\nway is
+    north\n5 Pull a cart Hums tunefully\n6 Travel in darkness Is very tough (A1)\nKNIGHTED
+    BY...\nThe Brazen Seer\nVIG 10, CLA 3, SPI 10, 1 GD\nA2 (bronze plates)\n\u2022
+    A burning soul, welded into a hollow\nbronze statue of himself, mounted above\na
+    blazing fire pit.\n\u2022 Sees any moments of great pain, in the\npast or the
+    probable future.\n\u2022 Wants others to suffer pain, as he has.\nPerson: Hot-tempered
+    baker ~ Name: Bray ~ Characteristic: Extremely old\nObject: Shadow lens ~ Beast:
+    Two-tailed eel ~ State: Lost ~ Theme: Battle\n3\n4\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

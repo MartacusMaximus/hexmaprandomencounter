@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Key_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 80
+  knightName: Key Knight
+  titleVerse: 'Sure as sky and sea
+
+    For every lock a key'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 90cbcf19fb62e4ebebcd799ec34e7588, type: 2}
+  linkedSeer: {fileID: 11400000, guid: ef8deb2847b4448f7a6a867d2201868a, type: 2}
+  steed: {fileID: 11400000, guid: 3d66e1761ec1b4645acc09b371758553, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: bf8a84601c38a42c4836516acfd5457a, type: 2}
+  - {fileID: 11400000, guid: 1361007559fd24cb18cf6042c905f895, type: 2}
+  - {fileID: 11400000, guid: 5a11b7a4701534f16802c60bd09365c7, type: 2}
+  - {fileID: 11400000, guid: 22cdd9b35e06846968bdcb992bd5584e, type: 2}
+  - {fileID: 11400000, guid: bb2e63e202ea641dd969ff56e674ea2a, type: 2}
+  - {fileID: 11400000, guid: 4d47f501c6212424786ca225c82014b3, type: 2}
+  - {fileID: 11400000, guid: 069eae024cfac464da21af95443d2f17, type: 2}
+  - {fileID: 11400000, guid: 38134a298ccb74c698644eb1cffa83dd, type: 2}
+  - {fileID: 11400000, guid: 5f01d2911baf446a2a184bbdaaaca6f5, type: 2}
+  randomFlavorTableTitle: ILL GOTTEN GAINS
+  randomFlavorTableRows:
+  - 1 Polished gems A scrap of a poem
+  - 2 Silver coins A lock of hair
+  - 3 Box of salt A wooden ring
+  - 4 Tiny, perfect diamond Some baby teeth
+  - 5 Golden hairpin A vial of blood
+  - "6 String of pearls Wooden figurine\nKNIGHTED BY...\nThe Unspoken Seer\nVIG 5,
+    CLA 18, SPI 18, 6 GD\n\u2022 Locals claim there's no Seer here and\ndodge further
+    questions.\n\u2022 Worthy Knights find guidance left as\ncryptic symbols in the
+    wilderness near to\ntheir Sanctum and near to any Myth.\n\u2022 Wants to remain
+    unspoken, unobserved,\nand eventually cease to exist at all."
+  personHook: Bitter archer
+  objectHook: Rainbow beads
+  beastHook: Riding peacock
+  stateHook: Guarding
+  themeHook: 'Towers
+
+    3
+
+    3
+
+    The'

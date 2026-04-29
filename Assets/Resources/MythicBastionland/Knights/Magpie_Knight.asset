@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Magpie_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 140
+  knightName: Magpie Knight
+  titleVerse: 'Keen eyes see what cold heart seeks
+
+    This bird never bare of beak'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 04b92cad2cff94c48ba4153d3cb56c7f, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 6d8c55f1cee92443bbe5e1a6cbf657e0, type: 2}
+  steed: {fileID: 11400000, guid: e083f7ae98c1d4825aa981a025b47ed9, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: c238e9755c64b4e8b8accbde3606553e, type: 2}
+  - {fileID: 11400000, guid: e88f35742cba245c78c409b7d578cf5a, type: 2}
+  - {fileID: 11400000, guid: 8277be91349304036b03e8caad8a37a5, type: 2}
+  - {fileID: 11400000, guid: 06b4ca7acf00e494cafca0a0b1ead43d, type: 2}
+  - {fileID: 11400000, guid: eee5108762e554ff6babab2c2e3f1a26, type: 2}
+  - {fileID: 11400000, guid: 1763423555c3b4e1280c34fce456db77, type: 2}
+  - {fileID: 11400000, guid: 2a63b1f917b934b4ab356d552ac686d2, type: 2}
+  - {fileID: 11400000, guid: a4fb203cf5fa04cf4b008a69adb3bf09, type: 2}
+  randomFlavorTableTitle: A TREASURED MEMENTO
+  randomFlavorTableRows:
+  - 1 A dried flower A great victory
+  - 2 A sword hilt A shameful defeat
+  - 3 A pearl A happy place
+  - 4 A scrap of a banner A sorrowful place
+  - 5 An old coin Somebody you loved
+  - "6 A dog's collar Somebody you hated\nKNIGHTED BY...\nThe Lens Seer\nVIG 10,
+    CLA 14, SPI 6, 2 GD\n\u2022 A squat body, her head a refractive orb of\nliquid
+    glass.\n\u2022 Knows the true fate of anything that she\nexamines closely and
+    thoroughly.\n\u2022 Wants interesting things brought to her\nfor examination."
+  personHook: Wild thatcher
+  objectHook: Copper acorn
+  beastHook: Armoured pigeon
+  stateHook: Smelling
+  themeHook: 'Light
+
+    5
+
+    9
+
+    The'

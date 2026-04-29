@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Guiding_Gust
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Guiding Gust
+  description: "Ascend to the top of a vertical surface you are\ntouching, lifted
+    on a burst of wind.\nPASSION - Joy\nRestore SPI when you deliver good news.\nTattered
+    wing, loath'ed cry, born of ugly bill\nAnd yet what heights, what lofty sights,
+    this skwarmew captures still\nGull Knight\nPATCHWORK ARMOUR\nSome taken from...
+    Mixed with...\n1 Fallen soldiers Flexible leather\n2 Ancient tomb Sleek bronze\n3
+    Shipwreck Polished steel\n4 A fighting pit Brass studs\n5 A defeated Knight Padded
+    coat\n6 Thankful militia Thick furs\nKNIGHTED BY...\nThe Floating Seer\nVIG 12,
+    CLA 12, SPI 14, 2 GD\n\u2022 A bloated bladder of a being, humming as\nshe bobs
+    about in the air buoyantly,\nyelping as she hits the ceiling.\n\u2022 Sees through
+    the eyes of all flying beings.\n\u2022 Wants to float free toward the stars.\nHates
+    being confined. Being grounded\ncauses agony.\nPerson: Zealous student ~ Name:
+    Foxter ~ Characteristic: Always alert\nObject: Crystal mead ~ Beast: Paradise
+    cockerel ~ State: Searching ~ Theme: Ice\n5\n8\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

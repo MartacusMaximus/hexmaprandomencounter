@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Snare_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 30
+  knightName: Snare Knight
+  titleVerse: 'Immersed within the woods adeep
+
+    A sheriff rides from nature''
+    s keep'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 55f4a3b87128e4bd89f608d1a6102c49, type: 2}
+  linkedSeer: {fileID: 11400000, guid: d598d448e04944005bd60a8ffe4fa087, type: 2}
+  steed: {fileID: 11400000, guid: 63526a68f42c148b7a5582a13f34df9b, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: f3adc242fa7c74b5986baefadbccfbd6, type: 2}
+  - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
+  - {fileID: 11400000, guid: 3510348b4d3f74f8a8bdbd8b76f6bf3d, type: 2}
+  - {fileID: 11400000, guid: 1cf381a564dbe42df8e8caca801d5730, type: 2}
+  - {fileID: 11400000, guid: 2cc7d05d1543c4fa89e1047080703081, type: 2}
+  - {fileID: 11400000, guid: 1d25cd354843c478d9f4b510587a1b9b, type: 2}
+  randomFlavorTableTitle: KNIGHT & COMPANION
+  randomFlavorTableRows:
+  - 1 Exiled Otter
+  - 2 Feral Hare
+  - 3 Vengeful Rat
+  - 4 Shamed Weasel
+  - 5 Jovial Ferret
+  - "6 Artistic Squirrel\nKNIGHTED BY...\nThe Swollen Seer\nVIG 15, CLA 5, SPI 4,
+    1 GD\n\u2022 Can only be moved by feats of\nengineering usually reserved for
+    siegery.\n\u2022 Sees within the minds of huge beings.\n\u2022 Wants to grow
+    ever bigger."
+  personHook: Tired scout
+  objectHook: Moonlit honey
+  beastHook: Giant magpie
+  stateHook: Resting
+  themeHook: 'Rope
+
+    1
+
+    2'

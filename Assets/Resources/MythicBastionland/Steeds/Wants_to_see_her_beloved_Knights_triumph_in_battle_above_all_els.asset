@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e5304a0a8314209ac918caf5d0d5db, type: 3}
+  m_Name: Wants_to_see_her_beloved_Knights_triumph_in_battle_above_all_els
+  m_EditorClassIdentifier: Assembly-CSharp::SteedDefinitionSO
+  steedName: 'Wants to see her beloved Knights
+
+    triumph in battle above all else.
+
+    Person:
+    Scarred bounty hunter ~ Name: Arture ~ Characteristic: Always eating
+
+    Object:
+    Soldier''s horseshoe ~ Beast: Leafy goose ~ State: Returning ~ Theme: Revenge
+
+    2
+
+    12
+
+    The'
+  vigor: 0
+  clarity: 0
+  spirit: 0
+  guard: 0
+  startsExhausted: 0

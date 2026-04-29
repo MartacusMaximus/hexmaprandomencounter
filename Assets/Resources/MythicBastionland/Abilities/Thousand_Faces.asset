@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Thousand_Faces
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Thousand Faces
+  description: "You can assume the face of anybody you have\ntouched, but your body
+    and voice are\nunchanged.\nPASSION - Vigilance\nRestore SPI when you prevent
+    a betrayal.\nNow you call for truth from me?\nI'll offer not which cannot be\nMask
+    Knight\nMASKED ARMOUR\nAppearance Design\n1 Youthful Horned\n2 Beautiful Two-faced\n3
+    Misshapen Blindfolded\n4 Abstract Scarred\n5 Skull Roaring\n6 Elder Crowned\nKNIGHTED
+    BY...\nThe Abacus Seer\nVIG 9, CLA 19, SPI 3, 3 GD\n\u2022 Hunched on the floor,
+    counting on fingers\nand toes in numbers you don't recognise.\n\u2022 Takes a
+    long time to make a prediction,\nbut when they do it is sure to come true.\nEven
+    fate must bend to their calculation.\n\u2022 Wants to live long enough to complete
+    all\nof their calculations.\nPerson: Patronising hermit ~ Name: Peryn ~ Characteristic:
+    Morbid embroidery\nObject: Spinning goblet ~ Beast: Dead greyhound ~ State: Mourning
+    ~ Theme: Darkness\n5\n1\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

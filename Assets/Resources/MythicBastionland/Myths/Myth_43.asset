@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_43
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 43
+  mythName: Myth 43
+  omens:
+  - '1. Drunken worshippers of the Child,
+
+    rejoicing that the first sign has
+    arrived.
+
+    Mistrustful of anybody that won''t join in.'
+  - '2. 3 Seeker Knights and their redmaw wolf,
+
+    escorting a Seer in the hunt
+    for the Child,
+
+    who they believe to be the key to the City.'
+  - '3. Fog shrouded lake, no deeper than a foot
+
+    throughout. A rogue Seeker
+    Knight
+
+    searches for the Child, who they believe
+
+    must be sacrificed
+    to an awful creature in
+
+    order to put it to rest for good. You''re
+
+    either
+    with them or against them.'
+  - '4. An abandoned shack, empty cradle. A
+
+    snake fang rattle, known to repel
+    the
+
+    wicked dead. The Burning Mother cries
+
+    out in the distance. Any
+    who look upon
+
+    her are attacked on sight.'
+  - '5. A silvery waterfall. Metal placed within is
+
+    repaired. Distant cheering
+    and crying as
+
+    the second sign comes into effect.'
+  - '6. At last they are here. A cradle of mist, the
+
+    Child within. d6 Seeker
+    Knights are here
+
+    to kill them, another d6 here to protect
+
+    and take
+    them back to their Realm.'
+  verse: 
+  castEntries:
+  - name: The Promised Child
+    statBlock: 'VIG 2, CLA 2, SPI 18, 1 GD
+
+      No human can wilfully cause them
+      harm.'
+    notes: 
+  - name: Seeker Knights, Feliz, Gornig & Tayley
+    statBlock: 'VIG 14, CLA 12, SPI 12, 5 GD
+
+      A3 (halfshield, mail, helm)'
+    notes: Morningstar (d8 hefty), halfshield (d4)
+  - name: Redmaw Wolf, Greymender, Scartooth
+    statBlock: 'VIG 14, CLA 10, SPI 5, 5 GD
+
+      A1 (matted fur)'
+    notes: 'Stalk and bite (2d8)
+
+      Can bite out a wound to restore d6 VIG'
+  - name: The Burning Mother
+    statBlock: 'VIG 10, CLA 16, SPI 17, 7 GD
+
+      Body aflame (ignores metal and
+      wood)'
+    notes: 'Fire (d8 blast) or grasp (3d8, slow)
+
+      When night met day, where
+      water flame
+
+      They saw the child, rejoiced in name
+
+      THE SIGNS
+
+      First
+      Sign Second Sign
+
+      1 Golden flowers Harvest of snakes
+
+      2 Violet
+      sunrise Sudden winter
+
+      3 Singing swans Night terrors
+
+      4 Milk to
+      honey Sleeping mist
+
+      5 Chimes from below Earthquake
+
+      6 Miraculous
+      cures Burning graves
+
+      Child
+
+      Dwelling: Tea hut ~ Sanctum: Blossom
+      pond ~ Monument: Primal menhir
+
+      Hazard: Sticky weeds ~ Curse: Hallucinogenic
+      spores ~ Ruin: Toppled henge
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Tea hut
+  sanctum: Blossom pond
+  monument: Primal menhir
+  hazard: Sticky weeds
+  curse: Hallucinogenic spores
+  ruin: Toppled henge
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

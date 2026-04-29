@@ -1,0 +1,243 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: The_ringen_path_entwines_with_looming_ocean_s_spell
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 67
+  mythName: The ringen path entwines with looming ocean' s spell
+  omens:
+  - '1. On glittering rapids, a shepherd is being
+
+    attacked by 8 wolfcrabs, usually
+    only seen
+
+    scavenging on beaches.'
+  - '2. Salty rain batters the land, web-like weed
+
+    hanging from the trees. In
+    an abandoned
+
+    bowyery, deer and boars take shelter.'
+  - '3. At the site of a modest pond, a new sea
+
+    rises forth, its tide surging
+    out night and
+
+    day. Roaring coots honk out in a
+
+    deafening protest.'
+  - '4. The Two-Hearted Knight bellows at the
+
+    Sea, trying to repel the water
+    with their
+
+    coral ring. They don''t know that they
+
+    must be submerged
+    in the water to
+
+    command it.'
+  - '5. A great storm begins, and won''t stop until
+
+    the wave has arrived. Saltwater
+    rises
+
+    from all water sources, the land is flooded,
+
+    and harvest ruined.'
+  - '6. The wave swells on the horizon, as tall as
+
+    a mountain range. If it washes
+    over the
+
+    Realm then little can survive. After the
+
+    devastation the Sea
+    is quelled and
+
+    returns to its rightful place.'
+  verse: 'Omens
+
+    1. On glittering rapids, a shepherd is being
+
+    attacked by
+    8 wolfcrabs, usually only seen
+
+    scavenging on beaches.
+
+    2. Salty rain
+    batters the land, web-like weed
+
+    hanging from the trees. In an abandoned
+
+    bowyery,
+    deer and boars take shelter.
+
+    3. At the site of a modest pond, a new sea
+
+    rises
+    forth, its tide surging out night and
+
+    day. Roaring coots honk out in a
+
+    deafening
+    protest.
+
+    4. The Two-Hearted Knight bellows at the
+
+    Sea, trying to repel
+    the water with their
+
+    coral ring. They don''t know that they
+
+    must be
+    submerged in the water to
+
+    command it.
+
+    5. A great storm begins, and
+    won''t stop until
+
+    the wave has arrived. Saltwater rises
+
+    from all water
+    sources, the land is flooded,
+
+    and harvest ruined.
+
+    6. The wave swells
+    on the horizon, as tall as
+
+    a mountain range. If it washes over the
+
+    Realm
+    then little can survive. After the
+
+    devastation the Sea is quelled and
+
+    returns
+    to its rightful place.
+
+    Cast
+
+    Devout Shepherd, Ganthyrn
+
+    VIG 12,
+    CLA 7, SPI 7, 1 GD
+
+    Crook (d6 long), longs to serve a Seer
+
+    Wolfcrab,
+    Bluebrine, Hyena of the Deep
+
+    VIG 5, CLA 5, SPI 5, 3 GD
+
+    A2 (thick shell)
+
+    Claws
+    (2d6)
+
+    The Two-Hearted Knight, Alahag
+
+    VIG 10, CLA 6, SPI 14, 10 GD
+
+    A2
+    (whitemail, plate)
+
+    Brightsword (2d6 hefty, when the dice match
+
+    an enemy
+    is dazzled), coral ring (bearer can
+
+    command the Sea when submerged in it)
+
+    Wants
+    to redeem themselves.
+
+    A briny tempest churns, jaden tides all swell'
+  castEntries:
+  - name: Devout Shepherd, Ganthyrn
+    statBlock: 'VIG 12, CLA 7, SPI 7, 1 GD
+
+      Crook (d6 long), longs to serve
+      a Seer'
+    notes: 
+  - name: Wolfcrab, Bluebrine, Hyena of the Deep
+    statBlock: 'VIG 5, CLA 5, SPI 5, 3 GD
+
+      A2 (thick shell)'
+    notes: Claws (2d6)
+  - name: The Two-Hearted Knight, Alahag
+    statBlock: 'VIG 10, CLA 6, SPI 14, 10 GD
+
+      A2 (whitemail, plate)'
+    notes: 'Brightsword (2d6 hefty, when the dice match
+
+      an enemy is dazzled),
+      coral ring (bearer can
+
+      command the Sea when submerged in it)
+
+      Wants
+      to redeem themselves.
+
+      A briny tempest churns, jaden tides all swell
+
+      The
+      ringen path entwines with looming ocean'' s spell
+
+      FLOTSAM & JETSAM
+
+      Condition
+      Item
+
+      1 Ancient Armour
+
+      2 Preserved Stone Tablet
+
+      3 Chained
+      Corpse
+
+      4 Tangled Sword
+
+      5 Rotted Pendant
+
+      6 Barnacled Shield
+
+      Sea
+
+      Dwelling:
+      Salmon stream ~ Sanctum: Lapping waves ~ Monument: Clifftop tomb
+
+      Hazard:
+      Perilous crossing ~ Curse: Rolling fog ~ Ruin: Rotten gallows
+
+      Th'
+  flavorTable:
+    title: FLOTSAM & JETSAM
+    rows:
+    - 1 Ancient Armour
+    - 2 Preserved Stone Tablet
+    - 3 Chained Corpse
+    - 4 Tangled Sword
+    - 5 Rotted Pendant
+    - '6 Barnacled Shield
+
+      Sea'
+  dwelling: Salmon stream
+  sanctum: Lapping waves
+  monument: Clifftop tomb
+  hazard: Perilous crossing
+  curse: Rolling fog
+  ruin: Rotten gallows
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Render_us_small_in_its_coldstone_stare
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 81
+  mythName: Render us small in its coldstone stare
+  omens:
+  - '1. Fur-clad monks pray toward the
+
+    Mountain, scattering stones, water, and
+
+    coals
+    in its direction. They warn that only
+
+    the worthy can climb it.'
+  - '2. The Mountain appears on the horizon. A
+
+    pack of 4 crag cats have descended,
+    laying
+
+    gems as bait for unsuspecting prey.'
+  - '3. The Mountain''s shadow swells, covering
+
+    the Realm most of each day.
+    Animals are
+
+    distressed, crops struggle in the gloom.'
+  - '4. Seven peacock riders approach the
+
+    Mountain. They claim their peacocks
+    are
+
+    so magnificent that nature simply gives
+
+    way to them. They are mistaken.'
+  - '5. Two Squires return from near the peak.
+
+    Their Knights were killed by
+    a pack of
+
+    crag cats, the Squires killing the cats in
+
+    revenge. They''re
+    headed to the nearest
+
+    Holding to seek their knighthoods.'
+  - '6. Atop the mountain, a voice questions
+
+    anybody at the peak. "Are you worthy?"
+
+    Those
+    who answer yes receive a brief
+
+    vision of a glittering city. After leaving
+
+    the
+    Mountain it fades from the horizon.'
+  verse: 'Omens
+
+    1. Fur-clad monks pray toward the
+
+    Mountain, scattering
+    stones, water, and
+
+    coals in its direction. They warn that only
+
+    the
+    worthy can climb it.
+
+    2. The Mountain appears on the horizon. A
+
+    pack
+    of 4 crag cats have descended, laying
+
+    gems as bait for unsuspecting prey.
+
+    3.
+    The Mountain''s shadow swells, covering
+
+    the Realm most of each day. Animals
+    are
+
+    distressed, crops struggle in the gloom.
+
+    4. Seven peacock riders
+    approach the
+
+    Mountain. They claim their peacocks are
+
+    so magnificent
+    that nature simply gives
+
+    way to them. They are mistaken.
+
+    5. Two Squires
+    return from near the peak.
+
+    Their Knights were killed by a pack of
+
+    crag
+    cats, the Squires killing the cats in
+
+    revenge. They''re headed to the nearest
+
+    Holding
+    to seek their knighthoods.
+
+    6. Atop the mountain, a voice questions
+
+    anybody
+    at the peak. "Are you worthy?"
+
+    Those who answer yes receive a brief
+
+    vision
+    of a glittering city. After leaving
+
+    the Mountain it fades from the horizon.
+
+    Cast
+
+    The
+    Mountain Itself
+
+    Black crags, white peak. Travel toward it
+
+    feels uphill,
+    causing d6 VIG loss.
+
+    Peacock Riders, Castian and Company
+
+    VIG 10, CLA
+    7, SPI 13, 4 GD
+
+    A2 (glamorous shield and high helm)
+
+    Light lance (d8
+    hefty), shield (d4)
+
+    Riding peacock ( VIG 7, CLA 6, SPI 6, 5 GD)
+
+    Crag
+    Cat, Gemtongue, Gluttontiger
+
+    VIG 8, CLA 17, SPI 6, 4 GD
+
+    Claws (2d6),
+    mouthful of jewels laid as bait
+
+    Mourning Squires, Ennad, Merryn
+
+    VIG
+    7, CLA 8, SPI 6, 5 GD
+
+    A1 (shield)
+
+    Shortsword (2d6), shield (d4)
+
+    How
+    earth ajoys to lay frailty bare'
+  castEntries:
+  - name: Peacock Riders, Castian and Company
+    statBlock: 'VIG 10, CLA 7, SPI 13, 4 GD
+
+      A2 (glamorous shield and high
+      helm)'
+    notes: 'Light lance (d8 hefty), shield (d4)
+
+      Riding peacock ( VIG 7, CLA
+      6, SPI 6, 5 GD)'
+  - name: Crag Cat, Gemtongue, Gluttontiger
+    statBlock: 'VIG 8, CLA 17, SPI 6, 4 GD
+
+      Claws (2d6), mouthful of jewels
+      laid as bait'
+    notes: 
+  - name: Mourning Squires, Ennad, Merryn
+    statBlock: 'VIG 7, CLA 8, SPI 6, 5 GD
+
+      A1 (shield)'
+    notes: 'Shortsword (2d6), shield (d4)
+
+      How earth ajoys to lay frailty bare
+
+      Render
+      us small in its coldstone stare
+
+      PATH TO THE PEAK
+
+      Route Surroundings
+
+      1
+      Cliffside climb Barren rock
+
+      2 Tight squeeze Mocking goats
+
+      3 Giant
+      steps Watching crows
+
+      4 Crumbling path Aromatic shrubs
+
+      5 Rope
+      bridge Thorny bushes
+
+      6 Winding tunnel Gnarled trees
+
+      Mountain
+
+      Dwelling:
+      Bridge tower ~ Sanctum: Flickering aurora ~ Monument: Candle-lit shrine
+
+      Hazard:
+      Lurking predators ~ Curse: Dying wetland ~ Ruin: Collapsed bridge
+
+      Th'
+  flavorTable:
+    title: PATH TO THE PEAK
+    rows:
+    - 1 Cliffside climb Barren rock
+    - 2 Tight squeeze Mocking goats
+    - 3 Giant steps Watching crows
+    - 4 Crumbling path Aromatic shrubs
+    - 5 Rope bridge Thorny bushes
+    - '6 Winding tunnel Gnarled trees
+
+      Mountain'
+  dwelling: Bridge tower
+  sanctum: Flickering aurora
+  monument: Candle-lit shrine
+  hazard: Lurking predators
+  curse: Dying wetland
+  ruin: Collapsed bridge
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

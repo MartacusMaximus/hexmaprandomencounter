@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Reflection_of_Blood
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Reflection of Blood
+  description: "When you are Wounded, the attacker suffers\nthe same amount of VIG
+    loss as you. When you\nare Scarred the attacker gets the same Scar.\nPASSION
+    - Egality\nRestore SPI when you give somebody else their\nfair share.\nIn eyes
+    ojust, the given got\nBlow for blow, from one shared lot\nMirror Knight\nMEMORIES
+    WITH YOUR STEED\nKnight Steed\n1 Found a lost treasure Fought bravely\n2 Avenged
+    family Galloped all night\n3 Won a tournament Spotted an ambush\n4 Escaped capture
+    Returned from death\n5 Broke a siege Lost an eye\n6 Rescued a loved-one Shrugged
+    off arrows\nKNIGHTED BY...\nThe Giant Seer\nVIG 19, CLA 4, SPI 6, 5 GD\nA3 (huge
+    body), huge fists (2d10)\n\u2022 A great, bounding figure, a clumsy\nmenace to
+    the nearby settlements.\n\u2022 Has little control over her sight, only\nseeing
+    unreliable flashes of the present,\nnothing of the future or past.\n\u2022 Wants
+    to be told that she's a good Seer.\nPerson: Cowardly diplomat ~ Name: Gowere
+    ~ Characteristic: Short and stocky\nObject: Foul brooch ~ Beast: Imitation sparrow
+    ~ State: Washing ~ Theme: Sadness\n4\n9\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

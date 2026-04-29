@@ -1,0 +1,252 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: In_woestich_hide_and_gos_mer_lance
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 99
+  mythName: In woestich hide and gos'mer lance
+  omens:
+  - '1. Six carrion storks pick at webbed corpses
+
+    of a Knight, a Squire, and
+    steeds.'
+  - '2. A makeshift trail suddenly gives way to a
+
+    wide tunnel network. This
+    labyrinth leads
+
+    to the Myth Hex, but the Spider guards it.'
+  - '3. A skittering shadow in the clouds, then a
+
+    blanket of thick webs covers
+    the Company
+
+    (VIG Save to break free). Next round, the
+
+    Spider attacks,
+    but only wants a snack.'
+  - '4. The Spider Herald watches over a gloomy
+
+    mound, warning passers-by to
+    keep their
+
+    distance. The mound conceals a nest of
+
+    writhing spider eggs.
+    Any interference
+
+    summons the Spider to defend his young.'
+  - '5. The Spider Herald arrives, beckoning the
+
+    Company over. She inquires
+    about their
+
+    prowess, and if they seem worthy she
+
+    cheerily informs them
+    that they are now
+
+    the Prey of the Spider, a great honour.'
+  - '6. The Spider bursts from the ground. He''s
+
+    been tracking the Company and
+    fights
+
+    until wounded, when he withdraws
+
+    underground to return when
+    fully healed.'
+  verse: 'Omens
+
+    1. Six carrion storks pick at webbed corpses
+
+    of a Knight,
+    a Squire, and steeds.
+
+    2. A makeshift trail suddenly gives way to a
+
+    wide
+    tunnel network. This labyrinth leads
+
+    to the Myth Hex, but the Spider guards
+    it.
+
+    3. A skittering shadow in the clouds, then a
+
+    blanket of thick webs
+    covers the Company
+
+    (VIG Save to break free). Next round, the
+
+    Spider
+    attacks, but only wants a snack.
+
+    4. The Spider Herald watches over a gloomy
+
+    mound,
+    warning passers-by to keep their
+
+    distance. The mound conceals a nest of
+
+    writhing
+    spider eggs. Any interference
+
+    summons the Spider to defend his young.
+
+    5.
+    The Spider Herald arrives, beckoning the
+
+    Company over. She inquires about
+    their
+
+    prowess, and if they seem worthy she
+
+    cheerily informs them that
+    they are now
+
+    the Prey of the Spider, a great honour.
+
+    6. The Spider
+    bursts from the ground. He''s
+
+    been tracking the Company and fights
+
+    until
+    wounded, when he withdraws
+
+    underground to return when fully healed.
+
+    Cast
+
+    The
+    Spider, Lord of Hunters, Spinjack
+
+    VIG 18, CLA 19, SPI 9, 10 GD
+
+    A3 (bristly
+    carapace)
+
+    Bite (3d10, Wound causes instant paralysis
+
+    lasting until
+    sunrise)
+
+    Wants a good hunt. Retreats if Wounded.
+
+    The Spider Herald,
+    Alskip
+
+    VIG 10, CLA 12, SPI 12, 5 GD
+
+    A1 (spider husk armour, protects
+    from webs)
+
+    Fang sword (2d6, covered in Spider venom)
+
+    Has a different
+    spider aspect (see below)
+
+    each time she is encountered.
+
+    Carrion Stork,
+    Cruorsnipe, Corporant
+
+    VIG 5, CLA 10, SPI 5, 4 GD
+
+    Razor beak (d8, ignore
+    armour, cuts through
+
+    any material). Wants to feed in peace.
+
+    Neath stygic
+    veils, a whisp''ring prance'
+  castEntries:
+  - name: The Spider, Lord of Hunters, Spinjack
+    statBlock: 'VIG 18, CLA 19, SPI 9, 10 GD
+
+      A3 (bristly carapace)'
+    notes: 'Bite (3d10, Wound causes instant paralysis
+
+      lasting until sunrise)
+
+      Wants
+      a good hunt. Retreats if Wounded.'
+  - name: The Spider Herald, Alskip
+    statBlock: 'VIG 10, CLA 12, SPI 12, 5 GD
+
+      A1 (spider husk armour, protects
+      from webs)'
+    notes: 'Fang sword (2d6, covered in Spider venom)
+
+      Has a different spider
+      aspect (see below)
+
+      each time she is encountered.'
+  - name: Carrion Stork, Cruorsnipe, Corporant
+    statBlock: 'VIG 5, CLA 10, SPI 5, 4 GD
+
+      Razor beak (d8, ignore armour,
+      cuts through'
+    notes: 'any material). Wants to feed in peace.
+
+      Neath stygic veils, a whisp''ring
+      prance
+
+      In woestich hide and gos''mer lance
+
+      ASPECTS OF THE SPIDER
+
+      Head
+      Body
+
+      1 Extra eyes Growing extra arms
+
+      2 Huge jaw Growing extra
+      legs
+
+      3 Mottled skin Bristly hair
+
+      4 Wide head Swollen abdomen
+
+      5
+      Sharp fangs Jittery movement
+
+      6 No nose Spindly limbs
+
+      Spider
+
+      Dwelling:
+      Meadowside camp ~ Sanctum: Colourful flora ~ Monument: Star sculpture
+
+      Hazard:
+      Chill air ~ Curse: Golden haze ~ Ruin: Flooded village
+
+      Th'
+  flavorTable:
+    title: ASPECTS OF THE SPIDER
+    rows:
+    - 1 Extra eyes Growing extra arms
+    - 2 Huge jaw Growing extra legs
+    - 3 Mottled skin Bristly hair
+    - 4 Wide head Swollen abdomen
+    - 5 Sharp fangs Jittery movement
+    - '6 No nose Spindly limbs
+
+      Spider'
+  dwelling: Meadowside camp
+  sanctum: Colourful flora
+  monument: Star sculpture
+  hazard: Chill air
+  curse: Golden haze
+  ruin: Flooded village
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

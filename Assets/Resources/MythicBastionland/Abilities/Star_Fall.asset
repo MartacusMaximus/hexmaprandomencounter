@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Star_Fall
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Star Fall
+  description: "You never suffer Damage from falling, unless\nlanding on something
+    harmful. When you\nland from a fall of at least 12ft you may\nrelease a shockwave
+    (d8 blast).\nPASSION - Authenticity\nRestore SPI when you reveal your identity
+    or\nintentions at an inconvenient moment.\nA star of truth, fell from ahigh\nSuch
+    lumous ones should wear no lie\nMeteor Knight\nAN ELABORATE TRIDENT\nAppearance
+    Ability\n1 Silver rings Can be thrown (d6)\n2 Blackened iron Can be recalled
+    to your\nhand when in sight\n3 Two-headed +d8 vs aquatic beings\n4 Faint golden
+    glow +d8 vs flying beings\n5 Five prongs Points to fresh water\n6 Telescopic
+    shaft Utterly unbreakable\nKNIGHTED BY...\nThe Moonlit Seer\nVIG 5, CLA 16, SPI
+    15, 5 GD\n\u2022 A glow of loosely human shape, knows\neverything that moonlight
+    has touched.\n\u2022 Only exists under moonlight, strongest\nand most lucid under
+    a full moon.\n\u2022 Wants everything to happen at precisely\nthe correct time,
+    and nothing significant\nto happen outside of the moon's sight.\nPerson: Ambitious
+    parent ~ Name: Reynere ~ Characteristic: Overly familiar\nObject: Shame gem ~
+    Beast: Overgrown hawk ~ State: Tearing ~ Theme: Insects\n4\n4\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

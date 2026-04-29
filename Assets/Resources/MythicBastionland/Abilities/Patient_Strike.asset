@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Patient_Strike
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Patient Strike
+  description: "Make a melee Attack when you have not\nmoved this turn.\n+d10 to
+    the Attack. Ignore the target's\nArmour and immunities of any sort.\nIf this
+    fails to defeat the opponent, take d6\nDamage yourself.\nPASSION - Avarice\nRestore
+    SPI when you gain significant wealth.\nTheir wait was longer than stars have
+    glown\nTheir blade is slow but glaneth stone\nAmber Knight\nA STEADY HAND\nPastime
+    Taught By\n1 Painting Knight-Mentor\n2 Miniature sculpture Father\n3 Embroidery
+    Mother\n4 Pottery Brother\n5 Drawing Sister\n6 Flower pressing Self\nKNIGHTED
+    BY...\nThe Dreaming Seer\nVIG 5, CLA 5, SPI 7, 1 GD\n\u2022 Cannot be fully glimpsed,
+    a silhouette of\nstarlight. Cannot speak to those awake.\n\u2022 Appears only
+    in dreams of those in the\nSeer's home, tended by elderly servants.\n\u2022 Longs
+    to find a way back to the waking\nworld, or to drag companions into theirs.\nPerson:
+    Elderly tanner ~ Name: Prentise ~ Characteristic: Knows everybody\nObject: Traveller's
+    hat ~ Beast: Moon toad ~ State: Confused ~ Theme: Hearth\n2\n2\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_59
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 59
+  mythName: Myth 59
+  omens:
+  - '1. A field littered with martial detritus.
+
+    Broken helms, shields, and bodies.
+    The
+
+    mud grabs at those passing over, groans
+
+    on the wind. A lean horse
+    is trying to pull
+
+    its dead rider from the ground to no avail.'
+  - '2. A lone legionnaire deserter. Can only
+
+    grunt in cowardice, scouring the
+    land for
+
+    a place to hide. A pack of 5 legionnaires
+
+    are tracking them,
+    minutes away.'
+  - '3. A local militia are camped, recovering
+
+    from a clash with the Legion.
+    Few are
+
+    dead, but the wounded cry in agony. The
+
+    lacerations of the
+    Legion''s barbed blades
+
+    are as fresh as when they were cut.'
+  - '4. A Legion Warband on the horizon, firing
+
+    their arrows at the farthest
+    possible
+
+    range. Break into retreat if approached.'
+  - '5. A new legionnaire pulling themselves
+
+    from the earth. Pained, clutching
+    rusted
+
+    arms. Seeks the comfort of the Legion.'
+  - '6. Three Legion Warbands invade the
+
+    nearest Holding. If defeated they return
+
+    in
+    greater ranks. The war only ends if
+
+    they are driven into fire or water.'
+  verse: 
+  castEntries:
+  - name: Legionnaires, Born of Mud and Blood
+    statBlock: 'VIG 15, CLA 5, SPI 5, 3 GD
+
+      A3 (rusted mail, helm, shield)'
+    notes: 'Barbed blade (d8), shield (d4), bow (d6 long),
+
+      all deal wounds
+      that resist natural healing.
+
+      Fear of death. No purpose beyond war.'
+  - name: Graveyard Horse, Greyveil
+    statBlock: 'VIG 10, CLA 10, SPI 5, 2 GD
+
+      Instinctive reverence for the
+      dead, always'
+    notes: knows where they should be taken to.
+  - name: Local Militia, Untrained Serfs
+    statBlock: 'VIG 10, CLA 10, SPI 10, 2 GD
+
+      Polearms (d10 long), patchwork
+      uniforms'
+    notes: 'Pitly ranks, fought and fell, returning stronger still
+
+      Their scars
+      nae fade, their fear but grow, their war their only will
+
+      SCARS FROM
+      THE LAST DEATH
+
+      Location Description
+
+      1 Face Pierced
+
+      2 Arm
+      Burned
+
+      3 Leg Crushed
+
+      4 Torso Whipped
+
+      5 Back Mangled
+
+      6
+      Head Sliced
+
+      Legion
+
+      Dwelling: Cooling well ~ Sanctum: Sparkling
+      crags ~ Monument: Cleaved mountain
+
+      Hazard: Spiked roots ~ Curse: Groaning
+      earth ~ Ruin: Ash-drowned town
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Cooling well
+  sanctum: Sparkling crags
+  monument: Cleaved mountain
+  hazard: Spiked roots
+  curse: Groaning earth
+  ruin: Ash-drowned town
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

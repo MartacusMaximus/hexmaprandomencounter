@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Owl_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 88
+  knightName: Owl Knight
+  titleVerse: 'A noble one, a lord indeed, who feasts on fruits of fact
+
+    From
+    nog to nosh the nut of knowing fills with pleasing fat'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 088698bbabf844d80b0a2e3b35ff8eb3, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 71d1ff1792e11493d8d8a59bab24e34c, type: 2}
+  steed: {fileID: 11400000, guid: 529c6ab60172041fd8141a8469725670, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 0c46982e663fb499c94fa0e7938fcfa8, type: 2}
+  - {fileID: 11400000, guid: 164a7119eedd64a10aadf1904c4b2afc, type: 2}
+  - {fileID: 11400000, guid: 1547dfc89d0684e188e09b8a22f4551e, type: 2}
+  - {fileID: 11400000, guid: 7ee4e645ec6774729b38728e6f5ae0bf, type: 2}
+  - {fileID: 11400000, guid: 2336947a61b88420a8ec8ff2b1ed701d, type: 2}
+  - {fileID: 11400000, guid: 1a9494d5ea89c4348a3744c8b52d7f42, type: 2}
+  randomFlavorTableTitle: MISCELLANEOUS TOMES
+  randomFlavorTableRows:
+  - 1 The Light of... ...the Sea Beasts
+  - 2 Those who long for... ...Bread
+  - 3 Death &... ...the City
+  - 4 Merits of... ...other Meditations
+  - 5 Of Domain and... ...Coin
+  - "6 In the Garden of... ...Doom\nKNIGHTED BY...\nThe Screaming Seer\nVIG 13, CLA
+    4, SPI 3, 1 GD\n\u2022 RAAAAAARGH!\n\u2022 YAAAAAAAAAARRRGH!!!\n\u2022 Utterly
+    useless most of the time, but\noccasionally scribbles prophetic notes\nwhen left
+    alone for a while."
+  personHook: Adored potter
+  objectHook: Vanity bone
+  beastHook: Shouting pike
+  stateHook: Dutiful
+  themeHook: 'Starlight
+
+    3
+
+    7
+
+    The'

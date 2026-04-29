@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Fade_to_Green
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Fade to Green
+  description: "Use when hiding still and silent in greenery.\nYou cannot be found
+    by any means. While\nhiding you can only perform a specific type of\naction without
+    revealing yourself, but also\nbenefit from a heightened sense (see below).\nPASSION
+    - Elegance\nRestore SPI when you leave a place more\nbeautiful than you found
+    it.\nA verdant cloak on sable steed\nNeath nature' s veil, yond sight and heed\nEmerald
+    Knight\nHIDDEN ACTION\nHidden Action Heightened Sense\n1 Strike a wounded\nenemy
+    Vision (detail)\n2 Make animal calls Vision (distance)\n3 Throw stones Hearing\n4
+    Grab a non-alert\nenemy Smell\n5 Move slowly Weather prediction\n6 Whisper to
+    allies Emotional insight\nKNIGHTED BY...\nThe Unnamed Seer\nVIG 10, CLA 10, SPI
+    5, 2 GD\n\u2022 Toad-like being covered in shifting tattoos\nthat foretell the
+    future course of Myths.\nOnly the Seer can read them.\n\u2022 Clear glass eyes,
+    but they see well.\n\u2022 Longs to know more about their identity\nbefore they
+    became the Unnamed Seer.\nPerson: Cheery stablehand ~ Name: Litwitte ~ Characteristic:
+    Fiery hair\nObject: Lightning wine ~ Beast: Graveyard horse ~ State: Sick ~ Theme:
+    Fear\n2\n4\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

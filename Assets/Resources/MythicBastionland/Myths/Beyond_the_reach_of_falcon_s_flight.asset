@@ -1,0 +1,254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Beyond_the_reach_of_falcon_s_flight
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 129
+  mythName: Beyond the reach of falcon' s flight
+  omens:
+  - '1. The silhouette of the Citadel appears on
+
+    the horizon, teetering and
+    crooked. Any
+
+    Seers you meet warn you not to go there.'
+  - '2. The nearest Seer skulks between the
+
+    trees, seeking a new Sanctum so
+    that the
+
+    Watcher will not find them.'
+  - '3. Iron hounds, forged in the Citadel, scour
+
+    the land, terrorising but
+    not harming
+
+    Seers. A pack of four charge past the
+
+    Company, heading
+    to the nearest Seer.'
+  - '4. The Watcher from the Citadel is seeking
+
+    out every Seer, warning them
+    not to
+
+    interfere with the destiny of the Realm.'
+  - '5. A glowing orb falls from the sky, landing
+
+    with an explosion in the nearby
+    woods.
+
+    Screams follow from the crash site, and
+
+    an Immolated Seer bursts
+    from the
+
+    woods. In their death throes they attack
+
+    any nearby, losing
+    d6 VIG each round.'
+  - '6. The Citadel glows, flooding the Realm
+
+    with intense white light. Seers
+    scream.
+
+    When the light fades the Citadel is gone.'
+  verse: 'Omens
+
+    1. The silhouette of the Citadel appears on
+
+    the horizon,
+    teetering and crooked. Any
+
+    Seers you meet warn you not to go there.
+
+    2.
+    The nearest Seer skulks between the
+
+    trees, seeking a new Sanctum so that
+    the
+
+    Watcher will not find them.
+
+    3. Iron hounds, forged in the Citadel,
+    scour
+
+    the land, terrorising but not harming
+
+    Seers. A pack of four charge
+    past the
+
+    Company, heading to the nearest Seer.
+
+    4. The Watcher from
+    the Citadel is seeking
+
+    out every Seer, warning them not to
+
+    interfere
+    with the destiny of the Realm.
+
+    5. A glowing orb falls from the sky, landing
+
+    with
+    an explosion in the nearby woods.
+
+    Screams follow from the crash site, and
+
+    an
+    Immolated Seer bursts from the
+
+    woods. In their death throes they attack
+
+    any
+    nearby, losing d6 VIG each round.
+
+    6. The Citadel glows, flooding the Realm
+
+    with
+    intense white light. Seers scream.
+
+    When the light fades the Citadel is gone.
+
+    Cast
+
+    The
+    Watcher in the Citadel, Setizi
+
+    VIG 12, CLA 17, SPI 15, 8 GD
+
+    A1 (silver
+    mail). Can Focus.
+
+    Glassy longsword (2d8 hefty), crystal lantern
+
+    (peering
+    into it gives a hazy view of a
+
+    location within the Realm that you have
+
+    visited.
+    Light causes pain to Seers)
+
+    Protecting a destined future (see below).
+
+    Immolated
+    Seer
+
+    VIG 10, CLA 7, SPI 7, 6 GD
+
+    Bursts of anguished flames (d8 blast)
+
+    Iron
+    Hound
+
+    VIG 10, CLA 12, SPI 2, 2 GD
+
+    A3 (metallic body)
+
+    Forged jaws
+    (d8), focused on their quarry
+
+    A watcher yond our earthly sight'
+  castEntries:
+  - name: The Watcher in the Citadel, Setizi
+    statBlock: 'VIG 12, CLA 17, SPI 15, 8 GD
+
+      A1 (silver mail). Can Focus.'
+    notes: 'Glassy longsword (2d8 hefty), crystal lantern
+
+      (peering into it
+      gives a hazy view of a
+
+      location within the Realm that you have
+
+      visited.
+      Light causes pain to Seers)
+
+      Protecting a destined future (see below).'
+  - name: Immolated Seer
+    statBlock: 'VIG 10, CLA 7, SPI 7, 6 GD
+
+      Bursts of anguished flames (d8
+      blast)'
+    notes: 
+  - name: Iron Hound
+    statBlock: 'VIG 10, CLA 12, SPI 2, 2 GD
+
+      A3 (metallic body)'
+    notes: 'Forged jaws (d8), focused on their quarry
+
+      A watcher yond our earthly
+      sight
+
+      Beyond the reach of falcon'' s flight
+
+      DESTINED FUTURE
+
+      Subject
+      Destiny
+
+      1 Ruler of the Realm Must die next Season
+
+      2 A Seer Must
+      leave the Realm
+
+      3 A member of the
+
+      Company
+
+      Must be imprisoned
+      in
+
+      the Citadel
+
+      4 A Knight Must die
+
+      5 A Vassal Must find
+      the City
+
+      6 A courtier Must rule the Realm
+
+      Citadel
+
+      Dwelling:
+      Harpist gathering ~ Sanctum: Lullaby stream ~ Monument: Marble mesa
+
+      Hazard:
+      Draining dunes ~ Curse: Gorge of sorrow ~ Ruin: Broken tools
+
+      Th'
+  flavorTable:
+    title: DESTINED FUTURE
+    rows:
+    - 1 Ruler of the Realm Must die next Season
+    - 2 A Seer Must leave the Realm
+    - '3 A member of the
+
+      Company
+
+      Must be imprisoned in
+
+      the Citadel'
+    - 4 A Knight Must die
+    - 5 A Vassal Must find the City
+    - '6 A courtier Must rule the Realm
+
+      Citadel'
+  dwelling: Harpist gathering
+  sanctum: Lullaby stream
+  monument: Marble mesa
+  hazard: Draining dunes
+  curse: Gorge of sorrow
+  ruin: Broken tools
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

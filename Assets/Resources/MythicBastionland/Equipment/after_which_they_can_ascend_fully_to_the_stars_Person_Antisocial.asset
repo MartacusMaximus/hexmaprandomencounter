@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
+  m_Name: after_which_they_can_ascend_fully_to_the_stars_Person_Antisocial
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
+  itemName: 'after which they can
+
+    ascend fully to the stars.
+
+    Person: Antisocial
+    haberdasher ~ Name: Abran ~ Characteristic: Prosthetic legs
+
+    Object: Fear
+    egg ~ Beast: Lesser mule ~ State: Basking ~ Theme: Carving
+
+    6
+
+    12
+
+    The'
+  pointCost: 0
+  rarity: bonded
+  displayCategory: tool
+  rulesText: 
+  damageDiceNotation: 
+  armorValue: 0
+  costsCreationPoints: 0
+  leftHalf: 0
+  rightHalf: 0
+  topHalf: 0
+  bottomHalf: 0
+  centerChunk: 0
+  traits: []
+  sourceTags:
+  - MythicBastionland
+  - KnightProperty
+  ability: {fileID: 0}
+  isBondedProperty: 1
+  contributesToEquippedBonuses: 1
+  containerKind: 0
+  storageRule: 0
+  occupiesFullContainer: 0
+  usableByNonOwner: 0

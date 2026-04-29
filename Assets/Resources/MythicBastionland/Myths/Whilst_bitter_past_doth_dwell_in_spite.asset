@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Whilst_bitter_past_doth_dwell_in_spite
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 151
+  mythName: Whilst bitter past doth dwell in spite
+  omens:
+  - '1. Two boisterous lads clamber on a ruined
+
+    temple, smashing the eroded
+    statuary
+
+    with a heavy hammer. They say they''re
+
+    just following orders
+    from a nearby Seer.'
+  - '2. The Gargoyle descends on the Company,
+
+    shouting that he means no harm.
+    He''s
+
+    looking for a lost item, and expects the
+
+    Knights to find it.
+    He will cause an
+
+    argument for his own amusement if he
+
+    can, otherwise
+    he leaves.'
+  - '3. Atop a huge stone ruin, the Gargoyle
+
+    carves away at the stone with his
+    bare
+
+    hands, sculpting beasts. Two such beasts
+
+    watch on, eager for a
+    new companion.'
+  - '4. In the shade of a grey tree the Gargoyle
+
+    argues with a nearby Seer.
+    He claims that
+
+    he alone gives the Seers their knowledge.
+
+    This is a
+    lie.'
+  - '5. The two lads who were smashing statues
+
+    lie petrified by a sculpted beast''s
+    bite.'
+  - '6. In a quarry the Gargoyle smashes his
+
+    sculpted beasts to rubble one by
+    one. They
+
+    don''t resist. After this he takes flight for
+
+    another Realm,
+    declaring this one dull.'
+  verse: 'Omens
+
+    1. Two boisterous lads clamber on a ruined
+
+    temple, smashing
+    the eroded statuary
+
+    with a heavy hammer. They say they''re
+
+    just following
+    orders from a nearby Seer.
+
+    2. The Gargoyle descends on the Company,
+
+    shouting
+    that he means no harm. He''s
+
+    looking for a lost item, and expects the
+
+    Knights
+    to find it. He will cause an
+
+    argument for his own amusement if he
+
+    can,
+    otherwise he leaves.
+
+    3. Atop a huge stone ruin, the Gargoyle
+
+    carves
+    away at the stone with his bare
+
+    hands, sculpting beasts. Two such beasts
+
+    watch
+    on, eager for a new companion.
+
+    4. In the shade of a grey tree the Gargoyle
+
+    argues
+    with a nearby Seer. He claims that
+
+    he alone gives the Seers their knowledge.
+
+    This
+    is a lie.
+
+    5. The two lads who were smashing statues
+
+    lie petrified by
+    a sculpted beast''s bite.
+
+    6. In a quarry the Gargoyle smashes his
+
+    sculpted
+    beasts to rubble one by one. They
+
+    don''t resist. After this he takes flight
+    for
+
+    another Realm, declaring this one dull.
+
+    Cast
+
+    The Gargoyle,
+    Astergrist
+
+    VIG 14, CLA 17, SPI 12, 6 GD
+
+    A4 (hulking stony body), clumsy
+    flight
+
+    Great claws (2d8) and tail (d10 blast)
+
+    Well-read and ill-tempered.
+    Hates the sun.
+
+    Wants to bring back anything old.
+
+    Always seeking a specific
+    item (see below).
+
+    Sculpted Beast
+
+    VIG 10, CLA 6, SPI 6, 3 GD
+
+    A3
+    (stony body, wolflike)
+
+    Stone bite (2d8, wounds cause the victim to
+
+    slowly
+    petrify over the next week, reversed
+
+    only if the Gargoyle grants a pardon)
+
+    Mindlessly
+    serves the Gargoyle''s whims.
+
+    In hearthy glow, small joys take flight'
+  castEntries:
+  - name: The Gargoyle, Astergrist
+    statBlock: 'VIG 14, CLA 17, SPI 12, 6 GD
+
+      A4 (hulking stony body), clumsy
+      flight'
+    notes: 'Great claws (2d8) and tail (d10 blast)
+
+      Well-read and ill-tempered.
+      Hates the sun.
+
+      Wants to bring back anything old.
+
+      Always seeking
+      a specific item (see below).'
+  - name: Sculpted Beast
+    statBlock: 'VIG 10, CLA 6, SPI 6, 3 GD
+
+      A3 (stony body, wolflike)'
+    notes: 'Stone bite (2d8, wounds cause the victim to
+
+      slowly petrify over
+      the next week, reversed
+
+      only if the Gargoyle grants a pardon)
+
+      Mindlessly
+      serves the Gargoyle''s whims.
+
+      In hearthy glow, small joys take flight
+
+      Whilst
+      bitter past doth dwell in spite
+
+      LOST ITEM
+
+      Object Last Seen
+
+      1
+      Twisted tin flute Sinking into water
+
+      2 Bejewelled chess set In the Seat
+      of Power
+
+      3 Huge cauldron Seized by a Seer
+
+      4 Map-marked shield
+      Buried in the woods
+
+      5 Mummified Seer head Hurled from a peak
+
+      6
+      Crown of raw iron Entombed in a tree
+
+      Gargoyle
+
+      Dwelling: Orchard
+      village ~ Sanctum: Luminous pond ~ Monument: Shell circle
+
+      Hazard: Chilling
+      bushes ~ Curse: Obscuring reeds ~ Ruin: Broken henge
+
+      Th'
+  flavorTable:
+    title: LOST ITEM
+    rows:
+    - 1 Twisted tin flute Sinking into water
+    - 2 Bejewelled chess set In the Seat of Power
+    - 3 Huge cauldron Seized by a Seer
+    - 4 Map-marked shield Buried in the woods
+    - 5 Mummified Seer head Hurled from a peak
+    - '6 Crown of raw iron Entombed in a tree
+
+      Gargoyle'
+  dwelling: Orchard village
+  sanctum: Luminous pond
+  monument: Shell circle
+  hazard: Chilling bushes
+  curse: Obscuring reeds
+  ruin: Broken henge
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

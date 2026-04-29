@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: An_eager_heart_asks_neither_what_or_why
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 167
+  mythName: An eager heart asks neither what or why
+  omens:
+  - '1. A wide cave mouth looms from a vine-
+
+    cloaked cliff. It seems empty,
+    but echoes
+
+    sound slightly altered.'
+  - '2. Three iron pilgrims attempt to seal the
+
+    cave, claiming it can only cause
+    harm.'
+  - '3. The Cave, a familiar shape and echo. This
+
+    time a glow emanates from
+    within,
+
+    revealing 3 useful crystals (see opposite).'
+  - '4. The Cave appears again, on a new cliff
+
+    face, the word "gold" echos from
+    within.
+
+    Anybody entering awakens the beast of
+
+    solid darkness, which
+    only fights to
+
+    prevent entry to the Cave. Beyond the
+
+    beast lies a heavy
+    coffer of gold.'
+  - '5. The Cave appears on a great boulder, now
+
+    with eye-like holes and tooth-like
+
+    stalactites.
+    It slowly speaks, granting one
+
+    question to each Knight present. It knows
+
+    all
+    and answers to the best of its ability.'
+  - '6. A towering figure strides out of a shadow,
+
+    like folds of material darkness.
+    He is the
+
+    Debt Collector, here to take payment for
+
+    the Cave. He accepts
+    anything of value,
+
+    and tries to kill those who won''t pay.'
+  verse: 'Omens
+
+    1. A wide cave mouth looms from a vine-
+
+    cloaked cliff.
+    It seems empty, but echoes
+
+    sound slightly altered.
+
+    2. Three iron pilgrims
+    attempt to seal the
+
+    cave, claiming it can only cause harm.
+
+    3. The Cave,
+    a familiar shape and echo. This
+
+    time a glow emanates from within,
+
+    revealing
+    3 useful crystals (see opposite).
+
+    4. The Cave appears again, on a new cliff
+
+    face,
+    the word "gold" echos from within.
+
+    Anybody entering awakens the beast of
+
+    solid
+    darkness, which only fights to
+
+    prevent entry to the Cave. Beyond the
+
+    beast
+    lies a heavy coffer of gold.
+
+    5. The Cave appears on a great boulder, now
+
+    with
+    eye-like holes and tooth-like
+
+    stalactites. It slowly speaks, granting one
+
+    question
+    to each Knight present. It knows
+
+    all and answers to the best of its ability.
+
+    6.
+    A towering figure strides out of a shadow,
+
+    like folds of material darkness.
+    He is the
+
+    Debt Collector, here to take payment for
+
+    the Cave. He accepts
+    anything of value,
+
+    and tries to kill those who won''t pay.
+
+    Cast
+
+    Beast
+    of Solid Darkness
+
+    VIG 12, CLA 12, SPI 7, 8 GD
+
+    A3 (darkness hardened
+    to iron)
+
+    Blade out of darkness (3d10)
+
+    or burst of un-light (d8 blast)
+
+    Iron
+    Pilgrims, Lymon, Sid, Hayma
+
+    VIG 12, CLA 10, SPI 13, 3 GD
+
+    Robes and
+    chains, blacksmith tools
+
+    Debt Collector, Ambralleon
+
+    VIG 16, CLA 16,
+    SPI 7, 8 GD
+
+    A2 (shadow form, cold plates)
+
+    Black spear (2d8 hefty, can
+    be thrown and
+
+    called back into his hand). Can Smite.
+
+    A weary soul discerns
+    no truth or lie'
+  castEntries:
+  - name: Beast of Solid Darkness
+    statBlock: 'VIG 12, CLA 12, SPI 7, 8 GD
+
+      A3 (darkness hardened to iron)'
+    notes: 'Blade out of darkness (3d10)
+
+      or burst of un-light (d8 blast)'
+  - name: Iron Pilgrims, Lymon, Sid, Hayma
+    statBlock: 'VIG 12, CLA 10, SPI 13, 3 GD
+
+      Robes and chains, blacksmith
+      tools'
+    notes: 
+  - name: Debt Collector, Ambralleon
+    statBlock: 'VIG 16, CLA 16, SPI 7, 8 GD
+
+      A2 (shadow form, cold plates)'
+    notes: 'Black spear (2d8 hefty, can be thrown and
+
+      called back into his
+      hand). Can Smite.
+
+      A weary soul discerns no truth or lie
+
+      An eager
+      heart asks neither what or why
+
+      USEFUL CRYSTALS
+
+      Appearance Power
+      when Broken
+
+      1 Flickering grey d10 blast of lightning
+
+      2 Milky
+      white Releases horrifying but
+
+      harmless ghosts
+
+      3 Dull ochre Winter
+      arrives
+
+      immediately
+
+      4 Pale mauve Open up a flaming pit
+
+      (d10)
+      in the ground
+
+      5 Swirling turquoise Vision of a useful truth
+
+      6
+      Pulsing crimson Plants grow rapidly
+
+      Cave
+
+      Dwelling: Guardian hearth
+      ~ Sanctum: Ember cavern ~ Monument: Diamond aurora
+
+      Hazard: Acidic fog
+      ~ Curse: Vortex of smoke ~ Ruin: Crumbled obelisk
+
+      Th'
+  flavorTable:
+    title: USEFUL CRYSTALS
+    rows:
+    - 1 Flickering grey d10 blast of lightning
+    - '2 Milky white Releases horrifying but
+
+      harmless ghosts'
+    - '3 Dull ochre Winter arrives
+
+      immediately'
+    - '4 Pale mauve Open up a flaming pit
+
+      (d10) in the ground'
+    - 5 Swirling turquoise Vision of a useful truth
+    - '6 Pulsing crimson Plants grow rapidly
+
+      Cave'
+  dwelling: Guardian hearth
+  sanctum: Ember cavern
+  monument: Diamond aurora
+  hazard: Acidic fog
+  curse: Vortex of smoke
+  ruin: Crumbled obelisk
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

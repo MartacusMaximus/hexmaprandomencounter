@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Glass_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 154
+  knightName: Glass Knight
+  titleVerse: 'Revealer of all secrets, in stark, judgemental light
+
+    In cold
+    and sharpened heart lies no deceitful spite'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 05e718ddf1d15407d808a27b527621b1, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 7d9e092c6866641dbae0b34daef41102, type: 2}
+  steed: {fileID: 11400000, guid: fd7e64ccbd8a346708cb7616b6859cbf, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 901690b3420a447c586fbcd96e6c1a71, type: 2}
+  - {fileID: 11400000, guid: 96d775bb34d2148fda289a7a6c78a838, type: 2}
+  - {fileID: 11400000, guid: 8e7c586cea83440f190ef5b80966bbcc, type: 2}
+  - {fileID: 11400000, guid: 45d36f64230444a888013499857d6ecc, type: 2}
+  - {fileID: 11400000, guid: 74143db52bb024e95b2a3fa552ecd393, type: 2}
+  - {fileID: 11400000, guid: 838736da553e24bca9d58c5c134980fb, type: 2}
+  - {fileID: 11400000, guid: 5236a5834e88244958d26514fa515e30, type: 2}
+  - {fileID: 11400000, guid: de8f9abdeb94c44f8a789b3ca947581c, type: 2}
+  randomFlavorTableTitle: PAINTED ARMOUR
+  randomFlavorTableRows:
+  - 1 Indigo Faces
+  - 2 Crimson Vines
+  - 3 Forest green Stars
+  - 4 Teal Wolves
+  - 5 Gold Fire
+  - "6 Rose The City\nKNIGHTED BY...\nThe Blossom Seer\nVIG 9, CLA 18, SPI 16, 2
+    GD\n\u2022 Woman with an uncertain number of\nlimbs draped in white silk. Petals
+    of pale\nskin occasionally fall to the ground.\n\u2022 Sees the present in intense
+    detail.\n\u2022 Knows she is only here for a matter of\ndays, and wants to do
+    as much good as\npossible in that time. Returns next year."
+  personHook: Smart inquisitor
+  objectHook: City rune
+  beastHook: Clever tortoise
+  stateHook: Travelling
+  themeHook: 'Hair
+
+    6
+
+    4
+
+    The'

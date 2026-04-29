@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Mirror_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 116
+  knightName: Mirror Knight
+  titleVerse: 'In eyes ojust, the given got
+
+    Blow for blow, from one shared lot'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: c910a1f2ae33d48448b8cf1683492b70, type: 2}
+  linkedSeer: {fileID: 11400000, guid: d130709f89e5847fab22f998a3c94fe4, type: 2}
+  steed: {fileID: 11400000, guid: 9b53cddb458cb49979ca44cd0926e5a9, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 1d0cfcd7f679d4da8976cd36e9e5b17c, type: 2}
+  - {fileID: 11400000, guid: f900cbf6e86f54ca995c2ab39ac2dbe0, type: 2}
+  - {fileID: 11400000, guid: e998e4b81e9fb4c06897984c271b0246, type: 2}
+  - {fileID: 11400000, guid: 122dc618af8354223bc0b0e58cd24008, type: 2}
+  - {fileID: 11400000, guid: 2ee87c8b11ff04917805942bde386ad1, type: 2}
+  - {fileID: 11400000, guid: 62ea6be21c5b34140a57d46c67e11d5e, type: 2}
+  - {fileID: 11400000, guid: d7b697422dbd64cf8b7da80fc8d22af3, type: 2}
+  - {fileID: 11400000, guid: 0e59454d84d8e4a24b227b02b4b884af, type: 2}
+  - {fileID: 11400000, guid: 1293adc15825b4fd4b6f6787587e08c9, type: 2}
+  - {fileID: 11400000, guid: c2eb22809baad4c44a52d113e1afcd7f, type: 2}
+  - {fileID: 11400000, guid: 5db693f63ad6e409791362d282355e72, type: 2}
+  - {fileID: 11400000, guid: 53011bb75397b49b086d65801391740b, type: 2}
+  randomFlavorTableTitle: MEMORIES WITH YOUR STEED
+  randomFlavorTableRows:
+  - 1 Found a lost treasure Fought bravely
+  - 2 Avenged family Galloped all night
+  - 3 Won a tournament Spotted an ambush
+  - 4 Escaped capture Returned from death
+  - 5 Broke a siege Lost an eye
+  - "6 Rescued a loved-one Shrugged off arrows\nKNIGHTED BY...\nThe Giant Seer\nVIG
+    19, CLA 4, SPI 6, 5 GD\nA3 (huge body), huge fists (2d10)\n\u2022 A great, bounding
+    figure, a clumsy\nmenace to the nearby settlements.\n\u2022 Has little control
+    over her sight, only\nseeing unreliable flashes of the present,\nnothing of the
+    future or past.\n\u2022 Wants to be told that she's a good Seer."
+  personHook: Cowardly diplomat
+  objectHook: Foul brooch
+  beastHook: Imitation sparrow
+  stateHook: Washing
+  themeHook: 'Sadness
+
+    4
+
+    9
+
+    The'

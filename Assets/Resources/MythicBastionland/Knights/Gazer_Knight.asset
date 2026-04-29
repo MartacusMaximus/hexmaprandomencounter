@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Gazer_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 108
+  knightName: Gazer Knight
+  titleVerse: 'The blood sees through time aflow
+
+    To certain souls, a glimpse
+    they show'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: a81e3bbed865745ddae458b46a89a69d, type: 2}
+  linkedSeer: {fileID: 11400000, guid: a99934455157e406281ea89c94aabc05, type: 2}
+  steed: {fileID: 11400000, guid: a30c21e357b8344928142510b7b2b654, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 3392c228454fa493c9ee1d71fc71f370, type: 2}
+  - {fileID: 11400000, guid: cadf4a212b45b428c83e7be79f083f47, type: 2}
+  - {fileID: 11400000, guid: 1774f10b60c6f44089d783a98b79b075, type: 2}
+  - {fileID: 11400000, guid: 58dbd42c49bec4a398cd847f375b5122, type: 2}
+  - {fileID: 11400000, guid: 5fe85e2a95aae4254abd9dbe3c6c5729, type: 2}
+  - {fileID: 11400000, guid: d09de58020a7b49728e1ef6768f55f0f, type: 2}
+  - {fileID: 11400000, guid: 363b9a773e7a648c4806de1d16b03b96, type: 2}
+  - {fileID: 11400000, guid: 5168d6f5d0a234727a49f1fa539738f0, type: 2}
+  - {fileID: 11400000, guid: e56e6a0fe072d4dfb98aa0205e68c5ff, type: 2}
+  randomFlavorTableTitle: TAPESTRY STORY
+  randomFlavorTableRows:
+  - 1 Birth of... A random Seer
+  - 2 Great deeds of... A random Knight
+  - 3 Ambitions of... Yourself
+  - 4 Shameful death of... One of the Company
+  - 5 Glorious death of... The Realm ruler
+  - "6 Peaceful death of... An unknown figure\nKNIGHTED BY...\nThe Stone Seer\n6GD,
+    A3, treat as a Structure\n\u2022 A 10ft statue dragged from the earth,\nmotionless
+    and silent. Never moves or\nresponds, but those who speak with him\nget a general
+    feel of approval or objection.\n\u2022 Knows all of the past but nothing of the\nfuture
+    or present.\n\u2022 Wants to preserve the Realm."
+  personHook: Furious outcast
+  objectHook: Mossy drum
+  beastHook: Dark swan
+  stateHook: Arguing
+  themeHook: 'Size
+
+    4
+
+    5
+
+    The'

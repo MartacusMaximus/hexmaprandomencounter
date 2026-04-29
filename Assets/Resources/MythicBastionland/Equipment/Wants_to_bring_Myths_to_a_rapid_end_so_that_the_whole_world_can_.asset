@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
+  m_Name: Wants_to_bring_Myths_to_a_rapid_end_so_that_the_whole_world_can_
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
+  itemName: 'Wants to bring Myths to a rapid end so
+
+    that the whole world can
+    be drawn to a
+
+    sorrowful close.
+
+    Person: Confident assassin ~ Name: Kelwun
+    ~ Characteristic: Brawn over brains
+
+    Object: Leaf sword ~ Beast: Grim donkey
+    ~ State: Breaking ~ Theme: Warmth
+
+    5
+
+    11
+
+    The'
+  pointCost: 0
+  rarity: bonded
+  displayCategory: weapon
+  rulesText: 
+  damageDiceNotation: 
+  armorValue: 0
+  costsCreationPoints: 0
+  leftHalf: 0
+  rightHalf: 0
+  topHalf: 0
+  bottomHalf: 0
+  centerChunk: 0
+  traits: []
+  sourceTags:
+  - MythicBastionland
+  - KnightProperty
+  ability: {fileID: 0}
+  isBondedProperty: 1
+  contributesToEquippedBonuses: 1
+  containerKind: 0
+  storageRule: 0
+  occupiesFullContainer: 0
+  usableByNonOwner: 0

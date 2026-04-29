@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Tome_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 104
+  knightName: Tome Knight
+  titleVerse: 'A loom of wisdom spun at dawn
+
+    Laid to rest til coming morn'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 154330f270f6f4bd4a8705ed0ddf44e9, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 662e08f939f7e4927a2e279ba62cca84, type: 2}
+  steed: {fileID: 11400000, guid: bd7c9352fbca14f71849172213db2bc5, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: eff6e040509bd4d25845cdc4e99ec63c, type: 2}
+  - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
+  - {fileID: 11400000, guid: 573963423074e4d6ea5d8e495e867b7f, type: 2}
+  - {fileID: 11400000, guid: e06b50cb9c385428aa2e68b6dc7814a0, type: 2}
+  - {fileID: 11400000, guid: 4fc8fbaf0362942588c43fad13a3f2e5, type: 2}
+  - {fileID: 11400000, guid: 83ca4d51ffcbe405485657ef128cfa5b, type: 2}
+  - {fileID: 11400000, guid: 89d6a0373f24b4ca697862acb8f84af7, type: 2}
+  - {fileID: 11400000, guid: 6d13a5b10f8104b60b3c6d45dd661a6d, type: 2}
+  - {fileID: 11400000, guid: 0e70489c673d74077a1f1b6fa618e27a, type: 2}
+  - {fileID: 11400000, guid: 40bfbe81ddace44a0af3c8c5050cb607, type: 2}
+  - {fileID: 11400000, guid: 46e9fdd8600434f26a1b0082a391b18c, type: 2}
+  - {fileID: 11400000, guid: 950a6cb93325f4c67ba5b87250046635, type: 2}
+  randomFlavorTableTitle: LIMITS OF MEMORY
+  randomFlavorTableRows:
+  - 1 People's names In large gatherings
+  - 2 Place names In combat
+  - 3 Faces At morning
+  - 4 Geography At night
+  - 5 Relationships When alone
+  - "6 Time After a drink\nKNIGHTED BY...\nThe Tangled Seer\nVIG 10, CLA 5, SPI 13,
+    4 GD\n\u2022 Not quite here, but also too much of them\nis here. Appears as knotted
+    appendages\nand faces, twisting in and out of the air.\n\u2022 Sees all possibilities,
+    is never sure where\nthey are right now.\n\u2022 Wants stability and simplicity."
+  personHook: Careless clothier
+  objectHook: Peace stick
+  beastHook: Slow butterfly
+  stateHook: Courting
+  themeHook: 'Location
+
+    4
+
+    3
+
+    The'

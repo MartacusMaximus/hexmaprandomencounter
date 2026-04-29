@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Hive_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 156
+  knightName: Hive Knight
+  titleVerse: 'A bed of gluous, parchly cloth, a coat of stickly sleen
+
+    Emerged
+    in morning good as new, chirurgery unseen'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: c2aac29fb09494bc9b3d381426c3fe66, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 4250a2a6028aa4852a65158973aa2100, type: 2}
+  steed: {fileID: 11400000, guid: ef120de54c539486dbc355ef96c1fd80, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 50395b822377842a5881da65195bf731, type: 2}
+  - {fileID: 11400000, guid: ffe0d1a7b80034b82992ca9d53f07afa, type: 2}
+  - {fileID: 11400000, guid: de753f7570fe34f7a92d2b897388de01, type: 2}
+  - {fileID: 11400000, guid: cf790a823bacd4168aa591e8f7e26f73, type: 2}
+  - {fileID: 11400000, guid: 715915bef78264b2a84ec392fbd37916, type: 2}
+  - {fileID: 11400000, guid: 44573d83c5e3b43bea9337d9691ea03d, type: 2}
+  - {fileID: 11400000, guid: 81923af5d7ef04ab28ffcdb7ad5ed057, type: 2}
+  - {fileID: 11400000, guid: 0fe403f83418a46a3aa5a77e5a5c0005, type: 2}
+  - {fileID: 11400000, guid: 5e9bf16df23f04b6d988e6ee4a38d588, type: 2}
+  - {fileID: 11400000, guid: 44688479c5faa43e88154e19e8f512b5, type: 2}
+  randomFlavorTableTitle: FORMING THE COCOON
+  randomFlavorTableRows:
+  - 1 Fed beyond full Complete darkness
+  - 2 Thoroughly cleaned Submersion in water
+  - 3 Sung to sleep Milk and honey
+  - 4 Set alight Choking smoke
+  - 5 Buried in soil A blanket of leaves
+  - "6 Beheaded Burning embers\nKNIGHTED BY...\nThe Skin Seer\nVIG 14, CLA 7, SPI
+    7, 4 GD\n\u2022 Patchwork creation of various Seers who\nwere murdered or executed.
+    Tall,\npowerful shape, but twisted visage.\n\u2022 Sees every thought of betrayal,
+    even the\ntiniest consideration.\n\u2022 Wants to punish those who do not respect\nthe
+    Seers."
+  personHook: Deceitful healer
+  objectHook: History pack
+  beastHook: Wood centipede
+  stateHook: Bellowing
+  themeHook: 'Stories
+
+    6
+
+    5
+
+    The'

@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_101
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 101
+  mythName: Myth 101
+  omens:
+  - '1. The Cloud Hag descends from above,
+
+    bombarding the Company with gusts
+    of
+
+    wind. She''ll leave when she feels strong.'
+  - '2. A cauldron under a canopy of knotted
+
+    trees. Anything dipped in glows
+    with
+
+    darkness. For the rest of the day the
+
+    object is invisible to any
+    that wish to
+
+    harm you. If living matter touches the
+
+    brew then one of
+    the Coven bursts from
+
+    within and admonishes for the intrusion.'
+  - '3. The Garden Witch stoops about in the
+
+    shrubbery, plucking snails before
+    eating
+
+    them. She offers her snails, which allow
+
+    the eater to speak
+    with plants briefly.'
+  - '4. Amid a field of lush growth, a perfect
+
+    circle of dead plants. Plants
+    entering the
+
+    circle wither and die. The Garden Witch
+
+    has planted a
+    saltstone causing this.'
+  - '5. The wind drops. The Achantrix screeches
+
+    that there will be no night
+    today. The next
+
+    night phase is treated as day.'
+  - '6. The Coven fight to the death, nothing able
+
+    to quell their hatred for
+    each other. The
+
+    victor mourns, then enters exile.'
+  verse: 
+  castEntries:
+  - name: The Cloud Hag, Nimbrel the Powerful
+    statBlock: 'VIG 17, CLA 13, SPI 12, 12 GD
+
+      A1 (fog cloak), flight, wind
+      orb (d10 blast)'
+    notes: Wants to feel above everybody else.
+  - name: The Garden Witch, Tanselie the Petty
+    statBlock: 'VIG 10, CLA 13, SPI 15, 8 GD
+
+      Four bony arms (d6 each), petal
+      locket'
+    notes: '(endless water when watering plants)
+
+      Wants to nurture the small,
+      cut back the big.'
+  - name: The Achantrix, Scathara the Perfect
+    statBlock: 'VIG 15, CLA 13, SPI 18, 10 GD
+
+      Bright sickle (2d8), star ring
+      (disobeying a'
+    notes: 'command by the wearer causes d8 SPI loss)
+
+      Wants to expel all darkness
+      from the world.
+
+      In mossen whisper, on thundry roar
+
+      In starry
+      flare, thrice-membered lore
+
+      COVEN CONFLICTS
+
+      About Exacerbated
+      by
+
+      1 Food The other member
+
+      2 Gifts A physical fight
+
+      3
+      Travel Decades of resentment
+
+      4 Manners Alcohol
+
+      5 Birds A petty
+      lie
+
+      6 Property Heartbreak
+
+      Coven
+
+      Dwelling: Patchwork tent
+      ~ Sanctum: Duck pond ~ Monument: Eternal hearth
+
+      Hazard: Burning heat
+      ~ Curse: Yawning ravine ~ Ruin: Sorrowful statues
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Patchwork tent
+  sanctum: Duck pond
+  monument: Eternal hearth
+  hazard: Burning heat
+  curse: Yawning ravine
+  ruin: Sorrowful statues
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

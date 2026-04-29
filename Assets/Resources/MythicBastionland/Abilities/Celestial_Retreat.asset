@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Celestial_Retreat
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Celestial Retreat
+  description: "While you can see the sky you may focus for a\nminute to vanish to
+    a distant sanctuary, just\nbeyond reality. You leave a small glowing\nstone behind.
+    You can rematerialise at the\nstone at any time.\nPASSION - Constellations\nRestore
+    SPI when you tell a new person about\nthe stars as you point to them.\nCountless
+    lights dotted in night' s veil\nTo them, each one a glad or shameful tale\nCosmic
+    Knight\nSTRANGE CROSSBOW\nForm Twist\n1 Handheld (d6) Cannot shoot in dark\n2
+    Lightwood (d8 hefty) Only you can shoot it\n3 Repeating (d8 long) Extremely loud
+    clunk\n4 Double (2d6 long) No bolts required\n5 Bronze (2d8 slow) Very painful
+    wounds\n6 Ironwood (d10 slow) Can also be used in\nmelee combat\nKNIGHTED BY...\nThe
+    Rose Seer\nVIG 5, CLA 8, SPI 6, 1 GD\n\u2022 Frail body, lilting head of pink\nflesh-petals.
+    Every need lovingly tended\nto by an elderly woman.\n\u2022 Whispers her guidance
+    as obscure, ugly\npoetry, applauded by her caretaker.\n\u2022 Wants everybody
+    to suffer just enough to\nenjoy the little pleasure they have.\nPerson: Smug
+    prophet ~ Name: Viralag ~ Characteristic: Flower lover\nObject: War ink ~ Beast:
+    Dust mongoose ~ State: Trailing ~ Theme: Transformation\n5\n5\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

@@ -18,6 +18,8 @@ public static class ReworkPartyWorkbenchSetup
     [MenuItem("Tools/Rework/Setup Party Workbench")]
     public static void BuildReworkPartyWorkbench()
     {
+        MythicBastionlandImporter.ImportPdfContent();
+
         EnsureFolder("Assets", "Generated");
         EnsureFolder("Assets/Generated", "ReworkParty");
         EnsureFolder(GeneratedRoot, "Characters");
@@ -82,7 +84,7 @@ public static class ReworkPartyWorkbenchSetup
             "Helm",
             "Great Bear Pelt",
             "Greaves",
-            "Sustenance");
+            "Traveller Backpack");
 
         var pigeonKnight = CreateOrUpdateCharacter(
             CharactersRoot + "/PigeonKnight.asset",
@@ -175,6 +177,7 @@ public static class ReworkPartyWorkbenchSetup
         campaign.activeParty.members.Add(dungBeetleKnight);
         campaign.activeParty.members.Add(pigeonKnight);
         campaign.activeParty.partyInventory.Clear();
+        campaign.mythicContentLibrary = MythicBastionlandContentLibrarySO.LoadDefault();
 
         EditorUtility.SetDirty(campaign);
         return campaign;
@@ -208,7 +211,12 @@ public static class ReworkPartyWorkbenchSetup
         character.movedThisTurn = false;
         character.flawCount = 0;
         character.hasCoreAbility = false;
-        character.deedCount = 0;
+        character.deedCount = characterName == "Rat Knight" ? 5 : 0;
+        character.assignedKnight = null;
+        character.linkedSeer = null;
+        character.grantedKnightAbility = null;
+        character.knownAbilities = new List<AbilitySO>();
+        character.steed = new SteedInstance();
         character.skills = skills
             .Select(skill => new SkillEntry { skillName = skill.skillName, value = skill.value })
             .ToList();
@@ -283,7 +291,7 @@ public static class ReworkPartyWorkbenchSetup
 
     private static Dictionary<string, EquipmentData> LoadEquipmentByName()
     {
-        return AssetDatabase.FindAssets("t:EquipmentData", new[] { ItemsFolder })
+        return AssetDatabase.FindAssets("t:EquipmentData", new[] { ItemsFolder, "Assets/Resources/MythicBastionland/Equipment" })
             .Select(AssetDatabase.GUIDToAssetPath)
             .Select(AssetDatabase.LoadAssetAtPath<EquipmentData>)
             .Where(item => item != null)

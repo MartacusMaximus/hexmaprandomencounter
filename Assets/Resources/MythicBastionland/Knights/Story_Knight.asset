@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Story_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 76
+  knightName: Story Knight
+  titleVerse: 'At last, I''m here!
+
+    The one you were waiting for, the one behind
+    the words'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 9c28776611b3045a0bbc34d2ee56a6a0, type: 2}
+  linkedSeer: {fileID: 11400000, guid: bc0472d9558a145bfae6eceb67cdf066, type: 2}
+  steed: {fileID: 11400000, guid: 8bd56b96bd216426e9f85ed788e2c72d, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: 05a4b3a3fed834c4a8b7664fbae1ef9e, type: 2}
+  - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
+  - {fileID: 11400000, guid: 19541308fa9c54cd2b931acff0719dcf, type: 2}
+  - {fileID: 11400000, guid: ff40a19bf8b6b449b8d0e9509fdc9d71, type: 2}
+  - {fileID: 11400000, guid: 704863d9df6794bfa9b203a4af0cda8e, type: 2}
+  - {fileID: 11400000, guid: d1ee383727d794f16ac51b64eba25991, type: 2}
+  - {fileID: 11400000, guid: b464054ced68c4982876aee3d0b18a45, type: 2}
+  - {fileID: 11400000, guid: 7ed127b6708d745a8a2c6802d0a61652, type: 2}
+  - {fileID: 11400000, guid: 44e2a98a344d04326b14781cdf194360, type: 2}
+  - {fileID: 11400000, guid: 15204e0e7d06d4c61873df092589a918, type: 2}
+  - {fileID: 11400000, guid: dc312dc1bdd1a439189d10abb0f3d208, type: 2}
+  - {fileID: 11400000, guid: 42eaf206b0e184433b561e913b544e56, type: 2}
+  randomFlavorTableTitle: TOME OF TALES
+  randomFlavorTableRows:
+  - 1 Quest Ghosts!
+  - 2 Romance Long-lost twins!
+  - 3 Revenge Memory loss!
+  - 4 Farce Reincarnation!
+  - 5 Nonsense Talking animals!
+  - "6 Tragedy Everybody dies!\nKNIGHTED BY...\nThe Silvered Seer\nVIG 9, CLA 19,
+    SPI 13, 2 GD\n\u2022 Shuffles slowly with help from adoring\nacolytes, body weighed
+    down by blue\ncandles and silver filigree.\n\u2022 Claims not to be a Seer at
+    all, a lie. They\nknow more than any other, but gives only\nthe barest hints
+    of advice.\n\u2022 Wants to escape and live a normal life."
+  personHook: Intolerant herder
+  objectHook: Bear wand
+  beastHook: Emerald panther
+  stateHook: Proud
+  themeHook: 'Commands
+
+    3
+
+    1
+
+    The'

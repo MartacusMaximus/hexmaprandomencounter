@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Myth_145
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 145
+  mythName: Myth 145
+  omens:
+  - '1. A half-asleep fisherman by a duckweed-
+
+    covered pond. He warns the "old
+    girl o'' the
+
+    pond" can''t be trusted on her word.'
+  - '2. A pond thick with duckweed, the Sprite
+
+    emerges, an old woman with the
+    voice and
+
+    movement of a child. She takes a liking to
+
+    one member of
+    the Company and asks lots
+
+    about them before fleeing into the pond.'
+  - '3. Another weed-covered pond. The Sprite
+
+    emerges in the centre, appearing
+    serious.
+
+    She asks her beloved to name any object
+
+    they want, from the
+    past, present, or
+
+    future. She insists until they give an
+
+    answer, then
+    ducks back under water.'
+  - '4. Two beings of greenish water (see
+
+    opposite) fight loudly, each proclaiming
+
+    that
+    "she loves only me".'
+  - '5. A still lake, the green arms of the Sprite
+
+    emerging on the bank, holding
+    the
+
+    requested item for their beloved. She
+
+    attacks if the gift is refused.'
+  - '6. The Sprite, now angry, is here to reclaim
+
+    the gift. She''ll take it
+    by force if needed.'
+  verse: 
+  castEntries:
+  - name: The Sprite, Old Girl o' the Pond, Wrundl
+    statBlock: 'VIG 12, CLA 16, SPI 16, 7 GD
+
+      A1 (robe of thick pond weed)'
+    notes: 'Water shaped to a blade (3d6) or arrow (2d6)
+
+      Wants to interfere
+      with the way things
+
+      should be. Feels intense love for one thing at
+
+      a
+      time before forgetting them entirely.'
+  - name: Watery Being
+    statBlock: 'VIG 10, CLA 4, SPI 4, 3 GD
+
+      Once people, drowned by the Sprite.
+      They'
+    notes: long for her love, but she has forgotten them.
+  - name: Drowsy Fisherman, Mucks
+    statBlock: 'VIG 12, CLA 6, SPI 10, 4 GD
+
+      A1 (rusty pot helm), patchwork
+      clothes'
+    notes: 'Plans petty revenge against the Sprite, but
+
+      she has already forgotten
+      him.
+
+      Sodden gifts from spriggle wylde
+
+      Atop a crone, below a child
+
+      WATERY
+      CREATIONS
+
+      Voice Attack
+
+      1 Low gurgling Lashing weeds (2d6)
+
+      2
+      Splashing cries Bloated limbs (d8)
+
+      3 Sloshing song Rusted axe (d8)
+
+      4
+      Frothing hiss River rock (2d10 slow)
+
+      5 Drowning moan Choking hands (d6)
+
+      6
+      Rumbling roar Cold scream (d6 blast)
+
+      Sprite
+
+      Dwelling: Moonwatcher
+      settlement ~ Sanctum: Steam spring ~ Monument: Silver arch
+
+      Hazard: Strangling
+      fog ~ Curse: All light fades here ~ Ruin: Darkened fort
+
+      The'
+  flavorTable:
+    title: 
+    rows: []
+  dwelling: Moonwatcher settlement
+  sanctum: Steam spring
+  monument: Silver arch
+  hazard: Strangling fog
+  curse: All light fades here
+  ruin: Darkened fort
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

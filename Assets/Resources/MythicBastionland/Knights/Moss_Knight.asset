@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca96551cca1b43df8c56888695d53a6, type: 3}
+  m_Name: Moss_Knight
+  m_EditorClassIdentifier: Assembly-CSharp::KnightDefinitionSO
+  pageNumber: 36
+  knightName: Moss Knight
+  titleVerse: 'No need for lessons, tree or stone
+
+    The wisest seek what soil
+    has shown'
+  passionText: 
+  grantedAbility: {fileID: 11400000, guid: 499b8dc2f8386436ead3dcb79be630c4, type: 2}
+  linkedSeer: {fileID: 11400000, guid: 18a42473974c94fe7b271f02553d76cc, type: 2}
+  steed: {fileID: 11400000, guid: e4311791b93774faaae9b15da2372fe4, type: 2}
+  bondedProperty:
+  - {fileID: 11400000, guid: cfa27f041ca6e482f932ee98d870b933, type: 2}
+  - {fileID: 11400000, guid: 8049e2aaf51674a40a5e5cde2154562f, type: 2}
+  - {fileID: 11400000, guid: 7a1906978dadb4354b73af23c07349ae, type: 2}
+  - {fileID: 11400000, guid: dbe9775e651df45c9b09ed275fad357a, type: 2}
+  - {fileID: 11400000, guid: c4ceed0a91ac4460cb097159ca015d3f, type: 2}
+  - {fileID: 11400000, guid: a4833e8f11f9d4b7f827241806747d90, type: 2}
+  - {fileID: 11400000, guid: 6ec31721f845547b982f062a65bf62cb, type: 2}
+  - {fileID: 11400000, guid: 1198b506b74cc4ae9b2796bdf8027224, type: 2}
+  - {fileID: 11400000, guid: 62182da947569438f8bdc2d64b6050d8, type: 2}
+  - {fileID: 11400000, guid: 234a0031146024fe2b4e58da955f9237, type: 2}
+  - {fileID: 11400000, guid: dcb82a842c2d3445982b1998820090ba, type: 2}
+  - {fileID: 11400000, guid: b01f2b39881c5424bb32c9cc6467e384, type: 2}
+  randomFlavorTableTitle: FULL BODY TATTOOS
+  randomFlavorTableRows:
+  - 1 Faded spirals Points to water
+  - '2 Blue thorns Burns before an
+
+    ambush'
+  - 3 Silver stars A1 in saltwater
+  - 4 Colourful snakes A1 under moonlight
+  - 5 Red bones A1 in rivers or streams
+  - "6 Burnt rings Conceals a third eye\nKNIGHTED BY...\nThe Loathed Seer\nVIG 8,
+    CLA 11, SPI 5, 6 GD\n\u2022 Long, twisted face and body, like she's\nbeen pulled
+    around a cart wheel.\n\u2022 Sees into a person's hate with a touch,\nsharing
+    and fuelling their contempt.\n\u2022 Physically pained by admiration or love.\nWants
+    to become even more loathed."
+  personHook: Adoring apprentice
+  objectHook: Pain blade
+  beastHook: Crowned stag
+  stateHook: Stealing
+  themeHook: 'Flight
+
+    1
+
+    5
+
+    The'

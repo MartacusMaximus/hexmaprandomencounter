@@ -1,0 +1,242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Disguise_a_scheme_in_shadows_cast
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 127
+  mythName: Disguise a scheme in shadows cast
+  omens:
+  - '1. The Thorn Seer roams the Realm,
+
+    proclaiming an invasion of great scuttling
+
+    monsters
+    is coming soon.'
+  - '2. A messenger declares that the Thorn Seer
+
+    has reclaimed a lost fortress
+    (in the Myth
+
+    Hex), creating an impenetrable sanctuary
+
+    for when the
+    invasion comes.'
+  - '3. Three claw swarm cutters peer from their
+
+    tunnels, scouts for the invasion.
+    If seen
+
+    they scutter back underground.'
+  - '4. A smith and her three young apprentices
+
+    are looking for a new home.
+    They left the
+
+    Fortress, as the Thorn Seer wanted the
+
+    impossible from
+    them, demanding whole
+
+    walls of iron be built.'
+  - '5. The voice of the Thorn Seer is heard
+
+    across the land. The invasion is
+    here,
+
+    numberless hordes of the claw swarm
+
+    attacking the Fortress. They
+    will not
+
+    actually breach the Fortress, as they are
+
+    creations of the
+    Thorn Seer.'
+  - '6. The invasion defeated, the Thorn Seer
+
+    demands to be made ruler of the
+    Realm,
+
+    the Fortress as his Seat of Power.'
+  verse: 'Omens
+
+    1. The Thorn Seer roams the Realm,
+
+    proclaiming an invasion
+    of great scuttling
+
+    monsters is coming soon.
+
+    2. A messenger declares
+    that the Thorn Seer
+
+    has reclaimed a lost fortress (in the Myth
+
+    Hex),
+    creating an impenetrable sanctuary
+
+    for when the invasion comes.
+
+    3.
+    Three claw swarm cutters peer from their
+
+    tunnels, scouts for the invasion.
+    If seen
+
+    they scutter back underground.
+
+    4. A smith and her three young
+    apprentices
+
+    are looking for a new home. They left the
+
+    Fortress, as
+    the Thorn Seer wanted the
+
+    impossible from them, demanding whole
+
+    walls
+    of iron be built.
+
+    5. The voice of the Thorn Seer is heard
+
+    across the
+    land. The invasion is here,
+
+    numberless hordes of the claw swarm
+
+    attacking
+    the Fortress. They will not
+
+    actually breach the Fortress, as they are
+
+    creations
+    of the Thorn Seer.
+
+    6. The invasion defeated, the Thorn Seer
+
+    demands
+    to be made ruler of the Realm,
+
+    the Fortress as his Seat of Power.
+
+    Cast
+
+    The
+    Thorn Seer
+
+    VIG 9, CLA 16, SPI 14, 3 GD
+
+    A2 (thorny body, helm)
+
+    Spined
+    mace (d8 hefty), dagger (d6)
+
+    Sees pain in the past and the future.
+
+    Claw
+    Swarm Cutter
+
+    VIG 9, CLA 9, SPI 3, 3 GD
+
+    A1 (green carapace)
+
+    Claws
+    (2d6), acid spit (d8)
+
+    Cunning instinct (see below).
+
+    Claw Swarm Hulk
+
+    VIG
+    15, CLA 5, SPI 5, 6 GD
+
+    A2 (red carapace)
+
+    Great claws (2d8), blunt instinct
+
+    A
+    cage in stone, all thorned and vast'
+  castEntries:
+  - name: The Thorn Seer
+    statBlock: 'VIG 9, CLA 16, SPI 14, 3 GD
+
+      A2 (thorny body, helm)'
+    notes: 'Spined mace (d8 hefty), dagger (d6)
+
+      Sees pain in the past and
+      the future.'
+  - name: Claw Swarm Cutter
+    statBlock: 'VIG 9, CLA 9, SPI 3, 3 GD
+
+      A1 (green carapace)'
+    notes: 'Claws (2d6), acid spit (d8)
+
+      Cunning instinct (see below).'
+  - name: Claw Swarm Hulk
+    statBlock: 'VIG 15, CLA 5, SPI 5, 6 GD
+
+      A2 (red carapace)'
+    notes: 'Great claws (2d8), blunt instinct
+
+      A cage in stone, all thorned
+      and vast
+
+      Disguise a scheme in shadows cast
+
+      CUNNING INSTINCTS
+
+      Action
+      Objective
+
+      1 Burrow Regroup later
+
+      2 Scatter Surprise the enemy
+
+      3
+      Camouflage Target a single enemy
+
+      4 Sprout wings Confuse the enemy
+
+      5
+      Spawn more Set up an advantage
+
+      6 Spit acid Exploit a weak spot
+
+      Fortress
+
+      Dwelling:
+      Exile pottery ~ Sanctum: Timeless cavern ~ Monument: Lyre tree
+
+      Hazard:
+      Numb ache on the air ~ Curse: The Silence ~ Ruin: Scoured trail
+
+      Th'
+  flavorTable:
+    title: CUNNING INSTINCTS
+    rows:
+    - 1 Burrow Regroup later
+    - 2 Scatter Surprise the enemy
+    - 3 Camouflage Target a single enemy
+    - 4 Sprout wings Confuse the enemy
+    - 5 Spawn more Set up an advantage
+    - '6 Spit acid Exploit a weak spot
+
+      Fortress'
+  dwelling: Exile pottery
+  sanctum: Timeless cavern
+  monument: Lyre tree
+  hazard: Numb ache on the air
+  curse: The Silence
+  ruin: Scoured trail
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

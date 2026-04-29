@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Scourer_s_Sense
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Scourer's Sense
+  description: "If you are searching for something specific\nyou always know for
+    sure whether it is in\nyour immediate surroundings or not.\nPASSION - Heraldry\nRestore
+    SPI when you announce the owner of a\nbanner, crest, or coat of arms, which you
+    can\nalways recognise.\nKeen eyes see what cold heart seeks\nThis bird never
+    bare of beak\nMagpie Knight\nA TREASURED MEMENTO\nItem Reminds you of...\n1 A
+    dried flower A great victory\n2 A sword hilt A shameful defeat\n3 A pearl A happy
+    place\n4 A scrap of a banner A sorrowful place\n5 An old coin Somebody you loved\n6
+    A dog's collar Somebody you hated\nKNIGHTED BY...\nThe Lens Seer\nVIG 10, CLA
+    14, SPI 6, 2 GD\n\u2022 A squat body, her head a refractive orb of\nliquid glass.\n\u2022
+    Knows the true fate of anything that she\nexamines closely and thoroughly.\n\u2022
+    Wants interesting things brought to her\nfor examination.\nPerson: Wild thatcher
+    ~ Name: Nieolas ~ Characteristic: Restless limbs\nObject: Copper acorn ~ Beast:
+    Armoured pigeon ~ State: Smelling ~ Theme: Light\n5\n9\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

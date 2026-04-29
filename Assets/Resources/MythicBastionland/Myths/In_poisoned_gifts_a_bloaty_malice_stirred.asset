@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: In_poisoned_gifts_a_bloaty_malice_stirred
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 123
+  mythName: In poisoned gifts a bloaty malice stirred
+  omens:
+  - '1. A caravan of wagons, fat donkeys hauling
+
+    thick logs, escorted by twelve
+    warty
+
+    guards. They are respectful to Knights,
+
+    but urge the need for
+    haste, delivering
+
+    materials for the Toad''s castle.'
+  - '2. Two scouts, searching for news of the
+
+    Toad. They hear his castle has
+    been built.'
+  - '3. The Toad''s pet, a monstrous slug, is being
+
+    delivered to his castle
+    in chains. Six warty
+
+    guards struggle with the task, asking for
+
+    help.
+    The Toad is grateful for aid given.'
+  - '4. Nestled among thorns, a scroll with green
+
+    ribbon. It reads "the Toad
+    commends your
+
+    service". Anybody reading it feels sickly
+
+    sweet, as if
+    filled with honey. They choke
+
+    and sputter syrupy spittle, losing d8 VIG.'
+  - '5. A lone warty guard, delivering a gift to
+
+    one of the Knights (see opposite).
+    Its curse
+
+    manifests when the item is used, which
+
+    the guard encourages
+    the Knight to do
+
+    later. The curse lasts an entire Season.'
+  - '6. Twelve warty guards ride forward,
+
+    demanding the Knights visit the Toad.
+
+    They
+    must swear to him or die.'
+  verse: 'Omens
+
+    1. A caravan of wagons, fat donkeys hauling
+
+    thick logs,
+    escorted by twelve warty
+
+    guards. They are respectful to Knights,
+
+    but
+    urge the need for haste, delivering
+
+    materials for the Toad''s castle.
+
+    2.
+    Two scouts, searching for news of the
+
+    Toad. They hear his castle has been
+    built.
+
+    3. The Toad''s pet, a monstrous slug, is being
+
+    delivered to
+    his castle in chains. Six warty
+
+    guards struggle with the task, asking for
+
+    help.
+    The Toad is grateful for aid given.
+
+    4. Nestled among thorns, a scroll with
+    green
+
+    ribbon. It reads "the Toad commends your
+
+    service". Anybody reading
+    it feels sickly
+
+    sweet, as if filled with honey. They choke
+
+    and sputter
+    syrupy spittle, losing d8 VIG.
+
+    5. A lone warty guard, delivering a gift
+    to
+
+    one of the Knights (see opposite). Its curse
+
+    manifests when the
+    item is used, which
+
+    the guard encourages the Knight to do
+
+    later. The
+    curse lasts an entire Season.
+
+    6. Twelve warty guards ride forward,
+
+    demanding
+    the Knights visit the Toad.
+
+    They must swear to him or die.
+
+    Cast
+
+    The
+    Toad, the Fat Lord, Born to Rule
+
+    VIG 12, CLA 5, SPI 16, 5 GD
+
+    A4 (blubbersome
+    body)
+
+    Grab and bite (d10), charming voice
+
+    Warty Guards, led by Jabeck
+
+    VIG
+    12, CLA 10, SPI 8, 5 GD
+
+    A3 (froghelm, mail, rotund plate)
+
+    Bow (d6 long),
+    halberd (d10 long)
+
+    Fearful look, professional manner.
+
+    Blotch, Beloved
+    Pet to the Toad
+
+    VIG 17, CLA 5, SPI 2, 5 GD
+
+    A4 (monstrous sluglike body)
+
+    Slobbering
+    maw (3d8)
+
+    Always sad, always hungry.
+
+    Wants to be released.
+
+    In
+    honeyed words a fat and charmsome lord'
+  castEntries:
+  - name: The Toad, the Fat Lord, Born to Rule
+    statBlock: 'VIG 12, CLA 5, SPI 16, 5 GD
+
+      A4 (blubbersome body)'
+    notes: Grab and bite (d10), charming voice
+  - name: Warty Guards, led by Jabeck
+    statBlock: 'VIG 12, CLA 10, SPI 8, 5 GD
+
+      A3 (froghelm, mail, rotund plate)'
+    notes: 'Bow (d6 long), halberd (d10 long)
+
+      Fearful look, professional manner.'
+  - name: Blotch, Beloved Pet to the Toad
+    statBlock: 'VIG 17, CLA 5, SPI 2, 5 GD
+
+      A4 (monstrous sluglike body)'
+    notes: 'Slobbering maw (3d8)
+
+      Always sad, always hungry.
+
+      Wants to
+      be released.
+
+      In honeyed words a fat and charmsome lord
+
+      In poisoned
+      gifts a bloaty malice stirred
+
+      BALEFUL GIFTS
+
+      Gift Curse
+
+      1
+      Apple pie Deathly sleep
+
+      2 Froghelm (A1) Loss of speech
+
+      3 Wooden
+      flute Hideous face
+
+      4 Silver mirror Loss of vision
+
+      5 Woollen scarf
+      Total memory loss
+
+      6 Copper mug Loss of hearing
+
+      Toad
+
+      Dwelling:
+      Rambunctious fishery ~ Sanctum: Tranquil cove ~ Monument: Triple obelisk
+
+      Hazard:
+      Quaking ground ~ Curse: Rippling darkness ~ Ruin: Broken mast
+
+      Th'
+  flavorTable:
+    title: BALEFUL GIFTS
+    rows:
+    - 1 Apple pie Deathly sleep
+    - 2 Froghelm (A1) Loss of speech
+    - 3 Wooden flute Hideous face
+    - 4 Silver mirror Loss of vision
+    - 5 Woollen scarf Total memory loss
+    - '6 Copper mug Loss of hearing
+
+      Toad'
+  dwelling: Rambunctious fishery
+  sanctum: Tranquil cove
+  monument: Triple obelisk
+  hazard: Quaking ground
+  curse: Rippling darkness
+  ruin: Broken mast
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}

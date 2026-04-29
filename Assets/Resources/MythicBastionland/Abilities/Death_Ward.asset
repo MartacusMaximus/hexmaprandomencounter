@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b78c5a08e324884bb0f0a35315554e, type: 3}
+  m_Name: Death_Ward
+  m_EditorClassIdentifier: Assembly-CSharp::AbilitySO
+  abilityName: Death Ward
+  description: "Use when a nearby ally would take a Mortal\nWound or be killed outright.
+    You take a\nMortal Wound instead.\nPASSION - Mortality\nRestore SPI when you
+    see an ally suffer a\nMortal Wound.\nIn wood, hide, or iron, as armour meek or
+    grand\nNo greater shield for the weak than the oath-sworn Knight' s own hand\nShield
+    Knight\nSOOTHING SALVE\nAroma Side Effect\n1 Rosemary Hallucination\n2 Mould
+    Lethargy\n3 Pepper Stimulation\n4 Copper Sorrow\n5 Garlic Giddiness\n6 Meat Absent-mindedness\nKNIGHTED
+    BY...\nThe Watched Seer\nVIG 10, CLA 10, SPI 5, 4 GD\n\u2022 Impossibly tall
+    and long-limbed,\nblindfolded with golden silk, adorned in\nrunic scripture.\n\u2022
+    Can gift others with a glimpse of their\nsight, revealing raw and painful truths.\n\u2022
+    Believes all the other Seers are watching.\nWants them all blinded or dead.\nPerson:
+    Novice shepherd ~ Name: Ragge ~ Characteristic: Haunted look\nObject: Storm ring
+    ~ Beast: Roaring coot ~ State: Parched ~ Theme: Water\n2\n8\nThe"
+  requiredChunkCount: 0
+  requiredColor: 0
+  requiresLinkedChunk: 0
+  addDamageFlat: 0
+  addGuardFlat: 0
+  modifyReaction: 0

@@ -1,0 +1,251 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364c2b772391e46dba637935c558b9b2, type: 3}
+  m_Name: Where_ancient_warlords_sleep_alone
+  m_EditorClassIdentifier: Assembly-CSharp::MythSO
+  pageNumber: 171
+  mythName: Where ancient warlords sleep alone
+  omens:
+  - 1. A breeze with the scent of steel and blood.
+  - '2. A dancing farmer is herding her geese and
+
+    dragging a skeletal corpse
+    wrapped in
+
+    cloth. She gladly explains that she''s
+
+    taking her grandfather
+    to the Rock, the
+
+    only resting place for such a warrior.'
+  - '3. A Knight of white stone stands guarding
+
+    a withered tree, just a few
+    pieces of fruit
+
+    on its branches (see opposite). He explains
+
+    that this
+    fruit is being kept for warriors
+
+    returning from the Rock. Punishments for
+
+    eating
+    the fruit can be lifted by a Seer.'
+  - '4. A band of nine pilgrims seek the Rock.
+
+    They offer protective talismans
+    to
+
+    Knights. These will ensure that warriors
+
+    returning from the Rock
+    do not mistake
+
+    the Knights for enemies of the Realm.'
+  - '5. An invigorating storm. With each flash of
+
+    lightning the sound of battle
+    can be heard.'
+  - '6. Mist rolls back from a lake, revealing a
+
+    rocky island within, a rowboat
+    on the
+
+    shore. Three bellowing warbands of
+
+    warriors, waiting in death,
+    ready to serve
+
+    the Realm in battle one last time.'
+  verse: 'Omens
+
+    1. A breeze with the scent of steel and blood.
+
+    2. A dancing
+    farmer is herding her geese and
+
+    dragging a skeletal corpse wrapped in
+
+    cloth.
+    She gladly explains that she''s
+
+    taking her grandfather to the Rock, the
+
+    only
+    resting place for such a warrior.
+
+    3. A Knight of white stone stands guarding
+
+    a
+    withered tree, just a few pieces of fruit
+
+    on its branches (see opposite).
+    He explains
+
+    that this fruit is being kept for warriors
+
+    returning from
+    the Rock. Punishments for
+
+    eating the fruit can be lifted by a Seer.
+
+    4.
+    A band of nine pilgrims seek the Rock.
+
+    They offer protective talismans to
+
+    Knights.
+    These will ensure that warriors
+
+    returning from the Rock do not mistake
+
+    the
+    Knights for enemies of the Realm.
+
+    5. An invigorating storm. With each flash
+    of
+
+    lightning the sound of battle can be heard.
+
+    6. Mist rolls back from
+    a lake, revealing a
+
+    rocky island within, a rowboat on the
+
+    shore. Three
+    bellowing warbands of
+
+    warriors, waiting in death, ready to serve
+
+    the
+    Realm in battle one last time.
+
+    Cast
+
+    Alabaster Knight, Denebawde
+
+    VIG
+    15, CLA 8, SPI 8, 4 GD
+
+    A4 (body of white stone)
+
+    Black stone greatsword
+    (3d10 slow)
+
+    Wears a white python that whispers shrewd
+
+    guidance, but
+    cannot bite or cause harm.
+
+    Rock Pilgrims, led by Marik
+
+    VIG 10, CLA
+    10, SPI 13, 2 GD
+
+    Red cloaks, sacks of weapons intended as
+
+    offerings
+    to the warriors of the Rock
+
+    Warriors of the Rock, led by Olthiar
+
+    VIG
+    16, CLA 10, SPI 16, 8 GD
+
+    A2 (ancient mail, helm)
+
+    Sword of extinct metal
+    (2d8 long)
+
+    Want to fight in a worthy battle. Can Smite.
+
+    Amid the waves
+    a stony throne'
+  castEntries:
+  - name: Alabaster Knight, Denebawde
+    statBlock: 'VIG 15, CLA 8, SPI 8, 4 GD
+
+      A4 (body of white stone)'
+    notes: 'Black stone greatsword (3d10 slow)
+
+      Wears a white python that whispers
+      shrewd
+
+      guidance, but cannot bite or cause harm.'
+  - name: Rock Pilgrims, led by Marik
+    statBlock: 'VIG 10, CLA 10, SPI 13, 2 GD
+
+      Red cloaks, sacks of weapons
+      intended as'
+    notes: offerings to the warriors of the Rock
+  - name: Warriors of the Rock, led by Olthiar
+    statBlock: 'VIG 16, CLA 10, SPI 16, 8 GD
+
+      A2 (ancient mail, helm)'
+    notes: 'Sword of extinct metal (2d8 long)
+
+      Want to fight in a worthy battle.
+      Can Smite.
+
+      Amid the waves a stony throne
+
+      Where ancient warlords
+      sleep alone
+
+      SACRED FRUIT
+
+      Type Punishment if Eaten
+
+      1 Silver
+      berries Turn to stone
+
+      2 Bright oranges Voice silenced
+
+      3 Translucent
+      grapes Loss of eyes
+
+      4 Purple pears A hand withers away
+
+      5 Star
+      figs Ghoulish face
+
+      6 Huge peaches Become Exposed
+
+      Rock
+
+      Dwelling:
+      Philosopher tower ~ Sanctum: Soothing thunder ~ Monument: Quiet flame
+
+      Hazard:
+      Magma field ~ Curse: Drizzle veil ~ Ruin: Defiled catacomb
+
+      Th'
+  flavorTable:
+    title: SACRED FRUIT
+    rows:
+    - 1 Silver berries Turn to stone
+    - 2 Bright oranges Voice silenced
+    - 3 Translucent grapes Loss of eyes
+    - 4 Purple pears A hand withers away
+    - 5 Star figs Ghoulish face
+    - '6 Huge peaches Become Exposed
+
+      Rock'
+  dwelling: Philosopher tower
+  sanctum: Soothing thunder
+  monument: Quiet flame
+  hazard: Magma field
+  curse: Drizzle veil
+  ruin: Defiled catacomb
+  visibleByDefault: 0
+  visibleMarkerPrefab: {fileID: 0}
