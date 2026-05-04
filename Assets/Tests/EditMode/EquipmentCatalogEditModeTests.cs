@@ -91,6 +91,7 @@ public class EquipmentCatalogEditModeTests
             .Single(method =>
                 method.Name == "RollWeaponDamage" &&
                 method.GetParameters().Length == 2 &&
+                method.GetParameters()[0].ParameterType.Name == "EquipmentData" &&
                 method.GetParameters()[1].ParameterType == typeof(Func<int, int, int>))
             .Invoke(null, new object[] { equipment, rollDice });
 
@@ -167,6 +168,54 @@ public class EquipmentCatalogEditModeTests
         Assert.That(partyMembers.Count, Is.EqualTo(2));
     }
 
+    [Test]
+    public void ImportedEquipmentCatalogUsesCuratedAssetsAsNameAuthority()
+    {
+        InvokeStatic("MythicBastionlandImporter", "ImportPdfContent");
+
+        var curatedNames = AssetDatabase.FindAssets("t:EquipmentData", new[] { "Assets/Scripts/ScriptableObjects/ITEMS" })
+            .Select(AssetDatabase.GUIDToAssetPath)
+            .Select(AssetDatabase.LoadAssetAtPath<ScriptableObject>)
+            .Where(asset => asset != null && asset.GetType().Name == "EquipmentData")
+            .Select(asset => (string)GetField(asset, "itemName"))
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+        var mythicNames = AssetDatabase.FindAssets("t:EquipmentData", new[] { "Assets/Resources/MythicBastionland/Equipment" })
+            .Select(AssetDatabase.GUIDToAssetPath)
+            .Select(AssetDatabase.LoadAssetAtPath<ScriptableObject>)
+            .Where(asset => asset != null && asset.GetType().Name == "EquipmentData")
+            .Select(asset => (string)GetField(asset, "itemName"))
+            .ToList();
+
+        Assert.That(mythicNames.Intersect(curatedNames, StringComparer.OrdinalIgnoreCase), Is.Empty);
+        Assert.That(AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/Equipment/polished_chainmail.asset"), Is.Null);
+        Assert.That(AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/Equipment/3_javelins.asset"), Is.Null);
+        Assert.That(AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/Equipment/bronze_buckler.asset"), Is.Null);
+        Assert.That(AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/Equipment/chainmail.asset"), Is.Not.Null);
+        Assert.That(AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/Equipment/javelin.asset"), Is.Not.Null);
+        Assert.That(AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/Equipment/buckler.asset"), Is.Not.Null);
+    }
+
+    [Test]
+    public void ImportedEquipmentCatalogAppliesDefaultChunkLayoutsForHeadsLegsAndConsumables()
+    {
+        InvokeStatic("MythicBastionlandImporter", "ImportPdfContent");
+
+        var helm = AssetDatabase.LoadMainAssetAtPath("Assets/Scripts/ScriptableObjects/ITEMS/Helm.asset");
+        var greaves = AssetDatabase.LoadMainAssetAtPath("Assets/Scripts/ScriptableObjects/ITEMS/Greaves.asset");
+        var stimulant = AssetDatabase.LoadMainAssetAtPath("Assets/Scripts/ScriptableObjects/ITEMS/Stimulant.asset");
+
+        Assert.That(GetField(helm, "topHalf").ToString(), Is.EqualTo("None"));
+        Assert.That(GetField(helm, "bottomHalf").ToString(), Is.Not.EqualTo("None"));
+        Assert.That(GetField(greaves, "topHalf").ToString(), Is.Not.EqualTo("None"));
+        Assert.That(GetField(greaves, "bottomHalf").ToString(), Is.EqualTo("None"));
+        Assert.That(GetField(stimulant, "topHalf").ToString(), Is.EqualTo("None"));
+        Assert.That(GetField(stimulant, "bottomHalf").ToString(), Is.EqualTo("None"));
+        Assert.That(GetField(stimulant, "leftHalf").ToString(), Is.EqualTo("None"));
+        Assert.That(GetField(stimulant, "rightHalf").ToString(), Is.EqualTo("None"));
+        Assert.That(GetField(stimulant, "centerChunk").ToString(), Is.EqualTo("None"));
+    }
+
     private static ScriptableObject CreateScriptableObject(string typeName)
     {
         return ScriptableObject.CreateInstance(RuntimeType(typeName));
@@ -174,7 +223,8 @@ public class EquipmentCatalogEditModeTests
 
     private static Type RuntimeType(string typeName)
     {
-        return Type.GetType($"{typeName}, Assembly-CSharp", true);
+        return Type.GetType($"{typeName}, Assembly-CSharp", false)
+            ?? Type.GetType($"{typeName}, Assembly-CSharp-Editor", true);
     }
 
     private static object RuntimeEnum(string enumTypeName, string valueName)
@@ -200,6 +250,11 @@ public class EquipmentCatalogEditModeTests
     private static void Invoke(object target, string methodName)
     {
         target.GetType().GetMethod(methodName).Invoke(target, null);
+    }
+
+    private static object InvokeStatic(string typeName, string methodName, params object[] args)
+    {
+        return RuntimeType(typeName).GetMethod(methodName).Invoke(null, args);
     }
 
     private static object CreateEquipmentInstance(object equipment)

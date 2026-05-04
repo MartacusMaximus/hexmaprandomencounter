@@ -26,6 +26,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: d3563919335f643ed971b392aeeb6ac1, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: cb66e4f371a6a403fb8113e44610c734, type: 2}
+  - {fileID: 11400000, guid: dc6941a104d6e45e289a8426d09b2c9e, type: 2}
   - {fileID: 11400000, guid: 03dbabe68f899465a8cf0bd7c80387a4, type: 2}
   randomFlavorTable:
     title: BOX OF BONES

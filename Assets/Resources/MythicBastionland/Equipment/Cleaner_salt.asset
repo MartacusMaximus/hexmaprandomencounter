@@ -16,7 +16,8 @@ MonoBehaviour:
   pointCost: 0
   rarity: bonded
   displayCategory: tool
-  rulesText: (renders even the most rotten food safe
+  rulesText: (renders even the most rotten food safe and delicious, restock each
+    new Season)
   damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 0

@@ -82,6 +82,29 @@ namespace KnightsAndGM.Shared
         public bool ContributesToEquippedBonuses { get; set; } = true;
         public bool RequiresContainerStorage { get; set; }
         public bool OccupiesFullContainer { get; set; }
+        public List<string> GeneratedTags { get; set; } = new List<string>();
+    }
+
+    public sealed class PortableSlotActivationModel
+    {
+        public int SlotIndex { get; set; }
+        public bool CenterActive { get; set; }
+        public bool TopLinked { get; set; }
+        public bool BottomLinked { get; set; }
+        public bool LeftLinked { get; set; }
+        public bool RightLinked { get; set; }
+        public bool ChunkRequirementMet { get; set; }
+        public bool LinkedRequirementMet { get; set; }
+        public bool AbilityActive { get; set; }
+    }
+
+    public sealed class PortableInventoryActivationModel
+    {
+        public Dictionary<PortableChunkColor, int> ChunkCounts { get; set; } = new Dictionary<PortableChunkColor, int>();
+        public List<PortableSlotActivationModel> Slots { get; set; } = new List<PortableSlotActivationModel>();
+        public int ActiveAbilityDamageFlat { get; set; }
+        public int ActiveAbilityGuardFlat { get; set; }
+        public int ActiveAbilityReactionModifier { get; set; }
     }
 
     public sealed class EquipmentSlotModel

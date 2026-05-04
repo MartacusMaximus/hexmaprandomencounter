@@ -36,6 +36,7 @@ public class InventoryGrid : MonoBehaviour
     public GraphicRaycaster graphicRaycaster; // assign root canvas GraphicRaycaster
     public EventSystem eventSystem; // assign EventSystem in scene
     private bool isInitialized;
+    private PortableInventoryActivationModel activationSnapshot;
 
     private void Start()
     {
@@ -87,8 +88,8 @@ public class InventoryGrid : MonoBehaviour
 
     public void RefreshAllSlots()
     {
+        RebuildActivationSnapshot();
         for (int i = 0; i < slotButtons.Count; i++) RefreshSlot(i);
-        CheckAllChunks();
         Canvas.ForceUpdateCanvases();
     }
 
@@ -101,7 +102,13 @@ public class InventoryGrid : MonoBehaviour
         InventorySlotUI slotUI = slotButton.GetComponentInChildren<InventorySlotUI>();
         if (slotUI != null)
         {
-            slotUI.UpdateFromEquipment(inst);
+            PortableSlotActivationModel slotActivation = null;
+            if (activationSnapshot != null && index >= 0 && index < activationSnapshot.Slots.Count)
+            {
+                slotActivation = activationSnapshot.Slots[index];
+            }
+
+            slotUI.UpdateFromEquipment(inst, slotActivation);
         }
         else
         {
@@ -173,48 +180,35 @@ public class InventoryGrid : MonoBehaviour
     public void CheckAllChunks()
     {
         if (character == null) return;
+        RebuildActivationSnapshot();
         Debug.Log("InventoryGrid: Checking chunks in grid.");
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < character.inventory.Count; i++)
         {
-            var left = character.inventory[i]?.equipment?.leftHalf ?? ChunkColor.None;
-            var right = character.inventory[i]?.equipment?.rightHalf ?? ChunkColor.None;
-            var top = character.inventory[i]?.equipment?.topHalf ?? ChunkColor.None;
-            var bottom = character.inventory[i]?.equipment?.bottomHalf ?? ChunkColor.None;
-            var center = character.inventory[i]?.equipment?.centerChunk ?? ChunkColor.None;
+            var slotActivation = activationSnapshot != null && i < activationSnapshot.Slots.Count
+                ? activationSnapshot.Slots[i]
+                : null;
 
-            int r, c; IndexToRC(i, out r, out c);
-
-            if (right != ChunkColor.None && c < 2)
+            if (slotActivation != null && slotActivation.CenterActive)
             {
-                int neighborIndex = RCtoIndex(r, c + 1);
-                var neighborLeft = character.inventory[neighborIndex]?.equipment?.leftHalf ?? ChunkColor.None;
-                if (neighborLeft == right && neighborLeft != ChunkColor.None)
-                    Debug.Log($"Chunk formed between slots {i} (right {right}) and {neighborIndex} (left {neighborLeft}) — color {right}");
-            }
-            if (bottom != ChunkColor.None && r < 2)
-            {
-                int neighborIndex = RCtoIndex(r + 1, c);
-                var neighborTop = character.inventory[neighborIndex]?.equipment?.topHalf ?? ChunkColor.None;
-                if (neighborTop == bottom && neighborTop != ChunkColor.None)
-                    Debug.Log($"Chunk formed between slots {i} (bottom {bottom}) and {neighborIndex} (top {neighborTop}) — color {bottom}");
-            }
-            if (center != ChunkColor.None)
-            {
-                Debug.Log($"Slot {i} contains a center/full chunk of color {center}");
+                Debug.Log($"Slot {i} contains an active center chunk.");
             }
 
-            // also refresh UI text & visuals (safety in case something changed externally)
+            if (slotActivation != null && (slotActivation.TopLinked || slotActivation.BottomLinked || slotActivation.LeftLinked || slotActivation.RightLinked))
+            {
+                Debug.Log($"Slot {i} has linked chunk sides. T:{slotActivation.TopLinked} B:{slotActivation.BottomLinked} L:{slotActivation.LeftLinked} R:{slotActivation.RightLinked}");
+            }
+
             RefreshSlot(i);
         }
     }
 
-    public List<EquipmentData> GetActiveWeapons()
+    public List<EquipmentInstance> GetActiveWeapons()
     {
-        var list = new List<EquipmentData>();
+        var list = new List<EquipmentInstance>();
         foreach (var slot in character.inventory)
         {
-            if (slot != null && slot.equipment != null && slot.equipment.IsWeapon)
-                list.Add(slot.equipment);
+            if (slot != null && slot.equipment != null && (slot.equipment.IsWeapon || !string.IsNullOrWhiteSpace(slot.DamageDiceNotation)))
+                list.Add(slot);
         }
         return list;
     }
@@ -234,6 +228,7 @@ public class InventoryGrid : MonoBehaviour
 
         total += CountChunks().GetValueOrDefault(ChunkColor.Red, 0);
         total += GetVigorDamageBonus();
+        total += activationSnapshot != null ? activationSnapshot.ActiveAbilityDamageFlat : 0;
 
         return total;
     }
@@ -241,9 +236,9 @@ public class InventoryGrid : MonoBehaviour
 
     public Dictionary<ChunkColor, int> CountChunks()
     {
-        var portableCounts = InventoryStatCalculator.CountChunks(CharacterRulesAdapter.ToModel(character));
+        RebuildActivationSnapshot();
         var counts = new Dictionary<ChunkColor, int>();
-        foreach (var portableCount in portableCounts)
+        foreach (var portableCount in activationSnapshot.ChunkCounts)
         {
             counts[MapPortableChunk(portableCount.Key)] = portableCount.Value;
             Debug.Log($"Chunk count: {portableCount.Key} => {portableCount.Value}");
@@ -266,6 +261,12 @@ public class InventoryGrid : MonoBehaviour
     {
         if (character == null) return 0;
         return InventoryStatCalculator.GetClaritySaveModifier(CharacterRulesAdapter.ToModel(character));
+    }
+
+    public int GetReactionModifier()
+    {
+        if (character == null) return 0;
+        return InventoryStatCalculator.GetReactionModifier(CharacterRulesAdapter.ToModel(character));
     }
 
     public int GetEffectiveArmorTotal()
@@ -318,6 +319,15 @@ public class InventoryGrid : MonoBehaviour
         });
     }
 
+    public static int RollWeaponDamage(EquipmentInstance instance, IDiceRoller roller)
+    {
+        return RollWeaponDamage(instance, (count, sides) =>
+        {
+            roller.Roll(count, sides, out var rolledTotal);
+            return rolledTotal;
+        });
+    }
+
     public static int RollWeaponDamage(EquipmentData weapon, Func<int, int, int> rollDice)
     {
         if (weapon == null || string.IsNullOrWhiteSpace(weapon.damageDiceNotation))
@@ -345,6 +355,35 @@ public class InventoryGrid : MonoBehaviour
         return total;
     }
 
+    public static int RollWeaponDamage(EquipmentInstance instance, Func<int, int, int> rollDice)
+    {
+        if (instance == null || instance.equipment == null || string.IsNullOrWhiteSpace(instance.DamageDiceNotation))
+        {
+            return 0;
+        }
+
+        if (!DiceNotationParser.TryParse(instance.DamageDiceNotation, out var parsed))
+        {
+            Debug.LogWarning($"InventoryGrid: invalid damage notation '{instance.DamageDiceNotation}' on {instance.DisplayName}.");
+            return 0;
+        }
+
+        var diceCount = parsed.Count;
+        var flatBonus = parsed.Modifier;
+
+        foreach (var trait in instance.equipment.traits)
+        {
+            trait.ModifyDamageRoll(ref diceCount, ref flatBonus);
+        }
+
+        ApplyResolvedTraitDamage(instance.resolvedTraitNames, ref diceCount, ref flatBonus);
+
+        var rolledTotal = rollDice(diceCount, parsed.Sides);
+        var total = rolledTotal + flatBonus;
+        Debug.Log($"{instance.DisplayName} rolled {diceCount}d{parsed.Sides} + {flatBonus} = {total}");
+        return total;
+    }
+
     public int ParseDiceCount(string notation)
     {
         if (!DiceNotationParser.TryParse(notation, out var parsed))
@@ -369,6 +408,33 @@ public class InventoryGrid : MonoBehaviour
                 return ChunkColor.Rainbow;
             default:
                 return ChunkColor.None;
+        }
+    }
+
+    private void RebuildActivationSnapshot()
+    {
+        if (character == null)
+        {
+            activationSnapshot = new PortableInventoryActivationModel();
+            return;
+        }
+
+        activationSnapshot = InventoryStatCalculator.BuildActivationSnapshot(CharacterRulesAdapter.ToModel(character));
+    }
+
+    private static void ApplyResolvedTraitDamage(IEnumerable<string> traitNames, ref int diceCount, ref int flatBonus)
+    {
+        if (traitNames == null)
+        {
+            return;
+        }
+
+        foreach (var traitName in traitNames)
+        {
+            if (string.Equals(traitName, "Deadly", StringComparison.OrdinalIgnoreCase))
+            {
+                diceCount += 1;
+            }
         }
     }
 }

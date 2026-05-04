@@ -21,11 +21,13 @@ MonoBehaviour:
   armorValue: 1
   costsCreationPoints: 0
   leftHalf: 0
-  rightHalf: 0
+  rightHalf: 2
   topHalf: 0
   bottomHalf: 0
   centerChunk: 0
-  traits: []
+  traits:
+  - {fileID: 11400000, guid: eecfbfab20a2e4bb0bcdaacba4a2d987, type: 2}
+  - {fileID: 11400000, guid: b2c017f8e37f7409d51eb336d143d5e6, type: 2}
   sourceTags:
   - MythicBastionland
   - KnightProperty

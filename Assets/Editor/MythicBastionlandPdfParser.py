@@ -38,6 +38,7 @@ class Equipment:
     armorValue: int
     sourceTags: list[str] = field(default_factory=list)
     isBondedProperty: bool = False
+    isSupportFragment: bool = False
 
 
 @dataclass
@@ -117,7 +118,7 @@ def block_between(text: str, start: str, end: Optional[str]) -> str:
         return ""
     chunk = match.group(1)
     if end:
-        stop = re.search(r"\n" + re.escape(end) + r"\n", chunk, re.S)
+        stop = re.search(r"\n" + re.escape(end) + r"(?=[ \t]|\n|$)", chunk)
         if stop:
             chunk = chunk[:stop.start()]
     return chunk.strip()
@@ -134,13 +135,18 @@ def split_top_level(text: str) -> list[str]:
     parts = []
     current = []
     depth = 0
+    in_quotes = False
     for char in text:
-        if char == "(":
-            depth += 1
-        elif char == ")" and depth > 0:
-            depth -= 1
+        if char == '"':
+            in_quotes = not in_quotes
 
-        if char == "," and depth == 0:
+        if not in_quotes:
+            if char == "(":
+                depth += 1
+            elif char == ")" and depth > 0:
+                depth -= 1
+
+        if char == "," and depth == 0 and not in_quotes:
             parts.append("".join(current).strip())
             current = []
             continue
@@ -153,10 +159,42 @@ def split_top_level(text: str) -> list[str]:
     return parts
 
 
+def split_top_level_items(text: str) -> list[str]:
+    if text.count("(") < 2:
+        return [text.strip()] if text.strip() else []
+
+    parts = []
+    current = []
+    depth = 0
+    index = 0
+
+    while index < len(text):
+        char = text[index]
+        if char == "(":
+            depth += 1
+        elif char == ")" and depth > 0:
+            depth -= 1
+
+        if depth == 0 and text.startswith(" and ", index):
+            fragment = "".join(current).strip()
+            if fragment:
+                parts.append(fragment)
+            current = []
+            index += 5
+            continue
+
+        current.append(char)
+        index += 1
+
+    tail = "".join(current).strip()
+    if tail:
+        parts.append(tail)
+    return parts
+
+
 def normalize_item_name(text: str) -> str:
     text = text.strip().strip(".")
-    if text.lower().startswith("and "):
-        text = text[4:]
+    text = re.sub(r"^and\s+", "", text, flags=re.IGNORECASE)
     return text.strip()
 
 
@@ -199,16 +237,11 @@ def parse_property_items(block: str) -> tuple[list[Equipment], Optional[Steed]]:
             steed = Steed(name, *stats)
             continue
 
-        fragments = split_top_level(bullet)
-        merged: list[str] = []
-        for fragment in fragments:
-            if " and " in fragment and "(" not in fragment.split(" and ")[-1]:
-                bits = [part.strip() for part in fragment.split(" and ") if part.strip()]
-                merged.extend(bits)
-            else:
-                merged.append(fragment)
+        fragments: list[str] = []
+        for fragment in split_top_level(bullet):
+            fragments.extend(split_top_level_items(fragment))
 
-        for fragment in merged:
+        for fragment_index, fragment in enumerate(fragments):
             fragment = normalize_item_name(fragment)
             if not fragment:
                 continue
@@ -224,7 +257,8 @@ def parse_property_items(block: str) -> tuple[list[Equipment], Optional[Steed]]:
                 damageDiceNotation=extract_damage(fragment),
                 armorValue=extract_armor(fragment),
                 sourceTags=["MythicBastionland", "KnightProperty"],
-                isBondedProperty=True
+                isBondedProperty=True,
+                isSupportFragment=fragment_index > 0
             ))
     return items, steed
 

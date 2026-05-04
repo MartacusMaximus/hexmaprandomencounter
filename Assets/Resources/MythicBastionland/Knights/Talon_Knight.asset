@@ -25,7 +25,7 @@ MonoBehaviour:
   bondedProperty:
   - {fileID: 11400000, guid: 13f0ec41808bc4189aec8bc0e20f151a, type: 2}
   - {fileID: 11400000, guid: 249d11fd0a79f4e939f2abde6f60806f, type: 2}
-  - {fileID: 11400000, guid: fcefea9cdb0bf4c2eb3f40258d521174, type: 2}
+  - {fileID: 11400000, guid: f4c52bb606131b3f4c969ffe811a135f, type: 2}
   - {fileID: 11400000, guid: 73388b19188d44308a15fa74d3be188d, type: 2}
   randomFlavorTable:
     title: LOYAL BIRD

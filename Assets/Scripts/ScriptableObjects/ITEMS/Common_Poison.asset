@@ -12,21 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
   m_Name: Common_Poison
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  itemName: "Common Poison"
+  itemName: Common Poison
   pointCost: 1
-  rarity: "common"
-  displayCategory: "poison"
-  rulesText: "Causes sickness and discomfort."
-  damageDiceNotation: ""
+  rarity: common
+  displayCategory: poison
+  rulesText: Causes sickness and discomfort.
+  damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 1
   leftHalf: 0
   rightHalf: 0
   topHalf: 0
-  bottomHalf: 2
+  bottomHalf: 0
   centerChunk: 0
-  traits:
+  traits: []
   sourceTags:
   - CrownAndSkull
   - TempleCatalog
   ability: {fileID: 11400000, guid: 769bf356e372a04bd3bec898696bbd09, type: 2}
+  seeBelowTable:
+    title: 
+    columns: []
+  isBondedProperty: 0
+  contributesToEquippedBonuses: 1
+  containerKind: 0
+  storageRule: 0
+  occupiesFullContainer: 0
+  usableByNonOwner: 1

@@ -27,6 +27,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: 529c6ab60172041fd8141a8469725670, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 0c46982e663fb499c94fa0e7938fcfa8, type: 2}
+  - {fileID: 11400000, guid: cd5cc0035391245948efd75f5d596a60, type: 2}
   - {fileID: 11400000, guid: 5fcef7c9ec6f542b2aa418caf8e95227, type: 2}
   randomFlavorTable:
     title: MISCELLANEOUS TOMES

@@ -27,6 +27,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: acc5f7a9b3cf94967960678dcb13efc3, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 4215994c0ba0f44569c556aae520b996, type: 2}
+  - {fileID: 11400000, guid: 7b44aa68741bd476b9ae8591a0a48a25, type: 2}
   - {fileID: 11400000, guid: cb788559014294e9a97694d6d32401e6, type: 2}
   randomFlavorTable:
     title: A WILD HORN

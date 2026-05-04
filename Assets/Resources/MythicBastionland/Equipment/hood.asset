@@ -16,39 +16,24 @@ MonoBehaviour:
   pointCost: 0
   rarity: bonded
   displayCategory: armor
-  rulesText: (see below, while fully cloaked
+  rulesText: 
   damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 0
   leftHalf: 0
   rightHalf: 0
   topHalf: 0
-  bottomHalf: 0
+  bottomHalf: 2
   centerChunk: 0
-  traits: []
+  traits:
+  - {fileID: 11400000, guid: 21beb042c296f4856bbfde2583b2d434, type: 2}
   sourceTags:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
   seeBelowTable:
-    title: UNNATURAL BODY
-    columns:
-    - header: Bones of...
-      values:
-      - Ivory
-      - Bronze
-      - Sapling branches
-      - String
-      - Wooden rods
-      - Iron chain
-    - header: Skin of...
-      values:
-      - Leather
-      - Felt
-      - Silk
-      - Wool
-      - Parchment
-      - Clay
+    title: 
+    columns: []
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

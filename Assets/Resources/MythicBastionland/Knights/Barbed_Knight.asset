@@ -23,7 +23,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: def83c2195c0a479c9fdaad284e06509, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 114f6c88c45bc4f158289bae25c7afd1, type: 2}
-  - {fileID: 11400000, guid: 7958e0a2d01b24c1290c3a1f60ec2fdb, type: 2}
+  - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
   - {fileID: 11400000, guid: 5ac16397b00124100a24ba1d483a32a7, type: 2}
   - {fileID: 11400000, guid: 285aba10bb661451c8608dd5cd9bfb7a, type: 2}
   randomFlavorTable:

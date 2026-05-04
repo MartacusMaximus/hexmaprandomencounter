@@ -12,21 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
   m_Name: Rare_Poison
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  itemName: "Rare Poison"
+  itemName: Rare Poison
   pointCost: 3
-  rarity: "rare"
-  displayCategory: "poison"
-  rulesText: "Death with speed, secrecy, or exquisite suffering."
-  damageDiceNotation: ""
+  rarity: rare
+  displayCategory: poison
+  rulesText: Death with speed, secrecy, or exquisite suffering.
+  damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 1
-  leftHalf: 2
-  rightHalf: 3
+  leftHalf: 0
+  rightHalf: 0
   topHalf: 0
   bottomHalf: 0
   centerChunk: 0
-  traits:
+  traits: []
   sourceTags:
   - CrownAndSkull
   - TempleCatalog
   ability: {fileID: 11400000, guid: 0d7ae1ae2baad92295acbbc2a06d5a77, type: 2}
+  seeBelowTable:
+    title: 
+    columns: []
+  isBondedProperty: 0
+  contributesToEquippedBonuses: 1
+  containerKind: 0
+  storageRule: 0
+  occupiesFullContainer: 0
+  usableByNonOwner: 1

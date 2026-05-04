@@ -27,7 +27,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: cd151169db9b14935ab065261cc6d289, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: fd8ae03b6ce78437685d79a6351957bc, type: 2}
-  - {fileID: 11400000, guid: edf765fcf2ff440dea4318995f98e33e, type: 2}
+  - {fileID: 11400000, guid: dc6941a104d6e45e289a8426d09b2c9e, type: 2}
   - {fileID: 11400000, guid: 95947d6111b9a4bf0bac4d486431a307, type: 2}
   - {fileID: 11400000, guid: 7ec6a55119f6a4fc4bb931ca9ca31a1b, type: 2}
   randomFlavorTable:

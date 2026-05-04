@@ -15,17 +15,18 @@ MonoBehaviour:
   itemName: Spikehammer
   pointCost: 0
   rarity: bonded
-  displayCategory: armor
-  rulesText: (d6) and ornate mail (A1)
+  displayCategory: tool
+  rulesText: (d6)
   damageDiceNotation: 1d6
-  armorValue: 1
+  armorValue: 0
   costsCreationPoints: 0
-  leftHalf: 0
+  leftHalf: 2
   rightHalf: 0
   topHalf: 0
   bottomHalf: 0
   centerChunk: 0
-  traits: []
+  traits:
+  - {fileID: 11400000, guid: eecfbfab20a2e4bb0bcdaacba4a2d987, type: 2}
   sourceTags:
   - MythicBastionland
   - KnightProperty

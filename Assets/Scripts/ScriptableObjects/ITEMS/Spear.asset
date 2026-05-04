@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
   m_Name: Spear
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  itemName: "Spear"
+  itemName: Spear
   pointCost: 2
-  rarity: "uncommon"
-  displayCategory: "weapon"
-  rulesText: "Thrown, long reach."
-  damageDiceNotation: "1d8"
+  rarity: uncommon
+  displayCategory: weapon
+  rulesText: Thrown, long reach.
+  damageDiceNotation: 1d8
   armorValue: 0
   costsCreationPoints: 1
   leftHalf: 2
@@ -28,7 +28,17 @@ MonoBehaviour:
   traits:
   - {fileID: 11400000, guid: eecfbfab20a2e4bb0bcdaacba4a2d987, type: 2}
   - {fileID: 11400000, guid: ee249713d37074cb7b09eb633f4bd90a, type: 2}
+  - {fileID: 11400000, guid: 5ff4a4b09d79547798990e7a8e0e1041, type: 2}
   sourceTags:
   - CrownAndSkull
   - TempleCatalog
   ability: {fileID: 0}
+  seeBelowTable:
+    title: 
+    columns: []
+  isBondedProperty: 0
+  contributesToEquippedBonuses: 1
+  containerKind: 0
+  storageRule: 0
+  occupiesFullContainer: 0
+  usableByNonOwner: 1

@@ -24,7 +24,7 @@ MonoBehaviour:
   bondedProperty:
   - {fileID: 11400000, guid: 18b24837dd0b040a09b8f3720d3edc35, type: 2}
   - {fileID: 11400000, guid: 1361007559fd24cb18cf6042c905f895, type: 2}
-  - {fileID: 11400000, guid: e88f35742cba245c78c409b7d578cf5a, type: 2}
+  - {fileID: 11400000, guid: f8a28336ffce4494989cc1e1fb18d943, type: 2}
   - {fileID: 11400000, guid: 6737519aba7e04cb88afb42bc96b3f55, type: 2}
   - {fileID: 11400000, guid: 4e0eb2db8aa514a73b608f1c1e0f5c2e, type: 2}
   randomFlavorTable:

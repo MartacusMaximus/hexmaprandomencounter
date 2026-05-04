@@ -194,6 +194,11 @@ public class EquipmentInstance
     public bool bondedToOwner;
     public EquipmentData equipment;
     [TextArea] public string resolvedRulesText = string.Empty;
+    public string resolvedDamageDiceNotation = string.Empty;
+    public int resolvedArmorValue = -1;
+    public int resolvedRequiredHands = -1;
+    public List<string> resolvedTraitNames = new List<string>();
+    public List<string> resolvedGeneratedTags = new List<string>();
     public int resolvedSeeBelowRowIndex = -1;
     [NonSerialized]
     public List<EquipmentInstance> containedItems = new List<EquipmentInstance>();
@@ -202,6 +207,15 @@ public class EquipmentInstance
     public string RulesText => string.IsNullOrWhiteSpace(resolvedRulesText)
         ? (equipment != null ? equipment.rulesText : string.Empty)
         : resolvedRulesText;
+    public string DamageDiceNotation => string.IsNullOrWhiteSpace(resolvedDamageDiceNotation)
+        ? (equipment != null ? equipment.damageDiceNotation : string.Empty)
+        : resolvedDamageDiceNotation;
+    public int ArmorValue => resolvedArmorValue >= 0
+        ? resolvedArmorValue
+        : (equipment != null ? equipment.armorValue : 0);
+    public int RequiredHands => resolvedRequiredHands >= 0
+        ? resolvedRequiredHands
+        : (equipment != null ? equipment.RequiredHands() : 0);
 
     public void EnsureInstance()
     {
@@ -224,6 +238,58 @@ public class EquipmentInstance
 
     public int ContainerSlotCount => equipment != null && equipment.IsContainer ? equipment.ContainerSlotCount : 0;
 
+    public IEnumerable<string> GetResolvedTraitNames()
+    {
+        var names = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        if (equipment != null)
+        {
+            foreach (var trait in equipment.traits)
+            {
+                if (trait != null && !string.IsNullOrWhiteSpace(trait.traitName))
+                {
+                    names.Add(trait.traitName);
+                }
+            }
+        }
+
+        foreach (var traitName in resolvedTraitNames)
+        {
+            if (!string.IsNullOrWhiteSpace(traitName))
+            {
+                names.Add(traitName);
+            }
+        }
+
+        return names;
+    }
+
+    public void CopyResolutionFrom(EquipmentInstance source)
+    {
+        if (source == null)
+        {
+            return;
+        }
+
+        resolvedRulesText = source.resolvedRulesText;
+        resolvedDamageDiceNotation = source.resolvedDamageDiceNotation;
+        resolvedArmorValue = source.resolvedArmorValue;
+        resolvedRequiredHands = source.resolvedRequiredHands;
+        resolvedSeeBelowRowIndex = source.resolvedSeeBelowRowIndex;
+        resolvedTraitNames = new List<string>(source.resolvedTraitNames ?? new List<string>());
+        resolvedGeneratedTags = new List<string>(source.resolvedGeneratedTags ?? new List<string>());
+    }
+
+    private void ClearResolvedOverrides()
+    {
+        resolvedRulesText = string.Empty;
+        resolvedDamageDiceNotation = string.Empty;
+        resolvedArmorValue = -1;
+        resolvedRequiredHands = -1;
+        resolvedSeeBelowRowIndex = -1;
+        resolvedTraitNames = new List<string>();
+        resolvedGeneratedTags = new List<string>();
+    }
+
     public void ResolveSeeBelow(System.Random random = null)
     {
         if (equipment == null || !equipment.HasSeeBelowTable)
@@ -238,10 +304,17 @@ public class EquipmentInstance
         }
 
         random ??= new System.Random(Guid.NewGuid().GetHashCode());
+        ClearResolvedOverrides();
         resolvedSeeBelowRowIndex = random.Next(0, rowCount);
-        resolvedRulesText = MythicEquipmentTableResolver.ResolveSeeBelowText(
-            equipment.rulesText,
+        var resolved = MythicEquipmentTableResolver.ResolveEquipment(
+            equipment,
             equipment.seeBelowTable,
             resolvedSeeBelowRowIndex);
+        resolvedRulesText = resolved.rulesText ?? string.Empty;
+        resolvedDamageDiceNotation = resolved.damageDiceNotation ?? string.Empty;
+        resolvedArmorValue = resolved.armorValue;
+        resolvedRequiredHands = resolved.requiredHands;
+        resolvedTraitNames = resolved.traitNames ?? new List<string>();
+        resolvedGeneratedTags = resolved.generatedTags ?? new List<string>();
     }
 }

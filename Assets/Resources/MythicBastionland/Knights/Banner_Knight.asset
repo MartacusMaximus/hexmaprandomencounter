@@ -25,6 +25,7 @@ MonoBehaviour:
   bondedProperty:
   - {fileID: 11400000, guid: 99e86c604a2bc4cf4bafbde02a70fca7, type: 2}
   - {fileID: 11400000, guid: a9aa94c819db741908d2ad41f1d2fbdb, type: 2}
+  - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
   randomFlavorTable:
     title: INSPIRING BANNER
     columns:

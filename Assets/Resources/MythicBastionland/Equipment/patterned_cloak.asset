@@ -24,8 +24,9 @@ MonoBehaviour:
   rightHalf: 0
   topHalf: 0
   bottomHalf: 0
-  centerChunk: 0
-  traits: []
+  centerChunk: 1
+  traits:
+  - {fileID: 11400000, guid: 0d0e07877b5714d9c905a0fa62830585, type: 2}
   sourceTags:
   - MythicBastionland
   - KnightProperty

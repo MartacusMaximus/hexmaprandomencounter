@@ -162,6 +162,7 @@ public class MythicBastionlandEditModeTests
             var path = AssetDatabase.GUIDToAssetPath(guid);
             var asset = AssetDatabase.LoadMainAssetAtPath(path);
             Assert.That(CountWords((string)GetField(asset, "itemName")), Is.LessThanOrEqualTo(3), path);
+            Assert.That(((string)GetField(asset, "itemName")).TrimStart(), Does.Not.StartWith("and "), path);
         }
     }
 
@@ -196,6 +197,33 @@ public class MythicBastionlandEditModeTests
         Assert.That(abilities[0], Is.EqualTo("Can be thrown (d6)"));
         Assert.That(abilities[3], Is.EqualTo("+d8 vs flying beings"));
         Assert.That(abilities[5], Is.EqualTo("Utterly unbreakable"));
+    }
+
+    [Test]
+    public void ImportCanonicalizesCompoundKnightPropertyItemsIntoReusableSupportAssets()
+    {
+        InvokeStatic("MythicBastionlandImporter", "ImportPdfContent");
+
+        var muleKnight = AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/Knights/Mule_Knight.asset");
+        var muleProperty = ((IEnumerable)GetField(muleKnight, "bondedProperty")).Cast<object>().ToList();
+        Assert.That(muleProperty.Select(item => (string)GetField(item, "itemName")), Is.EqualTo(new[]
+        {
+            "Weighted longstaff",
+            "chainmail",
+            "3 explosives"
+        }));
+
+        var saddleKnight = AssetDatabase.LoadMainAssetAtPath("Assets/Resources/MythicBastionland/Knights/Saddle_Knight.asset");
+        var saddleProperty = ((IEnumerable)GetField(saddleKnight, "bondedProperty")).Cast<object>().ToList();
+        Assert.That(saddleProperty.Select(item => (string)GetField(item, "itemName")), Is.EqualTo(new[]
+        {
+            "saddle and tack",
+            "3 Rider's Axes",
+            "mail",
+            "rider's plate"
+        }));
+        Assert.That(saddleProperty.Any(item => ((string)GetField(item, "itemName")).Contains("be thrown)", StringComparison.OrdinalIgnoreCase)), Is.False);
+        Assert.That(saddleProperty.Any(item => ((string)GetField(item, "itemName")).Contains("just layers", StringComparison.OrdinalIgnoreCase)), Is.False);
     }
 
     [Test]
@@ -265,6 +293,28 @@ public class MythicBastionlandEditModeTests
 
         var model = ToCharacterSheetModel(character);
         Assert.That(model.Inventory[0].Equipment.RulesText, Is.EqualTo(GetField(item, "resolvedRulesText")));
+    }
+
+    [Test]
+    public void SeeBelowResolutionExtractsStructuredOverridesAndGeneratedTags()
+    {
+        var equipment = CreateScriptableObject("EquipmentData");
+        SetField(equipment, "itemName", "Nameless Arsenal");
+        SetField(equipment, "rulesText", "see below");
+        SetField(equipment, "seeBelowTable", CreateRollTable(
+            ("Form", "Black iron blade (d10 long)"),
+            ("Ability", "Can be thrown (d6), +d8 vs flying beings")));
+
+        var instance = CreateEquipmentInstance(equipment);
+        SetField(instance, "resolvedRulesText", string.Empty);
+        Invoke(instance, "ResolveSeeBelow", new System.Random(0));
+
+        Assert.That(GetProperty(instance, "RulesText"), Is.EqualTo("Form: Black iron blade (d10 long), Ability: Can be thrown (d6), +d8 vs flying beings"));
+        Assert.That(GetProperty(instance, "DamageDiceNotation"), Is.EqualTo("1d10"));
+        Assert.That(GetProperty(instance, "RequiredHands"), Is.EqualTo(2));
+        Assert.That(((IEnumerable)GetField(instance, "resolvedTraitNames")).Cast<string>(), Contains.Item("Long"));
+        Assert.That(((IEnumerable)GetField(instance, "resolvedGeneratedTags")).Cast<string>(), Contains.Item("thrown_damage:1d6"));
+        Assert.That(((IEnumerable)GetField(instance, "resolvedGeneratedTags")).Cast<string>(), Contains.Item("conditional_damage:+d8 vs flying beings"));
     }
 
     [Test]

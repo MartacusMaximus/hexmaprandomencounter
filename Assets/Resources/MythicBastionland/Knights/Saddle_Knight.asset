@@ -23,8 +23,10 @@ MonoBehaviour:
   linkedSeer: {fileID: 11400000, guid: a0be1d037147a48568af5c8e57822cb4, type: 2}
   steed: {fileID: 11400000, guid: a048c409eb56840c1b0a8883e0c29d63, type: 2}
   bondedProperty:
+  - {fileID: 11400000, guid: f203f1f386fba4fabbeeefb435718ac9, type: 2}
   - {fileID: 11400000, guid: 80b6208fe4e6d4e4ba8a9fd916e07ab0, type: 2}
   - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
+  - {fileID: 11400000, guid: 7b15413fe7af84478bef6388b881bf6e, type: 2}
   randomFlavorTable:
     title: LOYAL STEED
     columns:

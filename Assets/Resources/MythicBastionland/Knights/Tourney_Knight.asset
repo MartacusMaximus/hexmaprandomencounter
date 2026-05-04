@@ -26,6 +26,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: 5c15072177b764698ab6c7d57065f4d8, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: d8e4de3228b2b40dbbd586c5b93efc2e, type: 2}
+  - {fileID: 11400000, guid: f8a28336ffce4494989cc1e1fb18d943, type: 2}
   - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
   - {fileID: 11400000, guid: 15e2764afc48948e89caa7879df52408, type: 2}
   - {fileID: 11400000, guid: b0bf99a21daa545af97c8f5e22e2fddd, type: 2}

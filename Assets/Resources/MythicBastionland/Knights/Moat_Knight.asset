@@ -23,7 +23,8 @@ MonoBehaviour:
   linkedSeer: {fileID: 11400000, guid: 6b647dbfd617c4ec4a8aa51010e1fdd0, type: 2}
   steed: {fileID: 11400000, guid: eefa8af4a1c95404fbe6acd2c44f3004, type: 2}
   bondedProperty:
-  - {fileID: 11400000, guid: 855d786c0df0c4a88a5556611d8d6b77, type: 2}
+  - {fileID: 11400000, guid: 003f27781cf51b9e137ed2e2d58e39bb, type: 2}
+  - {fileID: 11400000, guid: e0c2b9ba716164f4fac6fd9deb8909f2, type: 2}
   - {fileID: 11400000, guid: 29f594791497d42a5a1b9bff3e034dff, type: 2}
   randomFlavorTable:
     title: AN ESPECIALLY DIFFICULT STEED

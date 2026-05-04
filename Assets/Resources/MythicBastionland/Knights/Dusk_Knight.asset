@@ -24,7 +24,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: 55a20841d2d28426d90d81f44fbdf6dd, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 4cb76dd71212f45b0b64c128b5716157, type: 2}
-  - {fileID: 11400000, guid: e88f35742cba245c78c409b7d578cf5a, type: 2}
+  - {fileID: 11400000, guid: f8a28336ffce4494989cc1e1fb18d943, type: 2}
   - {fileID: 11400000, guid: 1c646d3382af3475d893f03425cf405f, type: 2}
   randomFlavorTable:
     title: A TATTERED POEM

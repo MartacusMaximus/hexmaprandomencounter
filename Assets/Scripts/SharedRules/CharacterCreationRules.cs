@@ -62,13 +62,34 @@ namespace KnightsAndGM.Shared
     {
         public static Dictionary<PortableChunkColor, int> CountChunks(CharacterSheetModel character)
         {
-            var counts = new Dictionary<PortableChunkColor, int>
+            return BuildActivationSnapshot(character).ChunkCounts;
+        }
+
+        public static PortableInventoryActivationModel BuildActivationSnapshot(CharacterSheetModel character)
+        {
+            var snapshot = new PortableInventoryActivationModel
             {
-                [PortableChunkColor.Red] = 0,
-                [PortableChunkColor.Green] = 0,
-                [PortableChunkColor.Blue] = 0,
-                [PortableChunkColor.Rainbow] = 0
+                ChunkCounts = new Dictionary<PortableChunkColor, int>
+                {
+                    [PortableChunkColor.Red] = 0,
+                    [PortableChunkColor.Green] = 0,
+                    [PortableChunkColor.Blue] = 0,
+                    [PortableChunkColor.Rainbow] = 0
+                }
             };
+
+            if (character == null)
+            {
+                return snapshot;
+            }
+
+            for (var index = 0; index < character.Inventory.Count; index++)
+            {
+                snapshot.Slots.Add(new PortableSlotActivationModel
+                {
+                    SlotIndex = index
+                });
+            }
 
             for (var index = 0; index < character.Inventory.Count; index++)
             {
@@ -80,7 +101,8 @@ namespace KnightsAndGM.Shared
 
                 if (equipment.CenterChunk != PortableChunkColor.None)
                 {
-                    counts[equipment.CenterChunk]++;
+                    snapshot.ChunkCounts[equipment.CenterChunk]++;
+                    snapshot.Slots[index].CenterActive = true;
                 }
 
                 var row = index / 3;
@@ -88,24 +110,55 @@ namespace KnightsAndGM.Shared
 
                 if (equipment.RightHalf != PortableChunkColor.None && column < 2)
                 {
-                    var rightNeighbor = character.Inventory[index + 1].Equipment;
-                    if (rightNeighbor != null && rightNeighbor.LeftHalf == equipment.RightHalf)
+                    var neighbor = character.Inventory[index + 1].Equipment;
+                    if (neighbor != null &&
+                        neighbor.ContributesToEquippedBonuses &&
+                        TryResolveLinkedColor(equipment.RightHalf, neighbor.LeftHalf, out var linkedColor))
                     {
-                        counts[equipment.RightHalf]++;
+                        snapshot.ChunkCounts[linkedColor]++;
+                        snapshot.Slots[index].RightLinked = true;
+                        snapshot.Slots[index + 1].LeftLinked = true;
                     }
                 }
 
                 if (equipment.BottomHalf != PortableChunkColor.None && row < 2)
                 {
-                    var bottomNeighbor = character.Inventory[index + 3].Equipment;
-                    if (bottomNeighbor != null && bottomNeighbor.TopHalf == equipment.BottomHalf)
+                    var neighbor = character.Inventory[index + 3].Equipment;
+                    if (neighbor != null &&
+                        neighbor.ContributesToEquippedBonuses &&
+                        TryResolveLinkedColor(equipment.BottomHalf, neighbor.TopHalf, out var linkedColor))
                     {
-                        counts[equipment.BottomHalf]++;
+                        snapshot.ChunkCounts[linkedColor]++;
+                        snapshot.Slots[index].BottomLinked = true;
+                        snapshot.Slots[index + 3].TopLinked = true;
                     }
                 }
             }
 
-            return counts;
+            for (var index = 0; index < character.Inventory.Count; index++)
+            {
+                var equipment = character.Inventory[index].Equipment;
+                var slot = snapshot.Slots[index];
+                if (equipment?.Ability == null || !equipment.ContributesToEquippedBonuses)
+                {
+                    continue;
+                }
+
+                slot.LinkedRequirementMet = IsLinkedRequirementMet(equipment, slot);
+                slot.ChunkRequirementMet = IsChunkRequirementMet(equipment.Ability, snapshot.ChunkCounts);
+                slot.AbilityActive = slot.LinkedRequirementMet && slot.ChunkRequirementMet;
+
+                if (!slot.AbilityActive)
+                {
+                    continue;
+                }
+
+                snapshot.ActiveAbilityDamageFlat += equipment.Ability.AddDamageFlat;
+                snapshot.ActiveAbilityGuardFlat += equipment.Ability.AddGuardFlat;
+                snapshot.ActiveAbilityReactionModifier += equipment.Ability.ModifyReaction;
+            }
+
+            return snapshot;
         }
 
         public static int GetVigorDamageBonus(CharacterSheetModel character)
@@ -115,12 +168,22 @@ namespace KnightsAndGM.Shared
 
         public static int GetSpiritGuardBonus(CharacterSheetModel character)
         {
-            return character.Spirit / 3;
+            return (character.Spirit / 3) + BuildActivationSnapshot(character).ActiveAbilityGuardFlat;
         }
 
         public static int GetClaritySaveModifier(CharacterSheetModel character)
         {
             return character.Clarity / 8;
+        }
+
+        public static int GetReactionModifier(CharacterSheetModel character)
+        {
+            return BuildActivationSnapshot(character).ActiveAbilityReactionModifier;
+        }
+
+        public static int GetActiveAbilityDamageBonus(CharacterSheetModel character)
+        {
+            return BuildActivationSnapshot(character).ActiveAbilityDamageFlat;
         }
 
         public static int GetEffectiveArmorTotal(CharacterSheetModel character)
@@ -154,6 +217,95 @@ namespace KnightsAndGM.Shared
             return character.Inventory
                 .Where(slot => slot.Equipment != null && slot.Equipment.IsWeapon && slot.Equipment.ContributesToEquippedBonuses)
                 .Select(slot => slot.Equipment);
+        }
+
+        private static bool TryResolveLinkedColor(
+            PortableChunkColor first,
+            PortableChunkColor second,
+            out PortableChunkColor linkedColor)
+        {
+            linkedColor = PortableChunkColor.None;
+            if (first == PortableChunkColor.None || second == PortableChunkColor.None)
+            {
+                return false;
+            }
+
+            if (first == second)
+            {
+                linkedColor = first;
+                return true;
+            }
+
+            if (first == PortableChunkColor.Rainbow)
+            {
+                linkedColor = second;
+                return true;
+            }
+
+            if (second == PortableChunkColor.Rainbow)
+            {
+                linkedColor = first;
+                return true;
+            }
+
+            return false;
+        }
+
+        private static bool IsLinkedRequirementMet(PortableEquipmentModel equipment, PortableSlotActivationModel slot)
+        {
+            if (equipment?.Ability == null)
+            {
+                return false;
+            }
+
+            if (!equipment.Ability.RequiresLinkedChunk)
+            {
+                return true;
+            }
+
+            if (equipment.TopHalf != PortableChunkColor.None && !slot.TopLinked)
+            {
+                return false;
+            }
+
+            if (equipment.BottomHalf != PortableChunkColor.None && !slot.BottomLinked)
+            {
+                return false;
+            }
+
+            if (equipment.LeftHalf != PortableChunkColor.None && !slot.LeftLinked)
+            {
+                return false;
+            }
+
+            if (equipment.RightHalf != PortableChunkColor.None && !slot.RightLinked)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        private static bool IsChunkRequirementMet(
+            PortableAbilityModel ability,
+            IReadOnlyDictionary<PortableChunkColor, int> chunkCounts)
+        {
+            if (ability == null)
+            {
+                return false;
+            }
+
+            if (ability.RequiredChunkCount <= 0)
+            {
+                return true;
+            }
+
+            if (ability.RequiredColor == PortableChunkColor.None)
+            {
+                return chunkCounts.Values.Sum() >= ability.RequiredChunkCount;
+            }
+
+            return chunkCounts.TryGetValue(ability.RequiredColor, out var count) && count >= ability.RequiredChunkCount;
         }
     }
 }

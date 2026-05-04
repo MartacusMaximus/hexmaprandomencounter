@@ -29,7 +29,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 247a1c80fd62a49efb21bf82d51dbc8f, type: 2}
   - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
   - {fileID: 11400000, guid: b5658ff522ddd4c1b8fbdce7f75bd419, type: 2}
-  - {fileID: 11400000, guid: fcefea9cdb0bf4c2eb3f40258d521174, type: 2}
+  - {fileID: 11400000, guid: f4c52bb606131b3f4c969ffe811a135f, type: 2}
   - {fileID: 11400000, guid: 3b7b36e8dbf504c7680e88202450c27c, type: 2}
   randomFlavorTable:
     title: MILITARY GEAR

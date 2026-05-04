@@ -11,6 +11,8 @@ public static class MythicBastionlandImporter
 {
     private const string PdfPath = "/Users/mart/Documents/mythic-bastionland_0.pdf";
     private const string RootFolder = "Assets/Resources/MythicBastionland";
+    private const string CuratedItemsFolder = "Assets/Scripts/ScriptableObjects/ITEMS";
+    private const string TraitFolder = "Assets/Scripts/ScriptableObjects/TRAITS/Traits";
     private const string EquipmentFolder = RootFolder + "/Equipment";
     private const string AbilityFolder = RootFolder + "/Abilities";
     private const string SeerFolder = RootFolder + "/Seers";
@@ -67,6 +69,8 @@ public static class MythicBastionlandImporter
         var seersByName = new Dictionary<string, SeerDefinitionSO>(StringComparer.OrdinalIgnoreCase);
         var equipmentByName = new Dictionary<string, EquipmentData>(StringComparer.OrdinalIgnoreCase);
         var abilitiesByName = new Dictionary<string, AbilitySO>(StringComparer.OrdinalIgnoreCase);
+        var curatedEquipmentByName = LoadCuratedEquipmentByName();
+        var importedKnights = new List<KnightDefinitionSO>();
 
         foreach (var knight in payload.knights ?? Array.Empty<KnightRecord>())
         {
@@ -75,7 +79,7 @@ public static class MythicBastionlandImporter
             var ability = GetOrCreateAbility(knight.abilityName, knight.abilityDescription, abilitiesByName);
             var steed = GetOrCreateSteed(knight.steed);
             var propertyItems = knight.propertyItems?
-                .Select(item => GetOrCreateEquipment(item, equipmentByName))
+                .Select(item => GetOrCreateEquipment(item, equipmentByName, curatedEquipmentByName))
                 .Where(item => item != null)
                 .ToList() ?? new List<EquipmentData>();
             AssignSeeBelowTable(propertyItems, knightFlavorTable);
@@ -93,6 +97,7 @@ public static class MythicBastionlandImporter
             asset.bondedProperty = propertyItems;
             asset.randomFlavorTable = knightFlavorTable;
             EditorUtility.SetDirty(asset);
+            importedKnights.Add(asset);
         }
 
         foreach (var myth in payload.myths ?? Array.Empty<MythRecord>())
@@ -114,12 +119,12 @@ public static class MythicBastionlandImporter
         }
 
         GetOrCreateBackpack(equipmentByName);
+        AuthorEquipmentCatalog(curatedEquipmentByName.Values.Concat(equipmentByName.Values), importedKnights);
 
         contentLibrary.seers = seersByName.Values.OrderBy(asset => asset.seerName).ToList();
         contentLibrary.abilities = abilitiesByName.Values.OrderBy(asset => asset.abilityName).ToList();
         contentLibrary.equipment = equipmentByName.Values.OrderBy(asset => asset.itemName).ToList();
-        contentLibrary.knights = (payload.knights ?? Array.Empty<KnightRecord>())
-            .Select(knight => AssetDatabase.LoadAssetAtPath<KnightDefinitionSO>($"{KnightFolder}/{Sanitize(knight.knightName)}.asset"))
+        contentLibrary.knights = importedKnights
             .Where(asset => asset != null)
             .OrderBy(asset => asset.pageNumber)
             .ToList();
@@ -143,7 +148,7 @@ public static class MythicBastionlandImporter
         contentLibrary.ruins = GetOrCreateTextList<RuinSO>(ListsFolder, RuinsListAssetName, (payload.myths ?? Array.Empty<MythRecord>()).Select(myth => myth.ruin));
         EditorUtility.SetDirty(contentLibrary);
 
-        PruneDeprecatedEquipmentAssets();
+        PruneDeprecatedEquipmentAssets(BuildEquipmentKeepPaths(equipmentByName.Values));
         File.WriteAllText(ReportPath, string.Join(Environment.NewLine, payload.issues ?? Array.Empty<string>()));
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
@@ -218,26 +223,36 @@ public static class MythicBastionlandImporter
         return asset;
     }
 
-    private static EquipmentData GetOrCreateEquipment(EquipmentRecord record, IDictionary<string, EquipmentData> cache)
+    private static EquipmentData GetOrCreateEquipment(
+        EquipmentRecord record,
+        IDictionary<string, EquipmentData> cache,
+        IReadOnlyDictionary<string, EquipmentData> curatedEquipmentByName)
     {
         if (record == null || string.IsNullOrWhiteSpace(record.name))
         {
             return null;
         }
 
-        if (CountWords(record.name) > 3)
+        var resolvedIdentity = ResolveEquipmentIdentity(record);
+        if (CountWords(resolvedIdentity.itemName) > 3)
         {
             return null;
         }
 
-        if (cache.TryGetValue(record.name, out var existing))
+        if (curatedEquipmentByName.TryGetValue(resolvedIdentity.key, out var curated))
+        {
+            cache[resolvedIdentity.key] = curated;
+            return curated;
+        }
+
+        if (cache.TryGetValue(resolvedIdentity.key, out var existing))
         {
             return existing;
         }
 
-        var asset = LoadOrCreateAsset<EquipmentData>(EquipmentFolder, record.name);
-        asset.itemName = record.name;
-        asset.rulesText = record.rulesText;
+        var asset = LoadOrCreateAsset<EquipmentData>(EquipmentFolder, resolvedIdentity.itemName);
+        asset.itemName = resolvedIdentity.itemName;
+        asset.rulesText = resolvedIdentity.rulesText;
         asset.rarity = string.IsNullOrWhiteSpace(record.rarity) ? "bonded" : record.rarity;
         asset.displayCategory = string.IsNullOrWhiteSpace(record.displayCategory) ? "tool" : record.displayCategory;
         asset.damageDiceNotation = record.damageDiceNotation;
@@ -255,7 +270,7 @@ public static class MythicBastionlandImporter
         }
 
         EditorUtility.SetDirty(asset);
-        cache[record.name] = asset;
+        cache[resolvedIdentity.key] = asset;
         return asset;
     }
 
@@ -363,17 +378,527 @@ public static class MythicBastionlandImporter
         }
     }
 
-    private static void PruneDeprecatedEquipmentAssets()
+    private static void AuthorEquipmentCatalog(IEnumerable<EquipmentData> assets, IReadOnlyList<KnightDefinitionSO> knights)
+    {
+        var authoring = EquipmentAuthoringContext.Load();
+        var distinctAssets = assets
+            .Where(asset => asset != null)
+            .Distinct()
+            .ToList();
+
+        foreach (var asset in distinctAssets)
+        {
+            ApplyTraitAuthoring(asset, authoring);
+            ApplyGenericChunkAuthoring(asset);
+        }
+
+        CoordinateKnightExclusiveChunks(knights, distinctAssets);
+    }
+
+    private static void ApplyTraitAuthoring(EquipmentData asset, EquipmentAuthoringContext authoring)
+    {
+        var changed = false;
+        var probe = BuildTraitProbe(asset);
+
+        if (ShouldBeWeapon(asset, probe) && authoring.weaponTrait != null && !asset.traits.Contains(authoring.weaponTrait))
+        {
+            asset.traits.Add(authoring.weaponTrait);
+            changed = true;
+        }
+
+        var armorTrait = ResolveArmorTrait(asset, probe, authoring);
+        if (armorTrait != null && !asset.traits.Contains(armorTrait))
+        {
+            asset.traits.Add(armorTrait);
+            changed = true;
+        }
+
+        changed |= EnsureTrait(asset, authoring.longTrait, probe.Contains(" long"));
+        changed |= EnsureTrait(asset, authoring.heftyTrait, probe.Contains(" hefty"));
+        changed |= EnsureTrait(asset, authoring.slowTrait, probe.Contains(" slow"));
+        changed |= EnsureTrait(asset, authoring.deadlyTrait, probe.Contains(" deadly"));
+
+        if (changed)
+        {
+            EditorUtility.SetDirty(asset);
+        }
+    }
+
+    private static bool EnsureTrait(EquipmentData asset, TraitSO trait, bool shouldApply)
+    {
+        if (!shouldApply || trait == null || asset.traits.Contains(trait))
+        {
+            return false;
+        }
+
+        asset.traits.Add(trait);
+        return true;
+    }
+
+    private static void ApplyGenericChunkAuthoring(EquipmentData asset)
+    {
+        if (asset == null)
+        {
+            return;
+        }
+
+        var color = PickChunkColor(asset.itemName);
+        var changed = false;
+
+        if (IsChunklessItem(asset))
+        {
+            changed = ApplyChunkLayout(asset, ChunkColor.None, ChunkColor.None, ChunkColor.None, ChunkColor.None, ChunkColor.None);
+        }
+        else if (IsHeadArmor(asset))
+        {
+            changed = ApplyChunkLayout(asset, ChunkColor.None, ChunkColor.None, ChunkColor.None, color, ChunkColor.None);
+        }
+        else if (IsLegArmor(asset))
+        {
+            changed = ApplyChunkLayout(asset, ChunkColor.None, ChunkColor.None, color, ChunkColor.None, ChunkColor.None);
+        }
+        else if (!HasAnyChunks(asset))
+        {
+            if (IsShieldArmor(asset))
+            {
+                changed = ApplyChunkLayout(asset, ChunkColor.None, color, ChunkColor.None, ChunkColor.None, ChunkColor.None);
+            }
+            else if (IsTorsoArmor(asset))
+            {
+                changed = ApplyChunkLayout(asset, ChunkColor.None, ChunkColor.None, ChunkColor.None, ChunkColor.None, color);
+            }
+            else if (IsWeaponItem(asset))
+            {
+                changed = ApplyChunkLayout(asset, color, ChunkColor.None, ChunkColor.None, ChunkColor.None, ChunkColor.None);
+            }
+            else if (IsWaistArmor(asset))
+            {
+                changed = ApplyChunkLayout(asset, ChunkColor.None, ChunkColor.None, ChunkColor.None, ChunkColor.None, color);
+            }
+        }
+
+        if (changed)
+        {
+            EditorUtility.SetDirty(asset);
+        }
+    }
+
+    private static void CoordinateKnightExclusiveChunks(IReadOnlyList<KnightDefinitionSO> knights, IReadOnlyList<EquipmentData> allAssets)
+    {
+        var usageCounts = new Dictionary<EquipmentData, int>();
+        foreach (var knight in knights ?? Array.Empty<KnightDefinitionSO>())
+        {
+            foreach (var asset in knight?.bondedProperty?.Where(item => item != null).Distinct() ?? Enumerable.Empty<EquipmentData>())
+            {
+                usageCounts[asset] = usageCounts.TryGetValue(asset, out var count) ? count + 1 : 1;
+            }
+        }
+
+        foreach (var knight in knights ?? Array.Empty<KnightDefinitionSO>())
+        {
+            var exclusiveAssets = knight?.bondedProperty?
+                .Where(item => item != null && usageCounts.TryGetValue(item, out var count) && count == 1)
+                .Where(IsGeneratedMythicEquipment)
+                .Distinct()
+                .ToList();
+
+            if (exclusiveAssets == null || exclusiveAssets.Count == 0)
+            {
+                continue;
+            }
+
+            ApplyKnightExclusiveChunkSet(knight.knightName, exclusiveAssets);
+        }
+    }
+
+    private static void ApplyKnightExclusiveChunkSet(string knightName, IReadOnlyList<EquipmentData> exclusiveAssets)
+    {
+        var color = PickChunkColor(knightName);
+        var torso = exclusiveAssets.FirstOrDefault(IsTorsoArmor);
+        var head = exclusiveAssets.FirstOrDefault(IsHeadArmor);
+        var legs = exclusiveAssets.FirstOrDefault(IsLegArmor);
+        var shield = exclusiveAssets.FirstOrDefault(IsShieldArmor);
+        var weapon = exclusiveAssets.FirstOrDefault(IsWeaponItem);
+
+        if (torso == null)
+        {
+            return;
+        }
+
+        ClearChunks(torso);
+        if (head != null)
+        {
+            ClearChunks(head);
+            head.bottomHalf = color;
+            torso.topHalf = color;
+            EditorUtility.SetDirty(head);
+        }
+
+        if (legs != null)
+        {
+            ClearChunks(legs);
+            legs.topHalf = color;
+            torso.bottomHalf = color;
+            EditorUtility.SetDirty(legs);
+        }
+
+        if (shield != null)
+        {
+            ClearChunks(shield);
+            shield.rightHalf = color;
+            torso.leftHalf = color;
+            EditorUtility.SetDirty(shield);
+        }
+
+        if (weapon != null)
+        {
+            ClearChunks(weapon);
+            weapon.leftHalf = color;
+            torso.rightHalf = color;
+            EditorUtility.SetDirty(weapon);
+        }
+
+        if (torso.topHalf == ChunkColor.None &&
+            torso.bottomHalf == ChunkColor.None &&
+            torso.leftHalf == ChunkColor.None &&
+            torso.rightHalf == ChunkColor.None)
+        {
+            torso.centerChunk = color;
+        }
+
+        EditorUtility.SetDirty(torso);
+    }
+
+    private static bool HasAnyChunks(EquipmentData asset)
+    {
+        return asset.leftHalf != ChunkColor.None ||
+               asset.rightHalf != ChunkColor.None ||
+               asset.topHalf != ChunkColor.None ||
+               asset.bottomHalf != ChunkColor.None ||
+               asset.centerChunk != ChunkColor.None;
+    }
+
+    private static bool ApplyChunkLayout(
+        EquipmentData asset,
+        ChunkColor left,
+        ChunkColor right,
+        ChunkColor top,
+        ChunkColor bottom,
+        ChunkColor center)
+    {
+        if (asset.leftHalf == left &&
+            asset.rightHalf == right &&
+            asset.topHalf == top &&
+            asset.bottomHalf == bottom &&
+            asset.centerChunk == center)
+        {
+            return false;
+        }
+
+        asset.leftHalf = left;
+        asset.rightHalf = right;
+        asset.topHalf = top;
+        asset.bottomHalf = bottom;
+        asset.centerChunk = center;
+        return true;
+    }
+
+    private static void ClearChunks(EquipmentData asset)
+    {
+        asset.leftHalf = ChunkColor.None;
+        asset.rightHalf = ChunkColor.None;
+        asset.topHalf = ChunkColor.None;
+        asset.bottomHalf = ChunkColor.None;
+        asset.centerChunk = ChunkColor.None;
+    }
+
+    private static bool IsChunklessItem(EquipmentData asset)
+    {
+        var category = NormalizeWhitespace(asset.displayCategory).ToLowerInvariant();
+        var probe = BuildTraitProbe(asset);
+        return category == "remedy" ||
+               category == "consumable" ||
+               category == "poison" ||
+               probe.Contains(" strange ") ||
+               probe.StartsWith("strange ", StringComparison.Ordinal);
+    }
+
+    private static bool IsWeaponItem(EquipmentData asset)
+    {
+        var category = NormalizeWhitespace(asset.displayCategory).ToLowerInvariant();
+        return category == "weapon" || (!string.IsNullOrWhiteSpace(asset.damageDiceNotation) && category != "armor");
+    }
+
+    private static bool IsShieldArmor(EquipmentData asset)
+    {
+        var probe = BuildTraitProbe(asset);
+        var category = NormalizeWhitespace(asset.displayCategory).ToLowerInvariant();
+        return category == "shield" || probe.Contains(" shield");
+    }
+
+    private static bool IsHeadArmor(EquipmentData asset)
+    {
+        var probe = BuildTraitProbe(asset);
+        var category = NormalizeWhitespace(asset.displayCategory).ToLowerInvariant();
+        return category == "headwear" ||
+               probe.Contains(" helm") ||
+               probe.Contains(" helmet") ||
+               probe.Contains(" hood") ||
+               probe.Contains(" coif") ||
+               probe.Contains(" head ");
+    }
+
+    private static bool IsLegArmor(EquipmentData asset)
+    {
+        var probe = BuildTraitProbe(asset);
+        var category = NormalizeWhitespace(asset.displayCategory).ToLowerInvariant();
+        return category == "footwear" ||
+               category == "legwear" ||
+               probe.Contains(" greaves") ||
+               probe.Contains(" greave") ||
+               probe.Contains(" boot") ||
+               probe.Contains(" boots") ||
+               probe.Contains(" leg ");
+    }
+
+    private static bool IsWaistArmor(EquipmentData asset)
+    {
+        var probe = BuildTraitProbe(asset);
+        return probe.Contains(" pelt") ||
+               probe.Contains(" belt") ||
+               probe.Contains(" waist") ||
+               probe.Contains(" cloak");
+    }
+
+    private static bool IsTorsoArmor(EquipmentData asset)
+    {
+        var category = NormalizeWhitespace(asset.displayCategory).ToLowerInvariant();
+        if (category != "armor")
+        {
+            return false;
+        }
+
+        return !IsHeadArmor(asset) && !IsLegArmor(asset) && !IsWaistArmor(asset) && !IsShieldArmor(asset);
+    }
+
+    private static string BuildTraitProbe(EquipmentData asset)
+    {
+        return $" {NormalizeWhitespace(asset.itemName).ToLowerInvariant()} {NormalizeWhitespace(asset.rulesText).ToLowerInvariant()} ";
+    }
+
+    private static ChunkColor PickChunkColor(string key)
+    {
+        var hash = Math.Abs((key ?? string.Empty).GetHashCode());
+        switch (hash % 3)
+        {
+            case 0:
+                return ChunkColor.Red;
+            case 1:
+                return ChunkColor.Green;
+            default:
+                return ChunkColor.Blue;
+        }
+    }
+
+    private static TraitSO ResolveArmorTrait(EquipmentData asset, string probe, EquipmentAuthoringContext authoring)
+    {
+        var category = NormalizeWhitespace(asset.displayCategory).ToLowerInvariant();
+        if (category != "armor" && category != "shield")
+        {
+            return null;
+        }
+
+        if (IsShieldArmor(asset))
+        {
+            return authoring.shieldArmorTrait;
+        }
+
+        if (IsHeadArmor(asset))
+        {
+            return authoring.headArmorTrait;
+        }
+
+        if (IsLegArmor(asset))
+        {
+            return authoring.legArmorTrait;
+        }
+
+        if (IsWaistArmor(asset))
+        {
+            return authoring.waistArmorTrait;
+        }
+
+        return authoring.torsoArmorTrait;
+    }
+
+    private static bool ShouldBeWeapon(EquipmentData asset, string probe)
+    {
+        return IsWeaponItem(asset) || probe.Contains(" weapon ");
+    }
+
+    private static bool IsGeneratedMythicEquipment(EquipmentData asset)
+    {
+        var path = AssetDatabase.GetAssetPath(asset);
+        return !string.IsNullOrWhiteSpace(path) && path.StartsWith(EquipmentFolder, StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static void PruneDeprecatedEquipmentAssets(IReadOnlyCollection<string> keepPaths)
     {
         foreach (var guid in AssetDatabase.FindAssets("t:EquipmentData", new[] { EquipmentFolder }))
         {
             var path = AssetDatabase.GUIDToAssetPath(guid);
             var asset = AssetDatabase.LoadAssetAtPath<EquipmentData>(path);
-            if (asset != null && CountWords(asset.itemName) > 3)
+            if (asset == null)
+            {
+                continue;
+            }
+
+            if (CountWords(asset.itemName) > 3 || !keepPaths.Contains(path))
             {
                 AssetDatabase.DeleteAsset(path);
             }
         }
+    }
+
+    private static IReadOnlyCollection<string> BuildEquipmentKeepPaths(IEnumerable<EquipmentData> assets)
+    {
+        var keepPaths = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var asset in assets ?? Enumerable.Empty<EquipmentData>())
+        {
+            if (asset == null)
+            {
+                continue;
+            }
+
+            var path = AssetDatabase.GetAssetPath(asset);
+            if (!string.IsNullOrWhiteSpace(path) && path.StartsWith(EquipmentFolder, StringComparison.OrdinalIgnoreCase))
+            {
+                keepPaths.Add(path);
+            }
+        }
+
+        keepPaths.Add(BackpackPath);
+        return keepPaths;
+    }
+
+    private static Dictionary<string, EquipmentData> LoadCuratedEquipmentByName()
+    {
+        var assetsByName = new Dictionary<string, EquipmentData>(StringComparer.OrdinalIgnoreCase);
+        foreach (var guid in AssetDatabase.FindAssets("t:EquipmentData", new[] { CuratedItemsFolder }))
+        {
+            var path = AssetDatabase.GUIDToAssetPath(guid);
+            var asset = AssetDatabase.LoadAssetAtPath<EquipmentData>(path);
+            if (asset == null || string.IsNullOrWhiteSpace(asset.itemName))
+            {
+                continue;
+            }
+
+            assetsByName[NormalizeItemKey(asset.itemName)] = asset;
+        }
+
+        return assetsByName;
+    }
+
+    private static (string itemName, string rulesText, string key) ResolveEquipmentIdentity(EquipmentRecord record)
+    {
+        var itemName = NormalizeWhitespace(record.name);
+        if (record.isSupportFragment)
+        {
+            itemName = CanonicalizeSupportFragmentName(itemName, record.rulesText, record.damageDiceNotation, record.armorValue);
+        }
+        else
+        {
+            itemName = CanonicalizePrimaryFragmentName(itemName);
+        }
+
+        return (itemName, NormalizeWhitespace(record.rulesText), NormalizeItemKey(itemName));
+    }
+
+    private static string CanonicalizePrimaryFragmentName(string itemName)
+    {
+        var normalizedName = NormalizeWhitespace(itemName);
+        if (CountWords(normalizedName) <= 3)
+        {
+            return normalizedName;
+        }
+
+        if (Regex.IsMatch(normalizedName, @"^fine\s+saddle\s+and\s+tack$", RegexOptions.IgnoreCase))
+        {
+            return "saddle and tack";
+        }
+
+        return normalizedName;
+    }
+
+    private static string CanonicalizeSupportFragmentName(string itemName, string rulesText, string damageDiceNotation, int armorValue)
+    {
+        var normalizedName = NormalizeWhitespace(itemName).ToLowerInvariant();
+        var normalizedRules = NormalizeRuleSignature(rulesText);
+
+        if ((normalizedRules == "(a1)" || string.IsNullOrWhiteSpace(normalizedRules)) &&
+            (normalizedName.EndsWith(" chainmail", StringComparison.Ordinal) || normalizedName == "chainmail"))
+        {
+            return "chainmail";
+        }
+
+        if ((normalizedRules == "(a1)" || string.IsNullOrWhiteSpace(normalizedRules)) &&
+            (normalizedName.EndsWith(" chain mail", StringComparison.Ordinal) || normalizedName == "chain mail"))
+        {
+            return "chainmail";
+        }
+
+        if ((normalizedRules == "(a1)" || string.IsNullOrWhiteSpace(normalizedRules)) &&
+            (normalizedName.EndsWith(" ringmail", StringComparison.Ordinal) || normalizedName == "ringmail" ||
+             normalizedName.EndsWith(" ringed mail", StringComparison.Ordinal) || normalizedName == "ringed mail"))
+        {
+            return "ringmail";
+        }
+
+        if ((normalizedRules == "(a1)" || string.IsNullOrWhiteSpace(normalizedRules)) &&
+            normalizedName.EndsWith(" mail", StringComparison.Ordinal))
+        {
+            return "mail";
+        }
+
+        if ((normalizedRules == "(a1)" || string.IsNullOrWhiteSpace(normalizedRules)) &&
+            normalizedName.EndsWith(" gambeson", StringComparison.Ordinal))
+        {
+            return "gambeson";
+        }
+
+        if ((normalizedRules == "(d4,a1)" || normalizedRules == "(a1,d4)") &&
+            normalizedName.EndsWith(" buckler", StringComparison.Ordinal))
+        {
+            return "buckler";
+        }
+
+        if ((NormalizeDiceNotation(damageDiceNotation) == "1d6" || normalizedRules == "(d6)") &&
+            (normalizedName.EndsWith(" javelins", StringComparison.Ordinal) || normalizedName.EndsWith(" javelin", StringComparison.Ordinal)))
+        {
+            return "javelin";
+        }
+
+        return itemName;
+    }
+
+    private static string NormalizeRuleSignature(string rulesText)
+    {
+        return Regex.Replace((rulesText ?? string.Empty).Trim().ToLowerInvariant(), @"\s+", string.Empty);
+    }
+
+    private static string NormalizeDiceNotation(string notation)
+    {
+        return Regex.Replace((notation ?? string.Empty).Trim().ToLowerInvariant(), @"\s+", string.Empty);
+    }
+
+    private static string NormalizeItemKey(string itemName)
+    {
+        return NormalizeWhitespace(itemName).ToLowerInvariant();
+    }
+
+    private static string NormalizeWhitespace(string value)
+    {
+        return Regex.Replace((value ?? string.Empty).Trim(), @"\s+", " ");
     }
 
     private static MythicRollTable ToRollTable(RollTableRecord record)
@@ -515,6 +1040,7 @@ public static class MythicBastionlandImporter
         public int armorValue;
         public string[] sourceTags;
         public bool isBondedProperty;
+        public bool isSupportFragment;
     }
 
     [Serializable]
@@ -558,5 +1084,36 @@ public static class MythicBastionlandImporter
     {
         public string header;
         public string[] values;
+    }
+
+    private sealed class EquipmentAuthoringContext
+    {
+        public TraitSO weaponTrait;
+        public TraitSO longTrait;
+        public TraitSO heftyTrait;
+        public TraitSO slowTrait;
+        public TraitSO deadlyTrait;
+        public TraitSO headArmorTrait;
+        public TraitSO legArmorTrait;
+        public TraitSO shieldArmorTrait;
+        public TraitSO torsoArmorTrait;
+        public TraitSO waistArmorTrait;
+
+        public static EquipmentAuthoringContext Load()
+        {
+            return new EquipmentAuthoringContext
+            {
+                weaponTrait = AssetDatabase.LoadAssetAtPath<TraitSO>($"{TraitFolder}/Weapon.asset"),
+                longTrait = AssetDatabase.LoadAssetAtPath<TraitSO>($"{TraitFolder}/Long.asset"),
+                heftyTrait = AssetDatabase.LoadAssetAtPath<TraitSO>($"{TraitFolder}/Hefty.asset"),
+                slowTrait = AssetDatabase.LoadAssetAtPath<TraitSO>($"{TraitFolder}/Slow.asset"),
+                deadlyTrait = AssetDatabase.LoadAssetAtPath<TraitSO>($"{TraitFolder}/Deadly.asset"),
+                headArmorTrait = AssetDatabase.LoadAssetAtPath<TraitSO>($"{TraitFolder}/Armor/Head Armor.asset"),
+                legArmorTrait = AssetDatabase.LoadAssetAtPath<TraitSO>($"{TraitFolder}/Armor/Leg Armor.asset"),
+                shieldArmorTrait = AssetDatabase.LoadAssetAtPath<TraitSO>($"{TraitFolder}/Armor/Shield Armor.asset"),
+                torsoArmorTrait = AssetDatabase.LoadAssetAtPath<TraitSO>($"{TraitFolder}/Armor/Torso Armor.asset"),
+                waistArmorTrait = AssetDatabase.LoadAssetAtPath<TraitSO>($"{TraitFolder}/Armor/Waist Armor.asset")
+            };
+        }
     }
 }

@@ -16,16 +16,18 @@ MonoBehaviour:
   pointCost: 0
   rarity: bonded
   displayCategory: weapon
-  rulesText: (d8 hefty) and whip (d6)
+  rulesText: (d8 hefty)
   damageDiceNotation: 1d8
   armorValue: 0
   costsCreationPoints: 0
-  leftHalf: 0
+  leftHalf: 3
   rightHalf: 0
   topHalf: 0
   bottomHalf: 0
   centerChunk: 0
-  traits: []
+  traits:
+  - {fileID: 11400000, guid: eecfbfab20a2e4bb0bcdaacba4a2d987, type: 2}
+  - {fileID: 11400000, guid: ee249713d37074cb7b09eb633f4bd90a, type: 2}
   sourceTags:
   - MythicBastionland
   - KnightProperty

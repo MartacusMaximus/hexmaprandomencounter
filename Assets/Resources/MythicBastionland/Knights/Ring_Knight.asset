@@ -27,7 +27,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: 48eb2ed63df4444528dc88600c25c81a, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 31e964f88019e480f92d543affb07cf2, type: 2}
-  - {fileID: 11400000, guid: 774f1df33e535402b94971b497351a96, type: 2}
+  - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
   - {fileID: 11400000, guid: bd2b255f5e6e74355b05aa4d2122281a, type: 2}
   randomFlavorTable:
     title: PROPERTIES OF THE RINGS

@@ -27,7 +27,8 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: fec287b0ab01e422c913b6dea21092cf, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: cb22aee659e56402091eb526b76514dc, type: 2}
-  - {fileID: 11400000, guid: eaa0804fa9e6b4b0b80f3b1d603a856d, type: 2}
+  - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
+  - {fileID: 11400000, guid: 04add80494ccb4395b9caefa21d4d727, type: 2}
   - {fileID: 11400000, guid: bc3a5eb5dddd4462ca6b27c1a28fc0a7, type: 2}
   randomFlavorTable:
     title: SOOTHING SALVE

@@ -12,21 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
   m_Name: Sacrament
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  itemName: "Sacrament"
+  itemName: Sacrament
   pointCost: 2
-  rarity: "uncommon"
-  displayCategory: "remedy"
-  rulesText: "Props for a ritual or performance. Used to recover SPI."
-  damageDiceNotation: ""
+  rarity: uncommon
+  displayCategory: remedy
+  rulesText: Props for a ritual or performance. Used to recover SPI.
+  damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 1
   leftHalf: 0
   rightHalf: 0
   topHalf: 0
   bottomHalf: 0
-  centerChunk: 3
-  traits:
+  centerChunk: 0
+  traits: []
   sourceTags:
   - CrownAndSkull
   - TempleCatalog
   ability: {fileID: 11400000, guid: 8223f8661a92efcd474288724ca2976e, type: 2}
+  seeBelowTable:
+    title: 
+    columns: []
+  isBondedProperty: 0
+  contributesToEquippedBonuses: 1
+  containerKind: 0
+  storageRule: 0
+  occupiesFullContainer: 0
+  usableByNonOwner: 1

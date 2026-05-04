@@ -25,7 +25,7 @@ MonoBehaviour:
   linkedSeer: {fileID: 11400000, guid: 361a7f393a645465d86c088d8d67bd0d, type: 2}
   steed: {fileID: 11400000, guid: 7db4b5fd7f2fa453bb6ca72b103ec494, type: 2}
   bondedProperty:
-  - {fileID: 11400000, guid: 5a1a044da187c4a88b10da24288623fd, type: 2}
+  - {fileID: 11400000, guid: 6aeeffb635c23b0a71e8864bd1a72543, type: 2}
   - {fileID: 11400000, guid: 6d69d6cb9533343e4b38f0fb540b5518, type: 2}
   - {fileID: 11400000, guid: 74c052910f3a24e91825d8f416026e82, type: 2}
   - {fileID: 11400000, guid: c0be09016c92c4eb781e4f4ab329ec61, type: 2}

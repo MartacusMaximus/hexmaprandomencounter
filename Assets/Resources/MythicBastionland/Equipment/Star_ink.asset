@@ -16,7 +16,7 @@ MonoBehaviour:
   pointCost: 0
   rarity: bonded
   displayCategory: tool
-  rulesText: (writing only shows under starlight at night)
+  rulesText: (writing only shows under starlight at night) and parchment
   damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 0

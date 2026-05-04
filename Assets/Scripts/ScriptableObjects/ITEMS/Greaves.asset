@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
   m_Name: Greaves
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  itemName: "Greaves"
+  itemName: Greaves
   pointCost: 1
-  rarity: "common"
-  displayCategory: "armor"
-  rulesText: "Boots with armored shins."
-  damageDiceNotation: ""
+  rarity: common
+  displayCategory: armor
+  rulesText: Boots with armored shins.
+  damageDiceNotation: 
   armorValue: 1
   costsCreationPoints: 1
   leftHalf: 0
   rightHalf: 0
-  topHalf: 0
-  bottomHalf: 2
+  topHalf: 3
+  bottomHalf: 0
   centerChunk: 0
   traits:
   - {fileID: 11400000, guid: b8bbcee6337864d16b9d39542bceaf3f, type: 2}
@@ -31,3 +31,12 @@ MonoBehaviour:
   - CrownAndSkull
   - TempleCatalog
   ability: {fileID: 0}
+  seeBelowTable:
+    title: 
+    columns: []
+  isBondedProperty: 0
+  contributesToEquippedBonuses: 1
+  containerKind: 0
+  storageRule: 0
+  occupiesFullContainer: 0
+  usableByNonOwner: 1

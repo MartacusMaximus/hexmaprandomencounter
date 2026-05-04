@@ -27,7 +27,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: 81bb12bc398644c4488b2bd30ce2bffc, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 60c17cdc44dfc437484ce7a11742eabf, type: 2}
-  - {fileID: 11400000, guid: f88455cfcc6c54df885145ebe8fecc95, type: 2}
+  - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
   - {fileID: 11400000, guid: 5623f715f105a46c9babf00a4b278e3b, type: 2}
   randomFlavorTable:
     title: AN ELABORATE TRIDENT

@@ -16,7 +16,8 @@ MonoBehaviour:
   pointCost: 0
   rarity: bonded
   displayCategory: tool
-  rulesText: (can render any container watertight
+  rulesText: (can render any container watertight and airtight, restock each new
+    Season)
   damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 0

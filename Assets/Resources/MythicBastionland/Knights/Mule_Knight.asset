@@ -24,7 +24,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: 2ab2ec10c95bb45129658a93c4b45920, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 965ebb92a5da74266b8f236ac54e3bad, type: 2}
-  - {fileID: 11400000, guid: 0acbf1dfc82dc41618059ade5158738c, type: 2}
+  - {fileID: 11400000, guid: f6d94eda26b4145c0adf123af5e16478, type: 2}
   - {fileID: 11400000, guid: 31c2acf63693f4659a1d1c810b7d6223, type: 2}
   randomFlavorTable:
     title: EXPLOSIVES

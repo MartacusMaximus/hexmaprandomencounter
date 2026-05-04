@@ -24,6 +24,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: 5beb0deafa7dd43edb13596b2b6c8a9f, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 0930e986529ff45d5b8366ea381fb579, type: 2}
+  - {fileID: 11400000, guid: f31cdfb206a174485872b80d17aa64de, type: 2}
   - {fileID: 11400000, guid: aa85cd209c6b7438fbea1688bb8b34b8, type: 2}
   randomFlavorTable:
     title: PERSONAL CODE

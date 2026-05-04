@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using TMPro;
+using KnightsAndGM.Shared;
 
 
 public class CharacterSheetUI : MonoBehaviour
@@ -46,8 +47,8 @@ public class CharacterSheetUI : MonoBehaviour
     {
         // Example: collect all weapon dice from inventory and roll them, then take highest die per rules:
         var weaponDice = character.inventory
-            .Where(e => e != null && e.equipment != null && !string.IsNullOrEmpty(e.equipment.damageDiceNotation))
-            .Select(e => e.equipment.damageDiceNotation)
+            .Where(e => e != null && e.equipment != null && !string.IsNullOrEmpty(e.DamageDiceNotation))
+            .Select(e => e.DamageDiceNotation)
             .ToList();
 
         if (weaponDice.Count == 0)
@@ -77,6 +78,9 @@ public class CharacterSheetUI : MonoBehaviour
         if (virtue == "Vigor") value = character.vigor;
         if (virtue == "Clarity") value = character.clarity;
         if (virtue == "Spirit") value = character.spirit;
+
+        var reactionModifier = InventoryStatCalculator.GetReactionModifier(CharacterRulesAdapter.ToModel(character));
+        value += reactionModifier;
 
         var rolls = diceRoller.Roll(1, 20, out int total);
         bool success = total <= value;

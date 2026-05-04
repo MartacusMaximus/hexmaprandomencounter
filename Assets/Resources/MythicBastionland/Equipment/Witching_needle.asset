@@ -16,7 +16,8 @@ MonoBehaviour:
   pointCost: 0
   rarity: bonded
   displayCategory: tool
-  rulesText: (a six-inch spike, can be stuck into any material
+  rulesText: (a six-inch spike, can be stuck into any material, and cannot be removed
+    by anybody but you or a Seer)
   damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 0

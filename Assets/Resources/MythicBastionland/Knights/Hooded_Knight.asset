@@ -28,8 +28,7 @@ MonoBehaviour:
   bondedProperty:
   - {fileID: 11400000, guid: db9e8953c43a74a1db031fe2a0423e3e, type: 2}
   - {fileID: 11400000, guid: f900cbf6e86f54ca995c2ab39ac2dbe0, type: 2}
-  - {fileID: 11400000, guid: 9cb6672ad661544de9675b068d5b454a, type: 2}
-  - {fileID: 11400000, guid: fe22e71ea657348338ed7dbee3de33f6, type: 2}
+  - {fileID: 11400000, guid: c6d30c5d927894488a57e6d39c6bc15c, type: 2}
   randomFlavorTable:
     title: HOOD AND CLOAK
     columns:

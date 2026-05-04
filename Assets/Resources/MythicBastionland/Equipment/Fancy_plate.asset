@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
-  m_Name: Fancy_plate
+  m_Name: fancy_plate
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  itemName: Fancy plate
+  itemName: fancy plate
   pointCost: 0
   rarity: bonded
   displayCategory: armor
@@ -21,15 +21,35 @@ MonoBehaviour:
   armorValue: 1
   costsCreationPoints: 0
   leftHalf: 0
-  rightHalf: 0
+  rightHalf: 2
   topHalf: 0
   bottomHalf: 0
   centerChunk: 0
-  traits: []
+  traits:
+  - {fileID: 11400000, guid: 8c2ce63e78f0e4e1cb361ffd9ef7585e, type: 2}
   sourceTags:
   - MythicBastionland
   - KnightProperty
   ability: {fileID: 0}
+  seeBelowTable:
+    title: FANCY ARMOUR
+    columns:
+    - header: Design
+      values:
+      - Bronze plates
+      - Flanged iron
+      - Sharp scales
+      - Bright brigandine
+      - Heavy rings
+      - Sleek brass
+    - header: Quirk
+      values:
+      - Floats in water
+      - Quick to don or remove
+      - Silent when moving
+      - Intimidating helm (A1)
+      - Spiked gauntlets (d6)
+      - Ignore fall Damage
   isBondedProperty: 1
   contributesToEquippedBonuses: 1
   containerKind: 0

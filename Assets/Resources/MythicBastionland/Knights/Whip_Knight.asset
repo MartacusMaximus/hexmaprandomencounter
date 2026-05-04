@@ -27,6 +27,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: 02dbaabb24a274363b615dc7a066e101, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: c2124c4b911134898b62c2210b740df4, type: 2}
+  - {fileID: 11400000, guid: fedeed45fc8ed4a7693d4024afd1e649, type: 2}
   - {fileID: 11400000, guid: 2ae50b8a51c6e4307a78eec2cc0f5571, type: 2}
   randomFlavorTable:
     title: STRANGE HERBS

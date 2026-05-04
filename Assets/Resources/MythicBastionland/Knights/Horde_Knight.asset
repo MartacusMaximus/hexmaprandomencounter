@@ -27,7 +27,7 @@ MonoBehaviour:
   steed: {fileID: 11400000, guid: 6521d09851acb4a37a70cf2c5257aa77, type: 2}
   bondedProperty:
   - {fileID: 11400000, guid: 618efac124b4a4561997de8e888162e1, type: 2}
-  - {fileID: 11400000, guid: 1400cdd30bee4408d8b0d91a3f1dea70, type: 2}
+  - {fileID: 11400000, guid: cd5cc0035391245948efd75f5d596a60, type: 2}
   randomFlavorTable:
     title: A TASTE OF HOME
     columns:

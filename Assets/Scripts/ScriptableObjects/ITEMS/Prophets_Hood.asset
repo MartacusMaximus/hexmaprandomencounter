@@ -12,22 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
   m_Name: Prophets_Hood
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  itemName: "Prophet's Hood"
+  itemName: Prophet's Hood
   pointCost: 3
-  rarity: "rare"
-  displayCategory: "headwear"
-  rulesText: "Renew 1 spent spell daily."
-  damageDiceNotation: ""
+  rarity: rare
+  displayCategory: headwear
+  rulesText: Renew 1 spent spell daily.
+  damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 1
   leftHalf: 0
   rightHalf: 0
-  topHalf: 3
+  topHalf: 0
   bottomHalf: 2
   centerChunk: 0
-  traits:
+  traits: []
   sourceTags:
   - CrownAndSkull
   - Crown
   - TempleCatalog
   ability: {fileID: 11400000, guid: a7ca1005e8d49caaed59eeb541c20e5d, type: 2}
+  seeBelowTable:
+    title: 
+    columns: []
+  isBondedProperty: 0
+  contributesToEquippedBonuses: 1
+  containerKind: 0
+  storageRule: 0
+  occupiesFullContainer: 0
+  usableByNonOwner: 1

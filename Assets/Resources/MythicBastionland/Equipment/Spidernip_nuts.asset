@@ -16,7 +16,8 @@ MonoBehaviour:
   pointCost: 0
   rarity: bonded
   displayCategory: tool
-  rulesText: (acts as a pleasing stimulant for insects
+  rulesText: (acts as a pleasing stimulant for insects and arachnids when ground
+    to a powder, restock each new Season)
   damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 0

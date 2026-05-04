@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
   m_Name: Helm
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  itemName: "Helm"
+  itemName: Helm
   pointCost: 1
-  rarity: "common"
-  displayCategory: "armor"
-  rulesText: "Draws enemy attention."
-  damageDiceNotation: ""
+  rarity: common
+  displayCategory: armor
+  rulesText: Draws enemy attention.
+  damageDiceNotation: 
   armorValue: 1
   costsCreationPoints: 1
   leftHalf: 0
   rightHalf: 0
-  topHalf: 1
-  bottomHalf: 0
+  topHalf: 0
+  bottomHalf: 2
   centerChunk: 0
   traits:
   - {fileID: 11400000, guid: 21beb042c296f4856bbfde2583b2d434, type: 2}
@@ -31,3 +31,12 @@ MonoBehaviour:
   - CrownAndSkull
   - TempleCatalog
   ability: {fileID: 0}
+  seeBelowTable:
+    title: 
+    columns: []
+  isBondedProperty: 0
+  contributesToEquippedBonuses: 1
+  containerKind: 0
+  storageRule: 0
+  occupiesFullContainer: 0
+  usableByNonOwner: 1

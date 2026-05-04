@@ -58,23 +58,29 @@ public static class CharacterRulesAdapter
             armorLocation = MapLocation(armorTrait.location);
         }
 
+        var displayCategory = equipment.displayCategory ?? string.Empty;
+        var traitNames = new List<string>(instance.GetResolvedTraitNames());
+        var isWeapon = equipment.IsWeapon || displayCategory == "weapon" || displayCategory == "shield" || !string.IsNullOrWhiteSpace(instance.DamageDiceNotation);
+        var isArmor = equipment.IsArmor || displayCategory == "armor" || displayCategory == "shield";
+
         return new PortableEquipmentModel
         {
             Id = Guid.Empty,
             Name = instance.DisplayName,
             PointCost = equipment.pointCost,
             Rarity = equipment.rarity,
-            DisplayCategory = equipment.displayCategory,
+            DisplayCategory = displayCategory,
             RulesText = instance.RulesText,
-            DamageDiceNotation = equipment.damageDiceNotation,
-            ArmorValue = equipment.armorValue,
+            DamageDiceNotation = instance.DamageDiceNotation,
+            ArmorValue = instance.ArmorValue,
             CostsCreationPoints = equipment.costsCreationPoints,
-            IsWeapon = equipment.IsWeapon,
-            IsArmor = equipment.IsArmor,
-            RequiredHands = equipment.RequiredHands(),
+            IsWeapon = isWeapon,
+            IsArmor = isArmor,
+            RequiredHands = instance.RequiredHands,
             ArmorLocation = armorLocation,
-            TraitNames = new List<string>(equipment.traits.Select(trait => trait.traitName)),
+            TraitNames = traitNames,
             SourceTags = new List<string>(equipment.sourceTags ?? new List<string>()),
+            GeneratedTags = new List<string>(instance.resolvedGeneratedTags ?? new List<string>()),
             Ability = ToModel(equipment.ability),
             LeftHalf = MapChunk(equipment.leftHalf),
             RightHalf = MapChunk(equipment.rightHalf),

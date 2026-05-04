@@ -26,7 +26,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5c20341f554a0406da00ae41d1d6209a, type: 2}
   - {fileID: 11400000, guid: f581ac5d238e142bc9fa2835c1df18d8, type: 2}
   - {fileID: 11400000, guid: 15dbbe03ce5dd487fb81df803df4bb43, type: 2}
-  - {fileID: 11400000, guid: 0512c284dec86433382303ec1c344d3b, type: 2}
   randomFlavorTable:
     title: MASKED ARMOUR
     columns:

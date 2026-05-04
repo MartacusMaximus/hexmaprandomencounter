@@ -16,7 +16,8 @@ MonoBehaviour:
   pointCost: 0
   rarity: bonded
   displayCategory: tool
-  rulesText: (when burned, all nearby water becomes still
+  rulesText: (when burned, all nearby water becomes still and solid for a while,
+    restock each new Season)
   damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 0

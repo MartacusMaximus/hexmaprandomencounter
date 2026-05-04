@@ -73,15 +73,15 @@ public static class InventoryOwnershipRules
             container.containedItems[0] = item;
             for (var index = 1; index < container.containedItems.Count; index++)
             {
-                container.containedItems[index] = new EquipmentInstance
+                var clone = new EquipmentInstance
                 {
                     equipment = item.equipment,
                     ownerCharacterId = item.ownerCharacterId,
                     bondedToOwner = item.bondedToOwner,
-                    instanceId = item.instanceId,
-                    resolvedRulesText = item.resolvedRulesText,
-                    resolvedSeeBelowRowIndex = item.resolvedSeeBelowRowIndex
+                    instanceId = item.instanceId
                 };
+                clone.CopyResolutionFrom(item);
+                container.containedItems[index] = clone;
             }
 
             return true;
@@ -122,15 +122,15 @@ public static class InventoryOwnershipRules
             steed.storage[0] = item;
             for (var index = 1; index < steed.storage.Count; index++)
             {
-                steed.storage[index] = new EquipmentInstance
+                var clone = new EquipmentInstance
                 {
                     equipment = item.equipment,
                     ownerCharacterId = item.ownerCharacterId,
                     bondedToOwner = item.bondedToOwner,
-                    instanceId = item.instanceId,
-                    resolvedRulesText = item.resolvedRulesText,
-                    resolvedSeeBelowRowIndex = item.resolvedSeeBelowRowIndex
+                    instanceId = item.instanceId
                 };
+                clone.CopyResolutionFrom(item);
+                steed.storage[index] = clone;
             }
 
             return true;

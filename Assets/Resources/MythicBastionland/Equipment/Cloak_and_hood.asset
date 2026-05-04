@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
+  m_Name: Cloak_and_hood
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
+  itemName: Cloak and hood
+  pointCost: 0
+  rarity: bonded
+  displayCategory: armor
+  rulesText: (see below, while fully cloaked and hooded, people will see you in the
+    moment, but have no memory of you once you pass from sight)
+  damageDiceNotation: 
+  armorValue: 0
+  costsCreationPoints: 0
+  leftHalf: 0
+  rightHalf: 0
+  topHalf: 0
+  bottomHalf: 2
+  centerChunk: 0
+  traits:
+  - {fileID: 11400000, guid: 21beb042c296f4856bbfde2583b2d434, type: 2}
+  sourceTags:
+  - MythicBastionland
+  - KnightProperty
+  ability: {fileID: 0}
+  seeBelowTable:
+    title: HOOD AND CLOAK
+    columns:
+    - header: Hood
+      values:
+      - Veiled
+      - Shadowy
+      - Silken
+      - Tattered
+      - Fur-trimmed
+      - Threadbare
+    - header: Cloak
+      values:
+      - Velvet
+      - Torn
+      - Weathered
+      - Layered
+      - Embroidered
+      - Faded pattern
+  isBondedProperty: 1
+  contributesToEquippedBonuses: 1
+  containerKind: 0
+  storageRule: 0
+  occupiesFullContainer: 0
+  usableByNonOwner: 0

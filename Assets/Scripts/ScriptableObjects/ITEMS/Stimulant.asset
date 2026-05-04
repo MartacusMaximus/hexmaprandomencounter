@@ -12,21 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a5f4c78935b4e43b49d1fd7e1fa2c3, type: 3}
   m_Name: Stimulant
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  itemName: "Stimulant"
+  itemName: Stimulant
   pointCost: 2
-  rarity: "uncommon"
-  displayCategory: "remedy"
-  rulesText: "Enlightening herbal preparations. Used to recover CLA."
-  damageDiceNotation: ""
+  rarity: uncommon
+  displayCategory: remedy
+  rulesText: Enlightening herbal preparations. Used to recover CLA.
+  damageDiceNotation: 
   armorValue: 0
   costsCreationPoints: 1
   leftHalf: 0
   rightHalf: 0
   topHalf: 0
   bottomHalf: 0
-  centerChunk: 2
-  traits:
+  centerChunk: 0
+  traits: []
   sourceTags:
   - CrownAndSkull
   - TempleCatalog
   ability: {fileID: 11400000, guid: 7aeddf2b9f93020c7f733b7621b4e68a, type: 2}
+  seeBelowTable:
+    title: 
+    columns: []
+  isBondedProperty: 0
+  contributesToEquippedBonuses: 1
+  containerKind: 0
+  storageRule: 0
+  occupiesFullContainer: 0
+  usableByNonOwner: 1
